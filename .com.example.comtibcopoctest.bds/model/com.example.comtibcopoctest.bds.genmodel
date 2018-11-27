@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/.com.example.comtibcopoctest.bds/src" modelPluginID="com.example.comtibcopoctest.bds" templateDirectory="platform:/resource/.bdsTemplates" dynamicTemplates="true" modelName="com.example.comtibcopoctest.bds" updateClasspath="false" featureMapWrapperInterface="com.example.comtibcopoctest.bdsutil.BDSFeatureMap" featureMapWrapperInternalInterface="com.example.comtibcopoctest.bdsutil.BDSFeatureMap" featureMapWrapperClass="com.example.comtibcopoctest.bdsutil.BDSFeatureMapImpl" complianceLevel="6.0" copyrightFields="false" runtimeVersion="2.4">
+  <genAnnotations source="BDS-Manifest">
+    <details key="version" value="1.0.0.qualifier"/>
+    <details key="binFolder" value="bin/"/>
+    <details key="bdsutilPackage" value="com.example.comtibcopoctest.bdsutil"/>
+  </genAnnotations>
+  <genPackages prefix="Comtibcopoctest" basePackage="com.example" disposableProviderFactory="true">
+    <ecorePackage href="com.example.comtibcopoctest.bds.ecore#/"/>
+    <genDataTypes>
+      <ecoreDataType href="com.example.comtibcopoctest.bds.ecore#//AHVNummer_pocMetaDataType"/>
+    </genDataTypes>
+    <genDataTypes>
+      <ecoreDataType href="com.example.comtibcopoctest.bds.ecore#//dokumentenArt_pocMetaDataType"/>
+    </genDataTypes>
+    <genDataTypes>
+      <ecoreDataType href="com.example.comtibcopoctest.bds.ecore#//kanton_pocMetaDataType"/>
+    </genDataTypes>
+    <genDataTypes>
+      <ecoreDataType href="com.example.comtibcopoctest.bds.ecore#//partnerID_pocMetaDataType"/>
+    </genDataTypes>
+    <genDataTypes>
+      <ecoreDataType href="com.example.comtibcopoctest.bds.ecore#//WFCaseID_pocMetaDataType"/>
+    </genDataTypes>
+    <genDataTypes>
+      <ecoreDataType href="com.example.comtibcopoctest.bds.ecore#//WFCaseID_pocDBRequestType"/>
+    </genDataTypes>
+    <genClasses>
+      <ecoreClass href="com.example.comtibcopoctest.bds.ecore#//DocumentRoot"/>
+      <genFeatures property="None" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="com.example.comtibcopoctest.bds.ecore#//DocumentRoot/mixed"/>
+      </genFeatures>
+      <genFeatures property="None" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="com.example.comtibcopoctest.bds.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      </genFeatures>
+      <genFeatures property="None" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="com.example.comtibcopoctest.bds.ecore#//DocumentRoot/xSISchemaLocation"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="com.example.comtibcopoctest.bds.ecore#//DocumentRoot/pocDBRequestElement"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="com.example.comtibcopoctest.bds.ecore#//DocumentRoot/pocMetaDataElement"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="com.example.comtibcopoctest.bds.ecore#//DocumentRoot/pocDBRequestBDSInternalSerializationElement"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="com.example.comtibcopoctest.bds.ecore#//DocumentRoot/pocMetaDataBDSInternalSerializationElement"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="com.example.comtibcopoctest.bds.ecore#//pocDBRequest"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="com.example.comtibcopoctest.bds.ecore#//pocDBRequest/WFCaseID"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="com.example.comtibcopoctest.bds.ecore#//pocMetaData"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="com.example.comtibcopoctest.bds.ecore#//pocMetaData/WFCaseID"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="com.example.comtibcopoctest.bds.ecore#//pocMetaData/AHVNummer"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="com.example.comtibcopoctest.bds.ecore#//pocMetaData/partnerID"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="com.example.comtibcopoctest.bds.ecore#//pocMetaData/dokumentenArt"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="com.example.comtibcopoctest.bds.ecore#//pocMetaData/kanton"/>
+      </genFeatures>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

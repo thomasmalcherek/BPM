@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw" xmlns:tibex="http://www.tibco.com/bs3.2/extensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="comtibcopoctest" targetNamespace="http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw" tibex:XPDL="com.tibco.poc.test.xpdl">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw" targetNamespace="http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw">
+      <xsd:simpleType name="string_50">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="50"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="DataToBW_RecieveTask_CorrelationID" type="string_50"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="DataToBW_ReceiveTask_INPUT">
+    <wsdl:part element="ns:DataToBW_RecieveTask_CorrelationID" name="RecieveTask_CorrelationID"/>
+  </wsdl:message>
+  <wsdl:portType name="DataToBW" tibex:FlowContainer="_GF0_QOmlEeiNa-ssr_CQIw">
+    <wsdl:documentation>
+      <DocumentationElement Documentation=""/>
+    </wsdl:documentation>
+    <wsdl:operation name="ReceiveTask">
+      <wsdl:input message="ns:DataToBW_ReceiveTask_INPUT" tibex:Event="_V6gXgvF9EeiCsd_Wv-RtYQ"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns="http://example.com/thomas_bd/WF_PACK" xmlns:tns1="http://example.com/thomas_bd/WF_PACK"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://example.com/thomas_bd/WF_PACK">
+  <xsd:annotation>
+    <xsd:documentation>BOMORIGIN::/Thomas_BD/Business Objects/Thomas_BD.bom</xsd:documentation>
+  </xsd:annotation>
+  <xsd:complexType ecore:name="WF_DATA" id="_vJkv4LqGEeiASc0c7PuHLA" name="WF_DATA">
+    <xsd:sequence>
+      <xsd:element ecore:name="HEADER" id="_xWMYcLqGEeiASc0c7PuHLA" maxOccurs="1"
+          minOccurs="1" name="HEADER">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="VALUE" id="_0wxB4LqGEeiASc0c7PuHLA" maxOccurs="1" minOccurs="1"
+          name="VALUE">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="DATE" id="_3npvcLqGEeiASc0c7PuHLA" maxOccurs="1" minOccurs="1"
+          name="DATE" type="xsd:date"/>
+      <xsd:element ecore:name="EXPLANATION" id="_7aB04LqGEeiASc0c7PuHLA" maxOccurs="1"
+          minOccurs="0" name="EXPLANATION">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="500"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="POSTALCODE" id="_xRbJsMWpEeiIn_6o0S1HsA" maxOccurs="1"
+          minOccurs="1" name="POSTALCODE">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="WF_DATAElement" type="WF_DATA"/>
+</xsd:schema>

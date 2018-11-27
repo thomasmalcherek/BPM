@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="http://example.com/comtibcobomasynchcall" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:tns1="http://example.com/comtibcobomasynchcall" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://example.com/comtibcobomasynchcall">
+  <xsd:annotation>
+    <xsd:documentation>BOMORIGIN::/com.tibco.bom.asynchCall/Business Objects/comtibcobomasynchCall.bom</xsd:documentation>
+  </xsd:annotation>
+  <xsd:complexType ecore:name="MetaData" id="_8Bea8OjfEeietP_QQ0irBw" name="MetaData">
+    <xsd:sequence>
+      <xsd:element ecore:name="AHVNummer" id="_WJzOsOjgEeietP_QQ0irBw" maxOccurs="1" minOccurs="1" name="AHVNummer">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="partnerID" id="_bCteYOjgEeietP_QQ0irBw" maxOccurs="1" minOccurs="1" name="partnerID">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="dokumentenArt" id="_e3FH4OjgEeietP_QQ0irBw" maxOccurs="1" minOccurs="0" name="dokumentenArt">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="kanton" id="_ILfcUOmGEeik3OxAaxEZFg" maxOccurs="1" minOccurs="1" name="kanton">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="MetaDataElement" type="MetaData"/>
+    <xsd:element name="MetaData" type="MetaData"/>
+</xsd:schema>

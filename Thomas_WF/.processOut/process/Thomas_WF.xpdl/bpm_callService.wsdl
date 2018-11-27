@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:jms="http://www.tibco.com/namespaces/ws/2004/soap/binding/JMS" xmlns:ns="http://www.tibco.com/bwse/simpleaddresslookup" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tibex="http://www.tibco.com/bs3.2/extensions" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SimpleAddressLookupPortType" targetNamespace="http://www.tibco.com/bwse/simpleaddresslookup" tibex:src="file:/home/admin/Downloads/bpm_callService.wsdl">
+    <partnerLinkType name="SimpleAddressLookupPortType_PLT" xmlns="http://docs.oasis-open.org/wsbpel/2.0/plnktype">
+    <role name="SimpleAddressLookupPortTypeProvider" portType="ns:SimpleAddressLookupPortType"/>
+  </partnerLinkType>
+    <wsdl:types>
+    <xsd:schema xmlns:ns="http://xmlns.example.com/1222666263328" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.tibco.com/bwse/simpleaddresslookup" elementFormDefault="qualified" targetNamespace="http://www.tibco.com/bwse/simpleaddresslookup">
+      <xsd:element name="Input">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="PostalCode" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Output">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="AddressLine1" type="xsd:string"/>
+            <xsd:element name="AddressLine2" type="xsd:string"/>
+            <xsd:element name="City" type="xsd:string"/>
+            <xsd:element name="Country" type="xsd:string"/>
+            <xsd:element name="Province" type="xsd:string"/>
+            <xsd:element name="PostalCode" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Fault" type="xsd:string"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="RequestMessage">
+    <wsdl:part element="ns:Input" name="requestMessage"/>
+  </wsdl:message>
+  <wsdl:message name="ResponseMessage">
+    <wsdl:part element="ns:Output" name="responseMessage"/>
+  </wsdl:message>
+  <wsdl:message name="FaultMessage">
+    <wsdl:part element="ns:Fault" name="error"/>
+  </wsdl:message>
+  <wsdl:portType name="SimpleAddressLookupPortType">
+    <wsdl:operation name="SimpleAddressLookup-Operation">
+      <wsdl:input message="ns:RequestMessage"/>
+      <wsdl:output message="ns:ResponseMessage"/>
+      <wsdl:fault message="ns:FaultMessage" name="fault1"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SOAPServiceBinding" type="ns:SimpleAddressLookupPortType">
+    <soap:binding style="document" transport="http://www.tibco.com/namespaces/ws/2004/soap/binding/JMS"/>
+    <jms:binding messageFormat="bytes"/>
+    <wsdl:operation name="SimpleAddressLookup-Operation">
+      <soap:operation soapAction="SimpleAddressLookup-Operation" style="document"/>
+      <wsdl:input>
+        <soap:body parts="requestMessage" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="responseMessage" use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="fault1">
+        <soap:fault name="fault1" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SimpleAddressLookupPortType">
+    <wsdl:port binding="ns:SOAPServiceBinding" name="SimpleAddressLookupPortTypeSOAP">
+      <soap:address location="tcp://ssva90322:8222"/>
+      <jms:connectionFactory>QueueConnectionFactory</jms:connectionFactory>
+      <jms:targetAddress destination="queue">TEST_QUEUE</jms:targetAddress>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

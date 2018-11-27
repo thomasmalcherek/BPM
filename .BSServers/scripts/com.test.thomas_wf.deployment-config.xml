@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<amxdata_base:Enterprise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:amxdata="http://tibco.com/amxadministrator/command/line/types" xmlns:amxdata_base="http://tibco.com/amxadministrator/command/line/types_base" xmlns:amxdata_reference="http://tibco.com/amxadministrator/command/line/types_reference" xsi:schemaLocation="http://tibco.com/amxadministrator/command/line/types platform:/plugin/com.tibco.amf.tools.admincligen/model/cli_data.ecore#//types http://tibco.com/amxadministrator/command/line/types_base platform:/plugin/com.tibco.amf.tools.admincligen/model/cli_data.ecore http://tibco.com/amxadministrator/command/line/types_reference platform:/plugin/com.tibco.amf.tools.admincligen/model/cli_data.ecore#//types/types_reference">
+  <Environment xsi:type="amxdata:Environment" name="BPMEnvironment">
+    <Application xsi:type="amxdata:Application" name="com.example.thomas_wf" contact="Thomas Malcherek" description="Test Deployment incl BW6 Anbindung" distributionPolicy="PRODUCT_APP" resourceTemplatesScope="application">
+      <Component xsi:type="amxdata_base:Component_base" name="Thomas_WFProcessFlow"/>
+      <Component xsi:type="amxdata_base:Component_base" name="BRM"/>
+      <Component xsi:type="amxdata_base:Component_base" name="Thomas_WFPageFlow"/>
+      <Component xsi:type="amxdata_base:Component_base" name="WorkPresentation"/>
+      <PromotedReference xsi:type="amxdata_base:Reference_base" name="SimpleAddressLookupPortTypeSOAP_Consumer1">
+        <Binding xsi:type="amxdata_base:Binding_base" name="SOAPReference_Binding1">
+          <Property xsi:type="amxdata:Property" name="JmsInboundDestination" value="JMSDestination_BPM_BW6"/>
+          <Property xsi:type="amxdata:Property" name="JmsOutboundConnectionFactory" value="JMSConnectionFactory_BW6"/>
+          <Property xsi:type="amxdata:Property" name="JmsOutboundDestination" value="JMSDestination_BPM_BW6"/>
+        </Binding>
+      </PromotedReference>
+      <ApplicationTemplate xsi:type="amxdata_reference:ApplicationTemplate_reference" name="com.test.thomas_wf" version="1.0.0.20181114154317066"/>
+      <TargetApplication xsi:type="amxdata_reference:Application_reference" name="amx.bpm.app"/>
+    </Application>
+  </Environment>
+  <DAA xsi:type="amxdata:DAA" location="C:\Users\admin\BPM_workspace\Thomas_WF\.bpm\com.test.thomas_wf.daa">
+    <importFeatureIdentifier>com.test.thomas_wf.model.bds:1.0.0.20181114154317066</importFeatureIdentifier>
+  </DAA>
+  <Feature xsi:type="amxdata_base:FeatureID" componentID="com.test.thomas_wf.model.bds" version="1.0.0.20181114154317066"/>
+  <AppTemplate xsi:type="amxdata_base:AppTemplateID" name="com.test.thomas_wf" version="1.0.0"/>
+</amxdata_base:Enterprise>

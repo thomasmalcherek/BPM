@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:jms="http://www.tibco.com/namespaces/ws/2004/soap/binding/JMS" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tibex="http://www.tibco.com/bs3.2/extensions" xmlns:tns="http://com.tibco.poc.test.bw.saveDataCase" xmlns:tns0="http://com.tibco.poc.test.bw.saveDataCaseXSD" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="saveDataCase" targetNamespace="http://com.tibco.poc.test.bw.saveDataCase" tibex:src="file:/C:/Users/admin/Downloads/saveDataCase_JMS.wsdl">
+    <partnerLinkType name="saveDataCase_PLT" xmlns="http://docs.oasis-open.org/wsbpel/2.0/plnktype">
+    <role name="saveDataCaseProvider" portType="tns:saveDataCase"/>
+  </partnerLinkType>
+    <property name="DataToBW_WF_CASE_ID" type="xsd:string" xmlns="http://docs.oasis-open.org/wsbpel/2.0/varprop"/>
+    <propertyAlias messageType="tns:CreateCaseIDRequestFromBPM" part="InputParametersFromBPM" propertyName="tns:DataToBW_WF_CASE_ID" xmlns="http://docs.oasis-open.org/wsbpel/2.0/varprop">
+    <query><![CDATA[CaseID]]></query>
+  </propertyAlias>
+    <wsdl:types>
+    <xsd:schema xmlns="http://com.tibco.poc.test.bw.saveDataCaseXSD" elementFormDefault="unqualified" targetNamespace="http://com.tibco.poc.test.bw.saveDataCaseXSD">
+      <xsd:element name="CreateCaseIDRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="AHV-Nummer" type="xsd:string"/>
+            <xsd:element name="Partner-ID" type="xsd:string"/>
+            <xsd:element name="Dokumenten-Art" type="xsd:string"/>
+            <xsd:element name="Kanton" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateCaseIDResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="CaseID" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateCaseIDRequestFromBPM">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="CaseID" type="xsd:string"/>
+            <xsd:element name="AHV-Nummer" type="xsd:string"/>
+            <xsd:element name="Partner-ID" type="xsd:string"/>
+            <xsd:element name="Dokumenten-Art" type="xsd:string"/>
+            <xsd:element name="Kanton" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateCaseIDResponseFromBPM">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Acknowledgement" type="xsd:boolean"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetDataRequestFromCaseID">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="CaseID" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetDataResponseFromCaseID">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="CaseID" type="xsd:string"/>
+            <xsd:element name="AHV-Nummer" type="xsd:string"/>
+            <xsd:element name="Partner-ID" type="xsd:string"/>
+            <xsd:element name="Dokumenten-Art" type="xsd:string"/>
+            <xsd:element name="Kanton" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateCaseIDRequest">
+    <wsdl:part element="tns0:CreateCaseIDRequest" name="InputParameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreateCaseIDResponse">
+    <wsdl:part element="tns0:CreateCaseIDResponse" name="OutputParameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreateCaseIDRequestFromBPM">
+    <wsdl:part element="tns0:CreateCaseIDRequestFromBPM" name="InputParametersFromBPM"/>
+  </wsdl:message>
+  <wsdl:message name="CreateCaseIDResponseFromBPM">
+    <wsdl:part element="tns0:CreateCaseIDResponseFromBPM" name="OutputParametersFromBPM"/>
+  </wsdl:message>
+  <wsdl:message name="GetDataRequest">
+    <wsdl:part element="tns0:GetDataRequestFromCaseID" name="GetDataPInputParameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetDataResponse">
+    <wsdl:part element="tns0:GetDataResponseFromCaseID" name="GetDataOutputParameters"/>
+  </wsdl:message>
+  <wsdl:portType name="saveDataCase">
+    <wsdl:operation name="CreateCaseID">
+      <wsdl:input message="tns:CreateCaseIDRequest" name="CreateCaseIDRequest"/>
+      <wsdl:output message="tns:CreateCaseIDResponse" name="CreateCaseIDResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCaseIDFromBPM">
+      <wsdl:input message="tns:CreateCaseIDRequestFromBPM" name="CreateCaseIDRequestFromBPM"/>
+      <wsdl:output message="tns:CreateCaseIDResponseFromBPM" name="CreateCaseIDResponseFromBPM"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <wsdl:input message="tns:GetDataRequest" name="GetDataRequest"/>
+      <wsdl:output message="tns:GetDataResponse" name="GetDataResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SOAPServiceBinding" type="tns:saveDataCase">
+    <soap:binding style="document" transport="http://www.tibco.com/namespaces/ws/2004/soap/binding/JMS"/>
+    <jms:binding messageFormat="text"/>
+    <wsdl:operation name="CreateCaseID">
+      <soap:operation soapAction="CreateCaseID" style="document"/>
+      <wsdl:input>
+        <soap:body parts="InputParameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="OutputParameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCaseIDFromBPM">
+      <soap:operation soapAction="CreateCaseIDFromBPM" style="document"/>
+      <wsdl:input>
+        <soap:body parts="InputParametersFromBPM" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="OutputParametersFromBPM" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="GetData" style="document"/>
+      <wsdl:input>
+        <soap:body parts="GetDataPInputParameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="GetDataOutputParameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="saveDataCase">
+    <wsdl:port binding="tns:SOAPServiceBinding" name="saveDataCaseSOAP">
+      <soap:address location="tcp://ssva90322:8222"/>
+      <jms:connectionFactory>QueueConnectionFactory</jms:connectionFactory>
+      <jms:targetAddress destination="queue">com.tibco.poc.test.bw.savedata</jms:targetAddress>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

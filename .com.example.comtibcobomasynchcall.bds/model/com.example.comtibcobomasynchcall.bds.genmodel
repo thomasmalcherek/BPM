@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/.com.example.comtibcobomasynchcall.bds/src" modelPluginID="com.example.comtibcobomasynchcall.bds" templateDirectory="platform:/resource/.bdsTemplates" dynamicTemplates="true" modelName="com.example.comtibcobomasynchcall.bds" updateClasspath="false" featureMapWrapperInterface="com.example.comtibcobomasynchcall.bdsutil.BDSFeatureMap" featureMapWrapperInternalInterface="com.example.comtibcobomasynchcall.bdsutil.BDSFeatureMap" featureMapWrapperClass="com.example.comtibcobomasynchcall.bdsutil.BDSFeatureMapImpl" complianceLevel="6.0" copyrightFields="false" runtimeVersion="2.4">
+  <genAnnotations source="BDS-Manifest">
+    <details key="version" value="1.0.0.qualifier"/>
+    <details key="binFolder" value="bin/"/>
+    <details key="bdsutilPackage" value="com.example.comtibcobomasynchcall.bdsutil"/>
+    <details key="Globaldata" value="true"/>
+  </genAnnotations>
+  <genPackages prefix="Comtibcobomasynchcall" basePackage="com.example" disposableProviderFactory="true">
+    <ecorePackage href="com.example.comtibcobomasynchcall.bds.ecore#/"/>
+    <genDataTypes>
+      <ecoreDataType href="com.example.comtibcobomasynchcall.bds.ecore#//AHVNummer_MetaDataType"/>
+    </genDataTypes>
+    <genDataTypes>
+      <ecoreDataType href="com.example.comtibcobomasynchcall.bds.ecore#//dokumentenArt_MetaDataType"/>
+    </genDataTypes>
+    <genDataTypes>
+      <ecoreDataType href="com.example.comtibcobomasynchcall.bds.ecore#//kanton_MetaDataType"/>
+    </genDataTypes>
+    <genDataTypes>
+      <ecoreDataType href="com.example.comtibcobomasynchcall.bds.ecore#//partnerID_MetaDataType"/>
+    </genDataTypes>
+    <genClasses>
+      <ecoreClass href="com.example.comtibcobomasynchcall.bds.ecore#//DocumentRoot"/>
+      <genFeatures property="None" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="com.example.comtibcobomasynchcall.bds.ecore#//DocumentRoot/mixed"/>
+      </genFeatures>
+      <genFeatures property="None" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="com.example.comtibcobomasynchcall.bds.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      </genFeatures>
+      <genFeatures property="None" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="com.example.comtibcobomasynchcall.bds.ecore#//DocumentRoot/xSISchemaLocation"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="com.example.comtibcobomasynchcall.bds.ecore#//DocumentRoot/metaDataElement"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="com.example.comtibcobomasynchcall.bds.ecore#//DocumentRoot/metaDataBDSInternalSerializationElement"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="com.example.comtibcobomasynchcall.bds.ecore#//MetaData"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="com.example.comtibcobomasynchcall.bds.ecore#//MetaData/AHVNummer"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="com.example.comtibcobomasynchcall.bds.ecore#//MetaData/partnerID"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="com.example.comtibcobomasynchcall.bds.ecore#//MetaData/dokumentenArt"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="com.example.comtibcobomasynchcall.bds.ecore#//MetaData/kanton"/>
+      </genFeatures>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
