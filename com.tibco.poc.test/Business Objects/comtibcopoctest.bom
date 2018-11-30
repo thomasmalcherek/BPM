@@ -32,6 +32,21 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ht-RBumuEeiwvIivo0dWbg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ht-RB-muEeiwvIivo0dWbg" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_6-RMkPSHEeiKGqQzTYL1wQ" name="frist" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AMizkHvBEdy0U8_1u7Q20g?BomPrimitiveTypes%3a%3aDateTime?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6-a9kvSHEeiKGqQzTYL1wQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6-a9kfSHEeiKGqQzTYL1wQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_d2avAPS7EeiKGqQzTYL1wQ" name="widervorlagen" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g?BomPrimitiveTypes%3a%3aBoolean?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d2avA_S7EeiKGqQzTYL1wQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d2avAvS7EeiKGqQzTYL1wQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-uqXYPS7EeiKGqQzTYL1wQ" name="task" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-uqXY_S7EeiKGqQzTYL1wQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-uqXYvS7EeiKGqQzTYL1wQ" value="1"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_klALIOydEeieuqYotrFSPg" name="pocDBRequest">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_nD3aQOydEeieuqYotrFSPg" name="WFCaseID" aggregation="composite">
@@ -67,6 +82,15 @@
         </children>
         <children xmi:type="notation:Node" xmi:id="_ht-Q7-muEeiwvIivo0dWbg" type="2001" element="_ht-RBemuEeiwvIivo0dWbg?com.example.comtibcopoctest%3a%3apocMetaData%3a%3akanton?">
           <layoutConstraint xmi:type="notation:Location" xmi:id="_ht-Q8OmuEeiwvIivo0dWbg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_6-kHgPSHEeiKGqQzTYL1wQ" type="2001" element="_6-RMkPSHEeiKGqQzTYL1wQ?com.example.comtibcopoctest%3a%3apocMetaData%3a%3afrist?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_6-kHgfSHEeiKGqQzTYL1wQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_d2avBPS7EeiKGqQzTYL1wQ" type="2001" element="_d2avAPS7EeiKGqQzTYL1wQ?com.example.comtibcopoctest%3a%3apocMetaData%3a%3awidervorlagen?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_d2avBfS7EeiKGqQzTYL1wQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_-uuBwPS7EeiKGqQzTYL1wQ" type="2001" element="_-uqXYPS7EeiKGqQzTYL1wQ?com.example.comtibcopoctest%3a%3apocMetaData%3a%3atask?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-uuBwfS7EeiKGqQzTYL1wQ"/>
         </children>
         <styles xmi:type="notation:DrawerStyle" xmi:id="_ht-Q8emuEeiwvIivo0dWbg"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_ht-Q8umuEeiwvIivo0dWbg"/>
@@ -134,4 +158,7 @@
   <PrimitiveTypeFacets:LabeledElement xmi:id="_xyGe0Ov-EeieuqYotrFSPg" displayLabel="WFCaseID" base_NamedElement="_xx8t0Ov-EeieuqYotrFSPg?com.example.comtibcopoctest%3a%3apocMetaData%3a%3aWFCaseID?"/>
   <PrimitiveTypeFacets:LabeledElement xmi:id="_klAyMOydEeieuqYotrFSPg" displayLabel="poc.DBRequest" base_NamedElement="_klALIOydEeieuqYotrFSPg?com.example.comtibcopoctest%3a%3apocDBRequest?"/>
   <PrimitiveTypeFacets:LabeledElement xmi:id="_nD4BUOydEeieuqYotrFSPg" displayLabel="WFCaseID" base_NamedElement="_nD3aQOydEeieuqYotrFSPg?com.example.comtibcopoctest%3a%3apocDBRequest%3a%3aWFCaseID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_6-a9kPSHEeiKGqQzTYL1wQ" displayLabel="Frist" base_NamedElement="_6-RMkPSHEeiKGqQzTYL1wQ?com.example.comtibcopoctest%3a%3apocMetaData%3a%3afrist?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_d2avAfS7EeiKGqQzTYL1wQ" displayLabel="Widervorlagen" base_NamedElement="_d2avAPS7EeiKGqQzTYL1wQ?com.example.comtibcopoctest%3a%3apocMetaData%3a%3awidervorlagen?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_-uqXYfS7EeiKGqQzTYL1wQ" displayLabel="Task" base_NamedElement="_-uqXYPS7EeiKGqQzTYL1wQ?com.example.comtibcopoctest%3a%3apocMetaData%3a%3atask?"/>
 </xmi:XMI>
