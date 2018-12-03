@@ -249,31 +249,13 @@ public interface ComtibcopoctestPackage extends EPackage
   int POC_META_DATA__FRIST = 5;
 
   /**
-   * The feature id for the '<em><b>Widervorlagen</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int POC_META_DATA__WIDERVORLAGEN = 6;
-
-  /**
-   * The feature id for the '<em><b>Task</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int POC_META_DATA__TASK = 7;
-
-  /**
    * The number of structural features of the '<em>poc Meta Data</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int POC_META_DATA_FEATURE_COUNT = 8;
+  int POC_META_DATA_FEATURE_COUNT = 6;
 
   /**
    * The meta object id for the '<em>AHV Nummer poc Meta Data Type</em>' data type.
@@ -316,16 +298,6 @@ public interface ComtibcopoctestPackage extends EPackage
   int PARTNER_ID_POC_META_DATA_TYPE = 6;
 
   /**
-   * The meta object id for the '<em>task poc Meta Data Type</em>' data type.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see java.lang.String
-   * @see com.example.comtibcopoctest.impl.ComtibcopoctestPackageImpl#gettask_pocMetaDataType()
-   * @generated
-   */
-  int TASK_POC_META_DATA_TYPE = 7;
-
-  /**
    * The meta object id for the '<em>WF Case ID poc Meta Data Type</em>' data type.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -333,7 +305,7 @@ public interface ComtibcopoctestPackage extends EPackage
    * @see com.example.comtibcopoctest.impl.ComtibcopoctestPackageImpl#getWFCaseID_pocMetaDataType()
    * @generated
    */
-  int WF_CASE_ID_POC_META_DATA_TYPE = 8;
+  int WF_CASE_ID_POC_META_DATA_TYPE = 7;
 
   /**
    * The meta object id for the '<em>WF Case ID poc DB Request Type</em>' data type.
@@ -343,7 +315,7 @@ public interface ComtibcopoctestPackage extends EPackage
    * @see com.example.comtibcopoctest.impl.ComtibcopoctestPackageImpl#getWFCaseID_pocDBRequestType()
    * @generated
    */
-  int WF_CASE_ID_POC_DB_REQUEST_TYPE = 9;
+  int WF_CASE_ID_POC_DB_REQUEST_TYPE = 8;
 
 
   /**
@@ -531,28 +503,6 @@ public interface ComtibcopoctestPackage extends EPackage
   EAttribute getpocMetaData_Frist();
 
   /**
-   * Returns the meta object for the attribute '{@link com.example.comtibcopoctest.pocMetaData#getWidervorlagen <em>Widervorlagen</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Widervorlagen</em>'.
-   * @see com.example.comtibcopoctest.pocMetaData#getWidervorlagen()
-   * @see #getpocMetaData()
-   * @generated
-   */
-  EAttribute getpocMetaData_Widervorlagen();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.example.comtibcopoctest.pocMetaData#getTask <em>Task</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Task</em>'.
-   * @see com.example.comtibcopoctest.pocMetaData#getTask()
-   * @see #getpocMetaData()
-   * @generated
-   */
-  EAttribute getpocMetaData_Task();
-
-  /**
    * Returns the meta object for data type '{@link java.lang.String <em>AHV Nummer poc Meta Data Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -599,18 +549,6 @@ public interface ComtibcopoctestPackage extends EPackage
    * @generated
    */
   EDataType getpartnerID_pocMetaDataType();
-
-  /**
-   * Returns the meta object for data type '{@link java.lang.String <em>task poc Meta Data Type</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for data type '<em>task poc Meta Data Type</em>'.
-   * @see java.lang.String
-   * @model instanceClass="java.lang.String"
-   *        extendedMetaData="name='task_pocMetaData_._type' baseType='http://www.eclipse.org/emf/2003/XMLType#string' maxLength='50'"
-   * @generated
-   */
-  EDataType gettask_pocMetaDataType();
 
   /**
    * Returns the meta object for data type '{@link java.lang.String <em>WF Case ID poc Meta Data Type</em>}'.
@@ -802,22 +740,6 @@ public interface ComtibcopoctestPackage extends EPackage
     EAttribute POC_META_DATA__FRIST = eINSTANCE.getpocMetaData_Frist();
 
     /**
-     * The meta object literal for the '<em><b>Widervorlagen</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute POC_META_DATA__WIDERVORLAGEN = eINSTANCE.getpocMetaData_Widervorlagen();
-
-    /**
-     * The meta object literal for the '<em><b>Task</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute POC_META_DATA__TASK = eINSTANCE.getpocMetaData_Task();
-
-    /**
      * The meta object literal for the '<em>AHV Nummer poc Meta Data Type</em>' data type.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -856,16 +778,6 @@ public interface ComtibcopoctestPackage extends EPackage
      * @generated
      */
     EDataType PARTNER_ID_POC_META_DATA_TYPE = eINSTANCE.getpartnerID_pocMetaDataType();
-
-    /**
-     * The meta object literal for the '<em>task poc Meta Data Type</em>' data type.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see java.lang.String
-     * @see com.example.comtibcopoctest.impl.ComtibcopoctestPackageImpl#gettask_pocMetaDataType()
-     * @generated
-     */
-    EDataType TASK_POC_META_DATA_TYPE = eINSTANCE.gettask_pocMetaDataType();
 
     /**
      * The meta object literal for the '<em>WF Case ID poc Meta Data Type</em>' data type.

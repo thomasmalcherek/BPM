@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" generatorSource="com.tibco.poc.test.xpdl#_H9gJx-yeEeieuqYotrFSPg?p=com.tibco.poc.test%26s=Process%20Packages%26t=xpdl2%3aActivity%26q=comtibcopoctest%3a%3aProcess_GetData%26n=AnzeigeDaten?" formatVersion="4.0.0">
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" formatVersion="4.0.0">
   <form:externalResources>
     <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
     <form:externalResource name="resource.form" uri="comtibcopoctest/MainProcess/AnzeigeDaten/AnzeigeDaten.properties" sfRelative="true" internal="true" localized="true"/>
   </form:externalResources>
   <form:dataModel>
-    <form:parameter generated="true" generatorSource="com.tibco.poc.test.xpdl#_guSi0OyeEeieuqYotrFSPg?p=com.tibco.poc.test%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=comtibcopoctest%3a%3aProcess_GetData%26n=MetaData?" name="data.MetaData" label="MetaData" dataType="uml:Class comtibcopoctest.bom#_ht-Q--muEeiwvIivo0dWbg?p=com.tibco.poc.test%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comtibcopoctest%26n=pocMetaData?" type="com.example.comtibcopoctest::pocMetaData" isArray="false" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="com.tibco.poc.test.xpdl#_guSi0OyeEeieuqYotrFSPg?p=com.tibco.poc.test%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=comtibcopoctest%3a%3aProcess_GetData%26n=MetaData_GetData?" name="data.MetaData" label="MetaData" dataType="uml:Class comtibcopoctest.bom#_ht-Q--muEeiwvIivo0dWbg?p=com.tibco.poc.test%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comtibcopoctest%26n=pocMetaData?" type="com.example.comtibcopoctest::pocMetaData" isArray="false" inout="INOUT"/>
   </form:dataModel>
   <form:services/>
   <form:actions/>
@@ -64,7 +64,7 @@
     <form:defaults>
       <form:labelProperties position="top"/>
     </form:defaults>
-    <form:pane generated="true" generatorSource="com.tibco.poc.test.xpdl#_guSi0OyeEeieuqYotrFSPg?p=com.tibco.poc.test%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=comtibcopoctest%3a%3aProcess_GetData%26n=MetaData?" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class comtibcopoctest.bom#_ht-Q--muEeiwvIivo0dWbg?p=com.tibco.poc.test%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comtibcopoctest%26n=pocMetaData?" name="pane.MetaData" paneType="com.tibco.forms.panes.vertical">
+    <form:pane generated="true" generatorSource="com.tibco.poc.test.xpdl#_guSi0OyeEeieuqYotrFSPg?p=com.tibco.poc.test%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=comtibcopoctest%3a%3aProcess_GetData%26n=MetaData_GetData?" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class comtibcopoctest.bom#_ht-Q--muEeiwvIivo0dWbg?p=com.tibco.poc.test%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comtibcopoctest%26n=pocMetaData?" name="pane.MetaData" paneType="com.tibco.forms.panes.vertical">
       <form:label>MetaData</form:label>
       <form:hint></form:hint>
       <form:visible>true</form:visible>

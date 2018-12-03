@@ -31,8 +31,6 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link com.example.comtibcopoctest.impl.pocMetaDataImpl#getDokumentenArt <em>Dokumenten Art</em>}</li>
  *   <li>{@link com.example.comtibcopoctest.impl.pocMetaDataImpl#getKanton <em>Kanton</em>}</li>
  *   <li>{@link com.example.comtibcopoctest.impl.pocMetaDataImpl#getFrist <em>Frist</em>}</li>
- *   <li>{@link com.example.comtibcopoctest.impl.pocMetaDataImpl#getWidervorlagen <em>Widervorlagen</em>}</li>
- *   <li>{@link com.example.comtibcopoctest.impl.pocMetaDataImpl#getTask <em>Task</em>}</li>
  * </ul>
  * </p>
  *
@@ -160,46 +158,6 @@ public class pocMetaDataImpl extends EObjectImpl implements pocMetaData
    * @ordered
    */
   protected XMLGregorianCalendar frist = FRIST_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getWidervorlagen() <em>Widervorlagen</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getWidervorlagen()
-   * @generated
-   * @ordered
-   */
-  protected static final Boolean WIDERVORLAGEN_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getWidervorlagen() <em>Widervorlagen</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getWidervorlagen()
-   * @generated
-   * @ordered
-   */
-  protected Boolean widervorlagen = WIDERVORLAGEN_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #getTask() <em>Task</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getTask()
-   * @generated
-   * @ordered
-   */
-  protected static final String TASK_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getTask() <em>Task</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getTask()
-   * @generated
-   * @ordered
-   */
-  protected String task = TASK_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -377,52 +335,6 @@ public class pocMetaDataImpl extends EObjectImpl implements pocMetaData
    * <!-- end-user-doc -->
    * @generated
    */
-  public Boolean getWidervorlagen()
-  {
-    return widervorlagen;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setWidervorlagen(Boolean newWidervorlagen)
-  {
-    Boolean oldWidervorlagen = widervorlagen;
-    widervorlagen = newWidervorlagen;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ComtibcopoctestPackage.POC_META_DATA__WIDERVORLAGEN, oldWidervorlagen, widervorlagen));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public String getTask()
-  {
-    return task;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setTask(String newTask)
-  {
-    String oldTask = task;
-    task = newTask;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ComtibcopoctestPackage.POC_META_DATA__TASK, oldTask, task));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
@@ -440,10 +352,6 @@ public class pocMetaDataImpl extends EObjectImpl implements pocMetaData
         return getKanton();
       case ComtibcopoctestPackage.POC_META_DATA__FRIST:
         return getFrist();
-      case ComtibcopoctestPackage.POC_META_DATA__WIDERVORLAGEN:
-        return getWidervorlagen();
-      case ComtibcopoctestPackage.POC_META_DATA__TASK:
-        return getTask();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -475,12 +383,6 @@ public class pocMetaDataImpl extends EObjectImpl implements pocMetaData
         return;
       case ComtibcopoctestPackage.POC_META_DATA__FRIST:
         setFrist((XMLGregorianCalendar)newValue);
-        return;
-      case ComtibcopoctestPackage.POC_META_DATA__WIDERVORLAGEN:
-        setWidervorlagen((Boolean)newValue);
-        return;
-      case ComtibcopoctestPackage.POC_META_DATA__TASK:
-        setTask((String)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -514,12 +416,6 @@ public class pocMetaDataImpl extends EObjectImpl implements pocMetaData
       case ComtibcopoctestPackage.POC_META_DATA__FRIST:
         setFrist(FRIST_EDEFAULT);
         return;
-      case ComtibcopoctestPackage.POC_META_DATA__WIDERVORLAGEN:
-        setWidervorlagen(WIDERVORLAGEN_EDEFAULT);
-        return;
-      case ComtibcopoctestPackage.POC_META_DATA__TASK:
-        setTask(TASK_EDEFAULT);
-        return;
     }
     super.eUnset(featureID);
   }
@@ -546,10 +442,6 @@ public class pocMetaDataImpl extends EObjectImpl implements pocMetaData
         return KANTON_EDEFAULT == null ? kanton != null : !KANTON_EDEFAULT.equals(kanton);
       case ComtibcopoctestPackage.POC_META_DATA__FRIST:
         return FRIST_EDEFAULT == null ? frist != null : !FRIST_EDEFAULT.equals(frist);
-      case ComtibcopoctestPackage.POC_META_DATA__WIDERVORLAGEN:
-        return WIDERVORLAGEN_EDEFAULT == null ? widervorlagen != null : !WIDERVORLAGEN_EDEFAULT.equals(widervorlagen);
-      case ComtibcopoctestPackage.POC_META_DATA__TASK:
-        return TASK_EDEFAULT == null ? task != null : !TASK_EDEFAULT.equals(task);
     }
     return super.eIsSet(featureID);
   }
@@ -577,10 +469,6 @@ public class pocMetaDataImpl extends EObjectImpl implements pocMetaData
     result.append(kanton);
     result.append(", frist: ");
     result.append(frist);
-    result.append(", widervorlagen: ");
-    result.append(widervorlagen);
-    result.append(", task: ");
-    result.append(task);
     result.append(')');
     return result.toString();
   }
@@ -624,13 +512,5 @@ public class pocMetaDataImpl extends EObjectImpl implements pocMetaData
   {
     // Call the default set, passing in the converted value
     setKanton(BDSTypeConversions.convertToString(value));
-  }
-  /**
-   * @generated
-   */
-  public void setTask(Object value)
-  {
-    // Call the default set, passing in the converted value
-    setTask(BDSTypeConversions.convertToString(value));
   }
 } //pocMetaDataImpl

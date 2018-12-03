@@ -94,13 +94,6 @@ public class ComtibcopoctestPackageImpl extends EPackageImpl implements Comtibco
    * <!-- end-user-doc -->
    * @generated
    */
-  private EDataType task_pocMetaDataTypeEDataType = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   private EDataType wfCaseID_pocMetaDataTypeEDataType = null;
 
   /**
@@ -362,26 +355,6 @@ public class ComtibcopoctestPackageImpl extends EPackageImpl implements Comtibco
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getpocMetaData_Widervorlagen()
-  {
-    return (EAttribute)pocMetaDataEClass.getEStructuralFeatures().get(6);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getpocMetaData_Task()
-  {
-    return (EAttribute)pocMetaDataEClass.getEStructuralFeatures().get(7);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EDataType getAHVNummer_pocMetaDataType()
   {
     return ahvNummer_pocMetaDataTypeEDataType;
@@ -415,16 +388,6 @@ public class ComtibcopoctestPackageImpl extends EPackageImpl implements Comtibco
   public EDataType getpartnerID_pocMetaDataType()
   {
     return partnerID_pocMetaDataTypeEDataType;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EDataType gettask_pocMetaDataType()
-  {
-    return task_pocMetaDataTypeEDataType;
   }
 
   /**
@@ -496,15 +459,12 @@ public class ComtibcopoctestPackageImpl extends EPackageImpl implements Comtibco
     createEAttribute(pocMetaDataEClass, POC_META_DATA__DOKUMENTEN_ART);
     createEAttribute(pocMetaDataEClass, POC_META_DATA__KANTON);
     createEAttribute(pocMetaDataEClass, POC_META_DATA__FRIST);
-    createEAttribute(pocMetaDataEClass, POC_META_DATA__WIDERVORLAGEN);
-    createEAttribute(pocMetaDataEClass, POC_META_DATA__TASK);
 
     // Create data types
     ahvNummer_pocMetaDataTypeEDataType = createEDataType(AHV_NUMMER_POC_META_DATA_TYPE);
     dokumentenArt_pocMetaDataTypeEDataType = createEDataType(DOKUMENTEN_ART_POC_META_DATA_TYPE);
     kanton_pocMetaDataTypeEDataType = createEDataType(KANTON_POC_META_DATA_TYPE);
     partnerID_pocMetaDataTypeEDataType = createEDataType(PARTNER_ID_POC_META_DATA_TYPE);
-    task_pocMetaDataTypeEDataType = createEDataType(TASK_POC_META_DATA_TYPE);
     wfCaseID_pocMetaDataTypeEDataType = createEDataType(WF_CASE_ID_POC_META_DATA_TYPE);
     wfCaseID_pocDBRequestTypeEDataType = createEDataType(WF_CASE_ID_POC_DB_REQUEST_TYPE);
   }
@@ -562,15 +522,12 @@ public class ComtibcopoctestPackageImpl extends EPackageImpl implements Comtibco
     initEAttribute(getpocMetaData_DokumentenArt(), this.getdokumentenArt_pocMetaDataType(), "dokumentenArt", null, 0, 1, pocMetaData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getpocMetaData_Kanton(), this.getkanton_pocMetaDataType(), "kanton", null, 1, 1, pocMetaData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getpocMetaData_Frist(), theXMLTypePackage.getDateTime(), "frist", null, 0, 1, pocMetaData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getpocMetaData_Widervorlagen(), theXMLTypePackage.getBooleanObject(), "widervorlagen", null, 0, 1, pocMetaData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getpocMetaData_Task(), this.gettask_pocMetaDataType(), "task", null, 1, 1, pocMetaData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Initialize data types
     initEDataType(ahvNummer_pocMetaDataTypeEDataType, String.class, "AHVNummer_pocMetaDataType", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
     initEDataType(dokumentenArt_pocMetaDataTypeEDataType, String.class, "dokumentenArt_pocMetaDataType", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
     initEDataType(kanton_pocMetaDataTypeEDataType, String.class, "kanton_pocMetaDataType", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
     initEDataType(partnerID_pocMetaDataTypeEDataType, String.class, "partnerID_pocMetaDataType", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
-    initEDataType(task_pocMetaDataTypeEDataType, String.class, "task_pocMetaDataType", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
     initEDataType(wfCaseID_pocMetaDataTypeEDataType, String.class, "WFCaseID_pocMetaDataType", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
     initEDataType(wfCaseID_pocDBRequestTypeEDataType, String.class, "WFCaseID_pocDBRequestType", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 
@@ -766,31 +723,6 @@ public class ComtibcopoctestPackageImpl extends EPackageImpl implements Comtibco
        {
        "kind", "element",
        "name", "frist"
-       });		
-    addAnnotation
-      (getpocMetaData_Widervorlagen(), 
-       source, 
-       new String[] 
-       {
-       "kind", "element",
-       "name", "widervorlagen"
-       });		
-    addAnnotation
-      (getpocMetaData_Task(), 
-       source, 
-       new String[] 
-       {
-       "kind", "element",
-       "name", "task"
-       });		
-    addAnnotation
-      (task_pocMetaDataTypeEDataType, 
-       source, 
-       new String[] 
-       {
-       "name", "task_pocMetaData_._type",
-       "baseType", "http://www.eclipse.org/emf/2003/XMLType#string",
-       "maxLength", "50"
        });		
     addAnnotation
       (wfCaseID_pocMetaDataTypeEDataType, 

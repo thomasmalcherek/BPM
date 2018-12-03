@@ -37,8 +37,6 @@ theClass.ATTR_PARTNERID = "partnerID";
 theClass.ATTR_DOKUMENTENART = "dokumentenArt";
 theClass.ATTR_KANTON = "kanton";
 theClass.ATTR_FRIST = "frist";
-theClass.ATTR_WIDERVORLAGEN = "widervorlagen";
-theClass.ATTR_TASK = "task";
 
 theClass.TYPE_ARRAY = new Object();
 theClass.TYPE_ARRAY[theClass.ATTR_WFCASEID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
@@ -47,14 +45,12 @@ theClass.TYPE_ARRAY[theClass.ATTR_PARTNERID] = {type:"BomPrimitiveTypes.Text", b
 theClass.TYPE_ARRAY[theClass.ATTR_DOKUMENTENART] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_KANTON] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_FRIST] = {type:"BomPrimitiveTypes.DateTime", baseType:"BomPrimitiveTypes.DateTime", primitive:true, multivalued:false, required:false, defaultValue:""};
-theClass.TYPE_ARRAY[theClass.ATTR_WIDERVORLAGEN] = {type:"BomPrimitiveTypes.Boolean", baseType:"BomPrimitiveTypes.Boolean", primitive:true, multivalued:false, required:false, defaultValue:""};
-theClass.TYPE_ARRAY[theClass.ATTR_TASK] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
 
-theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_WFCASEID, theClass.ATTR_AHVNUMMER, theClass.ATTR_PARTNERID, theClass.ATTR_DOKUMENTENART, theClass.ATTR_KANTON, theClass.ATTR_FRIST, theClass.ATTR_WIDERVORLAGEN, theClass.ATTR_TASK];
+theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_WFCASEID, theClass.ATTR_AHVNUMMER, theClass.ATTR_PARTNERID, theClass.ATTR_DOKUMENTENART, theClass.ATTR_KANTON, theClass.ATTR_FRIST];
 
 theClass.COMPOSITE_ATTRIBUTE_NAMES = [];
 
-theClass.ATTRIBUTE_NAMES = [theClass.ATTR_WFCASEID, theClass.ATTR_AHVNUMMER, theClass.ATTR_PARTNERID, theClass.ATTR_DOKUMENTENART, theClass.ATTR_KANTON, theClass.ATTR_FRIST, theClass.ATTR_WIDERVORLAGEN, theClass.ATTR_TASK];
+theClass.ATTRIBUTE_NAMES = [theClass.ATTR_WFCASEID, theClass.ATTR_AHVNUMMER, theClass.ATTR_PARTNERID, theClass.ATTR_DOKUMENTENART, theClass.ATTR_KANTON, theClass.ATTR_FRIST];
 
 theClass.getName = function() {
     return "com.example.comtibcopoctest.pocMetaData";
@@ -147,24 +143,6 @@ theClass.prototype.getFrist = function(useInternal) {
 
 theClass.prototype.setFrist = function(frist) {
     this._setPrimitiveAttribute(this.loader.getClass("com.example.comtibcopoctest.pocMetaData").ATTR_FRIST, frist);
-};
-
-
-theClass.prototype.getWidervorlagen = function(useInternal) {
-    return this._getPrimitiveAttribute(this.loader.getClass("com.example.comtibcopoctest.pocMetaData").ATTR_WIDERVORLAGEN, useInternal);
-};
-
-theClass.prototype.setWidervorlagen = function(widervorlagen) {
-    this._setPrimitiveAttribute(this.loader.getClass("com.example.comtibcopoctest.pocMetaData").ATTR_WIDERVORLAGEN, widervorlagen);
-};
-
-
-theClass.prototype.getTask = function(useInternal) {
-    return this._getPrimitiveAttribute(this.loader.getClass("com.example.comtibcopoctest.pocMetaData").ATTR_TASK, useInternal);
-};
-
-theClass.prototype.setTask = function(task) {
-    this._setPrimitiveAttribute(this.loader.getClass("com.example.comtibcopoctest.pocMetaData").ATTR_TASK, task);
 };
 
 theClass.getAttributeNames = function() {

@@ -1,10 +1,10 @@
 {"bindings":[],"rules":[],"name":"Escalation_after_3_minutes","type":
-  "form","reverseBindings":[],"formModelId":"_tTmKUPcOEei7Xb3kYsEHgg",
+  "form","reverseBindings":[],"formModelId":"_H-htIPcVEeivmfZ-Q8QDTA",
   "formPathSegmentCount":5,"formatVersion":"2.7.0.002","bomJSNames":[
     "com.example.comtibcopoctest.ComtibcopoctestPackage",
     "com.example.comtibcopoctest.ComtibcopoctestFactory",
     "com.example.comtibcopoctest.pocMetaData"],"styleName":null,
-  "genCssClass":"ffa35ac1a-de11-45a6-b2c3-e8a150aa85f2","labelPosition":
+  "genCssClass":"fcd4e9b30-2791-4cb7-a8df-bb6622746e88","labelPosition":
   "top","externalResources":[{"name":"","uri":
       "Escalation_after_3_minutes.gwt.js","localized":false},{"name":null,
       "uri":"Escalation_after_3_minutes.gwt.css","localized":false},{"name":
@@ -22,9 +22,7 @@
       "control.MetaData_partnerID","type":"control"},{"name":
       "control.MetaData_dokumentenArt","type":"control"},{"name":
       "control.MetaData_kanton","type":"control"},{"name":
-      "control.MetaData_frist","type":"control"},{"name":
-      "control.MetaData_widervorlagen","type":"control"},{"name":
-      "control.MetaData_task","type":"control"},{"name":"control.cancel",
+      "control.MetaData_frist","type":"control"},{"name":"control.cancel",
       "type":"control"},{"name":"control.close","type":"control"},{"name":
       "control.submit","type":"control"}],"rootPaneRefs":[{"name":
       "pane.content","type":"pane"},{"name":"pane.toolbar","type":"pane"},{
@@ -110,29 +108,8 @@
       "alwaysRenderControl":false,"propSetList":false,
       "propSetMaxVisibleRows":0,"propSetMinRelative":true,
       "propSetMaxRelative":true,"propSetYearMin":-20,"propSetYearMax":20,
-      "propSetMinuteIncrement":15},{"bindings":[],"rules":[],"name":
-      "control.MetaData_widervorlagen","type":"control","reverseBindings":[{
-          "name":"pane.MetaData","type":"pane","sourceFeature":["value",
-            "widervorlagen"],"destinationFeature":["value"]}],
-      "componentType":"com.tibco.forms.controls.checkbox","shortLabelRef":
-      "","labelRef":"","hintRef":"","enabled":true,"visible":true,
-      "styleName":"","validations":[],"inheritsDeferInitialization":false,
-      "readOnly":true,"required":false,"value":[],"tabIndex":0,
-      "alwaysRenderControl":false},{"bindings":[],"rules":[],"name":
-      "control.MetaData_task","type":"control","reverseBindings":[{"name":
-          "pane.MetaData","type":"pane","sourceFeature":["value","task"],
-          "destinationFeature":["value"]}],"componentType":
-      "com.tibco.forms.controls.textinput","shortLabelRef":"","labelRef":
-      "","hintRef":"","enabled":true,"visible":true,"styleName":"",
-      "validations":[{"name":"MetaData_task__length","message":"",
-          "messageRef":"resource.common.validation_text_length","when":
-          "oncontrolchange","list":false}],"inheritsDeferInitialization":
-      false,"readOnly":true,"required":false,"value":[],"tabIndex":0,
-      "alwaysRenderControl":false,"propSetList":false,
-      "propSetMaxVisibleRows":0,"propSetTextBoxBaseMaxLen":50,
-      "propSetTextDisLen":40,"propSetTextSecret":false,"propSetTextNumeric":
-      false,"propSetFormat":"","propSetFormatRef":""},{"bindings":[],"rules":
-      [{"name":"cancel","trigger":"select","cancelOnError":false}],"name":
+      "propSetMinuteIncrement":15},{"bindings":[],"rules":[{"name":
+          "cancel","trigger":"select","cancelOnError":false}],"name":
       "control.cancel","type":"control","reverseBindings":[],"componentType":
       "com.tibco.forms.controls.button","shortLabelRef":"","labelRef":"",
       "hintRef":"","enabled":true,"visible":true,"styleName":"",
@@ -165,10 +142,6 @@
             "value","kanton"],"destinationFeature":["value"]},{"name":
           "control.MetaData_frist","type":"control","sourceFeature":[
             "value","frist"],"destinationFeature":["value"]},{"name":
-          "control.MetaData_widervorlagen","type":"control","sourceFeature":[
-            "value","widervorlagen"],"destinationFeature":["value"]},{"name":
-          "control.MetaData_task","type":"control","sourceFeature":[
-            "value","task"],"destinationFeature":["value"]},{"name":
           "data.MetaData","type":"data","sourceFeature":["value"],
           "destinationFeature":["value"]}],"rules":[],"name":
       "pane.MetaData","type":"pane","reverseBindings":[{"name":
@@ -186,9 +159,7 @@
           "control.MetaData_partnerID","type":"control"},{"name":
           "control.MetaData_dokumentenArt","type":"control"},{"name":
           "control.MetaData_kanton","type":"control"},{"name":
-          "control.MetaData_frist","type":"control"},{"name":
-          "control.MetaData_widervorlagen","type":"control"},{"name":
-          "control.MetaData_task","type":"control"}],"staticRendering":
+          "control.MetaData_frist","type":"control"}],"staticRendering":
       false,"textOnly":false,"deferRendering":false,"deferInitialization":
       false,"staticCustomContent":{}},{"bindings":[],"rules":[],"name":
       "pane.content","type":"pane","reverseBindings":[],"componentType":

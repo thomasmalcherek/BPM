@@ -19,13 +19,13 @@
           <Property xsi:type="amxdata:Property" name="JmsOutboundDestination" value="JMSDestination_BPM_BW6"/>
         </Binding>
       </PromotedReference>
-      <DAA xsi:type="amxdata:DAA" location="C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test\.bpm\com.tibco.poc.test.daa"/>
+      <ApplicationTemplate xsi:type="amxdata_reference:ApplicationTemplate_reference" name="com.tibco.poc.test" version="1.0.0.20181203170458985"/>
       <TargetApplication xsi:type="amxdata_reference:Application_reference" name="amx.bpm.app"/>
     </Application>
   </Environment>
   <DAA xsi:type="amxdata:DAA" location="C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test\.bpm\com.tibco.poc.test.daa">
-    <importFeatureIdentifier>com.tibco.poc.test.model.bds:1.0.0.20181203161849790</importFeatureIdentifier>
+    <importFeatureIdentifier>com.tibco.poc.test.model.bds:1.0.0.20181203170458985</importFeatureIdentifier>
   </DAA>
-  <Feature xsi:type="amxdata_base:FeatureID" componentID="com.tibco.poc.test.model.bds" version="1.0.0.20181203161849790"/>
+  <Feature xsi:type="amxdata_base:FeatureID" componentID="com.tibco.poc.test.model.bds" version="1.0.0.20181203170458985"/>
   <AppTemplate xsi:type="amxdata_base:AppTemplateID" name="com.tibco.poc.test" version="1.0.0"/>
 </amxdata_base:Enterprise>

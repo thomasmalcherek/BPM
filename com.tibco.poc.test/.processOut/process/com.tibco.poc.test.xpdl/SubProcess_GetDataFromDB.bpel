@@ -42,7 +42,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_uh1fEPcOEei7Xb3kYsEHgg">
+    <bpws:flow name="_BX_flow_LUHv8PcVEeivmfZ-Q8QDTA">
         <bpws:links>
             <bpws:link name="ServiceTask to Gebugging_GetData" tibex:xpdlId="_gUDSQPJOEeif9tfFlBJi7Q"/>
             <bpws:link name="StartEvent to ServiceTask" tibex:xpdlId="_3cPzYOycEeieuqYotrFSPg"/>
@@ -56,8 +56,8 @@
                     <bpws:source linkName="StartEvent to ServiceTask"/>
                 </bpws:sources>
                 <tibex:parameters>
-                    <parameterDescription mode="Out" name="SubProcessMetaData"/>
                     <parameterDescription mandatory="yes" mode="In" name="WfCaseID"/>
+                    <parameterDescription mode="Out" name="SubProcessMetaData"/>
                 </tibex:parameters>
                 <tibex:eventSource>
                     <tibex:startEvent eventType="Default"/>

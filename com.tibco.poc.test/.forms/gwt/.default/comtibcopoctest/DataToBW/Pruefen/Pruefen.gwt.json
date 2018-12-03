@@ -1,10 +1,10 @@
 {"bindings":[],"rules":[],"name":"Pruefen","type":"form","reverseBindings":[],
-  "formModelId":"_tSsycPcOEei7Xb3kYsEHgg","formPathSegmentCount":5,
+  "formModelId":"_H9UzQPcVEeivmfZ-Q8QDTA","formPathSegmentCount":5,
   "formatVersion":"2.7.0.002","bomJSNames":[
     "com.example.comtibcopoctest.ComtibcopoctestPackage",
     "com.example.comtibcopoctest.ComtibcopoctestFactory",
     "com.example.comtibcopoctest.pocMetaData"],"styleName":null,
-  "genCssClass":"f93878fc4-8b14-4abf-995e-a72d73500faf","labelPosition":
+  "genCssClass":"f11b86c70-7fbe-4ae5-abe1-e5bfd1cadd35","labelPosition":
   "top","externalResources":[{"name":"","uri":"Pruefen.gwt.js","localized":
       false},{"name":null,"uri":"Pruefen.gwt.css","localized":false},{"name":
       "resource.common","uri":
@@ -36,8 +36,6 @@
       "control.MetaData_dokumentenArt","type":"control"},{"name":
       "control.MetaData_kanton","type":"control"},{"name":
       "control.MetaData_frist","type":"control"},{"name":
-      "control.MetaData_widervorlagen","type":"control"},{"name":
-      "control.MetaData_task","type":"control"},{"name":
       "control.WF_CASE_ID","type":"control"},{"name":
       "control.Wiedervorlage","type":"control"},{"name":"control.Task",
       "type":"control"},{"name":"control.cancel","type":"control"},{"name":
@@ -125,37 +123,15 @@
       "alwaysRenderControl":false,"propSetList":false,
       "propSetMaxVisibleRows":0,"propSetMinRelative":true,
       "propSetMaxRelative":true,"propSetYearMin":-20,"propSetYearMax":20,
-      "propSetMinuteIncrement":15},{"bindings":[],"rules":[],"name":
-      "control.MetaData_widervorlagen","type":"control","reverseBindings":[{
-          "name":"pane.MetaData","type":"pane","sourceFeature":["value",
-            "widervorlagen"],"destinationFeature":["value"]}],
-      "componentType":"com.tibco.forms.controls.checkbox","shortLabelRef":
+      "propSetMinuteIncrement":15},{"bindings":[{"name":"data.WF_CASE_ID",
+          "type":"data","sourceFeature":["value"],"destinationFeature":[
+            "value"]}],"rules":[],"name":"control.WF_CASE_ID","type":
+      "control","reverseBindings":[{"name":"data.WF_CASE_ID","type":"data",
+          "sourceFeature":["value"],"destinationFeature":["value"]}],
+      "componentType":"com.tibco.forms.controls.textinput","shortLabelRef":
       "","labelRef":"","hintRef":"","enabled":true,"visible":true,
-      "styleName":"","validations":[],"inheritsDeferInitialization":false,
-      "readOnly":true,"required":false,"value":[],"tabIndex":0,
-      "alwaysRenderControl":false},{"bindings":[],"rules":[],"name":
-      "control.MetaData_task","type":"control","reverseBindings":[{"name":
-          "pane.MetaData","type":"pane","sourceFeature":["value","task"],
-          "destinationFeature":["value"]}],"componentType":
-      "com.tibco.forms.controls.textinput","shortLabelRef":"","labelRef":
-      "","hintRef":"","enabled":true,"visible":true,"styleName":"",
-      "validations":[{"name":"MetaData_task__length","message":"",
-          "messageRef":"resource.common.validation_text_length","when":
-          "oncontrolchange","list":false}],"inheritsDeferInitialization":
-      false,"readOnly":true,"required":false,"value":[],"tabIndex":0,
-      "alwaysRenderControl":false,"propSetList":false,
-      "propSetMaxVisibleRows":0,"propSetTextBoxBaseMaxLen":50,
-      "propSetTextDisLen":40,"propSetTextSecret":false,"propSetTextNumeric":
-      false,"propSetFormat":"","propSetFormatRef":""},{"bindings":[{"name":
-          "data.WF_CASE_ID","type":"data","sourceFeature":["value"],
-          "destinationFeature":["value"]}],"rules":[],"name":
-      "control.WF_CASE_ID","type":"control","reverseBindings":[{"name":
-          "data.WF_CASE_ID","type":"data","sourceFeature":["value"],
-          "destinationFeature":["value"]}],"componentType":
-      "com.tibco.forms.controls.textinput","shortLabelRef":"","labelRef":
-      "","hintRef":"","enabled":true,"visible":true,"styleName":"",
-      "validations":[{"name":"WF_CASE_ID__length","message":"","messageRef":
-          "resource.common.validation_text_length","when":
+      "styleName":"","validations":[{"name":"WF_CASE_ID__length","message":
+          "","messageRef":"resource.common.validation_text_length","when":
           "oncontrolchange","list":false}],"inheritsDeferInitialization":
       false,"readOnly":false,"required":false,"value":[],"tabIndex":0,
       "alwaysRenderControl":false,"propSetList":false,
@@ -219,10 +195,6 @@
             "value","kanton"],"destinationFeature":["value"]},{"name":
           "control.MetaData_frist","type":"control","sourceFeature":[
             "value","frist"],"destinationFeature":["value"]},{"name":
-          "control.MetaData_widervorlagen","type":"control","sourceFeature":[
-            "value","widervorlagen"],"destinationFeature":["value"]},{"name":
-          "control.MetaData_task","type":"control","sourceFeature":[
-            "value","task"],"destinationFeature":["value"]},{"name":
           "data.MetaData","type":"data","sourceFeature":["value"],
           "destinationFeature":["value"]}],"rules":[],"name":
       "pane.MetaData","type":"pane","reverseBindings":[{"name":
@@ -240,9 +212,7 @@
           "control.MetaData_partnerID","type":"control"},{"name":
           "control.MetaData_dokumentenArt","type":"control"},{"name":
           "control.MetaData_kanton","type":"control"},{"name":
-          "control.MetaData_frist","type":"control"},{"name":
-          "control.MetaData_widervorlagen","type":"control"},{"name":
-          "control.MetaData_task","type":"control"}],"staticRendering":
+          "control.MetaData_frist","type":"control"}],"staticRendering":
       false,"textOnly":false,"deferRendering":false,"deferInitialization":
       false,"staticCustomContent":{}},{"bindings":[],"rules":[],"name":
       "pane.content","type":"pane","reverseBindings":[],"componentType":

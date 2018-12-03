@@ -94,8 +94,6 @@ public class ComtibcopoctestFactoryImpl extends EFactoryImpl implements Comtibco
         return createkanton_pocMetaDataTypeFromString(eDataType, initialValue);
       case ComtibcopoctestPackage.PARTNER_ID_POC_META_DATA_TYPE:
         return createpartnerID_pocMetaDataTypeFromString(eDataType, initialValue);
-      case ComtibcopoctestPackage.TASK_POC_META_DATA_TYPE:
-        return createtask_pocMetaDataTypeFromString(eDataType, initialValue);
       case ComtibcopoctestPackage.WF_CASE_ID_POC_META_DATA_TYPE:
         return createWFCaseID_pocMetaDataTypeFromString(eDataType, initialValue);
       case ComtibcopoctestPackage.WF_CASE_ID_POC_DB_REQUEST_TYPE:
@@ -123,8 +121,6 @@ public class ComtibcopoctestFactoryImpl extends EFactoryImpl implements Comtibco
         return convertkanton_pocMetaDataTypeToString(eDataType, instanceValue);
       case ComtibcopoctestPackage.PARTNER_ID_POC_META_DATA_TYPE:
         return convertpartnerID_pocMetaDataTypeToString(eDataType, instanceValue);
-      case ComtibcopoctestPackage.TASK_POC_META_DATA_TYPE:
-        return converttask_pocMetaDataTypeToString(eDataType, instanceValue);
       case ComtibcopoctestPackage.WF_CASE_ID_POC_META_DATA_TYPE:
         return convertWFCaseID_pocMetaDataTypeToString(eDataType, instanceValue);
       case ComtibcopoctestPackage.WF_CASE_ID_POC_DB_REQUEST_TYPE:
@@ -243,26 +239,6 @@ public class ComtibcopoctestFactoryImpl extends EFactoryImpl implements Comtibco
    * @generated
    */
   public String convertpartnerID_pocMetaDataTypeToString(EDataType eDataType, Object instanceValue)
-  {
-    return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.STRING, instanceValue);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public String createtask_pocMetaDataTypeFromString(EDataType eDataType, String initialValue)
-  {
-    return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.STRING, initialValue);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public String converttask_pocMetaDataTypeToString(EDataType eDataType, Object instanceValue)
   {
     return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.STRING, instanceValue);
   }

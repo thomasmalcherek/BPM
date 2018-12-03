@@ -18,8 +18,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link com.example.comtibcopoctest.pocMetaData#getDokumentenArt <em>Dokumenten Art</em>}</li>
  *   <li>{@link com.example.comtibcopoctest.pocMetaData#getKanton <em>Kanton</em>}</li>
  *   <li>{@link com.example.comtibcopoctest.pocMetaData#getFrist <em>Frist</em>}</li>
- *   <li>{@link com.example.comtibcopoctest.pocMetaData#getWidervorlagen <em>Widervorlagen</em>}</li>
- *   <li>{@link com.example.comtibcopoctest.pocMetaData#getTask <em>Task</em>}</li>
  * </ul>
  * </p>
  *
@@ -193,60 +191,6 @@ public interface pocMetaData extends EObject
   void setFrist(XMLGregorianCalendar value);
 
   /**
-   * Returns the value of the '<em><b>Widervorlagen</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Widervorlagen</em>' attribute isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Widervorlagen</em>' attribute.
-   * @see #setWidervorlagen(Boolean)
-   * @see com.example.comtibcopoctest.ComtibcopoctestPackage#getpocMetaData_Widervorlagen()
-   * @model dataType="org.eclipse.emf.ecore.xml.type.BooleanObject"
-   *        extendedMetaData="kind='element' name='widervorlagen'"
-   * @generated
-   */
-  Boolean getWidervorlagen();
-
-  /**
-   * Sets the value of the '{@link com.example.comtibcopoctest.pocMetaData#getWidervorlagen <em>Widervorlagen</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Widervorlagen</em>' attribute.
-   * @see #getWidervorlagen()
-   * @generated
-   */
-  void setWidervorlagen(Boolean value);
-
-  /**
-   * Returns the value of the '<em><b>Task</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Task</em>' attribute isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Task</em>' attribute.
-   * @see #setTask(String)
-   * @see com.example.comtibcopoctest.ComtibcopoctestPackage#getpocMetaData_Task()
-   * @model dataType="com.example.comtibcopoctest.task_pocMetaDataType" required="true"
-   *        extendedMetaData="kind='element' name='task'"
-   * @generated
-   */
-  String getTask();
-
-  /**
-   * Sets the value of the '{@link com.example.comtibcopoctest.pocMetaData#getTask <em>Task</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Task</em>' attribute.
-   * @see #getTask()
-   * @generated
-   */
-  void setTask(String value);
-
-  /**
    * Automatic type conversion method
    *
    * @param value		The value to set
@@ -290,14 +234,5 @@ public interface pocMetaData extends EObject
    * @generated
    */
   void setKanton(Object value);
-
-  /**
-   * Automatic type conversion method
-   *
-   * @param value		The value to set
-   * @see #getTask()
-   * @generated
-   */
-  void setTask(Object value);
 
 } // pocMetaData

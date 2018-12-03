@@ -121,8 +121,6 @@ public class ComtibcopoctestValidator extends EObjectValidator
         return validatekanton_pocMetaDataType((String)value, diagnostics, context);
       case ComtibcopoctestPackage.PARTNER_ID_POC_META_DATA_TYPE:
         return validatepartnerID_pocMetaDataType((String)value, diagnostics, context);
-      case ComtibcopoctestPackage.TASK_POC_META_DATA_TYPE:
-        return validatetask_pocMetaDataType((String)value, diagnostics, context);
       case ComtibcopoctestPackage.WF_CASE_ID_POC_META_DATA_TYPE:
         return validateWFCaseID_pocMetaDataType((String)value, diagnostics, context);
       case ComtibcopoctestPackage.WF_CASE_ID_POC_DB_REQUEST_TYPE:
@@ -263,32 +261,6 @@ public class ComtibcopoctestValidator extends EObjectValidator
     boolean result = length <= 50;
     if (!result && diagnostics != null)
       reportMaxLengthViolation(ComtibcopoctestPackage.Literals.PARTNER_ID_POC_META_DATA_TYPE, partnerID_pocMetaDataType, length, 50, diagnostics, context);
-    return result;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validatetask_pocMetaDataType(String task_pocMetaDataType, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    boolean result = validatetask_pocMetaDataType_MaxLength(task_pocMetaDataType, diagnostics, context);
-    return result;
-  }
-
-  /**
-   * Validates the MaxLength constraint of '<em>task poc Meta Data Type</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validatetask_pocMetaDataType_MaxLength(String task_pocMetaDataType, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    int length = task_pocMetaDataType.length();
-    boolean result = length <= 50;
-    if (!result && diagnostics != null)
-      reportMaxLengthViolation(ComtibcopoctestPackage.Literals.TASK_POC_META_DATA_TYPE, task_pocMetaDataType, length, 50, diagnostics, context);
     return result;
   }
 
