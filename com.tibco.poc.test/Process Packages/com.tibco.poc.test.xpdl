@@ -166,6 +166,14 @@
           <xpdl2:DataType>
             <xpdl2:BasicType Type="BOOLEAN"/>
           </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_fkzt0PcIEei7Xb3kYsEHgg" xpdExt:DisplayName="Task" Name="Task" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
           <xpdl2:InitialValue></xpdl2:InitialValue>
         </xpdl2:DataField>
       </xpdl2:DataFields>
@@ -240,6 +248,9 @@
             <xpdExt:WorkItemPriority InitialPriority="50"/>
           </xpdExt:ActivityResourcePatterns>
           <xpdExt:Audit/>
+          <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
+            <xpdExt:AssociatedParameter FormalParam="MetaData" Mode="IN" Mandatory="true"/>
+          </xpdExt:AssociatedParameters>
         </xpdl2:Activity>
         <xpdl2:Activity Id="_cqHgAOmvEeiwvIivo0dWbg" Name="Pruefen" xpdExt:Visibility="Private" xpdExt:DisplayName="Pruefen" xpdExt:ActivityDeadlineEventId="_HSlXMOmuEeiwvIivo0dWbg">
           <xpdl2:Implementation>
@@ -430,48 +441,6 @@ WF_CASE_ID=MetaData.WFCaseID;&#xD;
             </xpdl2:NodeGraphicsInfo>
           </xpdl2:NodeGraphicsInfos>
         </xpdl2:Activity>
-        <xpdl2:Activity Id="_2Mc00PJBEeiCsd_Wv-RtYQ" Name="KontrolliereWF_Case_ID" IsATransaction="false" xpdExt:Visibility="Private" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="Kontrolliere WF_Case_ID">
-          <xpdl2:Implementation>
-            <xpdl2:Task>
-              <xpdl2:TaskUser Implementation="Unspecified">
-                <xpdl2:Performers>
-                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
-                </xpdl2:Performers>
-                <xpdl2:MessageIn Id="_3KDFgPJBEeiCsd_Wv-RtYQ"/>
-                <xpdl2:MessageOut Id="_3KDFgfJBEeiCsd_Wv-RtYQ"/>
-              </xpdl2:TaskUser>
-            </xpdl2:Task>
-          </xpdl2:Implementation>
-          <xpdl2:Performers>
-            <xpdl2:Performer>_HTZaEOmvEeiwvIivo0dWbg</xpdl2:Performer>
-          </xpdl2:Performers>
-          <xpdl2:TransitionRestrictions>
-            <xpdl2:TransitionRestriction>
-              <xpdl2:Join Type="Exclusive" ExclusiveType="Data"/>
-              <xpdl2:Split Type="Inclusive">
-                <xpdl2:TransitionRefs>
-                  <xpdl2:TransitionRef Id="_nmGyUPJIEeif9tfFlBJi7Q"/>
-                  <xpdl2:TransitionRef Id="_mrt7wPS7EeiKGqQzTYL1wQ"/>
-                </xpdl2:TransitionRefs>
-              </xpdl2:Split>
-            </xpdl2:TransitionRestriction>
-          </xpdl2:TransitionRestrictions>
-          <xpdl2:NodeGraphicsInfos>
-            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_RAFGVOmlEeiNa-ssr_CQIw" Width="96.0">
-              <xpdl2:Coordinates XCoordinate="544.0" YCoordinate="347.0"/>
-            </xpdl2:NodeGraphicsInfo>
-          </xpdl2:NodeGraphicsInfos>
-          <xpdl2:Extensions/>
-          <xpdExt:ActivityResourcePatterns>
-            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
-            <xpdExt:WorkItemPriority InitialPriority="50"/>
-          </xpdExt:ActivityResourcePatterns>
-          <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
-            <xpdExt:AssociatedParameter FormalParam="WF_CASE_ID" Mode="IN" Mandatory="true">
-              <xpdl2:Description></xpdl2:Description>
-            </xpdExt:AssociatedParameter>
-          </xpdExt:AssociatedParameters>
-        </xpdl2:Activity>
         <xpdl2:Activity Id="_nmGLQPJIEeif9tfFlBJi7Q" Name="ScriptTask" IsATransaction="false" xpdExt:Visibility="Private" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="Script Task">
           <xpdl2:Implementation>
             <xpdl2:Task>
@@ -480,6 +449,11 @@ WF_CASE_ID=MetaData.WFCaseID;&#xD;
               </xpdl2:TaskScript>
             </xpdl2:Task>
           </xpdl2:Implementation>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Join Type="Exclusive" ExclusiveType="Data"/>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
           <xpdl2:NodeGraphicsInfos>
             <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_RAFGVOmlEeiNa-ssr_CQIw" Width="96.0">
               <xpdl2:Coordinates XCoordinate="688.0" YCoordinate="347.0"/>
@@ -502,10 +476,17 @@ WF_CASE_ID=MetaData.WFCaseID;&#xD;
                     <xpdl2:Actual ScriptGrammar="JavaScript">Wiedervorlage</xpdl2:Actual>
                   </xpdExt:DataMapping>
                   <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="Task">
-                    <xpdl2:Actual ScriptGrammar="JavaScript">MetaData.task</xpdl2:Actual>
+                    <xpdl2:Actual ScriptGrammar="JavaScript">Task</xpdl2:Actual>
                   </xpdExt:DataMapping>
                 </xpdExt:DataMappings>
               </xpdExt:InputMappings>
+              <xpdExt:OutputMappings MapperContext="SubProcessToProcess" MappingDirection="OUT">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="Task">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">Task</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:OutputMappings>
             </xpdl2:SubFlow>
           </xpdl2:Implementation>
           <xpdl2:TransitionRestrictions>
@@ -514,7 +495,7 @@ WF_CASE_ID=MetaData.WFCaseID;&#xD;
                 <xpdl2:TransitionRefs>
                   <xpdl2:TransitionRef Id="_0RAFsPS7EeiKGqQzTYL1wQ"/>
                   <xpdl2:TransitionRef Id="_11kPwPS7EeiKGqQzTYL1wQ"/>
-                  <xpdl2:TransitionRef Id="_2VftAPS7EeiKGqQzTYL1wQ"/>
+                  <xpdl2:TransitionRef Id="_QgXo0PcJEei7Xb3kYsEHgg"/>
                 </xpdl2:TransitionRefs>
               </xpdl2:Split>
             </xpdl2:TransitionRestriction>
@@ -644,21 +625,6 @@ WF_CASE_ID=MetaData.WFCaseID;&#xD;
             <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
-        <xpdl2:Transition Id="_2Mdb4PJBEeiCsd_Wv-RtYQ" xpdExt:DisplayName="" Name="" From="_pPTV0fIpEeiCsd_Wv-RtYQ" To="_2Mc00PJBEeiCsd_Wv-RtYQ">
-          <xpdl2:ConnectorGraphicsInfos>
-            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
-            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
-              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
-              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
-            </xpdl2:ConnectorGraphicsInfo>
-          </xpdl2:ConnectorGraphicsInfos>
-        </xpdl2:Transition>
-        <xpdl2:Transition Id="_nmGyUPJIEeif9tfFlBJi7Q" xpdExt:DisplayName="" Name="" From="_2Mc00PJBEeiCsd_Wv-RtYQ" To="_nmGLQPJIEeif9tfFlBJi7Q">
-          <xpdl2:Condition Type="OTHERWISE"/>
-          <xpdl2:ConnectorGraphicsInfos>
-            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
-          </xpdl2:ConnectorGraphicsInfos>
-        </xpdl2:Transition>
         <xpdl2:Transition Id="_V0rtMPS7EeiKGqQzTYL1wQ" xpdExt:DisplayName="" Name="" From="_LrpnsPS7EeiKGqQzTYL1wQ" To="_4v6d0vS3EeiKGqQzTYL1wQ">
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
@@ -688,25 +654,8 @@ WF_CASE_ID=MetaData.WFCaseID;&#xD;
             </xpdl2:ConnectorGraphicsInfo>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
-        <xpdl2:Transition Id="_mrt7wPS7EeiKGqQzTYL1wQ" xpdExt:DisplayName="" Name="" From="_2Mc00PJBEeiCsd_Wv-RtYQ" To="_LrpnsPS7EeiKGqQzTYL1wQ">
-          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">Wiedervorlage==true;</xpdl2:Expression></xpdl2:Condition>
-          <xpdl2:ConnectorGraphicsInfos>
-            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
-              <xpdl2:Coordinates XCoordinate="-25.0" YCoordinate="120.0"/>
-              <xpdl2:Coordinates XCoordinate="378.0" YCoordinate="85.0"/>
-              <xpdl2:Coordinates XCoordinate="-219.0" YCoordinate="66.0"/>
-              <xpdl2:Coordinates XCoordinate="184.0" YCoordinate="31.0"/>
-              <xpdl2:Coordinates XCoordinate="-273.0" YCoordinate="34.0"/>
-              <xpdl2:Coordinates XCoordinate="130.0" YCoordinate="-1.0"/>
-            </xpdl2:ConnectorGraphicsInfo>
-            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
-              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
-              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
-            </xpdl2:ConnectorGraphicsInfo>
-          </xpdl2:ConnectorGraphicsInfos>
-        </xpdl2:Transition>
         <xpdl2:Transition Id="_0RAFsPS7EeiKGqQzTYL1wQ" xpdExt:DisplayName="" Name="" From="_4v6d0vS3EeiKGqQzTYL1wQ" To="_Yn-VsOmuEeiwvIivo0dWbg">
-          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript"></xpdl2:Expression></xpdl2:Condition>
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">Task==&quot;Erfassen&quot;;</xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
               <xpdl2:Coordinates XCoordinate="-108.0" YCoordinate="-132.0"/>
@@ -719,6 +668,7 @@ WF_CASE_ID=MetaData.WFCaseID;&#xD;
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
         <xpdl2:Transition Id="_11kPwPS7EeiKGqQzTYL1wQ" xpdExt:DisplayName="" Name="" From="_4v6d0vS3EeiKGqQzTYL1wQ" To="_cqHgAOmvEeiwvIivo0dWbg">
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">Task==&quot;Pruefen&quot;;</xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
             <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition">
@@ -730,12 +680,27 @@ WF_CASE_ID=MetaData.WFCaseID;&#xD;
             </xpdl2:ConnectorGraphicsInfo>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
-        <xpdl2:Transition Id="_2VftAPS7EeiKGqQzTYL1wQ" xpdExt:DisplayName="" Name="" From="_4v6d0vS3EeiKGqQzTYL1wQ" To="_2Mc00PJBEeiCsd_Wv-RtYQ">
+        <xpdl2:Transition Id="_QgXo0PcJEei7Xb3kYsEHgg" xpdExt:DisplayName="" Name="" From="_4v6d0vS3EeiKGqQzTYL1wQ" To="_nmGLQPJIEeif9tfFlBJi7Q">
+          <xpdl2:Condition Type="OTHERWISE"/>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
-              <xpdl2:Coordinates XCoordinate="402.0" YCoordinate="-1.0"/>
-              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="130.0"/>
+              <xpdl2:Coordinates XCoordinate="28.0" YCoordinate="64.0"/>
+              <xpdl2:Coordinates XCoordinate="-526.0" YCoordinate="163.0"/>
+              <xpdl2:Coordinates XCoordinate="315.0" YCoordinate="64.0"/>
+              <xpdl2:Coordinates XCoordinate="-239.0" YCoordinate="163.0"/>
             </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="32.8125" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_iI3JgPcJEei7Xb3kYsEHgg" xpdExt:DisplayName="" Name="" From="_pPTV0fIpEeiCsd_Wv-RtYQ" To="_nmGLQPJIEeif9tfFlBJi7Q">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
             <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
               <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
               <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
@@ -1856,7 +1821,7 @@ WF_CASE_ID=MetaData.WFCaseID;&#xD;
           <xpdl2:Event>
             <xpdl2:IntermediateEvent Target="_AQAroPSLEeiKGqQzTYL1wQ" Trigger="Timer">
               <xpdl2:TriggerTimer xpdExt:ContinueOnTimeout="false">
-                <xpdl2:TimeDate></xpdl2:TimeDate>
+                <xpdl2:TimeDate/>
                 <xpdExt:CalendarReference Alias="THM_CALENDAR"/>
               </xpdl2:TriggerTimer>
             </xpdl2:IntermediateEvent>
@@ -1970,10 +1935,6 @@ WF_CASE_ID=MetaData.WFCaseID;&#xD;
         <xpdExt:DataWorkItemAttributeMapping>
           <xpdExt:WorkItemAttribute>attribute6</xpdExt:WorkItemAttribute>
           <xpdExt:ProcessData>Wiedervorlage_Datum</xpdExt:ProcessData>
-        </xpdExt:DataWorkItemAttributeMapping>
-        <xpdExt:DataWorkItemAttributeMapping>
-          <xpdExt:WorkItemAttribute>attribute2</xpdExt:WorkItemAttribute>
-          <xpdExt:ProcessData>TEXT</xpdExt:ProcessData>
         </xpdExt:DataWorkItemAttributeMapping>
       </xpdExt:ProcessDataWorkItemAttributeMappings>
     </xpdl2:WorkflowProcess>

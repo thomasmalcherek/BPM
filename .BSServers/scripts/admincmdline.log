@@ -2067,3 +2067,75 @@ at com.tibco.amf.admin.api.amx.application.impl.upgrade.RootCompositeMerger.merg
 30 Nov 2018 15:31:01,661 INFO  (AsyncActionExecutor.java:117)     - .
 30 Nov 2018 15:31:02,885 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
 30 Nov 2018 15:31:02,886 INFO  (Processor.java:743)     - Action finished at 30.11.18 15:31 in 5,369 seconds
+03 Dez 2018 16:16:36,667 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+03 Dez 2018 16:16:38,259 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+03 Dez 2018 16:16:39,697 INFO  (AddAction.java:54)     - Uploading DAA...
+03 Dez 2018 16:16:39,704 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\WorkListFasade\.bpm\com.example.worklistfasade.daa
+03 Dez 2018 16:16:41,192 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.worklistfasade' (version: '1.0.0.20181203161602639') to the Administrator Staging Area
+03 Dez 2018 16:16:41,196 INFO  (Processor.java:675)     - Action finished at 03.12.18 16:16 in 1,499 seconds
+03 Dez 2018 16:16:41,262 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+03 Dez 2018 16:16:42,157 INFO  (UpgradeAction.java:31)     - Upgrading application...
+03 Dez 2018 16:16:42,158 INFO  (AddAction.java:54)     - Uploading DAA...
+03 Dez 2018 16:16:42,158 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\WorkListFasade\.bpm\com.example.worklistfasade.daa
+03 Dez 2018 16:16:42,681 WARN  (AddAction.java:151)     - Application Template 'com.example.worklistfasade' (version: '1.0.0.20181203161602639') was ignored and not added to the Administrator Staging Area, because it already exists.
+03 Dez 2018 16:16:46,884 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.example.worklistfasade': Successfully upgraded application 'com.example.worklistfasade' to application template version 1.0.0.20181203161602639
+03 Dez 2018 16:16:46,884 INFO  (LoggingUtil.java:182)     - 03.12.18 16:16 - 	  detail = Component 'EC' upgraded from version '1.0.0.20181130153042309' to version: '1.0.0.20181203161602639'.
+
+03 Dez 2018 16:16:46,885 INFO  (LoggingUtil.java:182)     - 03.12.18 16:16 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181130153042309' to version: '1.0.0.20181203161602639'.
+
+03 Dez 2018 16:16:46,885 INFO  (Processor.java:675)     - Action finished at 03.12.18 16:16 in 4,728 seconds
+03 Dez 2018 16:16:46,906 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+03 Dez 2018 16:16:46,912 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+03 Dez 2018 16:16:46,955 INFO  (DeployAction.java:38)     - Deploying application...
+03 Dez 2018 16:16:49,264 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.example.worklistfasade' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.example.worklistfasade' at 12/3/18 4:16 PM on node(s): 'BPMNode'.
+03 Dez 2018 16:16:49,267 INFO  (Processor.java:696)     - Action finished in Admin at 03.12.18 16:16 in 2,311 seconds. Waiting for runtime tasks to be finished.
+03 Dez 2018 16:16:51,219 INFO  (AsyncActionExecutor.java:117)     - .
+03 Dez 2018 16:16:52,501 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+03 Dez 2018 16:16:52,503 INFO  (Processor.java:743)     - Action finished at 03.12.18 16:16 in 5,546 seconds
+03 Dez 2018 16:24:05,527 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+03 Dez 2018 16:24:06,318 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+03 Dez 2018 16:24:07,243 INFO  (AddAction.java:54)     - Uploading DAA...
+03 Dez 2018 16:24:07,248 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test\.bpm\com.tibco.poc.test.daa
+03 Dez 2018 16:24:09,450 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.tibco.poc.test' (version: '1.0.0.20181203161849790') to the Administrator Staging Area
+03 Dez 2018 16:24:09,451 INFO  (AddAction.java:161)     - Successfully added Feature 'com.tibco.poc.test.model.bds' (version: '1.0.0.20181203161849790') to the Administrator Staging Area
+03 Dez 2018 16:24:09,455 INFO  (Processor.java:675)     - Action finished at 03.12.18 16:24 in 2,222 seconds
+03 Dez 2018 16:24:09,469 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+03 Dez 2018 16:24:10,152 INFO  (UpgradeAction.java:31)     - Upgrading application...
+03 Dez 2018 16:24:10,152 INFO  (AddAction.java:54)     - Uploading DAA...
+03 Dez 2018 16:24:10,153 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test\.bpm\com.tibco.poc.test.daa
+03 Dez 2018 16:24:10,690 WARN  (AddAction.java:151)     - Application Template 'com.tibco.poc.test' (version: '1.0.0.20181203161849790') was ignored and not added to the Administrator Staging Area, because it already exists.
+03 Dez 2018 16:24:10,696 WARN  (AddAction.java:198)     - Feature 'com.tibco.poc.test.model.bds' (version: '1.0.0.20181203161849790') was ignored and not added to the Administrator Staging Area, because it already exists.
+03 Dez 2018 16:24:20,465 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.poc.test': Successfully upgraded application 'com.tibco.poc.test' to application template version 1.0.0.20181203161849790
+03 Dez 2018 16:24:20,465 INFO  (LoggingUtil.java:182)     - 03.12.18 16:24 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181130152316359' to version: '1.0.0.20181203161849790'.
+
+03 Dez 2018 16:24:20,465 INFO  (LoggingUtil.java:182)     - 03.12.18 16:24 - 	  detail = Component 'comtibcopoctestProcessFlow' upgraded from version '1.0.0.20181130152316359' to version: '1.0.0.20181203161849790'.
+
+03 Dez 2018 16:24:20,467 INFO  (LoggingUtil.java:182)     - 03.12.18 16:24 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181130152316359' to version: '1.0.0.20181203161849790'.
+
+03 Dez 2018 16:24:20,470 INFO  (LoggingUtil.java:182)     - 03.12.18 16:24 - 	  detail = Component 'comtibcopoctestPageFlow' upgraded from version '1.0.0.20181130152316359' to version: '1.0.0.20181203161849790'.
+
+03 Dez 2018 16:24:20,470 INFO  (LoggingUtil.java:182)     - 03.12.18 16:24 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181130152316359' to version: '1.0.0.20181203161849790'.
+
+03 Dez 2018 16:24:20,471 INFO  (LoggingUtil.java:182)     - 03.12.18 16:24 - 	  detail = TIBCO-AMX-ADMIN-012416: Binding 'SOAPReference_Binding1' on the application reference 'saveDataCaseSOAP_Consumer1' updated.
+
+03 Dez 2018 16:24:20,471 INFO  (LoggingUtil.java:182)     - 03.12.18 16:24 - 	  detail = TIBCO-AMX-ADMIN-012422: Binding 'SubProcess_RecieveDataFromExtern_EP' on application service 'DataToBW' updated.
+
+03 Dez 2018 16:24:20,472 INFO  (Processor.java:675)     - Action finished at 03.12.18 16:24 in 10,319 seconds
+03 Dez 2018 16:24:20,506 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+03 Dez 2018 16:24:21,732 INFO  (AMXAdminTask.java:289)     - Processing 4 objects
+03 Dez 2018 16:24:22,280 INFO  (EditAction.java:27)     - Editing properties..
+03 Dez 2018 16:24:22,513 INFO  (Processor.java:751)     - Action finished at 03.12.18 16:24 in 0,233 seconds
+03 Dez 2018 16:24:23,232 INFO  (EditAction.java:27)     - Editing properties..
+03 Dez 2018 16:24:23,400 INFO  (Processor.java:751)     - Action finished at 03.12.18 16:24 in 0,168 seconds
+03 Dez 2018 16:24:23,407 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+03 Dez 2018 16:24:23,433 INFO  (DeployAction.java:38)     - Deploying application...
+03 Dez 2018 16:24:29,549 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.poc.test' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.poc.test' at 12/3/18 4:24 PM on node(s): 'BPMNode'.
+03 Dez 2018 16:24:29,549 INFO  (LoggingUtil.java:182)     - 03.12.18 16:24 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.tibco.poc.test.model.bds.1.0.0.20181203161849790' was auto-enabled in node 'BPMNode'
+
+03 Dez 2018 16:24:29,550 INFO  (Processor.java:696)     - Action finished in Admin at 03.12.18 16:24 in 6,117 seconds. Waiting for runtime tasks to be finished.
+03 Dez 2018 16:24:32,313 INFO  (AsyncActionExecutor.java:117)     - .
+03 Dez 2018 16:24:38,221 INFO  (AsyncActionExecutor.java:117)     - .
+03 Dez 2018 16:24:45,625 INFO  (AsyncActionExecutor.java:117)     - .
+03 Dez 2018 16:24:51,733 INFO  (AsyncActionExecutor.java:117)     - .
+03 Dez 2018 16:24:55,258 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+03 Dez 2018 16:24:55,259 INFO  (Processor.java:743)     - Action finished at 03.12.18 16:24 in 31,826 seconds
