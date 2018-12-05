@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
-<ad:AdminServer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ad="http://www.tibco.com/models/admindata" lastRefreshed="1544016636618" url="http://ssva90322:8120" username="admin" password="@k#)smE$b=&amp;_ z=Pf50&lt;@x%9v*3eYD#b&lt;Sdq5LlJ/42a4J-9}ZI%7B/AU&quot;q7W'We" serverName="BPM_DEV" filterUserApps="true" defaultEnvironmentName="BPMEnvironment" defaultTargetAppName="amx.bpm.app" filterEnvironments="true" version="3.3.0.HF22" displayUrl="http://ssva90322:8120">
-  <environments lastRefreshed="1544016633857" id="2" name="BPMEnvironment" description="TIBCO BPM Environment" nodes="//@hosts.0/@nodes.0">
-    <apps lastRefreshed="1544016633857" id="68" name="com.example.worklistfasade" description="" lastModified="2018-12-04T13:34:13.533Z" contact="" runtimeState="Running" templateName="com.example.worklistfasade" templateVersion="1.0.0.20181204143343690" synchronizaition="In Sync" folder="//@environments.0/@folders.0" containingFolderId="4">
+<ad:AdminServer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ad="http://www.tibco.com/models/admindata" lastRefreshed="1544022272941" url="http://ssva90322:8120" username="admin" password="@k#)smE$b=&amp;_ z=Pf50&lt;@x%9v*3eYD#b&lt;Sdq5LlJ/42a4J-9}ZI%7B/AU&quot;q7W'We" serverName="BPM_DEV" filterUserApps="true" defaultEnvironmentName="BPMEnvironment" defaultTargetAppName="amx.bpm.app" filterEnvironments="true" version="3.3.0.HF22" displayUrl="http://ssva90322:8120">
+  <environments lastRefreshed="1544022270201" id="2" name="BPMEnvironment" description="TIBCO BPM Environment" nodes="//@hosts.0/@nodes.0">
+    <apps lastRefreshed="1544022270201" id="68" name="com.example.worklistfasade" description="" lastModified="2018-12-04T13:34:13.533Z" contact="" runtimeState="Running" templateName="com.example.worklistfasade" templateVersion="1.0.0.20181204143343690" synchronizaition="In Sync" folder="//@environments.0/@folders.0" containingFolderId="4">
       <components lastRefreshed="1544015600713" id="742" name="BRM" description="" version="1.0.0.20181204143343690" componentPath="BRM" implementation="implementation.brm">
         <mappings lastRefreshed="1544015600713" status="Running" node="//@hosts.0/@nodes.0"/>
       </components>
@@ -9,7 +9,7 @@
         <mappings lastRefreshed="1544015600713" status="Running" node="//@hosts.0/@nodes.0"/>
       </components>
     </apps>
-    <apps lastRefreshed="1544016633857" id="5" name="com.tibco.amx.platform" description="Default platform application" lastModified="2018-11-13T14:51:31.412Z" contact="" runtimeState="Running" templateName="com.tibco.amx.platform.daa" templateVersion="3.3.0.000" synchronizaition="In Sync" folder="//@environments.0/@folders.2" containingFolderId="7">
+    <apps lastRefreshed="1544022270201" id="5" name="com.tibco.amx.platform" description="Default platform application" lastModified="2018-11-13T14:51:31.412Z" contact="" runtimeState="Running" templateName="com.tibco.amx.platform.daa" templateVersion="3.3.0.000" synchronizaition="In Sync" folder="//@environments.0/@folders.2" containingFolderId="7">
       <components lastRefreshed="1544015601367" id="174" name="SecurityConstraintActionComponent" description="" version="1.0.0" componentPath="WebSecurityPolicyActions/SecurityConstraintActionComponent" implementation="implementation.java">
         <mappings lastRefreshed="1544015601367" status="Running" node="//@hosts.0/@nodes.0"/>
       </components>
@@ -169,12 +169,12 @@
         </bindings>
       </references>
     </apps>
-    <apps lastRefreshed="1544016633857" id="6" name="amx.bpm.apacheds" description="apacheds LDAP system and demo data provider" lastModified="2018-11-13T14:52:22.916Z" contact="TIBCO Inc." runtimeState="Running" templateName="com.tibco.amxbpm.apacheds" templateVersion="1.5.0.001" synchronizaition="In Sync" folder="//@environments.0/@folders.3" containingFolderId="6">
+    <apps lastRefreshed="1544022270201" id="6" name="amx.bpm.apacheds" description="apacheds LDAP system and demo data provider" lastModified="2018-11-13T14:52:22.916Z" contact="TIBCO Inc." runtimeState="Running" templateName="com.tibco.amxbpm.apacheds" templateVersion="1.5.0.001" synchronizaition="In Sync" folder="//@environments.0/@folders.3" containingFolderId="6">
       <components lastRefreshed="1544015601696" id="220" name="implementation.apacheds" description="" version="1.4.1.001" componentPath="implementation.apacheds" implementation="implementation.java">
         <mappings lastRefreshed="1544015601696" status="Running" node="//@hosts.0/@nodes.0"/>
       </components>
     </apps>
-    <apps lastRefreshed="1544016633857" id="7" name="amx.bpm.app" description="TIBCO ActiveMatrix &#xae; BPM 4.2.0" lastModified="2018-11-13T14:53:41.813Z" contact="TIBCO Inc." runtimeState="Running" templateName="com.tibco.amxbpm.fullnode" templateVersion="1.11.2.004" synchronizaition="In Sync" folder="//@environments.0/@folders.5" containingFolderId="9">
+    <apps lastRefreshed="1544022270201" id="7" name="amx.bpm.app" description="TIBCO ActiveMatrix &#xae; BPM 4.2.0" lastModified="2018-11-13T14:53:41.813Z" contact="TIBCO Inc." runtimeState="Running" templateName="com.tibco.amxbpm.fullnode" templateVersion="1.11.2.004" synchronizaition="In Sync" folder="//@environments.0/@folders.5" containingFolderId="9">
       <components lastRefreshed="1544015602633" id="269" name="bpmcli" description="" version="1.1.0.201803051319" componentPath="Openspace/bpmcli" implementation="implementation.web">
         <mappings lastRefreshed="1544015602633" status="Running" node="//@hosts.0/@nodes.0"/>
       </components>
@@ -578,12 +578,12 @@
         </bindings>
       </services>
     </apps>
-    <apps lastRefreshed="1544016633857" id="8" name="amx.bpm.app.sysorgmodel" description="AMX BPM System Organizational Model Application" lastModified="2018-11-13T14:58:41.752Z" contact="TIBCO Inc." runtimeState="Running" templateName="com.tibco.amxbpm.orgmodel.application" templateVersion="1.1.0.001" synchronizaition="In Sync" folder="//@environments.0/@folders.5" containingFolderId="9">
+    <apps lastRefreshed="1544022270201" id="8" name="amx.bpm.app.sysorgmodel" description="AMX BPM System Organizational Model Application" lastModified="2018-11-13T14:58:41.752Z" contact="TIBCO Inc." runtimeState="Running" templateName="com.tibco.amxbpm.orgmodel.application" templateVersion="1.1.0.001" synchronizaition="In Sync" folder="//@environments.0/@folders.5" containingFolderId="9">
       <components lastRefreshed="1544015602963" id="309" name="SysUsers.de" description="" version="0.1" componentPath="SysUsers.de" implementation="implementation.de">
         <mappings lastRefreshed="1544015602963" status="Running" node="//@hosts.0/@nodes.0"/>
       </components>
     </apps>
-    <apps lastRefreshed="1544016633857" id="71" name="com.tibco.poc.data.process" description="" lastModified="2018-12-04T15:20:30.190Z" contact="" runtimeState="Running" templateName="com.example.comtibcopocdataprocess" templateVersion="1.0.0.20181204161959054" synchronizaition="In Sync" folder="//@environments.0/@folders.0" containingFolderId="4">
+    <apps lastRefreshed="1544022270201" id="71" name="com.tibco.poc.data.process" description="" lastModified="2018-12-04T15:20:30.190Z" contact="" runtimeState="Running" templateName="com.example.comtibcopocdataprocess" templateVersion="1.0.0.20181204161959054" synchronizaition="In Sync" folder="//@environments.0/@folders.0" containingFolderId="4">
       <components lastRefreshed="1544015603277" id="755" name="WorkPresentation" description="" version="1.0.0.20181204161959054" componentPath="WorkPresentation" implementation="implementation.wp">
         <mappings lastRefreshed="1544015603277" status="Running" node="//@hosts.0/@nodes.0"/>
       </components>
@@ -600,51 +600,56 @@
         <mappings lastRefreshed="1544015603277" status="Running" node="//@hosts.0/@nodes.0"/>
       </components>
     </apps>
-    <apps lastRefreshed="1544016633857" id="72" name="com.tibco.poc.test" description="" lastModified="2018-12-05T13:30:01.280Z" contact="" runtimeState="Running" templateName="com.tibco.poc.test" templateVersion="1.0.0.20181205142915481" synchronizaition="In Sync" distributionPolicy="PRODUCT_APP" folder="//@environments.0/@folders.0" containingFolderId="4">
-      <components lastRefreshed="1544016635979" id="791" name="BRM" description="" version="1.0.0.20181205142915481" componentPath="BRM" implementation="implementation.brm">
-        <mappings lastRefreshed="1544016635979" status="Running" node="//@hosts.0/@nodes.0"/>
+    <apps lastRefreshed="1544022270201" id="74" name="com.tibco.poc.test" description="" lastModified="2018-12-05T15:04:03.490Z" contact="" runtimeState="Running" templateName="com.tibco.poc.test" templateVersion="1.0.0.20181205160320064" synchronizaition="In Sync" folder="//@environments.0/@folders.0" containingFolderId="4">
+      <components lastRefreshed="1544022272311" id="822" name="OrganizationModel" description="" version="1.0.0.20181205160320064" componentPath="OrganizationModel" implementation="implementation.de">
+        <mappings lastRefreshed="1544022272311" status="Running" node="//@hosts.0/@nodes.0"/>
       </components>
-      <components lastRefreshed="1544016635979" id="792" name="comtibcopoctestPageFlow" description="" version="1.0.0.20181205142915481" componentPath="comtibcopoctestPageFlow" implementation="PFESpecification">
-        <mappings lastRefreshed="1544016635979" status="Running" node="//@hosts.0/@nodes.0"/>
+      <components lastRefreshed="1544022272311" id="823" name="BRM" description="" version="1.0.0.20181205160320064" componentPath="BRM" implementation="implementation.brm">
+        <mappings lastRefreshed="1544022272311" status="Running" node="//@hosts.0/@nodes.0"/>
       </components>
-      <components lastRefreshed="1544016635979" id="793" name="OrganizationModel" description="" version="1.0.0.20181205142915481" componentPath="OrganizationModel" implementation="implementation.de">
-        <mappings lastRefreshed="1544016635979" status="Running" node="//@hosts.0/@nodes.0"/>
+      <components lastRefreshed="1544022272311" id="824" name="WorkPresentation" description="" version="1.0.0.20181205160320064" componentPath="WorkPresentation" implementation="implementation.wp">
+        <mappings lastRefreshed="1544022272311" status="Running" node="//@hosts.0/@nodes.0"/>
       </components>
-      <components lastRefreshed="1544016635979" id="794" name="comtibcopoctestProcessFlow" description="" version="1.0.0.20181205142915481" componentPath="comtibcopoctestProcessFlow" implementation="N2PEServiceImplementation">
-        <mappings lastRefreshed="1544016635979" status="Running" node="//@hosts.0/@nodes.0"/>
+      <components lastRefreshed="1544022272311" id="825" name="comtibcopoctestProcessFlow" description="" version="1.0.0.20181205160320064" componentPath="comtibcopoctestProcessFlow" implementation="N2PEServiceImplementation">
+        <mappings lastRefreshed="1544022272311" status="Running" node="//@hosts.0/@nodes.0"/>
       </components>
-      <components lastRefreshed="1544016635979" id="795" name="WorkPresentation" description="" version="1.0.0.20181205142915481" componentPath="WorkPresentation" implementation="implementation.wp">
-        <mappings lastRefreshed="1544016635979" status="Running" node="//@hosts.0/@nodes.0"/>
-      </components>
-      <services lastRefreshed="1544016635979" id="325" name="DataToBW" portType="{http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw}SubProcess_RecieveDataFromExtern">
-        <bindings lastRefreshed="1544016635979" id="685" name="Virtualization" httpConnectorName="" bindingType="binding.sca" bindingTypeName="binding.sca">
-          <nodeMappings lastRefreshed="1544016635979" status="Running" node="//@hosts.0/@nodes.0"/>
+      <services lastRefreshed="1544022272311" id="345" name="DataToBW" portType="{http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw}SubProcess_RecieveDataFromExtern">
+        <bindings lastRefreshed="1544022272311" id="703" name="Virtualization" httpConnectorName="" bindingType="binding.sca" bindingTypeName="binding.sca">
+          <nodeMappings lastRefreshed="1544022272311" status="Running" node="//@hosts.0/@nodes.0"/>
         </bindings>
-        <bindings lastRefreshed="1544016635979" id="686" name="SubProcess_RecieveDataFromExtern_EP" httpConnectorName="" bindingType="binding.soap.service" bindingTypeName="binding.soap.service">
-          <nodeMappings lastRefreshed="1544016635979" status="Running" node="//@hosts.0/@nodes.0"/>
+        <bindings lastRefreshed="1544022272311" id="704" name="SubProcess_RecieveDataFromExtern_EP" httpConnectorName="" bindingType="binding.soap.service" bindingTypeName="binding.soap.service">
+          <nodeMappings lastRefreshed="1544022272311" status="Running" node="//@hosts.0/@nodes.0"/>
         </bindings>
       </services>
-      <references lastRefreshed="1544016635979" id="550" name="saveDataCaseSOAP_Consumer1" portType="{http://com.tibco.poc.test.bw.saveDataCase}saveDataCase">
-        <bindings lastRefreshed="1544016635979" id="687" name="SOAPReference_Binding1" bindingType="binding.soap.reference" bindingTypeName="binding.soap.reference">
-          <nodeMappings lastRefreshed="1544016635979" status="Running" node="//@hosts.0/@nodes.0"/>
+      <services lastRefreshed="1544022272311" id="346" name="DataToBWStartEvent" portType="{http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw}DataToBWStartEvent">
+        <bindings lastRefreshed="1544022272311" id="705" name="Virtualization" httpConnectorName="" bindingType="binding.sca" bindingTypeName="binding.sca">
+          <nodeMappings lastRefreshed="1544022272311" status="Running" node="//@hosts.0/@nodes.0"/>
+        </bindings>
+        <bindings lastRefreshed="1544022272311" id="706" name="DataToBWStartEvent_EP" httpConnectorName="" bindingType="binding.soap.service" bindingTypeName="binding.soap.service">
+          <nodeMappings lastRefreshed="1544022272311" status="Running" node="//@hosts.0/@nodes.0"/>
+        </bindings>
+      </services>
+      <references lastRefreshed="1544022272311" id="568" name="SendDataToBW1" portType="{http://com.tibco.poc.test.bw.saveDataCase}saveDataCase">
+        <bindings lastRefreshed="1544022272311" id="707" name="SOAPReference_Binding1" bindingType="binding.soap.reference" bindingTypeName="binding.soap.reference">
+          <nodeMappings lastRefreshed="1544022272311" status="Running" node="//@hosts.0/@nodes.0"/>
         </bindings>
       </references>
     </apps>
-    <folders lastRefreshed="1544016636280" id="4" name="BPMEnvironment(root)" description="Root folder for Environment BPMEnvironment" path="/" children="//@environments.0/@folders.1 //@environments.0/@folders.3 //@environments.0/@folders.4 //@environments.0/@folders.6 //@environments.0/@apps.0 //@environments.0/@apps.5 //@environments.0/@apps.6"/>
-    <folders lastRefreshed="1544016636280" id="5" name="System" description="This folder holds applications that are part of the TIBCO ActiveMatrix Platform." path="/System/" children="//@environments.0/@folders.2" parent="//@environments.0/@folders.0"/>
-    <folders lastRefreshed="1544016636280" id="7" name="amx.platform.apps" description="This folder holds applications that are part of the TIBCO ActiveMatrix Platform." path="/System/amx.platform.apps/" children="//@environments.0/@apps.1" parent="//@environments.0/@folders.1"/>
-    <folders lastRefreshed="1544016636280" id="6" name="amx.bpm.shared.sysapps" description="This folder is for the internal AMX-BPM embedded Apache DS based LDAP server application." path="/amx.bpm.shared.sysapps/" children="//@environments.0/@apps.2" parent="//@environments.0/@folders.0"/>
-    <folders lastRefreshed="1544016636280" id="8" name="amx.bpm.app" description="This folder is for all user applications deployed to the AMX-BPM amx.bpm.app application." path="/amx.bpm.app/" children="//@environments.0/@folders.5" parent="//@environments.0/@folders.0"/>
-    <folders lastRefreshed="1544016636280" id="9" name="System" description="This folder is for all system applications related to the AMX-BPM amx.bpm.app application." path="/amx.bpm.app/System/" children="//@environments.0/@apps.3 //@environments.0/@apps.4" parent="//@environments.0/@folders.4"/>
-    <folders lastRefreshed="1544016636280" id="21" name="test.deployment" description="Thomas Malcherek Test Deployment &#xA;ORG,DB,WF" path="/test.deployment/" parent="//@environments.0/@folders.0"/>
+    <folders lastRefreshed="1544022272612" id="4" name="BPMEnvironment(root)" description="Root folder for Environment BPMEnvironment" path="/" children="//@environments.0/@folders.1 //@environments.0/@folders.3 //@environments.0/@folders.4 //@environments.0/@folders.6 //@environments.0/@apps.0 //@environments.0/@apps.5 //@environments.0/@apps.6"/>
+    <folders lastRefreshed="1544022272612" id="5" name="System" description="This folder holds applications that are part of the TIBCO ActiveMatrix Platform." path="/System/" children="//@environments.0/@folders.2" parent="//@environments.0/@folders.0"/>
+    <folders lastRefreshed="1544022272612" id="7" name="amx.platform.apps" description="This folder holds applications that are part of the TIBCO ActiveMatrix Platform." path="/System/amx.platform.apps/" children="//@environments.0/@apps.1" parent="//@environments.0/@folders.1"/>
+    <folders lastRefreshed="1544022272612" id="6" name="amx.bpm.shared.sysapps" description="This folder is for the internal AMX-BPM embedded Apache DS based LDAP server application." path="/amx.bpm.shared.sysapps/" children="//@environments.0/@apps.2" parent="//@environments.0/@folders.0"/>
+    <folders lastRefreshed="1544022272612" id="8" name="amx.bpm.app" description="This folder is for all user applications deployed to the AMX-BPM amx.bpm.app application." path="/amx.bpm.app/" children="//@environments.0/@folders.5" parent="//@environments.0/@folders.0"/>
+    <folders lastRefreshed="1544022272612" id="9" name="System" description="This folder is for all system applications related to the AMX-BPM amx.bpm.app application." path="/amx.bpm.app/System/" children="//@environments.0/@apps.3 //@environments.0/@apps.4" parent="//@environments.0/@folders.4"/>
+    <folders lastRefreshed="1544022272612" id="21" name="test.deployment" description="Thomas Malcherek Test Deployment &#xA;ORG,DB,WF" path="/test.deployment/" parent="//@environments.0/@folders.0"/>
   </environments>
-  <environments lastRefreshed="1544016633244" id="1" name="SystemEnvironment" description="environment for administrator">
-    <folders lastRefreshed="1544016636581" id="1" name="SystemEnvironment(root)" description="Root folder for Environment SystemEnvironment" path="/" children="//@environments.1/@folders.1"/>
-    <folders lastRefreshed="1544016636581" id="2" name="System" description="This folder holds applications that are part of the TIBCO ActiveMatrix Platform." path="/System/" children="//@environments.1/@folders.2" parent="//@environments.1/@folders.0"/>
-    <folders lastRefreshed="1544016636581" id="3" name="amx.platform.apps" description="This folder holds applications that are part of the TIBCO ActiveMatrix Platform." path="/System/amx.platform.apps/" parent="//@environments.1/@folders.1"/>
+  <environments lastRefreshed="1544022269599" id="1" name="SystemEnvironment" description="environment for administrator">
+    <folders lastRefreshed="1544022272917" id="1" name="SystemEnvironment(root)" description="Root folder for Environment SystemEnvironment" path="/" children="//@environments.1/@folders.1"/>
+    <folders lastRefreshed="1544022272917" id="2" name="System" description="This folder holds applications that are part of the TIBCO ActiveMatrix Platform." path="/System/" children="//@environments.1/@folders.2" parent="//@environments.1/@folders.0"/>
+    <folders lastRefreshed="1544022272917" id="3" name="amx.platform.apps" description="This folder holds applications that are part of the TIBCO ActiveMatrix Platform." path="/System/amx.platform.apps/" parent="//@environments.1/@folders.1"/>
   </environments>
-  <hosts xsi:type="ad:AdminSingletonHost" lastRefreshed="1544016635677" status="Running" id="1" name="SystemHost" description="Autobound host" modifiedBy="" lastModified="2018-11-13T14:48:49.681Z" type="TibcoHost" osArch="amd64" osName="Windows Server 2012" osVersion="6.2" syncOnRestart="false" machineName="ssva90322.svanet.ch" managementUrl="service:jmx:jmxmp://ssva90322:6051">
-    <nodes lastRefreshed="1544016634766" status="Running" id="2" name="BPMNode" description="TIBCO BPM Node" mappings="//@environments.0/@apps.0/@components.0/@mappings.0 //@environments.0/@apps.0/@components.1/@mappings.0 //@environments.0/@apps.1/@components.0/@mappings.0 //@environments.0/@apps.1/@components.1/@mappings.0 //@environments.0/@apps.1/@components.2/@mappings.0 //@environments.0/@apps.1/@components.3/@mappings.0 //@environments.0/@apps.1/@components.4/@mappings.0 //@environments.0/@apps.1/@components.5/@mappings.0 //@environments.0/@apps.1/@components.6/@mappings.0 //@environments.0/@apps.1/@components.7/@mappings.0 //@environments.0/@apps.1/@components.8/@mappings.0 //@environments.0/@apps.1/@components.9/@mappings.0 //@environments.0/@apps.1/@components.10/@mappings.0 //@environments.0/@apps.1/@components.11/@mappings.0 //@environments.0/@apps.1/@components.12/@mappings.0 //@environments.0/@apps.1/@components.13/@mappings.0 //@environments.0/@apps.1/@components.14/@mappings.0 //@environments.0/@apps.1/@components.15/@mappings.0 //@environments.0/@apps.1/@components.16/@mappings.0 //@environments.0/@apps.1/@components.17/@mappings.0 //@environments.0/@apps.1/@components.18/@mappings.0 //@environments.0/@apps.1/@components.19/@mappings.0 //@environments.0/@apps.1/@components.20/@mappings.0 //@environments.0/@apps.1/@components.21/@mappings.0 //@environments.0/@apps.1/@components.22/@mappings.0 //@environments.0/@apps.1/@components.23/@mappings.0 //@environments.0/@apps.1/@components.24/@mappings.0 //@environments.0/@apps.1/@components.25/@mappings.0 //@environments.0/@apps.1/@components.26/@mappings.0 //@environments.0/@apps.1/@components.27/@mappings.0 //@environments.0/@apps.1/@components.28/@mappings.0 //@environments.0/@apps.1/@components.29/@mappings.0 //@environments.0/@apps.1/@components.30/@mappings.0 //@environments.0/@apps.1/@components.31/@mappings.0 //@environments.0/@apps.1/@components.32/@mappings.0 //@environments.0/@apps.1/@components.33/@mappings.0 //@environments.0/@apps.1/@components.34/@mappings.0 //@environments.0/@apps.1/@components.35/@mappings.0 //@environments.0/@apps.1/@components.36/@mappings.0 //@environments.0/@apps.1/@components.37/@mappings.0 //@environments.0/@apps.1/@components.38/@mappings.0 //@environments.0/@apps.1/@components.39/@mappings.0 //@environments.0/@apps.1/@components.40/@mappings.0 //@environments.0/@apps.1/@components.41/@mappings.0 //@environments.0/@apps.1/@components.42/@mappings.0 //@environments.0/@apps.1/@components.43/@mappings.0 //@environments.0/@apps.2/@components.0/@mappings.0 //@environments.0/@apps.3/@components.0/@mappings.0 //@environments.0/@apps.3/@components.1/@mappings.0 //@environments.0/@apps.3/@components.2/@mappings.0 //@environments.0/@apps.3/@components.3/@mappings.0 //@environments.0/@apps.3/@components.4/@mappings.0 //@environments.0/@apps.3/@components.5/@mappings.0 //@environments.0/@apps.3/@components.6/@mappings.0 //@environments.0/@apps.3/@components.7/@mappings.0 //@environments.0/@apps.3/@components.8/@mappings.0 //@environments.0/@apps.3/@components.9/@mappings.0 //@environments.0/@apps.3/@components.10/@mappings.0 //@environments.0/@apps.3/@components.11/@mappings.0 //@environments.0/@apps.3/@components.12/@mappings.0 //@environments.0/@apps.3/@components.13/@mappings.0 //@environments.0/@apps.3/@components.14/@mappings.0 //@environments.0/@apps.3/@components.15/@mappings.0 //@environments.0/@apps.3/@components.16/@mappings.0 //@environments.0/@apps.3/@components.17/@mappings.0 //@environments.0/@apps.3/@components.18/@mappings.0 //@environments.0/@apps.3/@components.19/@mappings.0 //@environments.0/@apps.3/@components.20/@mappings.0 //@environments.0/@apps.3/@components.21/@mappings.0 //@environments.0/@apps.3/@components.22/@mappings.0 //@environments.0/@apps.3/@components.23/@mappings.0 //@environments.0/@apps.3/@components.24/@mappings.0 //@environments.0/@apps.3/@components.25/@mappings.0 //@environments.0/@apps.3/@components.26/@mappings.0 //@environments.0/@apps.3/@components.27/@mappings.0 //@environments.0/@apps.3/@components.28/@mappings.0 //@environments.0/@apps.3/@components.29/@mappings.0 //@environments.0/@apps.3/@components.30/@mappings.0 //@environments.0/@apps.3/@components.31/@mappings.0 //@environments.0/@apps.3/@components.32/@mappings.0 //@environments.0/@apps.3/@components.33/@mappings.0 //@environments.0/@apps.3/@components.34/@mappings.0 //@environments.0/@apps.3/@components.35/@mappings.0 //@environments.0/@apps.3/@components.36/@mappings.0 //@environments.0/@apps.3/@components.37/@mappings.0 //@environments.0/@apps.4/@components.0/@mappings.0 //@environments.0/@apps.5/@components.0/@mappings.0 //@environments.0/@apps.5/@components.1/@mappings.0 //@environments.0/@apps.5/@components.2/@mappings.0 //@environments.0/@apps.5/@components.3/@mappings.0 //@environments.0/@apps.5/@components.4/@mappings.0 //@environments.0/@apps.6/@components.0/@mappings.0 //@environments.0/@apps.6/@components.1/@mappings.0 //@environments.0/@apps.6/@components.2/@mappings.0 //@environments.0/@apps.6/@components.3/@mappings.0 //@environments.0/@apps.6/@components.4/@mappings.0" envronment="//@environments.0" machine="ssva90322.svanet.ch">
+  <hosts xsi:type="ad:AdminSingletonHost" lastRefreshed="1544022272009" status="Running" id="1" name="SystemHost" description="Autobound host" modifiedBy="" lastModified="2018-11-13T14:48:49.681Z" type="TibcoHost" osArch="amd64" osName="Windows Server 2012" osVersion="6.2" syncOnRestart="false" machineName="ssva90322.svanet.ch" managementUrl="service:jmx:jmxmp://ssva90322:6051">
+    <nodes lastRefreshed="1544022271102" status="Running" id="2" name="BPMNode" description="TIBCO BPM Node" mappings="//@environments.0/@apps.0/@components.0/@mappings.0 //@environments.0/@apps.0/@components.1/@mappings.0 //@environments.0/@apps.1/@components.0/@mappings.0 //@environments.0/@apps.1/@components.1/@mappings.0 //@environments.0/@apps.1/@components.2/@mappings.0 //@environments.0/@apps.1/@components.3/@mappings.0 //@environments.0/@apps.1/@components.4/@mappings.0 //@environments.0/@apps.1/@components.5/@mappings.0 //@environments.0/@apps.1/@components.6/@mappings.0 //@environments.0/@apps.1/@components.7/@mappings.0 //@environments.0/@apps.1/@components.8/@mappings.0 //@environments.0/@apps.1/@components.9/@mappings.0 //@environments.0/@apps.1/@components.10/@mappings.0 //@environments.0/@apps.1/@components.11/@mappings.0 //@environments.0/@apps.1/@components.12/@mappings.0 //@environments.0/@apps.1/@components.13/@mappings.0 //@environments.0/@apps.1/@components.14/@mappings.0 //@environments.0/@apps.1/@components.15/@mappings.0 //@environments.0/@apps.1/@components.16/@mappings.0 //@environments.0/@apps.1/@components.17/@mappings.0 //@environments.0/@apps.1/@components.18/@mappings.0 //@environments.0/@apps.1/@components.19/@mappings.0 //@environments.0/@apps.1/@components.20/@mappings.0 //@environments.0/@apps.1/@components.21/@mappings.0 //@environments.0/@apps.1/@components.22/@mappings.0 //@environments.0/@apps.1/@components.23/@mappings.0 //@environments.0/@apps.1/@components.24/@mappings.0 //@environments.0/@apps.1/@components.25/@mappings.0 //@environments.0/@apps.1/@components.26/@mappings.0 //@environments.0/@apps.1/@components.27/@mappings.0 //@environments.0/@apps.1/@components.28/@mappings.0 //@environments.0/@apps.1/@components.29/@mappings.0 //@environments.0/@apps.1/@components.30/@mappings.0 //@environments.0/@apps.1/@components.31/@mappings.0 //@environments.0/@apps.1/@components.32/@mappings.0 //@environments.0/@apps.1/@components.33/@mappings.0 //@environments.0/@apps.1/@components.34/@mappings.0 //@environments.0/@apps.1/@components.35/@mappings.0 //@environments.0/@apps.1/@components.36/@mappings.0 //@environments.0/@apps.1/@components.37/@mappings.0 //@environments.0/@apps.1/@components.38/@mappings.0 //@environments.0/@apps.1/@components.39/@mappings.0 //@environments.0/@apps.1/@components.40/@mappings.0 //@environments.0/@apps.1/@components.41/@mappings.0 //@environments.0/@apps.1/@components.42/@mappings.0 //@environments.0/@apps.1/@components.43/@mappings.0 //@environments.0/@apps.2/@components.0/@mappings.0 //@environments.0/@apps.3/@components.0/@mappings.0 //@environments.0/@apps.3/@components.1/@mappings.0 //@environments.0/@apps.3/@components.2/@mappings.0 //@environments.0/@apps.3/@components.3/@mappings.0 //@environments.0/@apps.3/@components.4/@mappings.0 //@environments.0/@apps.3/@components.5/@mappings.0 //@environments.0/@apps.3/@components.6/@mappings.0 //@environments.0/@apps.3/@components.7/@mappings.0 //@environments.0/@apps.3/@components.8/@mappings.0 //@environments.0/@apps.3/@components.9/@mappings.0 //@environments.0/@apps.3/@components.10/@mappings.0 //@environments.0/@apps.3/@components.11/@mappings.0 //@environments.0/@apps.3/@components.12/@mappings.0 //@environments.0/@apps.3/@components.13/@mappings.0 //@environments.0/@apps.3/@components.14/@mappings.0 //@environments.0/@apps.3/@components.15/@mappings.0 //@environments.0/@apps.3/@components.16/@mappings.0 //@environments.0/@apps.3/@components.17/@mappings.0 //@environments.0/@apps.3/@components.18/@mappings.0 //@environments.0/@apps.3/@components.19/@mappings.0 //@environments.0/@apps.3/@components.20/@mappings.0 //@environments.0/@apps.3/@components.21/@mappings.0 //@environments.0/@apps.3/@components.22/@mappings.0 //@environments.0/@apps.3/@components.23/@mappings.0 //@environments.0/@apps.3/@components.24/@mappings.0 //@environments.0/@apps.3/@components.25/@mappings.0 //@environments.0/@apps.3/@components.26/@mappings.0 //@environments.0/@apps.3/@components.27/@mappings.0 //@environments.0/@apps.3/@components.28/@mappings.0 //@environments.0/@apps.3/@components.29/@mappings.0 //@environments.0/@apps.3/@components.30/@mappings.0 //@environments.0/@apps.3/@components.31/@mappings.0 //@environments.0/@apps.3/@components.32/@mappings.0 //@environments.0/@apps.3/@components.33/@mappings.0 //@environments.0/@apps.3/@components.34/@mappings.0 //@environments.0/@apps.3/@components.35/@mappings.0 //@environments.0/@apps.3/@components.36/@mappings.0 //@environments.0/@apps.3/@components.37/@mappings.0 //@environments.0/@apps.4/@components.0/@mappings.0 //@environments.0/@apps.5/@components.0/@mappings.0 //@environments.0/@apps.5/@components.1/@mappings.0 //@environments.0/@apps.5/@components.2/@mappings.0 //@environments.0/@apps.5/@components.3/@mappings.0 //@environments.0/@apps.5/@components.4/@mappings.0 //@environments.0/@apps.6/@components.0/@mappings.0 //@environments.0/@apps.6/@components.1/@mappings.0 //@environments.0/@apps.6/@components.2/@mappings.0 //@environments.0/@apps.6/@components.3/@mappings.0" envronment="//@environments.0" machine="ssva90322.svanet.ch">
       <resources status="Running" id="28" name="ECMIdentityProvider" template="//@resourceTemplates.2">
         <scope type="Application" name="amx.bpm.app"/>
       </resources>
@@ -789,260 +794,265 @@
       <resources status="Running" id="133" name="HTTPConnector_BW6_BPM" template="//@resourceTemplates.48">
         <scope type="Application" name="amx.bpm.app"/>
       </resources>
-      <debuggers lastRefreshed="1544016634766" id="Java Debugger:1.0.0:2" name="Java Debugger" type="java.debugger" version="1.0.0">
-        <configuration lastRefreshed="1544016634766" id="debug_port" name="debug_port" key="debug_port" value="6033"/>
+      <debuggers lastRefreshed="1544022271102" id="Java Debugger:1.0.0:2" name="Java Debugger" type="java.debugger" version="1.0.0">
+        <configuration lastRefreshed="1544022271102" id="debug_port" name="debug_port" key="debug_port" value="6033"/>
       </debuggers>
-      <debuggers lastRefreshed="1544016634766" id="Platform Debugger:1.0.0:2" name="Platform Debugger" type="platform.debugger" version="1.0.0">
-        <configuration lastRefreshed="1544016634766" id="tcp_port" name="tcp_port" key="tcp_port" value="6035"/>
+      <debuggers lastRefreshed="1544022271102" id="Platform Debugger:1.0.0:2" name="Platform Debugger" type="platform.debugger" version="1.0.0">
+        <configuration lastRefreshed="1544022271102" id="tcp_port" name="tcp_port" key="tcp_port" value="6035"/>
       </debuggers>
-      <enabledFeatures lastRefreshed="1544016636618" id="5420" name="com.example.comtibcopocdataprocess.model.bds" description="" componentID="com.example.comtibcopocdataprocess.model.bds" version="1.0.0.20181204161959054" provisioned="true"/>
-      <enabledFeatures lastRefreshed="1544016636618" id="5422" name="com.example.comtibcobomasynchcall.model.bds" description="" componentID="com.example.comtibcobomasynchcall.model.bds" version="1.0.0.20181116105831784" provisioned="true"/>
-      <enabledFeatures lastRefreshed="1544016636618" id="5425" name="com.tibco.poc.test.model.bds" description="" componentID="com.tibco.poc.test.model.bds" version="1.0.0.20181205142915481" provisioned="true"/>
-      <enabledFeatures lastRefreshed="1544016636618" id="5428" name="com.example.thomas_bd.model.bds" description="" componentID="com.example.thomas_bd.model.bds" version="1.0.0.20181001122244728" provisioned="true"/>
+      <enabledFeatures lastRefreshed="1544022272941" id="5919" name="com.tibco.poc.test.model.bds" description="" componentID="com.tibco.poc.test.model.bds" version="1.0.0.20181205160320064" provisioned="true"/>
+      <enabledFeatures lastRefreshed="1544022272941" id="5922" name="com.example.comtibcopocdataprocess.model.bds" description="" componentID="com.example.comtibcopocdataprocess.model.bds" version="1.0.0.20181204161959054" provisioned="true"/>
+      <enabledFeatures lastRefreshed="1544022272941" id="5923" name="com.example.comtibcobomasynchcall.model.bds" description="" componentID="com.example.comtibcobomasynchcall.model.bds" version="1.0.0.20181116105831784" provisioned="true"/>
+      <enabledFeatures lastRefreshed="1544022272941" id="5928" name="com.example.thomas_bd.model.bds" description="" componentID="com.example.thomas_bd.model.bds" version="1.0.0.20181001122244728" provisioned="true"/>
     </nodes>
   </hosts>
-  <resourceTemplates lastRefreshed="1544016632638" id="18" name="TIBCO ActiveMatrix Internal HTTP Connector Resource" description="An http connector used by TIBCO Administrator to serve up certain files that runtime hosts and nodes need to access. Used for internal communications in the product. Do not delete this." type="{http://xsd.tns.tibco.com/amf/models/sharedresource/httpconnector}HttpConnectorConfiguration" typeName="HTTP Connector">
+  <resourceTemplates lastRefreshed="1544022268390" id="18" name="TIBCO ActiveMatrix Internal HTTP Connector Resource" description="An http connector used by TIBCO Administrator to serve up certain files that runtime hosts and nodes need to access. Used for internal communications in the product. Do not delete this." type="{http://xsd.tns.tibco.com/amf/models/sharedresource/httpconnector}HttpConnectorConfiguration" typeName="HTTP Connector">
     <scope name="Global"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="24" name="OpenspaceHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.23" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
+  <resourceTemplates lastRefreshed="1544022268390" id="24" name="OpenspaceHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.23" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="25" name="ECMIdentityProvider" description="" instances="//@hosts.0/@nodes.0/@resources.0" type="{http://xsd.tns.tibco.com/trinity/models/identity/subject}SubjectConfiguration" typeName="Identity Provider">
+  <resourceTemplates lastRefreshed="1544022268390" id="25" name="ECMIdentityProvider" description="" instances="//@hosts.0/@nodes.0/@resources.0" type="{http://xsd.tns.tibco.com/trinity/models/identity/subject}SubjectConfiguration" typeName="Identity Provider">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="26" name="DataSource" description="AMX-BPM Core XA DataSource" instances="//@hosts.0/@nodes.0/@resources.33" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc}JdbcDataSource" typeName="JDBC">
+  <resourceTemplates lastRefreshed="1544022268390" id="26" name="DataSource" description="AMX-BPM Core XA DataSource" instances="//@hosts.0/@nodes.0/@resources.33" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc}JdbcDataSource" typeName="JDBC">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="27" name="DEHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.4" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
+  <resourceTemplates lastRefreshed="1544022268390" id="27" name="DEHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.4" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="28" name="BDSCaseDataStoreResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.5" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}TeneoSessionFactory" typeName="Teneo">
+  <resourceTemplates lastRefreshed="1544022268390" id="28" name="BDSCaseDataStoreResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.5" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}TeneoSessionFactory" typeName="Teneo">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="29" name="PEHibernateDirectSharedResource" description="Hibernate Proxy Session Factory for N2PE non XA- Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.37" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
+  <resourceTemplates lastRefreshed="1544022268390" id="29" name="PEHibernateDirectSharedResource" description="Hibernate Proxy Session Factory for N2PE non XA- Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.37" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="30" name="BDSCaseDataStoreSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.18" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}TeneoSessionFactory" typeName="Teneo">
+  <resourceTemplates lastRefreshed="1544022268390" id="30" name="BDSCaseDataStoreSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.18" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}TeneoSessionFactory" typeName="Teneo">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="31" name="PEHibernateSharedResource" description="Hibernate Proxy Session Factory for N2PE XA- Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.13" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
+  <resourceTemplates lastRefreshed="1544022268390" id="31" name="PEHibernateSharedResource" description="Hibernate Proxy Session Factory for N2PE XA- Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.13" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="32" name="ECHibernateDirectSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.2" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
+  <resourceTemplates lastRefreshed="1544022268390" id="32" name="ECHibernateDirectSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.2" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="33" name="BDSHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.11" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
+  <resourceTemplates lastRefreshed="1544022268390" id="33" name="BDSHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.11" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="34" name="DataSourceBDS" description="AMX-BPM BDS XA DataSource" instances="//@hosts.0/@nodes.0/@resources.25" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc}JdbcDataSource" typeName="JDBC">
+  <resourceTemplates lastRefreshed="1544022268390" id="34" name="DataSourceBDS" description="AMX-BPM BDS XA DataSource" instances="//@hosts.0/@nodes.0/@resources.25" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc}JdbcDataSource" typeName="JDBC">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="35" name="ECMCredentialsKeystore" description="Security details for the ECM system" instances="//@hosts.0/@nodes.0/@resources.26" type="{http://xsd.tns.tibco.com/trinity/models/cred/keystore}KeystoreConfiguration" typeName="Keystore Provider">
+  <resourceTemplates lastRefreshed="1544022268390" id="35" name="ECMCredentialsKeystore" description="Security details for the ECM system" instances="//@hosts.0/@nodes.0/@resources.26" type="{http://xsd.tns.tibco.com/trinity/models/cred/keystore}KeystoreConfiguration" typeName="Keystore Provider">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="36" name="SCHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.32" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
+  <resourceTemplates lastRefreshed="1544022268390" id="36" name="SCHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.32" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="37" name="DACHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.21" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
+  <resourceTemplates lastRefreshed="1544022268390" id="37" name="DACHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.21" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="38" name="WPEmailChannelSMTPSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.31" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/smtp}SmtpConfiguration" typeName="SMTP">
+  <resourceTemplates lastRefreshed="1544022268390" id="38" name="WPEmailChannelSMTPSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.31" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/smtp}SmtpConfiguration" typeName="SMTP">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="39" name="WPHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.14" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
+  <resourceTemplates lastRefreshed="1544022268390" id="39" name="WPHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.14" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="40" name="BRMHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.27" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
+  <resourceTemplates lastRefreshed="1544022268390" id="40" name="BRMHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.27" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="41" name="ECHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.28" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
+  <resourceTemplates lastRefreshed="1544022268390" id="41" name="ECHibernateSharedResource" description="Imported from DAA 'com.tibco.amxbpm.fullnode' (version: '1.11.2.004')" instances="//@hosts.0/@nodes.0/@resources.28" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/hibernate}HibernateSessionFactory" typeName="Hibernate">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="42" name="DataSourceDirect" description="AMX-BPM Core DataSource" instances="//@hosts.0/@nodes.0/@resources.10" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc}JdbcDataSource" typeName="JDBC">
+  <resourceTemplates lastRefreshed="1544022268390" id="42" name="DataSourceDirect" description="AMX-BPM Core DataSource" instances="//@hosts.0/@nodes.0/@resources.10" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc}JdbcDataSource" typeName="JDBC">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="43" name="KeystoreCsp" description="This is SSL Client Keystore RT" instances="//@hosts.0/@nodes.0/@resources.22" type="{http://xsd.tns.tibco.com/trinity/models/cred/keystore}KeystoreConfiguration" typeName="Keystore Provider">
+  <resourceTemplates lastRefreshed="1544022268390" id="43" name="KeystoreCsp" description="This is SSL Client Keystore RT" instances="//@hosts.0/@nodes.0/@resources.22" type="{http://xsd.tns.tibco.com/trinity/models/cred/keystore}KeystoreConfiguration" typeName="Keystore Provider">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="44" name="amx.bpm.keystore.provider" description="AMX BPM WSS Auth Keystore Provider" instances="//@hosts.0/@nodes.0/@resources.15" type="{http://xsd.tns.tibco.com/trinity/models/cred/keystore}KeystoreConfiguration" typeName="Keystore Provider">
+  <resourceTemplates lastRefreshed="1544022268390" id="44" name="amx.bpm.keystore.provider" description="AMX BPM WSS Auth Keystore Provider" instances="//@hosts.0/@nodes.0/@resources.15" type="{http://xsd.tns.tibco.com/trinity/models/cred/keystore}KeystoreConfiguration" typeName="Keystore Provider">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="45" name="amx.bpm.truststore.provider" description="AMX BPM WSS Auth Truststore Provider" instances="//@hosts.0/@nodes.0/@resources.7" type="{http://xsd.tns.tibco.com/trinity/models/cred/keystore}KeystoreConfiguration" typeName="Keystore Provider">
+  <resourceTemplates lastRefreshed="1544022268390" id="45" name="amx.bpm.truststore.provider" description="AMX BPM WSS Auth Truststore Provider" instances="//@hosts.0/@nodes.0/@resources.7" type="{http://xsd.tns.tibco.com/trinity/models/cred/keystore}KeystoreConfiguration" typeName="Keystore Provider">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="46" name="jms-truststore" description="AMX BPM JMS Truststore Provider" instances="//@hosts.0/@nodes.0/@resources.9" type="{http://xsd.tns.tibco.com/trinity/models/cred/keystore}KeystoreConfiguration" typeName="Keystore Provider">
+  <resourceTemplates lastRefreshed="1544022268390" id="46" name="jms-truststore" description="AMX BPM JMS Truststore Provider" instances="//@hosts.0/@nodes.0/@resources.9" type="{http://xsd.tns.tibco.com/trinity/models/cred/keystore}KeystoreConfiguration" typeName="Keystore Provider">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="47" name="LdapAspRT_Identity" description="" instances="//@hosts.0/@nodes.0/@resources.20" type="{http://xsd.tns.tibco.com/trinity/models/identity/subject}SubjectConfiguration" typeName="Identity Provider">
+  <resourceTemplates lastRefreshed="1544022268390" id="47" name="LdapAspRT_Identity" description="" instances="//@hosts.0/@nodes.0/@resources.20" type="{http://xsd.tns.tibco.com/trinity/models/identity/subject}SubjectConfiguration" typeName="Identity Provider">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="48" name="sslServer" description="This is SSL Server RT" instances="//@hosts.0/@nodes.0/@resources.17" type="{http://xsd.tns.tibco.com/trinity/models/sslserver}SSLServerConfiguration" typeName="SSL Server Provider">
+  <resourceTemplates lastRefreshed="1544022268390" id="48" name="sslServer" description="This is SSL Server RT" instances="//@hosts.0/@nodes.0/@resources.17" type="{http://xsd.tns.tibco.com/trinity/models/sslserver}SSLServerConfiguration" typeName="SSL Server Provider">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="49" name="httpConnector" description="AMX BPM HTTP Connector" instances="//@hosts.0/@nodes.0/@resources.16" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/httpconnector}HttpConnectorConfiguration" typeName="HTTP Connector">
+  <resourceTemplates lastRefreshed="1544022268390" id="49" name="httpConnector" description="AMX BPM HTTP Connector" instances="//@hosts.0/@nodes.0/@resources.16" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/httpconnector}HttpConnectorConfiguration" typeName="HTTP Connector">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="52" name="ldap/de/system" description="This is the system LDAP" instances="//@hosts.0/@nodes.0/@resources.29" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/ldap}LdapConnection" typeName="LDAP Connection">
+  <resourceTemplates lastRefreshed="1544022268390" id="52" name="ldap/de/system" description="This is the system LDAP" instances="//@hosts.0/@nodes.0/@resources.29" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/ldap}LdapConnection" typeName="LDAP Connection">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="54" name="ldap/de/easyAs" description="This is the easyAS example LDAP" instances="//@hosts.0/@nodes.0/@resources.6" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/ldap}LdapConnection" typeName="LDAP Connection">
+  <resourceTemplates lastRefreshed="1544022268390" id="54" name="ldap/de/easyAs" description="This is the easyAS example LDAP" instances="//@hosts.0/@nodes.0/@resources.6" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/ldap}LdapConnection" typeName="LDAP Connection">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="55" name="amx.bpm.mutual.id.provider" description="AMX BPM WSS Mutual Identity Provider" instances="//@hosts.0/@nodes.0/@resources.3" type="{http://xsd.tns.tibco.com/trinity/models/identity/mip}MIPConfiguration" typeName="Mutual Identity Provider">
+  <resourceTemplates lastRefreshed="1544022268390" id="55" name="amx.bpm.mutual.id.provider" description="AMX BPM WSS Mutual Identity Provider" instances="//@hosts.0/@nodes.0/@resources.3" type="{http://xsd.tns.tibco.com/trinity/models/identity/mip}MIPConfiguration" typeName="Mutual Identity Provider">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="56" name="amx.bpm.userapp.threadpool" description="AMX BPM User App Thread Pool" instances="//@hosts.0/@nodes.0/@resources.24" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/threadpool}ThreadPoolConfiguration" typeName="Thread Pool">
+  <resourceTemplates lastRefreshed="1544022268390" id="56" name="amx.bpm.userapp.threadpool" description="AMX BPM User App Thread Pool" instances="//@hosts.0/@nodes.0/@resources.24" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/threadpool}ThreadPoolConfiguration" typeName="Thread Pool">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="57" name="amx.bpm.auth.system" description="This is System LdapAsp RT" instances="//@hosts.0/@nodes.0/@resources.36" type="{http://xsd.tns.tibco.com/trinity/models/auth/ldap}LDAPConfiguration" typeName="LDAP Authentication">
+  <resourceTemplates lastRefreshed="1544022268390" id="57" name="amx.bpm.auth.system" description="This is System LdapAsp RT" instances="//@hosts.0/@nodes.0/@resources.36" type="{http://xsd.tns.tibco.com/trinity/models/auth/ldap}LDAPConfiguration" typeName="LDAP Authentication">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="58" name="amx.bpm.auth.easyAs" description="This is System LdapAsp RT" instances="//@hosts.0/@nodes.0/@resources.30" type="{http://xsd.tns.tibco.com/trinity/models/auth/ldap}LDAPConfiguration" typeName="LDAP Authentication">
+  <resourceTemplates lastRefreshed="1544022268390" id="58" name="amx.bpm.auth.easyAs" description="This is System LdapAsp RT" instances="//@hosts.0/@nodes.0/@resources.30" type="{http://xsd.tns.tibco.com/trinity/models/auth/ldap}LDAPConfiguration" typeName="LDAP Authentication">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="59" name="amx.bpm.auth.wss.asp" description="AMX BPM WSS Auth Provider" instances="//@hosts.0/@nodes.0/@resources.19" type="{http://xsd.tns.tibco.com/trinity/models/auth/wss}WSSConfiguration" typeName="WSS Authentication">
+  <resourceTemplates lastRefreshed="1544022268390" id="59" name="amx.bpm.auth.wss.asp" description="AMX BPM WSS Auth Provider" instances="//@hosts.0/@nodes.0/@resources.19" type="{http://xsd.tns.tibco.com/trinity/models/auth/wss}WSSConfiguration" typeName="WSS Authentication">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632638" id="61" name="amx.bpm.userapp.jndiConnConf" description="Userapp JNDI for JMS connection" instances="//@hosts.0/@nodes.0/@resources.1" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JNDIConnection" typeName="JNDI Connection Configuration">
+  <resourceTemplates lastRefreshed="1544022268390" id="61" name="amx.bpm.userapp.jndiConnConf" description="Userapp JNDI for JMS connection" instances="//@hosts.0/@nodes.0/@resources.1" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JNDIConnection" typeName="JNDI Connection Configuration">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632639" id="63" name="amx.bpm.userapp.jmsConnFactoryConf" description="Userapp inbound JMS connection" instances="//@hosts.0/@nodes.0/@resources.34" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSConnectionFactoryConfiguration" typeName="JMS Connection Factory Configuration">
+  <resourceTemplates lastRefreshed="1544022268390" id="63" name="amx.bpm.userapp.jmsConnFactoryConf" description="Userapp inbound JMS connection" instances="//@hosts.0/@nodes.0/@resources.34" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSConnectionFactoryConfiguration" typeName="JMS Connection Factory Configuration">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632639" id="64" name="amx.bpm.userapp.jms.request.conf" description="Userapp request JMS destination" instances="//@hosts.0/@nodes.0/@resources.35" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSDestinationConfiguration" typeName="JMS Destination Configuration">
+  <resourceTemplates lastRefreshed="1544022268390" id="64" name="amx.bpm.userapp.jms.request.conf" description="Userapp request JMS destination" instances="//@hosts.0/@nodes.0/@resources.35" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSDestinationConfiguration" typeName="JMS Destination Configuration">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632639" id="66" name="amx.bpm.userapp.jmsConnFactory" description="Userapp response JMS connection" instances="//@hosts.0/@nodes.0/@resources.12" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSConnectionFactory" typeName="JMS Connection Factory">
+  <resourceTemplates lastRefreshed="1544022268390" id="66" name="amx.bpm.userapp.jmsConnFactory" description="Userapp response JMS connection" instances="//@hosts.0/@nodes.0/@resources.12" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSConnectionFactory" typeName="JMS Connection Factory">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632639" id="67" name="jmsSSLConnection" description="This is JMS SSL RT" instances="//@hosts.0/@nodes.0/@resources.8" type="{http://xsd.tns.tibco.com/trinity/models/sslclient}SSLClientConfiguration" typeName="SSL Client Provider">
+  <resourceTemplates lastRefreshed="1544022268390" id="67" name="jmsSSLConnection" description="This is JMS SSL RT" instances="//@hosts.0/@nodes.0/@resources.8" type="{http://xsd.tns.tibco.com/trinity/models/sslclient}SSLClientConfiguration" typeName="SSL Client Provider">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632639" id="90" name="JNDIConnectionConfiguration_BW6" description="" instances="//@hosts.0/@nodes.0/@resources.39" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JNDIConnection" typeName="JNDI Connection Configuration">
+  <resourceTemplates lastRefreshed="1544022268390" id="90" name="JNDIConnectionConfiguration_BW6" description="" instances="//@hosts.0/@nodes.0/@resources.39" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JNDIConnection" typeName="JNDI Connection Configuration">
     <scope type="Application" name="amx.bpm.apacheds"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632639" id="83" name="JMSDestination_BPM_BW6" description="" instances="//@hosts.0/@nodes.0/@resources.38" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSDestination" typeName="JMS Destination">
+  <resourceTemplates lastRefreshed="1544022268390" id="83" name="JMSDestination_BPM_BW6" description="" instances="//@hosts.0/@nodes.0/@resources.38" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSDestination" typeName="JMS Destination">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632639" id="92" name="JMSConnectionFactory_BW6" description="" instances="//@hosts.0/@nodes.0/@resources.40" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSConnectionFactory" typeName="JMS Connection Factory">
+  <resourceTemplates lastRefreshed="1544022268390" id="92" name="JMSConnectionFactory_BW6" description="" instances="//@hosts.0/@nodes.0/@resources.40" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSConnectionFactory" typeName="JMS Connection Factory">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632639" id="122" name="ldap/de/igs" description="" instances="//@hosts.0/@nodes.0/@resources.41" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/ldap}LdapConnection" typeName="LDAP Connection">
+  <resourceTemplates lastRefreshed="1544022268390" id="122" name="ldap/de/igs" description="" instances="//@hosts.0/@nodes.0/@resources.41" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/ldap}LdapConnection" typeName="LDAP Connection">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632639" id="123" name="amx.bpm.auth.igs" description="" instances="//@hosts.0/@nodes.0/@resources.42" type="{http://xsd.tns.tibco.com/trinity/models/auth/ldap}LDAPConfiguration" typeName="LDAP Authentication">
+  <resourceTemplates lastRefreshed="1544022268390" id="123" name="amx.bpm.auth.igs" description="" instances="//@hosts.0/@nodes.0/@resources.42" type="{http://xsd.tns.tibco.com/trinity/models/auth/ldap}LDAPConfiguration" typeName="LDAP Authentication">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632639" id="127" name="DataSourceWFData" description="" instances="//@hosts.0/@nodes.0/@resources.43" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc}JdbcDataSource" typeName="JDBC">
+  <resourceTemplates lastRefreshed="1544022268390" id="127" name="DataSourceWFData" description="" instances="//@hosts.0/@nodes.0/@resources.43" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc}JdbcDataSource" typeName="JDBC">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632639" id="128" name="JMSConnectionFactoryConfiguration_BW6" description="" instances="//@hosts.0/@nodes.0/@resources.44" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSConnectionFactoryConfiguration" typeName="JMS Connection Factory Configuration">
+  <resourceTemplates lastRefreshed="1544022268390" id="128" name="JMSConnectionFactoryConfiguration_BW6" description="" instances="//@hosts.0/@nodes.0/@resources.44" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSConnectionFactoryConfiguration" typeName="JMS Connection Factory Configuration">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632639" id="133" name="JMSDestinationConfiguration_BW6_BPM" description="" instances="//@hosts.0/@nodes.0/@resources.46" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSDestinationConfiguration" typeName="JMS Destination Configuration">
+  <resourceTemplates lastRefreshed="1544022268390" id="133" name="JMSDestinationConfiguration_BW6_BPM" description="" instances="//@hosts.0/@nodes.0/@resources.46" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSDestinationConfiguration" typeName="JMS Destination Configuration">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632639" id="134" name="JMSDestination_BW6_BPM" description="" instances="//@hosts.0/@nodes.0/@resources.45" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSDestination" typeName="JMS Destination">
+  <resourceTemplates lastRefreshed="1544022268390" id="134" name="JMSDestination_BW6_BPM" description="" instances="//@hosts.0/@nodes.0/@resources.45" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/jms}JMSDestination" typeName="JMS Destination">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <resourceTemplates lastRefreshed="1544016632639" id="135" name="HTTPConnector_BW6_BPM" description="" instances="//@hosts.0/@nodes.0/@resources.47" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/httpconnector}HttpConnectorConfiguration" typeName="HTTP Connector">
+  <resourceTemplates lastRefreshed="1544022268390" id="135" name="HTTPConnector_BW6_BPM" description="" instances="//@hosts.0/@nodes.0/@resources.47" type="{http://xsd.tns.tibco.com/amf/models/sharedresource/httpconnector}HttpConnectorConfiguration" typeName="HTTP Connector">
     <scope type="Application" name="amx.bpm.app"/>
   </resourceTemplates>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.governance.mcr.aggregator.daa2.2.0.004" name="com.tibco.governance.mcr.aggregator.daa" description="" version="2.2.0.004" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.wsdl.validator.app1.0.1.002" name="com.tibco.wsdl.validator.app" description="" version="1.0.1.002" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.amf.admin.dashboard3.2.0.000" name="com.tibco.amf.admin.dashboard" description="" version="3.2.0.000" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.amx.it.mediation.apt3.5.0.001" name="com.tibco.amx.it.mediation.apt" description="" version="3.5.0.001" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.governance.sharedresource.mutual.isp.daa3.3.0.000" name="com.tibco.governance.sharedresource.mutual.isp.daa" description="" version="3.3.0.000" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.governance.sharedresource.wss.asp.daa3.3.0.000" name="com.tibco.governance.sharedresource.wss.asp.daa" description="" version="3.3.0.000" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.governance.sharedresource.trust.isp.daa3.3.0.000" name="com.tibco.governance.sharedresource.trust.isp.daa" description="" version="3.3.0.000" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.amxbpm.cmisrepo.server1.0.0.002" name="com.tibco.amxbpm.cmisrepo.server" description="" version="1.0.0.002" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.commonlogging.payload.daa1.2.0.004" name="com.tibco.commonlogging.payload.daa" description="" version="1.2.0.004" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.amxbpm.fullnode1.11.2.004" name="com.tibco.amxbpm.fullnode" description="" version="1.11.2.004" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.governance.sharedresource.ldap.asp.daa3.3.0.000" name="com.tibco.governance.sharedresource.ldap.asp.daa" description="" version="3.3.0.000" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.amf.admin.artifactserver1.2.0.001" name="com.tibco.amf.admin.artifactserver" description="" version="1.2.0.001" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.commonlogging.logservice.daa2.2.0.024" name="com.tibco.commonlogging.logservice.daa" description="" version="2.2.0.024" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.amf.admin.artifactserver3.3.0.000" name="com.tibco.amf.admin.artifactserver" description="" version="3.3.0.000" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.amxbpm.apacheds1.5.0.001" name="com.tibco.amxbpm.apacheds" description="" version="1.5.0.001" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.amf.debugger.daa3.3.0.000" name="com.tibco.amf.debugger.daa" description="" version="3.3.0.000" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.amx.platform.daa3.3.0.000" name="com.tibco.amx.platform.daa" description="" version="3.3.0.000" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.governance.agent.amxcomponent.migrator3.3.0.000" name="com.tibco.governance.agent.amxcomponent.migrator" description="" version="3.3.0.000" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.bpm.cm.documentstore1.0.1.001" name="com.tibco.bpm.cm.documentstore" description="" version="1.0.1.001" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.amxbpm.fullnode1.11.1.011" name="com.tibco.amxbpm.fullnode" description="" version="1.11.1.011" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.bpm.cm.documentstore1.0.0.002" name="com.tibco.bpm.cm.documentstore" description="" version="1.0.0.002" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.amxbpm.orgmodel.application1.1.0.001" name="com.tibco.amxbpm.orgmodel.application" description="" version="1.1.0.001" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.amf.admin.artifactserver1.2.12.001" name="com.tibco.amf.admin.artifactserver" description="" version="1.2.12.001" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.governance.sharedresource.subject.isp.daa3.3.0.000" name="com.tibco.governance.sharedresource.subject.isp.daa" description="" version="3.3.0.000" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.governance.sharedresource.jaas.extension.daa3.3.0.000" name="com.tibco.governance.sharedresource.jaas.extension.daa" description="" version="3.3.0.000" readOnly="true"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181127123333004" name="com.tibco.poc.test" description="" version="1.0.0.20181127123333004"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.worklistfasade1.0.0.20181130153042309" name="com.example.worklistfasade" description="" version="1.0.0.20181130153042309"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181127151444929" name="com.tibco.poc.test" description="" version="1.0.0.20181127151444929"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181127132853721" name="com.tibco.poc.test" description="" version="1.0.0.20181127132853721"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181127134945583" name="com.tibco.poc.test" description="" version="1.0.0.20181127134945583"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcopocdataprocess1.0.0.20181204124753332" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204124753332"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181126171551179" name="com.tibco.poc.test" description="" version="1.0.0.20181126171551179"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181205114726160" name="com.tibco.poc.test" description="" version="1.0.0.20181205114726160"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcopocdataprocess1.0.0.20181204113909292" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204113909292"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181126163945678" name="com.tibco.poc.test" description="" version="1.0.0.20181126163945678"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181126155005986" name="com.tibco.poc.test" description="" version="1.0.0.20181126155005986"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181127132722618" name="com.tibco.poc.test" description="" version="1.0.0.20181127132722618"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcowfgenericsubprocesskantonzh1.0.0.20181116123700129" name="com.example.comtibcowfgenericsubprocesskantonzh" description="" version="1.0.0.20181116123700129"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.thomas_bd-11.0.0.20181001122244728" name="com.example.thomas_bd-1" description="" version="1.0.0.20181001122244728"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181204171518168" name="com.tibco.poc.test" description="" version="1.0.0.20181204171518168"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181126152559751" name="com.tibco.poc.test" description="" version="1.0.0.20181126152559751"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.test.thomas_wf1.0.0.20181114152358826" name="com.test.thomas_wf" description="" version="1.0.0.20181114152358826"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181130124136627" name="com.tibco.poc.test" description="" version="1.0.0.20181130124136627"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcowfgenericsubprocesskantonbe1.0.0.20181116123612047" name="com.example.comtibcowfgenericsubprocesskantonbe" description="" version="1.0.0.20181116123612047"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.thomas_test1.0.0.20181114125418959" name="com.example.thomas_test" description="" version="1.0.0.20181114125418959"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181123145750048" name="com.tibco.poc.test" description="" version="1.0.0.20181123145750048"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181130111456234" name="com.tibco.poc.test" description="" version="1.0.0.20181130111456234"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181123143646785" name="com.tibco.poc.test" description="" version="1.0.0.20181123143646785"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.worklistfasade1.0.0.20181203161602639" name="com.example.worklistfasade" description="" version="1.0.0.20181203161602639"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcopocdataprocess1.0.0.20181204111703636" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204111703636"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181127130914907" name="com.tibco.poc.test" description="" version="1.0.0.20181127130914907"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcowfasynchcall1.0.0.20181116123745591" name="com.example.comtibcowfasynchcall" description="" version="1.0.0.20181116123745591"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181130135430599" name="com.tibco.poc.test" description="" version="1.0.0.20181130135430599"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181130152316359" name="com.tibco.poc.test" description="" version="1.0.0.20181130152316359"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181130125606984" name="com.tibco.poc.test" description="" version="1.0.0.20181130125606984"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.test.thomas_wf1.0.0.20181114154317066" name="com.test.thomas_wf" description="" version="1.0.0.20181114154317066"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181204172123084" name="com.tibco.poc.test" description="" version="1.0.0.20181204172123084"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181130132311281" name="com.tibco.poc.test" description="" version="1.0.0.20181130132311281"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181127144156487" name="com.tibco.poc.test" description="" version="1.0.0.20181127144156487"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcobomasynchcall-11.0.0.20181116105831784" name="com.example.comtibcobomasynchcall-1" description="" version="1.0.0.20181116105831784"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181127125712974" name="com.tibco.poc.test" description="" version="1.0.0.20181127125712974"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcopocdataprocess1.0.0.20181204160418053" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204160418053"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcopocdataprocess1.0.0.20181204112901887" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204112901887"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181127142046458" name="com.tibco.poc.test" description="" version="1.0.0.20181127142046458"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.test.thomas_wf1.0.0.20181114145409416" name="com.test.thomas_wf" description="" version="1.0.0.20181114145409416"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcowfasynchcall1.0.0.20181116121311272" name="com.example.comtibcowfasynchcall" description="" version="1.0.0.20181116121311272"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.worklistfasade1.0.0.20181130152249451" name="com.example.worklistfasade" description="" version="1.0.0.20181130152249451"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcoorgasynchcall1.0.0.20181116120627202" name="com.example.comtibcoorgasynchcall" description="" version="1.0.0.20181116120627202"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181127152211574" name="com.tibco.poc.test" description="" version="1.0.0.20181127152211574"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.thomas_test1.0.0.20181114130115106" name="com.example.thomas_test" description="" version="1.0.0.20181114130115106"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181130131228688" name="com.tibco.poc.test" description="" version="1.0.0.20181130131228688"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181123141429826" name="com.tibco.poc.test" description="" version="1.0.0.20181123141429826"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181126163141197" name="com.tibco.poc.test" description="" version="1.0.0.20181126163141197"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181204170444391" name="com.tibco.poc.test" description="" version="1.0.0.20181204170444391"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcowfasynchcall1.0.0.20181116125310249" name="com.example.comtibcowfasynchcall" description="" version="1.0.0.20181116125310249"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcowfgenericsubprocesskantonbe1.0.0.20181116121401609" name="com.example.comtibcowfgenericsubprocesskantonbe" description="" version="1.0.0.20181116121401609"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181127140626173" name="com.tibco.poc.test" description="" version="1.0.0.20181127140626173"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcowfasynchcall1.0.0.20181116125434529" name="com.example.comtibcowfasynchcall" description="" version="1.0.0.20181116125434529"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcopocdataprocess1.0.0.20181204161959054" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204161959054"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.worklistfasade1.0.0.20181204143343690" name="com.example.worklistfasade" description="" version="1.0.0.20181204143343690"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181204143836432" name="com.tibco.poc.test" description="" version="1.0.0.20181204143836432"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181130130439806" name="com.tibco.poc.test" description="" version="1.0.0.20181130130439806"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcopocdataprocess1.0.0.20181204112153836" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204112153836"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181126165204692" name="com.tibco.poc.test" description="" version="1.0.0.20181126165204692"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181126142640896" name="com.tibco.poc.test" description="" version="1.0.0.20181126142640896"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcowfgenericsubprocesskantonzh1.0.0.20181116121454983" name="com.example.comtibcowfgenericsubprocesskantonzh" description="" version="1.0.0.20181116121454983"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181203170458985" name="com.tibco.poc.test" description="" version="1.0.0.20181203170458985"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181127133614680" name="com.tibco.poc.test" description="" version="1.0.0.20181127133614680"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181126162104690" name="com.tibco.poc.test" description="" version="1.0.0.20181126162104690"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.worklistfasade1.0.0.20181203170330905" name="com.example.worklistfasade" description="" version="1.0.0.20181203170330905"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181123145907468" name="com.tibco.poc.test" description="" version="1.0.0.20181123145907468"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.example.comtibcopocdataprocess1.0.0.20181204113355686" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204113355686"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181203161849790" name="com.tibco.poc.test" description="" version="1.0.0.20181203161849790"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181130134713364" name="com.tibco.poc.test" description="" version="1.0.0.20181130134713364"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181130133526327" name="com.tibco.poc.test" description="" version="1.0.0.20181130133526327"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181205141349651" name="com.tibco.poc.test" description="" version="1.0.0.20181205141349651"/>
-  <appTemplates lastRefreshed="1544016632941" id="com.tibco.poc.test1.0.0.20181205142915481" name="com.tibco.poc.test" description="" version="1.0.0.20181205142915481"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.governance.mcr.aggregator.daa2.2.0.004" name="com.tibco.governance.mcr.aggregator.daa" description="" version="2.2.0.004" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.wsdl.validator.app1.0.1.002" name="com.tibco.wsdl.validator.app" description="" version="1.0.1.002" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.amf.admin.dashboard3.2.0.000" name="com.tibco.amf.admin.dashboard" description="" version="3.2.0.000" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.amx.it.mediation.apt3.5.0.001" name="com.tibco.amx.it.mediation.apt" description="" version="3.5.0.001" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.governance.sharedresource.mutual.isp.daa3.3.0.000" name="com.tibco.governance.sharedresource.mutual.isp.daa" description="" version="3.3.0.000" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.governance.sharedresource.wss.asp.daa3.3.0.000" name="com.tibco.governance.sharedresource.wss.asp.daa" description="" version="3.3.0.000" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.governance.sharedresource.trust.isp.daa3.3.0.000" name="com.tibco.governance.sharedresource.trust.isp.daa" description="" version="3.3.0.000" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.amxbpm.cmisrepo.server1.0.0.002" name="com.tibco.amxbpm.cmisrepo.server" description="" version="1.0.0.002" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.commonlogging.payload.daa1.2.0.004" name="com.tibco.commonlogging.payload.daa" description="" version="1.2.0.004" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.amxbpm.fullnode1.11.2.004" name="com.tibco.amxbpm.fullnode" description="" version="1.11.2.004" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.governance.sharedresource.ldap.asp.daa3.3.0.000" name="com.tibco.governance.sharedresource.ldap.asp.daa" description="" version="3.3.0.000" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.amf.admin.artifactserver1.2.0.001" name="com.tibco.amf.admin.artifactserver" description="" version="1.2.0.001" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.commonlogging.logservice.daa2.2.0.024" name="com.tibco.commonlogging.logservice.daa" description="" version="2.2.0.024" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.amf.admin.artifactserver3.3.0.000" name="com.tibco.amf.admin.artifactserver" description="" version="3.3.0.000" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.amxbpm.apacheds1.5.0.001" name="com.tibco.amxbpm.apacheds" description="" version="1.5.0.001" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.amf.debugger.daa3.3.0.000" name="com.tibco.amf.debugger.daa" description="" version="3.3.0.000" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.amx.platform.daa3.3.0.000" name="com.tibco.amx.platform.daa" description="" version="3.3.0.000" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.governance.agent.amxcomponent.migrator3.3.0.000" name="com.tibco.governance.agent.amxcomponent.migrator" description="" version="3.3.0.000" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.bpm.cm.documentstore1.0.1.001" name="com.tibco.bpm.cm.documentstore" description="" version="1.0.1.001" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.amxbpm.fullnode1.11.1.011" name="com.tibco.amxbpm.fullnode" description="" version="1.11.1.011" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.bpm.cm.documentstore1.0.0.002" name="com.tibco.bpm.cm.documentstore" description="" version="1.0.0.002" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.amxbpm.orgmodel.application1.1.0.001" name="com.tibco.amxbpm.orgmodel.application" description="" version="1.1.0.001" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.amf.admin.artifactserver1.2.12.001" name="com.tibco.amf.admin.artifactserver" description="" version="1.2.12.001" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.governance.sharedresource.subject.isp.daa3.3.0.000" name="com.tibco.governance.sharedresource.subject.isp.daa" description="" version="3.3.0.000" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.governance.sharedresource.jaas.extension.daa3.3.0.000" name="com.tibco.governance.sharedresource.jaas.extension.daa" description="" version="3.3.0.000" readOnly="true"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181127123333004" name="com.tibco.poc.test" description="" version="1.0.0.20181127123333004"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.example.worklistfasade1.0.0.20181130153042309" name="com.example.worklistfasade" description="" version="1.0.0.20181130153042309"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181127151444929" name="com.tibco.poc.test" description="" version="1.0.0.20181127151444929"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181127132853721" name="com.tibco.poc.test" description="" version="1.0.0.20181127132853721"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181127134945583" name="com.tibco.poc.test" description="" version="1.0.0.20181127134945583"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.example.comtibcopocdataprocess1.0.0.20181204124753332" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204124753332"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181126171551179" name="com.tibco.poc.test" description="" version="1.0.0.20181126171551179"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181205114726160" name="com.tibco.poc.test" description="" version="1.0.0.20181205114726160"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.example.comtibcopocdataprocess1.0.0.20181204113909292" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204113909292"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181126163945678" name="com.tibco.poc.test" description="" version="1.0.0.20181126163945678"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181126155005986" name="com.tibco.poc.test" description="" version="1.0.0.20181126155005986"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181127132722618" name="com.tibco.poc.test" description="" version="1.0.0.20181127132722618"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.example.comtibcowfgenericsubprocesskantonzh1.0.0.20181116123700129" name="com.example.comtibcowfgenericsubprocesskantonzh" description="" version="1.0.0.20181116123700129"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.example.thomas_bd-11.0.0.20181001122244728" name="com.example.thomas_bd-1" description="" version="1.0.0.20181001122244728"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181204171518168" name="com.tibco.poc.test" description="" version="1.0.0.20181204171518168"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181126152559751" name="com.tibco.poc.test" description="" version="1.0.0.20181126152559751"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.test.thomas_wf1.0.0.20181114152358826" name="com.test.thomas_wf" description="" version="1.0.0.20181114152358826"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181130124136627" name="com.tibco.poc.test" description="" version="1.0.0.20181130124136627"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.example.comtibcowfgenericsubprocesskantonbe1.0.0.20181116123612047" name="com.example.comtibcowfgenericsubprocesskantonbe" description="" version="1.0.0.20181116123612047"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.example.thomas_test1.0.0.20181114125418959" name="com.example.thomas_test" description="" version="1.0.0.20181114125418959"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181123145750048" name="com.tibco.poc.test" description="" version="1.0.0.20181123145750048"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181130111456234" name="com.tibco.poc.test" description="" version="1.0.0.20181130111456234"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181123143646785" name="com.tibco.poc.test" description="" version="1.0.0.20181123143646785"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.example.worklistfasade1.0.0.20181203161602639" name="com.example.worklistfasade" description="" version="1.0.0.20181203161602639"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.example.comtibcopocdataprocess1.0.0.20181204111703636" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204111703636"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181127130914907" name="com.tibco.poc.test" description="" version="1.0.0.20181127130914907"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.example.comtibcowfasynchcall1.0.0.20181116123745591" name="com.example.comtibcowfasynchcall" description="" version="1.0.0.20181116123745591"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181130135430599" name="com.tibco.poc.test" description="" version="1.0.0.20181130135430599"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181130152316359" name="com.tibco.poc.test" description="" version="1.0.0.20181130152316359"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181130125606984" name="com.tibco.poc.test" description="" version="1.0.0.20181130125606984"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.test.thomas_wf1.0.0.20181114154317066" name="com.test.thomas_wf" description="" version="1.0.0.20181114154317066"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181204172123084" name="com.tibco.poc.test" description="" version="1.0.0.20181204172123084"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181130132311281" name="com.tibco.poc.test" description="" version="1.0.0.20181130132311281"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181127144156487" name="com.tibco.poc.test" description="" version="1.0.0.20181127144156487"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.comtibcobomasynchcall-11.0.0.20181116105831784" name="com.example.comtibcobomasynchcall-1" description="" version="1.0.0.20181116105831784"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181127125712974" name="com.tibco.poc.test" description="" version="1.0.0.20181127125712974"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.comtibcopocdataprocess1.0.0.20181204160418053" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204160418053"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.comtibcopocdataprocess1.0.0.20181204112901887" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204112901887"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181127142046458" name="com.tibco.poc.test" description="" version="1.0.0.20181127142046458"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.test.thomas_wf1.0.0.20181114145409416" name="com.test.thomas_wf" description="" version="1.0.0.20181114145409416"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.comtibcowfasynchcall1.0.0.20181116121311272" name="com.example.comtibcowfasynchcall" description="" version="1.0.0.20181116121311272"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.worklistfasade1.0.0.20181130152249451" name="com.example.worklistfasade" description="" version="1.0.0.20181130152249451"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.comtibcoorgasynchcall1.0.0.20181116120627202" name="com.example.comtibcoorgasynchcall" description="" version="1.0.0.20181116120627202"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181127152211574" name="com.tibco.poc.test" description="" version="1.0.0.20181127152211574"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.thomas_test1.0.0.20181114130115106" name="com.example.thomas_test" description="" version="1.0.0.20181114130115106"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181130131228688" name="com.tibco.poc.test" description="" version="1.0.0.20181130131228688"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181123141429826" name="com.tibco.poc.test" description="" version="1.0.0.20181123141429826"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181126163141197" name="com.tibco.poc.test" description="" version="1.0.0.20181126163141197"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181204170444391" name="com.tibco.poc.test" description="" version="1.0.0.20181204170444391"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.comtibcowfasynchcall1.0.0.20181116125310249" name="com.example.comtibcowfasynchcall" description="" version="1.0.0.20181116125310249"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.comtibcowfgenericsubprocesskantonbe1.0.0.20181116121401609" name="com.example.comtibcowfgenericsubprocesskantonbe" description="" version="1.0.0.20181116121401609"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181127140626173" name="com.tibco.poc.test" description="" version="1.0.0.20181127140626173"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.comtibcowfasynchcall1.0.0.20181116125434529" name="com.example.comtibcowfasynchcall" description="" version="1.0.0.20181116125434529"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.comtibcopocdataprocess1.0.0.20181204161959054" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204161959054"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.worklistfasade1.0.0.20181204143343690" name="com.example.worklistfasade" description="" version="1.0.0.20181204143343690"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181204143836432" name="com.tibco.poc.test" description="" version="1.0.0.20181204143836432"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181130130439806" name="com.tibco.poc.test" description="" version="1.0.0.20181130130439806"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.comtibcopocdataprocess1.0.0.20181204112153836" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204112153836"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181126165204692" name="com.tibco.poc.test" description="" version="1.0.0.20181126165204692"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181126142640896" name="com.tibco.poc.test" description="" version="1.0.0.20181126142640896"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.comtibcowfgenericsubprocesskantonzh1.0.0.20181116121454983" name="com.example.comtibcowfgenericsubprocesskantonzh" description="" version="1.0.0.20181116121454983"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181203170458985" name="com.tibco.poc.test" description="" version="1.0.0.20181203170458985"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181127133614680" name="com.tibco.poc.test" description="" version="1.0.0.20181127133614680"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181126162104690" name="com.tibco.poc.test" description="" version="1.0.0.20181126162104690"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.worklistfasade1.0.0.20181203170330905" name="com.example.worklistfasade" description="" version="1.0.0.20181203170330905"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181123145907468" name="com.tibco.poc.test" description="" version="1.0.0.20181123145907468"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.example.comtibcopocdataprocess1.0.0.20181204113355686" name="com.example.comtibcopocdataprocess" description="" version="1.0.0.20181204113355686"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181203161849790" name="com.tibco.poc.test" description="" version="1.0.0.20181203161849790"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181130134713364" name="com.tibco.poc.test" description="" version="1.0.0.20181130134713364"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181130133526327" name="com.tibco.poc.test" description="" version="1.0.0.20181130133526327"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181205141349651" name="com.tibco.poc.test" description="" version="1.0.0.20181205141349651"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181205142915481" name="com.tibco.poc.test" description="" version="1.0.0.20181205142915481"/>
+  <appTemplates lastRefreshed="1544022269297" id="com.tibco.poc.test1.0.0.20181205145306190" name="com.tibco.poc.test" description="" version="1.0.0.20181205145306190"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181205151428600" name="com.tibco.poc.test" description="" version="1.0.0.20181205151428600"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181205153051891" name="com.tibco.poc.test" description="" version="1.0.0.20181205153051891"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181205155142444" name="com.tibco.poc.test" description="" version="1.0.0.20181205155142444"/>
+  <appTemplates lastRefreshed="1544022269298" id="com.tibco.poc.test1.0.0.20181205160320064" name="com.tibco.poc.test" description="" version="1.0.0.20181205160320064"/>
 </ad:AdminServer>

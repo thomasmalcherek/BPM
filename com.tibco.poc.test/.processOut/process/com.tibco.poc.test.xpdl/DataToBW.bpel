@@ -18,12 +18,6 @@
                 <variable>MetaData_GetData</variable>
             </startingVariables>
         </task>
-        <task name="GenerateUUID">
-            <startingVariables>
-                <variable>WF_CASE_ID</variable>
-                <variable>MetaData_GetData</variable>
-            </startingVariables>
-        </task>
         <task name="AssignTask">
             <startingVariables>
                 <variable>Task</variable>
@@ -74,12 +68,6 @@
                 <variable>MetaData_GetData</variable>
             </startingVariables>
         </task>
-        <task name="ScriptTask">
-            <startingVariables>
-                <variable>WF_CASE_ID</variable>
-                <variable>MetaData_GetData</variable>
-            </startingVariables>
-        </task>
     </tibex:VariableDescriptor>
     <tibex:AuditDescriptor>
         <auditAttribute name="attribute2" type="Complex" value="MetaData_GetData.AHVNummer"/>
@@ -92,8 +80,8 @@
         <bpws:variable name="MetaData_GetData"
             tibex:class="com.example.comtibcopoctest.pocMetaData"
             tibex:parameter="inout" tibex:xpdlId="_3UDB8_cWEeivmfZ-Q8QDTA"/>
-        <bpws:variable name="WF_CASE_ID"
-            tibex:xpdlId="_DVSE0O84EeiWP7q1zXlCTg" type="xsd:string"/>
+        <bpws:variable name="WF_CASE_ID" tibex:parameter="inout"
+            tibex:xpdlId="_wJiDQfibEeiLOcx5GuQ9ow" type="xsd:string"/>
         <bpws:variable name="Wiedervorlage"
             tibex:xpdlId="_RnxA0fS7EeiKGqQzTYL1wQ" type="xsd:boolean"/>
         <bpws:variable name="Task"
@@ -113,21 +101,20 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_wb_30PiREeiLOcx5GuQ9ow" tibex:sequenceFlow="yes">
+    <bpws:flow name="_BX_flow_RNglEPidEeiLOcx5GuQ9ow" tibex:sequenceFlow="yes">
         <bpws:links>
             <bpws:link name="AnzeigeDaten to EndEvent2" tibex:xpdlId="_5HWyoPcWEeivmfZ-Q8QDTA"/>
             <bpws:link name="AnzeigeDaten to AssignTask2" tibex:xpdlId="_itYi4fe5EeiebO3a5jKDMA"/>
             <bpws:link name="Wiedervorlage to _BX_scope_Pruefen"
                 tibex:loopback="yes" tibex:xpdlId="_11kPwPS7EeiKGqQzTYL1wQ"/>
-            <bpws:link name="Wiedervorlage to ScriptTask"
+            <bpws:link name="Wiedervorlage to Process_GetData"
                 tibex:loopback="yes" tibex:xpdlId="_RCoysPepEeiebO3a5jKDMA"/>
             <bpws:link name="Wiedervorlage to AnzeigeDaten"
                 tibex:loopback="yes" tibex:xpdlId="_Xq-lYPe5EeiebO3a5jKDMA"/>
             <bpws:link name="Process_GetData to AnzeigeDaten" tibex:xpdlId="_4vsgkPcWEeivmfZ-Q8QDTA"/>
             <bpws:link
                 name="_BX_scope_Pruefen to Escalation_after_3_minutes" tibex:xpdlId="_WR0rwemwEeiwvIivo0dWbg"/>
-            <bpws:link name="GenerateUUID to _BX_scope_Pruefen" tibex:xpdlId="_h-C7YPffEeiebO3a5jKDMA"/>
-            <bpws:link name="StartEvent to GenerateUUID" tibex:xpdlId="_JNc5gOwAEeieuqYotrFSPg"/>
+            <bpws:link name="StartEvent to _BX_scope_Pruefen" tibex:xpdlId="_JNc5gOwAEeieuqYotrFSPg"/>
             <bpws:link name="AssignTask to Wiedervorlage" tibex:xpdlId="_e7lsQPe5EeiebO3a5jKDMA"/>
             <bpws:link name="Escalation_after_3_minutes to EndEvent2" tibex:xpdlId="_CkfosOm0EeiwvIivo0dWbg"/>
             <bpws:link name="_BX_normalFlow to _BX_scope_CallSubProcess" tibex:xpdlId="_lrRwcO1-Eeirgeurc7FIqw"/>
@@ -135,8 +122,7 @@
             <bpws:link name="AssignTask2 to Wiedervorlage" tibex:xpdlId="_AW2x4fepEeiebO3a5jKDMA"/>
             <bpws:link
                 name="_BX_normalFlow_2 to _pPTV0fIpEeiCsd_Wv-RtYQ" tibex:xpdlId="_rI7G8fGGEeiCsd_Wv-RtYQ"/>
-            <bpws:link name="ScriptTask to Process_GetData" tibex:xpdlId="_qdlG0PIpEeiCsd_Wv-RtYQ"/>
-            <bpws:link name="_pPTV0fIpEeiCsd_Wv-RtYQ to ScriptTask" tibex:xpdlId="_iI3JgPcJEei7Xb3kYsEHgg"/>
+            <bpws:link name="_pPTV0fIpEeiCsd_Wv-RtYQ to Process_GetData" tibex:xpdlId="_iI3JgPcJEei7Xb3kYsEHgg"/>
             <bpws:link
                 name="_BX_scope_CallSubProcess to Escalation_after_3_minutes" tibex:xpdlId="_v0zpcO8kEeiWP7q1zXlCTg"/>
             <bpws:link name="Pruefen to _BX_normalFlow"/>
@@ -147,10 +133,11 @@
                 name="StartEvent" tibex:type="startEvent"
                 tibex:xpdlId="_RAFGVemlEeiNa-ssr_CQIw" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                 <bpws:sources>
-                    <bpws:source linkName="StartEvent to GenerateUUID"/>
+                    <bpws:source linkName="StartEvent to _BX_scope_Pruefen"/>
                 </bpws:sources>
                 <tibex:parameters>
                     <parameterDescription mode="InOut" name="MetaData_GetData"/>
+                    <parameterDescription mandatory="yes" mode="InOut" name="WF_CASE_ID"/>
                 </tibex:parameters>
                 <tibex:eventSource>
                     <tibex:startEvent eventType="Default"/>
@@ -182,8 +169,7 @@
                     <userTaskParameters>
                         <userTaskParameter mandatory="false"
                             mode="INOUT" name="MetaData_GetData"/>
-                        <userTaskParameter mandatory="false"
-                            mode="INOUT" name="WF_CASE_ID"/>
+                        <userTaskParameter mandatory="true" mode="INOUT" name="WF_CASE_ID"/>
                         <userTaskParameter mandatory="false"
                             mode="INOUT" name="Wiedervorlage"/>
                         <userTaskParameter mandatory="false"
@@ -199,25 +185,11 @@
                 <bpws:target linkName="Escalation_after_3_minutes to EndEvent2"/>
             </bpws:targets>
         </bpws:empty>
-        <bpws:extensionActivity>
-            <tibex:extActivity name="GenerateUUID"
-                tibex:migrationAllowed="yes" tibex:type="scriptTask"
-                tibex:xpdlId="_Ilru4OwAEeieuqYotrFSPg" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                <bpws:targets>
-                    <bpws:target linkName="StartEvent to GenerateUUID"/>
-                </bpws:targets>
-                <bpws:sources>
-                    <bpws:source linkName="GenerateUUID to _BX_scope_Pruefen"/>
-                </bpws:sources>
-                <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[MetaData_GetData.WFCaseID=Math.random().toString().slice(2);
-WF_CASE_ID=MetaData_GetData.WFCaseID;
-]]></tibex:script>
-            </tibex:extActivity>
-        </bpws:extensionActivity>
-        <bpws:scope name="Process_GetData" tibex:migrationAllowed="yes"
+        <bpws:scope name="Process_GetData"
             tibex:type="reusableSubProcess" tibex:xpdlId="_DDibQu89EeiCsd_Wv-RtYQ">
             <bpws:targets>
-                <bpws:target linkName="ScriptTask to Process_GetData"/>
+                <bpws:target linkName="Wiedervorlage to Process_GetData"/>
+                <bpws:target linkName="_pPTV0fIpEeiCsd_Wv-RtYQ to Process_GetData"/>
             </bpws:targets>
             <bpws:sources>
                 <bpws:source linkName="Process_GetData to AnzeigeDaten"/>
@@ -314,7 +286,7 @@ if (_BX_MetaData_GetData != null) {
                 <bpws:target linkName="_BX_normalFlow_2 to _pPTV0fIpEeiCsd_Wv-RtYQ"/>
             </bpws:targets>
             <bpws:sources>
-                <bpws:source linkName="_pPTV0fIpEeiCsd_Wv-RtYQ to ScriptTask"/>
+                <bpws:source linkName="_pPTV0fIpEeiCsd_Wv-RtYQ to Process_GetData"/>
             </bpws:sources>
             <bpws:variables>
                 <bpws:variable name="_BX_SubProcessMetaData" tibex:class="com.example.comtibcopoctest.pocMetaData"/>
@@ -360,19 +332,6 @@ _BX_ParameterIn_CorrelationID = WF_CASE_ID;
                 </bpws:extensionActivity>
             </bpws:sequence>
         </bpws:scope>
-        <bpws:extensionActivity>
-            <tibex:extActivity name="ScriptTask" tibex:type="scriptTask"
-                tibex:xpdlId="_nmGLQPJIEeif9tfFlBJi7Q" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                <bpws:targets>
-                    <bpws:target linkName="Wiedervorlage to ScriptTask"/>
-                    <bpws:target linkName="_pPTV0fIpEeiCsd_Wv-RtYQ to ScriptTask"/>
-                </bpws:targets>
-                <bpws:sources>
-                    <bpws:source linkName="ScriptTask to Process_GetData"/>
-                </bpws:sources>
-                <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[WF_CASE_ID=MetaData_GetData.WFCaseID;]]></tibex:script>
-            </tibex:extActivity>
-        </bpws:extensionActivity>
         <bpws:scope name="Wiedervorlage" tibex:type="reusableSubProcess" tibex:xpdlId="_4v6d0vS3EeiKGqQzTYL1wQ">
             <bpws:targets>
                 <bpws:target linkName="AssignTask to Wiedervorlage"/>
@@ -382,7 +341,7 @@ _BX_ParameterIn_CorrelationID = WF_CASE_ID;
                 <bpws:source linkName="Wiedervorlage to _BX_scope_Pruefen">
                     <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[Task=="Pruefen";]]></bpws:transitionCondition>
                 </bpws:source>
-                <bpws:source linkName="Wiedervorlage to ScriptTask">
+                <bpws:source linkName="Wiedervorlage to Process_GetData">
                     <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[##otherwise##]]></bpws:transitionCondition>
                 </bpws:source>
                 <bpws:source linkName="Wiedervorlage to AnzeigeDaten">
@@ -442,15 +401,21 @@ Task = _BX_Task;
             </bpws:sequence>
         </bpws:scope>
         <bpws:extensionActivity>
-            <tibex:extActivity name="AnzeigeDaten" tibex:type="userTask"
+            <tibex:extActivity name="AnzeigeDaten"
+                tibex:extendedAttributes="bpmJspTask=form\://comtibcopoctest/DataToBW/AnzeigeDaten/AnzeigeDaten.form&#xd;&#xa;"
+                tibex:type="userTask"
                 tibex:xpdlId="_3UDB8PcWEeivmfZ-Q8QDTA" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                 <bpws:targets>
                     <bpws:target linkName="Wiedervorlage to AnzeigeDaten"/>
                     <bpws:target linkName="Process_GetData to AnzeigeDaten"/>
                 </bpws:targets>
                 <bpws:sources>
-                    <bpws:source linkName="AnzeigeDaten to EndEvent2"/>
-                    <bpws:source linkName="AnzeigeDaten to AssignTask2"/>
+                    <bpws:source linkName="AnzeigeDaten to EndEvent2">
+                        <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[##otherwise##]]></bpws:transitionCondition>
+                    </bpws:source>
+                    <bpws:source linkName="AnzeigeDaten to AssignTask2">
+                        <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[Wiedervorlage==true;]]></bpws:transitionCondition>
+                    </bpws:source>
                 </bpws:sources>
                 <model:UserTaskDataModelType
                     distributionStrategy="OFFER" userTaskPriority="50"
@@ -470,10 +435,14 @@ Task = _BX_Task;
                             modelVersion="1" uniqueId="_uHTwsOjgEeietP_QQ0irBw"/>
                     </userTaskParticipants>
                     <userTaskParameters>
-                        <userTaskParameter mandatory="false" mode="IN" name="MetaData_GetData"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="MetaData_GetData"/>
                         <userTaskParameter mandatory="false"
                             mode="INOUT" name="Wiedervorlage"/>
                     </userTaskParameters>
+                    <userTaskExtendedAttributes>
+                        <userTaskExtendedAttribute name="bpmJspTask" value="form://comtibcopoctest/DataToBW/AnzeigeDaten/AnzeigeDaten.form"/>
+                    </userTaskExtendedAttributes>
                     <userTaskGroupMemberships/>
                 </model:UserTaskDataModelType>
             </tibex:extActivity>
@@ -492,7 +461,7 @@ Task = _BX_Task;
         </bpws:extensionActivity>
         <bpws:extensionActivity>
             <tibex:extActivity name="AssignTask2"
-                tibex:type="scriptTask"
+                tibex:migrationAllowed="yes" tibex:type="scriptTask"
                 tibex:xpdlId="_itYi4Pe5EeiebO3a5jKDMA" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                 <bpws:targets>
                     <bpws:target linkName="AnzeigeDaten to AssignTask2"/>
@@ -506,7 +475,7 @@ Task = _BX_Task;
         <bpws:scope name="_BX_scope_Pruefen">
             <bpws:targets>
                 <bpws:target linkName="Wiedervorlage to _BX_scope_Pruefen"/>
-                <bpws:target linkName="GenerateUUID to _BX_scope_Pruefen"/>
+                <bpws:target linkName="StartEvent to _BX_scope_Pruefen"/>
             </bpws:targets>
             <bpws:sources>
                 <bpws:source linkName="_BX_scope_Pruefen to Escalation_after_3_minutes">

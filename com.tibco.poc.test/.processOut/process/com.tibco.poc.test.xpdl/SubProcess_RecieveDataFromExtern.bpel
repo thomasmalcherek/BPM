@@ -4,9 +4,12 @@
     tibex:bxVersion="1.15.0" tibex:explicitCompensation="yes"
     tibex:xpdlId="_ayfuAPIpEeiCsd_Wv-RtYQ"
     xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
     xmlns:ns="http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw"
     xmlns:ns0="http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
+    xmlns:tns1="http://example.com/comtibcopoctest"
+    xmlns:ttns="http://example.com/comtibcopoctest"
     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <tibex:VariableDescriptor type="PersistentBatching">
         <task name="_BX_assign_2">
@@ -72,7 +75,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_wflXUPiREeiLOcx5GuQ9ow">
+    <bpws:flow name="_BX_flow_RSWBwPidEeiLOcx5GuQ9ow">
         <bpws:links>
             <bpws:link name="Escalation_after_3_minutes to EndEvent" tibex:xpdlId="_3I6hQPI6EeiCsd_Wv-RtYQ"/>
             <bpws:link

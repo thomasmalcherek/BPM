@@ -22,7 +22,7 @@
     <bpws:import importType="http://schemas.xmlsoap.org/wsdl/"
         location="saveDataCase_JMS.wsdl" namespace="http://com.tibco.poc.test.bw.saveDataCase"/>
     <bpws:partnerLinks>
-        <bpws:partnerLink name="saveDataCaseSOAP_Consumer"
+        <bpws:partnerLink name="SendDataToBW"
             partnerLinkType="ns:saveDataCase_PLT" partnerRole="saveDataCaseProvider"/>
     </bpws:partnerLinks>
     <bpws:variables>
@@ -36,7 +36,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_weSW0PiREeiLOcx5GuQ9ow">
+    <bpws:flow name="_BX_flow_RQx7gPidEeiLOcx5GuQ9ow">
         <bpws:links>
             <bpws:link name="StartEvent to ServiceTask" tibex:xpdlId="_VnnvYOypEeieuqYotrFSPg"/>
             <bpws:link name="ServiceTask to EndEvent" tibex:xpdlId="_LbVMdOynEeieuqYotrFSPg"/>
@@ -142,7 +142,7 @@ if (SubProcessMetaData != null) {
                 <bpws:invoke inputVariable="v_e04bc8ad"
                     name="_BX_invoke" operation="CreateCaseIDFromBPM"
                     outputVariable="v_d8f6c6cd"
-                    partnerLink="saveDataCaseSOAP_Consumer" portType="ns:saveDataCase"/>
+                    partnerLink="SendDataToBW" portType="ns:saveDataCase"/>
                 <bpws:scope name="_BX_FromSvcDataMapping">
                     <bpws:variables>
                         <bpws:variable
