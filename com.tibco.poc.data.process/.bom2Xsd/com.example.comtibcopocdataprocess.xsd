@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns="http://example.com/comtibcopocdataprocess" xmlns:tns1="http://example.com/comtibcopocdataprocess"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://example.com/comtibcopocdataprocess">
+  <xsd:annotation>
+    <xsd:documentation>BOMORIGIN::/com.tibco.poc.data.process/Business Objects/comtibcopocdataprocess.bom</xsd:documentation>
+  </xsd:annotation>
+  <xsd:complexType ecore:name="Daten_SVA_intern" id="_w3C4IPesEeiebO3a5jKDMA" name="Daten_SVA_intern">
+    <xsd:sequence>
+      <xsd:element ecore:name="AHVNummer" id="_eTJ70PfQEeiebO3a5jKDMA" maxOccurs="1"
+          minOccurs="1" name="AHVNummer">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="id" id="_5Xl84PesEeiebO3a5jKDMA" maxOccurs="1" minOccurs="0"
+          name="id" type="xsd:int"/>
+      <xsd:element ecore:name="name" id="__027QPesEeiebO3a5jKDMA" maxOccurs="1" minOccurs="0"
+          name="name">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="500"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="description" id="_4C73EPesEeiebO3a5jKDMA" maxOccurs="1"
+          minOccurs="0" name="description">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="500"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="Daten_SVA_internElement" type="Daten_SVA_intern"/>
+</xsd:schema>

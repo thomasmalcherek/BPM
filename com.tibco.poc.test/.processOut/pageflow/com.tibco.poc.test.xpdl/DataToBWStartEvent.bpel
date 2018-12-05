@@ -6,6 +6,11 @@
     xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <tibex:VariableDescriptor type="PersistentBatching">
+        <task name="_BX_SPInput_CallDataToBW">
+            <startingVariables>
+                <variable>MetaData</variable>
+            </startingVariables>
+        </task>
         <task name="UserTask">
             <startingVariables>
                 <variable>MetaData</variable>
@@ -21,7 +26,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_LbRg0PcVEeivmfZ-Q8QDTA">
+    <bpws:flow name="_BX_flow_wfTqgPiREeiLOcx5GuQ9ow">
         <bpws:links>
             <bpws:link name="Start to UserTask" tibex:xpdlId="_VVo1RfGQEeiCsd_Wv-RtYQ"/>
             <bpws:link name="UserTask to CallDataToBW" tibex:xpdlId="_VVo1RvGQEeiCsd_Wv-RtYQ"/>
@@ -56,22 +61,81 @@
                 </model:PageActivityDataModelType>
             </tibex:extActivity>
         </bpws:extensionActivity>
-        <bpws:extensionActivity>
-            <tibex:extActivity name="CallDataToBW"
-                tibex:type="reusableSubProcess"
-                tibex:xpdlId="_VVo1RPGQEeiCsd_Wv-RtYQ" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                <bpws:targets>
-                    <bpws:target linkName="UserTask to CallDataToBW"/>
-                </bpws:targets>
-                <tibex:callProcess asynch="yes" attached="no"
-                    packageRef="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl"
-                    remoteEngine="yes"
-                    subProcessId="_GF0_QOmlEeiNa-ssr_CQIw" version="[1.0.0,2.0.0)">
-                    <tibex:subProcessInput>
-                        <tibex:mapping field="MetaData" formalParameter="MetaData"/>
-                    </tibex:subProcessInput>
-                </tibex:callProcess>
-            </tibex:extActivity>
-        </bpws:extensionActivity>
+        <bpws:scope name="CallDataToBW" tibex:type="reusableSubProcess" tibex:xpdlId="_VVo1RPGQEeiCsd_Wv-RtYQ">
+            <bpws:targets>
+                <bpws:target linkName="UserTask to CallDataToBW"/>
+            </bpws:targets>
+            <bpws:variables>
+                <bpws:variable name="_BX_MetaData_GetData" tibex:class="com.example.comtibcopoctest.pocMetaData"/>
+            </bpws:variables>
+            <bpws:sequence name="_BX_sequence">
+                <bpws:extensionActivity>
+                    <tibex:extActivity name="_BX_SPInput_CallDataToBW" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Create target 'MetaData_GetData' if it doesn't exist.
+if (_BX_MetaData_GetData == null) {
+    _BX_MetaData_GetData = com_example_comtibcopoctest_Factory.createpocMetaData();
+}
+
+// Map from 'MetaData.AHVNummer' to 'MetaData_GetData.AHVNummer'
+if (MetaData != null) {
+    _BX_MetaData_GetData.AHVNummer = MetaData.AHVNummer;
+} else {
+    _BX_MetaData_GetData.AHVNummer = null;
+}
+
+// Map from 'MetaData.WFCaseID' to 'MetaData_GetData.WFCaseID'
+if (MetaData != null) {
+    _BX_MetaData_GetData.WFCaseID = MetaData.WFCaseID;
+} else {
+    _BX_MetaData_GetData.WFCaseID = null;
+}
+
+// Map from 'MetaData.dokumentenArt' to 'MetaData_GetData.dokumentenArt'
+if (MetaData != null) {
+    _BX_MetaData_GetData.dokumentenArt = MetaData.dokumentenArt;
+} else {
+    _BX_MetaData_GetData.dokumentenArt = null;
+}
+
+// Map from 'MetaData.frist' to 'MetaData_GetData.frist'
+if (MetaData != null) {
+    _BX_MetaData_GetData.frist = MetaData.frist;
+} else {
+    _BX_MetaData_GetData.frist = null;
+}
+
+// Map from 'MetaData.kanton' to 'MetaData_GetData.kanton'
+if (MetaData != null) {
+    _BX_MetaData_GetData.kanton = MetaData.kanton;
+} else {
+    _BX_MetaData_GetData.kanton = null;
+}
+
+// Map from 'MetaData.partnerID' to 'MetaData_GetData.partnerID'
+if (MetaData != null) {
+    _BX_MetaData_GetData.partnerID = MetaData.partnerID;
+} else {
+    _BX_MetaData_GetData.partnerID = null;
+}
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity name="CallDataToBW" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:callProcess asynch="yes" attached="no"
+                            packageRef="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl"
+                            remoteEngine="yes"
+                            subProcessId="_GF0_QOmlEeiNa-ssr_CQIw" version="[1.0.0,2.0.0)">
+                            <tibex:subProcessInput>
+                                <tibex:mapping
+                                    field="_BX_MetaData_GetData" formalParameter="MetaData_GetData"/>
+                            </tibex:subProcessInput>
+                        </tibex:callProcess>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+            </bpws:sequence>
+        </bpws:scope>
     </bpws:flow>
 </bpws:process>

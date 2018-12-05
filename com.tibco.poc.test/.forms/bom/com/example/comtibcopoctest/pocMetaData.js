@@ -39,7 +39,7 @@ theClass.ATTR_KANTON = "kanton";
 theClass.ATTR_FRIST = "frist";
 
 theClass.TYPE_ARRAY = new Object();
-theClass.TYPE_ARRAY[theClass.ATTR_WFCASEID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_WFCASEID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_AHVNUMMER] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_PARTNERID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_DOKUMENTENART] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};

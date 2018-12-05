@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<de:model xmlns:de="http://tibco.com/bpm/directory-model/2.0" name="OrganizationModel" version="1.0.0.qualifier">
+  <de:meta-model>
+    <de:location-type id="_SpX_o_esEeiebO3a5jKDMA" label="Standard Location Type" name="StandardLocationType">
+      <de:attribute id="_SpX_pPesEeiebO3a5jKDMA" label="Country" name="Country" data-type="String"/>
+      <de:attribute id="_SpX_pfesEeiebO3a5jKDMA" label="State" name="State" data-type="String"/>
+      <de:attribute id="_SpX_pvesEeiebO3a5jKDMA" label="City" name="City" data-type="String"/>
+      <de:attribute id="_SpX_p_esEeiebO3a5jKDMA" label="Street" name="Street" data-type="String"/>
+      <de:attribute id="_SpX_qPesEeiebO3a5jKDMA" label="Postcode" name="Postcode" data-type="String"/>
+    </de:location-type>
+    <de:organization-type id="_SpX_qfesEeiebO3a5jKDMA" label="Public Company" name="PublicCompany">
+      <de:org-unit-feature id="_SpX_qvesEeiebO3a5jKDMA" label="Head Department" name="HeadDepartment" definition="_SpX_q_esEeiebO3a5jKDMA" lower-bound="0" upper-bound="1"/>
+    </de:organization-type>
+    <de:org-unit-type id="_SpX_q_esEeiebO3a5jKDMA" label="Department Type" name="DepartmentType">
+      <de:org-unit-feature id="_SpX_rPesEeiebO3a5jKDMA" label="Department" name="Department" definition="_SpX_q_esEeiebO3a5jKDMA" lower-bound="0" upper-bound="-1"/>
+      <de:org-unit-feature id="_SpX_rfesEeiebO3a5jKDMA" label="Business Unit" name="BusinessUnit" definition="_SpX_q_esEeiebO3a5jKDMA" lower-bound="0" upper-bound="-1"/>
+      <de:org-unit-feature id="_SpX_rvesEeiebO3a5jKDMA" label="Team" name="Team" definition="_SpX_q_esEeiebO3a5jKDMA" lower-bound="0" upper-bound="-1"/>
+      <de:position-feature id="_SpX_r_esEeiebO3a5jKDMA" label="Manager" name="Manager" definition="_SpX_sfesEeiebO3a5jKDMA" lower-bound="0" upper-bound="1"/>
+      <de:position-feature id="_SpX_sPesEeiebO3a5jKDMA" label="Member" name="Member" definition="_SpX_sfesEeiebO3a5jKDMA" lower-bound="0" upper-bound="-1"/>
+    </de:org-unit-type>
+    <de:position-type id="_SpX_sfesEeiebO3a5jKDMA" label="Standard Position Type" name="StandardPositionType">
+      <de:attribute id="_SpX_svesEeiebO3a5jKDMA" label="Contract Type" name="ContractType" data-type="Enum">
+        <de:enum>temporary</de:enum>
+        <de:enum>permanent</de:enum>
+      </de:attribute>
+    </de:position-type>
+  </de:meta-model>
+</de:model>

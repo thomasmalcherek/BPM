@@ -6,17 +6,6 @@
     xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <tibex:VariableDescriptor type="PersistentBatching">
-        <task name="AnzeigeDaten">
-            <startingVariables>
-                <variable>MetaData_GetData</variable>
-            </startingVariables>
-        </task>
-        <task name="AnzeigeWF_Case_ID">
-            <startingVariables>
-                <variable>MetaData_GetData</variable>
-                <variable>ParameterIn_WF_CASE_ID</variable>
-            </startingVariables>
-        </task>
         <task name="_BX_SPInput_GetDataFromDB">
             <startingVariables>
                 <variable>ParameterIn_WF_CASE_ID</variable>
@@ -34,28 +23,26 @@
             tibex:parameter="in" tibex:xpdlId="_ddVvcOyeEeieuqYotrFSPg" type="xsd:string"/>
         <bpws:variable name="MetaData_GetData"
             tibex:class="com.example.comtibcopoctest.pocMetaData"
-            tibex:parameter="in" tibex:xpdlId="_guSi0OyeEeieuqYotrFSPg"/>
+            tibex:parameter="out" tibex:xpdlId="_guSi0OyeEeieuqYotrFSPg"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_LXZtcPcVEeivmfZ-Q8QDTA">
+    <bpws:flow name="_BX_flow_weDGQPiREeiLOcx5GuQ9ow">
         <bpws:links>
-            <bpws:link name="AnzeigeDaten to EndEvent" tibex:xpdlId="_OBBLYOyeEeieuqYotrFSPg"/>
-            <bpws:link name="AnzeigeWF_Case_ID to GetDataFromDB" tibex:xpdlId="_GBbsUPJJEeif9tfFlBJi7Q"/>
-            <bpws:link name="StartEvent to AnzeigeWF_Case_ID" tibex:xpdlId="_QkQx4fJJEeif9tfFlBJi7Q"/>
-            <bpws:link name="GetDataFromDB to AnzeigeDaten" tibex:xpdlId="_qOOOsOyjEeieuqYotrFSPg"/>
+            <bpws:link name="StartEvent to GetDataFromDB" tibex:xpdlId="_QkQx4fJJEeif9tfFlBJi7Q"/>
+            <bpws:link name="GetDataFromDB to EndEvent" tibex:xpdlId="_qOOOsOyjEeieuqYotrFSPg"/>
         </bpws:links>
         <bpws:extensionActivity>
             <tibex:receiveEvent createInstance="yes" eventTimeout="0"
                 name="StartEvent" tibex:type="startEvent"
                 tibex:xpdlId="_d8O80uycEeieuqYotrFSPg" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                 <bpws:sources>
-                    <bpws:source linkName="StartEvent to AnzeigeWF_Case_ID"/>
+                    <bpws:source linkName="StartEvent to GetDataFromDB"/>
                 </bpws:sources>
                 <tibex:parameters>
-                    <parameterDescription mode="In" name="MetaData_GetData"/>
+                    <parameterDescription mode="Out" name="MetaData_GetData"/>
                     <parameterDescription mandatory="yes" mode="In" name="ParameterIn_WF_CASE_ID"/>
                 </tibex:parameters>
                 <tibex:eventSource>
@@ -66,16 +53,16 @@
         <bpws:empty name="EndEvent" tibex:migrationAllowed="yes"
             tibex:type="endEvent" tibex:xpdlId="_d8O80-ycEeieuqYotrFSPg">
             <bpws:targets>
-                <bpws:target linkName="AnzeigeDaten to EndEvent"/>
+                <bpws:target linkName="GetDataFromDB to EndEvent"/>
             </bpws:targets>
         </bpws:empty>
         <bpws:scope name="GetDataFromDB" tibex:migrationAllowed="yes"
             tibex:type="reusableSubProcess" tibex:xpdlId="_gpqMYOycEeieuqYotrFSPg">
             <bpws:targets>
-                <bpws:target linkName="AnzeigeWF_Case_ID to GetDataFromDB"/>
+                <bpws:target linkName="StartEvent to GetDataFromDB"/>
             </bpws:targets>
             <bpws:sources>
-                <bpws:source linkName="GetDataFromDB to AnzeigeDaten"/>
+                <bpws:source linkName="GetDataFromDB to EndEvent"/>
             </bpws:sources>
             <bpws:variables>
                 <bpws:variable name="_BX_SubProcessMetaData" tibex:class="com.example.comtibcopoctest.pocMetaData"/>
@@ -116,78 +103,5 @@ MetaData_GetData = ScriptUtil.copy(_BX_SubProcessMetaData);
                 </bpws:extensionActivity>
             </bpws:sequence>
         </bpws:scope>
-        <bpws:extensionActivity>
-            <tibex:extActivity name="AnzeigeDaten"
-                tibex:migrationAllowed="yes" tibex:type="userTask"
-                tibex:xpdlId="_H9gJx-yeEeieuqYotrFSPg" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                <bpws:targets>
-                    <bpws:target linkName="GetDataFromDB to AnzeigeDaten"/>
-                </bpws:targets>
-                <bpws:sources>
-                    <bpws:source linkName="AnzeigeDaten to EndEvent"/>
-                </bpws:sources>
-                <model:UserTaskDataModelType
-                    distributionStrategy="OFFER" userTaskPriority="50"
-                    workModelID="WM__H9gJx-yeEeieuqYotrFSPg"
-                    workModelVersionRange="[1.0.0.qualifier,1.0.0.qualifier]"
-                    xmi:version="2.0"
-                    xmlns:model="http://model.ut.n2.tibco.com" xmlns:xmi="http://www.omg.org/XMI">
-                    <userTaskParticipants>
-                        <userTaskParticipant
-                            entity="ORGANIZATIONAL_UNIT"
-                            modelVersion="1" uniqueId="_ILJtEOjhEeietP_QQ0irBw"/>
-                        <userTaskParticipant
-                            entity="ORGANIZATIONAL_UNIT"
-                            modelVersion="1" uniqueId="_B5qg4OjhEeietP_QQ0irBw"/>
-                        <userTaskParticipant
-                            entity="ORGANIZATIONAL_UNIT"
-                            modelVersion="1" uniqueId="_uHTwsOjgEeietP_QQ0irBw"/>
-                    </userTaskParticipants>
-                    <userTaskParameters>
-                        <userTaskParameter mandatory="true" mode="INOUT" name="MetaData_GetData"/>
-                    </userTaskParameters>
-                    <userTaskGroupMemberships/>
-                </model:UserTaskDataModelType>
-            </tibex:extActivity>
-        </bpws:extensionActivity>
-        <bpws:extensionActivity>
-            <tibex:extActivity name="AnzeigeWF_Case_ID"
-                tibex:extendedAttributes="bpmJspTask=form\://comtibcopoctest/Process_GetData/AnzeigeWF_Case_ID/AnzeigeWF_Case_ID.form&#xd;&#xa;"
-                tibex:migrationAllowed="yes" tibex:type="userTask"
-                tibex:xpdlId="_QkQx4PJJEeif9tfFlBJi7Q" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                <bpws:targets>
-                    <bpws:target linkName="StartEvent to AnzeigeWF_Case_ID"/>
-                </bpws:targets>
-                <bpws:sources>
-                    <bpws:source linkName="AnzeigeWF_Case_ID to GetDataFromDB"/>
-                </bpws:sources>
-                <model:UserTaskDataModelType
-                    distributionStrategy="OFFER" userTaskPriority="50"
-                    workModelID="WM__QkQx4PJJEeif9tfFlBJi7Q"
-                    workModelVersionRange="[1.0.0.qualifier,1.0.0.qualifier]"
-                    xmi:version="2.0"
-                    xmlns:model="http://model.ut.n2.tibco.com" xmlns:xmi="http://www.omg.org/XMI">
-                    <userTaskParticipants>
-                        <userTaskParticipant
-                            entity="ORGANIZATIONAL_UNIT"
-                            modelVersion="1" uniqueId="_B5qg4OjhEeietP_QQ0irBw"/>
-                        <userTaskParticipant
-                            entity="ORGANIZATIONAL_UNIT"
-                            modelVersion="1" uniqueId="_ILJtEOjhEeietP_QQ0irBw"/>
-                        <userTaskParticipant
-                            entity="ORGANIZATIONAL_UNIT"
-                            modelVersion="1" uniqueId="_uHTwsOjgEeietP_QQ0irBw"/>
-                    </userTaskParticipants>
-                    <userTaskParameters>
-                        <userTaskParameter mandatory="true" mode="IN" name="ParameterIn_WF_CASE_ID"/>
-                        <userTaskParameter mandatory="false" mode="IN" name="MetaData_GetData"/>
-                    </userTaskParameters>
-                    <userTaskExtendedAttributes>
-                        <userTaskExtendedAttribute name="bpmJspTask" value="form://comtibcopoctest/Process_GetData/AnzeigeWF_Case_ID/AnzeigeWF_Case_ID.form"/>
-                    </userTaskExtendedAttributes>
-                    <userTaskGroupMemberships/>
-                </model:UserTaskDataModelType>
-            </tibex:extActivity>
-        </bpws:extensionActivity>
     </bpws:flow>
 </bpws:process>

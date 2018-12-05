@@ -516,7 +516,7 @@ public class ComtibcopoctestPackageImpl extends EPackageImpl implements Comtibco
     initEAttribute(getpocDBRequest_WFCaseID(), this.getWFCaseID_pocDBRequestType(), "WFCaseID", null, 1, 1, pocDBRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(pocMetaDataEClass, pocMetaData.class, "pocMetaData", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getpocMetaData_WFCaseID(), this.getWFCaseID_pocMetaDataType(), "WFCaseID", null, 1, 1, pocMetaData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getpocMetaData_WFCaseID(), this.getWFCaseID_pocMetaDataType(), "WFCaseID", null, 0, 1, pocMetaData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getpocMetaData_AHVNummer(), this.getAHVNummer_pocMetaDataType(), "AHVNummer", null, 1, 1, pocMetaData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getpocMetaData_PartnerID(), this.getpartnerID_pocMetaDataType(), "partnerID", null, 1, 1, pocMetaData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getpocMetaData_DokumentenArt(), this.getdokumentenArt_pocMetaDataType(), "dokumentenArt", null, 0, 1, pocMetaData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

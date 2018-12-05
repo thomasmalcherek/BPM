@@ -39,7 +39,7 @@ public interface pocMetaData extends EObject
    * @return the value of the '<em>WF Case ID</em>' attribute.
    * @see #setWFCaseID(String)
    * @see com.example.comtibcopoctest.ComtibcopoctestPackage#getpocMetaData_WFCaseID()
-   * @model dataType="com.example.comtibcopoctest.WFCaseID_pocMetaDataType" required="true"
+   * @model dataType="com.example.comtibcopoctest.WFCaseID_pocMetaDataType"
    *        extendedMetaData="kind='element' name='WFCaseID'"
    * @generated
    */
