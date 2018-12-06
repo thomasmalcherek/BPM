@@ -3018,3 +3018,343 @@ at com.tibco.amf.admin.api.amx.application.impl.upgrade.RootCompositeMerger.merg
 05 Dez 2018 16:04:20,317 INFO  (AsyncActionExecutor.java:117)     - .
 05 Dez 2018 16:04:26,718 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
 05 Dez 2018 16:04:26,719 INFO  (Processor.java:743)     - Action finished at 05.12.18 16:04 in 23,187 seconds
+06 Dez 2018 13:19:49,276 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+06 Dez 2018 13:19:50,476 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+06 Dez 2018 13:19:51,854 INFO  (AddAction.java:54)     - Uploading DAA...
+06 Dez 2018 13:19:51,860 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.be\.bpm\com.example.comtibcowfgenericsubprocesskantonbe.daa
+06 Dez 2018 13:19:55,421 ERROR (LoggingUtil.java:191)     - Please see the cause for more details
+06 Dez 2018 13:19:55,456 ERROR (LoggingUtil.java:192)     - com.tibco.amf.admin.api.core.exception.AdminException
+summary = Please see the cause for more details
+
+	at com.tibco.amf.admin.api.servicefactory.remote.axis2.ClientSession.uploadFileByServlet(ClientSession.java:311)
+	at com.tibco.amf.admin.cmdline.daa.AddAction.uploadDAA(AddAction.java:101)
+	at com.tibco.amf.admin.cmdline.daa.AddAction.invoke(AddAction.java:43)
+	at com.tibco.amf.admin.cmdline.Processor.invokeIndividualAction(Processor.java:614)
+	at com.tibco.amf.admin.cmdline.Processor.invokeGenericAdd(Processor.java:522)
+	at com.tibco.amf.admin.cmdline.Processor.invokeAction(Processor.java:377)
+	at com.tibco.amf.admin.cmdline.Processor.processChild(Processor.java:273)
+	at com.tibco.amf.admin.cmdline.Processor.process(Processor.java:146)
+	at com.tibco.amf.admin.cmdline.Processor.processChildren(Processor.java:39)
+	at com.tibco.amf.admin.cmdline.ant.AMXAdminTask.process(AMXAdminTask.java:550)
+	at com.tibco.amf.admin.cmdline.ant.AMXAdminTask.execute(AMXAdminTask.java:298)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:390)
+	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Caused by: java.net.UnknownHostException: ssva90322
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:80)
+	at org.apache.commons.httpclient.protocol.ControllerThreadSocketFactory$1.doit(ControllerThreadSocketFactory.java:91)
+	at org.apache.commons.httpclient.protocol.ControllerThreadSocketFactory$SocketTask.run(ControllerThreadSocketFactory.java:158)
+	at java.lang.Thread.run(Unknown Source)
+
+06 Dez 2018 13:19:55,460 ERROR (LoggingUtil.java:26)     - 06.12.18 13:19 - Error invoking action add on DAA: Please see the cause for more details
+06 Dez 2018 13:19:55,489 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+06 Dez 2018 13:19:55,957 INFO  (SLF4JLog.java:149)     - Unable to sendViaPost to url[http://ssva90322:8120/amxadministrator.httpbasic/services/EnvService]
+java.net.UnknownHostException: ssva90322
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:80)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:122)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.apache.axis2.transport.http.AbstractHTTPSender.executeMethod(AbstractHTTPSender.java:542)
+	at org.apache.axis2.transport.http.HTTPSender.sendViaPost(HTTPSender.java:189)
+	at org.apache.axis2.transport.http.HTTPSender.send(HTTPSender.java:75)
+	at org.apache.axis2.transport.http.CommonsHTTPTransportSender.writeMessageWithCommons(CommonsHTTPTransportSender.java:371)
+	at org.apache.axis2.transport.http.CommonsHTTPTransportSender.invoke(CommonsHTTPTransportSender.java:209)
+	at org.apache.axis2.engine.AxisEngine.send(AxisEngine.java:448)
+	at org.apache.axis2.description.OutInAxisOperationClient.send(OutInAxisOperation.java:401)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:228)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:163)
+	at org.apache.axis2.client.ServiceClient.sendReceive(ServiceClient.java:548)
+	at org.apache.axis2.client.ServiceClient.sendReceive(ServiceClient.java:528)
+	at org.apache.axis2.rpc.client.RPCServiceClient.invokeBlocking(RPCServiceClient.java:102)
+	at com.tibco.amf.admin.api.servicefactory.remote.axis2.Axis2ProxyServiceFactory$Axis2ServiceInvocationHandler.invokeWebService(Axis2ProxyServiceFactory.java:323)
+	at com.tibco.amf.admin.api.servicefactory.remote.axis2.Axis2ProxyServiceFactory$Axis2ServiceInvocationHandler.invoke(Axis2ProxyServiceFactory.java:297)
+	at com.sun.proxy.$Proxy3.getEnvByName(Unknown Source)
+	at com.tibco.amf.admin.cmdline.env.EnvProcessor.getIdentifier(EnvProcessor.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.tibco.amf.admin.cmdline.IdentityRetriever.invoke(ProcessorProxyFactory.java:84)
+	at com.sun.proxy.$Proxy0.getIdentifier(Unknown Source)
+	at com.tibco.amf.admin.cmdline.Processor.getChildIdentifier(Processor.java:326)
+	at com.tibco.amf.admin.cmdline.Processor.processChild(Processor.java:199)
+	at com.tibco.amf.admin.cmdline.Processor.process(Processor.java:146)
+	at com.tibco.amf.admin.cmdline.Processor.processChildren(Processor.java:39)
+	at com.tibco.amf.admin.cmdline.ant.AMXAdminTask.process(AMXAdminTask.java:550)
+	at com.tibco.amf.admin.cmdline.ant.AMXAdminTask.execute(AMXAdminTask.java:298)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:390)
+	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:809)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+06 Dez 2018 13:19:55,978 ERROR (Processor.java:355)     - java.lang.reflect.UndeclaredThrowableException: java.lang.reflect.UndeclaredThrowableException
+at com.sun.proxy.$Proxy3.getEnvByName(Unknown Source)
+at com.tibco.amf.admin.cmdline.env.EnvProcessor.getIdentifier(EnvProcessor.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+ ....
+Caused by: org.apache.axis2.AxisFault: ssva90322
+at org.apache.axis2.AxisFault.makeFault(AxisFault.java:430)
+at org.apache.axis2.transport.http.HTTPSender.sendViaPost(HTTPSender.java:193)
+at org.apache.axis2.transport.http.HTTPSender.send(HTTPSender.java:75)
+at org.apache.axis2.transport.http.CommonsHTTPTransportSender.writeMessageWithCommons(CommonsHTTPTransportSender.java:371)
+ ....
+Caused by: java.net.UnknownHostException: ssva90322
+at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+at java.net.PlainSocketImpl.connect(Unknown Source)
+at java.net.SocksSocketImpl.connect(Unknown Source)
+at java.net.Socket.connect(Unknown Source)
+ ....
+
+06 Dez 2018 13:19:55,980 ERROR (LoggingUtil.java:26)     - 06.12.18 13:19 - Error getting identifier for add
+06 Dez 2018 13:29:16,164 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+06 Dez 2018 13:29:16,974 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+06 Dez 2018 13:29:17,728 INFO  (AddAction.java:54)     - Uploading DAA...
+06 Dez 2018 13:29:17,732 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.be\.bpm\com.example.comtibcowfgenericsubprocesskantonbe.daa
+06 Dez 2018 13:29:18,933 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfgenericsubprocesskantonbe' (version: '1.0.0.20181206132832691') to the Administrator Staging Area
+06 Dez 2018 13:29:18,934 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds' (version: '1.0.0.20181206132832691') to the Administrator Staging Area
+06 Dez 2018 13:29:18,937 INFO  (Processor.java:675)     - Action finished at 06.12.18 13:29 in 1,21 seconds
+06 Dez 2018 13:29:18,949 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+06 Dez 2018 13:29:19,565 INFO  (AddAction.java:31)     - Adding application...
+06 Dez 2018 13:29:22,409 ERROR (AddAction.java:158)     - Failed to add Application 'com.tibco.wf.generic.subprocess.kanton.be'
+06 Dez 2018 13:29:22,410 ERROR (LoggingUtil.java:26)     - 06.12.18 13:29 - TIBCO-AMX-ADMIN-012391: Follower application component com.tibco.wf.generic.subprocess.kanton.be/comtibcowfgenericsubprocesskantonbeProcessFlow requires following capabilities, com.tibco.bx.capability.implementation.bx:1.0.0:factory, com.example.comtibcowfgenericsubprocesskantonbe.brm.capability:1.0.0.20181206132832691:custom , but the target application does not provide all of them.
+06 Dez 2018 14:03:47,769 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+06 Dez 2018 14:03:48,572 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+06 Dez 2018 14:03:49,270 INFO  (AddAction.java:54)     - Uploading DAA...
+06 Dez 2018 14:03:49,275 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+06 Dez 2018 14:03:51,585 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181206140313564') to the Administrator Staging Area
+06 Dez 2018 14:03:51,585 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181206140313564') to the Administrator Staging Area
+06 Dez 2018 14:03:51,590 INFO  (Processor.java:675)     - Action finished at 06.12.18 14:03 in 2,318 seconds
+06 Dez 2018 14:03:51,658 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+06 Dez 2018 14:03:52,249 INFO  (AddAction.java:31)     - Adding application...
+06 Dez 2018 14:03:55,745 INFO  (LoggingUtil.java:119)     - Successfully added Application 'com.tibco.wf.main.subprocess': Successfully created application 'com.tibco.wf.main.subprocess' from Application Template 'com.example.comtibcowfmainsubprocess' (version: 1.0.0.20181206140313564)
+06 Dez 2018 14:03:55,745 INFO  (LoggingUtil.java:182)     - 06.12.18 14:03 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'OrganizationModel' (version: 1.0.0.20181206140313564) added.
+
+06 Dez 2018 14:03:55,749 INFO  (LoggingUtil.java:182)     - 06.12.18 14:03 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comtibcowfmainsubprocessProcessFlow' (version: 1.0.0.20181206140313564) added.
+
+06 Dez 2018 14:03:55,751 INFO  (LoggingUtil.java:182)     - 06.12.18 14:03 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'BRM' (version: 1.0.0.20181206140313564) added.
+
+06 Dez 2018 14:03:55,752 INFO  (LoggingUtil.java:182)     - 06.12.18 14:03 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'WorkPresentation' (version: 1.0.0.20181206140313564) added.
+
+06 Dez 2018 14:03:55,752 INFO  (Processor.java:675)     - Action finished at 06.12.18 14:03 in 3,503 seconds
+06 Dez 2018 14:03:55,758 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+06 Dez 2018 14:03:55,761 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+06 Dez 2018 14:03:55,957 INFO  (DeployAction.java:38)     - Deploying application...
+06 Dez 2018 14:03:58,877 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.main.subprocess' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.main.subprocess' at 12/6/18 2:03 PM on node(s): 'BPMNode'.
+06 Dez 2018 14:03:58,878 INFO  (LoggingUtil.java:182)     - 06.12.18 14:03 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfmainsubprocess.model.bds.1.0.0.20181206140313564' was auto-enabled in node 'BPMNode'
+
+06 Dez 2018 14:03:58,878 INFO  (Processor.java:696)     - Action finished in Admin at 06.12.18 14:03 in 2,923 seconds. Waiting for runtime tasks to be finished.
+06 Dez 2018 14:04:00,557 INFO  (AsyncActionExecutor.java:117)     - .
+06 Dez 2018 14:04:01,835 ERROR (UserTaskProgressIndicator.java:69)     - Application Deploy with Start failed
+06 Dez 2018 14:04:01,839 ERROR (UserTaskProgressIndicator.java:76)     - Configure admin component 'organizationmodel' failed : com.tibco.n2.de.model.exception.DestructiveChangeException: Destructive change detected in deployment. [com.tibco.n2.de.deployment.DeploymentArtefactContext@78d7bbf7]
+06 Dez 2018 14:04:01,841 ERROR (UserTaskProgressIndicator.java:84)     - com.tibco.n2.de.model.exception.DestructiveChangeException: Destructive change detected in deployment. [com.tibco.n2.de.deployment.DeploymentArtefactContext@78d7bbf7]
+com.tibco.n2.de.deployment.OrgModelDeployer.parseDocument(OrgModelDeployer.java:166)
+com.tibco.n2.de.dao.cache.DeploymentArtefactDaoImpl.parseModel(DeploymentArtefactDaoImpl.java:1233)
+com.tibco.n2.de.dao.cache.DeploymentArtefactDaoImpl.deploy(DeploymentArtefactDaoImpl.java:514)
+com.tibco.n2.de.deployment.ModelDeploymentHelperImpl.saveAndDeploy(ModelDeploymentHelperImpl.java:122)
+sun.reflect.GeneratedMethodAccessor1357.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:307)
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:182)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:106)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:50)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+com.sun.proxy.$Proxy130.saveAndDeploy(Unknown Source)
+com.tibco.n2.de.deployment.OrgModelImplementationType.installImplementation(OrgModelImplementationType.java:94)
+com.tibco.amf.platform.runtime.componentframework.internal.component.ImplementationComponent$4.call(ImplementationComponent.java:516)
+java.util.concurrent.FutureTask.run(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+06 Dez 2018 14:04:01,848 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:04:01,849 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:04:01,849 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'comtibcowfmainsubprocessprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:04:01,852 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents application 'com.tibco.wf.main.subprocess' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:04:01,852 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:04:01,856 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:04:01,858 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:04:01,862 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:04:01,863 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcowfmainsubprocessprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:04:01,864 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcowfmainsubprocessprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:04:01,864 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:04:01,864 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:04:01,865 ERROR (Processor.java:720)     - Action failed at 06.12.18 14:04 in 5,91 seconds
+06 Dez 2018 14:11:59,126 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+06 Dez 2018 14:11:59,924 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+06 Dez 2018 14:12:00,632 INFO  (AddAction.java:54)     - Uploading DAA...
+06 Dez 2018 14:12:00,636 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+06 Dez 2018 14:12:04,534 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181206141143468') to the Administrator Staging Area
+06 Dez 2018 14:12:04,536 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181206141143468') to the Administrator Staging Area
+06 Dez 2018 14:12:04,549 INFO  (Processor.java:675)     - Action finished at 06.12.18 14:12 in 3,909 seconds
+06 Dez 2018 14:12:04,562 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+06 Dez 2018 14:12:05,636 INFO  (AddAction.java:31)     - Adding application...
+06 Dez 2018 14:12:08,917 INFO  (LoggingUtil.java:119)     - Successfully added Application 'com.tibco.wf.main.subprocess': Successfully created application 'com.tibco.wf.main.subprocess' from Application Template 'com.example.comtibcowfmainsubprocess' (version: 1.0.0.20181206141143468)
+06 Dez 2018 14:12:08,918 INFO  (LoggingUtil.java:182)     - 06.12.18 14:12 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'OrganizationModel' (version: 1.0.0.20181206141143468) added.
+
+06 Dez 2018 14:12:08,918 INFO  (LoggingUtil.java:182)     - 06.12.18 14:12 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comtibcowfmainsubprocessProcessFlow' (version: 1.0.0.20181206141143468) added.
+
+06 Dez 2018 14:12:08,919 INFO  (LoggingUtil.java:182)     - 06.12.18 14:12 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'BRM' (version: 1.0.0.20181206141143468) added.
+
+06 Dez 2018 14:12:08,919 INFO  (LoggingUtil.java:182)     - 06.12.18 14:12 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'WorkPresentation' (version: 1.0.0.20181206141143468) added.
+
+06 Dez 2018 14:12:08,919 INFO  (Processor.java:675)     - Action finished at 06.12.18 14:12 in 3,283 seconds
+06 Dez 2018 14:12:08,930 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+06 Dez 2018 14:12:08,934 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+06 Dez 2018 14:12:09,073 INFO  (DeployAction.java:38)     - Deploying application...
+06 Dez 2018 14:12:12,160 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.main.subprocess' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.main.subprocess' at 12/6/18 2:12 PM on node(s): 'BPMNode'.
+06 Dez 2018 14:12:12,160 INFO  (LoggingUtil.java:182)     - 06.12.18 14:12 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfmainsubprocess.model.bds.1.0.0.20181206141143468' was auto-enabled in node 'BPMNode'
+
+06 Dez 2018 14:12:12,162 INFO  (Processor.java:696)     - Action finished in Admin at 06.12.18 14:12 in 3,089 seconds. Waiting for runtime tasks to be finished.
+06 Dez 2018 14:12:13,866 INFO  (AsyncActionExecutor.java:117)     - .
+06 Dez 2018 14:12:15,154 ERROR (UserTaskProgressIndicator.java:69)     - Application Deploy with Start failed
+06 Dez 2018 14:12:15,155 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:12:15,155 ERROR (UserTaskProgressIndicator.java:76)     - Configure admin component 'organizationmodel' failed : com.tibco.n2.de.model.exception.DestructiveChangeException: Destructive change detected in deployment. [com.tibco.n2.de.deployment.DeploymentArtefactContext@6bbaa144]
+06 Dez 2018 14:12:15,155 ERROR (UserTaskProgressIndicator.java:84)     - com.tibco.n2.de.model.exception.DestructiveChangeException: Destructive change detected in deployment. [com.tibco.n2.de.deployment.DeploymentArtefactContext@6bbaa144]
+com.tibco.n2.de.deployment.OrgModelDeployer.parseDocument(OrgModelDeployer.java:166)
+com.tibco.n2.de.dao.cache.DeploymentArtefactDaoImpl.parseModel(DeploymentArtefactDaoImpl.java:1233)
+com.tibco.n2.de.dao.cache.DeploymentArtefactDaoImpl.deploy(DeploymentArtefactDaoImpl.java:514)
+com.tibco.n2.de.deployment.ModelDeploymentHelperImpl.saveAndDeploy(ModelDeploymentHelperImpl.java:122)
+sun.reflect.GeneratedMethodAccessor1357.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:307)
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:182)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:106)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:50)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+com.sun.proxy.$Proxy130.saveAndDeploy(Unknown Source)
+com.tibco.n2.de.deployment.OrgModelImplementationType.installImplementation(OrgModelImplementationType.java:94)
+com.tibco.amf.platform.runtime.componentframework.internal.component.ImplementationComponent$4.call(ImplementationComponent.java:516)
+java.util.concurrent.FutureTask.run(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+06 Dez 2018 14:12:15,158 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:12:15,158 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'comtibcowfmainsubprocessprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:12:15,159 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents application 'com.tibco.wf.main.subprocess' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:12:15,159 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcowfmainsubprocessprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:12:15,159 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:12:15,159 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:12:15,159 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:12:15,160 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:12:15,160 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:12:15,161 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:12:15,161 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcowfmainsubprocessprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+06 Dez 2018 14:12:15,172 ERROR (Processor.java:720)     - Action failed at 06.12.18 14:12 in 6,095 seconds
+06 Dez 2018 14:18:11,556 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+06 Dez 2018 14:18:12,414 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+06 Dez 2018 14:18:13,102 INFO  (AddAction.java:54)     - Uploading DAA...
+06 Dez 2018 14:18:13,107 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+06 Dez 2018 14:18:15,262 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181206141749257') to the Administrator Staging Area
+06 Dez 2018 14:18:15,262 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181206141749257') to the Administrator Staging Area
+06 Dez 2018 14:18:15,266 INFO  (Processor.java:675)     - Action finished at 06.12.18 14:18 in 2,167 seconds
+06 Dez 2018 14:18:15,287 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+06 Dez 2018 14:18:16,976 INFO  (AddAction.java:31)     - Adding application...
+06 Dez 2018 14:18:21,104 INFO  (LoggingUtil.java:119)     - Successfully added Application 'com.tibco.wf.main.subprocess.10': Successfully created application 'com.tibco.wf.main.subprocess.10' from Application Template 'com.example.comtibcowfmainsubprocess' (version: 1.0.0.20181206141749257)
+06 Dez 2018 14:18:21,107 INFO  (LoggingUtil.java:182)     - 06.12.18 14:18 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'OrganizationModelGeneric' (version: 1.0.0.20181206141749257) added.
+
+06 Dez 2018 14:18:21,108 INFO  (LoggingUtil.java:182)     - 06.12.18 14:18 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comtibcowfmainsubprocessProcessFlow' (version: 1.0.0.20181206141749257) added.
+
+06 Dez 2018 14:18:21,109 INFO  (LoggingUtil.java:182)     - 06.12.18 14:18 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'BRM' (version: 1.0.0.20181206141749257) added.
+
+06 Dez 2018 14:18:21,109 INFO  (LoggingUtil.java:182)     - 06.12.18 14:18 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'WorkPresentation' (version: 1.0.0.20181206141749257) added.
+
+06 Dez 2018 14:18:21,110 INFO  (Processor.java:675)     - Action finished at 06.12.18 14:18 in 4,134 seconds
+06 Dez 2018 14:18:21,116 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+06 Dez 2018 14:18:21,121 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+06 Dez 2018 14:18:21,486 INFO  (DeployAction.java:38)     - Deploying application...
+06 Dez 2018 14:18:24,559 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.main.subprocess.10' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.main.subprocess.10' at 12/6/18 2:18 PM on node(s): 'BPMNode'.
+06 Dez 2018 14:18:24,560 INFO  (LoggingUtil.java:182)     - 06.12.18 14:18 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfmainsubprocess.model.bds.1.0.0.20181206141749257' was auto-enabled in node 'BPMNode'
+
+06 Dez 2018 14:18:24,560 INFO  (Processor.java:696)     - Action finished in Admin at 06.12.18 14:18 in 3,074 seconds. Waiting for runtime tasks to be finished.
+06 Dez 2018 14:18:26,223 INFO  (AsyncActionExecutor.java:117)     - .
+06 Dez 2018 14:18:27,491 ERROR (UserTaskProgressIndicator.java:69)     - Application Deploy with Start failed
+06 Dez 2018 14:18:27,491 ERROR (UserTaskProgressIndicator.java:76)     - Configure admin component 'organizationmodelgeneric' failed : com.tibco.n2.de.model.exception.DestructiveChangeException: Destructive change detected in deployment. [com.tibco.n2.de.deployment.DeploymentArtefactContext@44857415]
+06 Dez 2018 14:18:27,492 ERROR (UserTaskProgressIndicator.java:84)     - com.tibco.n2.de.model.exception.DestructiveChangeException: Destructive change detected in deployment. [com.tibco.n2.de.deployment.DeploymentArtefactContext@44857415]
+com.tibco.n2.de.deployment.OrgModelDeployer.parseDocument(OrgModelDeployer.java:166)
+com.tibco.n2.de.dao.cache.DeploymentArtefactDaoImpl.parseModel(DeploymentArtefactDaoImpl.java:1233)
+com.tibco.n2.de.dao.cache.DeploymentArtefactDaoImpl.deploy(DeploymentArtefactDaoImpl.java:514)
+com.tibco.n2.de.deployment.ModelDeploymentHelperImpl.saveAndDeploy(ModelDeploymentHelperImpl.java:122)
+sun.reflect.GeneratedMethodAccessor1357.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:307)
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:182)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:106)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:50)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+com.sun.proxy.$Proxy130.saveAndDeploy(Unknown Source)
+com.tibco.n2.de.deployment.OrgModelImplementationType.installImplementation(OrgModelImplementationType.java:94)
+com.tibco.amf.platform.runtime.componentframework.internal.component.ImplementationComponent$4.call(ImplementationComponent.java:516)
+java.util.concurrent.FutureTask.run(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+06 Dez 2018 14:18:27,500 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'organizationmodelgeneric' on node 'BPMNode' cancelled because Configure admin component 'organizationmodelgeneric' failed
+06 Dez 2018 14:18:27,501 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodelgeneric' failed
+06 Dez 2018 14:18:27,501 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'comtibcowfmainsubprocessprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodelgeneric' failed
+06 Dez 2018 14:18:27,501 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents application 'com.tibco.wf.main.subprocess.10' cancelled because Configure admin component 'organizationmodelgeneric' failed
+06 Dez 2018 14:18:27,502 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcowfmainsubprocessprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodelgeneric' failed
+06 Dez 2018 14:18:27,502 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcowfmainsubprocessprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodelgeneric' failed
+06 Dez 2018 14:18:27,503 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodelgeneric' failed
+06 Dez 2018 14:18:27,503 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodelgeneric' failed
+06 Dez 2018 14:18:27,503 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodelgeneric' on node 'BPMNode' cancelled because Configure admin component 'organizationmodelgeneric' failed
+06 Dez 2018 14:18:27,504 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodelgeneric' on node 'BPMNode' cancelled because Configure admin component 'organizationmodelgeneric' failed
+06 Dez 2018 14:18:27,505 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodelgeneric' failed
+06 Dez 2018 14:18:27,505 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodelgeneric' failed
+06 Dez 2018 14:18:27,507 ERROR (Processor.java:720)     - Action failed at 06.12.18 14:18 in 6,02 seconds

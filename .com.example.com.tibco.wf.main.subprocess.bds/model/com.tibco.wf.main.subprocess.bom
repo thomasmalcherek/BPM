@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PrimitiveTypeFacets="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0" xmlns:bomnotation="http://www.tibco.com/models/bomnotation" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0 pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw">
+  <uml:Model xmi:id="_DUEK8PlLEeiLOcx5GuQ9ow" name="com.example.com.tibco.wf.main.subprocess">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DUEK8flLEeiLOcx5GuQ9ow" source="model.metadata">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DUEK8vlLEeiLOcx5GuQ9ow" key="author" value="admin"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DUEK8_lLEeiLOcx5GuQ9ow" key="created" value="1544096137502"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DUEK9PlLEeiLOcx5GuQ9ow" key="version" value="4"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_S0gaAPlLEeiLOcx5GuQ9ow" name="MetaData">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_S0gaAflLEeiLOcx5GuQ9ow" name="AHVNummer" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S0gaAvlLEeiLOcx5GuQ9ow" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S0gaA_lLEeiLOcx5GuQ9ow" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_S0gaBPlLEeiLOcx5GuQ9ow" name="partnerID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S0gaBflLEeiLOcx5GuQ9ow" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S0gaBvlLEeiLOcx5GuQ9ow" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_S0gaB_lLEeiLOcx5GuQ9ow" name="dokumentenArt" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S0gaCPlLEeiLOcx5GuQ9ow" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S0gaCflLEeiLOcx5GuQ9ow"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_S0gaCvlLEeiLOcx5GuQ9ow" name="kanton" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S0gaC_lLEeiLOcx5GuQ9ow" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S0gaDPlLEeiLOcx5GuQ9ow" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_S0S-oPlLEeiLOcx5GuQ9ow">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S0Uz0PlLEeiLOcx5GuQ9ow" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_3A574HcJEdytQ9AWEvOuug?PrimitiveTypeFacets?"/>
+    </profileApplication>
+  </uml:Model>
+  <notation:Diagram xmi:id="_DUXF4PlLEeiLOcx5GuQ9ow" type="Business Object Model" element="_DUEK8PlLEeiLOcx5GuQ9ow?com.example.com.tibco.wf.main.subprocess?" name="com.tibco.wf.main.subprocess.bom" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_S0fL5flLEeiLOcx5GuQ9ow" type="1002" element="_S0gaAPlLEeiLOcx5GuQ9ow?com.example.com.tibco.wf.main.subprocess%3a%3aMetaData?">
+      <children xmi:type="notation:Node" xmi:id="_S0fL5vlLEeiLOcx5GuQ9ow" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_S0fL5_lLEeiLOcx5GuQ9ow" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_S0fL6PlLEeiLOcx5GuQ9ow" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_S0fL6flLEeiLOcx5GuQ9ow" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_S0fL6vlLEeiLOcx5GuQ9ow" type="2001" element="_S0gaAflLEeiLOcx5GuQ9ow?com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%3a%3aAHVNummer?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_S0fL6_lLEeiLOcx5GuQ9ow"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_S0fL7PlLEeiLOcx5GuQ9ow" type="2001" element="_S0gaBPlLEeiLOcx5GuQ9ow?com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%3a%3apartnerID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_S0fL7flLEeiLOcx5GuQ9ow"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_S0fL7vlLEeiLOcx5GuQ9ow" type="2001" element="_S0gaB_lLEeiLOcx5GuQ9ow?com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%3a%3adokumentenArt?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_S0fL7_lLEeiLOcx5GuQ9ow"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_S0fL8PlLEeiLOcx5GuQ9ow" type="2001" element="_S0gaCvlLEeiLOcx5GuQ9ow?com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%3a%3akanton?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_S0fL8flLEeiLOcx5GuQ9ow"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_S0fL8vlLEeiLOcx5GuQ9ow"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_S0fL8_lLEeiLOcx5GuQ9ow"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_S0fL9PlLEeiLOcx5GuQ9ow"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_S0fL9flLEeiLOcx5GuQ9ow" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_S0fL9vlLEeiLOcx5GuQ9ow"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_S0fL9_lLEeiLOcx5GuQ9ow"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_S0fL-PlLEeiLOcx5GuQ9ow"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_S0fL-flLEeiLOcx5GuQ9ow" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_S0fL-vlLEeiLOcx5GuQ9ow" gradStartColor="6356832" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S0fL-_lLEeiLOcx5GuQ9ow" x="460" y="10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_DbUCcPlLEeiLOcx5GuQ9ow" type="1007" element="_DUEK8PlLEeiLOcx5GuQ9ow?com.example.com.tibco.wf.main.subprocess?">
+      <children xmi:type="notation:Node" xmi:id="_DbWesPlLEeiLOcx5GuQ9ow" type="4023">
+        <styles xmi:type="notation:FontStyle" xmi:id="_DbWesflLEeiLOcx5GuQ9ow" fontName="Segoe UI" fontHeight="10" bold="true"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_DbXFwPlLEeiLOcx5GuQ9ow" type="4024"/>
+      <children xmi:type="notation:Node" xmi:id="_DbXs0PlLEeiLOcx5GuQ9ow" type="4025"/>
+      <children xmi:type="notation:Node" xmi:id="_DbXs0flLEeiLOcx5GuQ9ow" type="4026"/>
+      <children xmi:type="notation:Node" xmi:id="_DbXs0vlLEeiLOcx5GuQ9ow" type="4027"/>
+      <children xmi:type="notation:Node" xmi:id="_DbXs0_lLEeiLOcx5GuQ9ow" type="4028"/>
+      <children xmi:type="notation:Node" xmi:id="_DbdMYPlLEeiLOcx5GuQ9ow" type="4029"/>
+      <children xmi:type="notation:Node" xmi:id="_DbeagPlLEeiLOcx5GuQ9ow" type="4030"/>
+      <children xmi:type="notation:Node" xmi:id="_DbgPsPlLEeiLOcx5GuQ9ow" type="5007">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_DbgPsflLEeiLOcx5GuQ9ow"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_DbgPsvlLEeiLOcx5GuQ9ow" showTitle="true"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_DbgPs_lLEeiLOcx5GuQ9ow"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_DbgPtPlLEeiLOcx5GuQ9ow"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_DbUCcflLEeiLOcx5GuQ9ow" fontName="Segoe UI" fontHeight="10" fillColor="16316150" lineColor="37120"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_DbUCcvlLEeiLOcx5GuQ9ow"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DbUCc_lLEeiLOcx5GuQ9ow" y="-90"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_DUXF4flLEeiLOcx5GuQ9ow"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_DUXF4vlLEeiLOcx5GuQ9ow"/>
+  </notation:Diagram>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_S0fL4PlLEeiLOcx5GuQ9ow" displayLabel="AHV-Nummer" base_NamedElement="_S0gaAflLEeiLOcx5GuQ9ow?com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%3a%3aAHVNummer?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_S0fL4flLEeiLOcx5GuQ9ow" displayLabel="MetaData" base_NamedElement="_S0gaAPlLEeiLOcx5GuQ9ow?com.example.com.tibco.wf.main.subprocess%3a%3aMetaData?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_S0fL4vlLEeiLOcx5GuQ9ow" displayLabel="DokumentenArt" base_NamedElement="_S0gaB_lLEeiLOcx5GuQ9ow?com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%3a%3adokumentenArt?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_S0fL4_lLEeiLOcx5GuQ9ow" displayLabel="Partner-ID" base_NamedElement="_S0gaBPlLEeiLOcx5GuQ9ow?com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%3a%3apartnerID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_S0fL5PlLEeiLOcx5GuQ9ow" displayLabel="Kanton" base_NamedElement="_S0gaCvlLEeiLOcx5GuQ9ow?com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%3a%3akanton?"/>
+</xmi:XMI>

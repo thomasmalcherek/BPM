@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" generatorSource="com.tibco.wf.generic.subprocess.kanton.zh.xpdl#_bbivAPlQEeiLOcx5GuQ9ow?p=com.tibco.wf.generic.subprocess.kanton.zh%26s=Process%20Packages%26t=xpdl2%3aActivity%26q=comtibcowfgenericsubprocesskantonzh%3a%3acomtibcowfgenericsubprocesskantonzhProcess%26n=PruferTask?" formatVersion="4.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri=".default/comtibcowfgenericsubprocesskantonzh/comtibcowfgenericsubprocesskantonzhProcess/PruferTask/PruferTask.properties" sfRelative="true" internal="true" localized="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" generatorSource="com.tibco.wf.main.subprocess.xpdl#_3hDadPlLEeiLOcx5GuQ9ow?p=com.tibco.wf.main.subprocess%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=comtibcowfmainsubprocess%3a%3acomtibcowfgenericInterface%26n=MetaDataMainProcess?" name="data.MetaDataMainProcess" label="MetaDataMainProcess" dataType="uml:Class com.tibco.wf.main.subprocess.bom#_S0gaAPlLEeiLOcx5GuQ9ow?p=com.tibco.wf.main.subprocess%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.com.tibco.wf.main.subprocess%26n=MetaData?" type="com.example.com.tibco.wf.main.subprocess::MetaData" inout="IN"/>
+    <form:parameter generated="true" generatorSource="com.tibco.wf.main.subprocess.xpdl#_1BhgIPlPEeiLOcx5GuQ9ow?p=com.tibco.wf.main.subprocess%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=comtibcowfmainsubprocess%3a%3acomtibcowfgenericInterface%26n=wfCaseID?" name="data.wfCaseID" label="wfCaseID" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="IN"/>
+  </form:dataModel>
+  <form:services/>
+  <form:actions/>
+  <form:conditions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancel" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancel.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.close" label="Close">
+      <form:event source="#control.close" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.close.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.close"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submit" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submit.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_lKdnMPlXEeiLOcx5GuQ9ow">
+      <form:source target="data.MetaDataMainProcess" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.MetaDataMainProcess.value"/>
+      <form:destination target="pane.MetaDataMainProcess" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.MetaDataMainProcess.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_lKe1UPlXEeiLOcx5GuQ9ow">
+      <form:source target="pane.MetaDataMainProcess" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.tibco.wf.main.subprocess.bom#_S0gaAflLEeiLOcx5GuQ9ow?p=com.tibco.wf.main.subprocess%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%26n=AHVNummer?" data="form.pane.MetaDataMainProcess.value.AHVNummer"/>
+      <form:destination target="control.MetaDataMainProcess_AHVNummer" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.MetaDataMainProcess_AHVNummer.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_lKe1UflXEeiLOcx5GuQ9ow">
+      <form:source target="pane.MetaDataMainProcess" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.tibco.wf.main.subprocess.bom#_S0gaBPlLEeiLOcx5GuQ9ow?p=com.tibco.wf.main.subprocess%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%26n=partnerID?" data="form.pane.MetaDataMainProcess.value.partnerID"/>
+      <form:destination target="control.MetaDataMainProcess_partnerID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.MetaDataMainProcess_partnerID.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_lKe1UvlXEeiLOcx5GuQ9ow">
+      <form:source target="pane.MetaDataMainProcess" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.tibco.wf.main.subprocess.bom#_S0gaB_lLEeiLOcx5GuQ9ow?p=com.tibco.wf.main.subprocess%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%26n=dokumentenArt?" data="form.pane.MetaDataMainProcess.value.dokumentenArt"/>
+      <form:destination target="control.MetaDataMainProcess_dokumentenArt" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.MetaDataMainProcess_dokumentenArt.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_lKe1U_lXEeiLOcx5GuQ9ow">
+      <form:source target="pane.MetaDataMainProcess" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value com.tibco.wf.main.subprocess.bom#_S0gaCvlLEeiLOcx5GuQ9ow?p=com.tibco.wf.main.subprocess%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%26n=kanton?" data="form.pane.MetaDataMainProcess.value.kanton"/>
+      <form:destination target="control.MetaDataMainProcess_kanton" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.MetaDataMainProcess_kanton.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_lKe1VPlXEeiLOcx5GuQ9ow">
+      <form:source target="data.wfCaseID" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.wfCaseID.value"/>
+      <form:destination target="control.wfCaseID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.wfCaseID.value"/>
+    </form:binding>
+  </form:bindings>
+  <form:targets>
+    <form:target ref="iProcessWorkspace_10.7"/>
+  </form:targets>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Prufer Task</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="left"/>
+    </form:defaults>
+    <form:pane generated="true" generatorSource="com.tibco.wf.main.subprocess.xpdl#_3hDadPlLEeiLOcx5GuQ9ow?p=com.tibco.wf.main.subprocess%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=comtibcowfmainsubprocess%3a%3acomtibcowfgenericInterface%26n=MetaDataMainProcess?" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class com.tibco.wf.main.subprocess.bom#_S0gaAPlLEeiLOcx5GuQ9ow?p=com.tibco.wf.main.subprocess%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.com.tibco.wf.main.subprocess%26n=MetaData?" name="pane.MetaDataMainProcess" paneType="com.tibco.forms.panes.vertical">
+      <form:label>MetaDataMainProcess</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" generatorSource="com.tibco.wf.main.subprocess.bom#_S0gaAflLEeiLOcx5GuQ9ow?p=com.tibco.wf.main.subprocess%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%26n=AHVNummer?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.MetaDataMainProcess_AHVNummer">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>AHV-Nummer</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.tibco.wf.main.subprocess.bom#_S0gaBPlLEeiLOcx5GuQ9ow?p=com.tibco.wf.main.subprocess%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%26n=partnerID?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.MetaDataMainProcess_partnerID">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Partner-ID</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.tibco.wf.main.subprocess.bom#_S0gaB_lLEeiLOcx5GuQ9ow?p=com.tibco.wf.main.subprocess%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%26n=dokumentenArt?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.MetaDataMainProcess_dokumentenArt">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>DokumentenArt</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="com.tibco.wf.main.subprocess.bom#_S0gaCvlLEeiLOcx5GuQ9ow?p=com.tibco.wf.main.subprocess%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.com.tibco.wf.main.subprocess%3a%3aMetaData%26n=kanton?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.MetaDataMainProcess_kanton">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Kanton</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:control generated="true" generatorSource="com.tibco.wf.main.subprocess.xpdl#_1BhgIPlPEeiLOcx5GuQ9ow?p=com.tibco.wf.main.subprocess%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=comtibcowfmainsubprocess%3a%3acomtibcowfgenericInterface%26n=wfCaseID?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.wfCaseID">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>wfCaseID</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancel">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.close">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Close</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submit">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

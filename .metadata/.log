@@ -8892,3 +8892,1164 @@ HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.e
 
 !ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-05 16:04:32.937
 !MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.xpd.forms.designer.resources 4 0 2018-12-06 12:39:16.852
+!MESSAGE Exception generating form /com.tibco.wf.asynchCall/Forms/.default/comtibcowfasynchCall/MainProcessStartEvent/UserTask/UserTask.form
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot generate/sync form for User Task (UserTask): parameter 'MetaData' data type is null or unresolvable
+	at com.tibco.forms.core.utils.helpers.LogHelper.createException(LogHelper.java:43)
+	at com.tibco.forms.core.utils.AbstractFormPlugin.createException(AbstractFormPlugin.java:31)
+	at com.tibco.forms.core.formgenerator.impl.DefaultFormGenerator.createParameter(DefaultFormGenerator.java:2998)
+	at com.tibco.forms.core.formgenerator.impl.DefaultFormGenerator.create(DefaultFormGenerator.java:2817)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorUtils.generateForm(FormGeneratorUtils.java:290)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForm(FormGeneratorBuilder.java:190)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForms(FormGeneratorBuilder.java:235)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForms(FormGeneratorBuilder.java:214)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.o00000(FormGeneratorBuilder.java:453)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.visit(FormGeneratorBuilder.java:338)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.doIncrementalBuild(AbstractFormBuilder.java:264)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.o00000(AbstractFormBuilder.java:248)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.doBuild(AbstractFormBuilder.java:166)
+	at com.tibco.xpd.validation.AbstractValidatingIncrementalProjectBuilder.build(AbstractValidatingIncrementalProjectBuilder.java:70)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.tibco.forms.core.formgenerator 4 0 2018-12-06 12:39:16.853
+!MESSAGE Cannot generate/sync form for User Task (UserTask): parameter 'MetaData' data type is null or unresolvable
+
+!ENTRY com.tibco.xpd.forms.designer.resources 4 0 2018-12-06 12:39:16.861
+!MESSAGE Exception generating form /com.tibco.wf.asynchCall/Forms/.default/comtibcowfasynchCall/MainProcess/PruefenderDaten/PruefenderDaten.form
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot generate/sync form for Pruefen der Daten (PruefenderDaten): parameter 'MetaData' data type is null or unresolvable
+	at com.tibco.forms.core.utils.helpers.LogHelper.createException(LogHelper.java:43)
+	at com.tibco.forms.core.utils.AbstractFormPlugin.createException(AbstractFormPlugin.java:31)
+	at com.tibco.forms.core.formgenerator.impl.DefaultFormGenerator.createParameter(DefaultFormGenerator.java:2998)
+	at com.tibco.forms.core.formgenerator.impl.DefaultFormGenerator.create(DefaultFormGenerator.java:2817)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorUtils.generateForm(FormGeneratorUtils.java:290)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForm(FormGeneratorBuilder.java:190)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForms(FormGeneratorBuilder.java:235)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForms(FormGeneratorBuilder.java:214)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.o00000(FormGeneratorBuilder.java:453)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.visit(FormGeneratorBuilder.java:338)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.doIncrementalBuild(AbstractFormBuilder.java:264)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.o00000(AbstractFormBuilder.java:248)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.doBuild(AbstractFormBuilder.java:166)
+	at com.tibco.xpd.validation.AbstractValidatingIncrementalProjectBuilder.build(AbstractValidatingIncrementalProjectBuilder.java:70)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.tibco.forms.core.formgenerator 4 0 2018-12-06 12:39:16.861
+!MESSAGE Cannot generate/sync form for Pruefen der Daten (PruefenderDaten): parameter 'MetaData' data type is null or unresolvable
+
+!ENTRY com.tibco.xpd.forms.designer.resources 4 0 2018-12-06 12:39:17.108
+!MESSAGE Exception generating form /com.tibco.wf.asynchCall/Forms/.default/comtibcowfasynchCall/MainProcessStartEvent/UserTask/UserTask.form
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot generate/sync form for User Task (UserTask): parameter 'MetaData' data type is null or unresolvable
+	at com.tibco.forms.core.utils.helpers.LogHelper.createException(LogHelper.java:43)
+	at com.tibco.forms.core.utils.AbstractFormPlugin.createException(AbstractFormPlugin.java:31)
+	at com.tibco.forms.core.formgenerator.impl.DefaultFormGenerator.createParameter(DefaultFormGenerator.java:2998)
+	at com.tibco.forms.core.formgenerator.impl.DefaultFormGenerator.create(DefaultFormGenerator.java:2817)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorUtils.generateForm(FormGeneratorUtils.java:290)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForm(FormGeneratorBuilder.java:190)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForms(FormGeneratorBuilder.java:235)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForms(FormGeneratorBuilder.java:214)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.o00000(FormGeneratorBuilder.java:453)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.visit(FormGeneratorBuilder.java:338)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.doIncrementalBuild(AbstractFormBuilder.java:264)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.o00000(AbstractFormBuilder.java:248)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.doBuild(AbstractFormBuilder.java:163)
+	at com.tibco.xpd.validation.AbstractValidatingIncrementalProjectBuilder.build(AbstractValidatingIncrementalProjectBuilder.java:70)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.tibco.forms.core.formgenerator 4 0 2018-12-06 12:39:17.108
+!MESSAGE Cannot generate/sync form for User Task (UserTask): parameter 'MetaData' data type is null or unresolvable
+
+!ENTRY com.tibco.xpd.forms.designer.resources 4 0 2018-12-06 12:39:17.115
+!MESSAGE Exception generating form /com.tibco.wf.asynchCall/Forms/.default/comtibcowfasynchCall/MainProcess/PruefenderDaten/PruefenderDaten.form
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot generate/sync form for Pruefen der Daten (PruefenderDaten): parameter 'MetaData' data type is null or unresolvable
+	at com.tibco.forms.core.utils.helpers.LogHelper.createException(LogHelper.java:43)
+	at com.tibco.forms.core.utils.AbstractFormPlugin.createException(AbstractFormPlugin.java:31)
+	at com.tibco.forms.core.formgenerator.impl.DefaultFormGenerator.createParameter(DefaultFormGenerator.java:2998)
+	at com.tibco.forms.core.formgenerator.impl.DefaultFormGenerator.create(DefaultFormGenerator.java:2817)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorUtils.generateForm(FormGeneratorUtils.java:290)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForm(FormGeneratorBuilder.java:190)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForms(FormGeneratorBuilder.java:235)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForms(FormGeneratorBuilder.java:214)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.o00000(FormGeneratorBuilder.java:453)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.visit(FormGeneratorBuilder.java:338)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.doIncrementalBuild(AbstractFormBuilder.java:264)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.o00000(AbstractFormBuilder.java:248)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.doBuild(AbstractFormBuilder.java:163)
+	at com.tibco.xpd.validation.AbstractValidatingIncrementalProjectBuilder.build(AbstractValidatingIncrementalProjectBuilder.java:70)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.tibco.forms.core.formgenerator 4 0 2018-12-06 12:39:17.115
+!MESSAGE Cannot generate/sync form for Pruefen der Daten (PruefenderDaten): parameter 'MetaData' data type is null or unresolvable
+
+!ENTRY com.tibco.xpd.forms.designer.resources 4 0 2018-12-06 12:39:17.233
+!MESSAGE Exception generating form /com.tibco.wf.asynchCall/Forms/.default/comtibcowfasynchCall/MainProcessStartEvent/UserTask/UserTask.form
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot generate/sync form for User Task (UserTask): parameter 'MetaData' data type is null or unresolvable
+	at com.tibco.forms.core.utils.helpers.LogHelper.createException(LogHelper.java:43)
+	at com.tibco.forms.core.utils.AbstractFormPlugin.createException(AbstractFormPlugin.java:31)
+	at com.tibco.forms.core.formgenerator.impl.DefaultFormGenerator.createParameter(DefaultFormGenerator.java:2998)
+	at com.tibco.forms.core.formgenerator.impl.DefaultFormGenerator.create(DefaultFormGenerator.java:2817)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorUtils.generateForm(FormGeneratorUtils.java:290)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForm(FormGeneratorBuilder.java:190)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForms(FormGeneratorBuilder.java:235)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForms(FormGeneratorBuilder.java:214)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.o00000(FormGeneratorBuilder.java:453)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.visit(FormGeneratorBuilder.java:338)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.doIncrementalBuild(AbstractFormBuilder.java:264)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.o00000(AbstractFormBuilder.java:248)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.doBuild(AbstractFormBuilder.java:163)
+	at com.tibco.xpd.validation.AbstractValidatingIncrementalProjectBuilder.build(AbstractValidatingIncrementalProjectBuilder.java:70)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.tibco.forms.core.formgenerator 4 0 2018-12-06 12:39:17.233
+!MESSAGE Cannot generate/sync form for User Task (UserTask): parameter 'MetaData' data type is null or unresolvable
+
+!ENTRY com.tibco.xpd.forms.designer.resources 4 0 2018-12-06 12:39:17.240
+!MESSAGE Exception generating form /com.tibco.wf.asynchCall/Forms/.default/comtibcowfasynchCall/MainProcess/PruefenderDaten/PruefenderDaten.form
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot generate/sync form for Pruefen der Daten (PruefenderDaten): parameter 'MetaData' data type is null or unresolvable
+	at com.tibco.forms.core.utils.helpers.LogHelper.createException(LogHelper.java:43)
+	at com.tibco.forms.core.utils.AbstractFormPlugin.createException(AbstractFormPlugin.java:31)
+	at com.tibco.forms.core.formgenerator.impl.DefaultFormGenerator.createParameter(DefaultFormGenerator.java:2998)
+	at com.tibco.forms.core.formgenerator.impl.DefaultFormGenerator.create(DefaultFormGenerator.java:2817)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorUtils.generateForm(FormGeneratorUtils.java:290)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForm(FormGeneratorBuilder.java:190)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForms(FormGeneratorBuilder.java:235)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.generateDefaultForms(FormGeneratorBuilder.java:214)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.o00000(FormGeneratorBuilder.java:453)
+	at com.tibco.xpd.forms.designer.resources.generator.FormGeneratorBuilder.visit(FormGeneratorBuilder.java:338)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.doIncrementalBuild(AbstractFormBuilder.java:264)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.o00000(AbstractFormBuilder.java:248)
+	at com.tibco.xpd.forms.designer.resources.utils.AbstractFormBuilder.doBuild(AbstractFormBuilder.java:163)
+	at com.tibco.xpd.validation.AbstractValidatingIncrementalProjectBuilder.build(AbstractValidatingIncrementalProjectBuilder.java:70)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.tibco.forms.core.formgenerator 4 0 2018-12-06 12:39:17.240
+!MESSAGE Cannot generate/sync form for Pruefen der Daten (PruefenderDaten): parameter 'MetaData' data type is null or unresolvable
+
+!ENTRY org.eclipse.core.resources 4 2 2018-12-06 13:05:50.474
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Cannot add duplicate edge to a simple graph: {L/com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl, L/com.tibco.wf.main.subprocess/Process Packages/com.tibco.wf.main.subprocess.xpdl, null}
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at com.tibco.forms.core.utils.graphs.Graph.validateAddEdge(Graph.java:560)
+	at com.tibco.forms.core.utils.graphs.Graph.validateAddAllEdges(Graph.java:551)
+	at com.tibco.forms.core.utils.graphs.Graph.addAllEdges(Graph.java:106)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.o00000(DynamicWorkingCopyDependencyGraph.java:267)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.o00000(DynamicWorkingCopyDependencyGraph.java:209)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.visit(DynamicWorkingCopyDependencyGraph.java:460)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.resourceChanged(DynamicWorkingCopyDependencyGraph.java:373)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2353)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.tibco.xpd.resources.wc.AbstractWorkingCopy.save(AbstractWorkingCopy.java:519)
+	at com.tibco.xpd.processeditor.xpdl2.AbstractProcessDiagramEditor.savePackage(AbstractProcessDiagramEditor.java:244)
+	at com.tibco.xpd.processeditor.xpdl2.AbstractProcessDiagramEditor.doSave(AbstractProcessDiagramEditor.java:231)
+	at org.eclipse.ui.internal.SaveableHelper$2.run(SaveableHelper.java:151)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:277)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2649)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:285)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:264)
+	at org.eclipse.ui.internal.SaveableHelper.savePart(SaveableHelper.java:156)
+	at org.eclipse.ui.internal.EditorManager.savePart(EditorManager.java:1399)
+	at org.eclipse.ui.internal.WorkbenchPage.savePart(WorkbenchPage.java:3416)
+	at org.eclipse.ui.internal.WorkbenchPage.saveEditor(WorkbenchPage.java:3429)
+	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:54)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:293)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:567)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:508)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1509)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2531)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.core.resources 4 2 2018-12-06 13:06:00.573
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Cannot add duplicate edge to a simple graph: {L/com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl, L/com.tibco.wf.main.subprocess/Process Packages/com.tibco.wf.main.subprocess.xpdl, null}
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at com.tibco.forms.core.utils.graphs.Graph.validateAddEdge(Graph.java:560)
+	at com.tibco.forms.core.utils.graphs.Graph.validateAddAllEdges(Graph.java:551)
+	at com.tibco.forms.core.utils.graphs.Graph.addAllEdges(Graph.java:106)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.o00000(DynamicWorkingCopyDependencyGraph.java:267)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.o00000(DynamicWorkingCopyDependencyGraph.java:209)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.visit(DynamicWorkingCopyDependencyGraph.java:460)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.resourceChanged(DynamicWorkingCopyDependencyGraph.java:373)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2353)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.tibco.xpd.resources.wc.AbstractWorkingCopy.save(AbstractWorkingCopy.java:519)
+	at com.tibco.xpd.processeditor.xpdl2.AbstractProcessDiagramEditor.savePackage(AbstractProcessDiagramEditor.java:244)
+	at com.tibco.xpd.processeditor.xpdl2.AbstractProcessDiagramEditor.doSave(AbstractProcessDiagramEditor.java:231)
+	at org.eclipse.ui.internal.SaveableHelper$2.run(SaveableHelper.java:151)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:277)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2649)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:285)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:264)
+	at org.eclipse.ui.internal.SaveableHelper.savePart(SaveableHelper.java:156)
+	at org.eclipse.ui.internal.EditorManager.savePart(EditorManager.java:1399)
+	at org.eclipse.ui.internal.WorkbenchPage.savePart(WorkbenchPage.java:3416)
+	at org.eclipse.ui.internal.WorkbenchPage.saveEditor(WorkbenchPage.java:3429)
+	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:54)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:293)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:567)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:508)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1509)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2531)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.core.resources 4 2 2018-12-06 13:11:26.835
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Cannot add duplicate edge to a simple graph: {L/com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl, L/com.tibco.wf.main.subprocess/Process Packages/com.tibco.wf.main.subprocess.xpdl, null}
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at com.tibco.forms.core.utils.graphs.Graph.validateAddEdge(Graph.java:560)
+	at com.tibco.forms.core.utils.graphs.Graph.validateAddAllEdges(Graph.java:551)
+	at com.tibco.forms.core.utils.graphs.Graph.addAllEdges(Graph.java:106)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.o00000(DynamicWorkingCopyDependencyGraph.java:267)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.o00000(DynamicWorkingCopyDependencyGraph.java:209)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.visit(DynamicWorkingCopyDependencyGraph.java:460)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.resourceChanged(DynamicWorkingCopyDependencyGraph.java:373)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2353)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.tibco.xpd.resources.wc.AbstractWorkingCopy.save(AbstractWorkingCopy.java:519)
+	at com.tibco.xpd.processeditor.xpdl2.AbstractProcessDiagramEditor.savePackage(AbstractProcessDiagramEditor.java:244)
+	at com.tibco.xpd.processeditor.xpdl2.AbstractProcessDiagramEditor.doSave(AbstractProcessDiagramEditor.java:231)
+	at org.eclipse.ui.internal.SaveableHelper$2.run(SaveableHelper.java:151)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:277)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2649)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:285)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:264)
+	at org.eclipse.ui.internal.SaveableHelper.savePart(SaveableHelper.java:156)
+	at org.eclipse.ui.internal.EditorManager.savePart(EditorManager.java:1399)
+	at org.eclipse.ui.internal.WorkbenchPage.savePart(WorkbenchPage.java:3416)
+	at org.eclipse.ui.internal.WorkbenchPage.saveEditor(WorkbenchPage.java:3429)
+	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:54)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:293)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:567)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:508)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1509)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2531)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.core.resources 4 2 2018-12-06 13:11:46.378
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Cannot add duplicate edge to a simple graph: {L/com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl, L/com.tibco.wf.main.subprocess/Process Packages/com.tibco.wf.main.subprocess.xpdl, null}
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at com.tibco.forms.core.utils.graphs.Graph.validateAddEdge(Graph.java:560)
+	at com.tibco.forms.core.utils.graphs.Graph.validateAddAllEdges(Graph.java:551)
+	at com.tibco.forms.core.utils.graphs.Graph.addAllEdges(Graph.java:106)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.o00000(DynamicWorkingCopyDependencyGraph.java:267)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.o00000(DynamicWorkingCopyDependencyGraph.java:209)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.visit(DynamicWorkingCopyDependencyGraph.java:460)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.resourceChanged(DynamicWorkingCopyDependencyGraph.java:373)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2353)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.tibco.xpd.resources.wc.AbstractWorkingCopy.save(AbstractWorkingCopy.java:519)
+	at com.tibco.xpd.processeditor.xpdl2.AbstractProcessDiagramEditor.savePackage(AbstractProcessDiagramEditor.java:244)
+	at com.tibco.xpd.processeditor.xpdl2.AbstractProcessDiagramEditor.doSave(AbstractProcessDiagramEditor.java:231)
+	at org.eclipse.ui.internal.SaveableHelper$2.run(SaveableHelper.java:151)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:277)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2649)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:285)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:264)
+	at org.eclipse.ui.internal.SaveableHelper.savePart(SaveableHelper.java:156)
+	at org.eclipse.ui.internal.EditorManager.savePart(EditorManager.java:1399)
+	at org.eclipse.ui.internal.WorkbenchPage.savePart(WorkbenchPage.java:3416)
+	at org.eclipse.ui.internal.WorkbenchPage.saveEditor(WorkbenchPage.java:3429)
+	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:54)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:293)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:567)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:508)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1509)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Table.WM_CHAR(Table.java:5897)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Table.windowProc(Table.java:5893)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4985)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2531)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.core.resources 4 2 2018-12-06 13:13:23.366
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Cannot add duplicate edge to a simple graph: {L/com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl, L/com.tibco.wf.main.subprocess/Process Packages/com.tibco.wf.main.subprocess.xpdl, null}
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at com.tibco.forms.core.utils.graphs.Graph.validateAddEdge(Graph.java:560)
+	at com.tibco.forms.core.utils.graphs.Graph.validateAddAllEdges(Graph.java:551)
+	at com.tibco.forms.core.utils.graphs.Graph.addAllEdges(Graph.java:106)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.o00000(DynamicWorkingCopyDependencyGraph.java:267)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.o00000(DynamicWorkingCopyDependencyGraph.java:209)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.visit(DynamicWorkingCopyDependencyGraph.java:460)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.resourceChanged(DynamicWorkingCopyDependencyGraph.java:373)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2353)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.tibco.xpd.resources.wc.AbstractWorkingCopy.save(AbstractWorkingCopy.java:519)
+	at com.tibco.xpd.processeditor.xpdl2.AbstractProcessDiagramEditor.savePackage(AbstractProcessDiagramEditor.java:244)
+	at com.tibco.xpd.processeditor.xpdl2.AbstractProcessDiagramEditor.doSave(AbstractProcessDiagramEditor.java:231)
+	at org.eclipse.ui.internal.SaveableHelper$2.run(SaveableHelper.java:151)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:277)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2649)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:285)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:264)
+	at org.eclipse.ui.internal.SaveableHelper.savePart(SaveableHelper.java:156)
+	at org.eclipse.ui.internal.EditorManager.savePart(EditorManager.java:1399)
+	at org.eclipse.ui.internal.WorkbenchPage.savePart(WorkbenchPage.java:3416)
+	at org.eclipse.ui.internal.WorkbenchPage.saveEditor(WorkbenchPage.java:3429)
+	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:54)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:293)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:567)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:508)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1509)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2531)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.core.resources 4 2 2018-12-06 13:13:41.012
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Cannot add duplicate edge to a simple graph: {L/com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl, L/com.tibco.wf.main.subprocess/Process Packages/com.tibco.wf.main.subprocess.xpdl, null}
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at com.tibco.forms.core.utils.graphs.Graph.validateAddEdge(Graph.java:560)
+	at com.tibco.forms.core.utils.graphs.Graph.validateAddAllEdges(Graph.java:551)
+	at com.tibco.forms.core.utils.graphs.Graph.addAllEdges(Graph.java:106)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.o00000(DynamicWorkingCopyDependencyGraph.java:267)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.o00000(DynamicWorkingCopyDependencyGraph.java:209)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.visit(DynamicWorkingCopyDependencyGraph.java:460)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.resourceChanged(DynamicWorkingCopyDependencyGraph.java:373)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2353)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.tibco.xpd.resources.wc.AbstractWorkingCopy.save(AbstractWorkingCopy.java:519)
+	at com.tibco.xpd.resources.wc.WorkingCopySaveable.doSave(WorkingCopySaveable.java:77)
+	at org.eclipse.ui.Saveable.doSave(Saveable.java:214)
+	at org.eclipse.ui.internal.SaveableHelper.doSaveModel(SaveableHelper.java:349)
+	at org.eclipse.ui.internal.SaveableHelper$3.run(SaveableHelper.java:195)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:277)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2649)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:285)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:264)
+	at org.eclipse.ui.internal.SaveableHelper.saveModels(SaveableHelper.java:207)
+	at org.eclipse.ui.internal.SaveableHelper.savePart(SaveableHelper.java:144)
+	at org.eclipse.ui.internal.EditorManager.savePart(EditorManager.java:1399)
+	at org.eclipse.ui.internal.WorkbenchPage.savePart(WorkbenchPage.java:3416)
+	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:61)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:293)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:567)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:508)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Text.sendKeyEvent(Text.java:1455)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1509)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Text.WM_CHAR(Text.java:2259)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Text.windowProc(Text.java:2254)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2531)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.core.resources 4 2 2018-12-06 13:16:01.342
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Cannot add duplicate edge to a simple graph: {L/com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl, L/com.tibco.wf.main.subprocess/Process Packages/com.tibco.wf.main.subprocess.xpdl, null}
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at com.tibco.forms.core.utils.graphs.Graph.validateAddEdge(Graph.java:560)
+	at com.tibco.forms.core.utils.graphs.Graph.validateAddAllEdges(Graph.java:551)
+	at com.tibco.forms.core.utils.graphs.Graph.addAllEdges(Graph.java:106)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.o00000(DynamicWorkingCopyDependencyGraph.java:267)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.o00000(DynamicWorkingCopyDependencyGraph.java:209)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.visit(DynamicWorkingCopyDependencyGraph.java:460)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.tibco.xpd.forms.designer.resources.DynamicWorkingCopyDependencyGraph.resourceChanged(DynamicWorkingCopyDependencyGraph.java:373)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2353)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.tibco.xpd.resources.wc.AbstractWorkingCopy.save(AbstractWorkingCopy.java:519)
+	at com.tibco.xpd.resources.wc.WorkingCopySaveable.doSave(WorkingCopySaveable.java:77)
+	at org.eclipse.ui.Saveable.doSave(Saveable.java:214)
+	at org.eclipse.ui.internal.SaveableHelper.doSaveModel(SaveableHelper.java:349)
+	at com.tibco.xpd.deploy.ui.util.DeployHelper$2.run(DeployHelper.java:382)
+	at com.tibco.xpd.deploy.ui.util.DeployHelper$4.run(DeployHelper.java:473)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2649)
+	at com.tibco.xpd.deploy.ui.util.DeployHelper.o00000(DeployHelper.java:481)
+	at com.tibco.xpd.deploy.ui.util.DeployHelper.o00000(DeployHelper.java:392)
+	at com.tibco.xpd.deploy.ui.util.DeployHelper.access$0(DeployHelper.java:181)
+	at com.tibco.xpd.deploy.ui.util.DeployHelper$1.run(DeployHelper.java:149)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at com.tibco.xpd.deploy.ui.util.DeployHelper.saveAllEditors(DeployHelper.java:95)
+	at com.tibco.xpd.deploy.ui.util.DeployUtil.saveAllDirtyResourcesInWS(DeployUtil.java:264)
+	at com.tibco.xpd.deploy.ui.actions.DeployModuleAction.run(DeployModuleAction.java:60)
+	at org.eclipse.ui.actions.BaseSelectionListenerAction.runWithEvent(BaseSelectionListenerAction.java:168)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.tibco.amf.tools.composite.launch.utils 1 0 2018-12-06 13:19:25.707
+!MESSAGE Executing: java -Dant.home="C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030" -Dant.library.dir="C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib" -Ddebug.remote.build.listener=true -Dcom.tibco.remote.build.listener.port="61092"  -cp "C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib\ant-launcher.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib\ant.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.tpcl.com.sun.jmx.remote.optional.eclipse_1.0.200.004\jmxremote_optional.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.amf.tools.admincligen.support_1.2.0.004\support.jar" org.apache.tools.ant.launch.Launcher -f C:\Users\admin\Documents\GitHub\BPM\.BSServers\scripts\com.example.comtibcowfgenericsubprocesskantonbe.deployment-build.xml -listener com.tibco.amf.tools.admincligen.support.jmx.JmxBuildListenerNotifier
+
+!ENTRY com.tibco.amf.tools.composite.launch.utils 4 0 2018-12-06 13:19:57.112
+!MESSAGE The execution of the ant script 'com.example.comtibcowfgenericsubprocesskantonbe.deployment-build.xml' terminated in an error. Please refer to the console for more information.
+
+!ENTRY com.tibco.amf.tools.admindata.model 4 0 2018-12-06 13:19:58.908
+!MESSAGE Server.userExceptionjava.net.UnknownHostException: ssva90322
+!STACK 0
+javax.xml.soap.SOAPException: Server.userExceptionjava.net.UnknownHostException: ssva90322
+	at com.tibco.amf.tools.admindata.model.adminfacade.Util.call(Util.java:372)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.adminservices.ResourceTemplateService.getAllResourceTemplates(ResourceTemplateService.java:41)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin330.ResourceTemplateReconciler.reconcile(ResourceTemplateReconciler.java:40)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin330.ReconcilerAmx330.reconcile(ReconcilerAmx330.java:69)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.AdminServerReconcilerManager.reconcile(AdminServerReconcilerManager.java:98)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:190)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:159)
+	at com.tibco.amf.tools.admindata.model.RefreshAdminServerJob.run(RefreshAdminServerJob.java:124)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.tibco.amf.tools.admindata.model 4 0 2018-12-06 13:19:59.226
+!MESSAGE Server.userExceptionjava.net.UnknownHostException: ssva90322
+!STACK 0
+javax.xml.soap.SOAPException: Server.userExceptionjava.net.UnknownHostException: ssva90322
+	at com.tibco.amf.tools.admindata.model.adminfacade.Util.call(Util.java:372)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.adminservices.ResourceTemplateService.getAllResourceTemplates(ResourceTemplateService.java:41)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin300.ResourceTemplateReconciler.reconcile(ResourceTemplateReconciler.java:37)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin320.ReconcilerAmx320.reconcile(ReconcilerAmx320.java:69)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.AdminServerReconcilerManager.reconcile(AdminServerReconcilerManager.java:98)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:190)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:159)
+	at com.tibco.amf.tools.admindata.model.RefreshAdminServerJob.run(RefreshAdminServerJob.java:124)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.tibco.amf.tools.admindata.model 4 0 2018-12-06 13:19:59.544
+!MESSAGE Server.userExceptionjava.net.UnknownHostException: ssva90322
+!STACK 0
+javax.xml.soap.SOAPException: Server.userExceptionjava.net.UnknownHostException: ssva90322
+	at com.tibco.amf.tools.admindata.model.adminfacade.Util.call(Util.java:372)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.adminservices.ResourceTemplateService.getAllResourceTemplates(ResourceTemplateService.java:41)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin300.ResourceTemplateReconciler.reconcile(ResourceTemplateReconciler.java:37)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin310.ReconcilerAmx310.reconcile(ReconcilerAmx310.java:97)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.AdminServerReconcilerManager.reconcile(AdminServerReconcilerManager.java:98)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:190)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:159)
+	at com.tibco.amf.tools.admindata.model.RefreshAdminServerJob.run(RefreshAdminServerJob.java:124)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.tibco.amf.tools.admindata.model 4 0 2018-12-06 13:19:59.860
+!MESSAGE Server.userExceptionjava.net.UnknownHostException: ssva90322
+!STACK 0
+javax.xml.soap.SOAPException: Server.userExceptionjava.net.UnknownHostException: ssva90322
+	at com.tibco.amf.tools.admindata.model.adminfacade.Util.call(Util.java:372)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.adminservices.ResourceTemplateService.getAllResourceTemplates(ResourceTemplateService.java:41)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin300.ResourceTemplateReconciler.reconcile(ResourceTemplateReconciler.java:37)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin300.ReconcilerAmx300.reconcile(ReconcilerAmx300.java:61)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.AdminServerReconcilerManager.reconcile(AdminServerReconcilerManager.java:98)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:190)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:159)
+	at com.tibco.amf.tools.admindata.model.RefreshAdminServerJob.run(RefreshAdminServerJob.java:124)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.tibco.amf.tools.admindata.model 4 0 2018-12-06 13:19:59.874
+!MESSAGE Unable to synchronize with the server. Please make sure the server is running.
+!STACK 0
+javax.xml.soap.SOAPException: Server.userExceptionjava.net.UnknownHostException: ssva90322
+	at com.tibco.amf.tools.admindata.model.adminfacade.Util.call(Util.java:372)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.adminservices.ResourceTemplateService.getAllResourceTemplates(ResourceTemplateService.java:41)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin300.ResourceTemplateReconciler.reconcile(ResourceTemplateReconciler.java:37)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin300.ReconcilerAmx300.reconcile(ReconcilerAmx300.java:61)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.AdminServerReconcilerManager.reconcile(AdminServerReconcilerManager.java:98)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:190)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:159)
+	at com.tibco.amf.tools.admindata.model.RefreshAdminServerJob.run(RefreshAdminServerJob.java:124)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.tibco.amf.tools.admindata.model 4 0 2018-12-06 13:25:58.471
+!MESSAGE Server.userExceptionjava.net.UnknownHostException: ssva90322
+!STACK 0
+javax.xml.soap.SOAPException: Server.userExceptionjava.net.UnknownHostException: ssva90322
+	at com.tibco.amf.tools.admindata.model.adminfacade.Util.call(Util.java:372)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.adminservices.ResourceTemplateService.getAllResourceTemplates(ResourceTemplateService.java:41)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin330.ResourceTemplateReconciler.reconcile(ResourceTemplateReconciler.java:40)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin330.ReconcilerAmx330.reconcile(ReconcilerAmx330.java:69)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.AdminServerReconcilerManager.reconcile(AdminServerReconcilerManager.java:98)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:190)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:159)
+	at com.tibco.amf.tools.admindata.model.RefreshAdminServerJob.run(RefreshAdminServerJob.java:124)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.tibco.amf.tools.admindata.model 4 0 2018-12-06 13:25:58.796
+!MESSAGE Server.userExceptionjava.net.UnknownHostException: ssva90322
+!STACK 0
+javax.xml.soap.SOAPException: Server.userExceptionjava.net.UnknownHostException: ssva90322
+	at com.tibco.amf.tools.admindata.model.adminfacade.Util.call(Util.java:372)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.adminservices.ResourceTemplateService.getAllResourceTemplates(ResourceTemplateService.java:41)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin300.ResourceTemplateReconciler.reconcile(ResourceTemplateReconciler.java:37)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin320.ReconcilerAmx320.reconcile(ReconcilerAmx320.java:69)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.AdminServerReconcilerManager.reconcile(AdminServerReconcilerManager.java:98)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:190)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:159)
+	at com.tibco.amf.tools.admindata.model.RefreshAdminServerJob.run(RefreshAdminServerJob.java:124)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.tibco.amf.tools.admindata.model 4 0 2018-12-06 13:25:59.126
+!MESSAGE Server.userExceptionjava.net.UnknownHostException: ssva90322
+!STACK 0
+javax.xml.soap.SOAPException: Server.userExceptionjava.net.UnknownHostException: ssva90322
+	at com.tibco.amf.tools.admindata.model.adminfacade.Util.call(Util.java:372)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.adminservices.ResourceTemplateService.getAllResourceTemplates(ResourceTemplateService.java:41)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin300.ResourceTemplateReconciler.reconcile(ResourceTemplateReconciler.java:37)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin310.ReconcilerAmx310.reconcile(ReconcilerAmx310.java:97)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.AdminServerReconcilerManager.reconcile(AdminServerReconcilerManager.java:98)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:190)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:159)
+	at com.tibco.amf.tools.admindata.model.RefreshAdminServerJob.run(RefreshAdminServerJob.java:124)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.tibco.amf.tools.admindata.model 4 0 2018-12-06 13:25:59.443
+!MESSAGE Server.userExceptionjava.net.UnknownHostException: ssva90322
+!STACK 0
+javax.xml.soap.SOAPException: Server.userExceptionjava.net.UnknownHostException: ssva90322
+	at com.tibco.amf.tools.admindata.model.adminfacade.Util.call(Util.java:372)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.adminservices.ResourceTemplateService.getAllResourceTemplates(ResourceTemplateService.java:41)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin300.ResourceTemplateReconciler.reconcile(ResourceTemplateReconciler.java:37)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin300.ReconcilerAmx300.reconcile(ReconcilerAmx300.java:61)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.AdminServerReconcilerManager.reconcile(AdminServerReconcilerManager.java:98)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:190)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:159)
+	at com.tibco.amf.tools.admindata.model.RefreshAdminServerJob.run(RefreshAdminServerJob.java:124)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.tibco.amf.tools.admindata.model 4 0 2018-12-06 13:25:59.453
+!MESSAGE Unable to synchronize with the server. Please make sure the server is running.
+!STACK 0
+javax.xml.soap.SOAPException: Server.userExceptionjava.net.UnknownHostException: ssva90322
+	at com.tibco.amf.tools.admindata.model.adminfacade.Util.call(Util.java:372)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.adminservices.ResourceTemplateService.getAllResourceTemplates(ResourceTemplateService.java:41)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin300.ResourceTemplateReconciler.reconcile(ResourceTemplateReconciler.java:37)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.admin300.ReconcilerAmx300.reconcile(ReconcilerAmx300.java:61)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.reconcilers.AdminServerReconcilerManager.reconcile(AdminServerReconcilerManager.java:98)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:190)
+	at com.tibco.amf.tools.admindata.model.internal.adminfacade.AdminFacade.reconcile(AdminFacade.java:159)
+	at com.tibco.amf.tools.admindata.model.RefreshAdminServerJob.run(RefreshAdminServerJob.java:124)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 13:27:24.606
+!MESSAGE Found 2EnvDetailsDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 13:27:24.612
+!MESSAGE Scanning nodes in env SystemEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 13:27:24.622
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 13:27:24.631
+!MESSAGE Scanning nodes in env BPMEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 13:27:24.636
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.composite.launch.utils 1 0 2018-12-06 13:29:13.549
+!MESSAGE Executing: java -Dant.home="C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030" -Dant.library.dir="C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib" -Ddebug.remote.build.listener=true -Dcom.tibco.remote.build.listener.port="61490"  -cp "C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib\ant-launcher.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib\ant.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.tpcl.com.sun.jmx.remote.optional.eclipse_1.0.200.004\jmxremote_optional.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.amf.tools.admincligen.support_1.2.0.004\support.jar" org.apache.tools.ant.launch.Launcher -f C:\Users\admin\Documents\GitHub\BPM\.BSServers\scripts\com.example.comtibcowfgenericsubprocesskantonbe.deployment-build.xml -listener com.tibco.amf.tools.admincligen.support.jmx.JmxBuildListenerNotifier
+
+!ENTRY com.tibco.amf.tools.composite.launch.utils 4 0 2018-12-06 13:29:23.004
+!MESSAGE The execution of the ant script 'com.example.comtibcowfgenericsubprocesskantonbe.deployment-build.xml' terminated in an error. Please refer to the console for more information.
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 13:29:27.136
+!MESSAGE Found 2EnvDetailsDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 13:29:27.143
+!MESSAGE Scanning nodes in env SystemEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 13:29:27.148
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 13:29:27.152
+!MESSAGE Scanning nodes in env BPMEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 13:29:27.157
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.composite.launch.utils 1 0 2018-12-06 14:03:45.241
+!MESSAGE Executing: java -Dant.home="C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030" -Dant.library.dir="C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib" -Ddebug.remote.build.listener=true -Dcom.tibco.remote.build.listener.port="61758"  -cp "C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib\ant-launcher.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib\ant.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.tpcl.com.sun.jmx.remote.optional.eclipse_1.0.200.004\jmxremote_optional.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.amf.tools.admincligen.support_1.2.0.004\support.jar" org.apache.tools.ant.launch.Launcher -f C:\Users\admin\Documents\GitHub\BPM\.BSServers\scripts\com.example.comtibcowfmainsubprocess.deployment-build.xml -listener com.tibco.amf.tools.admincligen.support.jmx.JmxBuildListenerNotifier
+
+!ENTRY com.tibco.amf.tools.composite.launch.utils 4 0 2018-12-06 14:04:02.484
+!MESSAGE The execution of the ant script 'com.example.comtibcowfmainsubprocess.deployment-build.xml' terminated in an error. Please refer to the console for more information.
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:04:08.060
+!MESSAGE Found 2EnvDetailsDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:04:08.069
+!MESSAGE Scanning nodes in env SystemEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:04:08.080
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:04:08.084
+!MESSAGE Scanning nodes in env BPMEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:04:08.090
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:09:22.916
+!MESSAGE Found 2EnvDetailsDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:09:22.922
+!MESSAGE Scanning nodes in env SystemEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:09:22.927
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:09:22.937
+!MESSAGE Scanning nodes in env BPMEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:09:22.945
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:11:37.331
+!MESSAGE Found 2EnvDetailsDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:11:37.337
+!MESSAGE Scanning nodes in env SystemEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:11:37.344
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:11:37.349
+!MESSAGE Scanning nodes in env BPMEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:11:37.355
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.composite.launch.utils 1 0 2018-12-06 14:11:56.501
+!MESSAGE Executing: java -Dant.home="C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030" -Dant.library.dir="C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib" -Ddebug.remote.build.listener=true -Dcom.tibco.remote.build.listener.port="61856"  -cp "C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib\ant-launcher.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib\ant.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.tpcl.com.sun.jmx.remote.optional.eclipse_1.0.200.004\jmxremote_optional.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.amf.tools.admincligen.support_1.2.0.004\support.jar" org.apache.tools.ant.launch.Launcher -f C:\Users\admin\Documents\GitHub\BPM\.BSServers\scripts\com.example.comtibcowfmainsubprocess.deployment-build.xml -listener com.tibco.amf.tools.admincligen.support.jmx.JmxBuildListenerNotifier
+
+!ENTRY com.tibco.amf.tools.composite.launch.utils 4 0 2018-12-06 14:12:15.735
+!MESSAGE The execution of the ant script 'com.example.comtibcowfmainsubprocess.deployment-build.xml' terminated in an error. Please refer to the console for more information.
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:12:19.871
+!MESSAGE Found 2EnvDetailsDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:12:19.878
+!MESSAGE Scanning nodes in env SystemEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:12:19.882
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:12:19.890
+!MESSAGE Scanning nodes in env BPMEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:12:19.895
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:17:29.953
+!MESSAGE Found 2EnvDetailsDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:17:29.960
+!MESSAGE Scanning nodes in env SystemEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:17:29.964
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:17:29.974
+!MESSAGE Scanning nodes in env BPMEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:17:29.982
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.composite.launch.utils 1 0 2018-12-06 14:18:08.863
+!MESSAGE Executing: java -Dant.home="C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030" -Dant.library.dir="C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib" -Ddebug.remote.build.listener=true -Dcom.tibco.remote.build.listener.port="61992"  -cp "C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib\ant-launcher.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib\ant.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.tpcl.com.sun.jmx.remote.optional.eclipse_1.0.200.004\jmxremote_optional.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.amf.tools.admincligen.support_1.2.0.004\support.jar" org.apache.tools.ant.launch.Launcher -f C:\Users\admin\Documents\GitHub\BPM\.BSServers\scripts\com.example.comtibcowfmainsubprocess.deployment-build.xml -listener com.tibco.amf.tools.admincligen.support.jmx.JmxBuildListenerNotifier
+
+!ENTRY com.tibco.amf.tools.admincligen 4 0 2018-12-06 14:18:27.538
+!MESSAGE Error refreshing task viewer
+!STACK 0
+java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at com.tibco.amf.tools.admincligen.internal.widget.TaskItem.setText(TaskItem.java:114)
+	at com.tibco.amf.tools.admincligen.internal.widget.TaskItem.refresh(TaskItem.java:233)
+	at com.tibco.amf.tools.admincligen.internal.widget.TaskViewer.internalRefresh(TaskViewer.java:298)
+	at org.eclipse.jface.viewers.StructuredViewer$7.run(StructuredViewer.java:1508)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1443)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1404)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1506)
+	at com.tibco.amf.tools.admincligen.internal.widget.TaskInfoContentProvider$1.run(TaskInfoContentProvider.java:143)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.tibco.amf.tools.composite.launch.utils 4 0 2018-12-06 14:18:28.174
+!MESSAGE The execution of the ant script 'com.example.comtibcowfmainsubprocess.deployment-build.xml' terminated in an error. Please refer to the console for more information.
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:18:32.575
+!MESSAGE Found 2EnvDetailsDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:18:32.585
+!MESSAGE Scanning nodes in env SystemEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:18:32.593
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:18:32.602
+!MESSAGE Scanning nodes in env BPMEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-06 14:18:32.608
+!MESSAGE Found 1NodeDesc
