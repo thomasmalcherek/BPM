@@ -18,8 +18,8 @@
         </task>
         <task name="_BX_SPInput_CallSubProcess">
             <startingVariables>
-                <variable>wfCaseID</variable>
                 <variable>MetaData</variable>
+                <variable>wfCaseID</variable>
             </startingVariables>
         </task>
         <task name="UserTask">
@@ -29,8 +29,8 @@
         </task>
         <task name="ScriptTask">
             <startingVariables>
-                <variable>MetaData</variable>
                 <variable>SubProxy</variable>
+                <variable>MetaData</variable>
             </startingVariables>
         </task>
     </tibex:VariableDescriptor>
@@ -48,7 +48,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_U7yuQPlZEeiLOcx5GuQ9ow">
+    <bpws:flow name="_BX_flow_iEGSMPliEeiutNJKp2ISEg">
         <bpws:links>
             <bpws:link name="UserTask to CallSubProcess" tibex:xpdlId="_ERGlgPlMEeiLOcx5GuQ9ow"/>
             <bpws:link name="StartEvent to ScriptTask2" tibex:xpdlId="_o170YPlMEeiLOcx5GuQ9ow"/>
@@ -116,7 +116,13 @@
                 <bpws:sources>
                     <bpws:source linkName="ScriptTask to UserTask"/>
                 </bpws:sources>
-                <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[SubProxy.concat("com.tibco.wf.generic.subprocess.kanton.",MetaData.kanton.toLowerCase(),"Process Packages/com.tibco.wf.generic.subprocess.kanton.",MetaData.kanton.toLowerCase(),".xpdl.Interface");]]></tibex:script>
+                <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[if (MetaData.kanton.toLowerCase()=="be") {
+SubProxy="com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl.Interface";
+} else {
+SubProxy="com.tibco.wf.generic.subprocess.kanton.zh/Process Packages/com.tibco.wf.generic.subprocess.kanton.zh.xpdl.Interface";
+}
+
+]]></tibex:script>
             </tibex:extActivity>
         </bpws:extensionActivity>
         <bpws:extensionActivity>
