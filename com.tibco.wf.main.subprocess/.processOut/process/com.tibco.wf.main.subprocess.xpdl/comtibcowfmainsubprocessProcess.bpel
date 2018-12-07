@@ -22,14 +22,14 @@
                 <variable>wfCaseID</variable>
             </startingVariables>
         </task>
-        <task name="UserTask">
-            <startingVariables>
-                <variable>SubProxy</variable>
-            </startingVariables>
-        </task>
         <task name="ScriptTask">
             <startingVariables>
                 <variable>SubProxy</variable>
+                <variable>MetaData</variable>
+            </startingVariables>
+        </task>
+        <task name="PruefenDatenMain">
+            <startingVariables>
                 <variable>MetaData</variable>
             </startingVariables>
         </task>
@@ -48,14 +48,14 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_iEGSMPliEeiutNJKp2ISEg">
+    <bpws:flow name="_BX_flow_UZcEgPocEeifMOUwjffvtg">
         <bpws:links>
-            <bpws:link name="UserTask to CallSubProcess" tibex:xpdlId="_ERGlgPlMEeiLOcx5GuQ9ow"/>
             <bpws:link name="StartEvent to ScriptTask2" tibex:xpdlId="_o170YPlMEeiLOcx5GuQ9ow"/>
-            <bpws:link name="CallSubProcess to EndEvent" tibex:xpdlId="_EcxC8PlMEeiLOcx5GuQ9ow"/>
+            <bpws:link name="CallSubProcess to PruefenDatenMain" tibex:xpdlId="___GZM_oZEeifMOUwjffvtg"/>
+            <bpws:link name="PruefenDatenMain to EndEvent" tibex:xpdlId="_EcxC8PlMEeiLOcx5GuQ9ow"/>
             <bpws:link name="ScriptTask2 to PruefenderDaten" tibex:xpdlId="_zN_p0PlLEeiLOcx5GuQ9ow"/>
             <bpws:link name="PruefenderDaten to ScriptTask" tibex:xpdlId="_ymSwoPlLEeiLOcx5GuQ9ow"/>
-            <bpws:link name="ScriptTask to UserTask" tibex:xpdlId="_8T2bEPlLEeiLOcx5GuQ9ow"/>
+            <bpws:link name="ScriptTask to CallSubProcess" tibex:xpdlId="_8T2bEPlLEeiLOcx5GuQ9ow"/>
         </bpws:links>
         <bpws:extensionActivity>
             <tibex:receiveEvent createInstance="yes" eventTimeout="0"
@@ -75,7 +75,7 @@
         <bpws:empty name="EndEvent" tibex:migrationAllowed="yes"
             tibex:type="endEvent" tibex:xpdlId="_D0L1ePlLEeiLOcx5GuQ9ow">
             <bpws:targets>
-                <bpws:target linkName="CallSubProcess to EndEvent"/>
+                <bpws:target linkName="PruefenDatenMain to EndEvent"/>
             </bpws:targets>
         </bpws:empty>
         <bpws:extensionActivity>
@@ -96,7 +96,7 @@
                     xmlns:model="http://model.ut.n2.tibco.com" xmlns:xmi="http://www.omg.org/XMI">
                     <userTaskParticipants>
                         <userTaskParticipant entity="POSITION"
-                            modelVersion="1" uniqueId="_-kLLwOjgEeietP_QQ0irBw"/>
+                            modelVersion="1" uniqueId="_rzsuUPoCEeigr-Iv1cHE1A"/>
                     </userTaskParticipants>
                     <userTaskParameters>
                         <userTaskParameter mandatory="false"
@@ -114,51 +114,24 @@
                     <bpws:target linkName="PruefenderDaten to ScriptTask"/>
                 </bpws:targets>
                 <bpws:sources>
-                    <bpws:source linkName="ScriptTask to UserTask"/>
+                    <bpws:source linkName="ScriptTask to CallSubProcess"/>
                 </bpws:sources>
                 <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[if (MetaData.kanton.toLowerCase()=="be") {
-SubProxy="com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl.Interface";
+SubProxy="/com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl.generic_BE";
 } else {
-SubProxy="com.tibco.wf.generic.subprocess.kanton.zh/Process Packages/com.tibco.wf.generic.subprocess.kanton.zh.xpdl.Interface";
-}
+SubProxy="/com.tibco.wf.generic.subprocess.kanton.zh/Process Packages/com.tibco.wf.generic.subprocess.kanton.zh.xpdl.generic_ZH";
+} 
 
 ]]></tibex:script>
-            </tibex:extActivity>
-        </bpws:extensionActivity>
-        <bpws:extensionActivity>
-            <tibex:extActivity name="UserTask"
-                tibex:migrationAllowed="yes" tibex:type="userTask"
-                tibex:xpdlId="_0CheEPlLEeiLOcx5GuQ9ow" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                <bpws:targets>
-                    <bpws:target linkName="ScriptTask to UserTask"/>
-                </bpws:targets>
-                <bpws:sources>
-                    <bpws:source linkName="UserTask to CallSubProcess"/>
-                </bpws:sources>
-                <model:UserTaskDataModelType
-                    distributionStrategy="OFFER" userTaskPriority="50"
-                    workModelID="WM__0CheEPlLEeiLOcx5GuQ9ow"
-                    workModelVersionRange="[1.0.0.qualifier,1.0.0.qualifier]"
-                    xmi:version="2.0"
-                    xmlns:model="http://model.ut.n2.tibco.com" xmlns:xmi="http://www.omg.org/XMI">
-                    <userTaskParticipants>
-                        <userTaskParticipant entity="POSITION"
-                            modelVersion="1" uniqueId="_-kLLwOjgEeietP_QQ0irBw"/>
-                    </userTaskParticipants>
-                    <userTaskParameters>
-                        <userTaskParameter mandatory="false" mode="IN" name="SubProxy"/>
-                    </userTaskParameters>
-                    <userTaskGroupMemberships/>
-                </model:UserTaskDataModelType>
             </tibex:extActivity>
         </bpws:extensionActivity>
         <bpws:scope name="CallSubProcess" tibex:migrationAllowed="yes"
             tibex:type="reusableSubProcess" tibex:xpdlId="_D9BL4PlMEeiLOcx5GuQ9ow">
             <bpws:targets>
-                <bpws:target linkName="UserTask to CallSubProcess"/>
+                <bpws:target linkName="ScriptTask to CallSubProcess"/>
             </bpws:targets>
             <bpws:sources>
-                <bpws:source linkName="CallSubProcess to EndEvent"/>
+                <bpws:source linkName="CallSubProcess to PruefenDatenMain"/>
             </bpws:sources>
             <bpws:variables>
                 <bpws:variable name="_BX_MetaDataMainProcess" tibex:class="com.example.com.tibco.wf.main.subprocess.MetaData"/>
@@ -187,7 +160,22 @@ _BX_wfCaseID = wfCaseID;
                                     field="_BX_MetaDataMainProcess" formalParameter="MetaDataMainProcess"/>
                                 <tibex:mapping field="_BX_wfCaseID" formalParameter="wfCaseID"/>
                             </tibex:subProcessInput>
+                            <tibex:subProcessOutput>
+                                <tibex:mapping
+                                    field="_BX_MetaDataMainProcess" formalParameter="MetaDataMainProcess"/>
+                                <tibex:mapping field="_BX_wfCaseID" formalParameter="wfCaseID"/>
+                            </tibex:subProcessOutput>
                         </tibex:callProcess>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPOutput_CallSubProcess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'MetaDataMainProcess' to 'MetaData'
+MetaData = ScriptUtil.copy(_BX_MetaDataMainProcess);
+
+
+]]></tibex:script>
                     </tibex:extActivity>
                 </bpws:extensionActivity>
             </bpws:sequence>
@@ -203,6 +191,34 @@ _BX_wfCaseID = wfCaseID;
                     <bpws:source linkName="ScriptTask2 to PruefenderDaten"/>
                 </bpws:sources>
                 <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[wfCaseID=Math.random().toString().slice(2);]]></tibex:script>
+            </tibex:extActivity>
+        </bpws:extensionActivity>
+        <bpws:extensionActivity>
+            <tibex:extActivity name="PruefenDatenMain"
+                tibex:migrationAllowed="yes" tibex:type="userTask"
+                tibex:xpdlId="___GZMPoZEeifMOUwjffvtg" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                <bpws:targets>
+                    <bpws:target linkName="CallSubProcess to PruefenDatenMain"/>
+                </bpws:targets>
+                <bpws:sources>
+                    <bpws:source linkName="PruefenDatenMain to EndEvent"/>
+                </bpws:sources>
+                <model:UserTaskDataModelType
+                    distributionStrategy="OFFER" userTaskPriority="50"
+                    workModelID="WM____GZMPoZEeifMOUwjffvtg"
+                    workModelVersionRange="[1.0.0.qualifier,1.0.0.qualifier]"
+                    xmi:version="2.0"
+                    xmlns:model="http://model.ut.n2.tibco.com" xmlns:xmi="http://www.omg.org/XMI">
+                    <userTaskParticipants>
+                        <userTaskParticipant entity="POSITION"
+                            modelVersion="1" uniqueId="_rzsuUPoCEeigr-Iv1cHE1A"/>
+                    </userTaskParticipants>
+                    <userTaskParameters>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="MetaData"/>
+                    </userTaskParameters>
+                    <userTaskGroupMemberships/>
+                </model:UserTaskDataModelType>
             </tibex:extActivity>
         </bpws:extensionActivity>
     </bpws:flow>

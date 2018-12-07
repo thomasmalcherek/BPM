@@ -9,8 +9,8 @@
 	
 	<!-- Default task for this build file -->
 	<target name="all" 
-		depends="upload.daa, create.app, distribute.app, deploy.app"
-		description="Default target group, execute following targets: upload.daa, create.app, distribute.app, deploy.app"/>
+		depends="upload.daa, upgrade.app, distribute.app, deploy.app"
+		description="Default target group, execute following targets: upload.daa, upgrade.app, distribute.app, deploy.app"/>
 	
 
 	<!-- Upload DAA specified in the data file -->
@@ -25,12 +25,12 @@
 			force="false" failOnError="false" /> 
 	</target>  		
 
-	<!-- create the application -->
-	<target name="create.app" description="Creating Application">
+	<!-- upgrade existing application -->
+	<target name="upgrade.app" description="Upgrade Existing Application">
 		<AMXAdminTask remote="true" propsFile="${remote-properties.file}" 
-			action="add" dataFile="${basedir}/com.example.comtibcowfgenericsubprocesskantonzh.deployment-config.xml" 
+			action="upgrade" dataFile="${basedir}/com.example.comtibcowfgenericsubprocesskantonzh.deployment-config.xml" 
 			objectSelector="Environment//Application" 
-			overwrite="true" merge="true" 
+			overwrite="false" merge="true" 
 			createIfNotExists="true" force="false" failOnError="true" />
 	</target>
 

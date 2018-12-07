@@ -25,9 +25,9 @@
     </xpdl2:ExternalPackage>
   </xpdl2:ExternalPackages>
   <xpdl2:Participants>
-    <xpdl2:Participant Id="_uWNHJemKEeik3OxAaxEZFg" xpdExt:DisplayName="Kader" Name="Kader">
+    <xpdl2:Participant Id="_uWNHJemKEeik3OxAaxEZFg" xpdExt:DisplayName="BE_Bearbeiter" Name="BE_Bearbeiter">
       <xpdl2:ParticipantType Type="RESOURCE"/>
-      <xpdl2:ExternalReference location="com.tibco.wf.main.subprocess.om" namespace="http://www.tibco.com/om/1.0" xref="_KXAgoOjhEeietP_QQ0irBw"/>
+      <xpdl2:ExternalReference location="com.tibco.wf.main.subprocess.om" namespace="http://www.tibco.com/om/1.0" xref="_2ANloPoCEeigr-Iv1cHE1A"/>
     </xpdl2:Participant>
   </xpdl2:Participants>
   <xpdl2:Pools>
@@ -42,10 +42,10 @@
     </xpdl2:Pool>
   </xpdl2:Pools>
   <xpdl2:WorkflowProcesses>
-    <xpdl2:WorkflowProcess Id="_6eOO0PlOEeiLOcx5GuQ9ow" xpdExt:DisplayName="KANTON_BE" Name="KANTON_BE">
+    <xpdl2:WorkflowProcess Id="_6eOO0PlOEeiLOcx5GuQ9ow" xpdExt:DisplayName="generic_BE" Name="generic_BE">
       <xpdl2:ProcessHeader/>
       <xpdl2:Activities>
-        <xpdl2:Activity Id="_PU0qQPlPEeiLOcx5GuQ9ow" Name="KaderTask" xpdExt:Visibility="Private" xpdExt:DisplayName="KaderTask">
+        <xpdl2:Activity Id="_PU0qQPlPEeiLOcx5GuQ9ow" Name="pruefenTask_BE" xpdExt:Visibility="Private" xpdExt:DisplayName="pruefenTask_BE">
           <xpdl2:Implementation>
             <xpdl2:Task>
               <xpdl2:TaskUser Implementation="Unspecified">
@@ -71,8 +71,8 @@
             <xpdExt:WorkItemPriority InitialPriority="50"/>
           </xpdExt:ActivityResourcePatterns>
           <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
-            <xpdExt:AssociatedParameter FormalParam="MetaDataMainProcess" Mode="IN" Mandatory="false"/>
-            <xpdExt:AssociatedParameter FormalParam="wfCaseID" Mode="IN" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="MetaDataMainProcess" Mode="INOUT" Mandatory="false"/>
+            <xpdExt:AssociatedParameter FormalParam="wfCaseID" Mode="INOUT" Mandatory="false"/>
           </xpdExt:AssociatedParameters>
         </xpdl2:Activity>
         <xpdl2:Activity Id="_SmTpIPlPEeiLOcx5GuQ9ow" Name="StartEvent" xpdExt:DisplayName="Start Event" xpdExt:Implements="_3hDadflLEeiLOcx5GuQ9ow" xpdExt:Visibility="Public">
@@ -89,7 +89,7 @@
           <xpdl2:Implementation>
             <xpdl2:Task>
               <xpdl2:TaskScript>
-                <xpdl2:Script ScriptGrammar="JavaScript">wfCaseID.concat(wfCaseID,&quot;_BE&quot;);</xpdl2:Script>
+                <xpdl2:Script ScriptGrammar="JavaScript">wfCaseID=wfCaseID.concat(wfCaseID,&quot;_BE&quot;);</xpdl2:Script>
               </xpdl2:TaskScript>
             </xpdl2:Task>
           </xpdl2:Implementation>
@@ -103,7 +103,7 @@
             <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
           </xpdExt:ActivityResourcePatterns>
         </xpdl2:Activity>
-        <xpdl2:Activity Id="_WJSLMPlQEeiLOcx5GuQ9ow" Name="EndEvent" xpdExt:Visibility="Private" xpdExt:DisplayName="End Event">
+        <xpdl2:Activity Id="_WJSLMPlQEeiLOcx5GuQ9ow" Name="EndEvent" xpdExt:DisplayName="End Event" xpdExt:Visibility="Public">
           <xpdl2:Event>
             <xpdl2:EndEvent Result="None"/>
           </xpdl2:Event>
@@ -112,6 +112,11 @@
               <xpdl2:Coordinates XCoordinate="433.0" YCoordinate="60.0"/>
             </xpdl2:NodeGraphicsInfo>
           </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
+            <xpdExt:AssociatedParameter FormalParam="MetaDataMainProcess" Mode="INOUT" Mandatory="true"/>
+            <xpdExt:AssociatedParameter FormalParam="wfCaseID" Mode="INOUT" Mandatory="true"/>
+          </xpdExt:AssociatedParameters>
         </xpdl2:Activity>
       </xpdl2:Activities>
       <xpdl2:Transitions>

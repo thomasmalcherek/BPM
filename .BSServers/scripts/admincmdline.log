@@ -3358,3 +3358,681 @@ java.lang.Thread.run(Unknown Source)
 06 Dez 2018 14:18:27,505 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodelgeneric' failed
 06 Dez 2018 14:18:27,505 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodelgeneric' failed
 06 Dez 2018 14:18:27,507 ERROR (Processor.java:720)     - Action failed at 06.12.18 14:18 in 6,02 seconds
+07 Dez 2018 10:37:46,438 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 10:37:47,286 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 10:37:48,276 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 10:37:48,282 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+07 Dez 2018 10:37:50,149 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181207103630260') to the Administrator Staging Area
+07 Dez 2018 10:37:50,150 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181207103630260') to the Administrator Staging Area
+07 Dez 2018 10:37:50,153 INFO  (Processor.java:675)     - Action finished at 07.12.18 10:37 in 1,878 seconds
+07 Dez 2018 10:37:50,166 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 10:37:50,904 INFO  (AddAction.java:31)     - Adding application...
+07 Dez 2018 10:37:54,982 INFO  (LoggingUtil.java:119)     - Successfully added Application 'com.tibco.wf.main.subprocess': Successfully created application 'com.tibco.wf.main.subprocess' from Application Template 'com.example.comtibcowfmainsubprocess' (version: 1.0.0.20181207103630260)
+07 Dez 2018 10:37:54,983 INFO  (LoggingUtil.java:182)     - 07.12.18 10:37 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'OrganizationModel' (version: 1.0.0.20181207103630260) added.
+
+07 Dez 2018 10:37:54,983 INFO  (LoggingUtil.java:182)     - 07.12.18 10:37 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comtibcowfmainsubprocessProcessFlow' (version: 1.0.0.20181207103630260) added.
+
+07 Dez 2018 10:37:54,984 INFO  (LoggingUtil.java:182)     - 07.12.18 10:37 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'BRM' (version: 1.0.0.20181207103630260) added.
+
+07 Dez 2018 10:37:54,984 INFO  (LoggingUtil.java:182)     - 07.12.18 10:37 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comtibcowfmainsubprocessPageFlow' (version: 1.0.0.20181207103630260) added.
+
+07 Dez 2018 10:37:54,984 INFO  (LoggingUtil.java:182)     - 07.12.18 10:37 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'WorkPresentation' (version: 1.0.0.20181207103630260) added.
+
+07 Dez 2018 10:37:54,984 INFO  (Processor.java:675)     - Action finished at 07.12.18 10:37 in 4,08 seconds
+07 Dez 2018 10:37:54,990 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 10:37:54,994 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 10:37:55,126 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 10:37:58,610 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.main.subprocess' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.main.subprocess' at 12/7/18 10:37 AM on node(s): 'BPMNode'.
+07 Dez 2018 10:37:58,610 INFO  (LoggingUtil.java:182)     - 07.12.18 10:37 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfmainsubprocess.model.bds.1.0.0.20181207103630260' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 10:37:58,612 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 10:37 in 3,486 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 10:38:00,310 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 10:38:02,826 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 10:38:02,828 INFO  (Processor.java:743)     - Action finished at 07.12.18 10:38 in 7,702 seconds
+07 Dez 2018 10:38:40,223 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 10:38:41,045 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 10:38:41,725 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 10:38:41,729 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.zh\.bpm\com.example.comtibcowfgenericsubprocesskantonzh.daa
+07 Dez 2018 10:38:45,451 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfgenericsubprocesskantonzh' (version: '1.0.0.20181207103812934') to the Administrator Staging Area
+07 Dez 2018 10:38:45,453 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds' (version: '1.0.0.20181207103812934') to the Administrator Staging Area
+07 Dez 2018 10:38:45,461 INFO  (Processor.java:675)     - Action finished at 07.12.18 10:38 in 3,732 seconds
+07 Dez 2018 10:38:45,534 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 10:38:46,472 INFO  (AddAction.java:31)     - Adding application...
+07 Dez 2018 10:38:49,525 INFO  (LoggingUtil.java:119)     - Successfully added Application 'com.tibco.wf.generic.subprocess.kanton.zh': Successfully created application 'com.tibco.wf.generic.subprocess.kanton.zh' from Application Template 'com.example.comtibcowfgenericsubprocesskantonzh' (version: 1.0.0.20181207103812934)
+07 Dez 2018 10:38:49,525 INFO  (LoggingUtil.java:182)     - 07.12.18 10:38 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comtibcowfgenericsubprocesskantonzhProcessFlow' (version: 1.0.0.20181207103812934) added.
+
+07 Dez 2018 10:38:49,525 INFO  (LoggingUtil.java:182)     - 07.12.18 10:38 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'BRM' (version: 1.0.0.20181207103812934) added.
+
+07 Dez 2018 10:38:49,526 INFO  (LoggingUtil.java:182)     - 07.12.18 10:38 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'WorkPresentation' (version: 1.0.0.20181207103812934) added.
+
+07 Dez 2018 10:38:49,526 INFO  (Processor.java:675)     - Action finished at 07.12.18 10:38 in 3,054 seconds
+07 Dez 2018 10:38:49,532 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 10:38:49,535 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 10:38:49,660 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 10:38:52,843 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.generic.subprocess.kanton.zh' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.generic.subprocess.kanton.zh' at 12/7/18 10:38 AM on node(s): 'BPMNode'.
+07 Dez 2018 10:38:52,843 INFO  (LoggingUtil.java:182)     - 07.12.18 10:38 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds.1.0.0.20181207103812934' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 10:38:52,844 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 10:38 in 3,184 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 10:38:54,506 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 10:38:55,734 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 10:38:55,735 INFO  (Processor.java:743)     - Action finished at 07.12.18 10:38 in 6,075 seconds
+07 Dez 2018 10:39:30,298 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 10:39:31,094 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 10:39:31,782 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 10:39:31,786 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.be\.bpm\com.example.comtibcowfgenericsubprocesskantonbe.daa
+07 Dez 2018 10:39:33,334 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfgenericsubprocesskantonbe' (version: '1.0.0.20181207103906095') to the Administrator Staging Area
+07 Dez 2018 10:39:33,335 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds' (version: '1.0.0.20181207103906095') to the Administrator Staging Area
+07 Dez 2018 10:39:33,337 INFO  (Processor.java:675)     - Action finished at 07.12.18 10:39 in 1,555 seconds
+07 Dez 2018 10:39:33,365 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 10:39:34,169 INFO  (AddAction.java:31)     - Adding application...
+07 Dez 2018 10:39:36,944 INFO  (LoggingUtil.java:119)     - Successfully added Application 'com.tibco.wf.generic.subprocess.kanton.be': Successfully created application 'com.tibco.wf.generic.subprocess.kanton.be' from Application Template 'com.example.comtibcowfgenericsubprocesskantonbe' (version: 1.0.0.20181207103906095)
+07 Dez 2018 10:39:36,947 INFO  (LoggingUtil.java:182)     - 07.12.18 10:39 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comtibcowfgenericsubprocesskantonbeProcessFlow' (version: 1.0.0.20181207103906095) added.
+
+07 Dez 2018 10:39:36,948 INFO  (LoggingUtil.java:182)     - 07.12.18 10:39 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'BRM' (version: 1.0.0.20181207103906095) added.
+
+07 Dez 2018 10:39:36,948 INFO  (LoggingUtil.java:182)     - 07.12.18 10:39 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'WorkPresentation' (version: 1.0.0.20181207103906095) added.
+
+07 Dez 2018 10:39:36,949 INFO  (Processor.java:675)     - Action finished at 07.12.18 10:39 in 2,78 seconds
+07 Dez 2018 10:39:36,954 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 10:39:36,967 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 10:39:37,096 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 10:39:40,437 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.generic.subprocess.kanton.be' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.generic.subprocess.kanton.be' at 12/7/18 10:39 AM on node(s): 'BPMNode'.
+07 Dez 2018 10:39:40,437 INFO  (LoggingUtil.java:182)     - 07.12.18 10:39 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds.1.0.0.20181207103906095' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 10:39:40,438 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 10:39 in 3,341 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 10:39:42,061 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 10:39:43,282 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 10:39:43,284 INFO  (Processor.java:743)     - Action finished at 07.12.18 10:39 in 6,188 seconds
+07 Dez 2018 10:53:31,638 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 10:53:32,423 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 10:53:33,305 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 10:53:33,310 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+07 Dez 2018 10:53:34,934 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181207105313168') to the Administrator Staging Area
+07 Dez 2018 10:53:34,934 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181207105313168') to the Administrator Staging Area
+07 Dez 2018 10:53:34,941 INFO  (Processor.java:675)     - Action finished at 07.12.18 10:53 in 1,636 seconds
+07 Dez 2018 10:53:34,952 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 10:53:35,708 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 10:53:35,709 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 10:53:35,709 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+07 Dez 2018 10:53:36,427 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181207105313168') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 10:53:36,427 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181207105313168') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 10:53:44,073 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.main.subprocess': Successfully upgraded application 'com.tibco.wf.main.subprocess' to application template version 1.0.0.20181207105313168
+07 Dez 2018 10:53:44,075 INFO  (LoggingUtil.java:182)     - 07.12.18 10:53 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181207103630260' to version: '1.0.0.20181207105313168'.
+
+07 Dez 2018 10:53:44,075 INFO  (LoggingUtil.java:182)     - 07.12.18 10:53 - 	  detail = Component 'comtibcowfmainsubprocessProcessFlow' upgraded from version '1.0.0.20181207103630260' to version: '1.0.0.20181207105313168'.
+
+07 Dez 2018 10:53:44,075 INFO  (LoggingUtil.java:182)     - 07.12.18 10:53 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207103630260' to version: '1.0.0.20181207105313168'.
+
+07 Dez 2018 10:53:44,075 INFO  (LoggingUtil.java:182)     - 07.12.18 10:53 - 	  detail = Component 'comtibcowfmainsubprocessPageFlow' upgraded from version '1.0.0.20181207103630260' to version: '1.0.0.20181207105313168'.
+
+07 Dez 2018 10:53:44,075 INFO  (LoggingUtil.java:182)     - 07.12.18 10:53 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207103630260' to version: '1.0.0.20181207105313168'.
+
+07 Dez 2018 10:53:44,076 INFO  (Processor.java:675)     - Action finished at 07.12.18 10:53 in 8,368 seconds
+07 Dez 2018 10:53:44,091 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 10:53:44,097 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 10:53:44,148 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 10:53:47,753 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.main.subprocess' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.main.subprocess' at 12/7/18 10:53 AM on node(s): 'BPMNode'.
+07 Dez 2018 10:53:47,753 INFO  (LoggingUtil.java:182)     - 07.12.18 10:53 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfmainsubprocess.model.bds.1.0.0.20181207105313168' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 10:53:47,754 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 10:53 in 3,605 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 10:53:49,600 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 10:53:54,757 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 10:53:56,002 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 10:53:56,003 INFO  (Processor.java:743)     - Action finished at 07.12.18 10:53 in 11,854 seconds
+07 Dez 2018 11:54:06,922 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 11:54:07,908 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 11:54:08,951 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 11:54:08,957 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+07 Dez 2018 11:54:10,768 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181207115325518') to the Administrator Staging Area
+07 Dez 2018 11:54:10,768 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181207115325518') to the Administrator Staging Area
+07 Dez 2018 11:54:10,771 INFO  (Processor.java:675)     - Action finished at 07.12.18 11:54 in 1,822 seconds
+07 Dez 2018 11:54:10,785 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 11:54:11,384 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 11:54:11,385 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 11:54:11,385 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+07 Dez 2018 11:54:11,874 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181207115325518') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 11:54:11,875 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181207115325518') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 11:54:20,415 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.main.subprocess': Successfully upgraded application 'com.tibco.wf.main.subprocess' to application template version 1.0.0.20181207115325518
+07 Dez 2018 11:54:20,415 INFO  (LoggingUtil.java:182)     - 07.12.18 11:54 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181207105313168' to version: '1.0.0.20181207115325518'.
+
+07 Dez 2018 11:54:20,416 INFO  (LoggingUtil.java:182)     - 07.12.18 11:54 - 	  detail = Component 'comtibcowfmainsubprocessProcessFlow' upgraded from version '1.0.0.20181207105313168' to version: '1.0.0.20181207115325518'.
+
+07 Dez 2018 11:54:20,416 INFO  (LoggingUtil.java:182)     - 07.12.18 11:54 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207105313168' to version: '1.0.0.20181207115325518'.
+
+07 Dez 2018 11:54:20,416 INFO  (LoggingUtil.java:182)     - 07.12.18 11:54 - 	  detail = Component 'comtibcowfmainsubprocessPageFlow' upgraded from version '1.0.0.20181207105313168' to version: '1.0.0.20181207115325518'.
+
+07 Dez 2018 11:54:20,417 INFO  (LoggingUtil.java:182)     - 07.12.18 11:54 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207105313168' to version: '1.0.0.20181207115325518'.
+
+07 Dez 2018 11:54:20,418 INFO  (Processor.java:675)     - Action finished at 07.12.18 11:54 in 9,033 seconds
+07 Dez 2018 11:54:20,425 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 11:54:20,428 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 11:54:20,449 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 11:54:24,097 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.main.subprocess' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.main.subprocess' at 12/7/18 11:54 AM on node(s): 'BPMNode'.
+07 Dez 2018 11:54:24,098 INFO  (LoggingUtil.java:182)     - 07.12.18 11:54 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfmainsubprocess.model.bds.1.0.0.20181207115325518' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 11:54:24,098 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 11:54 in 3,649 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 11:54:26,464 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 11:54:31,579 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 11:54:34,092 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 11:54:34,093 INFO  (Processor.java:743)     - Action finished at 07.12.18 11:54 in 13,644 seconds
+07 Dez 2018 12:53:24,161 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 12:53:24,957 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 12:53:25,745 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 12:53:25,749 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+07 Dez 2018 12:53:28,585 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181207125304804') to the Administrator Staging Area
+07 Dez 2018 12:53:28,585 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181207125304804') to the Administrator Staging Area
+07 Dez 2018 12:53:28,589 INFO  (Processor.java:675)     - Action finished at 07.12.18 12:53 in 2,844 seconds
+07 Dez 2018 12:53:28,605 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 12:53:29,294 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 12:53:29,296 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 12:53:29,296 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+07 Dez 2018 12:53:29,812 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181207125304804') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 12:53:29,813 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181207125304804') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 12:53:37,114 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.main.subprocess': Successfully upgraded application 'com.tibco.wf.main.subprocess' to application template version 1.0.0.20181207125304804
+07 Dez 2018 12:53:37,115 INFO  (LoggingUtil.java:182)     - 07.12.18 12:53 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181207115325518' to version: '1.0.0.20181207125304804'.
+
+07 Dez 2018 12:53:37,115 INFO  (LoggingUtil.java:182)     - 07.12.18 12:53 - 	  detail = Component 'comtibcowfmainsubprocessProcessFlow' upgraded from version '1.0.0.20181207115325518' to version: '1.0.0.20181207125304804'.
+
+07 Dez 2018 12:53:37,115 INFO  (LoggingUtil.java:182)     - 07.12.18 12:53 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207115325518' to version: '1.0.0.20181207125304804'.
+
+07 Dez 2018 12:53:37,115 INFO  (LoggingUtil.java:182)     - 07.12.18 12:53 - 	  detail = Component 'comtibcowfmainsubprocessPageFlow' upgraded from version '1.0.0.20181207115325518' to version: '1.0.0.20181207125304804'.
+
+07 Dez 2018 12:53:37,116 INFO  (LoggingUtil.java:182)     - 07.12.18 12:53 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207115325518' to version: '1.0.0.20181207125304804'.
+
+07 Dez 2018 12:53:37,116 INFO  (Processor.java:675)     - Action finished at 07.12.18 12:53 in 7,822 seconds
+07 Dez 2018 12:53:37,123 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 12:53:37,131 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 12:53:37,171 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 12:53:41,030 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.main.subprocess' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.main.subprocess' at 12/7/18 12:53 PM on node(s): 'BPMNode'.
+07 Dez 2018 12:53:41,032 INFO  (LoggingUtil.java:182)     - 07.12.18 12:53 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfmainsubprocess.model.bds.1.0.0.20181207125304804' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 12:53:41,032 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 12:53 in 3,862 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 12:53:42,908 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 12:53:45,534 INFO  (DeployActionTaskProgressIndicator.java:73)     - The following tasks related to removal of earlier versions of the application are pending :
+07 Dez 2018 12:53:45,534 INFO  (DeployActionTaskProgressIndicator.java:78)     - Uninstall application 'com.tibco.wf.main.subprocess' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy component 'OrganizationModel', Undeploy component 'comtibcowfmainsubprocessProcessFlow', Undeploy component 'WorkPresentation', Undeploy component 'BRM', Undeploy component 'comtibcowfmainsubprocessPageFlow')
+07 Dez 2018 12:53:45,534 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'comtibcowfmainsubprocessProcessFlow' pending on node 'BPMNode' (waiting for runtime to complete this action)
+07 Dez 2018 12:53:45,534 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'BRM' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'comtibcowfmainsubprocessProcessFlow')
+07 Dez 2018 12:53:45,534 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'OrganizationModel' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'BRM')
+07 Dez 2018 12:53:45,534 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'WorkPresentation' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'BRM')
+07 Dez 2018 12:53:45,535 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'comtibcowfmainsubprocessPageFlow' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'WorkPresentation')
+07 Dez 2018 12:53:45,535 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'comtibcowfmainsubprocessPageFlow' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'comtibcowfmainsubprocessPageFlow')
+07 Dez 2018 12:53:45,535 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'BRM' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'BRM')
+07 Dez 2018 12:53:45,536 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'OrganizationModel' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'OrganizationModel')
+07 Dez 2018 12:53:45,540 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'WorkPresentation' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'WorkPresentation')
+07 Dez 2018 12:53:45,541 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'comtibcowfmainsubprocessProcessFlow' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'comtibcowfmainsubprocessProcessFlow')
+07 Dez 2018 12:53:45,541 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy application 'com.tibco.wf.main.subprocess' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'OrganizationModel', Unconfigure admin component 'OrganizationModel', Prepare for undeploy component 'comtibcowfmainsubprocessProcessFlow', Unconfigure admin component 'comtibcowfmainsubprocessProcessFlow', Prepare for undeploy component 'WorkPresentation', Unconfigure admin component 'WorkPresentation', Prepare for undeploy component 'BRM', Unconfigure admin component 'BRM', Prepare for undeploy component 'comtibcowfmainsubprocessPageFlow', Unconfigure admin component 'comtibcowfmainsubprocessPageFlow')
+07 Dez 2018 12:53:45,541 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'OrganizationModel' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 12:53:45,542 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'comtibcowfmainsubprocessProcessFlow' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 12:53:45,542 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'WorkPresentation' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 12:53:45,542 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'BRM' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 12:53:45,543 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'comtibcowfmainsubprocessPageFlow' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 12:53:45,543 INFO  (DeployActionTaskProgressIndicator.java:78)     - Cleanup Features node 'BPMNode' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy component 'comtibcowfmainsubprocessPageFlow', Undeploy component 'BRM', Undeploy component 'WorkPresentation', Undeploy component 'comtibcowfmainsubprocessProcessFlow')
+07 Dez 2018 12:53:45,544 INFO  (Processor.java:736)     - Action finished in runtime at 07.12.18 12:53 in 8,374 seconds
+07 Dez 2018 13:06:41,330 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 13:06:42,152 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:06:42,803 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:06:42,807 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.be\.bpm\com.example.comtibcowfgenericsubprocesskantonbe.daa
+07 Dez 2018 13:06:44,716 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfgenericsubprocesskantonbe' (version: '1.0.0.20181207130616156') to the Administrator Staging Area
+07 Dez 2018 13:06:44,717 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds' (version: '1.0.0.20181207130616156') to the Administrator Staging Area
+07 Dez 2018 13:06:44,721 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:06 in 1,918 seconds
+07 Dez 2018 13:06:44,816 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:06:45,430 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 13:06:45,431 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:06:45,431 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.be\.bpm\com.example.comtibcowfgenericsubprocesskantonbe.daa
+07 Dez 2018 13:06:45,908 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfgenericsubprocesskantonbe' (version: '1.0.0.20181207130616156') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:06:45,909 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds' (version: '1.0.0.20181207130616156') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:06:51,519 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.generic.subprocess.kanton.be': Successfully upgraded application 'com.tibco.wf.generic.subprocess.kanton.be' to application template version 1.0.0.20181207130616156
+07 Dez 2018 13:06:51,519 INFO  (LoggingUtil.java:182)     - 07.12.18 13:06 - 	  detail = Component 'comtibcowfgenericsubprocesskantonbeProcessFlow' upgraded from version '1.0.0.20181207103906095' to version: '1.0.0.20181207130616156'.
+
+07 Dez 2018 13:06:51,520 INFO  (LoggingUtil.java:182)     - 07.12.18 13:06 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207103906095' to version: '1.0.0.20181207130616156'.
+
+07 Dez 2018 13:06:51,520 INFO  (LoggingUtil.java:182)     - 07.12.18 13:06 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207103906095' to version: '1.0.0.20181207130616156'.
+
+07 Dez 2018 13:06:51,521 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:06 in 6,091 seconds
+07 Dez 2018 13:06:51,529 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 13:06:51,538 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:06:51,587 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 13:06:54,515 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.generic.subprocess.kanton.be' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.generic.subprocess.kanton.be' at 12/7/18 1:06 PM on node(s): 'BPMNode'.
+07 Dez 2018 13:06:54,516 INFO  (LoggingUtil.java:182)     - 07.12.18 13:06 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds.1.0.0.20181207130616156' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 13:06:54,517 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 13:06 in 2,929 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 13:06:56,242 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:07:01,225 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 13:07:01,229 INFO  (Processor.java:743)     - Action finished at 07.12.18 13:07 in 9,641 seconds
+07 Dez 2018 13:07:31,950 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 13:07:32,724 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:07:33,354 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:07:33,358 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.zh\.bpm\com.example.comtibcowfgenericsubprocesskantonzh.daa
+07 Dez 2018 13:07:34,507 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfgenericsubprocesskantonzh' (version: '1.0.0.20181207130714090') to the Administrator Staging Area
+07 Dez 2018 13:07:34,508 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds' (version: '1.0.0.20181207130714090') to the Administrator Staging Area
+07 Dez 2018 13:07:34,511 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:07 in 1,157 seconds
+07 Dez 2018 13:07:34,534 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:07:35,676 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 13:07:35,676 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:07:35,676 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.zh\.bpm\com.example.comtibcowfgenericsubprocesskantonzh.daa
+07 Dez 2018 13:07:36,422 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfgenericsubprocesskantonzh' (version: '1.0.0.20181207130714090') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:07:36,423 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds' (version: '1.0.0.20181207130714090') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:07:42,124 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.generic.subprocess.kanton.zh': Successfully upgraded application 'com.tibco.wf.generic.subprocess.kanton.zh' to application template version 1.0.0.20181207130714090
+07 Dez 2018 13:07:42,125 INFO  (LoggingUtil.java:182)     - 07.12.18 13:07 - 	  detail = Component 'comtibcowfgenericsubprocesskantonzhProcessFlow' upgraded from version '1.0.0.20181207103812934' to version: '1.0.0.20181207130714090'.
+
+07 Dez 2018 13:07:42,125 INFO  (LoggingUtil.java:182)     - 07.12.18 13:07 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207103812934' to version: '1.0.0.20181207130714090'.
+
+07 Dez 2018 13:07:42,125 INFO  (LoggingUtil.java:182)     - 07.12.18 13:07 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207103812934' to version: '1.0.0.20181207130714090'.
+
+07 Dez 2018 13:07:42,126 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:07 in 6,451 seconds
+07 Dez 2018 13:07:42,132 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 13:07:42,136 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:07:42,167 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 13:07:45,352 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.generic.subprocess.kanton.zh' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.generic.subprocess.kanton.zh' at 12/7/18 1:07 PM on node(s): 'BPMNode'.
+07 Dez 2018 13:07:45,353 INFO  (LoggingUtil.java:182)     - 07.12.18 13:07 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds.1.0.0.20181207130714090' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 13:07:45,354 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 13:07 in 3,186 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 13:07:47,410 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:07:48,676 INFO  (DeployActionTaskProgressIndicator.java:73)     - The following tasks related to removal of earlier versions of the application are pending :
+07 Dez 2018 13:07:48,677 INFO  (DeployActionTaskProgressIndicator.java:78)     - Uninstall application 'com.tibco.wf.generic.subprocess.kanton.zh' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy component 'BRM', Undeploy component 'WorkPresentation', Undeploy component 'comtibcowfgenericsubprocesskantonzhProcessFlow')
+07 Dez 2018 13:07:48,677 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'comtibcowfgenericsubprocesskantonzhProcessFlow' pending on node 'BPMNode' (waiting for runtime to complete this action)
+07 Dez 2018 13:07:48,677 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'BRM' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'comtibcowfgenericsubprocesskantonzhProcessFlow')
+07 Dez 2018 13:07:48,677 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'WorkPresentation' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'BRM')
+07 Dez 2018 13:07:48,677 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'comtibcowfgenericsubprocesskantonzhProcessFlow' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'comtibcowfgenericsubprocesskantonzhProcessFlow')
+07 Dez 2018 13:07:48,679 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'WorkPresentation' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'WorkPresentation')
+07 Dez 2018 13:07:48,679 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'BRM' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'BRM')
+07 Dez 2018 13:07:48,679 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy application 'com.tibco.wf.generic.subprocess.kanton.zh' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'BRM', Unconfigure admin component 'BRM', Prepare for undeploy component 'WorkPresentation', Unconfigure admin component 'WorkPresentation', Prepare for undeploy component 'comtibcowfgenericsubprocesskantonzhProcessFlow', Unconfigure admin component 'comtibcowfgenericsubprocesskantonzhProcessFlow')
+07 Dez 2018 13:07:48,679 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'BRM' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.generic.subprocess.kanton.zh')
+07 Dez 2018 13:07:48,679 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'WorkPresentation' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.generic.subprocess.kanton.zh')
+07 Dez 2018 13:07:48,679 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'comtibcowfgenericsubprocesskantonzhProcessFlow' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.generic.subprocess.kanton.zh')
+07 Dez 2018 13:07:48,679 INFO  (DeployActionTaskProgressIndicator.java:78)     - Cleanup Features node 'BPMNode' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy component 'comtibcowfgenericsubprocesskantonzhProcessFlow', Undeploy component 'WorkPresentation', Undeploy component 'BRM')
+07 Dez 2018 13:07:48,680 INFO  (Processor.java:736)     - Action finished in runtime at 07.12.18 13:07 in 6,513 seconds
+07 Dez 2018 13:08:16,714 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 13:08:17,507 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:08:18,224 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:08:18,227 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+07 Dez 2018 13:08:20,162 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181207130801811') to the Administrator Staging Area
+07 Dez 2018 13:08:20,163 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181207130801811') to the Administrator Staging Area
+07 Dez 2018 13:08:20,166 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:08 in 1,942 seconds
+07 Dez 2018 13:08:20,187 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:08:20,817 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 13:08:20,818 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:08:20,818 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+07 Dez 2018 13:08:21,272 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181207130801811') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:08:21,272 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181207130801811') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:08:28,153 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.main.subprocess': Successfully upgraded application 'com.tibco.wf.main.subprocess' to application template version 1.0.0.20181207130801811
+07 Dez 2018 13:08:28,154 INFO  (LoggingUtil.java:182)     - 07.12.18 13:08 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181207125304804' to version: '1.0.0.20181207130801811'.
+
+07 Dez 2018 13:08:28,155 INFO  (LoggingUtil.java:182)     - 07.12.18 13:08 - 	  detail = Component 'comtibcowfmainsubprocessProcessFlow' upgraded from version '1.0.0.20181207125304804' to version: '1.0.0.20181207130801811'.
+
+07 Dez 2018 13:08:28,155 INFO  (LoggingUtil.java:182)     - 07.12.18 13:08 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207125304804' to version: '1.0.0.20181207130801811'.
+
+07 Dez 2018 13:08:28,155 INFO  (LoggingUtil.java:182)     - 07.12.18 13:08 - 	  detail = Component 'comtibcowfmainsubprocessPageFlow' upgraded from version '1.0.0.20181207125304804' to version: '1.0.0.20181207130801811'.
+
+07 Dez 2018 13:08:28,156 INFO  (LoggingUtil.java:182)     - 07.12.18 13:08 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207125304804' to version: '1.0.0.20181207130801811'.
+
+07 Dez 2018 13:08:28,156 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:08 in 7,339 seconds
+07 Dez 2018 13:08:28,167 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 13:08:28,171 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:08:28,230 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 13:08:32,415 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.main.subprocess' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.main.subprocess' at 12/7/18 1:08 PM on node(s): 'BPMNode'.
+07 Dez 2018 13:08:32,416 INFO  (LoggingUtil.java:182)     - 07.12.18 13:08 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfmainsubprocess.model.bds.1.0.0.20181207130801811' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 13:08:32,416 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 13:08 in 4,187 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 13:08:34,329 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:08:37,262 INFO  (DeployActionTaskProgressIndicator.java:73)     - The following tasks related to removal of earlier versions of the application are pending :
+07 Dez 2018 13:08:37,263 INFO  (DeployActionTaskProgressIndicator.java:78)     - Uninstall application 'com.tibco.wf.main.subprocess' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy component 'comtibcowfmainsubprocessProcessFlow', Undeploy component 'comtibcowfmainsubprocessPageFlow', Undeploy component 'WorkPresentation', Undeploy component 'BRM', Undeploy component 'OrganizationModel')
+07 Dez 2018 13:08:37,263 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'comtibcowfmainsubprocessProcessFlow' pending on node 'BPMNode' (waiting for runtime to complete this action)
+07 Dez 2018 13:08:37,263 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'BRM' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'comtibcowfmainsubprocessProcessFlow')
+07 Dez 2018 13:08:37,263 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'WorkPresentation' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'BRM')
+07 Dez 2018 13:08:37,263 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'comtibcowfmainsubprocessPageFlow' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'WorkPresentation')
+07 Dez 2018 13:08:37,264 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'OrganizationModel' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'BRM')
+07 Dez 2018 13:08:37,264 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'comtibcowfmainsubprocessPageFlow' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'comtibcowfmainsubprocessPageFlow')
+07 Dez 2018 13:08:37,264 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'BRM' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'BRM')
+07 Dez 2018 13:08:37,265 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'comtibcowfmainsubprocessProcessFlow' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'comtibcowfmainsubprocessProcessFlow')
+07 Dez 2018 13:08:37,268 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'WorkPresentation' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'WorkPresentation')
+07 Dez 2018 13:08:37,269 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'OrganizationModel' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'OrganizationModel')
+07 Dez 2018 13:08:37,269 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy application 'com.tibco.wf.main.subprocess' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'comtibcowfmainsubprocessProcessFlow', Unconfigure admin component 'comtibcowfmainsubprocessProcessFlow', Prepare for undeploy component 'comtibcowfmainsubprocessPageFlow', Unconfigure admin component 'comtibcowfmainsubprocessPageFlow', Prepare for undeploy component 'WorkPresentation', Unconfigure admin component 'WorkPresentation', Prepare for undeploy component 'BRM', Unconfigure admin component 'BRM', Prepare for undeploy component 'OrganizationModel', Unconfigure admin component 'OrganizationModel')
+07 Dez 2018 13:08:37,269 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'comtibcowfmainsubprocessProcessFlow' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 13:08:37,269 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'comtibcowfmainsubprocessPageFlow' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 13:08:37,270 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'WorkPresentation' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 13:08:37,270 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'BRM' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 13:08:37,271 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'OrganizationModel' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 13:08:37,271 INFO  (DeployActionTaskProgressIndicator.java:78)     - Cleanup Features node 'BPMNode' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy component 'comtibcowfmainsubprocessPageFlow', Undeploy component 'WorkPresentation', Undeploy component 'comtibcowfmainsubprocessProcessFlow', Undeploy component 'BRM')
+07 Dez 2018 13:08:37,272 INFO  (Processor.java:736)     - Action finished in runtime at 07.12.18 13:08 in 9,043 seconds
+07 Dez 2018 13:19:22,554 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 13:19:23,356 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:19:24,064 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:19:24,068 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+07 Dez 2018 13:19:25,732 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181207131905990') to the Administrator Staging Area
+07 Dez 2018 13:19:25,736 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181207131905990') to the Administrator Staging Area
+07 Dez 2018 13:19:25,740 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:19 in 1,674 seconds
+07 Dez 2018 13:19:25,756 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:19:26,418 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 13:19:26,419 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:19:26,419 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+07 Dez 2018 13:19:26,901 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181207131905990') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:19:26,902 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181207131905990') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:19:34,326 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.main.subprocess': Successfully upgraded application 'com.tibco.wf.main.subprocess' to application template version 1.0.0.20181207131905990
+07 Dez 2018 13:19:34,328 INFO  (LoggingUtil.java:182)     - 07.12.18 13:19 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181207130801811' to version: '1.0.0.20181207131905990'.
+
+07 Dez 2018 13:19:34,328 INFO  (LoggingUtil.java:182)     - 07.12.18 13:19 - 	  detail = Component 'comtibcowfmainsubprocessProcessFlow' upgraded from version '1.0.0.20181207130801811' to version: '1.0.0.20181207131905990'.
+
+07 Dez 2018 13:19:34,329 INFO  (LoggingUtil.java:182)     - 07.12.18 13:19 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207130801811' to version: '1.0.0.20181207131905990'.
+
+07 Dez 2018 13:19:34,329 INFO  (LoggingUtil.java:182)     - 07.12.18 13:19 - 	  detail = Component 'comtibcowfmainsubprocessPageFlow' upgraded from version '1.0.0.20181207130801811' to version: '1.0.0.20181207131905990'.
+
+07 Dez 2018 13:19:34,329 INFO  (LoggingUtil.java:182)     - 07.12.18 13:19 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207130801811' to version: '1.0.0.20181207131905990'.
+
+07 Dez 2018 13:19:34,332 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:19 in 7,913 seconds
+07 Dez 2018 13:19:34,341 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 13:19:34,345 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:19:34,392 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 13:19:38,206 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.main.subprocess' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.main.subprocess' at 12/7/18 1:19 PM on node(s): 'BPMNode'.
+07 Dez 2018 13:19:38,207 INFO  (LoggingUtil.java:182)     - 07.12.18 13:19 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfmainsubprocess.model.bds.1.0.0.20181207131905990' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 13:19:38,208 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 13:19 in 3,816 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 13:19:40,364 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:19:45,585 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:19:47,126 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 13:19:47,127 INFO  (Processor.java:743)     - Action finished at 07.12.18 13:19 in 12,734 seconds
+07 Dez 2018 13:21:30,469 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 13:21:31,251 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:21:31,881 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:21:31,884 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.be\.bpm\com.example.comtibcowfgenericsubprocesskantonbe.daa
+07 Dez 2018 13:21:33,104 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfgenericsubprocesskantonbe' (version: '1.0.0.20181207132111160') to the Administrator Staging Area
+07 Dez 2018 13:21:33,105 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds' (version: '1.0.0.20181207132111160') to the Administrator Staging Area
+07 Dez 2018 13:21:33,110 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:21 in 1,227 seconds
+07 Dez 2018 13:21:33,127 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:21:33,789 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 13:21:33,790 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:21:33,790 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.be\.bpm\com.example.comtibcowfgenericsubprocesskantonbe.daa
+07 Dez 2018 13:21:34,236 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfgenericsubprocesskantonbe' (version: '1.0.0.20181207132111160') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:21:34,237 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds' (version: '1.0.0.20181207132111160') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:21:39,891 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.generic.subprocess.kanton.be': Successfully upgraded application 'com.tibco.wf.generic.subprocess.kanton.be' to application template version 1.0.0.20181207132111160
+07 Dez 2018 13:21:39,892 INFO  (LoggingUtil.java:182)     - 07.12.18 13:21 - 	  detail = Component 'comtibcowfgenericsubprocesskantonbeProcessFlow' upgraded from version '1.0.0.20181207130616156' to version: '1.0.0.20181207132111160'.
+
+07 Dez 2018 13:21:39,892 INFO  (LoggingUtil.java:182)     - 07.12.18 13:21 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207130616156' to version: '1.0.0.20181207132111160'.
+
+07 Dez 2018 13:21:39,893 INFO  (LoggingUtil.java:182)     - 07.12.18 13:21 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207130616156' to version: '1.0.0.20181207132111160'.
+
+07 Dez 2018 13:21:39,893 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:21 in 6,104 seconds
+07 Dez 2018 13:21:39,900 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 13:21:39,904 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:21:39,947 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 13:21:42,859 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.generic.subprocess.kanton.be' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.generic.subprocess.kanton.be' at 12/7/18 1:21 PM on node(s): 'BPMNode'.
+07 Dez 2018 13:21:42,860 INFO  (LoggingUtil.java:182)     - 07.12.18 13:21 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds.1.0.0.20181207132111160' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 13:21:42,860 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 13:21 in 2,913 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 13:21:44,590 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:21:49,647 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:21:50,883 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 13:21:50,884 INFO  (Processor.java:743)     - Action finished at 07.12.18 13:21 in 10,937 seconds
+07 Dez 2018 13:22:31,228 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 13:22:32,015 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:22:32,648 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:22:32,652 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.zh\.bpm\com.example.comtibcowfgenericsubprocesskantonzh.daa
+07 Dez 2018 13:22:33,837 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfgenericsubprocesskantonzh' (version: '1.0.0.20181207132214855') to the Administrator Staging Area
+07 Dez 2018 13:22:33,838 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds' (version: '1.0.0.20181207132214855') to the Administrator Staging Area
+07 Dez 2018 13:22:33,841 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:22 in 1,192 seconds
+07 Dez 2018 13:22:33,854 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:22:34,483 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 13:22:34,483 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:22:34,483 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.zh\.bpm\com.example.comtibcowfgenericsubprocesskantonzh.daa
+07 Dez 2018 13:22:35,271 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfgenericsubprocesskantonzh' (version: '1.0.0.20181207132214855') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:22:35,271 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds' (version: '1.0.0.20181207132214855') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:22:43,647 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.generic.subprocess.kanton.zh': Successfully upgraded application 'com.tibco.wf.generic.subprocess.kanton.zh' to application template version 1.0.0.20181207132214855
+07 Dez 2018 13:22:43,651 INFO  (LoggingUtil.java:182)     - 07.12.18 13:22 - 	  detail = Component 'comtibcowfgenericsubprocesskantonzhProcessFlow' upgraded from version '1.0.0.20181207130714090' to version: '1.0.0.20181207132214855'.
+
+07 Dez 2018 13:22:43,654 INFO  (LoggingUtil.java:182)     - 07.12.18 13:22 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207130714090' to version: '1.0.0.20181207132214855'.
+
+07 Dez 2018 13:22:43,654 INFO  (LoggingUtil.java:182)     - 07.12.18 13:22 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207130714090' to version: '1.0.0.20181207132214855'.
+
+07 Dez 2018 13:22:43,654 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:22 in 9,171 seconds
+07 Dez 2018 13:22:43,665 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 13:22:43,675 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:22:43,720 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 13:22:46,673 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.generic.subprocess.kanton.zh' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.generic.subprocess.kanton.zh' at 12/7/18 1:22 PM on node(s): 'BPMNode'.
+07 Dez 2018 13:22:46,675 INFO  (LoggingUtil.java:182)     - 07.12.18 13:22 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds.1.0.0.20181207132214855' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 13:22:46,678 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 13:22 in 2,958 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 13:22:48,446 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:22:53,896 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:22:55,787 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 13:22:55,788 INFO  (Processor.java:743)     - Action finished at 07.12.18 13:22 in 12,069 seconds
+07 Dez 2018 13:25:50,923 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 13:25:51,721 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:25:52,367 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:25:52,372 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.be\.bpm\com.example.comtibcowfgenericsubprocesskantonbe.daa
+07 Dez 2018 13:25:54,944 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfgenericsubprocesskantonbe' (version: '1.0.0.20181207132534291') to the Administrator Staging Area
+07 Dez 2018 13:25:54,945 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds' (version: '1.0.0.20181207132534291') to the Administrator Staging Area
+07 Dez 2018 13:25:54,950 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:25 in 2,584 seconds
+07 Dez 2018 13:25:54,964 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:25:55,611 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 13:25:55,612 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:25:55,612 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.be\.bpm\com.example.comtibcowfgenericsubprocesskantonbe.daa
+07 Dez 2018 13:25:56,137 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfgenericsubprocesskantonbe' (version: '1.0.0.20181207132534291') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:25:56,138 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds' (version: '1.0.0.20181207132534291') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:26:01,321 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.generic.subprocess.kanton.be': Successfully upgraded application 'com.tibco.wf.generic.subprocess.kanton.be' to application template version 1.0.0.20181207132534291
+07 Dez 2018 13:26:01,322 INFO  (LoggingUtil.java:182)     - 07.12.18 13:26 - 	  detail = Component 'comtibcowfgenericsubprocesskantonbeProcessFlow' upgraded from version '1.0.0.20181207132111160' to version: '1.0.0.20181207132534291'.
+
+07 Dez 2018 13:26:01,322 INFO  (LoggingUtil.java:182)     - 07.12.18 13:26 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207132111160' to version: '1.0.0.20181207132534291'.
+
+07 Dez 2018 13:26:01,322 INFO  (LoggingUtil.java:182)     - 07.12.18 13:26 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207132111160' to version: '1.0.0.20181207132534291'.
+
+07 Dez 2018 13:26:01,322 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:26 in 5,711 seconds
+07 Dez 2018 13:26:01,329 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 13:26:01,332 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:26:01,353 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 13:26:04,523 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.generic.subprocess.kanton.be' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.generic.subprocess.kanton.be' at 12/7/18 1:26 PM on node(s): 'BPMNode'.
+07 Dez 2018 13:26:04,525 INFO  (LoggingUtil.java:182)     - 07.12.18 13:26 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds.1.0.0.20181207132534291' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 13:26:04,525 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 13:26 in 3,172 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 13:26:06,203 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:26:11,202 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 13:26:11,204 INFO  (Processor.java:743)     - Action finished at 07.12.18 13:26 in 9,851 seconds
+07 Dez 2018 13:26:40,193 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 13:26:40,964 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:26:41,577 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:26:41,585 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.zh\.bpm\com.example.comtibcowfgenericsubprocesskantonzh.daa
+07 Dez 2018 13:26:43,159 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfgenericsubprocesskantonzh' (version: '1.0.0.20181207132620850') to the Administrator Staging Area
+07 Dez 2018 13:26:43,160 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds' (version: '1.0.0.20181207132620850') to the Administrator Staging Area
+07 Dez 2018 13:26:43,163 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:26 in 1,587 seconds
+07 Dez 2018 13:26:43,218 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:26:43,828 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 13:26:43,829 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:26:43,830 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.zh\.bpm\com.example.comtibcowfgenericsubprocesskantonzh.daa
+07 Dez 2018 13:26:44,259 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfgenericsubprocesskantonzh' (version: '1.0.0.20181207132620850') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:26:44,260 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds' (version: '1.0.0.20181207132620850') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:26:50,149 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.generic.subprocess.kanton.zh': Successfully upgraded application 'com.tibco.wf.generic.subprocess.kanton.zh' to application template version 1.0.0.20181207132620850
+07 Dez 2018 13:26:50,151 INFO  (LoggingUtil.java:182)     - 07.12.18 13:26 - 	  detail = Component 'comtibcowfgenericsubprocesskantonzhProcessFlow' upgraded from version '1.0.0.20181207132214855' to version: '1.0.0.20181207132620850'.
+
+07 Dez 2018 13:26:50,151 INFO  (LoggingUtil.java:182)     - 07.12.18 13:26 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207132214855' to version: '1.0.0.20181207132620850'.
+
+07 Dez 2018 13:26:50,151 INFO  (LoggingUtil.java:182)     - 07.12.18 13:26 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207132214855' to version: '1.0.0.20181207132620850'.
+
+07 Dez 2018 13:26:50,152 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:26 in 6,324 seconds
+07 Dez 2018 13:26:50,159 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 13:26:50,161 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:26:50,216 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 13:26:53,543 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.generic.subprocess.kanton.zh' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.generic.subprocess.kanton.zh' at 12/7/18 1:26 PM on node(s): 'BPMNode'.
+07 Dez 2018 13:26:53,544 INFO  (LoggingUtil.java:182)     - 07.12.18 13:26 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds.1.0.0.20181207132620850' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 13:26:53,544 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 13:26 in 3,328 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 13:26:55,293 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:27:00,285 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:27:01,512 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 13:27:01,514 INFO  (Processor.java:743)     - Action finished at 07.12.18 13:27 in 11,298 seconds
+07 Dez 2018 13:33:51,188 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 13:33:51,969 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:33:52,585 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:33:52,588 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+07 Dez 2018 13:33:54,016 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181207133337578') to the Administrator Staging Area
+07 Dez 2018 13:33:54,017 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181207133337578') to the Administrator Staging Area
+07 Dez 2018 13:33:54,020 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:33 in 1,434 seconds
+07 Dez 2018 13:33:54,036 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:33:54,669 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 13:33:54,671 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:33:54,671 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.main.subprocess\.bpm\com.example.comtibcowfmainsubprocess.daa
+07 Dez 2018 13:33:55,208 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfmainsubprocess' (version: '1.0.0.20181207133337578') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:33:55,210 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfmainsubprocess.model.bds' (version: '1.0.0.20181207133337578') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:34:02,504 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.main.subprocess': Successfully upgraded application 'com.tibco.wf.main.subprocess' to application template version 1.0.0.20181207133337578
+07 Dez 2018 13:34:02,504 INFO  (LoggingUtil.java:182)     - 07.12.18 13:34 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181207131905990' to version: '1.0.0.20181207133337578'.
+
+07 Dez 2018 13:34:02,504 INFO  (LoggingUtil.java:182)     - 07.12.18 13:34 - 	  detail = Component 'comtibcowfmainsubprocessProcessFlow' upgraded from version '1.0.0.20181207131905990' to version: '1.0.0.20181207133337578'.
+
+07 Dez 2018 13:34:02,504 INFO  (LoggingUtil.java:182)     - 07.12.18 13:34 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207131905990' to version: '1.0.0.20181207133337578'.
+
+07 Dez 2018 13:34:02,506 INFO  (LoggingUtil.java:182)     - 07.12.18 13:34 - 	  detail = Component 'comtibcowfmainsubprocessPageFlow' upgraded from version '1.0.0.20181207131905990' to version: '1.0.0.20181207133337578'.
+
+07 Dez 2018 13:34:02,509 INFO  (LoggingUtil.java:182)     - 07.12.18 13:34 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207131905990' to version: '1.0.0.20181207133337578'.
+
+07 Dez 2018 13:34:02,509 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:34 in 7,84 seconds
+07 Dez 2018 13:34:02,515 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 13:34:02,519 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:34:02,543 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 13:34:06,132 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.main.subprocess' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.main.subprocess' at 12/7/18 1:34 PM on node(s): 'BPMNode'.
+07 Dez 2018 13:34:06,133 INFO  (LoggingUtil.java:182)     - 07.12.18 13:34 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfmainsubprocess.model.bds.1.0.0.20181207133337578' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 13:34:06,133 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 13:34 in 3,59 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 13:34:07,941 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:34:10,542 INFO  (DeployActionTaskProgressIndicator.java:73)     - The following tasks related to removal of earlier versions of the application are pending :
+07 Dez 2018 13:34:10,543 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'comtibcowfmainsubprocessProcessFlow' pending on node 'BPMNode' (waiting for runtime to complete this action)
+07 Dez 2018 13:34:10,543 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'BRM' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'comtibcowfmainsubprocessProcessFlow')
+07 Dez 2018 13:34:10,543 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'WorkPresentation' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'BRM')
+07 Dez 2018 13:34:10,543 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'comtibcowfmainsubprocessPageFlow' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'WorkPresentation')
+07 Dez 2018 13:34:10,544 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'OrganizationModel' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'BRM')
+07 Dez 2018 13:34:10,544 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'WorkPresentation' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'WorkPresentation')
+07 Dez 2018 13:34:10,544 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'comtibcowfmainsubprocessPageFlow' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'comtibcowfmainsubprocessPageFlow')
+07 Dez 2018 13:34:10,544 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'OrganizationModel' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'OrganizationModel')
+07 Dez 2018 13:34:10,546 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'BRM' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'BRM')
+07 Dez 2018 13:34:10,549 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'comtibcowfmainsubprocessProcessFlow' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'comtibcowfmainsubprocessProcessFlow')
+07 Dez 2018 13:34:10,549 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy application 'com.tibco.wf.main.subprocess' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'comtibcowfmainsubprocessProcessFlow', Unconfigure admin component 'comtibcowfmainsubprocessProcessFlow', Prepare for undeploy component 'comtibcowfmainsubprocessPageFlow', Unconfigure admin component 'comtibcowfmainsubprocessPageFlow', Prepare for undeploy component 'OrganizationModel', Unconfigure admin component 'OrganizationModel', Prepare for undeploy component 'WorkPresentation', Unconfigure admin component 'WorkPresentation', Prepare for undeploy component 'BRM', Unconfigure admin component 'BRM')
+07 Dez 2018 13:34:10,549 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'comtibcowfmainsubprocessProcessFlow' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 13:34:10,549 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'comtibcowfmainsubprocessPageFlow' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 13:34:10,549 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'OrganizationModel' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 13:34:10,550 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'WorkPresentation' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 13:34:10,550 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'BRM' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.wf.main.subprocess')
+07 Dez 2018 13:34:10,551 INFO  (DeployActionTaskProgressIndicator.java:78)     - Cleanup Features node 'BPMNode' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy component 'BRM', Undeploy component 'WorkPresentation', Undeploy component 'comtibcowfmainsubprocessProcessFlow', Undeploy component 'comtibcowfmainsubprocessPageFlow')
+07 Dez 2018 13:34:10,551 INFO  (DeployActionTaskProgressIndicator.java:78)     - Uninstall application 'com.tibco.wf.main.subprocess' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy component 'comtibcowfmainsubprocessProcessFlow', Undeploy component 'comtibcowfmainsubprocessPageFlow', Undeploy component 'OrganizationModel', Undeploy component 'WorkPresentation', Undeploy component 'BRM')
+07 Dez 2018 13:34:10,552 INFO  (Processor.java:736)     - Action finished in runtime at 07.12.18 13:34 in 8,008 seconds
+07 Dez 2018 13:37:11,492 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 13:37:12,237 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:37:12,848 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:37:12,853 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.be\.bpm\com.example.comtibcowfgenericsubprocesskantonbe.daa
+07 Dez 2018 13:37:16,221 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfgenericsubprocesskantonbe' (version: '1.0.0.20181207133654740') to the Administrator Staging Area
+07 Dez 2018 13:37:16,223 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds' (version: '1.0.0.20181207133654740') to the Administrator Staging Area
+07 Dez 2018 13:37:16,226 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:37 in 3,377 seconds
+07 Dez 2018 13:37:16,237 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:37:16,859 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 13:37:16,860 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:37:16,861 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.be\.bpm\com.example.comtibcowfgenericsubprocesskantonbe.daa
+07 Dez 2018 13:37:17,288 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfgenericsubprocesskantonbe' (version: '1.0.0.20181207133654740') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:37:17,290 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds' (version: '1.0.0.20181207133654740') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:37:22,578 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.generic.subprocess.kanton.be': Successfully upgraded application 'com.tibco.wf.generic.subprocess.kanton.be' to application template version 1.0.0.20181207133654740
+07 Dez 2018 13:37:22,579 INFO  (LoggingUtil.java:182)     - 07.12.18 13:37 - 	  detail = Component 'comtibcowfgenericsubprocesskantonbeProcessFlow' upgraded from version '1.0.0.20181207132534291' to version: '1.0.0.20181207133654740'.
+
+07 Dez 2018 13:37:22,579 INFO  (LoggingUtil.java:182)     - 07.12.18 13:37 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207132534291' to version: '1.0.0.20181207133654740'.
+
+07 Dez 2018 13:37:22,580 INFO  (LoggingUtil.java:182)     - 07.12.18 13:37 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207132534291' to version: '1.0.0.20181207133654740'.
+
+07 Dez 2018 13:37:22,581 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:37 in 5,721 seconds
+07 Dez 2018 13:37:22,586 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 13:37:22,590 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:37:22,643 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 13:37:25,668 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.generic.subprocess.kanton.be' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.generic.subprocess.kanton.be' at 12/7/18 1:37 PM on node(s): 'BPMNode'.
+07 Dez 2018 13:37:25,669 INFO  (LoggingUtil.java:182)     - 07.12.18 13:37 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds.1.0.0.20181207133654740' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 13:37:25,669 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 13:37 in 3,026 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 13:37:27,352 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:37:32,545 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 13:37:32,546 INFO  (Processor.java:743)     - Action finished at 07.12.18 13:37 in 9,902 seconds
+07 Dez 2018 13:38:10,601 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 13:38:11,406 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:38:12,036 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:38:12,041 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.zh\.bpm\com.example.comtibcowfgenericsubprocesskantonzh.daa
+07 Dez 2018 13:38:13,226 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfgenericsubprocesskantonzh' (version: '1.0.0.20181207133754523') to the Administrator Staging Area
+07 Dez 2018 13:38:13,227 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds' (version: '1.0.0.20181207133754523') to the Administrator Staging Area
+07 Dez 2018 13:38:13,230 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:38 in 1,193 seconds
+07 Dez 2018 13:38:13,247 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:38:14,206 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 13:38:14,207 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:38:14,207 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.zh\.bpm\com.example.comtibcowfgenericsubprocesskantonzh.daa
+07 Dez 2018 13:38:15,143 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfgenericsubprocesskantonzh' (version: '1.0.0.20181207133754523') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:38:15,143 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds' (version: '1.0.0.20181207133754523') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:38:21,469 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.generic.subprocess.kanton.zh': Successfully upgraded application 'com.tibco.wf.generic.subprocess.kanton.zh' to application template version 1.0.0.20181207133754523
+07 Dez 2018 13:38:21,470 INFO  (LoggingUtil.java:182)     - 07.12.18 13:38 - 	  detail = Component 'comtibcowfgenericsubprocesskantonzhProcessFlow' upgraded from version '1.0.0.20181207132620850' to version: '1.0.0.20181207133754523'.
+
+07 Dez 2018 13:38:21,471 INFO  (LoggingUtil.java:182)     - 07.12.18 13:38 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207132620850' to version: '1.0.0.20181207133754523'.
+
+07 Dez 2018 13:38:21,471 INFO  (LoggingUtil.java:182)     - 07.12.18 13:38 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207132620850' to version: '1.0.0.20181207133754523'.
+
+07 Dez 2018 13:38:21,472 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:38 in 7,265 seconds
+07 Dez 2018 13:38:21,477 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 13:38:21,487 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:38:21,534 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 13:38:24,665 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.generic.subprocess.kanton.zh' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.generic.subprocess.kanton.zh' at 12/7/18 1:38 PM on node(s): 'BPMNode'.
+07 Dez 2018 13:38:24,666 INFO  (LoggingUtil.java:182)     - 07.12.18 13:38 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds.1.0.0.20181207133754523' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 13:38:24,666 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 13:38 in 3,132 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 13:38:26,468 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:38:31,954 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:38:33,185 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 13:38:33,186 INFO  (Processor.java:743)     - Action finished at 07.12.18 13:38 in 11,652 seconds
+07 Dez 2018 13:42:13,040 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 13:42:13,820 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:42:14,466 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:42:14,470 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.be\.bpm\com.example.comtibcowfgenericsubprocesskantonbe.daa
+07 Dez 2018 13:42:16,858 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfgenericsubprocesskantonbe' (version: '1.0.0.20181207134155695') to the Administrator Staging Area
+07 Dez 2018 13:42:16,859 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds' (version: '1.0.0.20181207134155695') to the Administrator Staging Area
+07 Dez 2018 13:42:16,863 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:42 in 2,395 seconds
+07 Dez 2018 13:42:16,880 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:42:17,535 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 13:42:17,535 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:42:17,536 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.be\.bpm\com.example.comtibcowfgenericsubprocesskantonbe.daa
+07 Dez 2018 13:42:18,389 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfgenericsubprocesskantonbe' (version: '1.0.0.20181207134155695') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:42:18,390 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds' (version: '1.0.0.20181207134155695') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:42:24,521 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.generic.subprocess.kanton.be': Successfully upgraded application 'com.tibco.wf.generic.subprocess.kanton.be' to application template version 1.0.0.20181207134155695
+07 Dez 2018 13:42:24,521 INFO  (LoggingUtil.java:182)     - 07.12.18 13:42 - 	  detail = Component 'comtibcowfgenericsubprocesskantonbeProcessFlow' upgraded from version '1.0.0.20181207133654740' to version: '1.0.0.20181207134155695'.
+
+07 Dez 2018 13:42:24,522 INFO  (LoggingUtil.java:182)     - 07.12.18 13:42 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207133654740' to version: '1.0.0.20181207134155695'.
+
+07 Dez 2018 13:42:24,522 INFO  (LoggingUtil.java:182)     - 07.12.18 13:42 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207133654740' to version: '1.0.0.20181207134155695'.
+
+07 Dez 2018 13:42:24,523 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:42 in 6,987 seconds
+07 Dez 2018 13:42:24,529 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 13:42:24,538 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:42:24,574 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 13:42:27,687 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.generic.subprocess.kanton.be' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.generic.subprocess.kanton.be' at 12/7/18 1:42 PM on node(s): 'BPMNode'.
+07 Dez 2018 13:42:27,688 INFO  (LoggingUtil.java:182)     - 07.12.18 13:42 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfgenericsubprocesskantonbe.model.bds.1.0.0.20181207134155695' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 13:42:27,688 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 13:42 in 3,114 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 13:42:29,388 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:42:34,482 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 13:42:34,483 INFO  (Processor.java:743)     - Action finished at 07.12.18 13:42 in 9,909 seconds
+07 Dez 2018 13:43:37,140 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+07 Dez 2018 13:43:37,923 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:43:38,546 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:43:38,550 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.zh\.bpm\com.example.comtibcowfgenericsubprocesskantonzh.daa
+07 Dez 2018 13:43:40,422 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.example.comtibcowfgenericsubprocesskantonzh' (version: '1.0.0.20181207134320433') to the Administrator Staging Area
+07 Dez 2018 13:43:40,425 INFO  (AddAction.java:161)     - Successfully added Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds' (version: '1.0.0.20181207134320433') to the Administrator Staging Area
+07 Dez 2018 13:43:40,429 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:43 in 1,883 seconds
+07 Dez 2018 13:43:40,440 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:43:41,111 INFO  (UpgradeAction.java:31)     - Upgrading application...
+07 Dez 2018 13:43:41,112 INFO  (AddAction.java:54)     - Uploading DAA...
+07 Dez 2018 13:43:41,113 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.wf.generic.subprocess.kanton.zh\.bpm\com.example.comtibcowfgenericsubprocesskantonzh.daa
+07 Dez 2018 13:43:41,611 WARN  (AddAction.java:151)     - Application Template 'com.example.comtibcowfgenericsubprocesskantonzh' (version: '1.0.0.20181207134320433') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:43:41,613 WARN  (AddAction.java:198)     - Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds' (version: '1.0.0.20181207134320433') was ignored and not added to the Administrator Staging Area, because it already exists.
+07 Dez 2018 13:43:47,762 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.wf.generic.subprocess.kanton.zh': Successfully upgraded application 'com.tibco.wf.generic.subprocess.kanton.zh' to application template version 1.0.0.20181207134320433
+07 Dez 2018 13:43:47,764 INFO  (LoggingUtil.java:182)     - 07.12.18 13:43 - 	  detail = Component 'comtibcowfgenericsubprocesskantonzhProcessFlow' upgraded from version '1.0.0.20181207133754523' to version: '1.0.0.20181207134320433'.
+
+07 Dez 2018 13:43:47,767 INFO  (LoggingUtil.java:182)     - 07.12.18 13:43 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181207133754523' to version: '1.0.0.20181207134320433'.
+
+07 Dez 2018 13:43:47,767 INFO  (LoggingUtil.java:182)     - 07.12.18 13:43 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181207133754523' to version: '1.0.0.20181207134320433'.
+
+07 Dez 2018 13:43:47,768 INFO  (Processor.java:675)     - Action finished at 07.12.18 13:43 in 6,656 seconds
+07 Dez 2018 13:43:47,774 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+07 Dez 2018 13:43:47,782 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+07 Dez 2018 13:43:47,831 INFO  (DeployAction.java:38)     - Deploying application...
+07 Dez 2018 13:43:51,061 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.wf.generic.subprocess.kanton.zh' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.wf.generic.subprocess.kanton.zh' at 12/7/18 1:43 PM on node(s): 'BPMNode'.
+07 Dez 2018 13:43:51,062 INFO  (LoggingUtil.java:182)     - 07.12.18 13:43 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.example.comtibcowfgenericsubprocesskantonzh.model.bds.1.0.0.20181207134320433' was auto-enabled in node 'BPMNode'
+
+07 Dez 2018 13:43:51,063 INFO  (Processor.java:696)     - Action finished in Admin at 07.12.18 13:43 in 3,231 seconds. Waiting for runtime tasks to be finished.
+07 Dez 2018 13:43:52,794 INFO  (AsyncActionExecutor.java:117)     - .
+07 Dez 2018 13:43:57,769 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+07 Dez 2018 13:43:57,770 INFO  (Processor.java:743)     - Action finished at 07.12.18 13:43 in 9,939 seconds
