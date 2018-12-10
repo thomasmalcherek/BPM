@@ -1158,6 +1158,26 @@
     <xpdl2:WorkflowProcess Id="_1ancsPxcEeiF0cp9x5MzdA" xpdExt:DisplayName="com.igs.fak.001_close_new_case" Name="comigsfak001_close_new_case">
       <xpdl2:ProcessHeader/>
       <xpdl2:Activities>
+        <xpdl2:Activity Id="_IRz0vPowEeiF0cp9x5MzdA" Name="KlammernundneuenFallabschliessen" IsATransaction="false" xpdExt:DisplayName="Klammern und neuen Fall abschliessen" xpdExt:RequireNewTransaction="false">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService Implementation="Unspecified">
+                <xpdl2:MessageIn Id="_IRz0vfowEeiF0cp9x5MzdA"/>
+                <xpdl2:MessageOut Id="_IRz0vvowEeiF0cp9x5MzdA"/>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="74.0" LaneId="_1ancsvxcEeiF0cp9x5MzdA" Width="106.0">
+              <xpdl2:Coordinates XCoordinate="181.0" YCoordinate="57.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
         <xpdl2:Activity Id="_1aoq0PxcEeiF0cp9x5MzdA" Name="StartEvent" xpdExt:Visibility="Private" xpdExt:DisplayName="Start Event">
           <xpdl2:Event>
             <xpdl2:StartEvent Trigger="None"/>
@@ -1180,7 +1200,12 @@
         </xpdl2:Activity>
       </xpdl2:Activities>
       <xpdl2:Transitions>
-        <xpdl2:Transition Id="_1aoq0fxcEeiF0cp9x5MzdA" Name="" From="_1aoq0PxcEeiF0cp9x5MzdA" To="_1aoq0vxcEeiF0cp9x5MzdA">
+        <xpdl2:Transition Id="_1aoq0fxcEeiF0cp9x5MzdA" Name="" From="_1aoq0PxcEeiF0cp9x5MzdA" To="_IRz0vPowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_1apR4PxcEeiF0cp9x5MzdA" Name="" From="_IRz0vPowEeiF0cp9x5MzdA" To="_1aoq0vxcEeiF0cp9x5MzdA">
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
           </xpdl2:ConnectorGraphicsInfos>
@@ -1193,6 +1218,16 @@
     <xpdl2:WorkflowProcess Id="_EzyEcPxwEeiF0cp9x5MzdA" xpdExt:DisplayName="com.igs.fak.001_wpel_pruefen" Name="comigsfak001_wpel_pruefen">
       <xpdl2:ProcessHeader/>
       <xpdl2:Activities>
+        <xpdl2:Activity Id="_IRz0wPowEeiF0cp9x5MzdA" Name="WPELprfen" IsATransaction="false" xpdExt:Visibility="Private" xpdExt:DisplayName="WP - EL prüfen" xpdExt:RequireNewTransaction="false">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true" xpdExt:StartStrategy="StartImmediately"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_EzyrgPxwEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="192.0" YCoordinate="60.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
         <xpdl2:Activity Id="_EzyrgfxwEeiF0cp9x5MzdA" Name="StartEvent" xpdExt:Visibility="Private" xpdExt:DisplayName="Start Event">
           <xpdl2:Event>
             <xpdl2:StartEvent Trigger="None"/>
@@ -1215,7 +1250,12 @@
         </xpdl2:Activity>
       </xpdl2:Activities>
       <xpdl2:Transitions>
-        <xpdl2:Transition Id="_EzyrgvxwEeiF0cp9x5MzdA" Name="" From="_EzyrgfxwEeiF0cp9x5MzdA" To="_Ezyrg_xwEeiF0cp9x5MzdA">
+        <xpdl2:Transition Id="_EzyrgvxwEeiF0cp9x5MzdA" Name="" From="_EzyrgfxwEeiF0cp9x5MzdA" To="_IRz0wPowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_EzyrhPxwEeiF0cp9x5MzdA" Name="" From="_IRz0wPowEeiF0cp9x5MzdA" To="_Ezyrg_xwEeiF0cp9x5MzdA">
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
           </xpdl2:ConnectorGraphicsInfos>
@@ -1471,6 +1511,16 @@
     <xpdl2:WorkflowProcess Id="_AWf6oPyNEeiF0cp9x5MzdA" xpdExt:DisplayName="com.igs.fak.001_wp_fak_erfassung_bezueger_pruefen" Name="comigsfak001_wp_fak_erfassung_bezueger_pruefen">
       <xpdl2:ProcessHeader/>
       <xpdl2:Activities>
+        <xpdl2:Activity Id="_IRz0wvowEeiF0cp9x5MzdA" Name="WPFAKErfassungBezgerprfen" xpdExt:Visibility="Private" xpdExt:DisplayName="WP - FAK Erfassung Bezüger prüfen">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true" xpdExt:StartStrategy="StartImmediately"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_AWf6ovyNEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="192.0" YCoordinate="60.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
         <xpdl2:Activity Id="_AWghsPyNEeiF0cp9x5MzdA" Name="StartEvent" xpdExt:Visibility="Private" xpdExt:DisplayName="Start Event">
           <xpdl2:Event>
             <xpdl2:StartEvent Trigger="None"/>
@@ -1493,7 +1543,12 @@
         </xpdl2:Activity>
       </xpdl2:Activities>
       <xpdl2:Transitions>
-        <xpdl2:Transition Id="_AWghsfyNEeiF0cp9x5MzdA" Name="" From="_AWghsPyNEeiF0cp9x5MzdA" To="_AWghsvyNEeiF0cp9x5MzdA">
+        <xpdl2:Transition Id="_AWghsfyNEeiF0cp9x5MzdA" Name="" From="_AWghsPyNEeiF0cp9x5MzdA" To="_IRz0wvowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_AWhIwPyNEeiF0cp9x5MzdA" Name="" From="_IRz0wvowEeiF0cp9x5MzdA" To="_AWghsvyNEeiF0cp9x5MzdA">
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
           </xpdl2:ConnectorGraphicsInfos>
@@ -1875,6 +1930,16 @@
     <xpdl2:WorkflowProcess Id="_Wy_HEPyTEeiF0cp9x5MzdA" xpdExt:DisplayName="com.igs.fak.001_wp_fak_dokumente_erstellen" Name="comigsfak001_wp_fak_dokumente_erstellen">
       <xpdl2:ProcessHeader/>
       <xpdl2:Activities>
+        <xpdl2:Activity Id="_IRz0xPowEeiF0cp9x5MzdA" Name="WPFAKDokumenterstellen" xpdExt:Visibility="Private" xpdExt:DisplayName="WP - FAK Dokument erstellen">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true" xpdExt:StartStrategy="StartImmediately"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_Wy_HEvyTEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="192.0" YCoordinate="60.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
         <xpdl2:Activity Id="_Wy_uIPyTEeiF0cp9x5MzdA" Name="StartEvent" xpdExt:Visibility="Private" xpdExt:DisplayName="Start Event">
           <xpdl2:Event>
             <xpdl2:StartEvent Trigger="None"/>
@@ -1897,7 +1962,12 @@
         </xpdl2:Activity>
       </xpdl2:Activities>
       <xpdl2:Transitions>
-        <xpdl2:Transition Id="_Wy_uIfyTEeiF0cp9x5MzdA" Name="" From="_Wy_uIPyTEeiF0cp9x5MzdA" To="_Wy_uIvyTEeiF0cp9x5MzdA">
+        <xpdl2:Transition Id="_Wy_uIfyTEeiF0cp9x5MzdA" Name="" From="_Wy_uIPyTEeiF0cp9x5MzdA" To="_IRz0xPowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_WzAVMPyTEeiF0cp9x5MzdA" Name="" From="_IRz0xPowEeiF0cp9x5MzdA" To="_Wy_uIvyTEeiF0cp9x5MzdA">
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
           </xpdl2:ConnectorGraphicsInfos>
@@ -1910,6 +1980,17 @@
     <xpdl2:WorkflowProcess Id="_jycnIPyTEeiF0cp9x5MzdA" xpdExt:DisplayName="com.igs.fak.001_wp_fak_bezueger_aktivieren" Name="comigsfak001_wp_fak_bezueger_aktivieren">
       <xpdl2:ProcessHeader/>
       <xpdl2:Activities>
+        <xpdl2:Activity Id="_IRz0w_owEeiF0cp9x5MzdA" Name="WPFAKBezgeraktivierenverfgen" xpdExt:Visibility="Private" xpdExt:DisplayName="WP - FAK Bezüger aktivieren / verfügen">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true" xpdExt:StartStrategy="StartImmediately"/>
+          </xpdl2:Implementation>
+          <xpdl2:Priority></xpdl2:Priority>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_jycnIvyTEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="192.0" YCoordinate="60.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
         <xpdl2:Activity Id="_jyd1QPyTEeiF0cp9x5MzdA" Name="StartEvent" xpdExt:Visibility="Private" xpdExt:DisplayName="Start Event">
           <xpdl2:Event>
             <xpdl2:StartEvent Trigger="None"/>
@@ -1932,7 +2013,12 @@
         </xpdl2:Activity>
       </xpdl2:Activities>
       <xpdl2:Transitions>
-        <xpdl2:Transition Id="_jyd1QfyTEeiF0cp9x5MzdA" Name="" From="_jyd1QPyTEeiF0cp9x5MzdA" To="_jyd1QvyTEeiF0cp9x5MzdA">
+        <xpdl2:Transition Id="_jyd1QfyTEeiF0cp9x5MzdA" Name="" From="_jyd1QPyTEeiF0cp9x5MzdA" To="_IRz0w_owEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_jyecUPyTEeiF0cp9x5MzdA" Name="" From="_IRz0w_owEeiF0cp9x5MzdA" To="_jyd1QvyTEeiF0cp9x5MzdA">
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
           </xpdl2:ConnectorGraphicsInfos>
@@ -1980,6 +2066,16 @@
     <xpdl2:WorkflowProcess Id="_6ITO0PyTEeiF0cp9x5MzdA" xpdExt:DisplayName="com.igs.fak.001_wp_pv_daten_administrieren" Name="comigsfak001_wp_pv_daten_administrieren">
       <xpdl2:ProcessHeader/>
       <xpdl2:Activities>
+        <xpdl2:Activity Id="_IRz0xvowEeiF0cp9x5MzdA" Name="WPPVDatenadministrieren" xpdExt:Visibility="Private" xpdExt:DisplayName="WP - PV Daten administrieren">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true" xpdExt:StartStrategy="StartImmediately"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_6IT14PyTEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="192.0" YCoordinate="60.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
         <xpdl2:Activity Id="_6IVrEPyTEeiF0cp9x5MzdA" Name="StartEvent" xpdExt:Visibility="Private" xpdExt:DisplayName="Start Event">
           <xpdl2:Event>
             <xpdl2:StartEvent Trigger="None"/>
@@ -2002,7 +2098,12 @@
         </xpdl2:Activity>
       </xpdl2:Activities>
       <xpdl2:Transitions>
-        <xpdl2:Transition Id="_6IVrEfyTEeiF0cp9x5MzdA" Name="" From="_6IVrEPyTEeiF0cp9x5MzdA" To="_6IWSIPyTEeiF0cp9x5MzdA">
+        <xpdl2:Transition Id="_6IVrEfyTEeiF0cp9x5MzdA" Name="" From="_6IVrEPyTEeiF0cp9x5MzdA" To="_IRz0xvowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_6IWSIfyTEeiF0cp9x5MzdA" Name="" From="_IRz0xvowEeiF0cp9x5MzdA" To="_6IWSIPyTEeiF0cp9x5MzdA">
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
           </xpdl2:ConnectorGraphicsInfos>
