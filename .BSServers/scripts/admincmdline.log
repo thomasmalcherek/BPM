@@ -4036,3 +4036,125 @@ java.lang.Thread.run(Unknown Source)
 07 Dez 2018 13:43:52,794 INFO  (AsyncActionExecutor.java:117)     - .
 07 Dez 2018 13:43:57,769 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
 07 Dez 2018 13:43:57,770 INFO  (Processor.java:743)     - Action finished at 07.12.18 13:43 in 9,939 seconds
+10 Dez 2018 13:08:05,590 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+10 Dez 2018 13:08:07,491 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+10 Dez 2018 13:08:09,298 INFO  (AddAction.java:54)     - Uploading DAA...
+10 Dez 2018 13:08:09,306 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test\.bpm\com.tibco.poc.test.daa
+10 Dez 2018 13:08:13,432 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.tibco.poc.test' (version: '1.0.0.20181210125621156') to the Administrator Staging Area
+10 Dez 2018 13:08:13,434 INFO  (AddAction.java:161)     - Successfully added Feature 'com.tibco.poc.test.model.bds' (version: '1.0.0.20181210125621156') to the Administrator Staging Area
+10 Dez 2018 13:08:13,483 INFO  (Processor.java:675)     - Action finished at 10.12.18 13:08 in 4,151 seconds
+10 Dez 2018 13:08:13,546 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+10 Dez 2018 13:08:14,696 INFO  (UpgradeAction.java:31)     - Upgrading application...
+10 Dez 2018 13:08:14,697 INFO  (AddAction.java:54)     - Uploading DAA...
+10 Dez 2018 13:08:14,697 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test\.bpm\com.tibco.poc.test.daa
+10 Dez 2018 13:08:16,031 WARN  (AddAction.java:151)     - Application Template 'com.tibco.poc.test' (version: '1.0.0.20181210125621156') was ignored and not added to the Administrator Staging Area, because it already exists.
+10 Dez 2018 13:08:16,032 WARN  (AddAction.java:198)     - Feature 'com.tibco.poc.test.model.bds' (version: '1.0.0.20181210125621156') was ignored and not added to the Administrator Staging Area, because it already exists.
+10 Dez 2018 13:08:28,573 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.poc.test': Successfully upgraded application 'com.tibco.poc.test' to application template version 1.0.0.20181210125621156
+10 Dez 2018 13:08:28,575 INFO  (LoggingUtil.java:182)     - 10.12.18 13:08 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181205160320064' to version: '1.0.0.20181210125621156'.
+
+10 Dez 2018 13:08:28,575 INFO  (LoggingUtil.java:182)     - 10.12.18 13:08 - 	  detail = Component 'comtibcopoctestProcessFlow' upgraded from version '1.0.0.20181205160320064' to version: '1.0.0.20181210125621156'.
+
+10 Dez 2018 13:08:28,575 INFO  (LoggingUtil.java:182)     - 10.12.18 13:08 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181205160320064' to version: '1.0.0.20181210125621156'.
+
+10 Dez 2018 13:08:28,575 INFO  (LoggingUtil.java:182)     - 10.12.18 13:08 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comtibcopoctestPageFlow' (version: 1.0.0.20181210125621156) added.
+
+10 Dez 2018 13:08:28,577 INFO  (LoggingUtil.java:182)     - 10.12.18 13:08 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181205160320064' to version: '1.0.0.20181210125621156'.
+
+10 Dez 2018 13:08:28,577 INFO  (LoggingUtil.java:182)     - 10.12.18 13:08 - 	  detail = TIBCO-AMX-ADMIN-012416: Binding 'SOAPReference_Binding1' on the application reference 'SendDataToBW1' updated.
+
+10 Dez 2018 13:08:28,578 INFO  (LoggingUtil.java:182)     - 10.12.18 13:08 - 	  detail = TIBCO-AMX-ADMIN-012422: Binding 'SubProcess_RecieveDataFromExtern_EP' on application service 'DataToBW' updated.
+
+10 Dez 2018 13:08:28,578 INFO  (LoggingUtil.java:182)     - 10.12.18 13:08 - 	  detail = TIBCO-AMX-ADMIN-012422: Binding 'DataToBWStartEvent_EP' on application service 'DataToBWStartEvent' updated.
+
+10 Dez 2018 13:08:28,579 INFO  (Processor.java:675)     - Action finished at 10.12.18 13:08 in 13,883 seconds
+10 Dez 2018 13:08:28,603 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+10 Dez 2018 13:08:31,658 INFO  (AMXAdminTask.java:289)     - Processing 5 objects
+10 Dez 2018 13:08:32,698 INFO  (EditAction.java:27)     - Editing properties..
+10 Dez 2018 13:08:33,004 INFO  (Processor.java:751)     - Action finished at 10.12.18 13:08 in 0,306 seconds
+10 Dez 2018 13:08:33,401 INFO  (EditAction.java:27)     - Editing properties..
+10 Dez 2018 13:08:33,556 INFO  (Processor.java:751)     - Action finished at 10.12.18 13:08 in 0,155 seconds
+10 Dez 2018 13:08:34,351 INFO  (EditAction.java:27)     - Editing properties..
+10 Dez 2018 13:08:34,544 INFO  (Processor.java:751)     - Action finished at 10.12.18 13:08 in 0,192 seconds
+10 Dez 2018 13:08:34,566 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+10 Dez 2018 13:08:34,645 INFO  (DeployAction.java:38)     - Deploying application...
+10 Dez 2018 13:08:42,452 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.poc.test' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.poc.test' at 12/10/18 1:08 PM on node(s): 'BPMNode'.
+10 Dez 2018 13:08:42,453 INFO  (LoggingUtil.java:182)     - 10.12.18 13:08 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.tibco.poc.test.model.bds.1.0.0.20181210125621156' was auto-enabled in node 'BPMNode'
+
+10 Dez 2018 13:08:42,454 INFO  (Processor.java:696)     - Action finished in Admin at 10.12.18 13:08 in 7,809 seconds. Waiting for runtime tasks to be finished.
+10 Dez 2018 13:08:44,755 INFO  (AsyncActionExecutor.java:117)     - .
+10 Dez 2018 13:08:50,382 INFO  (AsyncActionExecutor.java:117)     - .
+10 Dez 2018 13:08:57,304 INFO  (AsyncActionExecutor.java:117)     - .
+10 Dez 2018 13:09:01,231 INFO  (DeployActionTaskProgressIndicator.java:73)     - The following tasks related to removal of earlier versions of the application are pending :
+10 Dez 2018 13:09:01,231 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'WorkPresentation' pending on node 'BPMNode' (waiting for runtime to complete this action)
+10 Dez 2018 13:09:01,232 INFO  (DeployActionTaskProgressIndicator.java:78)     - Prepare for undeploy component 'OrganizationModel' pending on node 'BPMNode' (waiting for runtime to complete this action)
+10 Dez 2018 13:09:01,232 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'OrganizationModel' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'OrganizationModel')
+10 Dez 2018 13:09:01,232 INFO  (DeployActionTaskProgressIndicator.java:78)     - Unconfigure admin component 'WorkPresentation' pending on  (waiting for following dependencies to complete: Prepare for undeploy component 'WorkPresentation')
+10 Dez 2018 13:09:01,232 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy application 'com.tibco.poc.test' pending on node 'BPMNode' (waiting for following dependencies to complete: Prepare for undeploy component 'WorkPresentation', Unconfigure admin component 'WorkPresentation', Prepare for undeploy component 'OrganizationModel', Unconfigure admin component 'OrganizationModel')
+10 Dez 2018 13:09:01,232 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'BRM' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.poc.test')
+10 Dez 2018 13:09:01,233 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'WorkPresentation' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.poc.test')
+10 Dez 2018 13:09:01,233 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'comtibcopoctestProcessFlow' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.poc.test')
+10 Dez 2018 13:09:01,233 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy component 'OrganizationModel' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.poc.test')
+10 Dez 2018 13:09:01,233 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy endpoint 'urn:amx:BPMEnvironment/com.tibco.poc.test/comtibcopoctestProcessFlow_1.0.0.20181205160320064_outbound_reference_SendDataToBW_SOAPReference_Binding1' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.poc.test')
+10 Dez 2018 13:09:01,233 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy endpoint 'urn:amx:BPMEnvironment/com.tibco.poc.test/comtibcopoctestProcessFlow_1.0.0.20181205160320064_inbound_service_DataToBW/DataToBW_SubProcess_RecieveDataFromExtern_EP_proxy' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.poc.test')
+10 Dez 2018 13:09:01,234 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy endpoint 'urn:amx:BPMEnvironment/com.tibco.poc.test/comtibcopoctestProcessFlow_1.0.0.20181205160320064_outbound_reference_SendDataToBW_SOAPReference_Binding1_proxy' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.poc.test')
+10 Dez 2018 13:09:01,235 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy endpoint 'urn:amx:BPMEnvironment/com.tibco.poc.test/comtibcopoctestProcessFlow_1.0.0.20181205160320064_inbound_service_DataToBWStartEvent/DataToBWStartEvent_DataToBWStartEvent_EP_proxy' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.poc.test')
+10 Dez 2018 13:09:01,240 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy endpoint 'urn:amx:BPMEnvironment/com.tibco.poc.test/comtibcopoctestProcessFlow_1.0.0.20181205160320064_inbound_service_SendDataToBW_SOAPReference_Binding1_proxy' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.poc.test')
+10 Dez 2018 13:09:01,240 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy endpoint 'urn:amx:BPMEnvironment/com.tibco.poc.test/comtibcopoctestProcessFlow_1.0.0.20181205160320064_inbound_service_DataToBWStartEvent/DataToBWStartEvent_Virtualization' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.poc.test')
+10 Dez 2018 13:09:01,240 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy endpoint 'urn:amx:BPMEnvironment/com.tibco.poc.test/comtibcopoctestProcessFlow_1.0.0.20181205160320064_inbound_service_DataToBW/DataToBW_Virtualization' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy application 'com.tibco.poc.test')
+10 Dez 2018 13:09:01,241 INFO  (DeployActionTaskProgressIndicator.java:78)     - Cleanup Features node 'BPMNode' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy component 'WorkPresentation', Undeploy component 'BRM', Undeploy component 'comtibcopoctestProcessFlow')
+10 Dez 2018 13:09:01,241 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy endpoint 'urn:amx:BPMEnvironment/com.tibco.poc.test/comtibcopoctestProcessFlow_1.0.0.20181205160320064_inbound_service_DataToBWStartEvent/DataToBWStartEvent_DataToBWStartEvent_EP' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy component 'comtibcopoctestProcessFlow')
+10 Dez 2018 13:09:01,242 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy endpoint 'urn:amx:BPMEnvironment/com.tibco.poc.test/comtibcopoctestProcessFlow_1.0.0.20181205160320064_outbound_reference_DataToBWStartEvent/DataToBWStartEvent_DataToBWStartEvent_EP_proxy' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy binding 'DataToBWStartEvent_EP')
+10 Dez 2018 13:09:01,242 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy endpoint 'urn:amx:BPMEnvironment/com.tibco.poc.test/comtibcopoctestProcessFlow_1.0.0.20181205160320064_inbound_service_DataToBW/DataToBW_SubProcess_RecieveDataFromExtern_EP' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy component 'comtibcopoctestProcessFlow')
+10 Dez 2018 13:09:01,242 INFO  (DeployActionTaskProgressIndicator.java:78)     - Undeploy endpoint 'urn:amx:BPMEnvironment/com.tibco.poc.test/comtibcopoctestProcessFlow_1.0.0.20181205160320064_outbound_reference_DataToBW/DataToBW_SubProcess_RecieveDataFromExtern_EP_proxy' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy binding 'SubProcess_RecieveDataFromExtern_EP')
+10 Dez 2018 13:09:01,243 INFO  (DeployActionTaskProgressIndicator.java:78)     - Uninstall application 'com.tibco.poc.test' pending on node 'BPMNode' (waiting for following dependencies to complete: Undeploy component 'BRM', Undeploy component 'WorkPresentation', Undeploy component 'comtibcopoctestProcessFlow', Undeploy component 'OrganizationModel', Undeploy binding 'SOAPReference_Binding1', Undeploy binding 'SubProcess_RecieveDataFromExtern_EP', Undeploy binding 'SOAPReference_Binding1', Undeploy binding 'DataToBWStartEvent_EP', Undeploy binding 'SOAPReference_Binding1', Undeploy binding 'Virtualization', Undeploy binding 'Virtualization', Undeploy binding 'DataToBWStartEvent_EP', Undeploy binding 'DataToBWStartEvent_EP', Undeploy binding 'SubProcess_RecieveDataFromExtern_EP', Undeploy binding 'SubProcess_RecieveDataFromExtern_EP')
+10 Dez 2018 13:09:01,253 INFO  (Processor.java:736)     - Action finished in runtime at 10.12.18 13:09 in 26,608 seconds
+10 Dez 2018 13:13:32,216 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+10 Dez 2018 13:13:33,059 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+10 Dez 2018 13:13:34,232 INFO  (AddAction.java:54)     - Uploading DAA...
+10 Dez 2018 13:13:34,236 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test\.bpm\com.tibco.poc.test.daa
+10 Dez 2018 13:13:36,070 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.tibco.poc.test' (version: '1.0.0.20181210131237349') to the Administrator Staging Area
+10 Dez 2018 13:13:36,071 INFO  (AddAction.java:161)     - Successfully added Feature 'com.tibco.poc.test.model.bds' (version: '1.0.0.20181210131237349') to the Administrator Staging Area
+10 Dez 2018 13:13:36,078 INFO  (Processor.java:675)     - Action finished at 10.12.18 13:13 in 1,844 seconds
+10 Dez 2018 13:13:36,126 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+10 Dez 2018 13:13:37,362 INFO  (UpgradeAction.java:31)     - Upgrading application...
+10 Dez 2018 13:13:37,363 INFO  (AddAction.java:54)     - Uploading DAA...
+10 Dez 2018 13:13:37,364 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test\.bpm\com.tibco.poc.test.daa
+10 Dez 2018 13:13:37,978 WARN  (AddAction.java:151)     - Application Template 'com.tibco.poc.test' (version: '1.0.0.20181210131237349') was ignored and not added to the Administrator Staging Area, because it already exists.
+10 Dez 2018 13:13:37,980 WARN  (AddAction.java:198)     - Feature 'com.tibco.poc.test.model.bds' (version: '1.0.0.20181210131237349') was ignored and not added to the Administrator Staging Area, because it already exists.
+10 Dez 2018 13:13:46,039 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.poc.test': Successfully upgraded application 'com.tibco.poc.test' to application template version 1.0.0.20181210131237349
+10 Dez 2018 13:13:46,048 INFO  (LoggingUtil.java:182)     - 10.12.18 13:13 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181210125621156' to version: '1.0.0.20181210131237349'.
+
+10 Dez 2018 13:13:46,048 INFO  (LoggingUtil.java:182)     - 10.12.18 13:13 - 	  detail = Component 'comtibcopoctestProcessFlow' upgraded from version '1.0.0.20181210125621156' to version: '1.0.0.20181210131237349'.
+
+10 Dez 2018 13:13:46,050 INFO  (LoggingUtil.java:182)     - 10.12.18 13:13 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181210125621156' to version: '1.0.0.20181210131237349'.
+
+10 Dez 2018 13:13:46,050 INFO  (LoggingUtil.java:182)     - 10.12.18 13:13 - 	  detail = Component 'comtibcopoctestPageFlow' upgraded from version '1.0.0.20181210125621156' to version: '1.0.0.20181210131237349'.
+
+10 Dez 2018 13:13:46,050 INFO  (LoggingUtil.java:182)     - 10.12.18 13:13 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181210125621156' to version: '1.0.0.20181210131237349'.
+
+10 Dez 2018 13:13:46,050 INFO  (LoggingUtil.java:182)     - 10.12.18 13:13 - 	  detail = TIBCO-AMX-ADMIN-012416: Binding 'SOAPReference_Binding1' on the application reference 'SendDataToBW1' updated.
+
+10 Dez 2018 13:13:46,056 INFO  (LoggingUtil.java:182)     - 10.12.18 13:13 - 	  detail = TIBCO-AMX-ADMIN-012422: Binding 'SubProcess_RecieveDataFromExtern_EP' on application service 'DataToBW' updated.
+
+10 Dez 2018 13:13:46,058 INFO  (LoggingUtil.java:182)     - 10.12.18 13:13 - 	  detail = TIBCO-AMX-ADMIN-012422: Binding 'DataToBWStartEvent_EP' on application service 'DataToBWStartEvent' updated.
+
+10 Dez 2018 13:13:46,061 INFO  (Processor.java:675)     - Action finished at 10.12.18 13:13 in 8,699 seconds
+10 Dez 2018 13:13:46,112 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+10 Dez 2018 13:13:49,330 INFO  (AMXAdminTask.java:289)     - Processing 5 objects
+10 Dez 2018 13:13:50,069 INFO  (EditAction.java:27)     - Editing properties..
+10 Dez 2018 13:13:50,324 INFO  (Processor.java:751)     - Action finished at 10.12.18 13:13 in 0,256 seconds
+10 Dez 2018 13:13:50,663 INFO  (EditAction.java:27)     - Editing properties..
+10 Dez 2018 13:13:50,797 INFO  (Processor.java:751)     - Action finished at 10.12.18 13:13 in 0,134 seconds
+10 Dez 2018 13:13:51,459 INFO  (EditAction.java:27)     - Editing properties..
+10 Dez 2018 13:13:51,534 INFO  (Processor.java:751)     - Action finished at 10.12.18 13:13 in 0,075 seconds
+10 Dez 2018 13:13:51,552 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+10 Dez 2018 13:13:51,617 INFO  (DeployAction.java:38)     - Deploying application...
+10 Dez 2018 13:13:57,633 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.poc.test' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.poc.test' at 12/10/18 1:13 PM on node(s): 'BPMNode'.
+10 Dez 2018 13:13:57,634 INFO  (LoggingUtil.java:182)     - 10.12.18 13:13 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.tibco.poc.test.model.bds.1.0.0.20181210131237349' was auto-enabled in node 'BPMNode'
+
+10 Dez 2018 13:13:57,635 INFO  (Processor.java:696)     - Action finished in Admin at 10.12.18 13:13 in 6,018 seconds. Waiting for runtime tasks to be finished.
+10 Dez 2018 13:14:03,178 INFO  (AsyncActionExecutor.java:117)     - .
+10 Dez 2018 13:14:08,185 INFO  (AsyncActionExecutor.java:117)     - .
+10 Dez 2018 13:14:14,465 INFO  (AsyncActionExecutor.java:117)     - .
+10 Dez 2018 13:14:15,778 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+10 Dez 2018 13:14:15,778 INFO  (Processor.java:743)     - Action finished at 10.12.18 13:14 in 24,161 seconds

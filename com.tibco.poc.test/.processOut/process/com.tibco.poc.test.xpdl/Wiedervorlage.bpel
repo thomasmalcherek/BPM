@@ -8,8 +8,8 @@
     <tibex:VariableDescriptor type="PersistentBatching">
         <task name="WiedervorlagePrfen">
             <startingVariables>
-                <variable>Wiedervorlage_Datum</variable>
                 <variable>Wiedervorlage</variable>
+                <variable>Wiedervorlage_Datum</variable>
             </startingVariables>
         </task>
     </tibex:VariableDescriptor>
@@ -34,7 +34,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_RU2jMPidEeiLOcx5GuQ9ow">
+    <bpws:flow name="_BX_flow_4PpcMPx0EeiF0cp9x5MzdA">
         <bpws:links>
             <bpws:link name="_BX_normalFlow to EndEvent" tibex:xpdlId="_64ocoPSdEeiKGqQzTYL1wQ"/>
             <bpws:link
@@ -52,9 +52,9 @@
                     <bpws:source linkName="StartEvent to EingabeFrist"/>
                 </bpws:sources>
                 <tibex:parameters>
+                    <parameterDescription mandatory="yes" mode="In" name="Wiedervorlage"/>
                     <parameterDescription mandatory="yes" mode="In" name="Wiedervorlage_Datum"/>
                     <parameterDescription mandatory="yes" mode="InOut" name="Task"/>
-                    <parameterDescription mandatory="yes" mode="In" name="Wiedervorlage"/>
                 </tibex:parameters>
                 <tibex:eventSource>
                     <tibex:startEvent eventType="Default"/>

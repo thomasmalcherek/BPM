@@ -2422,3 +2422,172 @@ HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.e
 HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
 	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
 	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@20068de3),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@20068de3)),sourcePriority=16640)
+
+!ENTRY org.eclipse.bpel.validator 1 0 2018-12-07 16:00:11.636
+!MESSAGE Validator Startup 235ms
+
+!ENTRY org.eclipse.ui 4 0 2018-12-07 17:26:59.813
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.ui.views.properties.tabbed.TabbedPropertySheetPage.validateRegistry(TabbedPropertySheetPage.java:918)
+	at org.eclipse.ui.views.properties.tabbed.TabbedPropertySheetPage.setInput(TabbedPropertySheetPage.java:717)
+	at org.eclipse.ui.views.properties.tabbed.TabbedPropertySheetPage.selectionChanged(TabbedPropertySheetPage.java:555)
+	at com.tibco.xpd.ui.properties.AbstractXpdSection.refreshTabs(AbstractXpdSection.java:838)
+	at com.tibco.xpd.processeditor.xpdl2.properties.task.TaskImplementationDetailsSection.access$0(TaskImplementationDetailsSection.java:1)
+	at com.tibco.xpd.processeditor.xpdl2.properties.task.TaskImplementationDetailsSection$1.run(TaskImplementationDetailsSection.java:584)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 22 more
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 12:46:38.762
+!MESSAGE Found 2EnvDetailsDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 12:46:38.774
+!MESSAGE Scanning nodes in env SystemEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 12:46:38.781
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 12:46:38.788
+!MESSAGE Scanning nodes in env BPMEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 12:46:38.795
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.componenttype 2 0 2018-12-10 12:56:25.801
+!MESSAGE Reference to PortType {http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw}SubProcess_RecieveDataFromExtern from outside ResourceSet
+
+!ENTRY com.tibco.amf.tools.componenttype 2 0 2018-12-10 12:56:25.807
+!MESSAGE Reference to PortType {http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw}DataToBWStartEvent from outside ResourceSet
+
+!ENTRY com.tibco.amf.tools.componenttype 2 0 2018-12-10 12:56:25.813
+!MESSAGE Reference to PortType {http://com.tibco.poc.test.bw.saveDataCase}saveDataCase from outside ResourceSet
+
+!ENTRY com.tibco.amf.tools.componenttype 2 0 2018-12-10 12:56:25.821
+!MESSAGE Reference to PortType {http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw}SubProcess_RecieveDataFromExtern from outside ResourceSet
+
+!ENTRY com.tibco.amf.tools.componenttype 2 0 2018-12-10 12:56:25.832
+!MESSAGE Reference to PortType {http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw}DataToBWStartEvent from outside ResourceSet
+
+!ENTRY com.tibco.amf.tools.componenttype 2 0 2018-12-10 12:56:25.837
+!MESSAGE Reference to PortType {http://com.tibco.poc.test.bw.saveDataCase}saveDataCase from outside ResourceSet
+
+!ENTRY org.eclipse.emf.validation 2 70 2018-12-10 12:56:32.754
+!MESSAGE Constraint "com.tibco.amf.binding.common.design.ui.com.tibco.amx.bt.jmsbt.design.reference.bothPoliciesAddedForSOAP" could not find target EMF type "SOAPBinding."
+
+!ENTRY org.eclipse.emf.validation 2 70 2018-12-10 12:56:32.765
+!MESSAGE Constraint "com.tibco.amf.binding.common.design.ui.com.tibco.amx.bt.jmsbt.design.reference.jmsALOwithVirtualizationOrSecureVirtualizatioPoliciesAddedForSOAP" could not find target EMF type "SOAPBinding."
+
+!ENTRY org.eclipse.emf.validation 2 70 2018-12-10 12:56:32.775
+!MESSAGE Constraint "com.tibco.amf.binding.common.design.ui.com.tibco.amx.bt.jmsbt.design.reference.txnotapplicabletosoaphttp" could not find target EMF type "SOAPBinding."
+
+!ENTRY org.eclipse.emf.validation 2 70 2018-12-10 12:56:32.779
+!MESSAGE Constraint "com.tibco.amf.binding.common.design.ui.com.tibco.amx.bt.jmsbt.design.reference.alonotapplicabletosoaphttp" could not find target EMF type "SOAPBinding."
+
+!ENTRY org.eclipse.emf.validation 2 70 2018-12-10 12:56:32.786
+!MESSAGE Constraint "com.tibco.amf.binding.common.design.ui.com.tibco.amx.bt.jmsbt.design.reference.bothPoliciesAddedJMSALOForSOAP" could not find target EMF type "SOAPBinding."
+
+!ENTRY org.eclipse.emf.validation 2 70 2018-12-10 12:56:32.797
+!MESSAGE Constraint "com.tibco.amf.binding.soap.ui.WSRMNeedsWSAddressingConstraint" could not find target EMF type "org.eclipse.emf.ecore.EObject."
+
+!ENTRY org.eclipse.emf.validation 2 70 2018-12-10 12:56:32.806
+!MESSAGE Constraint "com.tibco.amf.binding.soap.ui.WSRMNeedsWSAddressingNonAnonymousConstraint" could not find target EMF type "org.eclipse.emf.ecore.EObject."
+
+!ENTRY org.eclipse.emf.validation 2 70 2018-12-10 12:56:32.822
+!MESSAGE Constraint "com.tibco.amf.design.sr.core.internal.validation.constraints.SharedResourceNotInWorkspace" could not find target EMF type "Property."
+
+!ENTRY org.eclipse.emf.validation 2 70 2018-12-10 12:56:32.836
+!MESSAGE Constraint "com.tibco.amf.sca.model.validation.conversational.policy.constraint" could not find target EMF type "org.eclipse.emf.ecore.EObject."
+
+!ENTRY org.eclipse.emf.validation 2 70 2018-12-10 12:56:33.778
+!MESSAGE Constraint "com.tibco.trinity.ssl.editor.invalid.remote.host.constraint" could not find target EMF type "SSLClientConfiguration."
+
+!ENTRY org.eclipse.emf.validation 2 70 2018-12-10 12:56:34.497
+!MESSAGE Constraint "com.tibco.amf.design.implementationtype.webapp.featureNotConfiguredConstraint" could not find target EMF type "Component."
+
+!ENTRY com.tibco.amf.tools.packager 2 0 2018-12-10 12:56:34.514
+!MESSAGE Validation of /com.tibco.poc.test/.bpm/com.tibco.poc.test.composite took 1.772ms.
+
+!ENTRY com.tibco.amf.tools.composite.launch.utils 1 0 2018-12-10 13:07:45.187
+!MESSAGE Executing: java -Dant.home="C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030" -Dant.library.dir="C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib" -Ddebug.remote.build.listener=true -Dcom.tibco.remote.build.listener.port="50752"  -cp "C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib\ant-launcher.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib\ant.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.tpcl.com.sun.jmx.remote.optional.eclipse_1.0.200.004\jmxremote_optional.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.amf.tools.admincligen.support_1.2.0.004\support.jar" org.apache.tools.ant.launch.Launcher -f C:\Users\admin\Documents\GitHub\BPM\.BSServers\scripts\com.tibco.poc.test.deployment-build.xml -listener com.tibco.amf.tools.admincligen.support.jmx.JmxBuildListenerNotifier
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 13:09:06.086
+!MESSAGE Found 2EnvDetailsDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 13:09:06.092
+!MESSAGE Scanning nodes in env SystemEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 13:09:06.103
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 13:09:06.111
+!MESSAGE Scanning nodes in env BPMEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 13:09:06.118
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.xpd.resources 2 0 2018-12-10 13:11:29.751
+!MESSAGE Indexer com.tibco.xpd.analyst.resources.xpdl2.indexing.participantIndexer has taken longer than 500ms (651 ms) for 'L/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl'.
+
+!ENTRY com.tibco.amf.tools.componenttype 2 0 2018-12-10 13:12:39.607
+!MESSAGE Reference to PortType {http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw}SubProcess_RecieveDataFromExtern from outside ResourceSet
+
+!ENTRY com.tibco.amf.tools.componenttype 2 0 2018-12-10 13:12:39.613
+!MESSAGE Reference to PortType {http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw}DataToBWStartEvent from outside ResourceSet
+
+!ENTRY com.tibco.amf.tools.componenttype 2 0 2018-12-10 13:12:39.619
+!MESSAGE Reference to PortType {http://com.tibco.poc.test.bw.saveDataCase}saveDataCase from outside ResourceSet
+
+!ENTRY com.tibco.amf.tools.componenttype 2 0 2018-12-10 13:12:39.624
+!MESSAGE Reference to PortType {http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw}SubProcess_RecieveDataFromExtern from outside ResourceSet
+
+!ENTRY com.tibco.amf.tools.componenttype 2 0 2018-12-10 13:12:39.630
+!MESSAGE Reference to PortType {http://www.tibco.com/bs3.0/_GFiEUOmlEeiNa-ssr_CQIw}DataToBWStartEvent from outside ResourceSet
+
+!ENTRY com.tibco.amf.tools.componenttype 2 0 2018-12-10 13:12:39.635
+!MESSAGE Reference to PortType {http://com.tibco.poc.test.bw.saveDataCase}saveDataCase from outside ResourceSet
+
+!ENTRY com.tibco.amf.tools.composite.launch.utils 1 0 2018-12-10 13:13:29.226
+!MESSAGE Executing: java -Dant.home="C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030" -Dant.library.dir="C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib" -Ddebug.remote.build.listener=true -Dcom.tibco.remote.build.listener.port="50784"  -cp "C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib\ant-launcher.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\org.apache.ant_1.8.2.v20120109-1030\lib\ant.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.tpcl.com.sun.jmx.remote.optional.eclipse_1.0.200.004\jmxremote_optional.jar;C:\tibco\amx_bpm\eclipse-platform\bundlepool\1.0\org.eclipse.equinox.p2.touchpoint.eclipse\plugins\com.tibco.amf.tools.admincligen.support_1.2.0.004\support.jar" org.apache.tools.ant.launch.Launcher -f C:\Users\admin\Documents\GitHub\BPM\.BSServers\scripts\com.tibco.poc.test.deployment-build.xml -listener com.tibco.amf.tools.admincligen.support.jmx.JmxBuildListenerNotifier
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 13:14:21.123
+!MESSAGE Found 2EnvDetailsDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 13:14:21.132
+!MESSAGE Scanning nodes in env SystemEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 13:14:21.139
+!MESSAGE Found 1NodeDesc
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 13:14:21.145
+!MESSAGE Scanning nodes in env BPMEnvironment
+
+!ENTRY com.tibco.amf.tools.admindata.model 1 0 2018-12-10 13:14:21.150
+!MESSAGE Found 1NodeDesc

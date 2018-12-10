@@ -36,7 +36,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_RO2B0PidEeiLOcx5GuQ9ow">
+    <bpws:flow name="_BX_flow_4MI1MPx0EeiF0cp9x5MzdA">
         <bpws:links>
             <bpws:link name="ServiceTask to EndEvent" tibex:xpdlId="_gUDSQPJOEeif9tfFlBJi7Q"/>
             <bpws:link name="StartEvent to ServiceTask" tibex:xpdlId="_3cPzYOycEeieuqYotrFSPg"/>
@@ -49,8 +49,8 @@
                     <bpws:source linkName="StartEvent to ServiceTask"/>
                 </bpws:sources>
                 <tibex:parameters>
-                    <parameterDescription mode="Out" name="SubProcessMetaData"/>
                     <parameterDescription mandatory="yes" mode="In" name="WfCaseID"/>
+                    <parameterDescription mode="Out" name="SubProcessMetaData"/>
                 </tibex:parameters>
                 <tibex:eventSource>
                     <tibex:startEvent eventType="Default"/>

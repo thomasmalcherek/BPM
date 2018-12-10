@@ -8,14 +8,14 @@
     <tibex:VariableDescriptor type="PersistentBatching">
         <task name="AnzeigeDaten">
             <startingVariables>
-                <variable>Wiedervorlage</variable>
                 <variable>MetaData_GetData</variable>
+                <variable>Wiedervorlage</variable>
             </startingVariables>
         </task>
         <task name="Pruefen">
             <startingVariables>
-                <variable>Wiedervorlage</variable>
                 <variable>MetaData_GetData</variable>
+                <variable>Wiedervorlage</variable>
             </startingVariables>
         </task>
         <task name="AssignTask">
@@ -30,10 +30,10 @@
         </task>
         <task name="Escalation_after_3_minutes">
             <startingVariables>
-                <variable>WF_CASE_ID</variable>
-                <variable>Wiedervorlage</variable>
                 <variable>MetaData_GetData</variable>
+                <variable>WF_CASE_ID</variable>
                 <variable>Task</variable>
+                <variable>Wiedervorlage</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_Process_GetData">
@@ -58,9 +58,9 @@
         </task>
         <task name="_BX_SPInput_Wiedervorlage">
             <startingVariables>
-                <variable>Wiedervorlage</variable>
                 <variable>MetaData_GetData</variable>
                 <variable>Task</variable>
+                <variable>Wiedervorlage</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_CallSubProcess">
@@ -101,7 +101,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_RNglEPidEeiLOcx5GuQ9ow" tibex:sequenceFlow="yes">
+    <bpws:flow name="_BX_flow_4LBa4Px0EeiF0cp9x5MzdA" tibex:sequenceFlow="yes">
         <bpws:links>
             <bpws:link name="AnzeigeDaten to EndEvent2" tibex:xpdlId="_5HWyoPcWEeivmfZ-Q8QDTA"/>
             <bpws:link name="AnzeigeDaten to AssignTask2" tibex:xpdlId="_itYi4fe5EeiebO3a5jKDMA"/>

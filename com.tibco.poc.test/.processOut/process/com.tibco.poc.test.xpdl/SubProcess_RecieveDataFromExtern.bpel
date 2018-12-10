@@ -19,14 +19,14 @@
         </task>
         <task name="setParameterOut_WF_CASE_ID">
             <startingVariables>
-                <variable>ParameterOut_WF_CASE_ID</variable>
                 <variable>ParameterIn_CorrelationID</variable>
+                <variable>ParameterOut_WF_CASE_ID</variable>
             </startingVariables>
         </task>
         <task name="setWF_CASE_ID">
             <startingVariables>
-                <variable>WF_CASE_ID</variable>
                 <variable>ParameterIn_CorrelationID</variable>
+                <variable>WF_CASE_ID</variable>
             </startingVariables>
         </task>
         <task name="Escalation_after_3_minutes">
@@ -75,7 +75,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_RSWBwPidEeiLOcx5GuQ9ow">
+    <bpws:flow name="_BX_flow_4OrL0Px0EeiF0cp9x5MzdA">
         <bpws:links>
             <bpws:link name="Escalation_after_3_minutes to EndEvent" tibex:xpdlId="_3I6hQPI6EeiCsd_Wv-RtYQ"/>
             <bpws:link
@@ -98,9 +98,9 @@
                     <bpws:source linkName="StartEvent to setWF_CASE_ID"/>
                 </bpws:sources>
                 <tibex:parameters>
+                    <parameterDescription mandatory="yes" mode="In" name="ParameterIn_CorrelationID"/>
                     <parameterDescription mode="In" name="SubProcessMetaData"/>
                     <parameterDescription mandatory="yes" mode="Out" name="ParameterOut_WF_CASE_ID"/>
-                    <parameterDescription mandatory="yes" mode="In" name="ParameterIn_CorrelationID"/>
                 </tibex:parameters>
                 <tibex:eventSource>
                     <tibex:startEvent eventType="Default"/>

@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xpdl2:Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:database="http://www.tibco.com/XPD/database1.0.0" xmlns:eaijava="http://www.tibco.com/XPD/EAIJava1.0.0" xmlns:email="http://www.tibco.com/XPD/email1.0.0" xmlns:iProcessExt="http://www.tibco.com/XPD/iProcessExt1.0.0" xmlns:orchestrator="http://www.tibco.com/XPD/orchestrator1.0.0" xmlns:order="http://www.tibco.com/XPD/order1.0.0" xmlns:simulation="http://www.tibco.com/xpd/Simulation1.0.1" xmlns:xpdExt="http://www.tibco.com/XPD/xpdExtension1.0.0" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" xsi:schemaLocation="http://www.wfmc.org/2008/XPDL2.1 http://www.wfmc.org/standards/bpmnxpdl_31.xsd" Id="_r57_wPovEeiF0cp9x5MzdA" xpdExt:DisplayName="com.igs.fak.001" Name="comigsfak001">
+  <xpdl2:PackageHeader xpdExt:Language="de_DE">
+    <xpdl2:XPDLVersion>2.1</xpdl2:XPDLVersion>
+    <xpdl2:Vendor>TIBCO</xpdl2:Vendor>
+    <xpdl2:Created>2018-12-07</xpdl2:Created>
+    <xpdl2:Description></xpdl2:Description>
+    <xpdl2:Documentation></xpdl2:Documentation>
+    <xpdl2:CostUnit>EUR</xpdl2:CostUnit>
+  </xpdl2:PackageHeader>
+  <xpdl2:RedefinableHeader PublicationStatus="UNDER_REVISION">
+    <xpdl2:Author>admin</xpdl2:Author>
+    <xpdl2:Version>1.0.0.qualifier</xpdl2:Version>
+  </xpdl2:RedefinableHeader>
+  <xpdl2:Pools>
+    <xpdl2:Pool Id="_TrqBZfowEeiF0cp9x5MzdA" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_TrgQYPowEeiF0cp9x5MzdA">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_TrqBZvowEeiF0cp9x5MzdA" xpdExt:DisplayName="Lane" Name="Lane">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="314.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+      <xpdl2:NodeGraphicsInfos>
+        <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="223,179,0" IsVisible="true"/>
+      </xpdl2:NodeGraphicsInfos>
+    </xpdl2:Pool>
+    <xpdl2:Pool Id="_IRz1AvowEeiF0cp9x5MzdA" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_IRz0o_owEeiF0cp9x5MzdA">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_IRz1A_owEeiF0cp9x5MzdA" xpdExt:DisplayName="Automat" Name="Automat">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="128,155,183" Height="577.0" IsVisible="true"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+        <xpdl2:Lane Id="_IRz1BPowEeiF0cp9x5MzdA" xpdExt:DisplayName="Sachbearbeiter (SB)" Name="SachbearbeiterSB">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="671.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+        <xpdl2:Lane Id="_IRz1BfowEeiF0cp9x5MzdA" xpdExt:DisplayName="SB Wiedervorlage" Name="SBWiedervorlage">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="128,155,183" Height="316.0" IsVisible="true"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+      <xpdl2:NodeGraphicsInfos>
+        <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="223,179,0" IsVisible="true"/>
+      </xpdl2:NodeGraphicsInfos>
+    </xpdl2:Pool>
+  </xpdl2:Pools>
+  <xpdl2:WorkflowProcesses>
+    <xpdl2:WorkflowProcess Id="_IRz0o_owEeiF0cp9x5MzdA" xpdExt:DisplayName="IGS_FAK_001-Process" Name="IGS_FAK_001Process">
+      <xpdl2:ProcessHeader>
+        <xpdl2:Description></xpdl2:Description>
+      </xpdl2:ProcessHeader>
+      <xpdl2:FormalParameters>
+        <xpdl2:FormalParameter Id="_I3Y6ofo9EeiF0cp9x5MzdA" Name="ParGeschaeftsvorfall" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="ParGeschaeftsvorfall">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsfak001.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_zqIJIPowEeiF0cp9x5MzdA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+      </xpdl2:FormalParameters>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_IRz1AfowEeiF0cp9x5MzdA" xpdExt:DisplayName="Field" Name="Field">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_IRz0pPowEeiF0cp9x5MzdA" Name="Start" xpdExt:DisplayName="Start">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="30.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="30.0">
+              <xpdl2:Coordinates XCoordinate="46.0" YCoordinate="132.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0pfowEeiF0cp9x5MzdA" Name="Unterlagenprfen" IsATransaction="false" xpdExt:DisplayName="Unterlagen prüfen">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_IRz0pvowEeiF0cp9x5MzdA"/>
+                <xpdl2:MessageOut Id="_IRz0p_owEeiF0cp9x5MzdA"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Join Type="Exclusive" ExclusiveType="Data"/>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="74.0" LaneId="_IRz1BPowEeiF0cp9x5MzdA" Width="108.0">
+              <xpdl2:Coordinates XCoordinate="498.0" YCoordinate="137.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0qPowEeiF0cp9x5MzdA" Name="PrfeFlleaufbereinstimmung" xpdExt:DisplayName="Prüfe Fälle auf Übereinstimmung">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_IRz0qfowEeiF0cp9x5MzdA"/>
+                <xpdl2:MessageOut Id="_IRz0qvowEeiF0cp9x5MzdA"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="74.0" LaneId="_IRz1BPowEeiF0cp9x5MzdA" Width="113.0">
+              <xpdl2:Coordinates XCoordinate="239.0" YCoordinate="137.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0q_owEeiF0cp9x5MzdA" Name="GFanDokumentensteuerung" xpdExt:DisplayName="GF an Dokumentensteuerung">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_IRz0rPowEeiF0cp9x5MzdA"/>
+                <xpdl2:MessageOut Id="_IRz0rfowEeiF0cp9x5MzdA"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="79.0" LaneId="_IRz1BPowEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="852.0" YCoordinate="350.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0rvowEeiF0cp9x5MzdA" Name="Wiedervorlagesetzen" xpdExt:DisplayName="Wiedervorlage setzen">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_IRz0r_owEeiF0cp9x5MzdA"/>
+                <xpdl2:MessageOut Id="_IRz0sPowEeiF0cp9x5MzdA"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="77.0" LaneId="_IRz1BPowEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="852.0" YCoordinate="456.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0sfowEeiF0cp9x5MzdA" xpdExt:DisplayName="">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="31.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="31.0">
+              <xpdl2:Coordinates XCoordinate="1157.0" YCoordinate="526.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0svowEeiF0cp9x5MzdA" Name="AusgewhlteFunktion" xpdExt:DisplayName="Ausgewählte Funktion?">
+          <xpdl2:Route GatewayType="Exclusive" MarkerVisible="true" ExclusiveType="Data"/>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Split Type="Exclusive" ExclusiveType="Data">
+                <xpdl2:TransitionRefs>
+                  <xpdl2:TransitionRef Id="_IRz03PowEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz03fowEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz03vowEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz03_owEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz04PowEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz04fowEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz04vowEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz04_owEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz05vowEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz06PowEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz06fowEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz07fowEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz07vowEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz07_owEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz08PowEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz09_owEeiF0cp9x5MzdA"/>
+                </xpdl2:TransitionRefs>
+              </xpdl2:Split>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:ExtendedAttributes>
+            <xpdl2:ExtendedAttribute Name="SplitSimulationData">
+<simulation:SplitSimulationData>
+                <simulation:ParameterDeterminedSplit>true</simulation:ParameterDeterminedSplit>
+                <simulation:SplitParameter ParameterId=""/>
+              </simulation:SplitSimulationData>
+</xpdl2:ExtendedAttribute>
+          </xpdl2:ExtendedAttributes>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="45.0" LaneId="_IRz1BPowEeiF0cp9x5MzdA" Width="43.0">
+              <xpdl2:Coordinates XCoordinate="623.0" YCoordinate="137.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0s_owEeiF0cp9x5MzdA" Name="WVUnterlagenprfen" IsATransaction="false" xpdExt:ActivityDeadlineEventId="_IRz0tvowEeiF0cp9x5MzdA" xpdExt:DisplayName="WV - Unterlagen prüfen">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_IRz0tPowEeiF0cp9x5MzdA"/>
+                <xpdl2:MessageOut Id="_IRz0tfowEeiF0cp9x5MzdA"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="74.0" LaneId="_IRz1BfowEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="946.0" YCoordinate="132.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0tvowEeiF0cp9x5MzdA" Name="TimeoutWiedervorlage" xpdExt:DisplayName="Timeout Wiedervorlage">
+          <xpdl2:Event>
+            <xpdl2:IntermediateEvent Target="_IRz0s_owEeiF0cp9x5MzdA" Trigger="Timer">
+              <xpdl2:TriggerTimer/>
+            </xpdl2:IntermediateEvent>
+          </xpdl2:Event>
+          <xpdl2:Deadline>
+            <xpdl2:DeadlineDuration ScriptGrammar="ConstantPeriod">
+<xpdExt:ConstantPeriod Days="1"/>
+</xpdl2:DeadlineDuration>
+          </xpdl2:Deadline>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="62.0" LaneId="_IRz1BfowEeiF0cp9x5MzdA" Width="60.0">
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:NodeGraphicsInfo>
+            <xpdl2:NodeGraphicsInfo ToolId="XPD.BorderEventPosition">
+              <xpdl2:Coordinates XCoordinate="19.801980198019802" YCoordinate="0.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0uvowEeiF0cp9x5MzdA" Name="Fllegefunden" xpdExt:DisplayName="Fälle gefunden?">
+          <xpdl2:Route GatewayType="Exclusive" MarkerVisible="true" ExclusiveType="Data"/>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Split Type="Exclusive" ExclusiveType="Data">
+                <xpdl2:TransitionRefs>
+                  <xpdl2:TransitionRef Id="_IRz01_owEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz02_owEeiF0cp9x5MzdA"/>
+                </xpdl2:TransitionRefs>
+              </xpdl2:Split>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="45.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="43.0">
+              <xpdl2:Coordinates XCoordinate="239.0" YCoordinate="132.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0u_owEeiF0cp9x5MzdA" Name="Klammern" xpdExt:DisplayName="Klammern?">
+          <xpdl2:Route GatewayType="Exclusive" MarkerVisible="true" ExclusiveType="Data"/>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Split Type="Exclusive" ExclusiveType="Data">
+                <xpdl2:TransitionRefs>
+                  <xpdl2:TransitionRef Id="_IRz01PowEeiF0cp9x5MzdA"/>
+                  <xpdl2:TransitionRef Id="_IRz02fowEeiF0cp9x5MzdA"/>
+                </xpdl2:TransitionRefs>
+              </xpdl2:Split>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="61.0" LaneId="_IRz1BPowEeiF0cp9x5MzdA" Width="62.0">
+              <xpdl2:Coordinates XCoordinate="349.0" YCoordinate="137.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0vPowEeiF0cp9x5MzdA" Name="KlammernundneuenFallabschliessen" IsATransaction="false" xpdExt:DisplayName="Klammern und neuen Fall abschliessen" xpdExt:RequireNewTransaction="false">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService Implementation="Unspecified">
+                <xpdl2:MessageIn Id="_IRz0vfowEeiF0cp9x5MzdA"/>
+                <xpdl2:MessageOut Id="_IRz0vvowEeiF0cp9x5MzdA"/>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="74.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="106.0">
+              <xpdl2:Coordinates XCoordinate="349.0" YCoordinate="263.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0v_owEeiF0cp9x5MzdA" Name="Ende" xpdExt:Visibility="Private" xpdExt:DisplayName="Ende">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="47.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="31.0">
+              <xpdl2:Coordinates XCoordinate="451.0" YCoordinate="263.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0wPowEeiF0cp9x5MzdA" Name="WPELprfen" xpdExt:Visibility="Private" xpdExt:DisplayName="WP - EL prüfen">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="792.0" YCoordinate="95.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0wfowEeiF0cp9x5MzdA" Name="WPIKVAerfasseninternerAuftraggeber" xpdExt:Visibility="Private" xpdExt:DisplayName="WP - IK VA erfassen, interner Auftraggeber">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="962.0" YCoordinate="159.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0wvowEeiF0cp9x5MzdA" Name="WPFAKErfassungBezgerprfen" xpdExt:Visibility="Private" xpdExt:DisplayName="WP - FAK Erfassung Bezüger prüfen">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="792.0" YCoordinate="214.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0w_owEeiF0cp9x5MzdA" Name="WPFAKBezgeraktivierenverfgen" xpdExt:Visibility="Private" xpdExt:DisplayName="WP - FAK Bezüger aktivieren / verfügen">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true"/>
+          </xpdl2:Implementation>
+          <xpdl2:Priority></xpdl2:Priority>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="962.0" YCoordinate="280.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0xPowEeiF0cp9x5MzdA" Name="WPFAKDokumenterstellen" xpdExt:Visibility="Private" xpdExt:DisplayName="WP - FAK Dokument erstellen">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="792.0" YCoordinate="330.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0xfowEeiF0cp9x5MzdA" Name="WPPendenzerstellenPartner" xpdExt:Visibility="Private" xpdExt:DisplayName="WP - Pendenz erstellen Partner">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="962.0" YCoordinate="397.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0xvowEeiF0cp9x5MzdA" Name="WPPVDatenadministrieren" xpdExt:Visibility="Private" xpdExt:DisplayName="WP - PV Daten administrieren">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="792.0" YCoordinate="450.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0x_owEeiF0cp9x5MzdA" Name="Briefschreiben" xpdExt:Visibility="Private" xpdExt:DisplayName="Brief schreiben">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_IRz1BPowEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="852.0" YCoordinate="253.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0yPowEeiF0cp9x5MzdA" Name="FAKIS0010101AnspruchAGprfen" xpdExt:Visibility="Private" xpdExt:DisplayName="FAK-IS-001.01.01 Anspruch AG prüfen">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_IRz1BPowEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="1285.0" YCoordinate="137.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0yfowEeiF0cp9x5MzdA" Name="FAKIS0010103Bezgerverfgenauszahlen" xpdExt:Visibility="Private" xpdExt:DisplayName="FAK-IS-001.01.03 Bezüger verfügen-auszahlen">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_IRz1BPowEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="1285.0" YCoordinate="337.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0yvowEeiF0cp9x5MzdA" Name="FAKIS0010102Bezgererfassen" xpdExt:Visibility="Private" xpdExt:DisplayName="FAK-IS-001.01.02 Bezüger erfassen">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_IRz1BPowEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="1285.0" YCoordinate="239.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0y_owEeiF0cp9x5MzdA" Name="PVIH001ModellPartnerverwaltung" xpdExt:Visibility="Private" xpdExt:DisplayName="PV-IH-001 Modell Partnerverwaltung">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="-unknown-" xpdExt:SuspendResumeWithParent="true"/>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_IRz1BPowEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="1285.0" YCoordinate="432.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0zPowEeiF0cp9x5MzdA">
+          <xpdl2:Route GatewayType="Exclusive" MarkerVisible="true" ExclusiveType="Data"/>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Join Type="Exclusive" ExclusiveType="Data"/>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="45.0" LaneId="_IRz1BPowEeiF0cp9x5MzdA" Width="43.0">
+              <xpdl2:Coordinates XCoordinate="962.0" YCoordinate="195.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0zfowEeiF0cp9x5MzdA">
+          <xpdl2:Route GatewayType="Exclusive" MarkerVisible="true" ExclusiveType="Data"/>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Join Type="Exclusive" ExclusiveType="Data"/>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="45.0" LaneId="_IRz1BfowEeiF0cp9x5MzdA" Width="43.0">
+              <xpdl2:Coordinates XCoordinate="1072.0" YCoordinate="277.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0zvowEeiF0cp9x5MzdA">
+          <xpdl2:Route GatewayType="Exclusive" MarkerVisible="true" ExclusiveType="Data"/>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Join Type="Exclusive" ExclusiveType="Data"/>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="45.0" LaneId="_IRz1BPowEeiF0cp9x5MzdA" Width="43.0">
+              <xpdl2:Coordinates XCoordinate="1416.0" YCoordinate="527.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz0z_owEeiF0cp9x5MzdA" Name="Fallabschliessen" IsATransaction="false" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="Fall abschliessen">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskService Implementation="Unspecified">
+                <xpdl2:MessageIn Id="_IRz00PowEeiF0cp9x5MzdA"/>
+                <xpdl2:MessageOut Id="_IRz00fowEeiF0cp9x5MzdA"/>
+              </xpdl2:TaskService>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="74.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="106.0">
+              <xpdl2:Coordinates XCoordinate="1052.0" YCoordinate="526.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_IRz00vowEeiF0cp9x5MzdA">
+          <xpdl2:Route GatewayType="Exclusive" MarkerVisible="true" ExclusiveType="Data"/>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Join Type="Exclusive" ExclusiveType="Data"/>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="43.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="41.0">
+              <xpdl2:Coordinates XCoordinate="1128.0" YCoordinate="32.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_fr9eovo9EeiF0cp9x5MzdA" Name="SucheexistierendeFlle" FinishMode="Automatic" StartMode="Automatic" xpdExt:Visibility="Private" xpdExt:DisplayName="Suche existierende Fälle">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="_TrgQYPowEeiF0cp9x5MzdA" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true">
+              <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="ParGeschaeftsvorfallFound.AHVNummer">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">ParGeschaeftsvorfall.AHVNummer</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="ParGeschaeftsvorfallFound.WFCaseID">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">ParGeschaeftsvorfall.WFCaseID</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="ParGeschaeftsvorfallFound.dokumentenArt">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">ParGeschaeftsvorfall.dokumentenArt</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="ParGeschaeftsvorfallFound.partnerID">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">ParGeschaeftsvorfall.geschaeftsfall</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:InputMappings>
+            </xpdl2:SubFlow>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="80.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="128.0">
+              <xpdl2:Coordinates XCoordinate="141.0" YCoordinate="132.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_IRz01PowEeiF0cp9x5MzdA" xpdExt:DisplayName="Nein" Name="Nein" From="_IRz0u_owEeiF0cp9x5MzdA" To="_IRz0pfowEeiF0cp9x5MzdA">
+          <xpdl2:Condition Type="OTHERWISE"/>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz01fowEeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_IRz0pfowEeiF0cp9x5MzdA" To="_IRz0svowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz01_owEeiF0cp9x5MzdA" xpdExt:DisplayName="Ja" Name="Ja" From="_IRz0uvowEeiF0cp9x5MzdA" To="_IRz0qPowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="20.883534136546185" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz02PowEeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_IRz0qPowEeiF0cp9x5MzdA" To="_IRz0u_owEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz02fowEeiF0cp9x5MzdA" xpdExt:DisplayName="Ja" Name="Ja" From="_IRz0u_owEeiF0cp9x5MzdA" To="_IRz0vPowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz02vowEeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_IRz0vPowEeiF0cp9x5MzdA" To="_IRz0v_owEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz02_owEeiF0cp9x5MzdA" xpdExt:DisplayName="Nein" Name="Nein" From="_IRz0uvowEeiF0cp9x5MzdA" To="_IRz0pfowEeiF0cp9x5MzdA">
+          <xpdl2:Condition Type="OTHERWISE"/>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="79.3956043956044" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz03PowEeiF0cp9x5MzdA" xpdExt:DisplayName="EL Bezüger prüfen" Name="ELBezgerprfen" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0wPowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="-283.0"/>
+              <xpdl2:Coordinates XCoordinate="-170.0" YCoordinate="269.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="91.47640791476408" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-10.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz03fowEeiF0cp9x5MzdA" xpdExt:DisplayName="Bezüger prüfen" Name="Bezgerprfen" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0wvowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="-2.0" YCoordinate="-199.0"/>
+              <xpdl2:Coordinates XCoordinate="-170.0" YCoordinate="235.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="2.4382992454708536" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="90.16949152542372" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-9.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz03vowEeiF0cp9x5MzdA" xpdExt:DisplayName="IK erstellen VA" Name="IKerstellenVA" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0wfowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-232.0"/>
+              <xpdl2:Coordinates XCoordinate="-340.0" YCoordinate="257.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="98.78123142092021" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="76.50676506765068" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-4.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz03_owEeiF0cp9x5MzdA" xpdExt:DisplayName="Doku in BZFAK erstellen" Name="DokuinBZFAKerstellen" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0xPowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="-154.0"/>
+              <xpdl2:Coordinates XCoordinate="-170.0" YCoordinate="163.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelSize">
+              <xpdl2:Coordinates XCoordinate="93.0" YCoordinate="15.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="87.65957446808511" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-16.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz04PowEeiF0cp9x5MzdA" xpdExt:DisplayName="Bezüger aktivieren" Name="Bezgeraktivieren" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0w_owEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="-186.0"/>
+              <xpdl2:Coordinates XCoordinate="-340.0" YCoordinate="186.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="73.5202492211838" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-8.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz04fowEeiF0cp9x5MzdA" xpdExt:DisplayName="Pendenz erstellen" Name="Pendenzerstellen" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0xfowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="-2.0" YCoordinate="-111.0"/>
+              <xpdl2:Coordinates XCoordinate="-340.0" YCoordinate="140.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="1.2191496227354268" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="68.43100189035917" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-8.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz04vowEeiF0cp9x5MzdA" xpdExt:DisplayName="FAK Daten mutieren" Name="FAKDatenmutieren" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0xvowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="1.0" YCoordinate="-87.0"/>
+              <xpdl2:Coordinates XCoordinate="-170.0" YCoordinate="112.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="97.56250401431448" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="83.89830508474576" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-13.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelSize">
+              <xpdl2:Coordinates XCoordinate="87.0" YCoordinate="15.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz04_owEeiF0cp9x5MzdA" xpdExt:DisplayName="FAK Register ZAS prüfen" Name="FAKRegisterZASprfen" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0zPowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="26.0" YCoordinate="57.0"/>
+              <xpdl2:Coordinates XCoordinate="-313.0" YCoordinate="-1.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz05PowEeiF0cp9x5MzdA" xpdExt:DisplayName="AUTO Open" Name="AUTOOpen" From="_IRz0zPowEeiF0cp9x5MzdA" To="_IRz0pfowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-126.0"/>
+              <xpdl2:Coordinates XCoordinate="434.0" YCoordinate="-51.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="98.78123142092021" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="93.13186813186813" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="84.28805237315876" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-7.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz05fowEeiF0cp9x5MzdA" Name="" From="_IRz0q_owEeiF0cp9x5MzdA" To="_IRz0zPowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="45.0" YCoordinate="-4.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="140.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="10.144927536231885" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="51.21914962273543" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz05vowEeiF0cp9x5MzdA" xpdExt:DisplayName="Mitteilung schreiben" Name="Mitteilungschreiben" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0x_owEeiF0cp9x5MzdA">
+          <xpdl2:Condition Type="OTHERWISE"/>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="32.0" YCoordinate="115.0"/>
+              <xpdl2:Coordinates XCoordinate="-197.0" YCoordinate="-1.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="70.35175879396985" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-17.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelSize">
+              <xpdl2:Coordinates XCoordinate="82.0" YCoordinate="15.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz05_owEeiF0cp9x5MzdA" Name="" From="_IRz0x_owEeiF0cp9x5MzdA" To="_IRz0zPowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="109.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="36.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz06PowEeiF0cp9x5MzdA" xpdExt:DisplayName="Weiterleiten an Doku Steuerung" Name="WeiterleitenanDokuSteuerung" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0q_owEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="20.0" YCoordinate="212.0"/>
+              <xpdl2:Coordinates XCoordinate="-209.0" YCoordinate="-1.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelSize">
+              <xpdl2:Coordinates XCoordinate="92.0" YCoordinate="30.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="82.74760383386581" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-16.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz06fowEeiF0cp9x5MzdA" xpdExt:DisplayName="Wiedervorlage" Name="Wiedervorlage" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0rvowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="318.0"/>
+              <xpdl2:Coordinates XCoordinate="-230.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="41.0" YCoordinate="321.0"/>
+              <xpdl2:Coordinates XCoordinate="-188.0" YCoordinate="-1.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="86.7965367965368" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-10.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz06vowEeiF0cp9x5MzdA" Name="" From="_IRz0rvowEeiF0cp9x5MzdA" To="_IRz0s_owEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="93.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="-350.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz06_owEeiF0cp9x5MzdA" Name="" From="_IRz0tvowEeiF0cp9x5MzdA" To="_IRz0zfowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="48.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-20.0" YCoordinate="-109.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz07PowEeiF0cp9x5MzdA" Name="" From="_IRz0s_owEeiF0cp9x5MzdA" To="_IRz0zfowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="99.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-27.0" YCoordinate="-146.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz07fowEeiF0cp9x5MzdA" xpdExt:DisplayName="Unterlagen IO - Anspr. prüfen" Name="UnterlagenIOAnsprprfen" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0yPowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="81.28249566724438" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-8.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz07vowEeiF0cp9x5MzdA" xpdExt:DisplayName="Bezüger erfassen" Name="Bezgererfassen" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0yvowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="157.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-485.0" YCoordinate="-103.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="25.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="79.11764705882352" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-8.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz07_owEeiF0cp9x5MzdA" xpdExt:DisplayName="Bezüger verfügen-auszahlen" Name="Bezgerverfgenauszahlen" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0yfowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="163.0" YCoordinate="1.0"/>
+              <xpdl2:Coordinates XCoordinate="-481.0" YCoordinate="-201.0"/>
+              <xpdl2:Coordinates XCoordinate="330.0" YCoordinate="1.0"/>
+              <xpdl2:Coordinates XCoordinate="-314.0" YCoordinate="-201.0"/>
+              <xpdl2:Coordinates XCoordinate="401.0" YCoordinate="201.0"/>
+              <xpdl2:Coordinates XCoordinate="-243.0" YCoordinate="-1.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="23.16384283197311" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="85.29411764705883" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-9.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz08PowEeiF0cp9x5MzdA" xpdExt:DisplayName="Weiterleiten an PV" Name="WeiterleitenanPV" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0y_owEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="19.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-643.0" YCoordinate="-296.0"/>
+              <xpdl2:Coordinates XCoordinate="158.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-504.0" YCoordinate="-296.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="85.24774774774775" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-7.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="23.78123142092021" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz08fowEeiF0cp9x5MzdA" Name="" From="_IRz0zfowEeiF0cp9x5MzdA" To="_IRz0pfowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="-671.0" YCoordinate="-373.0"/>
+              <xpdl2:Coordinates XCoordinate="-97.0" YCoordinate="347.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz08vowEeiF0cp9x5MzdA" xpdExt:DisplayName="AUTO Open" Name="AUTOOpen" From="_IRz0zvowEeiF0cp9x5MzdA" To="_IRz0pfowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="-502.0" YCoordinate="105.0"/>
+              <xpdl2:Coordinates XCoordinate="416.0" YCoordinate="495.0"/>
+              <xpdl2:Coordinates XCoordinate="-1002.0" YCoordinate="41.0"/>
+              <xpdl2:Coordinates XCoordinate="-84.0" YCoordinate="431.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz08_owEeiF0cp9x5MzdA" Name="" From="_IRz0yPowEeiF0cp9x5MzdA" To="_IRz0zvowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="111.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-20.0" YCoordinate="-391.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz09PowEeiF0cp9x5MzdA" Name="" From="_IRz0yvowEeiF0cp9x5MzdA" To="_IRz0zvowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="97.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-34.0" YCoordinate="-289.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz09fowEeiF0cp9x5MzdA" Name="" From="_IRz0yfowEeiF0cp9x5MzdA" To="_IRz0zvowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="101.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-30.0" YCoordinate="-191.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz09vowEeiF0cp9x5MzdA" Name="" From="_IRz0y_owEeiF0cp9x5MzdA" To="_IRz0zvowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="96.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-35.0" YCoordinate="-96.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz09_owEeiF0cp9x5MzdA" xpdExt:DisplayName="Fall erledigt - Ablage" Name="FallerledigtAblage" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0z_owEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="-187.0"/>
+              <xpdl2:Coordinates XCoordinate="-430.0" YCoordinate="3.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="43.853211009174316" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-9.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz0-PowEeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_IRz0z_owEeiF0cp9x5MzdA" To="_IRz0sfowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz0-fowEeiF0cp9x5MzdA" Name="" From="_IRz0wPowEeiF0cp9x5MzdA" To="_IRz00vowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="335.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="62.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz0-vowEeiF0cp9x5MzdA" Name="" From="_IRz0wfowEeiF0cp9x5MzdA" To="_IRz00vowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="165.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="126.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz0-_owEeiF0cp9x5MzdA" Name="" From="_IRz0wvowEeiF0cp9x5MzdA" To="_IRz00vowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="335.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="181.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz0_PowEeiF0cp9x5MzdA" Name="" From="_IRz0w_owEeiF0cp9x5MzdA" To="_IRz00vowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="179.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="13.0" YCoordinate="247.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz0_fowEeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_IRz0xPowEeiF0cp9x5MzdA" To="_IRz00vowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="349.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="13.0" YCoordinate="297.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz0_vowEeiF0cp9x5MzdA" Name="" From="_IRz0xfowEeiF0cp9x5MzdA" To="_IRz00vowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="179.0" YCoordinate="-6.0"/>
+              <xpdl2:Coordinates XCoordinate="13.0" YCoordinate="359.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz0__owEeiF0cp9x5MzdA" Name="" From="_IRz0xvowEeiF0cp9x5MzdA" To="_IRz00vowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="349.0" YCoordinate="-14.0"/>
+              <xpdl2:Coordinates XCoordinate="13.0" YCoordinate="404.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_IRz1APowEeiF0cp9x5MzdA" xpdExt:DisplayName="AUTO Open" Name="AUTOOpen" From="_IRz00vowEeiF0cp9x5MzdA" To="_IRz0pfowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="-608.0" YCoordinate="-1.0"/>
+              <xpdl2:Coordinates XCoordinate="22.0" YCoordinate="-685.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="41.766109785202865" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-6.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_qTMjEPo9EeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_IRz0pPowEeiF0cp9x5MzdA" To="_fr9eovo9EeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_tnbT8Po9EeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_fr9eovo9EeiF0cp9x5MzdA" To="_IRz0uvowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="BPM"/>
+        <xpdl2:ExtendedAttribute Name="WorkflowProcessSimulationData"><simulation:WorkflowProcessSimulationData>
+            <simulation:ParameterDistribution ParameterId="ParGeschaeftsvorfall"/>
+          </simulation:WorkflowProcessSimulationData></xpdl2:ExtendedAttribute>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:WorkflowProcess>
+    <xpdl2:WorkflowProcess Id="_TrgQYPowEeiF0cp9x5MzdA" xpdExt:DisplayName="com.igs.fak.001_search_existing_cases" Name="comigsfak001_search_existing_cases">
+      <xpdl2:ProcessHeader/>
+      <xpdl2:FormalParameters>
+        <xpdl2:FormalParameter Id="_Kukesfo9EeiF0cp9x5MzdA" Name="IN_ParGeschaeftsvorfall" IsArray="false" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="IN_ParGeschaeftsvorfall">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsfak001.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_zqIJIPowEeiF0cp9x5MzdA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+      </xpdl2:FormalParameters>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_TrqBZ_owEeiF0cp9x5MzdA" Name="StartEvent" xpdExt:DisplayName="Start Event">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="27.0" LaneId="_TrqBZvowEeiF0cp9x5MzdA" Width="27.0">
+              <xpdl2:Coordinates XCoordinate="55.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_TrqBaPowEeiF0cp9x5MzdA" Name="EndEvent" xpdExt:DisplayName="End Event">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="30.0" LaneId="_TrqBZvowEeiF0cp9x5MzdA" Width="30.0">
+              <xpdl2:Coordinates XCoordinate="592.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_TrqBafowEeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_TrqBZ_owEeiF0cp9x5MzdA" To="_TrqBaPowEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="BPM"/>
+        <xpdl2:ExtendedAttribute Name="WorkflowProcessSimulationData"><simulation:WorkflowProcessSimulationData>
+            <simulation:ParameterDistribution ParameterId="IN_ParGeschaeftsvorfall"/>
+          </simulation:WorkflowProcessSimulationData></xpdl2:ExtendedAttribute>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:WorkflowProcess>
+  </xpdl2:WorkflowProcesses>
+  <xpdl2:ExtendedAttributes>
+    <xpdl2:ExtendedAttribute Name="CreatedBy" Value="TIBCO Business Studio"/>
+    <xpdl2:ExtendedAttribute Name="FormatVersion" Value="20"/>
+    <xpdl2:ExtendedAttribute Name="OriginalFormatVersion" Value="20"/>
+  </xpdl2:ExtendedAttributes>
+</xpdl2:Package>
