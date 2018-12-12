@@ -9,8 +9,8 @@
 	
 	<!-- Default task for this build file -->
 	<target name="all" 
-		depends="upload.daa, upgrade.app, distribute.app, edit.properties, deploy.app"
-		description="Default target group, execute following targets: upload.daa, upgrade.app, distribute.app, edit.properties, deploy.app"/>
+		depends="upload.daa, create.app, distribute.app, edit.properties, deploy.app"
+		description="Default target group, execute following targets: upload.daa, create.app, distribute.app, edit.properties, deploy.app"/>
 	
 
 	<!-- Upload DAA specified in the data file -->
@@ -25,12 +25,12 @@
 			force="false" failOnError="false" /> 
 	</target>  		
 
-	<!-- upgrade existing application -->
-	<target name="upgrade.app" description="Upgrade Existing Application">
+	<!-- create the application -->
+	<target name="create.app" description="Creating Application">
 		<AMXAdminTask remote="true" propsFile="${remote-properties.file}" 
-			action="upgrade" dataFile="${basedir}/com.tibco.poc.test.deployment-config.xml" 
+			action="add" dataFile="${basedir}/com.tibco.poc.test.deployment-config.xml" 
 			objectSelector="Environment//Application" 
-			overwrite="false" merge="true" 
+			overwrite="true" merge="true" 
 			createIfNotExists="true" force="false" failOnError="true" />
 	</target>
 

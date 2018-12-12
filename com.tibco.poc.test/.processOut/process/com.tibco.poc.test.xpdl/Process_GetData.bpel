@@ -29,7 +29,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_4NRdoPx0EeiF0cp9x5MzdA">
+    <bpws:flow name="_BX_flow_p201QP1gEeiPopDWv-BhcA">
         <bpws:links>
             <bpws:link name="StartEvent to GetDataFromDB" tibex:xpdlId="_QkQx4fJJEeif9tfFlBJi7Q"/>
             <bpws:link name="GetDataFromDB to EndEvent" tibex:xpdlId="_qOOOsOyjEeieuqYotrFSPg"/>
@@ -42,8 +42,8 @@
                     <bpws:source linkName="StartEvent to GetDataFromDB"/>
                 </bpws:sources>
                 <tibex:parameters>
-                    <parameterDescription mandatory="yes" mode="In" name="ParameterIn_WF_CASE_ID"/>
                     <parameterDescription mode="Out" name="MetaData_GetData"/>
+                    <parameterDescription mandatory="yes" mode="In" name="ParameterIn_WF_CASE_ID"/>
                 </tibex:parameters>
                 <tibex:eventSource>
                     <tibex:startEvent eventType="Default"/>

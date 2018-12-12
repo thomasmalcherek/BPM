@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="133" version="2.0">
+<workbench progressCount="153" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="104" y="56">
 <fastViewData fastViewLocation="1024"/>
@@ -18,14 +18,17 @@
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="221" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="122" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.tibco.xpd.worklistfacade.presentation.WorkListFacadeEditorID" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.tibco.xpd.globalsignaldefinition.presentation.GlobalSignalDefinitionEditorID" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.tibco.xpd.bom.modeler.diagram.part.UMLDiagramEditorID" itemType="typePlaceholder" x="898" y="22"/>
 <coolItem id="com.tibco.xpd.forms.designer.editor" itemType="typePlaceholder" x="138" y="22"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.tibco.xpd.analyst.editor.ProcessInterfaceEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.tibco.xpd.om.modeler.subdiagram.part.OrganizationModelSubDiagramEditorID" itemType="typePlaceholder" x="898" y="22"/>
 <coolItem id="com.tibco.xpd.om.modeler.diagram.part.OrganizationModelDiagramEditorID" itemType="typePlaceholder" x="898" y="22"/>
-<coolItem id="com.tibco.xpd.processeditor.xpdl2.editor" itemType="typePlaceholder" x="401" y="22"/>
+<coolItem id="com.tibco.xpd.processeditor.xpdl2.editor" itemType="typeToolBarContribution" x="401" y="22"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -40,8 +43,10 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.tibco.xpd.packageeditor.editor" name="IGS_FAK_001.xpdl" partName="IGS_FAK_001.xpdl" path="C:/Users/admin/Documents/GitHub/BPM/IGS_FAK_001/Process Packages/IGS_FAK_001.xpdl" title="IGS_FAK_001.xpdl" tooltip="IGS_FAK_001/Process Packages/IGS_FAK_001.xpdl" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/IGS_FAK_001/Process Packages/IGS_FAK_001.xpdl"/>
+<editor activePart="true" focus="true" id="com.tibco.xpd.processeditor.xpdl2.editor" name="StickyUser (StickyUser)" partName="StickyUser (StickyUser)" title="StickyUser (StickyUser)" tooltip="/com.tibco.poc.test.sticky.user/Process Packages/com.tibco.poc.test.sticky.user.xpdl/StickyUser (StickyUser)" workbook="DefaultEditorWorkbook">
+<input factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory">
+<xpdl path="/com.tibco.poc.test.sticky.user/Process Packages/com.tibco.poc.test.sticky.user.xpdl" processid="_sIKgV_0oEeiF0cp9x5MzdA"/>
+</input>
 </editor>
 </editors>
 <views>
@@ -59,12 +64,11 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>&#x0A;<category IMemento.internal.id="Infos (1 item)"/>
-<category IMemento.internal.id="Warnings"/>
+<expanded>
+<category IMemento.internal.id="Infos (1 item)"/>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Infos"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="1110"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -87,9 +91,11 @@
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
-<view id="com.tibco.xpd.fragments.view" partName="Fragments"/>
+<view id="com.tibco.xpd.fragments.view" partName="Fragments">
+<viewState/>
+</view>
 </views>
-<perspectives activePart="com.tibco.xpd.packageeditor.editor" activePerspective="com.tibco.xpd.bpm.modeling.perspective">
+<perspectives activePart="org.eclipse.ui.views.PropertySheet" activePerspective="com.tibco.xpd.bpm.modeling.perspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.tibco.xpd.bpm.simplified.ui.BpmModelingPerspectiveFactory" id="com.tibco.xpd.bpm.modeling.perspective" label="BPM Modeling"/>
 <alwaysOnActionSet id="com.google.gdt.eclipse.core.actionSet"/>
@@ -159,8 +165,8 @@
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.forwardHistory"/>
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.next"/>
 <hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.ProfileDropDownAction"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.gotoLastEditPosition"/>
 <hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.RunDropDownAction"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.gotoLastEditPosition"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="com.tibco.xpd.deploy.server.view"/>
@@ -187,9 +193,9 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.2702986" ratioLeft="516" ratioRight="1393" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.5889629" ratioLeft="619" ratioRight="432" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<info part="org.eclipse.ui.editorss" ratio="0.3190152" ratioLeft="609" ratioRight="1300" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.34253094" ratioLeft="360" ratioRight="691" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="com.tibco.xpd.fragments.view" label="Fragments"/>
@@ -252,32 +258,22 @@
 <view id="org.eclipse.team.ui.GenericHistoryView"/>
 <view id="com.tibco.xpd.deploy.server.view"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="top">
-<folder activePageID="org.tigris.subversion.subclipse.ui.repository.RepositoriesView" appearance="2" expanded="2">
-<page content="org.tigris.subversion.subclipse.ui.repository.RepositoriesView" label="SVN Repositories"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="top">&#x0A;<folder activePageID="org.tigris.subversion.subclipse.ui.repository.RepositoriesView" appearance="2" expanded="2">&#x0A;<page content="org.tigris.subversion.subclipse.ui.repository.RepositoriesView" label="SVN Repositories"/>
 <page content="org.tigris.subversion.subclipse.ui.annotations.AnnotateView" label="SVN Annotate"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="top">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="top">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.39958158" ratioLeft="764" ratioRight="1148" relationship="2" relative="top"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@41fefcf4" ratio="0.699241" ratioLeft="737" ratioRight="317" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="com.tibco.xpd.deploy.server.view" appearance="2" expanded="2">
-<page content="org.eclipse.team.ui.GenericHistoryView" label="History"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@41fefcf4" ratio="0.699241" ratioLeft="737" ratioRight="317" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="com.tibco.xpd.deploy.server.view" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.team.ui.GenericHistoryView" label="History"/>
 <page content="com.tibco.xpd.deploy.server.view" label="Deployment Server"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -289,22 +285,164 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.packageeditor.editor" path="/IGS_FAK_001/Process Packages/IGS_FAK_001.xpdl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/IGS_FAK_001/Process Packages/IGS_FAK_001.xpdl"/>
+<editor factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor">
+<xpdl path="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl" processid="_IRz0o_owEeiF0cp9x5MzdA"/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.worklistfacade.presentation.WorkListFacadeEditorID" path="/WorkListFasade/Work List Facade/WorkListFacade.wlf"/>
+<editor factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor">
+<xpdl path="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl" processid="_159XMPx0EeiF0cp9x5MzdA"/>
+</editor>
+<editor factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor">
+<xpdl path="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl" processid="_7brQIPxwEeiF0cp9x5MzdA"/>
+</editor>
+<editor factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor">
+<xpdl path="/com.tibco.poc.test.sticky.user/Process Packages/com.tibco.poc.test.sticky.user.xpdl" processid="_mhNewf0oEeiF0cp9x5MzdA"/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.om.modeler.diagram.part.OrganizationModelDiagramEditorID" path="/com.tibco.poc.test.sticky.user/Organization/com.tibco.poc.test.om"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.om.modeler.diagram.part.OrganizationModelDiagramEditorID" path="/com.tibco.poc.test.sticky.user/Organization/com.tibco.poc.test.sticky.user.om"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.packageeditor.editor" path="/com.tibco.poc.test.sticky.user/Process Packages/com.tibco.poc.test.sticky.user.xpdl"/>
+<editor factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor">
+<xpdl path="/com.tibco.poc.test.sticky.user/Process Packages/com.tibco.poc.test.sticky.user.xpdl" processid="_sIKgV_0oEeiF0cp9x5MzdA"/>
+</editor>
 </editors>
-<item historyLabel="IGS_FAK_001.xpdl" index="0"/>
-<item historyLabel="com.tibco.wf.generic.subprocess.kanton.be.xpdl" index="1">
-<position info="not_deleted" x="0" y="9937"/>
+<item historyLabel="com.igs.fak.001_mainProcess (comigsfak001_mainProcess)" index="0">
+<position/>
 </item>
-<item historyLabel="IGS_FAK_001.xpdl" index="2">
-<position info="not_deleted" x="0" y="68497"/>
+<item historyLabel="com.igs.fak.001_mainProcess (comigsfak001_mainProcess)" index="0">
+<position/>
 </item>
-<item historyLabel="com.tibco.wf.generic.subprocess.kanton.be.xpdl" index="1">
-<position info="not_deleted" x="0" y="9937"/>
+<item historyLabel="com.igs.fak.001_mainProcess (comigsfak001_mainProcess)" index="0">
+<position/>
 </item>
-<item historyLabel="IGS_FAK_001.xpdl" index="0"/>
-<item active="true" historyLabel="IGS_FAK_001.xpdl" index="0"/>
+<item historyLabel="com.igs.fak.001_mainProcess (comigsfak001_mainProcess)" index="0">
+<position/>
+</item>
+<item historyLabel="com.igs.fak.001_mainProcess (comigsfak001_mainProcess)" index="0">
+<position/>
+</item>
+<item historyLabel="com.igs.fak.001_mainProcess (comigsfak001_mainProcess)" index="0">
+<position/>
+</item>
+<item historyLabel="WorkListFacade.wlf" index="1"/>
+<item historyLabel="StickyUser-Start Event (StickyUserStartEvent)" index="2">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser-Start Event (StickyUserStartEvent)" index="2">
+<position/>
+</item>
+<item historyLabel="WorkListFacade.wlf" index="1"/>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="comtibcopocteststickyuser-Process (comtibcopocteststickyuserProcess)" index="4">
+<position/>
+</item>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="com.tibco.poc.test.om" index="5"/>
+<item historyLabel="StickyUser (StickyUser)" index="3">
+<position/>
+</item>
+<item historyLabel="WorkListFacade.wlf" index="1"/>
+<item historyLabel="com.tibco.poc.test.sticky.user.om" index="6"/>
+<item historyLabel="com.tibco.poc.test.sticky.user.xpdl" index="7"/>
+<item active="true" historyLabel="StickyUser (StickyUser)" index="8">
+<position/>
+</item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -319,60 +457,74 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="com.google.gdt.eclipse.login.status.trim"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.packageeditor.editor" name="IGS_FAK_001.xpdl" tooltip="IGS_FAK_001/Process Packages/IGS_FAK_001.xpdl">
-<persistable path="/IGS_FAK_001/Process Packages/IGS_FAK_001.xpdl"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="com.tibco.wf.generic.subprocess.kanton.be.xpdl" tooltip="com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl">
-<persistable path="/com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl"/>
-</file>
-<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="generic_BE (generic_BE)" tooltip="/com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl/generic_BE (generic_BE)">
-<persistable>&#x0A;<xpdl path="/com.tibco.wf.generic.subprocess.kanton.be/Process Packages/com.tibco.wf.generic.subprocess.kanton.be.xpdl" processid="_6eOO0PlOEeiLOcx5GuQ9ow"/>
+<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="StickyUser (StickyUser)" tooltip="/com.tibco.poc.test.sticky.user/Process Packages/com.tibco.poc.test.sticky.user.xpdl/StickyUser (StickyUser)">
+<persistable>
+<xpdl path="/com.tibco.poc.test.sticky.user/Process Packages/com.tibco.poc.test.sticky.user.xpdl" processid="_sIKgV_0oEeiF0cp9x5MzdA"/>
 </persistable>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.forms.designer.editor" name="pruefenTask_ZH.form" tooltip="com.tibco.wf.generic.subprocess.kanton.zh/Forms/comtibcowfgenericsubprocesskantonzh/generic_ZH/pruefenTask_ZH/pruefenTask_ZH.form">
-<persistable path="/com.tibco.wf.generic.subprocess.kanton.zh/Forms/comtibcowfgenericsubprocesskantonzh/generic_ZH/pruefenTask_ZH/pruefenTask_ZH.form"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.packageeditor.editor" name="com.tibco.poc.test.sticky.user.xpdl" tooltip="com.tibco.poc.test.sticky.user/Process Packages/com.tibco.poc.test.sticky.user.xpdl">
+<persistable path="/com.tibco.poc.test.sticky.user/Process Packages/com.tibco.poc.test.sticky.user.xpdl"/>
 </file>
-<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="generic_ZH (generic_ZH)" tooltip="/com.tibco.wf.generic.subprocess.kanton.zh/Process Packages/com.tibco.wf.generic.subprocess.kanton.zh.xpdl/generic_ZH (generic_ZH)">
-<persistable>&#x0A;<xpdl path="/com.tibco.wf.generic.subprocess.kanton.zh/Process Packages/com.tibco.wf.generic.subprocess.kanton.zh.xpdl" processid="_lTjycPlPEeiLOcx5GuQ9ow"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.om.modeler.diagram.part.OrganizationModelDiagramEditorID" name="com.tibco.poc.test.sticky.user.om" tooltip="com.tibco.poc.test.sticky.user/Organization/com.tibco.poc.test.sticky.user.om">
+<persistable path="/com.tibco.poc.test.sticky.user/Organization/com.tibco.poc.test.sticky.user.om"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.om.modeler.diagram.part.OrganizationModelDiagramEditorID" name="com.tibco.poc.test.om" tooltip="com.tibco.poc.test.sticky.user/Organization/com.tibco.poc.test.om">
+<persistable path="/com.tibco.poc.test.sticky.user/Organization/com.tibco.poc.test.om"/>
+</file>
+<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="Process" tooltip="/com.tibco.poc.test.sticky.user/Process Packages/com.tibco.poc.test.sticky.user.xpdl/comtibcopocteststickyuser-Process (comtibcopocteststickyuserProcess)">
+<persistable>
+<xpdl path="/com.tibco.poc.test.sticky.user/Process Packages/com.tibco.poc.test.sticky.user.xpdl" processid="_mhNewf0oEeiF0cp9x5MzdA"/>
 </persistable>
 </file>
-<file factoryID="org.eclipse.emf.common.ui.URIEditorInputFactory" id="com.tibco.xpd.om.modeler.subdiagram.part.OrganizationModelSubDiagramEditorID" name="OrgGeneric" tooltip="platform:/resource/com.tibco.wf.main.subprocess/Organization/com.tibco.wf.main.subprocess.om#_iDk4EPoCEeigr-Iv1cHE1A">
-<persistable bundle="org.eclipse.emf.common.ui" class="org.eclipse.emf.common.ui.URIEditorInput" name="OrgGeneric" uri="platform:/resource/com.tibco.wf.main.subprocess/Organization/com.tibco.wf.main.subprocess.om#_iDk4EPoCEeigr-Iv1cHE1A"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.om.modeler.diagram.part.OrganizationModelDiagramEditorID" name="com.tibco.wf.main.subprocess.om" tooltip="com.tibco.wf.main.subprocess/Organization/com.tibco.wf.main.subprocess.om">
-<persistable path="/com.tibco.wf.main.subprocess/Organization/com.tibco.wf.main.subprocess.om"/>
-</file>
-<file factoryID="com.tibco.xpd.processeditor.xpdl2.processinterfaceelementfactory" id="com.tibco.xpd.analyst.editor.ProcessInterfaceEditor" name="com.tibco.wf.generic-Interface (comtibcowfgenericInterface)" tooltip="/com.tibco.wf.main.subprocess/Process Packages/com.tibco.wf.main.subprocess.xpdl/com.tibco.wf.generic-Interface (comtibcowfgenericInterface)">
-<persistable>&#x0A;<xpdl path="/com.tibco.wf.main.subprocess/Process Packages/com.tibco.wf.main.subprocess.xpdl" processinterfaceid="_3hDac_lLEeiLOcx5GuQ9ow"/>
+<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="StickyUser (StickyUser)" tooltip="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl/StickyUser (StickyUser)">
+<persistable>
+<xpdl path="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl" processid="_7brQIPxwEeiF0cp9x5MzdA"/>
 </persistable>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.forms.designer.editor" name="pruefenTask_BE.form" tooltip="com.tibco.wf.generic.subprocess.kanton.be/Forms/comtibcowfgenericsubprocesskantonbe/generic_BE/pruefenTask_BE/pruefenTask_BE.form">
-<persistable path="/com.tibco.wf.generic.subprocess.kanton.be/Forms/comtibcowfgenericsubprocesskantonbe/generic_BE/pruefenTask_BE/pruefenTask_BE.form"/>
-</file>
-<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="com.tibco.wf.main.subprocess-Process (comtibcowfmainsubprocessProcess)" tooltip="/com.tibco.wf.main.subprocess/Process Packages/com.tibco.wf.main.subprocess.xpdl/com.tibco.wf.main.subprocess-Process (comtibcowfmainsubprocessProcess)">
-<persistable>&#x0A;<xpdl path="/com.tibco.wf.main.subprocess/Process Packages/com.tibco.wf.main.subprocess.xpdl" processid="_zaUEAPlKEeiLOcx5GuQ9ow"/>
+<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="StickyUser-Start Event (StickyUserStartEvent)" tooltip="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl/StickyUser-Start Event (StickyUserStartEvent)">
+<persistable>
+<xpdl path="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl" processid="_159XMPx0EeiF0cp9x5MzdA"/>
 </persistable>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.packageeditor.editor" name="com.tibco.wf.main.subprocess.xpdl" tooltip="com.tibco.wf.main.subprocess/Process Packages/com.tibco.wf.main.subprocess.xpdl">
-<persistable path="/com.tibco.wf.main.subprocess/Process Packages/com.tibco.wf.main.subprocess.xpdl"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.worklistfacade.presentation.WorkListFacadeEditorID" name="WorkListFacade.wlf" tooltip="WorkListFasade/Work List Facade/WorkListFacade.wlf">
+<persistable path="/WorkListFasade/Work List Facade/WorkListFacade.wlf"/>
 </file>
-<file factoryID="org.eclipse.emf.common.ui.URIEditorInputFactory" id="com.tibco.xpd.om.modeler.subdiagram.part.OrganizationModelSubDiagramEditorID" name="Organization1" tooltip="platform:/resource/com.tibco.wf.main.subprocess/Organization/com.tibco.wf.main.subprocess.om#_iDk4EPoCEeigr-Iv1cHE1A">
-<persistable bundle="org.eclipse.emf.common.ui" class="org.eclipse.emf.common.ui.URIEditorInput" name="Organization1" uri="platform:/resource/com.tibco.wf.main.subprocess/Organization/com.tibco.wf.main.subprocess.om#_iDk4EPoCEeigr-Iv1cHE1A"/>
-</file>
-<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="SubProcess_SaveDataToDB (SubProcess_SaveDataToDB)" tooltip="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl/SubProcess_SaveDataToDB (SubProcess_SaveDataToDB)">
-<persistable>&#x0A;<xpdl path="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl" processid="_LbTXQOynEeieuqYotrFSPg"/>
+<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="com.igs.fak.001_mainProcess (comigsfak001_mainProcess)" tooltip="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl/com.igs.fak.001_mainProcess (comigsfak001_mainProcess)">
+<persistable>
+<xpdl path="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl" processid="_IRz0o_owEeiF0cp9x5MzdA"/>
 </persistable>
 </file>
-<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="Process_SaveData (Process_SaveData)" tooltip="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl/Process_SaveData (Process_SaveData)">
-<persistable>&#x0A;<xpdl path="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl" processid="_yfA8AOyqEeieuqYotrFSPg"/>
+<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="com.igs.fak.001_automatische_steps (comigsfak001_automatische_steps)" tooltip="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl/com.igs.fak.001_automatische_steps (comigsfak001_automatische_steps)">
+<persistable>
+<xpdl path="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl" processid="_14XgIPySEeiF0cp9x5MzdA"/>
 </persistable>
 </file>
-<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="DataToBW (DataToBW)" tooltip="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl/DataToBW (DataToBW)">
-<persistable>&#x0A;<xpdl path="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl" processid="_GF0_QOmlEeiNa-ssr_CQIw"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="index.html" tooltip="com.igs.fak.001/Documentation/index.html">
+<persistable path="/com.igs.fak.001/Documentation/index.html"/>
+</file>
+<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="com.igs.fak.001_wpel_pruefen (comigsfak001_wpel_pruefen)" tooltip="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl/com.igs.fak.001_wpel_pruefen (comigsfak001_wpel_pruefen)">
+<persistable>
+<xpdl path="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl" processid="_EzyEcPxwEeiF0cp9x5MzdA"/>
+</persistable>
+</file>
+<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="com.igs.fak.001_wp_pv_daten_administrieren (comigsfak001_wp_pv_daten_administrieren)" tooltip="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl/com.igs.fak.001_wp_pv_daten_administrieren (comigsfak001_wp_pv_daten_administrieren)">
+<persistable>
+<xpdl path="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl" processid="_6ITO0PyTEeiF0cp9x5MzdA"/>
+</persistable>
+</file>
+<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="com.igs.fak.001_wp_fak_erfassung_bezueger_pruefen (comigsfak001_wp_fak_erfassung_bezueger_pruefen)" tooltip="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl/com.igs.fak.001_wp_fak_erfassung_bezueger_pruefen (comigsfak001_wp_fak_erfassung_bezueger_pruefen)">
+<persistable>
+<xpdl path="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl" processid="_AWf6oPyNEeiF0cp9x5MzdA"/>
+</persistable>
+</file>
+<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="com.igs.fak.001_wp_fak_dokumente_erstellen (comigsfak001_wp_fak_dokumente_erstellen)" tooltip="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl/com.igs.fak.001_wp_fak_dokumente_erstellen (comigsfak001_wp_fak_dokumente_erstellen)">
+<persistable>
+<xpdl path="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl" processid="_Wy_HEPyTEeiF0cp9x5MzdA"/>
 </persistable>
 </file>
 </mruList>

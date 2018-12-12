@@ -2,11 +2,13 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:om="http://www.tibco.com/om/1.0" xmlns:omnotation="http://www.tibco.com/models/omnotation">
   <om:OrgModel xmi:id="_3BUj4PovEeiF0cp9x5MzdA" name="OrganizationModel" displayName="Organization Model" version="1.0.0.qualifier" author="admin" dateCreated="1544194409741" humanResourceType="_3BUj9fovEeiF0cp9x5MzdA" consumableResourceType="_3BUj9vovEeiF0cp9x5MzdA" durableResourceType="_3BUj9_ovEeiF0cp9x5MzdA">
     <organizations xmi:type="om:Organization" xmi:id="_3BUj4fovEeiF0cp9x5MzdA" name="SVA_FAK_001" displayName="SVA_FAK_001" allocationMethod="NEXT">
-      <units xmi:type="om:OrgUnit" xmi:id="_XKLEYPxZEeiF0cp9x5MzdA" name="SVA" displayName="SVA" allocationMethod="NEXT" outgoingRelationships="_bmiiAPxZEeiF0cp9x5MzdA"/>
+      <units xmi:type="om:OrgUnit" xmi:id="_XKLEYPxZEeiF0cp9x5MzdA" name="SVA" displayName="SVA" allocationMethod="NEXT" outgoingRelationships="_bmiiAPxZEeiF0cp9x5MzdA _h1zrUP1DEeiPopDWv-BhcA"/>
       <units xmi:type="om:OrgUnit" xmi:id="_ZMPp0PxZEeiF0cp9x5MzdA" name="FAK_001" displayName="FAK_001" allocationMethod="NEXT" incomingRelationships="_bmiiAPxZEeiF0cp9x5MzdA">
         <positions xmi:type="om:Position" xmi:id="_cQlkkPxZEeiF0cp9x5MzdA" name="Bearbeiter" displayName="Bearbeiter"/>
       </units>
+      <units xmi:type="om:OrgUnit" xmi:id="_eEpG0P1DEeiPopDWv-BhcA" name="WartePostKorb" displayName="WartePostKorb" allocationMethod="NEXT" incomingRelationships="_h1zrUP1DEeiPopDWv-BhcA"/>
       <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_bmiiAPxZEeiF0cp9x5MzdA" name="SVAFAK_001" displayName="SVA-FAK_001" from="_XKLEYPxZEeiF0cp9x5MzdA" to="_ZMPp0PxZEeiF0cp9x5MzdA" isHierarchical="true"/>
+      <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_h1zrUP1DEeiPopDWv-BhcA" name="SVAWartePostKorb" displayName="SVA-WartePostKorb" from="_XKLEYPxZEeiF0cp9x5MzdA" to="_eEpG0P1DEeiPopDWv-BhcA" isHierarchical="true"/>
     </organizations>
     <embeddedMetamodel xmi:type="om:OrgMetaModel" xmi:id="_3BUj4vovEeiF0cp9x5MzdA">
       <locationTypes xmi:type="om:LocationType" xmi:id="_3BUj4_ovEeiF0cp9x5MzdA" name="StandardLocationType" displayName="Standard Location Type">
@@ -139,6 +141,22 @@
       <styles xmi:type="notation:FillStyle" xmi:id="_ZMYMtPxZEeiF0cp9x5MzdA"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZMYMtfxZEeiF0cp9x5MzdA" x="390" y="211"/>
     </children>
+    <children xmi:type="notation:Node" xmi:id="_eE0tAP1DEeiPopDWv-BhcA" type="1001" element="_eEpG0P1DEeiPopDWv-BhcA">
+      <children xmi:type="notation:Node" xmi:id="_eE17IP1DEeiPopDWv-BhcA" type="4001"/>
+      <children xmi:type="notation:Node" xmi:id="_eE3JQP1DEeiPopDWv-BhcA" type="4002">
+        <styles xmi:type="notation:FontStyle" xmi:id="_eE3JQf1DEeiPopDWv-BhcA" fontName="Segoe UI" fontHeight="10" italic="true"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_eE3JQv1DEeiPopDWv-BhcA" type="5001">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_eE3JQ_1DEeiPopDWv-BhcA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_eE3JRP1DEeiPopDWv-BhcA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_eE3JRf1DEeiPopDWv-BhcA"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_eE0tAf1DEeiPopDWv-BhcA" fontName="Segoe UI" fontHeight="10" fillColor="14548991" lineColor="2263786"/>
+      <styles xmi:type="omnotation:ShapeGradientStyle" xmi:id="_eE0tAv1DEeiPopDWv-BhcA" gradEndColor="4227327"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_eE0tA_1DEeiPopDWv-BhcA"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_eE0tBP1DEeiPopDWv-BhcA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eE0tBf1DEeiPopDWv-BhcA" x="616" y="211"/>
+    </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_3CWeofovEeiF0cp9x5MzdA"/>
     <styles xmi:type="notation:FillStyle" xmi:id="_3CWeovovEeiF0cp9x5MzdA"/>
     <edges xmi:type="notation:Edge" xmi:id="_bm8xsPxZEeiF0cp9x5MzdA" type="3001" element="_bmiiAPxZEeiF0cp9x5MzdA" source="_XKZt4PxZEeiF0cp9x5MzdA" target="_ZMYMsPxZEeiF0cp9x5MzdA">
@@ -150,6 +168,16 @@
       <styles xmi:type="notation:LineStyle" xmi:id="_bm8xs_xZEeiF0cp9x5MzdA"/>
       <styles xmi:type="notation:LineTypeStyle" xmi:id="_bm8xtPxZEeiF0cp9x5MzdA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bm8xtfxZEeiF0cp9x5MzdA" points="[-26, 25, 45, -69]$[-132, 76, -61, -18]"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_h2OiEP1DEeiPopDWv-BhcA" type="3001" element="_h1zrUP1DEeiPopDWv-BhcA" source="_XKZt4PxZEeiF0cp9x5MzdA" target="_eE0tAP1DEeiPopDWv-BhcA">
+      <children xmi:type="notation:Node" xmi:id="_h2PwMP1DEeiPopDWv-BhcA" visible="false" type="4003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_h2PwMf1DEeiPopDWv-BhcA" y="15"/>
+      </children>
+      <styles xmi:type="notation:ConnectorStyle" xmi:id="_h2OiEf1DEeiPopDWv-BhcA" routing="Tree" lineColor="4622313" lineWidth="2"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_h2OiEv1DEeiPopDWv-BhcA" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_h2OiE_1DEeiPopDWv-BhcA"/>
+      <styles xmi:type="notation:LineTypeStyle" xmi:id="_h2OiFP1DEeiPopDWv-BhcA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_h2OiFf1DEeiPopDWv-BhcA" points="[45, 25, -112, -69]$[140, 68, -17, -26]"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>

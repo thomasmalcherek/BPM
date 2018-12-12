@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:extns="http://com.tibco.poc.test.bw.saveDataCaseXSD" xmlns:jms="http://www.tibco.com/namespaces/ws/2004/soap/binding/JMS" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://com.tibco.poc.test.bw.saveDataCase" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://com.tibco.poc.test.bw.saveDataCase">
+	<wsdl:import location="../Schemas/saveDataCaseSchema.xsd" namespace="http://com.tibco.poc.test.bw.saveDataCaseXSD"/>
+	<wsdl:message name="CreateCaseIDRequest">
+		<wsdl:part element="extns:CreateCaseIDRequest" name="InputParameters"/>
+	</wsdl:message>
+	<wsdl:message name="CreateCaseIDRequestFromBPM">
+		<wsdl:part element="extns:CreateCaseIDRequestFromBPM" name="InputParametersFromBPM"/>
+	</wsdl:message>
+	<wsdl:message name="CreateCaseIDResponse">
+		<wsdl:part element="extns:CreateCaseIDResponse" name="OutputParameters"/>
+	</wsdl:message>
+	<wsdl:message name="CreateCaseIDResponseFromBPM">
+		<wsdl:part element="extns:CreateCaseIDResponseFromBPM" name="OutputParametersFromBPM"/>
+	</wsdl:message>
+    <wsdl:message name="GetDataWFCaseIDRequest">
+    <wsdl:part element="extns:GetDataRequestFromCaseID" name="GetDataPInputParameters"/>
+  </wsdl:message>
+    <wsdl:message name="GetDataWFCaseIDResponse">
+    <wsdl:part element="extns:GetDataWFCaseIDResponse" name="GetDataOutputParameters"/>
+  </wsdl:message>
+    <wsdl:message name="SearchDataRequest">
+    <wsdl:part element="extns:SearchDataRequest" name="GetDataPInputParameters"/>
+  </wsdl:message>
+    <wsdl:message name="SearchDataResponse">
+    <wsdl:part element="extns:SearchDataResponses" name="GetDataOutputParameters"/>
+  </wsdl:message>
+  
+  
+  
+    <wsdl:portType name="saveDataCase">
+		<wsdl:operation name="CreateCaseID">
+			<wsdl:input message="tns:CreateCaseIDRequest" name="CreateCaseIDRequest"/>
+			<wsdl:output message="tns:CreateCaseIDResponse" name="CreateCaseIDResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="CreateCaseIDFromBPM">
+			<wsdl:input message="tns:CreateCaseIDRequestFromBPM" name="CreateCaseIDRequestFromBPM"/>
+			<wsdl:output message="tns:CreateCaseIDResponseFromBPM" name="CreateCaseIDResponseFromBPM"/>
+		</wsdl:operation>
+        <wsdl:operation name="GetDataWFCaseID">
+      <wsdl:input message="tns:GetDataWFCaseIDRequest" name="GetDataRequest"/>
+      <wsdl:output message="tns:GetDataWFCaseIDResponse" name="GetDataResponse"/>
+    </wsdl:operation>
+        <wsdl:operation name="SearchData">
+      <wsdl:input message="tns:SearchDataRequest" name="SearchDataRequest"/>
+      <wsdl:output message="tns:SearchDataResponse" name="SearchDataResponse"/>
+    </wsdl:operation>
+    </wsdl:portType>
+
+
+</wsdl:definitions>

@@ -1910,6 +1910,24 @@ WF_CASE_ID=Input_MetaData.WFCaseID;&#xD;
           </xpdl2:DataType>
         </xpdl2:FormalParameter>
       </xpdl2:FormalParameters>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="___PKkf0jEeiF0cp9x5MzdA" xpdExt:DisplayName="OriginatorName" Name="OriginatorName" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue></xpdl2:InitialValue>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_PyuRcf0kEeiF0cp9x5MzdA" xpdExt:DisplayName="Originator" Name="Originator" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue></xpdl2:InitialValue>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
       <xpdl2:Activities>
         <xpdl2:Activity Id="_7bseR_xwEeiF0cp9x5MzdA" Name="StartEvent" xpdExt:DisplayName="Start Event">
           <xpdl2:Event>
@@ -2018,6 +2036,45 @@ WF_CASE_ID=Input_MetaData.WFCaseID;&#xD;
             <xpdExt:AssociatedParameter FormalParam="Parameter" Mode="INOUT" Mandatory="false"/>
           </xpdExt:AssociatedParameters>
         </xpdl2:Activity>
+        <xpdl2:Activity Id="_q_W3UP0jEeiF0cp9x5MzdA" Name="ScriptTask" IsATransaction="false" xpdExt:Visibility="Private" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="Script Task">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">OriginatorName=Process.getOriginatorName();&#xD;
+Originator=Process.getOriginator();&#xD;
+</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_7bseRvxwEeiF0cp9x5MzdA" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="317.0" YCoordinate="240.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_2hWB4_0lEeiF0cp9x5MzdA" Name="ScriptTask_2" IsATransaction="false" xpdExt:Visibility="Private" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="Script Task_2">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">OriginatorName=Process.getOriginatorName();&#xD;
+Originator=Process.getOriginator();</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_7bseRvxwEeiF0cp9x5MzdA" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="450.0" YCoordinate="240.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
       </xpdl2:Activities>
       <xpdl2:Transitions>
         <xpdl2:Transition Id="_7bseSfxwEeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_9X3QAPxwEeiF0cp9x5MzdA" To="_7bseSPxwEeiF0cp9x5MzdA">
@@ -2031,14 +2088,40 @@ WF_CASE_ID=Input_MetaData.WFCaseID;&#xD;
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
-        <xpdl2:Transition Id="_881g4PxwEeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_8ZmQ8PxwEeiF0cp9x5MzdA" To="_88050PxwEeiF0cp9x5MzdA">
+        <xpdl2:Transition Id="_B2IawP0kEeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_8ZmQ8PxwEeiF0cp9x5MzdA" To="_q_W3UP0jEeiF0cp9x5MzdA">
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
-        <xpdl2:Transition Id="_9X33EPxwEeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_88050PxwEeiF0cp9x5MzdA" To="_9X3QAPxwEeiF0cp9x5MzdA">
+        <xpdl2:Transition Id="_CGYdQP0kEeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_q_W3UP0jEeiF0cp9x5MzdA" To="_88050PxwEeiF0cp9x5MzdA">
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_3mnA0P0lEeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_88050PxwEeiF0cp9x5MzdA" To="_2hWB4_0lEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_33ANQP0lEeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_2hWB4_0lEeiF0cp9x5MzdA" To="_9X3QAPxwEeiF0cp9x5MzdA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
       </xpdl2:Transitions>
@@ -2055,6 +2138,32 @@ WF_CASE_ID=Input_MetaData.WFCaseID;&#xD;
           <xpdExt:ActivityRef xpdExt:IdRef="_8ZmQ8PxwEeiF0cp9x5MzdA"/>
         </xpdExt:RetainFamiliarActivities>
       </xpdExt:ProcessResourcePatterns>
+      <xpdExt:ProcessDataWorkItemAttributeMappings>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute2</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>Parameter.AHVNummer</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute4</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>Parameter.dokumentenArt</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute3</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>Parameter.kanton</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute6</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>Parameter.frist</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute9</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>Originator</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute10</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>Originator</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+      </xpdExt:ProcessDataWorkItemAttributeMappings>
     </xpdl2:WorkflowProcess>
     <xpdl2:WorkflowProcess Id="_159XMPx0EeiF0cp9x5MzdA" xpdExt:XpdModelType="PageFlow" xpdExt:DisplayName="StickyUser-Start Event" xpdExt:PublishAsBusinessService="true" xpdExt:BusinessServiceCategory="com.tibco.poc.test/comtibcopoctest" Name="StickyUserStartEvent">
       <xpdl2:ProcessHeader/>
@@ -2099,7 +2208,7 @@ WF_CASE_ID=Input_MetaData.WFCaseID;&#xD;
           </xpdExt:ActivityResourcePatterns>
           <xpdExt:AssociatedParameters>
             <xpdExt:AssociatedParameter FormalParam="Parameter" Mode="INOUT" Mandatory="true">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
           </xpdExt:AssociatedParameters>
         </xpdl2:Activity>

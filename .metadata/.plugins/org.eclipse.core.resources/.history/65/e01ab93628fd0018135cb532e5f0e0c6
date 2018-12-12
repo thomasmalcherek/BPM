@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PrimitiveTypeFacets="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0" xmlns:XsdNotationProfile="http:///schemas/XsdNotationProfile/_LmHW0PHtEd2z3-vLsCwuEg/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0 pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw http:///schemas/XsdNotationProfile/_LmHW0PHtEd2z3-vLsCwuEg/1 pathmap://XSD_NOTATION_TYPES/XsdNotation.profile.uml#_LmHW0fHtEd2z3-vLsCwuEg">
+  <uml:Model xmi:id="saveDataCaseXSD.bw.test.poc.tibco.com" name="saveDataCaseXSD.bw.test.poc.tibco.com">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NqYIEP0oEeiF0cp9x5MzdA" source="model.metadata">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NqYIEf0oEeiF0cp9x5MzdA" key="author" value="admin"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NqYIEv0oEeiF0cp9x5MzdA" key="created" value="1544520979217"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NqYIE_0oEeiF0cp9x5MzdA" key="version" value="4"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDRequestType" name="CreateCaseIDRequestType">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="CreateCaseIDRequestTypeAHV-Nummer" name="AHVNummer" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Nd3WE_0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Nd3WEv0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="CreateCaseIDRequestTypePartner-ID" name="partnerID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NfV8w_0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NfV8wv0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="CreateCaseIDRequestTypeDokumenten-Art" name="dokumentenArt" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Nfftw_0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Nfftwv0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="CreateCaseIDRequestTypeKanton" name="kanton" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NfftyP0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Nfftx_0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDResponseType" name="CreateCaseIDResponseType">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="CreateCaseIDResponseTypeCaseID" name="caseID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NhcOhP0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NhcOg_0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDRequestFromBPMType" name="CreateCaseIDRequestFromBPMType">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="CreateCaseIDRequestFromBPMTypeCaseID" name="caseID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NhlYc_0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NhlYcv0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="CreateCaseIDRequestFromBPMTypeAHV-Nummer" name="AHVNummer" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NhlYeP0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NhlYd_0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="CreateCaseIDRequestFromBPMTypePartner-ID" name="partnerID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NhvJc_0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NhvJcv0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="CreateCaseIDRequestFromBPMTypeDokumenten-Art" name="dokumentenArt" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NhvJeP0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NhvJd_0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="CreateCaseIDRequestFromBPMTypeKanton" name="kanton" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NhvJff0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NhvJfP0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDResponseFromBPMType" name="CreateCaseIDResponseFromBPMType">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="CreateCaseIDResponseFromBPMTypeAcknowledgement" name="acknowledgement" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g?BomPrimitiveTypes%3a%3aBoolean?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Nh46dv0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Nh46df0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="saveDataCaseXSD.bw.test.poc.tibco.comGetDataRequestFromCaseIDType" name="GetDataRequestFromCaseIDType">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="GetDataRequestFromCaseIDTypeCaseID" name="caseID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NiCEY_0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NiCEYv0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="saveDataCaseXSD.bw.test.poc.tibco.comGetDataResponseFromCaseIDType" name="GetDataResponseFromCaseIDType">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="GetDataResponseFromCaseIDTypeCaseID" name="caseID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NiCEbP0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NiCEa_0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="GetDataResponseFromCaseIDTypeAHV-Nummer" name="AHVNummer" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NiL1Y_0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NiL1Yv0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="GetDataResponseFromCaseIDTypePartner-ID" name="partnerID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NiL1aP0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NiL1Z_0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="GetDataResponseFromCaseIDTypeDokumenten-Art" name="dokumentenArt" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NiVmY_0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NiVmYv0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="GetDataResponseFromCaseIDTypeKanton" name="kanton" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NiVmaP0oEeiF0cp9x5MzdA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NiVmZ_0oEeiF0cp9x5MzdA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Ndj0Ef0oEeiF0cp9x5MzdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ndj0Ev0oEeiF0cp9x5MzdA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://XSD_NOTATION_TYPES/XsdNotation.profile.uml#_LmHW0fHtEd2z3-vLsCwuEg"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://XSD_NOTATION_TYPES/XsdNotation.profile.uml#_rcgvMcXQEd24G-GaruVVqA?XsdNotationProfile?"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Ndj0E_0oEeiF0cp9x5MzdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ndj0FP0oEeiF0cp9x5MzdA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_3A574HcJEdytQ9AWEvOuug?PrimitiveTypeFacets?"/>
+    </profileApplication>
+  </uml:Model>
+  <XsdNotationProfile:XsdBasedModel xmi:id="_Ndj0Ff0oEeiF0cp9x5MzdA" base_Package="saveDataCaseXSD.bw.test.poc.tibco.com?saveDataCaseXSD.bw.test.poc.tibco.com?" xsdTargetNamespace="http://com.tibco.poc.test.bw.saveDataCaseXSD" xsdSchemaLocation="saveDataCase_JMS.wsdl" xsdAttributeForm="unqualified" xsdElementForm="unqualified" xsdStudioVersion="3.12.0.001"/>
+  <XsdNotationProfile:XsdBasedClass xmi:id="_NdtlEf0oEeiF0cp9x5MzdA" base_Class="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDRequestType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType?" xsdMixed="false" xsdAbstract="false" xsdIsComplexType="true" xsdIsAnonType="true">
+    <xsdSequenceList xmi:type="XsdNotationProfile:XsdSequence" xmi:id="_NfpewP0oEeiF0cp9x5MzdA" name="MS1_1_1"/>
+  </XsdNotationProfile:XsdBasedClass>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_Nd3WEf0oEeiF0cp9x5MzdA" base_Property="CreateCaseIDRequestTypeAHV-Nummer?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3aAHVNummer?" xsdName="AHV-Nummer" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NfpewP0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_Nd3WFP0oEeiF0cp9x5MzdA" textLength="-1" base_Property="CreateCaseIDRequestTypeAHV-Nummer?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3aAHVNummer?"/>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_NfV8wf0oEeiF0cp9x5MzdA" base_Property="CreateCaseIDRequestTypePartner-ID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3apartnerID?" xsdName="Partner-ID" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NfpewP0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NfV8xP0oEeiF0cp9x5MzdA" textLength="-1" base_Property="CreateCaseIDRequestTypePartner-ID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3apartnerID?"/>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_Nfftwf0oEeiF0cp9x5MzdA" base_Property="CreateCaseIDRequestTypeDokumenten-Art?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3adokumentenArt?" xsdName="Dokumenten-Art" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NfpewP0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NfftxP0oEeiF0cp9x5MzdA" textLength="-1" base_Property="CreateCaseIDRequestTypeDokumenten-Art?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3adokumentenArt?"/>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_Nfftxv0oEeiF0cp9x5MzdA" base_Property="CreateCaseIDRequestTypeKanton?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3akanton?" xsdName="Kanton" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NfpewP0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_Nfftyf0oEeiF0cp9x5MzdA" textLength="-1" base_Property="CreateCaseIDRequestTypeKanton?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3akanton?"/>
+  <XsdNotationProfile:TopLevelElements xmi:id="_NhR2cP0oEeiF0cp9x5MzdA" base_Package="saveDataCaseXSD.bw.test.poc.tibco.com?saveDataCaseXSD.bw.test.poc.tibco.com?">
+    <elements xmi:type="XsdNotationProfile:TopLevelElement" xmi:id="_NhR2cf0oEeiF0cp9x5MzdA" name="CreateCaseIDRequest" type="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDRequestType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType?" isAnonymous="true" targetNamespace="http://com.tibco.poc.test.bw.saveDataCaseXSD" substitutionGroup=""/>
+    <elements xmi:type="XsdNotationProfile:TopLevelElement" xmi:id="_NhcOh_0oEeiF0cp9x5MzdA" name="CreateCaseIDResponse" type="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDResponseType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseType?" isAnonymous="true" targetNamespace="http://com.tibco.poc.test.bw.saveDataCaseXSD" substitutionGroup=""/>
+    <elements xmi:type="XsdNotationProfile:TopLevelElement" xmi:id="_Nh46cP0oEeiF0cp9x5MzdA" name="CreateCaseIDRequestFromBPM" type="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDRequestFromBPMType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType?" isAnonymous="true" targetNamespace="http://com.tibco.poc.test.bw.saveDataCaseXSD" substitutionGroup=""/>
+    <elements xmi:type="XsdNotationProfile:TopLevelElement" xmi:id="_Nh46eP0oEeiF0cp9x5MzdA" name="CreateCaseIDResponseFromBPM" type="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDResponseFromBPMType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseFromBPMType?" isAnonymous="true" targetNamespace="http://com.tibco.poc.test.bw.saveDataCaseXSD" substitutionGroup=""/>
+    <elements xmi:type="XsdNotationProfile:TopLevelElement" xmi:id="_NiCEZv0oEeiF0cp9x5MzdA" name="GetDataRequestFromCaseID" type="saveDataCaseXSD.bw.test.poc.tibco.comGetDataRequestFromCaseIDType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataRequestFromCaseIDType?" isAnonymous="true" targetNamespace="http://com.tibco.poc.test.bw.saveDataCaseXSD" substitutionGroup=""/>
+    <elements xmi:type="XsdNotationProfile:TopLevelElement" xmi:id="_NiewUP0oEeiF0cp9x5MzdA" name="GetDataResponseFromCaseID" type="saveDataCaseXSD.bw.test.poc.tibco.comGetDataResponseFromCaseIDType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType?" isAnonymous="true" targetNamespace="http://com.tibco.poc.test.bw.saveDataCaseXSD" substitutionGroup=""/>
+  </XsdNotationProfile:TopLevelElements>
+  <XsdNotationProfile:XsdBasedClass xmi:id="_NhcOgP0oEeiF0cp9x5MzdA" base_Class="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDResponseType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseType?" xsdMixed="false" xsdAbstract="false" xsdIsComplexType="true" xsdIsAnonType="true">
+    <xsdSequenceList xmi:type="XsdNotationProfile:XsdSequence" xmi:id="_NhcOhv0oEeiF0cp9x5MzdA" name="MS1_1_1"/>
+  </XsdNotationProfile:XsdBasedClass>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_NhcOgv0oEeiF0cp9x5MzdA" base_Property="CreateCaseIDResponseTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseType%3a%3acaseID?" xsdName="CaseID" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NhcOhv0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NhcOhf0oEeiF0cp9x5MzdA" textLength="-1" base_Property="CreateCaseIDResponseTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseType%3a%3acaseID?"/>
+  <XsdNotationProfile:XsdBasedClass xmi:id="_NhcOif0oEeiF0cp9x5MzdA" base_Class="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDRequestFromBPMType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType?" xsdMixed="false" xsdAbstract="false" xsdIsComplexType="true" xsdIsAnonType="true">
+    <xsdSequenceList xmi:type="XsdNotationProfile:XsdSequence" xmi:id="_NhvJf_0oEeiF0cp9x5MzdA" name="MS1_1_1"/>
+  </XsdNotationProfile:XsdBasedClass>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_NhlYcf0oEeiF0cp9x5MzdA" base_Property="CreateCaseIDRequestFromBPMTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3acaseID?" xsdName="CaseID" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NhvJf_0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NhlYdP0oEeiF0cp9x5MzdA" textLength="-1" base_Property="CreateCaseIDRequestFromBPMTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3acaseID?"/>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_NhlYdv0oEeiF0cp9x5MzdA" base_Property="CreateCaseIDRequestFromBPMTypeAHV-Nummer?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3aAHVNummer?" xsdName="AHV-Nummer" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NhvJf_0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NhlYef0oEeiF0cp9x5MzdA" textLength="-1" base_Property="CreateCaseIDRequestFromBPMTypeAHV-Nummer?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3aAHVNummer?"/>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_NhvJcf0oEeiF0cp9x5MzdA" base_Property="CreateCaseIDRequestFromBPMTypePartner-ID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3apartnerID?" xsdName="Partner-ID" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NhvJf_0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NhvJdP0oEeiF0cp9x5MzdA" textLength="-1" base_Property="CreateCaseIDRequestFromBPMTypePartner-ID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3apartnerID?"/>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_NhvJdv0oEeiF0cp9x5MzdA" base_Property="CreateCaseIDRequestFromBPMTypeDokumenten-Art?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3adokumentenArt?" xsdName="Dokumenten-Art" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NhvJf_0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NhvJef0oEeiF0cp9x5MzdA" textLength="-1" base_Property="CreateCaseIDRequestFromBPMTypeDokumenten-Art?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3adokumentenArt?"/>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_NhvJe_0oEeiF0cp9x5MzdA" base_Property="CreateCaseIDRequestFromBPMTypeKanton?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3akanton?" xsdName="Kanton" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NhvJf_0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NhvJfv0oEeiF0cp9x5MzdA" textLength="-1" base_Property="CreateCaseIDRequestFromBPMTypeKanton?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3akanton?"/>
+  <XsdNotationProfile:XsdBasedClass xmi:id="_Nh46cv0oEeiF0cp9x5MzdA" base_Class="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDResponseFromBPMType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseFromBPMType?" xsdMixed="false" xsdAbstract="false" xsdIsComplexType="true" xsdIsAnonType="true">
+    <xsdSequenceList xmi:type="XsdNotationProfile:XsdSequence" xmi:id="_Nh46d_0oEeiF0cp9x5MzdA" name="MS1_1_1"/>
+  </XsdNotationProfile:XsdBasedClass>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_Nh46dP0oEeiF0cp9x5MzdA" base_Property="CreateCaseIDResponseFromBPMTypeAcknowledgement?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseFromBPMType%3a%3aacknowledgement?" xsdName="Acknowledgement" xsdForm="unqualified" xsdType="boolean" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_Nh46d_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedClass xmi:id="_Nh46ev0oEeiF0cp9x5MzdA" base_Class="saveDataCaseXSD.bw.test.poc.tibco.comGetDataRequestFromCaseIDType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataRequestFromCaseIDType?" xsdMixed="false" xsdAbstract="false" xsdIsComplexType="true" xsdIsAnonType="true">
+    <xsdSequenceList xmi:type="XsdNotationProfile:XsdSequence" xmi:id="_NiCEZf0oEeiF0cp9x5MzdA" name="MS1_1_1"/>
+  </XsdNotationProfile:XsdBasedClass>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_NiCEYf0oEeiF0cp9x5MzdA" base_Property="GetDataRequestFromCaseIDTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataRequestFromCaseIDType%3a%3acaseID?" xsdName="CaseID" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NiCEZf0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NiCEZP0oEeiF0cp9x5MzdA" textLength="-1" base_Property="GetDataRequestFromCaseIDTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataRequestFromCaseIDType%3a%3acaseID?"/>
+  <XsdNotationProfile:XsdBasedClass xmi:id="_NiCEaP0oEeiF0cp9x5MzdA" base_Class="saveDataCaseXSD.bw.test.poc.tibco.comGetDataResponseFromCaseIDType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType?" xsdMixed="false" xsdAbstract="false" xsdIsComplexType="true" xsdIsAnonType="true">
+    <xsdSequenceList xmi:type="XsdNotationProfile:XsdSequence" xmi:id="_NiVmav0oEeiF0cp9x5MzdA" name="MS1_1_1"/>
+  </XsdNotationProfile:XsdBasedClass>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_NiCEav0oEeiF0cp9x5MzdA" base_Property="GetDataResponseFromCaseIDTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3acaseID?" xsdName="CaseID" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NiVmav0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NiCEbf0oEeiF0cp9x5MzdA" textLength="-1" base_Property="GetDataResponseFromCaseIDTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3acaseID?"/>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_NiL1Yf0oEeiF0cp9x5MzdA" base_Property="GetDataResponseFromCaseIDTypeAHV-Nummer?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3aAHVNummer?" xsdName="AHV-Nummer" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NiVmav0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NiL1ZP0oEeiF0cp9x5MzdA" textLength="-1" base_Property="GetDataResponseFromCaseIDTypeAHV-Nummer?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3aAHVNummer?"/>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_NiL1Zv0oEeiF0cp9x5MzdA" base_Property="GetDataResponseFromCaseIDTypePartner-ID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3apartnerID?" xsdName="Partner-ID" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NiVmav0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NiL1af0oEeiF0cp9x5MzdA" textLength="-1" base_Property="GetDataResponseFromCaseIDTypePartner-ID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3apartnerID?"/>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_NiVmYf0oEeiF0cp9x5MzdA" base_Property="GetDataResponseFromCaseIDTypeDokumenten-Art?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3adokumentenArt?" xsdName="Dokumenten-Art" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NiVmav0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NiVmZP0oEeiF0cp9x5MzdA" textLength="-1" base_Property="GetDataResponseFromCaseIDTypeDokumenten-Art?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3adokumentenArt?"/>
+  <XsdNotationProfile:XsdBasedProperty xmi:id="_NiVmZv0oEeiF0cp9x5MzdA" base_Property="GetDataResponseFromCaseIDTypeKanton?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3akanton?" xsdName="Kanton" xsdForm="unqualified" xsdType="string" xsdExplicitGroupHierarchy="S1" xsdParentSequence="_NiVmav0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_NiVmaf0oEeiF0cp9x5MzdA" textLength="-1" base_Property="GetDataResponseFromCaseIDTypeKanton?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3akanton?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewUf0oEeiF0cp9x5MzdA" base_Element="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDResponseType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseType?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewUv0oEeiF0cp9x5MzdA" base_Element="_NhvJfP0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewU_0oEeiF0cp9x5MzdA" base_Element="GetDataRequestFromCaseIDTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataRequestFromCaseIDType%3a%3acaseID?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewVP0oEeiF0cp9x5MzdA" base_Element="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDResponseFromBPMType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseFromBPMType?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewVf0oEeiF0cp9x5MzdA" base_Element="CreateCaseIDRequestFromBPMTypeDokumenten-Art?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3adokumentenArt?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewVv0oEeiF0cp9x5MzdA" base_Element="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDRequestType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewV_0oEeiF0cp9x5MzdA" base_Element="_NhvJcv0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewWP0oEeiF0cp9x5MzdA" base_Element="GetDataResponseFromCaseIDTypePartner-ID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3apartnerID?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewWf0oEeiF0cp9x5MzdA" base_Element="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDRequestFromBPMType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewWv0oEeiF0cp9x5MzdA" base_Element="_Nh46df0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewW_0oEeiF0cp9x5MzdA" base_Element="_NiL1Yv0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewXP0oEeiF0cp9x5MzdA" base_Element="_Nd3WEv0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewXf0oEeiF0cp9x5MzdA" base_Element="_Nh46dv0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewXv0oEeiF0cp9x5MzdA" base_Element="_NiCEa_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewX_0oEeiF0cp9x5MzdA" base_Element="CreateCaseIDRequestFromBPMTypeKanton?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3akanton?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewYP0oEeiF0cp9x5MzdA" base_Element="CreateCaseIDResponseTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseType%3a%3acaseID?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewYf0oEeiF0cp9x5MzdA" base_Element="_NhvJc_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewYv0oEeiF0cp9x5MzdA" base_Element="CreateCaseIDRequestTypeKanton?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3akanton?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewY_0oEeiF0cp9x5MzdA" base_Element="GetDataResponseFromCaseIDTypeAHV-Nummer?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3aAHVNummer?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewZP0oEeiF0cp9x5MzdA" base_Element="_NiL1aP0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewZf0oEeiF0cp9x5MzdA" base_Element="_NhlYeP0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewZv0oEeiF0cp9x5MzdA" base_Element="CreateCaseIDRequestFromBPMTypePartner-ID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3apartnerID?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewZ_0oEeiF0cp9x5MzdA" base_Element="_NiVmaP0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewaP0oEeiF0cp9x5MzdA" base_Element="_NiVmY_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewaf0oEeiF0cp9x5MzdA" base_Element="_Nfftx_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewav0oEeiF0cp9x5MzdA" base_Element="CreateCaseIDRequestFromBPMTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3acaseID?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewa_0oEeiF0cp9x5MzdA" base_Element="_NfftyP0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewbP0oEeiF0cp9x5MzdA" base_Element="_NiCEYv0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewbf0oEeiF0cp9x5MzdA" base_Element="_NhlYc_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewbv0oEeiF0cp9x5MzdA" base_Element="CreateCaseIDRequestTypePartner-ID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3apartnerID?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewb_0oEeiF0cp9x5MzdA" base_Element="_NiCEbP0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewcP0oEeiF0cp9x5MzdA" base_Element="_Nfftw_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewcf0oEeiF0cp9x5MzdA" base_Element="_Ndj0Ef0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewcv0oEeiF0cp9x5MzdA" base_Element="saveDataCaseXSD.bw.test.poc.tibco.comGetDataResponseFromCaseIDType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewc_0oEeiF0cp9x5MzdA" base_Element="_Ndj0E_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewdP0oEeiF0cp9x5MzdA" base_Element="_NiVmYv0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewdf0oEeiF0cp9x5MzdA" base_Element="_NhvJeP0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewdv0oEeiF0cp9x5MzdA" base_Element="CreateCaseIDRequestTypeDokumenten-Art?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3adokumentenArt?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewd_0oEeiF0cp9x5MzdA" base_Element="_NiCEY_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NieweP0oEeiF0cp9x5MzdA" base_Element="saveDataCaseXSD.bw.test.poc.tibco.comGetDataRequestFromCaseIDType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataRequestFromCaseIDType?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewef0oEeiF0cp9x5MzdA" base_Element="_NiL1Y_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewev0oEeiF0cp9x5MzdA" base_Element="CreateCaseIDRequestFromBPMTypeAHV-Nummer?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3aAHVNummer?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewe_0oEeiF0cp9x5MzdA" base_Element="_NiVmZ_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewfP0oEeiF0cp9x5MzdA" base_Element="GetDataResponseFromCaseIDTypeKanton?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3akanton?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewff0oEeiF0cp9x5MzdA" base_Element="_Nfftwv0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewfv0oEeiF0cp9x5MzdA" base_Element="_NhlYd_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewf_0oEeiF0cp9x5MzdA" base_Element="_NhcOhP0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewgP0oEeiF0cp9x5MzdA" base_Element="_NhcOg_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewgf0oEeiF0cp9x5MzdA" base_Element="_NhlYcv0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewgv0oEeiF0cp9x5MzdA" base_Element="_NhvJff0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewg_0oEeiF0cp9x5MzdA" base_Element="_NfV8wv0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewhP0oEeiF0cp9x5MzdA" base_Element="_NhvJd_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewhf0oEeiF0cp9x5MzdA" base_Element="CreateCaseIDRequestTypeAHV-Nummer?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3aAHVNummer?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewhv0oEeiF0cp9x5MzdA" base_Element="GetDataResponseFromCaseIDTypeDokumenten-Art?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3adokumentenArt?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewh_0oEeiF0cp9x5MzdA" base_Element="CreateCaseIDResponseFromBPMTypeAcknowledgement?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseFromBPMType%3a%3aacknowledgement?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_NiewiP0oEeiF0cp9x5MzdA" base_Element="_NiL1Z_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewif0oEeiF0cp9x5MzdA" base_Element="GetDataResponseFromCaseIDTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3acaseID?"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewiv0oEeiF0cp9x5MzdA" base_Element="_Nd3WE_0oEeiF0cp9x5MzdA"/>
+  <XsdNotationProfile:XsdBasedElement xmi:id="_Niewi_0oEeiF0cp9x5MzdA" base_Element="_NfV8w_0oEeiF0cp9x5MzdA"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqFNIP0oEeiF0cp9x5MzdA" displayLabel="CreateCaseIDRequestType" base_NamedElement="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDRequestType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqFNIf0oEeiF0cp9x5MzdA" displayLabel="CreateCaseIDRequestFromBPMType" base_NamedElement="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDRequestFromBPMType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqFNIv0oEeiF0cp9x5MzdA" displayLabel="CreateCaseIDResponseType" base_NamedElement="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDResponseType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseType?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqFNI_0oEeiF0cp9x5MzdA" displayLabel="CreateCaseIDResponseFromBPMType" base_NamedElement="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDResponseFromBPMType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseFromBPMType?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqFNJP0oEeiF0cp9x5MzdA" displayLabel="GetDataRequestFromCaseIDType" base_NamedElement="saveDataCaseXSD.bw.test.poc.tibco.comGetDataRequestFromCaseIDType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataRequestFromCaseIDType?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqFNJf0oEeiF0cp9x5MzdA" displayLabel="GetDataResponseFromCaseIDType" base_NamedElement="saveDataCaseXSD.bw.test.poc.tibco.comGetDataResponseFromCaseIDType?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqFNJv0oEeiF0cp9x5MzdA" displayLabel="AHV-Nummer" base_NamedElement="CreateCaseIDRequestTypeAHV-Nummer?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3aAHVNummer?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqFNJ_0oEeiF0cp9x5MzdA" displayLabel="Dokumenten-Art" base_NamedElement="CreateCaseIDRequestTypeDokumenten-Art?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3adokumentenArt?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqFNKP0oEeiF0cp9x5MzdA" displayLabel="Kanton" base_NamedElement="CreateCaseIDRequestTypeKanton?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3akanton?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqFNKf0oEeiF0cp9x5MzdA" displayLabel="Partner-ID" base_NamedElement="CreateCaseIDRequestTypePartner-ID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestType%3a%3apartnerID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqO-IP0oEeiF0cp9x5MzdA" displayLabel="AHV-Nummer" base_NamedElement="CreateCaseIDRequestFromBPMTypeAHV-Nummer?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3aAHVNummer?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqO-If0oEeiF0cp9x5MzdA" displayLabel="CaseID" base_NamedElement="CreateCaseIDRequestFromBPMTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3acaseID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqO-Iv0oEeiF0cp9x5MzdA" displayLabel="Dokumenten-Art" base_NamedElement="CreateCaseIDRequestFromBPMTypeDokumenten-Art?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3adokumentenArt?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqO-I_0oEeiF0cp9x5MzdA" displayLabel="Kanton" base_NamedElement="CreateCaseIDRequestFromBPMTypeKanton?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3akanton?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqO-JP0oEeiF0cp9x5MzdA" displayLabel="Partner-ID" base_NamedElement="CreateCaseIDRequestFromBPMTypePartner-ID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDRequestFromBPMType%3a%3apartnerID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqO-Jf0oEeiF0cp9x5MzdA" displayLabel="CaseID" base_NamedElement="CreateCaseIDResponseTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseType%3a%3acaseID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqO-Jv0oEeiF0cp9x5MzdA" displayLabel="Acknowledgement" base_NamedElement="CreateCaseIDResponseFromBPMTypeAcknowledgement?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aCreateCaseIDResponseFromBPMType%3a%3aacknowledgement?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqO-J_0oEeiF0cp9x5MzdA" displayLabel="CaseID" base_NamedElement="GetDataRequestFromCaseIDTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataRequestFromCaseIDType%3a%3acaseID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqO-KP0oEeiF0cp9x5MzdA" displayLabel="AHV-Nummer" base_NamedElement="GetDataResponseFromCaseIDTypeAHV-Nummer?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3aAHVNummer?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqO-Kf0oEeiF0cp9x5MzdA" displayLabel="CaseID" base_NamedElement="GetDataResponseFromCaseIDTypeCaseID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3acaseID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqO-Kv0oEeiF0cp9x5MzdA" displayLabel="Dokumenten-Art" base_NamedElement="GetDataResponseFromCaseIDTypeDokumenten-Art?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3adokumentenArt?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqO-K_0oEeiF0cp9x5MzdA" displayLabel="Kanton" base_NamedElement="GetDataResponseFromCaseIDTypeKanton?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3akanton?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_NqO-LP0oEeiF0cp9x5MzdA" displayLabel="Partner-ID" base_NamedElement="GetDataResponseFromCaseIDTypePartner-ID?saveDataCaseXSD.bw.test.poc.tibco.com%3a%3aGetDataResponseFromCaseIDType%3a%3apartnerID?"/>
+  <notation:Diagram xmi:id="_NqYIFP0oEeiF0cp9x5MzdA" type="Business Object Model" element="saveDataCaseXSD.bw.test.poc.tibco.com?saveDataCaseXSD.bw.test.poc.tibco.com?" name="saveDataCaseXSD.bw.test.poc.tibco.com" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_NqYIFf0oEeiF0cp9x5MzdA"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_NqYIFv0oEeiF0cp9x5MzdA"/>
+  </notation:Diagram>
+</xmi:XMI>

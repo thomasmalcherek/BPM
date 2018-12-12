@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" generatorSource="com.igs.fak.001.xpdl#_IRz0qPowEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Process%20Packages%26t=xpdl2%3aActivity%26q=comigsfak001%3a%3acomigsfak001_mainProcess%26n=PrfeFlleaufbereinstimmung?" formatVersion="4.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri=".default/comigsfak001/comigsfak001_mainProcess/PrfeFlleaufbereinstimmung/PrfeFlleaufbereinstimmung.properties" sfRelative="true" internal="true" localized="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" generatorSource="com.igs.fak.001.xpdl#_KWLfYfxXEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=comigsfak001%3a%3acomigsfak001_mainProcess%26n=ParGeschaeftsvorfall_FOUND?" name="data.ParGeschaeftsvorfall_FOUND" label="ParGeschaeftsvorfall_FOUND" dataType="uml:Class comigsfak001.bom#_zqIJIPowEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsfak001%26n=Geschaeftsvorfall?" type="com.example.comigsfak001::Geschaeftsvorfall" isArray="true" inout="IN"/>
+    <form:parameter generated="true" generatorSource="com.igs.fak.001.xpdl#_IRz1AfowEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comigsfak001%3a%3acomigsfak001_mainProcess%26n=sp_klammern?" name="data.sp_klammern" label="sp_klammern" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+  </form:dataModel>
+  <form:services/>
+  <form:actions/>
+  <form:conditions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancel" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancel.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.close" label="Close">
+      <form:event source="#control.close" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.close.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.close"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submit" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submit.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_2C29AP1PEeiPopDWv-BhcA">
+      <form:source target="data.ParGeschaeftsvorfall_FOUND" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.ParGeschaeftsvorfall_FOUND.value"/>
+      <form:destination target="pane.ParGeschaeftsvorfall_FOUND" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.ParGeschaeftsvorfall_FOUND.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_2C29Af1PEeiPopDWv-BhcA">
+      <form:source target="pane.ParGeschaeftsvorfall_FOUND" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value comigsfak001.bom#_95dq8PowEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsfak001%3a%3aGeschaeftsvorfall%26n=WFCaseID?" data="form.pane.ParGeschaeftsvorfall_FOUND.value.WFCaseID"/>
+      <form:destination target="control.ParGeschaeftsvorfall_FOUND_WFCaseID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ParGeschaeftsvorfall_FOUND_WFCaseID.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_2C3kEP1PEeiPopDWv-BhcA">
+      <form:source target="pane.ParGeschaeftsvorfall_FOUND" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value comigsfak001.bom#_xbNlEPoxEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsfak001%3a%3aGeschaeftsvorfall%26n=AHVNummer?" data="form.pane.ParGeschaeftsvorfall_FOUND.value.AHVNummer"/>
+      <form:destination target="control.ParGeschaeftsvorfall_FOUND_AHVNummer" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ParGeschaeftsvorfall_FOUND_AHVNummer.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_2C3kEf1PEeiPopDWv-BhcA">
+      <form:source target="pane.ParGeschaeftsvorfall_FOUND" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value comigsfak001.bom#_3ql3cPo8EeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsfak001%3a%3aGeschaeftsvorfall%26n=partnerID?" data="form.pane.ParGeschaeftsvorfall_FOUND.value.partnerID"/>
+      <form:destination target="control.ParGeschaeftsvorfall_FOUND_partnerID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ParGeschaeftsvorfall_FOUND_partnerID.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_2C3kEv1PEeiPopDWv-BhcA">
+      <form:source target="pane.ParGeschaeftsvorfall_FOUND" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value comigsfak001.bom#_yjGaMPoxEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsfak001%3a%3aGeschaeftsvorfall%26n=dokumentenArt?" data="form.pane.ParGeschaeftsvorfall_FOUND.value.dokumentenArt"/>
+      <form:destination target="control.ParGeschaeftsvorfall_FOUND_dokumentenArt" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ParGeschaeftsvorfall_FOUND_dokumentenArt.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_2C4LIP1PEeiPopDWv-BhcA">
+      <form:source target="pane.ParGeschaeftsvorfall_FOUND" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value comigsfak001.bom#_0z8bcPoxEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsfak001%3a%3aGeschaeftsvorfall%26n=geschaeftsfall?" data="form.pane.ParGeschaeftsvorfall_FOUND.value.geschaeftsfall"/>
+      <form:destination target="control.ParGeschaeftsvorfall_FOUND_geschaeftsfall" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ParGeschaeftsvorfall_FOUND_geschaeftsfall.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_2C4LIf1PEeiPopDWv-BhcA">
+      <form:source target="pane.ParGeschaeftsvorfall_FOUND" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value comigsfak001.bom#_1YN34Px7EeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsfak001%3a%3aGeschaeftsvorfall%26n=frist?" data="form.pane.ParGeschaeftsvorfall_FOUND.value.frist"/>
+      <form:destination target="control.ParGeschaeftsvorfall_FOUND_frist" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.ParGeschaeftsvorfall_FOUND_frist.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_2C4LIv1PEeiPopDWv-BhcA">
+      <form:source target="data.sp_klammern" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.sp_klammern.value"/>
+      <form:destination target="control.sp_klammern" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.sp_klammern.value"/>
+    </form:binding>
+  </form:bindings>
+  <form:targets>
+    <form:target ref="iProcessWorkspace_10.7"/>
+  </form:targets>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Prüfe Fälle Auf Übereinstimmung</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="left"/>
+    </form:defaults>
+    <form:pane generated="true" generatorSource="com.igs.fak.001.xpdl#_KWLfYfxXEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=comigsfak001%3a%3acomigsfak001_mainProcess%26n=ParGeschaeftsvorfall_FOUND?" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class comigsfak001.bom#_zqIJIPowEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsfak001%26n=Geschaeftsvorfall?" readOnly="true" name="pane.ParGeschaeftsvorfall_FOUND" paneType="com.tibco.forms.panes.grid">
+      <form:propertySet xsi:type="et:GridPanePropertySet">
+        <et:showNavigator>false</et:showNavigator>
+        <et:editable>true</et:editable>
+        <et:sortable>true</et:sortable>
+        <et:rowLabel>{0}</et:rowLabel>
+      </form:propertySet>
+      <form:label>ParGeschaeftsvorfall_FOUND</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" generatorSource="comigsfak001.bom#_95dq8PowEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsfak001%3a%3aGeschaeftsvorfall%26n=WFCaseID?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.ParGeschaeftsvorfall_FOUND_WFCaseID">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>WFCaseID</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="comigsfak001.bom#_xbNlEPoxEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsfak001%3a%3aGeschaeftsvorfall%26n=AHVNummer?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.ParGeschaeftsvorfall_FOUND_AHVNummer">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>AHV-Nummer</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="comigsfak001.bom#_3ql3cPo8EeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsfak001%3a%3aGeschaeftsvorfall%26n=partnerID?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.ParGeschaeftsvorfall_FOUND_partnerID">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>PartnerID</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="comigsfak001.bom#_yjGaMPoxEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsfak001%3a%3aGeschaeftsvorfall%26n=dokumentenArt?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.ParGeschaeftsvorfall_FOUND_dokumentenArt">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Dokumenten-Art</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="comigsfak001.bom#_0z8bcPoxEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsfak001%3a%3aGeschaeftsvorfall%26n=geschaeftsfall?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" readOnly="true" controlType="com.tibco.forms.controls.optionlist" name="control.ParGeschaeftsvorfall_FOUND_geschaeftsfall">
+        <form:propertySet xsi:type="et:MultiChoicePropertySet">
+          <et:choiceType>enumeration</et:choiceType>
+          <et:choiceEnumeration>comigsfak001.bom#_2jqFkPoxEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aEnumeration%26q=com.example.comigsfak001%26n=Geschaeftsfall?</et:choiceEnumeration>
+        </form:propertySet>
+        <form:label>Geschaeftsfall</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="comigsfak001.bom#_1YN34Px7EeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsfak001%3a%3aGeschaeftsvorfall%26n=frist?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" readOnly="true" controlType="com.tibco.forms.controls.datetime" name="control.ParGeschaeftsvorfall_FOUND_frist">
+        <form:propertySet xsi:type="et:DateTimePropertySet">
+          <et:minRelative>true</et:minRelative>
+          <et:maxRelative>true</et:maxRelative>
+          <et:year min="-20" max="20"/>
+          <et:minute increment="15"/>
+        </form:propertySet>
+        <form:label>Frist</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:control generated="true" generatorSource="com.igs.fak.001.xpdl#_IRz1AfowEeiF0cp9x5MzdA?p=com.igs.fak.001%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=comigsfak001%3a%3acomigsfak001_mainProcess%26n=sp_klammern?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.sp_klammern">
+      <form:label>sp_klammern</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+      <form:value>false</form:value>
+    </form:control>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancel">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.close">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Close</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submit">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config:ProjectConfig xmlns:config="http://www.tibco.com/XPD/projectConfig">
+  <projectDetails id="com.example.igs_angelo">
+    <globalDestinations>
+      <destination type="BPM"/>
+    </globalDestinations>
+  </projectDetails>
+  <config:assetTypes id="com.tibco.xpd.asset.businessAssetsV3"/>
+  <config:assetTypes id="com.tibco.xpd.asset.om"/>
+  <config:assetTypes id="com.tibco.xpd.asset.bom" version="4"/>
+  <config:assetTypes id="com.tibco.xpd.asset.form" version="9"/>
+  <config:assetTypes id="com.tibco.xpd.asset.businessProcess" version="20"/>
+  <config:specialFolders>
+    <config:folder id="_vRV_MP1KEeiPopDWv-BhcA" kind="om" location="Organization"/>
+    <config:folder id="_velJ8P1KEeiPopDWv-BhcA" kind="formsBOM" location=".forms/bom"/>
+    <config:folder id="_vfKYwP1KEeiPopDWv-BhcA" kind="formsInt" location=".forms/intermediate"/>
+    <config:folder id="_vfRtgP1KEeiPopDWv-BhcA" kind="formsGWT" location=".forms/gwt"/>
+    <config:folder id="_vfgXAP1KEeiPopDWv-BhcA" kind="formsMobile" location=".forms/mobile"/>
+    <config:folder id="_vf-4IP1KEeiPopDWv-BhcA" kind="processes" location="Process Packages"/>
+    <config:folder id="_vmAnoP1KEeiPopDWv-BhcA" kind="presentation" location="Presentation Resources"/>
+    <config:folder id="_v1Kd8P1KEeiPopDWv-BhcA" kind="bom2xsd" location=".bom2Xsd"/>
+    <config:folder id="_eigN4P1LEeiPopDWv-BhcA" kind="forms" location="Forms"/>
+  </config:specialFolders>
+</config:ProjectConfig>
