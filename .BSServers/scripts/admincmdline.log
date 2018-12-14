@@ -4256,3 +4256,904 @@ at com.tibco.amf.admin.api.amx.application.impl.upgrade.RootCompositeMerger.merg
 11 Dez 2018 10:15:31,944 INFO  (AsyncActionExecutor.java:117)     - .
 11 Dez 2018 10:15:35,845 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
 11 Dez 2018 10:15:35,846 INFO  (Processor.java:743)     - Action finished at 11.12.18 10:15 in 16,514 seconds
+14 Dez 2018 12:39:26,577 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 12:39:28,874 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 12:39:34,644 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 12:39:34,662 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 12:39:37,803 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.igs.fak.001' (version: '1.0.0.20181214123815733') to the Administrator Staging Area
+14 Dez 2018 12:39:37,805 INFO  (AddAction.java:161)     - Successfully added Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214123815733') to the Administrator Staging Area
+14 Dez 2018 12:39:37,815 INFO  (Processor.java:675)     - Action finished at 14.12.18 12:39 in 3,181 seconds
+14 Dez 2018 12:39:37,950 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 12:39:39,474 INFO  (AddAction.java:31)     - Adding application...
+14 Dez 2018 12:39:44,570 INFO  (LoggingUtil.java:119)     - Successfully added Application 'com.igs.fak.001': Successfully created application 'com.igs.fak.001' from Application Template 'com.igs.fak.001' (version: 1.0.0.20181214123815733)
+14 Dez 2018 12:39:44,571 INFO  (LoggingUtil.java:182)     - 14.12.18 12:39 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'OrganizationModel' (version: 1.0.0.20181214123815733) added.
+
+14 Dez 2018 12:39:44,572 INFO  (LoggingUtil.java:182)     - 14.12.18 12:39 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comigsfak001ProcessFlow' (version: 1.0.0.20181214123815733) added.
+
+14 Dez 2018 12:39:44,572 INFO  (LoggingUtil.java:182)     - 14.12.18 12:39 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'BRM' (version: 1.0.0.20181214123815733) added.
+
+14 Dez 2018 12:39:44,573 INFO  (LoggingUtil.java:182)     - 14.12.18 12:39 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comigsfak001PageFlow' (version: 1.0.0.20181214123815733) added.
+
+14 Dez 2018 12:39:44,573 INFO  (LoggingUtil.java:182)     - 14.12.18 12:39 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'WorkPresentation' (version: 1.0.0.20181214123815733) added.
+
+14 Dez 2018 12:39:44,574 INFO  (LoggingUtil.java:182)     - 14.12.18 12:39 - 	  detail = TIBCO-AMX-ADMIN-012419: Application Reference 'saveDataCaseSOAP_Consumer1' added.
+
+14 Dez 2018 12:39:44,575 INFO  (Processor.java:675)     - Action finished at 14.12.18 12:39 in 5,1 seconds
+14 Dez 2018 12:39:44,592 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 12:39:48,202 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 12:39:49,171 INFO  (EditAction.java:27)     - Editing properties..
+14 Dez 2018 12:39:49,492 INFO  (LoggingUtil.java:119)     - Successfully edited property 'HttpOutboundConnectionConfig' : Successfully updated property 'HttpOutboundConnectionConfig' to 'HTTPClient_BPM_BW6'
+14 Dez 2018 12:39:49,494 INFO  (Processor.java:751)     - Action finished at 14.12.18 12:39 in 0,322 seconds
+14 Dez 2018 12:39:49,510 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 12:39:49,746 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 12:39:54,826 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.igs.fak.001' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.igs.fak.001' at 12/14/18 12:39 PM on node(s): 'BPMNode'.
+14 Dez 2018 12:39:54,826 INFO  (LoggingUtil.java:182)     - 14.12.18 12:39 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.igs.fak.001.model.bds.1.0.0.20181214123815733' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 12:39:54,827 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 12:39 in 5,082 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 12:39:56,779 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 12:40:01,836 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 12:40:08,118 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+14 Dez 2018 12:40:08,119 INFO  (Processor.java:743)     - Action finished at 14.12.18 12:40 in 18,374 seconds
+14 Dez 2018 12:55:40,009 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 12:55:41,688 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 12:55:43,083 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 12:55:43,089 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 12:55:45,319 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.igs.fak.001' (version: '1.0.0.20181214125512545') to the Administrator Staging Area
+14 Dez 2018 12:55:45,320 INFO  (AddAction.java:161)     - Successfully added Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214125512545') to the Administrator Staging Area
+14 Dez 2018 12:55:45,325 INFO  (Processor.java:675)     - Action finished at 14.12.18 12:55 in 2,242 seconds
+14 Dez 2018 12:55:45,353 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 12:55:49,461 INFO  (UpgradeAction.java:31)     - Upgrading application...
+14 Dez 2018 12:55:49,462 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 12:55:49,466 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 12:55:50,387 WARN  (AddAction.java:151)     - Application Template 'com.igs.fak.001' (version: '1.0.0.20181214125512545') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 12:55:50,388 WARN  (AddAction.java:198)     - Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214125512545') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 12:55:58,627 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.igs.fak.001': Successfully upgraded application 'com.igs.fak.001' to application template version 1.0.0.20181214125512545
+14 Dez 2018 12:55:58,629 INFO  (LoggingUtil.java:182)     - 14.12.18 12:55 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181214123815733' to version: '1.0.0.20181214125512545'.
+
+14 Dez 2018 12:55:58,629 INFO  (LoggingUtil.java:182)     - 14.12.18 12:55 - 	  detail = Component 'comigsfak001ProcessFlow' upgraded from version '1.0.0.20181214123815733' to version: '1.0.0.20181214125512545'.
+
+14 Dez 2018 12:55:58,629 INFO  (LoggingUtil.java:182)     - 14.12.18 12:55 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181214123815733' to version: '1.0.0.20181214125512545'.
+
+14 Dez 2018 12:55:58,631 INFO  (LoggingUtil.java:182)     - 14.12.18 12:55 - 	  detail = Component 'comigsfak001PageFlow' upgraded from version '1.0.0.20181214123815733' to version: '1.0.0.20181214125512545'.
+
+14 Dez 2018 12:55:58,635 INFO  (LoggingUtil.java:182)     - 14.12.18 12:55 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181214123815733' to version: '1.0.0.20181214125512545'.
+
+14 Dez 2018 12:55:58,635 INFO  (LoggingUtil.java:182)     - 14.12.18 12:55 - 	  detail = TIBCO-AMX-ADMIN-012416: Binding 'saveDataCase_EP' on the application reference 'saveDataCaseSOAP_Consumer1' updated.
+
+14 Dez 2018 12:55:58,636 INFO  (Processor.java:675)     - Action finished at 14.12.18 12:55 in 9,175 seconds
+14 Dez 2018 12:55:58,658 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 12:56:00,082 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 12:56:00,737 INFO  (EditAction.java:27)     - Editing properties..
+14 Dez 2018 12:56:00,981 INFO  (Processor.java:751)     - Action finished at 14.12.18 12:56 in 0,243 seconds
+14 Dez 2018 12:56:00,992 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 12:56:01,036 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 12:56:05,464 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.igs.fak.001' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.igs.fak.001' at 12/14/18 12:56 PM on node(s): 'BPMNode'.
+14 Dez 2018 12:56:05,465 INFO  (LoggingUtil.java:182)     - 14.12.18 12:56 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.igs.fak.001.model.bds.1.0.0.20181214125512545' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 12:56:05,466 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 12:56 in 4,429 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 12:56:07,535 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 12:56:12,880 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 12:56:19,397 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 12:56:24,403 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+14 Dez 2018 12:56:24,405 INFO  (Processor.java:743)     - Action finished at 14.12.18 12:56 in 23,369 seconds
+14 Dez 2018 12:59:39,341 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 12:59:40,619 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 12:59:42,031 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 12:59:42,036 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 12:59:44,113 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.igs.fak.001' (version: '1.0.0.20181214125915593') to the Administrator Staging Area
+14 Dez 2018 12:59:44,114 INFO  (AddAction.java:161)     - Successfully added Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214125915593') to the Administrator Staging Area
+14 Dez 2018 12:59:44,119 INFO  (Processor.java:675)     - Action finished at 14.12.18 12:59 in 2,089 seconds
+14 Dez 2018 12:59:44,133 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 12:59:45,296 INFO  (UpgradeAction.java:31)     - Upgrading application...
+14 Dez 2018 12:59:45,296 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 12:59:45,298 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 12:59:45,923 WARN  (AddAction.java:151)     - Application Template 'com.igs.fak.001' (version: '1.0.0.20181214125915593') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 12:59:45,924 WARN  (AddAction.java:198)     - Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214125915593') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 12:59:52,912 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.igs.fak.001': Successfully upgraded application 'com.igs.fak.001' to application template version 1.0.0.20181214125915593
+14 Dez 2018 12:59:52,912 INFO  (LoggingUtil.java:182)     - 14.12.18 12:59 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181214125512545' to version: '1.0.0.20181214125915593'.
+
+14 Dez 2018 12:59:52,913 INFO  (LoggingUtil.java:182)     - 14.12.18 12:59 - 	  detail = Component 'comigsfak001ProcessFlow' upgraded from version '1.0.0.20181214125512545' to version: '1.0.0.20181214125915593'.
+
+14 Dez 2018 12:59:52,913 INFO  (LoggingUtil.java:182)     - 14.12.18 12:59 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181214125512545' to version: '1.0.0.20181214125915593'.
+
+14 Dez 2018 12:59:52,913 INFO  (LoggingUtil.java:182)     - 14.12.18 12:59 - 	  detail = Component 'comigsfak001PageFlow' upgraded from version '1.0.0.20181214125512545' to version: '1.0.0.20181214125915593'.
+
+14 Dez 2018 12:59:52,914 INFO  (LoggingUtil.java:182)     - 14.12.18 12:59 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181214125512545' to version: '1.0.0.20181214125915593'.
+
+14 Dez 2018 12:59:52,918 INFO  (LoggingUtil.java:182)     - 14.12.18 12:59 - 	  detail = TIBCO-AMX-ADMIN-012416: Binding 'saveDataCase_EP' on the application reference 'saveDataCaseSOAP_Consumer1' updated.
+
+14 Dez 2018 12:59:52,918 INFO  (Processor.java:675)     - Action finished at 14.12.18 12:59 in 7,622 seconds
+14 Dez 2018 12:59:52,927 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 12:59:54,475 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 12:59:55,098 INFO  (EditAction.java:27)     - Editing properties..
+14 Dez 2018 12:59:55,327 INFO  (Processor.java:751)     - Action finished at 14.12.18 12:59 in 0,229 seconds
+14 Dez 2018 12:59:55,333 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 12:59:55,360 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 12:59:59,747 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.igs.fak.001' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.igs.fak.001' at 12/14/18 12:59 PM on node(s): 'BPMNode'.
+14 Dez 2018 12:59:59,748 INFO  (LoggingUtil.java:182)     - 14.12.18 12:59 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.igs.fak.001.model.bds.1.0.0.20181214125915593' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 12:59:59,749 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 12:59 in 4,388 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 13:00:01,789 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 13:00:07,205 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 13:00:13,857 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 13:00:18,025 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+14 Dez 2018 13:00:18,027 INFO  (Processor.java:743)     - Action finished at 14.12.18 13:00 in 22,666 seconds
+14 Dez 2018 14:43:07,125 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 14:43:08,180 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 14:43:09,796 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 14:43:09,806 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 14:43:12,324 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.igs.fak.001' (version: '1.0.0.20181214144245962') to the Administrator Staging Area
+14 Dez 2018 14:43:12,325 INFO  (AddAction.java:161)     - Successfully added Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214144245962') to the Administrator Staging Area
+14 Dez 2018 14:43:12,329 INFO  (Processor.java:675)     - Action finished at 14.12.18 14:43 in 2,537 seconds
+14 Dez 2018 14:43:12,350 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 14:43:13,429 INFO  (UpgradeAction.java:31)     - Upgrading application...
+14 Dez 2018 14:43:13,429 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 14:43:13,429 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 14:43:14,360 WARN  (AddAction.java:151)     - Application Template 'com.igs.fak.001' (version: '1.0.0.20181214144245962') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 14:43:14,360 WARN  (AddAction.java:198)     - Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214144245962') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 14:43:22,516 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.igs.fak.001': Successfully upgraded application 'com.igs.fak.001' to application template version 1.0.0.20181214144245962
+14 Dez 2018 14:43:22,517 INFO  (LoggingUtil.java:182)     - 14.12.18 14:43 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181214125915593' to version: '1.0.0.20181214144245962'.
+
+14 Dez 2018 14:43:22,517 INFO  (LoggingUtil.java:182)     - 14.12.18 14:43 - 	  detail = Component 'comigsfak001ProcessFlow' upgraded from version '1.0.0.20181214125915593' to version: '1.0.0.20181214144245962'.
+
+14 Dez 2018 14:43:22,517 INFO  (LoggingUtil.java:182)     - 14.12.18 14:43 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181214125915593' to version: '1.0.0.20181214144245962'.
+
+14 Dez 2018 14:43:22,518 INFO  (LoggingUtil.java:182)     - 14.12.18 14:43 - 	  detail = Component 'comigsfak001PageFlow' upgraded from version '1.0.0.20181214125915593' to version: '1.0.0.20181214144245962'.
+
+14 Dez 2018 14:43:22,518 INFO  (LoggingUtil.java:182)     - 14.12.18 14:43 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181214125915593' to version: '1.0.0.20181214144245962'.
+
+14 Dez 2018 14:43:22,519 INFO  (LoggingUtil.java:182)     - 14.12.18 14:43 - 	  detail = TIBCO-AMX-ADMIN-012416: Binding 'saveDataCase_EP' on the application reference 'saveDataCaseSOAP_Consumer1' updated.
+
+14 Dez 2018 14:43:22,519 INFO  (Processor.java:675)     - Action finished at 14.12.18 14:43 in 9,09 seconds
+14 Dez 2018 14:43:22,534 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 14:43:23,955 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 14:43:24,524 INFO  (EditAction.java:27)     - Editing properties..
+14 Dez 2018 14:43:24,774 INFO  (Processor.java:751)     - Action finished at 14.12.18 14:43 in 0,25 seconds
+14 Dez 2018 14:43:24,779 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 14:43:24,820 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 14:43:29,589 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.igs.fak.001' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.igs.fak.001' at 12/14/18 2:43 PM on node(s): 'BPMNode'.
+14 Dez 2018 14:43:29,589 INFO  (LoggingUtil.java:182)     - 14.12.18 14:43 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.igs.fak.001.model.bds.1.0.0.20181214144245962' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 14:43:29,590 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 14:43 in 4,77 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 14:43:31,801 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 14:43:37,884 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 14:43:44,407 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 14:43:49,423 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+14 Dez 2018 14:43:49,427 INFO  (Processor.java:743)     - Action finished at 14.12.18 14:43 in 24,606 seconds
+14 Dez 2018 15:13:10,787 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 15:13:12,354 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:13:13,732 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 15:13:13,737 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 15:13:16,993 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.igs.fak.001' (version: '1.0.0.20181214151234630') to the Administrator Staging Area
+14 Dez 2018 15:13:16,993 INFO  (AddAction.java:161)     - Successfully added Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214151234630') to the Administrator Staging Area
+14 Dez 2018 15:13:17,005 INFO  (Processor.java:675)     - Action finished at 14.12.18 15:13 in 3,272 seconds
+14 Dez 2018 15:13:17,048 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:13:18,307 INFO  (UpgradeAction.java:31)     - Upgrading application...
+14 Dez 2018 15:13:18,308 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 15:13:18,309 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 15:13:19,203 WARN  (AddAction.java:151)     - Application Template 'com.igs.fak.001' (version: '1.0.0.20181214151234630') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 15:13:19,204 WARN  (AddAction.java:198)     - Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214151234630') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 15:13:27,346 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.igs.fak.001': Successfully upgraded application 'com.igs.fak.001' to application template version 1.0.0.20181214151234630
+14 Dez 2018 15:13:27,347 INFO  (LoggingUtil.java:182)     - 14.12.18 15:13 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181214144245962' to version: '1.0.0.20181214151234630'.
+
+14 Dez 2018 15:13:27,348 INFO  (LoggingUtil.java:182)     - 14.12.18 15:13 - 	  detail = Component 'comigsfak001ProcessFlow' upgraded from version '1.0.0.20181214144245962' to version: '1.0.0.20181214151234630'.
+
+14 Dez 2018 15:13:27,348 INFO  (LoggingUtil.java:182)     - 14.12.18 15:13 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181214144245962' to version: '1.0.0.20181214151234630'.
+
+14 Dez 2018 15:13:27,348 INFO  (LoggingUtil.java:182)     - 14.12.18 15:13 - 	  detail = Component 'comigsfak001PageFlow' upgraded from version '1.0.0.20181214144245962' to version: '1.0.0.20181214151234630'.
+
+14 Dez 2018 15:13:27,349 INFO  (LoggingUtil.java:182)     - 14.12.18 15:13 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181214144245962' to version: '1.0.0.20181214151234630'.
+
+14 Dez 2018 15:13:27,349 INFO  (LoggingUtil.java:182)     - 14.12.18 15:13 - 	  detail = TIBCO-AMX-ADMIN-012414: Binding 'saveDataCase_EP' for application reference 'saveDataCaseSOAP_Consumer1' removed.
+
+14 Dez 2018 15:13:27,350 INFO  (LoggingUtil.java:182)     - 14.12.18 15:13 - 	  detail = TIBCO-AMX-ADMIN-012415: Binding 'SOAPReference_Binding1' for the application reference 'saveDataCaseSOAP_Consumer1' added.
+
+14 Dez 2018 15:13:27,351 INFO  (Processor.java:675)     - Action finished at 14.12.18 15:13 in 9,044 seconds
+14 Dez 2018 15:13:27,373 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 15:13:29,703 INFO  (AMXAdminTask.java:289)     - Processing 3 objects
+14 Dez 2018 15:13:30,462 INFO  (EditAction.java:27)     - Editing properties..
+14 Dez 2018 15:13:30,634 INFO  (LoggingUtil.java:119)     - Successfully edited property 'JmsInboundDestination' : Successfully updated property 'JmsInboundDestination' to 'JMSDestination_igs.fak.001'
+14 Dez 2018 15:13:30,635 INFO  (LoggingUtil.java:119)     - Successfully edited property 'JmsOutboundConnectionFactory' : Successfully updated property 'JmsOutboundConnectionFactory' to 'JMSConnectionFactory_BW6'
+14 Dez 2018 15:13:30,635 INFO  (LoggingUtil.java:119)     - Successfully edited property 'JmsOutboundDestination' : Successfully updated property 'JmsOutboundDestination' to 'JMSDestination_igs.fak.001'
+14 Dez 2018 15:13:30,635 INFO  (Processor.java:751)     - Action finished at 14.12.18 15:13 in 0,173 seconds
+14 Dez 2018 15:13:30,648 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:13:30,699 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 15:13:35,367 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.igs.fak.001' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.igs.fak.001' at 12/14/18 3:13 PM on node(s): 'BPMNode'.
+14 Dez 2018 15:13:35,368 INFO  (LoggingUtil.java:182)     - 14.12.18 15:13 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.igs.fak.001.model.bds.1.0.0.20181214151234630' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 15:13:35,369 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 15:13 in 4,67 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 15:13:37,460 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:13:42,744 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:13:48,076 ERROR (UserTaskProgressIndicator.java:69)     - Application Deploy with Start failed
+14 Dez 2018 15:13:48,076 ERROR (UserTaskProgressIndicator.java:76)     - Start binding 'soapreference_binding1' on node 'BPMNode' failed : java.lang.RuntimeException: JMS Outbound Destination is NULL or unresolved.
+14 Dez 2018 15:13:48,076 ERROR (UserTaskProgressIndicator.java:84)     - java.lang.RuntimeException: JMS Outbound Destination is NULL or unresolved.
+com.tibco.amf.binding.soap.runtime.transport.jms.outbound.SoapJmsOutboundEndpointAdapter.prepareEndpoint(SoapJmsOutboundEndpointAdapter.java:180)
+com.tibco.amf.binding.soap.runtime.SoapOutboundBindingEngine.prepareEndpoint(SoapOutboundBindingEngine.java:278)
+com.tibco.amf.platform.runtime.componentframework.internal.component.EndpointComponent.prepareEndpoint(EndpointComponent.java:661)
+com.tibco.amf.platform.runtime.componentframework.internal.component.EndpointComponent.prepare(EndpointComponent.java:642)
+com.tibco.amf.platform.runtime.componentframework.internal.component.BaseComponent.doStart(BaseComponent.java:1103)
+com.tibco.amf.platform.runtime.componentframework.internal.component.BaseComponent.requestStart(BaseComponent.java:1090)
+com.tibco.amf.platform.runtime.componentframework.internal.component.statemachine.Actions$12.execute(Actions.java:315)
+com.tibco.amf.platform.runtime.componentframework.internal.component.statemachine.StateMachine.handleEvent(StateMachine.java:238)
+com.tibco.amf.platform.runtime.componentframework.internal.core.ComponentFramework.processStartCommand(ComponentFramework.java:2661)
+com.tibco.amf.platform.runtime.componentframework.internal.core.ComponentFramework.processRDA(ComponentFramework.java:2413)
+com.tibco.amf.platform.runtime.componentframework.internal.core.ComponentFramework.run(ComponentFramework.java:1373)
+java.lang.Thread.run(Unknown Source)
+
+14 Dez 2018 15:13:48,077 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'comigsfak001processflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,081 ERROR (UserTaskProgressIndicator.java:91)     - Stop component's bindings 'comigsfak001processflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,082 ERROR (UserTaskProgressIndicator.java:91)     - Stop binding 'savedatacase_ep' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,084 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy application 'com.igs.fak.001' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,084 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'comigsfak001pageflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,084 ERROR (UserTaskProgressIndicator.java:91)     - Cleanup Features node 'bpmnode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,084 ERROR (UserTaskProgressIndicator.java:91)     - Uninstall application 'com.igs.fak.001' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,084 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'workpresentation' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,084 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'brm' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,084 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'comigsfak001processflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,084 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'organizationmodel' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,085 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy binding 'savedatacase_ep' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,085 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy binding 'savedatacase_ep' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,085 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy binding 'savedatacase_ep' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,085 ERROR (UserTaskProgressIndicator.java:91)     - Stop binding 'savedatacase_ep' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,085 ERROR (UserTaskProgressIndicator.java:91)     - Stop binding 'savedatacase_ep' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,086 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'brm' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,086 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'workpresentation' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,086 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'comigsfak001pageflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,086 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'comigsfak001pageflow' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,086 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'workpresentation' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,088 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'organizationmodel' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,091 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'organizationmodel' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,091 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'brm' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,092 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'comigsfak001processflow' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,092 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents application 'com.igs.fak.001' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,092 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001pageflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,094 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001pageflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,094 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001processflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,094 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001processflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,095 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,097 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,101 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,101 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,101 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,103 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,103 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,103 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,103 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,103 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,104 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,104 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,104 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001pageflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,105 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001pageflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,105 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001processflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,105 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001processflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:13:48,113 ERROR (Processor.java:720)     - Action failed at 14.12.18 15:13 in 17,412 seconds
+14 Dez 2018 15:19:53,943 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 15:19:55,192 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:19:56,333 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 15:19:56,339 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 15:19:58,168 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.igs.fak.001' (version: '1.0.0.20181214151816461') to the Administrator Staging Area
+14 Dez 2018 15:19:58,169 INFO  (AddAction.java:161)     - Successfully added Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214151816461') to the Administrator Staging Area
+14 Dez 2018 15:19:58,173 INFO  (Processor.java:675)     - Action finished at 14.12.18 15:19 in 1,839 seconds
+14 Dez 2018 15:19:58,216 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:19:59,369 INFO  (AddAction.java:31)     - Adding application...
+14 Dez 2018 15:20:03,230 INFO  (LoggingUtil.java:119)     - Successfully added Application 'com.igs.fak.001': Successfully created application 'com.igs.fak.001' from Application Template 'com.igs.fak.001' (version: 1.0.0.20181214151816461)
+14 Dez 2018 15:20:03,232 INFO  (LoggingUtil.java:182)     - 14.12.18 15:20 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'OrganizationModel' (version: 1.0.0.20181214151816461) added.
+
+14 Dez 2018 15:20:03,232 INFO  (LoggingUtil.java:182)     - 14.12.18 15:20 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comigsfak001ProcessFlow' (version: 1.0.0.20181214151816461) added.
+
+14 Dez 2018 15:20:03,232 INFO  (LoggingUtil.java:182)     - 14.12.18 15:20 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'BRM' (version: 1.0.0.20181214151816461) added.
+
+14 Dez 2018 15:20:03,232 INFO  (LoggingUtil.java:182)     - 14.12.18 15:20 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comigsfak001PageFlow' (version: 1.0.0.20181214151816461) added.
+
+14 Dez 2018 15:20:03,232 INFO  (LoggingUtil.java:182)     - 14.12.18 15:20 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'WorkPresentation' (version: 1.0.0.20181214151816461) added.
+
+14 Dez 2018 15:20:03,232 INFO  (LoggingUtil.java:182)     - 14.12.18 15:20 - 	  detail = TIBCO-AMX-ADMIN-012419: Application Reference 'saveDataCaseSOAP_Consumer1' added.
+
+14 Dez 2018 15:20:03,234 INFO  (Processor.java:675)     - Action finished at 14.12.18 15:20 in 3,863 seconds
+14 Dez 2018 15:20:03,242 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 15:20:04,948 INFO  (AMXAdminTask.java:289)     - Processing 3 objects
+14 Dez 2018 15:20:05,915 INFO  (EditAction.java:27)     - Editing properties..
+14 Dez 2018 15:20:06,115 INFO  (LoggingUtil.java:119)     - Successfully edited property 'JmsInboundDestination' : Successfully updated property 'JmsInboundDestination' to 'JMSDestination_igs.fak.001'
+14 Dez 2018 15:20:06,117 INFO  (LoggingUtil.java:119)     - Successfully edited property 'JmsOutboundConnectionFactory' : Successfully updated property 'JmsOutboundConnectionFactory' to 'JMSConnectionFactory_BW6'
+14 Dez 2018 15:20:06,117 INFO  (LoggingUtil.java:119)     - Successfully edited property 'JmsOutboundDestination' : Successfully updated property 'JmsOutboundDestination' to 'JMSDestination_igs.fak.001'
+14 Dez 2018 15:20:06,118 INFO  (Processor.java:751)     - Action finished at 14.12.18 15:20 in 0,203 seconds
+14 Dez 2018 15:20:06,129 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:20:06,167 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 15:20:09,868 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.igs.fak.001' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.igs.fak.001' at 12/14/18 3:20 PM on node(s): 'BPMNode'.
+14 Dez 2018 15:20:09,868 INFO  (LoggingUtil.java:182)     - 14.12.18 15:20 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.igs.fak.001.model.bds.1.0.0.20181214151816461' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 15:20:09,960 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 15:20 in 3,788 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 15:20:11,654 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:20:16,673 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:20:21,729 ERROR (UserTaskProgressIndicator.java:69)     - Application Deploy with Start failed
+14 Dez 2018 15:20:21,730 ERROR (UserTaskProgressIndicator.java:76)     - Start binding 'soapreference_binding1' on node 'BPMNode' failed : java.lang.RuntimeException: JMS Outbound Destination is NULL or unresolved.
+14 Dez 2018 15:20:21,730 ERROR (UserTaskProgressIndicator.java:84)     - java.lang.RuntimeException: JMS Outbound Destination is NULL or unresolved.
+com.tibco.amf.binding.soap.runtime.transport.jms.outbound.SoapJmsOutboundEndpointAdapter.prepareEndpoint(SoapJmsOutboundEndpointAdapter.java:180)
+com.tibco.amf.binding.soap.runtime.SoapOutboundBindingEngine.prepareEndpoint(SoapOutboundBindingEngine.java:278)
+com.tibco.amf.platform.runtime.componentframework.internal.component.EndpointComponent.prepareEndpoint(EndpointComponent.java:661)
+com.tibco.amf.platform.runtime.componentframework.internal.component.EndpointComponent.prepare(EndpointComponent.java:642)
+com.tibco.amf.platform.runtime.componentframework.internal.component.BaseComponent.doStart(BaseComponent.java:1103)
+com.tibco.amf.platform.runtime.componentframework.internal.component.BaseComponent.requestStart(BaseComponent.java:1090)
+com.tibco.amf.platform.runtime.componentframework.internal.component.statemachine.Actions$12.execute(Actions.java:315)
+com.tibco.amf.platform.runtime.componentframework.internal.component.statemachine.StateMachine.handleEvent(StateMachine.java:238)
+com.tibco.amf.platform.runtime.componentframework.internal.core.ComponentFramework.processStartCommand(ComponentFramework.java:2661)
+com.tibco.amf.platform.runtime.componentframework.internal.core.ComponentFramework.processRDA(ComponentFramework.java:2413)
+com.tibco.amf.platform.runtime.componentframework.internal.core.ComponentFramework.run(ComponentFramework.java:1373)
+java.lang.Thread.run(Unknown Source)
+
+14 Dez 2018 15:20:21,731 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents application 'com.igs.fak.001' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:20:21,731 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:20:21,732 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:20:21,732 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:20:21,732 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:20:21,733 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:20:21,737 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:20:21,738 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001pageflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:20:21,738 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001pageflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:20:21,738 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001processflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:20:21,738 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001processflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:20:21,740 ERROR (Processor.java:720)     - Action failed at 14.12.18 15:20 in 15,574 seconds
+14 Dez 2018 15:25:22,392 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 15:25:23,714 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:25:24,850 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 15:25:24,861 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 15:25:26,512 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.igs.fak.001' (version: '1.0.0.20181214152441069') to the Administrator Staging Area
+14 Dez 2018 15:25:26,513 INFO  (AddAction.java:161)     - Successfully added Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214152441069') to the Administrator Staging Area
+14 Dez 2018 15:25:26,517 INFO  (Processor.java:675)     - Action finished at 14.12.18 15:25 in 1,667 seconds
+14 Dez 2018 15:25:26,532 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:25:27,528 INFO  (AddAction.java:31)     - Adding application...
+14 Dez 2018 15:25:31,355 INFO  (LoggingUtil.java:119)     - Successfully added Application 'com.igs.fak.001': Successfully created application 'com.igs.fak.001' from Application Template 'com.igs.fak.001' (version: 1.0.0.20181214152441069)
+14 Dez 2018 15:25:31,357 INFO  (LoggingUtil.java:182)     - 14.12.18 15:25 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'OrganizationModel' (version: 1.0.0.20181214152441069) added.
+
+14 Dez 2018 15:25:31,361 INFO  (LoggingUtil.java:182)     - 14.12.18 15:25 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comigsfak001ProcessFlow' (version: 1.0.0.20181214152441069) added.
+
+14 Dez 2018 15:25:31,362 INFO  (LoggingUtil.java:182)     - 14.12.18 15:25 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'BRM' (version: 1.0.0.20181214152441069) added.
+
+14 Dez 2018 15:25:31,362 INFO  (LoggingUtil.java:182)     - 14.12.18 15:25 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comigsfak001PageFlow' (version: 1.0.0.20181214152441069) added.
+
+14 Dez 2018 15:25:31,363 INFO  (LoggingUtil.java:182)     - 14.12.18 15:25 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'WorkPresentation' (version: 1.0.0.20181214152441069) added.
+
+14 Dez 2018 15:25:31,363 INFO  (LoggingUtil.java:182)     - 14.12.18 15:25 - 	  detail = TIBCO-AMX-ADMIN-012419: Application Reference 'saveDataCaseSOAP_Consumer1' added.
+
+14 Dez 2018 15:25:31,364 INFO  (Processor.java:675)     - Action finished at 14.12.18 15:25 in 3,835 seconds
+14 Dez 2018 15:25:31,373 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 15:25:33,866 INFO  (AMXAdminTask.java:289)     - Processing 3 objects
+14 Dez 2018 15:25:34,726 INFO  (EditAction.java:27)     - Editing properties..
+14 Dez 2018 15:25:34,812 INFO  (LoggingUtil.java:119)     - Successfully edited property 'JmsInboundDestination' : Successfully updated property 'JmsInboundDestination' to 'JMSDestination_igs.fak.001'
+14 Dez 2018 15:25:34,815 INFO  (LoggingUtil.java:119)     - Successfully edited property 'JmsOutboundConnectionFactory' : Successfully updated property 'JmsOutboundConnectionFactory' to 'JMSConnectionFactory_BW6'
+14 Dez 2018 15:25:34,816 INFO  (LoggingUtil.java:119)     - Successfully edited property 'JmsOutboundDestination' : Successfully updated property 'JmsOutboundDestination' to 'JMSDestination_igs.fak.001'
+14 Dez 2018 15:25:34,817 INFO  (Processor.java:751)     - Action finished at 14.12.18 15:25 in 0,09 seconds
+14 Dez 2018 15:25:34,822 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:25:34,882 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 15:25:39,047 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.igs.fak.001' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.igs.fak.001' at 12/14/18 3:25 PM on node(s): 'BPMNode'.
+14 Dez 2018 15:25:39,050 INFO  (LoggingUtil.java:182)     - 14.12.18 15:25 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.igs.fak.001.model.bds.1.0.0.20181214152441069' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 15:25:39,053 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 15:25 in 4,173 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 15:25:41,096 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:25:46,219 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:25:49,984 ERROR (UserTaskProgressIndicator.java:69)     - Application Deploy with Start failed
+14 Dez 2018 15:25:49,986 ERROR (UserTaskProgressIndicator.java:76)     - Start binding 'soapreference_binding1' on node 'BPMNode' failed : java.lang.RuntimeException: JMS Outbound Destination is NULL or unresolved.
+14 Dez 2018 15:25:49,986 ERROR (UserTaskProgressIndicator.java:84)     - java.lang.RuntimeException: JMS Outbound Destination is NULL or unresolved.
+com.tibco.amf.binding.soap.runtime.transport.jms.outbound.SoapJmsOutboundEndpointAdapter.prepareEndpoint(SoapJmsOutboundEndpointAdapter.java:180)
+com.tibco.amf.binding.soap.runtime.SoapOutboundBindingEngine.prepareEndpoint(SoapOutboundBindingEngine.java:278)
+com.tibco.amf.platform.runtime.componentframework.internal.component.EndpointComponent.prepareEndpoint(EndpointComponent.java:661)
+com.tibco.amf.platform.runtime.componentframework.internal.component.EndpointComponent.prepare(EndpointComponent.java:642)
+com.tibco.amf.platform.runtime.componentframework.internal.component.BaseComponent.doStart(BaseComponent.java:1103)
+com.tibco.amf.platform.runtime.componentframework.internal.component.BaseComponent.requestStart(BaseComponent.java:1090)
+com.tibco.amf.platform.runtime.componentframework.internal.component.statemachine.Actions$12.execute(Actions.java:315)
+com.tibco.amf.platform.runtime.componentframework.internal.component.statemachine.StateMachine.handleEvent(StateMachine.java:238)
+com.tibco.amf.platform.runtime.componentframework.internal.core.ComponentFramework.processStartCommand(ComponentFramework.java:2661)
+com.tibco.amf.platform.runtime.componentframework.internal.core.ComponentFramework.processRDA(ComponentFramework.java:2413)
+com.tibco.amf.platform.runtime.componentframework.internal.core.ComponentFramework.run(ComponentFramework.java:1373)
+java.lang.Thread.run(Unknown Source)
+
+14 Dez 2018 15:25:49,986 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents application 'com.igs.fak.001' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:25:49,987 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:25:49,987 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:25:49,987 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:25:49,987 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:25:49,988 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:25:49,988 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:25:49,988 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001pageflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:25:49,988 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001pageflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:25:49,989 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001processflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:25:49,989 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comigsfak001processflow' on node 'BPMNode' cancelled because Start binding 'soapreference_binding1' on node 'BPMNode' failed
+14 Dez 2018 15:25:49,990 ERROR (Processor.java:720)     - Action failed at 14.12.18 15:25 in 15,109 seconds
+14 Dez 2018 15:28:06,586 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 15:28:07,847 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:28:08,961 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 15:28:08,966 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 15:28:10,830 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.igs.fak.001' (version: '1.0.0.20181214152731387') to the Administrator Staging Area
+14 Dez 2018 15:28:10,831 INFO  (AddAction.java:161)     - Successfully added Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214152731387') to the Administrator Staging Area
+14 Dez 2018 15:28:10,835 INFO  (Processor.java:675)     - Action finished at 14.12.18 15:28 in 1,877 seconds
+14 Dez 2018 15:28:10,946 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:28:11,856 INFO  (AddAction.java:31)     - Adding application...
+14 Dez 2018 15:28:16,082 INFO  (LoggingUtil.java:119)     - Successfully added Application 'com.igs.fak.001': Successfully created application 'com.igs.fak.001' from Application Template 'com.igs.fak.001' (version: 1.0.0.20181214152731387)
+14 Dez 2018 15:28:16,087 INFO  (LoggingUtil.java:182)     - 14.12.18 15:28 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'OrganizationModel' (version: 1.0.0.20181214152731387) added.
+
+14 Dez 2018 15:28:16,088 INFO  (LoggingUtil.java:182)     - 14.12.18 15:28 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comigsfak001ProcessFlow' (version: 1.0.0.20181214152731387) added.
+
+14 Dez 2018 15:28:16,089 INFO  (LoggingUtil.java:182)     - 14.12.18 15:28 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'BRM' (version: 1.0.0.20181214152731387) added.
+
+14 Dez 2018 15:28:16,089 INFO  (LoggingUtil.java:182)     - 14.12.18 15:28 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comigsfak001PageFlow' (version: 1.0.0.20181214152731387) added.
+
+14 Dez 2018 15:28:16,089 INFO  (LoggingUtil.java:182)     - 14.12.18 15:28 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'WorkPresentation' (version: 1.0.0.20181214152731387) added.
+
+14 Dez 2018 15:28:16,089 INFO  (LoggingUtil.java:182)     - 14.12.18 15:28 - 	  detail = TIBCO-AMX-ADMIN-012419: Application Reference 'saveDataCaseSOAP_Consumer1' added.
+
+14 Dez 2018 15:28:16,090 INFO  (Processor.java:675)     - Action finished at 14.12.18 15:28 in 4,234 seconds
+14 Dez 2018 15:28:16,108 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 15:28:17,776 INFO  (AMXAdminTask.java:289)     - Processing 3 objects
+14 Dez 2018 15:28:18,713 INFO  (EditAction.java:27)     - Editing properties..
+14 Dez 2018 15:28:18,825 INFO  (LoggingUtil.java:119)     - Successfully edited property 'JmsInboundDestination' : Successfully updated property 'JmsInboundDestination' to 'JMSDestination_BPM_BW6'
+14 Dez 2018 15:28:18,826 INFO  (LoggingUtil.java:119)     - Successfully edited property 'JmsOutboundConnectionFactory' : Successfully updated property 'JmsOutboundConnectionFactory' to 'JMSConnectionFactory_BW6'
+14 Dez 2018 15:28:18,827 INFO  (LoggingUtil.java:119)     - Successfully edited property 'JmsOutboundDestination' : Successfully updated property 'JmsOutboundDestination' to 'JMSDestination_BPM_BW6'
+14 Dez 2018 15:28:18,827 INFO  (Processor.java:751)     - Action finished at 14.12.18 15:28 in 0,114 seconds
+14 Dez 2018 15:28:18,840 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:28:18,894 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 15:28:23,416 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.igs.fak.001' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.igs.fak.001' at 12/14/18 3:28 PM on node(s): 'BPMNode'.
+14 Dez 2018 15:28:23,418 INFO  (LoggingUtil.java:182)     - 14.12.18 15:28 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.igs.fak.001.model.bds.1.0.0.20181214152731387' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 15:28:23,418 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 15:28 in 4,524 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 15:28:25,183 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:28:30,205 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:28:35,190 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+14 Dez 2018 15:28:35,191 INFO  (Processor.java:743)     - Action finished at 14.12.18 15:28 in 16,297 seconds
+14 Dez 2018 15:54:17,827 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 15:54:19,528 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:54:21,305 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 15:54:21,317 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 15:54:23,974 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.igs.fak.001' (version: '1.0.0.20181214155321088') to the Administrator Staging Area
+14 Dez 2018 15:54:23,978 INFO  (AddAction.java:161)     - Successfully added Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214155321088') to the Administrator Staging Area
+14 Dez 2018 15:54:23,991 INFO  (Processor.java:675)     - Action finished at 14.12.18 15:54 in 2,684 seconds
+14 Dez 2018 15:54:24,037 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:54:25,484 INFO  (UpgradeAction.java:31)     - Upgrading application...
+14 Dez 2018 15:54:25,485 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 15:54:25,487 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 15:54:26,098 WARN  (AddAction.java:151)     - Application Template 'com.igs.fak.001' (version: '1.0.0.20181214155321088') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 15:54:26,099 WARN  (AddAction.java:198)     - Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214155321088') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 15:54:33,093 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.igs.fak.001': Successfully upgraded application 'com.igs.fak.001' to application template version 1.0.0.20181214155321088
+14 Dez 2018 15:54:33,093 INFO  (LoggingUtil.java:182)     - 14.12.18 15:54 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181214152731387' to version: '1.0.0.20181214155321088'.
+
+14 Dez 2018 15:54:33,094 INFO  (LoggingUtil.java:182)     - 14.12.18 15:54 - 	  detail = Component 'comigsfak001ProcessFlow' upgraded from version '1.0.0.20181214152731387' to version: '1.0.0.20181214155321088'.
+
+14 Dez 2018 15:54:33,094 INFO  (LoggingUtil.java:182)     - 14.12.18 15:54 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181214152731387' to version: '1.0.0.20181214155321088'.
+
+14 Dez 2018 15:54:33,096 INFO  (LoggingUtil.java:182)     - 14.12.18 15:54 - 	  detail = Component 'comigsfak001PageFlow' upgraded from version '1.0.0.20181214152731387' to version: '1.0.0.20181214155321088'.
+
+14 Dez 2018 15:54:33,098 INFO  (LoggingUtil.java:182)     - 14.12.18 15:54 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181214152731387' to version: '1.0.0.20181214155321088'.
+
+14 Dez 2018 15:54:33,099 INFO  (LoggingUtil.java:182)     - 14.12.18 15:54 - 	  detail = TIBCO-AMX-ADMIN-012416: Binding 'SOAPReference_Binding1' on the application reference 'saveDataCaseSOAP_Consumer1' updated.
+
+14 Dez 2018 15:54:33,101 INFO  (Processor.java:675)     - Action finished at 14.12.18 15:54 in 7,616 seconds
+14 Dez 2018 15:54:33,120 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 15:54:35,055 INFO  (AMXAdminTask.java:289)     - Processing 3 objects
+14 Dez 2018 15:54:35,861 INFO  (EditAction.java:27)     - Editing properties..
+14 Dez 2018 15:54:36,029 INFO  (Processor.java:751)     - Action finished at 14.12.18 15:54 in 0,167 seconds
+14 Dez 2018 15:54:36,034 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:54:36,058 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 15:54:40,225 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.igs.fak.001' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.igs.fak.001' at 12/14/18 3:54 PM on node(s): 'BPMNode'.
+14 Dez 2018 15:54:40,225 INFO  (LoggingUtil.java:182)     - 14.12.18 15:54 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.igs.fak.001.model.bds.1.0.0.20181214155321088' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 15:54:40,226 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 15:54 in 4,168 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 15:54:42,154 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:54:47,548 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:54:54,332 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:55:00,779 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:55:03,267 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+14 Dez 2018 15:55:03,268 INFO  (Processor.java:743)     - Action finished at 14.12.18 15:55 in 27,21 seconds
+14 Dez 2018 15:57:56,043 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 15:57:57,526 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:57:58,809 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 15:57:58,815 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 15:58:01,050 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.igs.fak.001' (version: '1.0.0.20181214155720262') to the Administrator Staging Area
+14 Dez 2018 15:58:01,051 INFO  (AddAction.java:161)     - Successfully added Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214155720262') to the Administrator Staging Area
+14 Dez 2018 15:58:01,056 INFO  (Processor.java:675)     - Action finished at 14.12.18 15:58 in 2,249 seconds
+14 Dez 2018 15:58:01,078 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:58:02,133 INFO  (UpgradeAction.java:31)     - Upgrading application...
+14 Dez 2018 15:58:02,134 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 15:58:02,135 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+14 Dez 2018 15:58:02,714 WARN  (AddAction.java:151)     - Application Template 'com.igs.fak.001' (version: '1.0.0.20181214155720262') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 15:58:02,715 WARN  (AddAction.java:198)     - Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181214155720262') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 15:58:08,985 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.igs.fak.001': Successfully upgraded application 'com.igs.fak.001' to application template version 1.0.0.20181214155720262
+14 Dez 2018 15:58:08,985 INFO  (LoggingUtil.java:182)     - 14.12.18 15:58 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181214155321088' to version: '1.0.0.20181214155720262'.
+
+14 Dez 2018 15:58:08,985 INFO  (LoggingUtil.java:182)     - 14.12.18 15:58 - 	  detail = Component 'comigsfak001ProcessFlow' upgraded from version '1.0.0.20181214155321088' to version: '1.0.0.20181214155720262'.
+
+14 Dez 2018 15:58:08,985 INFO  (LoggingUtil.java:182)     - 14.12.18 15:58 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181214155321088' to version: '1.0.0.20181214155720262'.
+
+14 Dez 2018 15:58:08,987 INFO  (LoggingUtil.java:182)     - 14.12.18 15:58 - 	  detail = Component 'comigsfak001PageFlow' upgraded from version '1.0.0.20181214155321088' to version: '1.0.0.20181214155720262'.
+
+14 Dez 2018 15:58:08,987 INFO  (LoggingUtil.java:182)     - 14.12.18 15:58 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181214155321088' to version: '1.0.0.20181214155720262'.
+
+14 Dez 2018 15:58:08,987 INFO  (LoggingUtil.java:182)     - 14.12.18 15:58 - 	  detail = TIBCO-AMX-ADMIN-012416: Binding 'SOAPReference_Binding1' on the application reference 'saveDataCaseSOAP_Consumer1' updated.
+
+14 Dez 2018 15:58:08,988 INFO  (Processor.java:675)     - Action finished at 14.12.18 15:58 in 6,855 seconds
+14 Dez 2018 15:58:09,018 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 15:58:10,699 INFO  (AMXAdminTask.java:289)     - Processing 3 objects
+14 Dez 2018 15:58:11,603 INFO  (EditAction.java:27)     - Editing properties..
+14 Dez 2018 15:58:11,776 INFO  (Processor.java:751)     - Action finished at 14.12.18 15:58 in 0,172 seconds
+14 Dez 2018 15:58:11,781 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 15:58:11,808 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 15:58:15,927 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.igs.fak.001' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.igs.fak.001' at 12/14/18 3:58 PM on node(s): 'BPMNode'.
+14 Dez 2018 15:58:15,928 INFO  (LoggingUtil.java:182)     - 14.12.18 15:58 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.igs.fak.001.model.bds.1.0.0.20181214155720262' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 15:58:15,929 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 15:58 in 4,123 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 15:58:17,906 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:58:23,126 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:58:29,652 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 15:58:35,891 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+14 Dez 2018 15:58:35,892 INFO  (Processor.java:743)     - Action finished at 14.12.18 15:58 in 24,086 seconds
+14 Dez 2018 16:33:15,141 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 16:33:16,430 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 16:33:17,592 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 16:33:17,603 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test.sticky.user\.bpm\com.tibco.poc.test.sticky.user.daa
+14 Dez 2018 16:33:19,168 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.tibco.poc.test.sticky.user' (version: '1.0.0.20181214163254983') to the Administrator Staging Area
+14 Dez 2018 16:33:19,169 INFO  (AddAction.java:161)     - Successfully added Feature 'com.tibco.poc.test.sticky.user.model.bds' (version: '1.0.0.20181214163254983') to the Administrator Staging Area
+14 Dez 2018 16:33:19,174 INFO  (Processor.java:675)     - Action finished at 14.12.18 16:33 in 1,589 seconds
+14 Dez 2018 16:33:19,210 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 16:33:20,229 INFO  (AddAction.java:31)     - Adding application...
+14 Dez 2018 16:33:24,199 INFO  (LoggingUtil.java:119)     - Successfully added Application 'com.tibco.poc.test.sticky.user': Successfully created application 'com.tibco.poc.test.sticky.user' from Application Template 'com.tibco.poc.test.sticky.user' (version: 1.0.0.20181214163254983)
+14 Dez 2018 16:33:24,200 INFO  (LoggingUtil.java:182)     - 14.12.18 16:33 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'OrganizationModel' (version: 1.0.0.20181214163254983) added.
+
+14 Dez 2018 16:33:24,200 INFO  (LoggingUtil.java:182)     - 14.12.18 16:33 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comtibcopocteststickyuserProcessFlow' (version: 1.0.0.20181214163254983) added.
+
+14 Dez 2018 16:33:24,200 INFO  (LoggingUtil.java:182)     - 14.12.18 16:33 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'BRM' (version: 1.0.0.20181214163254983) added.
+
+14 Dez 2018 16:33:24,200 INFO  (LoggingUtil.java:182)     - 14.12.18 16:33 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comtibcopocteststickyuserPageFlow' (version: 1.0.0.20181214163254983) added.
+
+14 Dez 2018 16:33:24,201 INFO  (LoggingUtil.java:182)     - 14.12.18 16:33 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'WorkPresentation' (version: 1.0.0.20181214163254983) added.
+
+14 Dez 2018 16:33:24,201 INFO  (Processor.java:675)     - Action finished at 14.12.18 16:33 in 3,972 seconds
+14 Dez 2018 16:33:24,216 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 16:33:24,222 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 16:33:24,380 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 16:33:27,935 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.poc.test.sticky.user' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.poc.test.sticky.user' at 12/14/18 4:33 PM on node(s): 'BPMNode'.
+14 Dez 2018 16:33:27,936 INFO  (LoggingUtil.java:182)     - 14.12.18 16:33 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.tibco.poc.test.sticky.user.model.bds.1.0.0.20181214163254983' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 16:33:27,937 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 16:33 in 3,557 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 16:33:29,605 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 16:33:32,099 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+14 Dez 2018 16:33:32,100 INFO  (Processor.java:743)     - Action finished at 14.12.18 16:33 in 7,72 seconds
+14 Dez 2018 16:37:20,546 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 16:37:21,801 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 16:37:22,848 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 16:37:22,863 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test.sticky.user\.bpm\com.tibco.poc.test.sticky.user.daa
+14 Dez 2018 16:37:24,764 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.tibco.poc.test.sticky.user' (version: '1.0.0.20181214163706686') to the Administrator Staging Area
+14 Dez 2018 16:37:24,764 INFO  (AddAction.java:161)     - Successfully added Feature 'com.tibco.poc.test.sticky.user.model.bds' (version: '1.0.0.20181214163706686') to the Administrator Staging Area
+14 Dez 2018 16:37:24,769 INFO  (Processor.java:675)     - Action finished at 14.12.18 16:37 in 1,92 seconds
+14 Dez 2018 16:37:24,798 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 16:37:26,058 INFO  (UpgradeAction.java:31)     - Upgrading application...
+14 Dez 2018 16:37:26,060 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 16:37:26,060 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test.sticky.user\.bpm\com.tibco.poc.test.sticky.user.daa
+14 Dez 2018 16:37:26,586 WARN  (AddAction.java:151)     - Application Template 'com.tibco.poc.test.sticky.user' (version: '1.0.0.20181214163706686') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 16:37:26,587 WARN  (AddAction.java:198)     - Feature 'com.tibco.poc.test.sticky.user.model.bds' (version: '1.0.0.20181214163706686') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 16:37:33,182 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.poc.test.sticky.user': Successfully upgraded application 'com.tibco.poc.test.sticky.user' to application template version 1.0.0.20181214163706686
+14 Dez 2018 16:37:33,183 INFO  (LoggingUtil.java:182)     - 14.12.18 16:37 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181214163254983' to version: '1.0.0.20181214163706686'.
+
+14 Dez 2018 16:37:33,184 INFO  (LoggingUtil.java:182)     - 14.12.18 16:37 - 	  detail = Component 'comtibcopocteststickyuserProcessFlow' upgraded from version '1.0.0.20181214163254983' to version: '1.0.0.20181214163706686'.
+
+14 Dez 2018 16:37:33,184 INFO  (LoggingUtil.java:182)     - 14.12.18 16:37 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181214163254983' to version: '1.0.0.20181214163706686'.
+
+14 Dez 2018 16:37:33,184 INFO  (LoggingUtil.java:182)     - 14.12.18 16:37 - 	  detail = Component 'comtibcopocteststickyuserPageFlow' upgraded from version '1.0.0.20181214163254983' to version: '1.0.0.20181214163706686'.
+
+14 Dez 2018 16:37:33,185 INFO  (LoggingUtil.java:182)     - 14.12.18 16:37 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181214163254983' to version: '1.0.0.20181214163706686'.
+
+14 Dez 2018 16:37:33,185 INFO  (Processor.java:675)     - Action finished at 14.12.18 16:37 in 7,127 seconds
+14 Dez 2018 16:37:33,195 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 16:37:33,199 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 16:37:33,234 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 16:37:36,435 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.poc.test.sticky.user' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.poc.test.sticky.user' at 12/14/18 4:37 PM on node(s): 'BPMNode'.
+14 Dez 2018 16:37:36,436 INFO  (LoggingUtil.java:182)     - 14.12.18 16:37 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.tibco.poc.test.sticky.user.model.bds.1.0.0.20181214163706686' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 16:37:36,437 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 16:37 in 3,203 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 16:37:38,321 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 16:37:43,336 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 16:37:44,577 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+14 Dez 2018 16:37:44,578 INFO  (Processor.java:743)     - Action finished at 14.12.18 16:37 in 11,344 seconds
+14 Dez 2018 16:39:22,675 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 16:39:25,606 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 16:39:27,360 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 16:39:27,370 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test.sticky.user\.bpm\com.tibco.poc.test.sticky.user.daa
+14 Dez 2018 16:39:29,231 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.tibco.poc.test.sticky.user' (version: '1.0.0.20181214163859027') to the Administrator Staging Area
+14 Dez 2018 16:39:29,231 INFO  (AddAction.java:161)     - Successfully added Feature 'com.tibco.poc.test.sticky.user.model.bds' (version: '1.0.0.20181214163859027') to the Administrator Staging Area
+14 Dez 2018 16:39:29,236 INFO  (Processor.java:675)     - Action finished at 14.12.18 16:39 in 1,882 seconds
+14 Dez 2018 16:39:29,249 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 16:39:30,167 INFO  (UpgradeAction.java:31)     - Upgrading application...
+14 Dez 2018 16:39:30,168 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 16:39:30,169 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test.sticky.user\.bpm\com.tibco.poc.test.sticky.user.daa
+14 Dez 2018 16:39:30,597 WARN  (AddAction.java:151)     - Application Template 'com.tibco.poc.test.sticky.user' (version: '1.0.0.20181214163859027') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 16:39:30,598 WARN  (AddAction.java:198)     - Feature 'com.tibco.poc.test.sticky.user.model.bds' (version: '1.0.0.20181214163859027') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 16:39:37,074 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.poc.test.sticky.user': Successfully upgraded application 'com.tibco.poc.test.sticky.user' to application template version 1.0.0.20181214163859027
+14 Dez 2018 16:39:37,074 INFO  (LoggingUtil.java:182)     - 14.12.18 16:39 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181214163706686' to version: '1.0.0.20181214163859027'.
+
+14 Dez 2018 16:39:37,075 INFO  (LoggingUtil.java:182)     - 14.12.18 16:39 - 	  detail = Component 'comtibcopocteststickyuserProcessFlow' upgraded from version '1.0.0.20181214163706686' to version: '1.0.0.20181214163859027'.
+
+14 Dez 2018 16:39:37,076 INFO  (LoggingUtil.java:182)     - 14.12.18 16:39 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181214163706686' to version: '1.0.0.20181214163859027'.
+
+14 Dez 2018 16:39:37,076 INFO  (LoggingUtil.java:182)     - 14.12.18 16:39 - 	  detail = Component 'comtibcopocteststickyuserPageFlow' upgraded from version '1.0.0.20181214163706686' to version: '1.0.0.20181214163859027'.
+
+14 Dez 2018 16:39:37,076 INFO  (LoggingUtil.java:182)     - 14.12.18 16:39 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181214163706686' to version: '1.0.0.20181214163859027'.
+
+14 Dez 2018 16:39:37,077 INFO  (Processor.java:675)     - Action finished at 14.12.18 16:39 in 6,91 seconds
+14 Dez 2018 16:39:37,089 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 16:39:37,092 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 16:39:37,122 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 16:39:40,614 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.poc.test.sticky.user' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.poc.test.sticky.user' at 12/14/18 4:39 PM on node(s): 'BPMNode'.
+14 Dez 2018 16:39:40,616 INFO  (LoggingUtil.java:182)     - 14.12.18 16:39 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.tibco.poc.test.sticky.user.model.bds.1.0.0.20181214163859027' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 16:39:40,620 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 16:39 in 3,498 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 16:39:42,482 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 16:39:45,143 ERROR (UserTaskProgressIndicator.java:69)     - Application Deploy with Start failed
+14 Dez 2018 16:39:45,144 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,144 ERROR (UserTaskProgressIndicator.java:76)     - Configure admin component 'organizationmodel' failed : com.tibco.n2.de.model.exception.DestructiveChangeException: Destructive change detected in deployment. [com.tibco.n2.de.deployment.DeploymentArtefactContext@1a543f16]
+14 Dez 2018 16:39:45,145 ERROR (UserTaskProgressIndicator.java:84)     - com.tibco.n2.de.model.exception.DestructiveChangeException: Destructive change detected in deployment. [com.tibco.n2.de.deployment.DeploymentArtefactContext@1a543f16]
+com.tibco.n2.de.deployment.OrgModelDeployer.parseDocument(OrgModelDeployer.java:166)
+com.tibco.n2.de.dao.cache.DeploymentArtefactDaoImpl.parseModel(DeploymentArtefactDaoImpl.java:1233)
+com.tibco.n2.de.dao.cache.DeploymentArtefactDaoImpl.deploy(DeploymentArtefactDaoImpl.java:514)
+com.tibco.n2.de.deployment.ModelDeploymentHelperImpl.saveAndDeploy(ModelDeploymentHelperImpl.java:122)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:307)
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:182)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:106)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:50)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+com.sun.proxy.$Proxy130.saveAndDeploy(Unknown Source)
+com.tibco.n2.de.deployment.OrgModelImplementationType.installImplementation(OrgModelImplementationType.java:94)
+com.tibco.amf.platform.runtime.componentframework.internal.component.ImplementationComponent$4.call(ImplementationComponent.java:516)
+java.util.concurrent.FutureTask.run(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+14 Dez 2018 16:39:45,146 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,147 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,147 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,147 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,147 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,147 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserpageflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,148 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserpageflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,148 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,148 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,149 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,149 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,149 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,149 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,149 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,150 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,150 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,151 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,151 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'comtibcopocteststickyuserpageflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,151 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'comtibcopocteststickyuserpageflow' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,151 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy application 'com.tibco.poc.test.sticky.user' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,151 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'comtibcopocteststickyuserpageflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,151 ERROR (UserTaskProgressIndicator.java:91)     - Uninstall application 'com.tibco.poc.test.sticky.user' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,152 ERROR (UserTaskProgressIndicator.java:91)     - Cleanup Features node 'bpmnode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,152 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,152 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,152 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,152 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,152 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'workpresentation' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,152 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,152 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'organizationmodel' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,153 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'brm' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,153 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'comtibcopocteststickyuserprocessflow' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,153 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents application 'com.tibco.poc.test.sticky.user' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,153 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,154 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,154 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,155 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,155 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,155 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserpageflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,155 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserpageflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,156 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:39:45,157 ERROR (Processor.java:720)     - Action failed at 14.12.18 16:39 in 8,035 seconds
+14 Dez 2018 16:54:40,899 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 16:54:44,611 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 16:54:46,973 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 16:54:46,986 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test.sticky.user\.bpm\com.tibco.poc.test.sticky.user.daa
+14 Dez 2018 16:54:49,590 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.tibco.poc.test.sticky.user' (version: '1.0.0.20181214165427051') to the Administrator Staging Area
+14 Dez 2018 16:54:49,591 INFO  (AddAction.java:161)     - Successfully added Feature 'com.tibco.poc.test.sticky.user.model.bds' (version: '1.0.0.20181214165427051') to the Administrator Staging Area
+14 Dez 2018 16:54:49,596 INFO  (Processor.java:675)     - Action finished at 14.12.18 16:54 in 2,627 seconds
+14 Dez 2018 16:54:49,615 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 16:54:50,964 INFO  (UpgradeAction.java:31)     - Upgrading application...
+14 Dez 2018 16:54:50,965 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 16:54:50,966 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test.sticky.user\.bpm\com.tibco.poc.test.sticky.user.daa
+14 Dez 2018 16:54:51,772 WARN  (AddAction.java:151)     - Application Template 'com.tibco.poc.test.sticky.user' (version: '1.0.0.20181214165427051') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 16:54:51,773 WARN  (AddAction.java:198)     - Feature 'com.tibco.poc.test.sticky.user.model.bds' (version: '1.0.0.20181214165427051') was ignored and not added to the Administrator Staging Area, because it already exists.
+14 Dez 2018 16:54:58,366 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.tibco.poc.test.sticky.user': Successfully upgraded application 'com.tibco.poc.test.sticky.user' to application template version 1.0.0.20181214165427051
+14 Dez 2018 16:54:58,368 INFO  (LoggingUtil.java:182)     - 14.12.18 16:54 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181214163859027' to version: '1.0.0.20181214165427051'.
+
+14 Dez 2018 16:54:58,368 INFO  (LoggingUtil.java:182)     - 14.12.18 16:54 - 	  detail = Component 'comtibcopocteststickyuserProcessFlow' upgraded from version '1.0.0.20181214163859027' to version: '1.0.0.20181214165427051'.
+
+14 Dez 2018 16:54:58,368 INFO  (LoggingUtil.java:182)     - 14.12.18 16:54 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181214163859027' to version: '1.0.0.20181214165427051'.
+
+14 Dez 2018 16:54:58,368 INFO  (LoggingUtil.java:182)     - 14.12.18 16:54 - 	  detail = Component 'comtibcopocteststickyuserPageFlow' upgraded from version '1.0.0.20181214163859027' to version: '1.0.0.20181214165427051'.
+
+14 Dez 2018 16:54:58,369 INFO  (LoggingUtil.java:182)     - 14.12.18 16:54 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181214163859027' to version: '1.0.0.20181214165427051'.
+
+14 Dez 2018 16:54:58,369 INFO  (Processor.java:675)     - Action finished at 14.12.18 16:54 in 7,405 seconds
+14 Dez 2018 16:54:58,388 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 16:54:58,392 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 16:54:58,467 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 16:55:02,419 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.poc.test.sticky.user' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.poc.test.sticky.user' at 12/14/18 4:55 PM on node(s): 'BPMNode'.
+14 Dez 2018 16:55:02,420 INFO  (LoggingUtil.java:182)     - 14.12.18 16:55 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.tibco.poc.test.sticky.user.model.bds.1.0.0.20181214165427051' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 16:55:02,421 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 16:55 in 3,962 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 16:55:04,236 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 16:55:06,918 ERROR (UserTaskProgressIndicator.java:69)     - Application Deploy with Start failed
+14 Dez 2018 16:55:06,919 ERROR (UserTaskProgressIndicator.java:76)     - Configure admin component 'organizationmodel' failed : com.tibco.n2.de.model.exception.DestructiveChangeException: Destructive change detected in deployment. [com.tibco.n2.de.deployment.DeploymentArtefactContext@f8a09b]
+14 Dez 2018 16:55:06,919 ERROR (UserTaskProgressIndicator.java:84)     - com.tibco.n2.de.model.exception.DestructiveChangeException: Destructive change detected in deployment. [com.tibco.n2.de.deployment.DeploymentArtefactContext@f8a09b]
+com.tibco.n2.de.deployment.OrgModelDeployer.parseDocument(OrgModelDeployer.java:166)
+com.tibco.n2.de.dao.cache.DeploymentArtefactDaoImpl.parseModel(DeploymentArtefactDaoImpl.java:1233)
+com.tibco.n2.de.dao.cache.DeploymentArtefactDaoImpl.deploy(DeploymentArtefactDaoImpl.java:514)
+com.tibco.n2.de.deployment.ModelDeploymentHelperImpl.saveAndDeploy(ModelDeploymentHelperImpl.java:122)
+sun.reflect.GeneratedMethodAccessor1339.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:307)
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:182)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:106)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:50)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+com.sun.proxy.$Proxy130.saveAndDeploy(Unknown Source)
+com.tibco.n2.de.deployment.OrgModelImplementationType.installImplementation(OrgModelImplementationType.java:94)
+com.tibco.amf.platform.runtime.componentframework.internal.component.ImplementationComponent$4.call(ImplementationComponent.java:516)
+java.util.concurrent.FutureTask.run(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+14 Dez 2018 16:55:06,927 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,927 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,928 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,928 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,928 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,929 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,929 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'comtibcopocteststickyuserpageflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,929 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'comtibcopocteststickyuserpageflow' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,930 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy application 'com.tibco.poc.test.sticky.user' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,930 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,931 ERROR (UserTaskProgressIndicator.java:91)     - Uninstall application 'com.tibco.poc.test.sticky.user' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,931 ERROR (UserTaskProgressIndicator.java:91)     - Cleanup Features node 'bpmnode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,931 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,931 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,932 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,932 ERROR (UserTaskProgressIndicator.java:91)     - Undeploy component 'comtibcopocteststickyuserpageflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,932 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'workpresentation' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,932 ERROR (UserTaskProgressIndicator.java:91)     - Prepare for undeploy component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,933 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'organizationmodel' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,933 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'brm' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,933 ERROR (UserTaskProgressIndicator.java:91)     - Unconfigure admin component 'comtibcopocteststickyuserprocessflow' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,934 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents application 'com.tibco.poc.test.sticky.user' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,935 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,936 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,937 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,940 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,947 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,948 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,950 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,950 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserpageflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,951 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserpageflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,951 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,952 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,953 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,957 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,965 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,967 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,968 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserpageflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,974 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserpageflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,977 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,980 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,980 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 16:55:06,981 ERROR (Processor.java:720)     - Action failed at 14.12.18 16:55 in 8,523 seconds
+14 Dez 2018 17:02:30,378 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 17:02:31,465 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 17:02:32,548 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 17:02:32,553 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test.sticky.user\.bpm\com.tibco.poc.test.sticky.user.daa
+14 Dez 2018 17:02:34,048 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.tibco.poc.test.sticky.user' (version: '1.0.0.20181214170219123') to the Administrator Staging Area
+14 Dez 2018 17:02:34,050 INFO  (AddAction.java:161)     - Successfully added Feature 'com.tibco.poc.test.sticky.user.model.bds' (version: '1.0.0.20181214170219123') to the Administrator Staging Area
+14 Dez 2018 17:02:34,054 INFO  (Processor.java:675)     - Action finished at 14.12.18 17:02 in 1,509 seconds
+14 Dez 2018 17:02:34,082 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 17:02:35,007 INFO  (AddAction.java:31)     - Adding application...
+14 Dez 2018 17:02:38,672 INFO  (LoggingUtil.java:119)     - Successfully added Application 'com.tibco.poc.test.sticky.user': Successfully created application 'com.tibco.poc.test.sticky.user' from Application Template 'com.tibco.poc.test.sticky.user' (version: 1.0.0.20181214170219123)
+14 Dez 2018 17:02:38,673 INFO  (LoggingUtil.java:182)     - 14.12.18 17:02 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'OrganizationModel' (version: 1.0.0.20181214170219123) added.
+
+14 Dez 2018 17:02:38,673 INFO  (LoggingUtil.java:182)     - 14.12.18 17:02 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comtibcopocteststickyuserProcessFlow' (version: 1.0.0.20181214170219123) added.
+
+14 Dez 2018 17:02:38,673 INFO  (LoggingUtil.java:182)     - 14.12.18 17:02 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'BRM' (version: 1.0.0.20181214170219123) added.
+
+14 Dez 2018 17:02:38,674 INFO  (LoggingUtil.java:182)     - 14.12.18 17:02 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comtibcopocteststickyuserPageFlow' (version: 1.0.0.20181214170219123) added.
+
+14 Dez 2018 17:02:38,674 INFO  (LoggingUtil.java:182)     - 14.12.18 17:02 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'WorkPresentation' (version: 1.0.0.20181214170219123) added.
+
+14 Dez 2018 17:02:38,675 INFO  (Processor.java:675)     - Action finished at 14.12.18 17:02 in 3,668 seconds
+14 Dez 2018 17:02:38,680 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 17:02:38,690 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 17:02:38,837 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 17:02:42,053 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.poc.test.sticky.user' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.poc.test.sticky.user' at 12/14/18 5:02 PM on node(s): 'BPMNode'.
+14 Dez 2018 17:02:42,055 INFO  (LoggingUtil.java:182)     - 14.12.18 17:02 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.tibco.poc.test.sticky.user.model.bds.1.0.0.20181214170219123' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 17:02:42,057 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 17:02 in 3,218 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 17:02:43,733 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 17:02:45,000 ERROR (UserTaskProgressIndicator.java:69)     - Application Deploy with Start failed
+14 Dez 2018 17:02:45,001 ERROR (UserTaskProgressIndicator.java:76)     - Configure admin component 'organizationmodel' failed : com.tibco.n2.de.model.exception.DestructiveChangeException: Destructive change detected in deployment. [com.tibco.n2.de.deployment.DeploymentArtefactContext@7658714]
+14 Dez 2018 17:02:45,002 ERROR (UserTaskProgressIndicator.java:84)     - com.tibco.n2.de.model.exception.DestructiveChangeException: Destructive change detected in deployment. [com.tibco.n2.de.deployment.DeploymentArtefactContext@7658714]
+com.tibco.n2.de.deployment.OrgModelDeployer.parseDocument(OrgModelDeployer.java:166)
+com.tibco.n2.de.dao.cache.DeploymentArtefactDaoImpl.parseModel(DeploymentArtefactDaoImpl.java:1233)
+com.tibco.n2.de.dao.cache.DeploymentArtefactDaoImpl.deploy(DeploymentArtefactDaoImpl.java:514)
+com.tibco.n2.de.deployment.ModelDeploymentHelperImpl.saveAndDeploy(ModelDeploymentHelperImpl.java:122)
+sun.reflect.GeneratedMethodAccessor1339.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:307)
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:182)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:106)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:50)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+com.sun.proxy.$Proxy130.saveAndDeploy(Unknown Source)
+com.tibco.n2.de.deployment.OrgModelImplementationType.installImplementation(OrgModelImplementationType.java:94)
+com.tibco.amf.platform.runtime.componentframework.internal.component.ImplementationComponent$4.call(ImplementationComponent.java:516)
+java.util.concurrent.FutureTask.run(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+14 Dez 2018 17:02:45,010 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 17:02:45,010 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 17:02:45,011 ERROR (UserTaskProgressIndicator.java:91)     - Start component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 17:02:45,011 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents application 'com.tibco.poc.test.sticky.user' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 17:02:45,011 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserpageflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 17:02:45,011 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserpageflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 17:02:45,011 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 17:02:45,012 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'organizationmodel' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 17:02:45,012 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 17:02:45,012 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'brm' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 17:02:45,013 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 17:02:45,013 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'workpresentation' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 17:02:45,013 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 17:02:45,014 ERROR (UserTaskProgressIndicator.java:91)     - Update Dependents component 'comtibcopocteststickyuserprocessflow' on node 'BPMNode' cancelled because Configure admin component 'organizationmodel' failed
+14 Dez 2018 17:02:45,015 ERROR (Processor.java:720)     - Action failed at 14.12.18 17:02 in 6,178 seconds
+14 Dez 2018 17:12:11,907 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+14 Dez 2018 17:12:13,205 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 17:12:14,456 INFO  (AddAction.java:54)     - Uploading DAA...
+14 Dez 2018 17:12:14,465 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.tibco.poc.test.sticky.user\.bpm\com.tibco.poc.test.sticky.user.daa
+14 Dez 2018 17:12:16,306 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.tibco.poc.test.sticky.user' (version: '1.0.1.20181214171118637') to the Administrator Staging Area
+14 Dez 2018 17:12:16,307 INFO  (AddAction.java:161)     - Successfully added Feature 'com.tibco.poc.test.sticky.user.model.bds' (version: '1.0.1.20181214171118637') to the Administrator Staging Area
+14 Dez 2018 17:12:16,318 INFO  (Processor.java:675)     - Action finished at 14.12.18 17:12 in 1,857 seconds
+14 Dez 2018 17:12:16,338 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 17:12:17,256 INFO  (AddAction.java:31)     - Adding application...
+14 Dez 2018 17:12:20,670 INFO  (LoggingUtil.java:119)     - Successfully added Application 'com.tibco.poc.test.sticky.user': Successfully created application 'com.tibco.poc.test.sticky.user' from Application Template 'com.tibco.poc.test.sticky.user' (version: 1.0.1.20181214171118637)
+14 Dez 2018 17:12:20,671 INFO  (LoggingUtil.java:182)     - 14.12.18 17:12 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'StickyUserORgModel' (version: 1.0.1.20181214171118637) added.
+
+14 Dez 2018 17:12:20,672 INFO  (LoggingUtil.java:182)     - 14.12.18 17:12 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comtibcopocteststickyuserProcessFlow' (version: 1.0.1.20181214171118637) added.
+
+14 Dez 2018 17:12:20,672 INFO  (LoggingUtil.java:182)     - 14.12.18 17:12 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'BRM' (version: 1.0.1.20181214171118637) added.
+
+14 Dez 2018 17:12:20,672 INFO  (LoggingUtil.java:182)     - 14.12.18 17:12 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'comtibcopocteststickyuserPageFlow' (version: 1.0.1.20181214171118637) added.
+
+14 Dez 2018 17:12:20,672 INFO  (LoggingUtil.java:182)     - 14.12.18 17:12 - 	  detail = TIBCO-AMX-ADMIN-012406: Component 'WorkPresentation' (version: 1.0.1.20181214171118637) added.
+
+14 Dez 2018 17:12:20,672 INFO  (Processor.java:675)     - Action finished at 14.12.18 17:12 in 3,416 seconds
+14 Dez 2018 17:12:20,680 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+14 Dez 2018 17:12:20,687 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+14 Dez 2018 17:12:20,822 INFO  (DeployAction.java:38)     - Deploying application...
+14 Dez 2018 17:12:24,336 INFO  (LoggingUtil.java:119)     - Deploying Application 'com.tibco.poc.test.sticky.user' in background : TIBCO-AMX-ADMIN-012015: Deployment succeeded for application 'com.tibco.poc.test.sticky.user' at 12/14/18 5:12 PM on node(s): 'BPMNode'.
+14 Dez 2018 17:12:24,337 INFO  (LoggingUtil.java:182)     - 14.12.18 17:12 - 	  detail = TIBCO-AMX-ADMIN-012146: Feature 'com.tibco.poc.test.sticky.user.model.bds.1.0.1.20181214171118637' was auto-enabled in node 'BPMNode'
+
+14 Dez 2018 17:12:24,337 INFO  (Processor.java:696)     - Action finished in Admin at 14.12.18 17:12 in 3,515 seconds. Waiting for runtime tasks to be finished.
+14 Dez 2018 17:12:26,034 INFO  (AsyncActionExecutor.java:117)     - .
+14 Dez 2018 17:12:28,532 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
+14 Dez 2018 17:12:28,534 INFO  (Processor.java:743)     - Action finished at 14.12.18 17:12 in 7,711 seconds

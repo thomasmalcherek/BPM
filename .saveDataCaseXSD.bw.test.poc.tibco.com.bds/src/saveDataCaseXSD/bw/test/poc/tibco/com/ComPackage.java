@@ -20,7 +20,7 @@ import saveDataCaseXSD.bw.test.poc.tibco.com.bdsutil.BDSValidationUtils;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * BOMORIGIN::/com.tibco.poc.test/Generated Business Objects/saveDataCaseXSD.bw.test.poc.tibco.com.bom
+ * BOMORIGIN::/com.igs.fak.001/Generated Business Objects/saveDataCaseXSD.bw.test.poc.tibco.com.bom
  * <!-- end-model-doc -->
  * @see saveDataCaseXSD.bw.test.poc.tibco.com.ComFactory
  * @model kind="package"
@@ -102,31 +102,31 @@ public interface ComPackage extends EPackage
   int CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE__AHV_NUMMER = 1;
 
   /**
-   * The feature id for the '<em><b>Partner ID</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE__PARTNER_ID = 2;
-
-  /**
    * The feature id for the '<em><b>Dokumenten Art</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE__DOKUMENTEN_ART = 3;
+  int CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE__DOKUMENTEN_ART = 2;
 
   /**
-   * The feature id for the '<em><b>Kanton</b></em>' attribute.
+   * The feature id for the '<em><b>Geschaeftsfall</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE__KANTON = 4;
+  int CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE__GESCHAEFTSFALL = 3;
+
+  /**
+   * The feature id for the '<em><b>Anzahl der Dokumente</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE__ANZAHL_DER_DOKUMENTE = 4;
 
   /**
    * The number of structural features of the '<em>Create Case ID Request From BPM Type</em>' class.
@@ -157,31 +157,31 @@ public interface ComPackage extends EPackage
   int CREATE_CASE_ID_REQUEST_TYPE__AHV_NUMMER = 0;
 
   /**
-   * The feature id for the '<em><b>Partner ID</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CREATE_CASE_ID_REQUEST_TYPE__PARTNER_ID = 1;
-
-  /**
    * The feature id for the '<em><b>Dokumenten Art</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CREATE_CASE_ID_REQUEST_TYPE__DOKUMENTEN_ART = 2;
+  int CREATE_CASE_ID_REQUEST_TYPE__DOKUMENTEN_ART = 1;
 
   /**
-   * The feature id for the '<em><b>Kanton</b></em>' attribute.
+   * The feature id for the '<em><b>Geschaeftsfall</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int CREATE_CASE_ID_REQUEST_TYPE__KANTON = 3;
+  int CREATE_CASE_ID_REQUEST_TYPE__GESCHAEFTSFALL = 2;
+
+  /**
+   * The feature id for the '<em><b>Anzahl der Dokumente</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int CREATE_CASE_ID_REQUEST_TYPE__ANZAHL_DER_DOKUMENTE = 3;
 
   /**
    * The number of structural features of the '<em>Create Case ID Request Type</em>' class.
@@ -331,13 +331,31 @@ public interface ComPackage extends EPackage
   int DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID = 7;
 
   /**
-   * The feature id for the '<em><b>Get Data Response From Case ID</b></em>' containment reference.
+   * The feature id for the '<em><b>Get Data WF Case ID Response</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID = 8;
+  int DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE = 8;
+
+  /**
+   * The feature id for the '<em><b>Search Data Request</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DOCUMENT_ROOT__SEARCH_DATA_REQUEST = 9;
+
+  /**
+   * The feature id for the '<em><b>Search Data Responses</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DOCUMENT_ROOT__SEARCH_DATA_RESPONSES = 10;
 
   /**
    * The feature id for the '<em><b>Create Case ID Request From BPM Type BDS Internal Serialization Element</b></em>' containment reference.
@@ -346,7 +364,7 @@ public interface ComPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DOCUMENT_ROOT__CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 9;
+  int DOCUMENT_ROOT__CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 11;
 
   /**
    * The feature id for the '<em><b>Create Case ID Request Type BDS Internal Serialization Element</b></em>' containment reference.
@@ -355,7 +373,7 @@ public interface ComPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DOCUMENT_ROOT__CREATE_CASE_ID_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 10;
+  int DOCUMENT_ROOT__CREATE_CASE_ID_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 12;
 
   /**
    * The feature id for the '<em><b>Create Case ID Response From BPM Type BDS Internal Serialization Element</b></em>' containment reference.
@@ -364,7 +382,7 @@ public interface ComPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DOCUMENT_ROOT__CREATE_CASE_ID_RESPONSE_FROM_BPM_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 11;
+  int DOCUMENT_ROOT__CREATE_CASE_ID_RESPONSE_FROM_BPM_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 13;
 
   /**
    * The feature id for the '<em><b>Create Case ID Response Type BDS Internal Serialization Element</b></em>' containment reference.
@@ -373,7 +391,7 @@ public interface ComPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DOCUMENT_ROOT__CREATE_CASE_ID_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 12;
+  int DOCUMENT_ROOT__CREATE_CASE_ID_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 14;
 
   /**
    * The feature id for the '<em><b>Get Data Request From Case ID Type BDS Internal Serialization Element</b></em>' containment reference.
@@ -382,16 +400,43 @@ public interface ComPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 13;
+  int DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 15;
 
   /**
-   * The feature id for the '<em><b>Get Data Response From Case ID Type BDS Internal Serialization Element</b></em>' containment reference.
+   * The feature id for the '<em><b>Get Data WF Case ID Response Type BDS Internal Serialization Element</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 14;
+  int DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 16;
+
+  /**
+   * The feature id for the '<em><b>Search Data Request Type BDS Internal Serialization Element</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DOCUMENT_ROOT__SEARCH_DATA_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 17;
+
+  /**
+   * The feature id for the '<em><b>Search Data Responses Type BDS Internal Serialization Element</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DOCUMENT_ROOT__SEARCH_DATA_RESPONSES_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 18;
+
+  /**
+   * The feature id for the '<em><b>Search Data Response Type BDS Internal Serialization Element</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DOCUMENT_ROOT__SEARCH_DATA_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = 19;
 
   /**
    * The number of structural features of the '<em>Document Root</em>' class.
@@ -400,7 +445,7 @@ public interface ComPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DOCUMENT_ROOT_FEATURE_COUNT = 15;
+  int DOCUMENT_ROOT_FEATURE_COUNT = 20;
 
   /**
    * The meta object id for the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.GetDataRequestFromCaseIDTypeImpl <em>Get Data Request From Case ID Type</em>}' class.
@@ -431,14 +476,14 @@ public interface ComPackage extends EPackage
   int GET_DATA_REQUEST_FROM_CASE_ID_TYPE_FEATURE_COUNT = 1;
 
   /**
-   * The meta object id for the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.GetDataResponseFromCaseIDTypeImpl <em>Get Data Response From Case ID Type</em>}' class.
+   * The meta object id for the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.GetDataWFCaseIDResponseTypeImpl <em>Get Data WF Case ID Response Type</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.GetDataResponseFromCaseIDTypeImpl
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.ComPackageImpl#getGetDataResponseFromCaseIDType()
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.GetDataWFCaseIDResponseTypeImpl
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.ComPackageImpl#getGetDataWFCaseIDResponseType()
    * @generated
    */
-  int GET_DATA_RESPONSE_FROM_CASE_ID_TYPE = 6;
+  int GET_DATA_WF_CASE_ID_RESPONSE_TYPE = 6;
 
   /**
    * The feature id for the '<em><b>Case ID</b></em>' attribute.
@@ -447,7 +492,7 @@ public interface ComPackage extends EPackage
    * @generated
    * @ordered
    */
-  int GET_DATA_RESPONSE_FROM_CASE_ID_TYPE__CASE_ID = 0;
+  int GET_DATA_WF_CASE_ID_RESPONSE_TYPE__CASE_ID = 0;
 
   /**
    * The feature id for the '<em><b>AHV Nummer</b></em>' attribute.
@@ -456,16 +501,7 @@ public interface ComPackage extends EPackage
    * @generated
    * @ordered
    */
-  int GET_DATA_RESPONSE_FROM_CASE_ID_TYPE__AHV_NUMMER = 1;
-
-  /**
-   * The feature id for the '<em><b>Partner ID</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int GET_DATA_RESPONSE_FROM_CASE_ID_TYPE__PARTNER_ID = 2;
+  int GET_DATA_WF_CASE_ID_RESPONSE_TYPE__AHV_NUMMER = 1;
 
   /**
    * The feature id for the '<em><b>Dokumenten Art</b></em>' attribute.
@@ -474,25 +510,181 @@ public interface ComPackage extends EPackage
    * @generated
    * @ordered
    */
-  int GET_DATA_RESPONSE_FROM_CASE_ID_TYPE__DOKUMENTEN_ART = 3;
+  int GET_DATA_WF_CASE_ID_RESPONSE_TYPE__DOKUMENTEN_ART = 2;
 
   /**
-   * The feature id for the '<em><b>Kanton</b></em>' attribute.
+   * The feature id for the '<em><b>Geschaeftsfall</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int GET_DATA_RESPONSE_FROM_CASE_ID_TYPE__KANTON = 4;
+  int GET_DATA_WF_CASE_ID_RESPONSE_TYPE__GESCHAEFTSFALL = 3;
 
   /**
-   * The number of structural features of the '<em>Get Data Response From Case ID Type</em>' class.
+   * The feature id for the '<em><b>Anzahl der Dokumente</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int GET_DATA_RESPONSE_FROM_CASE_ID_TYPE_FEATURE_COUNT = 5;
+  int GET_DATA_WF_CASE_ID_RESPONSE_TYPE__ANZAHL_DER_DOKUMENTE = 4;
+
+  /**
+   * The number of structural features of the '<em>Get Data WF Case ID Response Type</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GET_DATA_WF_CASE_ID_RESPONSE_TYPE_FEATURE_COUNT = 5;
+
+  /**
+   * The meta object id for the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.SearchDataRequestTypeImpl <em>Search Data Request Type</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.SearchDataRequestTypeImpl
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.ComPackageImpl#getSearchDataRequestType()
+   * @generated
+   */
+  int SEARCH_DATA_REQUEST_TYPE = 7;
+
+  /**
+   * The feature id for the '<em><b>AHV Nummer</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SEARCH_DATA_REQUEST_TYPE__AHV_NUMMER = 0;
+
+  /**
+   * The feature id for the '<em><b>Dokumenten Art</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SEARCH_DATA_REQUEST_TYPE__DOKUMENTEN_ART = 1;
+
+  /**
+   * The feature id for the '<em><b>Geschaeftsfall</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SEARCH_DATA_REQUEST_TYPE__GESCHAEFTSFALL = 2;
+
+  /**
+   * The number of structural features of the '<em>Search Data Request Type</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SEARCH_DATA_REQUEST_TYPE_FEATURE_COUNT = 3;
+
+  /**
+   * The meta object id for the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.SearchDataResponsesTypeImpl <em>Search Data Responses Type</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.SearchDataResponsesTypeImpl
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.ComPackageImpl#getSearchDataResponsesType()
+   * @generated
+   */
+  int SEARCH_DATA_RESPONSES_TYPE = 8;
+
+  /**
+   * The feature id for the '<em><b>Group</b></em>' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SEARCH_DATA_RESPONSES_TYPE__GROUP = 0;
+
+  /**
+   * The feature id for the '<em><b>Search Data Response</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SEARCH_DATA_RESPONSES_TYPE__SEARCH_DATA_RESPONSE = 1;
+
+  /**
+   * The number of structural features of the '<em>Search Data Responses Type</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SEARCH_DATA_RESPONSES_TYPE_FEATURE_COUNT = 2;
+
+  /**
+   * The meta object id for the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.SearchDataResponseTypeImpl <em>Search Data Response Type</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.SearchDataResponseTypeImpl
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.ComPackageImpl#getSearchDataResponseType()
+   * @generated
+   */
+  int SEARCH_DATA_RESPONSE_TYPE = 9;
+
+  /**
+   * The feature id for the '<em><b>Case ID</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SEARCH_DATA_RESPONSE_TYPE__CASE_ID = 0;
+
+  /**
+   * The feature id for the '<em><b>AHV Nummer</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SEARCH_DATA_RESPONSE_TYPE__AHV_NUMMER = 1;
+
+  /**
+   * The feature id for the '<em><b>Dokumenten Art</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SEARCH_DATA_RESPONSE_TYPE__DOKUMENTEN_ART = 2;
+
+  /**
+   * The feature id for the '<em><b>Geschaeftsfall</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SEARCH_DATA_RESPONSE_TYPE__GESCHAEFTSFALL = 3;
+
+  /**
+   * The feature id for the '<em><b>Anzahl der Dokumente</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SEARCH_DATA_RESPONSE_TYPE__ANZAHL_DER_DOKUMENTE = 4;
+
+  /**
+   * The number of structural features of the '<em>Search Data Response Type</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SEARCH_DATA_RESPONSE_TYPE_FEATURE_COUNT = 5;
 
 
   /**
@@ -528,17 +720,6 @@ public interface ComPackage extends EPackage
   EAttribute getCreateCaseIDRequestFromBPMType_AHVNummer();
 
   /**
-   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getPartnerID <em>Partner ID</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Partner ID</em>'.
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getPartnerID()
-   * @see #getCreateCaseIDRequestFromBPMType()
-   * @generated
-   */
-  EAttribute getCreateCaseIDRequestFromBPMType_PartnerID();
-
-  /**
    * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getDokumentenArt <em>Dokumenten Art</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -550,15 +731,26 @@ public interface ComPackage extends EPackage
   EAttribute getCreateCaseIDRequestFromBPMType_DokumentenArt();
 
   /**
-   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getKanton <em>Kanton</em>}'.
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getGeschaeftsfall <em>Geschaeftsfall</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Kanton</em>'.
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getKanton()
+   * @return the meta object for the attribute '<em>Geschaeftsfall</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getGeschaeftsfall()
    * @see #getCreateCaseIDRequestFromBPMType()
    * @generated
    */
-  EAttribute getCreateCaseIDRequestFromBPMType_Kanton();
+  EAttribute getCreateCaseIDRequestFromBPMType_Geschaeftsfall();
+
+  /**
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getAnzahl_der_Dokumente <em>Anzahl der Dokumente</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Anzahl der Dokumente</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getAnzahl_der_Dokumente()
+   * @see #getCreateCaseIDRequestFromBPMType()
+   * @generated
+   */
+  EAttribute getCreateCaseIDRequestFromBPMType_Anzahl_der_Dokumente();
 
   /**
    * Returns the meta object for class '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType <em>Create Case ID Request Type</em>}'.
@@ -582,17 +774,6 @@ public interface ComPackage extends EPackage
   EAttribute getCreateCaseIDRequestType_AHVNummer();
 
   /**
-   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType#getPartnerID <em>Partner ID</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Partner ID</em>'.
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType#getPartnerID()
-   * @see #getCreateCaseIDRequestType()
-   * @generated
-   */
-  EAttribute getCreateCaseIDRequestType_PartnerID();
-
-  /**
    * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType#getDokumentenArt <em>Dokumenten Art</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -604,15 +785,26 @@ public interface ComPackage extends EPackage
   EAttribute getCreateCaseIDRequestType_DokumentenArt();
 
   /**
-   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType#getKanton <em>Kanton</em>}'.
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType#getGeschaeftsfall <em>Geschaeftsfall</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Kanton</em>'.
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType#getKanton()
+   * @return the meta object for the attribute '<em>Geschaeftsfall</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType#getGeschaeftsfall()
    * @see #getCreateCaseIDRequestType()
    * @generated
    */
-  EAttribute getCreateCaseIDRequestType_Kanton();
+  EAttribute getCreateCaseIDRequestType_Geschaeftsfall();
+
+  /**
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType#getAnzahl_der_Dokumente <em>Anzahl der Dokumente</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Anzahl der Dokumente</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType#getAnzahl_der_Dokumente()
+   * @see #getCreateCaseIDRequestType()
+   * @generated
+   */
+  EAttribute getCreateCaseIDRequestType_Anzahl_der_Dokumente();
 
   /**
    * Returns the meta object for class '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseFromBPMType <em>Create Case ID Response From BPM Type</em>}'.
@@ -755,15 +947,37 @@ public interface ComPackage extends EPackage
   EReference getDocumentRoot_GetDataRequestFromCaseID();
 
   /**
-   * Returns the meta object for the containment reference '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataResponseFromCaseID <em>Get Data Response From Case ID</em>}'.
+   * Returns the meta object for the containment reference '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataWFCaseIDResponse <em>Get Data WF Case ID Response</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Get Data Response From Case ID</em>'.
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataResponseFromCaseID()
+   * @return the meta object for the containment reference '<em>Get Data WF Case ID Response</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataWFCaseIDResponse()
    * @see #getDocumentRoot()
    * @generated
    */
-  EReference getDocumentRoot_GetDataResponseFromCaseID();
+  EReference getDocumentRoot_GetDataWFCaseIDResponse();
+
+  /**
+   * Returns the meta object for the containment reference '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataRequest <em>Search Data Request</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Search Data Request</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataRequest()
+   * @see #getDocumentRoot()
+   * @generated
+   */
+  EReference getDocumentRoot_SearchDataRequest();
+
+  /**
+   * Returns the meta object for the containment reference '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataResponses <em>Search Data Responses</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Search Data Responses</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataResponses()
+   * @see #getDocumentRoot()
+   * @generated
+   */
+  EReference getDocumentRoot_SearchDataResponses();
 
   /**
    * Returns the meta object for the containment reference '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getCreateCaseIDRequestFromBPMTypeBDSInternalSerializationElement <em>Create Case ID Request From BPM Type BDS Internal Serialization Element</em>}'.
@@ -821,15 +1035,48 @@ public interface ComPackage extends EPackage
   EReference getDocumentRoot_GetDataRequestFromCaseIDTypeBDSInternalSerializationElement();
 
   /**
-   * Returns the meta object for the containment reference '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataResponseFromCaseIDTypeBDSInternalSerializationElement <em>Get Data Response From Case ID Type BDS Internal Serialization Element</em>}'.
+   * Returns the meta object for the containment reference '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataWFCaseIDResponseTypeBDSInternalSerializationElement <em>Get Data WF Case ID Response Type BDS Internal Serialization Element</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Get Data Response From Case ID Type BDS Internal Serialization Element</em>'.
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataResponseFromCaseIDTypeBDSInternalSerializationElement()
+   * @return the meta object for the containment reference '<em>Get Data WF Case ID Response Type BDS Internal Serialization Element</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataWFCaseIDResponseTypeBDSInternalSerializationElement()
    * @see #getDocumentRoot()
    * @generated
    */
-  EReference getDocumentRoot_GetDataResponseFromCaseIDTypeBDSInternalSerializationElement();
+  EReference getDocumentRoot_GetDataWFCaseIDResponseTypeBDSInternalSerializationElement();
+
+  /**
+   * Returns the meta object for the containment reference '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataRequestTypeBDSInternalSerializationElement <em>Search Data Request Type BDS Internal Serialization Element</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Search Data Request Type BDS Internal Serialization Element</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataRequestTypeBDSInternalSerializationElement()
+   * @see #getDocumentRoot()
+   * @generated
+   */
+  EReference getDocumentRoot_SearchDataRequestTypeBDSInternalSerializationElement();
+
+  /**
+   * Returns the meta object for the containment reference '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataResponsesTypeBDSInternalSerializationElement <em>Search Data Responses Type BDS Internal Serialization Element</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Search Data Responses Type BDS Internal Serialization Element</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataResponsesTypeBDSInternalSerializationElement()
+   * @see #getDocumentRoot()
+   * @generated
+   */
+  EReference getDocumentRoot_SearchDataResponsesTypeBDSInternalSerializationElement();
+
+  /**
+   * Returns the meta object for the containment reference '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataResponseTypeBDSInternalSerializationElement <em>Search Data Response Type BDS Internal Serialization Element</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Search Data Response Type BDS Internal Serialization Element</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataResponseTypeBDSInternalSerializationElement()
+   * @see #getDocumentRoot()
+   * @generated
+   */
+  EReference getDocumentRoot_SearchDataResponseTypeBDSInternalSerializationElement();
 
   /**
    * Returns the meta object for class '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataRequestFromCaseIDType <em>Get Data Request From Case ID Type</em>}'.
@@ -853,69 +1100,209 @@ public interface ComPackage extends EPackage
   EAttribute getGetDataRequestFromCaseIDType_CaseID();
 
   /**
-   * Returns the meta object for class '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType <em>Get Data Response From Case ID Type</em>}'.
+   * Returns the meta object for class '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType <em>Get Data WF Case ID Response Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Get Data Response From Case ID Type</em>'.
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType
+   * @return the meta object for class '<em>Get Data WF Case ID Response Type</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType
    * @generated
    */
-  EClass getGetDataResponseFromCaseIDType();
+  EClass getGetDataWFCaseIDResponseType();
 
   /**
-   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType#getCaseID <em>Case ID</em>}'.
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType#getCaseID <em>Case ID</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Case ID</em>'.
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType#getCaseID()
-   * @see #getGetDataResponseFromCaseIDType()
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType#getCaseID()
+   * @see #getGetDataWFCaseIDResponseType()
    * @generated
    */
-  EAttribute getGetDataResponseFromCaseIDType_CaseID();
+  EAttribute getGetDataWFCaseIDResponseType_CaseID();
 
   /**
-   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType#getAHVNummer <em>AHV Nummer</em>}'.
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType#getAHVNummer <em>AHV Nummer</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>AHV Nummer</em>'.
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType#getAHVNummer()
-   * @see #getGetDataResponseFromCaseIDType()
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType#getAHVNummer()
+   * @see #getGetDataWFCaseIDResponseType()
    * @generated
    */
-  EAttribute getGetDataResponseFromCaseIDType_AHVNummer();
+  EAttribute getGetDataWFCaseIDResponseType_AHVNummer();
 
   /**
-   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType#getPartnerID <em>Partner ID</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Partner ID</em>'.
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType#getPartnerID()
-   * @see #getGetDataResponseFromCaseIDType()
-   * @generated
-   */
-  EAttribute getGetDataResponseFromCaseIDType_PartnerID();
-
-  /**
-   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType#getDokumentenArt <em>Dokumenten Art</em>}'.
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType#getDokumentenArt <em>Dokumenten Art</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Dokumenten Art</em>'.
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType#getDokumentenArt()
-   * @see #getGetDataResponseFromCaseIDType()
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType#getDokumentenArt()
+   * @see #getGetDataWFCaseIDResponseType()
    * @generated
    */
-  EAttribute getGetDataResponseFromCaseIDType_DokumentenArt();
+  EAttribute getGetDataWFCaseIDResponseType_DokumentenArt();
 
   /**
-   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType#getKanton <em>Kanton</em>}'.
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType#getGeschaeftsfall <em>Geschaeftsfall</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Kanton</em>'.
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType#getKanton()
-   * @see #getGetDataResponseFromCaseIDType()
+   * @return the meta object for the attribute '<em>Geschaeftsfall</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType#getGeschaeftsfall()
+   * @see #getGetDataWFCaseIDResponseType()
    * @generated
    */
-  EAttribute getGetDataResponseFromCaseIDType_Kanton();
+  EAttribute getGetDataWFCaseIDResponseType_Geschaeftsfall();
+
+  /**
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType#getAnzahl_der_Dokumente <em>Anzahl der Dokumente</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Anzahl der Dokumente</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType#getAnzahl_der_Dokumente()
+   * @see #getGetDataWFCaseIDResponseType()
+   * @generated
+   */
+  EAttribute getGetDataWFCaseIDResponseType_Anzahl_der_Dokumente();
+
+  /**
+   * Returns the meta object for class '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType <em>Search Data Request Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Search Data Request Type</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType
+   * @generated
+   */
+  EClass getSearchDataRequestType();
+
+  /**
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType#getAHVNummer <em>AHV Nummer</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>AHV Nummer</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType#getAHVNummer()
+   * @see #getSearchDataRequestType()
+   * @generated
+   */
+  EAttribute getSearchDataRequestType_AHVNummer();
+
+  /**
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType#getDokumentenArt <em>Dokumenten Art</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Dokumenten Art</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType#getDokumentenArt()
+   * @see #getSearchDataRequestType()
+   * @generated
+   */
+  EAttribute getSearchDataRequestType_DokumentenArt();
+
+  /**
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType#getGeschaeftsfall <em>Geschaeftsfall</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Geschaeftsfall</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType#getGeschaeftsfall()
+   * @see #getSearchDataRequestType()
+   * @generated
+   */
+  EAttribute getSearchDataRequestType_Geschaeftsfall();
+
+  /**
+   * Returns the meta object for class '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponsesType <em>Search Data Responses Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Search Data Responses Type</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponsesType
+   * @generated
+   */
+  EClass getSearchDataResponsesType();
+
+  /**
+   * Returns the meta object for the attribute list '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponsesType#getGroup <em>Group</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute list '<em>Group</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponsesType#getGroup()
+   * @see #getSearchDataResponsesType()
+   * @generated
+   */
+  EAttribute getSearchDataResponsesType_Group();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponsesType#getSearchDataResponse <em>Search Data Response</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Search Data Response</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponsesType#getSearchDataResponse()
+   * @see #getSearchDataResponsesType()
+   * @generated
+   */
+  EReference getSearchDataResponsesType_SearchDataResponse();
+
+  /**
+   * Returns the meta object for class '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType <em>Search Data Response Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Search Data Response Type</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType
+   * @generated
+   */
+  EClass getSearchDataResponseType();
+
+  /**
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType#getCaseID <em>Case ID</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Case ID</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType#getCaseID()
+   * @see #getSearchDataResponseType()
+   * @generated
+   */
+  EAttribute getSearchDataResponseType_CaseID();
+
+  /**
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType#getAHVNummer <em>AHV Nummer</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>AHV Nummer</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType#getAHVNummer()
+   * @see #getSearchDataResponseType()
+   * @generated
+   */
+  EAttribute getSearchDataResponseType_AHVNummer();
+
+  /**
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType#getDokumentenArt <em>Dokumenten Art</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Dokumenten Art</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType#getDokumentenArt()
+   * @see #getSearchDataResponseType()
+   * @generated
+   */
+  EAttribute getSearchDataResponseType_DokumentenArt();
+
+  /**
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType#getGeschaeftsfall <em>Geschaeftsfall</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Geschaeftsfall</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType#getGeschaeftsfall()
+   * @see #getSearchDataResponseType()
+   * @generated
+   */
+  EAttribute getSearchDataResponseType_Geschaeftsfall();
+
+  /**
+   * Returns the meta object for the attribute '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType#getAnzahl_der_Dokumente <em>Anzahl der Dokumente</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Anzahl der Dokumente</em>'.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType#getAnzahl_der_Dokumente()
+   * @see #getSearchDataResponseType()
+   * @generated
+   */
+  EAttribute getSearchDataResponseType_Anzahl_der_Dokumente();
 
   /**
    * Returns the factory that creates the instances of the model.
@@ -967,14 +1354,6 @@ public interface ComPackage extends EPackage
     EAttribute CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE__AHV_NUMMER = eINSTANCE.getCreateCaseIDRequestFromBPMType_AHVNummer();
 
     /**
-     * The meta object literal for the '<em><b>Partner ID</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE__PARTNER_ID = eINSTANCE.getCreateCaseIDRequestFromBPMType_PartnerID();
-
-    /**
      * The meta object literal for the '<em><b>Dokumenten Art</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -983,12 +1362,20 @@ public interface ComPackage extends EPackage
     EAttribute CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE__DOKUMENTEN_ART = eINSTANCE.getCreateCaseIDRequestFromBPMType_DokumentenArt();
 
     /**
-     * The meta object literal for the '<em><b>Kanton</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Geschaeftsfall</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE__KANTON = eINSTANCE.getCreateCaseIDRequestFromBPMType_Kanton();
+    EAttribute CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE__GESCHAEFTSFALL = eINSTANCE.getCreateCaseIDRequestFromBPMType_Geschaeftsfall();
+
+    /**
+     * The meta object literal for the '<em><b>Anzahl der Dokumente</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE__ANZAHL_DER_DOKUMENTE = eINSTANCE.getCreateCaseIDRequestFromBPMType_Anzahl_der_Dokumente();
 
     /**
      * The meta object literal for the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.CreateCaseIDRequestTypeImpl <em>Create Case ID Request Type</em>}' class.
@@ -1009,14 +1396,6 @@ public interface ComPackage extends EPackage
     EAttribute CREATE_CASE_ID_REQUEST_TYPE__AHV_NUMMER = eINSTANCE.getCreateCaseIDRequestType_AHVNummer();
 
     /**
-     * The meta object literal for the '<em><b>Partner ID</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CREATE_CASE_ID_REQUEST_TYPE__PARTNER_ID = eINSTANCE.getCreateCaseIDRequestType_PartnerID();
-
-    /**
      * The meta object literal for the '<em><b>Dokumenten Art</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1025,12 +1404,20 @@ public interface ComPackage extends EPackage
     EAttribute CREATE_CASE_ID_REQUEST_TYPE__DOKUMENTEN_ART = eINSTANCE.getCreateCaseIDRequestType_DokumentenArt();
 
     /**
-     * The meta object literal for the '<em><b>Kanton</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Geschaeftsfall</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute CREATE_CASE_ID_REQUEST_TYPE__KANTON = eINSTANCE.getCreateCaseIDRequestType_Kanton();
+    EAttribute CREATE_CASE_ID_REQUEST_TYPE__GESCHAEFTSFALL = eINSTANCE.getCreateCaseIDRequestType_Geschaeftsfall();
+
+    /**
+     * The meta object literal for the '<em><b>Anzahl der Dokumente</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute CREATE_CASE_ID_REQUEST_TYPE__ANZAHL_DER_DOKUMENTE = eINSTANCE.getCreateCaseIDRequestType_Anzahl_der_Dokumente();
 
     /**
      * The meta object literal for the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.CreateCaseIDResponseFromBPMTypeImpl <em>Create Case ID Response From BPM Type</em>}' class.
@@ -1143,12 +1530,28 @@ public interface ComPackage extends EPackage
     EReference DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID = eINSTANCE.getDocumentRoot_GetDataRequestFromCaseID();
 
     /**
-     * The meta object literal for the '<em><b>Get Data Response From Case ID</b></em>' containment reference feature.
+     * The meta object literal for the '<em><b>Get Data WF Case ID Response</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID = eINSTANCE.getDocumentRoot_GetDataResponseFromCaseID();
+    EReference DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE = eINSTANCE.getDocumentRoot_GetDataWFCaseIDResponse();
+
+    /**
+     * The meta object literal for the '<em><b>Search Data Request</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference DOCUMENT_ROOT__SEARCH_DATA_REQUEST = eINSTANCE.getDocumentRoot_SearchDataRequest();
+
+    /**
+     * The meta object literal for the '<em><b>Search Data Responses</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference DOCUMENT_ROOT__SEARCH_DATA_RESPONSES = eINSTANCE.getDocumentRoot_SearchDataResponses();
 
     /**
      * The meta object literal for the '<em><b>Create Case ID Request From BPM Type BDS Internal Serialization Element</b></em>' containment reference feature.
@@ -1191,12 +1594,36 @@ public interface ComPackage extends EPackage
     EReference DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = eINSTANCE.getDocumentRoot_GetDataRequestFromCaseIDTypeBDSInternalSerializationElement();
 
     /**
-     * The meta object literal for the '<em><b>Get Data Response From Case ID Type BDS Internal Serialization Element</b></em>' containment reference feature.
+     * The meta object literal for the '<em><b>Get Data WF Case ID Response Type BDS Internal Serialization Element</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = eINSTANCE.getDocumentRoot_GetDataResponseFromCaseIDTypeBDSInternalSerializationElement();
+    EReference DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = eINSTANCE.getDocumentRoot_GetDataWFCaseIDResponseTypeBDSInternalSerializationElement();
+
+    /**
+     * The meta object literal for the '<em><b>Search Data Request Type BDS Internal Serialization Element</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference DOCUMENT_ROOT__SEARCH_DATA_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = eINSTANCE.getDocumentRoot_SearchDataRequestTypeBDSInternalSerializationElement();
+
+    /**
+     * The meta object literal for the '<em><b>Search Data Responses Type BDS Internal Serialization Element</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference DOCUMENT_ROOT__SEARCH_DATA_RESPONSES_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = eINSTANCE.getDocumentRoot_SearchDataResponsesTypeBDSInternalSerializationElement();
+
+    /**
+     * The meta object literal for the '<em><b>Search Data Response Type BDS Internal Serialization Element</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference DOCUMENT_ROOT__SEARCH_DATA_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT = eINSTANCE.getDocumentRoot_SearchDataResponseTypeBDSInternalSerializationElement();
 
     /**
      * The meta object literal for the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.GetDataRequestFromCaseIDTypeImpl <em>Get Data Request From Case ID Type</em>}' class.
@@ -1217,14 +1644,14 @@ public interface ComPackage extends EPackage
     EAttribute GET_DATA_REQUEST_FROM_CASE_ID_TYPE__CASE_ID = eINSTANCE.getGetDataRequestFromCaseIDType_CaseID();
 
     /**
-     * The meta object literal for the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.GetDataResponseFromCaseIDTypeImpl <em>Get Data Response From Case ID Type</em>}' class.
+     * The meta object literal for the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.GetDataWFCaseIDResponseTypeImpl <em>Get Data WF Case ID Response Type</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.GetDataResponseFromCaseIDTypeImpl
-     * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.ComPackageImpl#getGetDataResponseFromCaseIDType()
+     * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.GetDataWFCaseIDResponseTypeImpl
+     * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.ComPackageImpl#getGetDataWFCaseIDResponseType()
      * @generated
      */
-    EClass GET_DATA_RESPONSE_FROM_CASE_ID_TYPE = eINSTANCE.getGetDataResponseFromCaseIDType();
+    EClass GET_DATA_WF_CASE_ID_RESPONSE_TYPE = eINSTANCE.getGetDataWFCaseIDResponseType();
 
     /**
      * The meta object literal for the '<em><b>Case ID</b></em>' attribute feature.
@@ -1232,7 +1659,7 @@ public interface ComPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute GET_DATA_RESPONSE_FROM_CASE_ID_TYPE__CASE_ID = eINSTANCE.getGetDataResponseFromCaseIDType_CaseID();
+    EAttribute GET_DATA_WF_CASE_ID_RESPONSE_TYPE__CASE_ID = eINSTANCE.getGetDataWFCaseIDResponseType_CaseID();
 
     /**
      * The meta object literal for the '<em><b>AHV Nummer</b></em>' attribute feature.
@@ -1240,15 +1667,7 @@ public interface ComPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute GET_DATA_RESPONSE_FROM_CASE_ID_TYPE__AHV_NUMMER = eINSTANCE.getGetDataResponseFromCaseIDType_AHVNummer();
-
-    /**
-     * The meta object literal for the '<em><b>Partner ID</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute GET_DATA_RESPONSE_FROM_CASE_ID_TYPE__PARTNER_ID = eINSTANCE.getGetDataResponseFromCaseIDType_PartnerID();
+    EAttribute GET_DATA_WF_CASE_ID_RESPONSE_TYPE__AHV_NUMMER = eINSTANCE.getGetDataWFCaseIDResponseType_AHVNummer();
 
     /**
      * The meta object literal for the '<em><b>Dokumenten Art</b></em>' attribute feature.
@@ -1256,15 +1675,133 @@ public interface ComPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute GET_DATA_RESPONSE_FROM_CASE_ID_TYPE__DOKUMENTEN_ART = eINSTANCE.getGetDataResponseFromCaseIDType_DokumentenArt();
+    EAttribute GET_DATA_WF_CASE_ID_RESPONSE_TYPE__DOKUMENTEN_ART = eINSTANCE.getGetDataWFCaseIDResponseType_DokumentenArt();
 
     /**
-     * The meta object literal for the '<em><b>Kanton</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Geschaeftsfall</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute GET_DATA_RESPONSE_FROM_CASE_ID_TYPE__KANTON = eINSTANCE.getGetDataResponseFromCaseIDType_Kanton();
+    EAttribute GET_DATA_WF_CASE_ID_RESPONSE_TYPE__GESCHAEFTSFALL = eINSTANCE.getGetDataWFCaseIDResponseType_Geschaeftsfall();
+
+    /**
+     * The meta object literal for the '<em><b>Anzahl der Dokumente</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute GET_DATA_WF_CASE_ID_RESPONSE_TYPE__ANZAHL_DER_DOKUMENTE = eINSTANCE.getGetDataWFCaseIDResponseType_Anzahl_der_Dokumente();
+
+    /**
+     * The meta object literal for the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.SearchDataRequestTypeImpl <em>Search Data Request Type</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.SearchDataRequestTypeImpl
+     * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.ComPackageImpl#getSearchDataRequestType()
+     * @generated
+     */
+    EClass SEARCH_DATA_REQUEST_TYPE = eINSTANCE.getSearchDataRequestType();
+
+    /**
+     * The meta object literal for the '<em><b>AHV Nummer</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute SEARCH_DATA_REQUEST_TYPE__AHV_NUMMER = eINSTANCE.getSearchDataRequestType_AHVNummer();
+
+    /**
+     * The meta object literal for the '<em><b>Dokumenten Art</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute SEARCH_DATA_REQUEST_TYPE__DOKUMENTEN_ART = eINSTANCE.getSearchDataRequestType_DokumentenArt();
+
+    /**
+     * The meta object literal for the '<em><b>Geschaeftsfall</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute SEARCH_DATA_REQUEST_TYPE__GESCHAEFTSFALL = eINSTANCE.getSearchDataRequestType_Geschaeftsfall();
+
+    /**
+     * The meta object literal for the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.SearchDataResponsesTypeImpl <em>Search Data Responses Type</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.SearchDataResponsesTypeImpl
+     * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.ComPackageImpl#getSearchDataResponsesType()
+     * @generated
+     */
+    EClass SEARCH_DATA_RESPONSES_TYPE = eINSTANCE.getSearchDataResponsesType();
+
+    /**
+     * The meta object literal for the '<em><b>Group</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute SEARCH_DATA_RESPONSES_TYPE__GROUP = eINSTANCE.getSearchDataResponsesType_Group();
+
+    /**
+     * The meta object literal for the '<em><b>Search Data Response</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference SEARCH_DATA_RESPONSES_TYPE__SEARCH_DATA_RESPONSE = eINSTANCE.getSearchDataResponsesType_SearchDataResponse();
+
+    /**
+     * The meta object literal for the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.SearchDataResponseTypeImpl <em>Search Data Response Type</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.SearchDataResponseTypeImpl
+     * @see saveDataCaseXSD.bw.test.poc.tibco.com.impl.ComPackageImpl#getSearchDataResponseType()
+     * @generated
+     */
+    EClass SEARCH_DATA_RESPONSE_TYPE = eINSTANCE.getSearchDataResponseType();
+
+    /**
+     * The meta object literal for the '<em><b>Case ID</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute SEARCH_DATA_RESPONSE_TYPE__CASE_ID = eINSTANCE.getSearchDataResponseType_CaseID();
+
+    /**
+     * The meta object literal for the '<em><b>AHV Nummer</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute SEARCH_DATA_RESPONSE_TYPE__AHV_NUMMER = eINSTANCE.getSearchDataResponseType_AHVNummer();
+
+    /**
+     * The meta object literal for the '<em><b>Dokumenten Art</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute SEARCH_DATA_RESPONSE_TYPE__DOKUMENTEN_ART = eINSTANCE.getSearchDataResponseType_DokumentenArt();
+
+    /**
+     * The meta object literal for the '<em><b>Geschaeftsfall</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute SEARCH_DATA_RESPONSE_TYPE__GESCHAEFTSFALL = eINSTANCE.getSearchDataResponseType_Geschaeftsfall();
+
+    /**
+     * The meta object literal for the '<em><b>Anzahl der Dokumente</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute SEARCH_DATA_RESPONSE_TYPE__ANZAHL_DER_DOKUMENTE = eINSTANCE.getSearchDataResponseType_Anzahl_der_Dokumente();
 
   }
 

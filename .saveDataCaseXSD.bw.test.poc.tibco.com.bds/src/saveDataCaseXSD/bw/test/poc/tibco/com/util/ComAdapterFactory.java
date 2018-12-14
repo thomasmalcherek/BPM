@@ -109,9 +109,24 @@ public class ComAdapterFactory extends AdapterFactoryImpl
         return createGetDataRequestFromCaseIDTypeAdapter();
       }
       @Override
-      public Adapter caseGetDataResponseFromCaseIDType(GetDataResponseFromCaseIDType object)
+      public Adapter caseGetDataWFCaseIDResponseType(GetDataWFCaseIDResponseType object)
       {
-        return createGetDataResponseFromCaseIDTypeAdapter();
+        return createGetDataWFCaseIDResponseTypeAdapter();
+      }
+      @Override
+      public Adapter caseSearchDataRequestType(SearchDataRequestType object)
+      {
+        return createSearchDataRequestTypeAdapter();
+      }
+      @Override
+      public Adapter caseSearchDataResponsesType(SearchDataResponsesType object)
+      {
+        return createSearchDataResponsesTypeAdapter();
+      }
+      @Override
+      public Adapter caseSearchDataResponseType(SearchDataResponseType object)
+      {
+        return createSearchDataResponseTypeAdapter();
       }
       @Override
       public Adapter defaultCase(EObject object)
@@ -226,16 +241,61 @@ public class ComAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType <em>Get Data Response From Case ID Type</em>}'.
+   * Creates a new adapter for an object of class '{@link saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType <em>Get Data WF Case ID Response Type</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType
    * @generated
    */
-  public Adapter createGetDataResponseFromCaseIDTypeAdapter()
+  public Adapter createGetDataWFCaseIDResponseTypeAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType <em>Search Data Request Type</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType
+   * @generated
+   */
+  public Adapter createSearchDataRequestTypeAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponsesType <em>Search Data Responses Type</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponsesType
+   * @generated
+   */
+  public Adapter createSearchDataResponsesTypeAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType <em>Search Data Response Type</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType
+   * @generated
+   */
+  public Adapter createSearchDataResponseTypeAdapter()
   {
     return null;
   }

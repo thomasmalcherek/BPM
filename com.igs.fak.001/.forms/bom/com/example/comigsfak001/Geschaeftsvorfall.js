@@ -43,7 +43,7 @@ theClass.TYPE_ARRAY[theClass.ATTR_WFCASEID] = {type:"BomPrimitiveTypes.Text", ba
 theClass.TYPE_ARRAY[theClass.ATTR_AHVNUMMER] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_PARTNERID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_DOKUMENTENART] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
-theClass.TYPE_ARRAY[theClass.ATTR_GESCHAEFTSFALL] = {type:"com.example.comigsfak001.Geschaeftsfall", baseType:"com.example.comigsfak001.Geschaeftsfall", primitive:true, multivalued:false, required:false, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_GESCHAEFTSFALL] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_FRIST] = {type:"BomPrimitiveTypes.DateTime", baseType:"BomPrimitiveTypes.DateTime", primitive:true, multivalued:false, required:false, defaultValue:""};
 
 theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_WFCASEID, theClass.ATTR_AHVNUMMER, theClass.ATTR_PARTNERID, theClass.ATTR_DOKUMENTENART, theClass.ATTR_GESCHAEFTSFALL, theClass.ATTR_FRIST];

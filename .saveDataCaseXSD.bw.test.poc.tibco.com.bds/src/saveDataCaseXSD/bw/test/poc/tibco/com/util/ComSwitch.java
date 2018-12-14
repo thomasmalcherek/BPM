@@ -138,10 +138,31 @@ public class ComSwitch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case ComPackage.GET_DATA_RESPONSE_FROM_CASE_ID_TYPE:
+      case ComPackage.GET_DATA_WF_CASE_ID_RESPONSE_TYPE:
       {
-        GetDataResponseFromCaseIDType getDataResponseFromCaseIDType = (GetDataResponseFromCaseIDType)theEObject;
-        T result = caseGetDataResponseFromCaseIDType(getDataResponseFromCaseIDType);
+        GetDataWFCaseIDResponseType getDataWFCaseIDResponseType = (GetDataWFCaseIDResponseType)theEObject;
+        T result = caseGetDataWFCaseIDResponseType(getDataWFCaseIDResponseType);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ComPackage.SEARCH_DATA_REQUEST_TYPE:
+      {
+        SearchDataRequestType searchDataRequestType = (SearchDataRequestType)theEObject;
+        T result = caseSearchDataRequestType(searchDataRequestType);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ComPackage.SEARCH_DATA_RESPONSES_TYPE:
+      {
+        SearchDataResponsesType searchDataResponsesType = (SearchDataResponsesType)theEObject;
+        T result = caseSearchDataResponsesType(searchDataResponsesType);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ComPackage.SEARCH_DATA_RESPONSE_TYPE:
+      {
+        SearchDataResponseType searchDataResponseType = (SearchDataResponseType)theEObject;
+        T result = caseSearchDataResponseType(searchDataResponseType);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -246,17 +267,65 @@ public class ComSwitch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Get Data Response From Case ID Type</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Get Data WF Case ID Response Type</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Get Data Response From Case ID Type</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Get Data WF Case ID Response Type</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseGetDataResponseFromCaseIDType(GetDataResponseFromCaseIDType object)
+  public T caseGetDataWFCaseIDResponseType(GetDataWFCaseIDResponseType object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Search Data Request Type</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Search Data Request Type</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseSearchDataRequestType(SearchDataRequestType object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Search Data Responses Type</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Search Data Responses Type</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseSearchDataResponsesType(SearchDataResponsesType object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Search Data Response Type</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Search Data Response Type</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseSearchDataResponseType(SearchDataResponseType object)
   {
     return null;
   }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<de:model xmlns:de="http://tibco.com/bpm/directory-model/2.0" name="OrganizationModel" version="1.0.0.qualifier">
+  <de:meta-model>
+    <de:location-type id="_tMa1w-jgEeietP_QQ0irBw" label="Standard Location Type" name="StandardLocationType">
+      <de:attribute id="_tMa1xOjgEeietP_QQ0irBw" label="Country" name="Country" data-type="String"/>
+      <de:attribute id="_tMa1xejgEeietP_QQ0irBw" label="State" name="State" data-type="String"/>
+      <de:attribute id="_tMa1xujgEeietP_QQ0irBw" label="City" name="City" data-type="String"/>
+      <de:attribute id="_tMa1x-jgEeietP_QQ0irBw" label="Street" name="Street" data-type="String"/>
+      <de:attribute id="_tMa1yOjgEeietP_QQ0irBw" label="Postcode" name="Postcode" data-type="String"/>
+    </de:location-type>
+    <de:organization-type id="_tMa1yejgEeietP_QQ0irBw" label="Public Company" name="PublicCompany">
+      <de:org-unit-feature id="_tMa1yujgEeietP_QQ0irBw" label="Head Department" name="HeadDepartment" definition="_tMa1y-jgEeietP_QQ0irBw" lower-bound="0" upper-bound="1"/>
+    </de:organization-type>
+    <de:org-unit-type id="_tMa1y-jgEeietP_QQ0irBw" label="Department Type" name="DepartmentType">
+      <de:org-unit-feature id="_tMa1zOjgEeietP_QQ0irBw" label="Department" name="Department" definition="_tMa1y-jgEeietP_QQ0irBw" lower-bound="0" upper-bound="-1"/>
+      <de:org-unit-feature id="_tMa1zejgEeietP_QQ0irBw" label="Business Unit" name="BusinessUnit" definition="_tMa1y-jgEeietP_QQ0irBw" lower-bound="0" upper-bound="-1"/>
+      <de:org-unit-feature id="_tMa1zujgEeietP_QQ0irBw" label="Team" name="Team" definition="_tMa1y-jgEeietP_QQ0irBw" lower-bound="0" upper-bound="-1"/>
+      <de:position-feature id="_tMa1z-jgEeietP_QQ0irBw" label="Manager" name="Manager" definition="_tMa10ejgEeietP_QQ0irBw" lower-bound="0" upper-bound="1"/>
+      <de:position-feature id="_tMa10OjgEeietP_QQ0irBw" label="Member" name="Member" definition="_tMa10ejgEeietP_QQ0irBw" lower-bound="0" upper-bound="-1"/>
+    </de:org-unit-type>
+    <de:position-type id="_tMa10ejgEeietP_QQ0irBw" label="Standard Position Type" name="StandardPositionType">
+      <de:attribute id="_tMa10ujgEeietP_QQ0irBw" label="Contract Type" name="ContractType" data-type="Enum">
+        <de:enum>temporary</de:enum>
+        <de:enum>permanent</de:enum>
+      </de:attribute>
+    </de:position-type>
+  </de:meta-model>
+  <de:organization id="_tMa1wejgEeietP_QQ0irBw" label="StickUserOrg" name="StickUserOrg" alloc-method="NEXT">
+    <de:org-unit id="_ILJtEOjhEeietP_QQ0irBw" label="SVA_Kader" name="SVA_Kader" alloc-method="NEXT">
+      <de:position id="_KXAgoOjhEeietP_QQ0irBw" label="Kader" name="Kader" alloc-method="ANY" ideal-number="1"/>
+      <de:org-unit id="_uHTwsOjgEeietP_QQ0irBw" label="SVA_Bearbeiter" name="SVA_Bearbeiter" alloc-method="NEXT">
+        <de:position id="_-kLLwOjgEeietP_QQ0irBw" label="Bearbeiter" name="Bearbeiter" alloc-method="ANY" ideal-number="1"/>
+      </de:org-unit>
+      <de:org-unit id="_B5qg4OjhEeietP_QQ0irBw" label="SVA_Prüfer" name="SVA_Prfer" alloc-method="NEXT">
+        <de:position id="_Di69sOjhEeietP_QQ0irBw" label="Pruefer" name="Pruefer" alloc-method="ANY" ideal-number="1"/>
+      </de:org-unit>
+    </de:org-unit>
+  </de:organization>
+  <de:resource-attribute id="_bZOOsO8nEeiWP7q1zXlCTg" label="Namen" name="Namen" data-type="String"/>
+</de:model>

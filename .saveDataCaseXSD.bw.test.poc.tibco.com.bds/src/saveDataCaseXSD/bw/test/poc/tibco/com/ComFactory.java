@@ -77,13 +77,40 @@ public interface ComFactory extends EFactory
   GetDataRequestFromCaseIDType createGetDataRequestFromCaseIDType();
 
   /**
-   * Returns a new object of class '<em>Get Data Response From Case ID Type</em>'.
+   * Returns a new object of class '<em>Get Data WF Case ID Response Type</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Get Data Response From Case ID Type</em>'.
+   * @return a new object of class '<em>Get Data WF Case ID Response Type</em>'.
    * @generated
    */
-  GetDataResponseFromCaseIDType createGetDataResponseFromCaseIDType();
+  GetDataWFCaseIDResponseType createGetDataWFCaseIDResponseType();
+
+  /**
+   * Returns a new object of class '<em>Search Data Request Type</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Search Data Request Type</em>'.
+   * @generated
+   */
+  SearchDataRequestType createSearchDataRequestType();
+
+  /**
+   * Returns a new object of class '<em>Search Data Responses Type</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Search Data Responses Type</em>'.
+   * @generated
+   */
+  SearchDataResponsesType createSearchDataResponsesType();
+
+  /**
+   * Returns a new object of class '<em>Search Data Response Type</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Search Data Response Type</em>'.
+   * @generated
+   */
+  SearchDataResponseType createSearchDataResponseType();
 
   /**
    * Returns the package supported by this factory.

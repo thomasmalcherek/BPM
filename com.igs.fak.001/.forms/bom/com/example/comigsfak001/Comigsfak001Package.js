@@ -13,13 +13,6 @@ var theClass = function() {
 
 com.tibco.data.Loader.currentLoader.registerClass(theClass, "com.example.comigsfak001.Comigsfak001Package");
 
-// Define the enumerations declared by this package.
-theClass.Geschaeftsfall = ["FAK001", "FAK002"];
-theClass.Geschaeftsfall.FAK001 = "FAK001";
-theClass.Geschaeftsfall.FAK002 = "FAK002";
-theClass.getGeschaeftsfall = function() {
-    return this.Geschaeftsfall;
-};
 
 // Load the classes defined by this package.
 com.tibco.data.Loader.currentLoader.load("com.example.comigsfak001.Geschaeftsvorfall");

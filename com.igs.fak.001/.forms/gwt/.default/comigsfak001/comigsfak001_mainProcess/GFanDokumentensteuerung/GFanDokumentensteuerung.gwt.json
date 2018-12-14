@@ -1,10 +1,10 @@
 {"bindings":[],"rules":[],"name":"GFanDokumentensteuerung","type":"form",
-  "reverseBindings":[],"formModelId":"_Ie-QIP5aEeiFLcX4iMwVPw",
+  "reverseBindings":[],"formModelId":"_i_hpQP-wEeitVo1lH3Co-Q",
   "formPathSegmentCount":5,"formatVersion":"2.7.0.002","bomJSNames":[
     "com.example.comigsfak001.Comigsfak001Package",
     "com.example.comigsfak001.Comigsfak001Factory",
     "com.example.comigsfak001.Geschaeftsvorfall"],"styleName":null,
-  "genCssClass":"f712c85a9-c585-4315-98a0-0e328f51d76f","labelPosition":
+  "genCssClass":"f22553ab9-2e32-4d9a-a32a-b7bfb651d64a","labelPosition":
   "top","externalResources":[{"name":"","uri":
       "GFanDokumentensteuerung.gwt.js","localized":false},{"name":null,"uri":
       "GFanDokumentensteuerung.gwt.css","localized":false},{"name":
@@ -103,14 +103,17 @@
       "type":"control","reverseBindings":[{"name":
           "pane.IN_ParGeschaeftsvorfall","type":"pane","sourceFeature":[
             "value","geschaeftsfall"],"destinationFeature":["value"]}],
-      "componentType":"com.tibco.forms.controls.optionlist","shortLabelRef":
+      "componentType":"com.tibco.forms.controls.textarea","shortLabelRef":
       "","labelRef":"","hintRef":"","enabled":true,"visible":true,
-      "styleName":"","validations":[],"inheritsDeferInitialization":false,
-      "readOnly":false,"required":false,"value":[],"tabIndex":0,
-      "alwaysRenderControl":false,"propSetChoiceListValues":["FAK001",
-        "FAK002"],"propSetChoiceListLabels":["FAK-001","FAK-002"],
-      "propSetChoiceListLabelsRef":"","propSetOptionListMultiSelect":false},{
-      "bindings":[{"name":"pane.IN_ParGeschaeftsvorfall","type":"pane",
+      "styleName":"","validations":[{"name":
+          "IN_ParGeschaeftsvorfall_geschaeftsfall__length","message":"",
+          "messageRef":"resource.common.validation_text_length","when":
+          "oncontrolchange","list":false}],"inheritsDeferInitialization":
+      false,"readOnly":false,"required":false,"value":[],"tabIndex":0,
+      "alwaysRenderControl":false,"propSetList":false,
+      "propSetMaxVisibleRows":0,"propSetTextBoxBaseMaxLen":500,
+      "propSetTextAreaRows":10,"propSetTextAreaCols":25},{"bindings":[{
+          "name":"pane.IN_ParGeschaeftsvorfall","type":"pane",
           "sourceFeature":["value"],"destinationFeature":["value","frist"]}],
       "rules":[],"name":"control.IN_ParGeschaeftsvorfall_frist","type":
       "control","reverseBindings":[{"name":"pane.IN_ParGeschaeftsvorfall",

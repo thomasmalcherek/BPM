@@ -25,7 +25,10 @@ import saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseFromBPMType;
 import saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseType;
 import saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot;
 import saveDataCaseXSD.bw.test.poc.tibco.com.GetDataRequestFromCaseIDType;
-import saveDataCaseXSD.bw.test.poc.tibco.com.GetDataResponseFromCaseIDType;
+import saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType;
+import saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType;
+import saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType;
+import saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponsesType;
 
 import saveDataCaseXSD.bw.test.poc.tibco.com.bdsutil.BDSFeatureMap;
 import saveDataCaseXSD.bw.test.poc.tibco.com.bdsutil.BDSFeatureMapImpl;
@@ -45,13 +48,18 @@ import saveDataCaseXSD.bw.test.poc.tibco.com.bdsutil.BDSFeatureMapImpl;
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getCreateCaseIDResponse <em>Create Case ID Response</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getCreateCaseIDResponseFromBPM <em>Create Case ID Response From BPM</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getGetDataRequestFromCaseID <em>Get Data Request From Case ID</em>}</li>
- *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getGetDataResponseFromCaseID <em>Get Data Response From Case ID</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getGetDataWFCaseIDResponse <em>Get Data WF Case ID Response</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getSearchDataRequest <em>Search Data Request</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getSearchDataResponses <em>Search Data Responses</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getCreateCaseIDRequestFromBPMTypeBDSInternalSerializationElement <em>Create Case ID Request From BPM Type BDS Internal Serialization Element</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getCreateCaseIDRequestTypeBDSInternalSerializationElement <em>Create Case ID Request Type BDS Internal Serialization Element</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getCreateCaseIDResponseFromBPMTypeBDSInternalSerializationElement <em>Create Case ID Response From BPM Type BDS Internal Serialization Element</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getCreateCaseIDResponseTypeBDSInternalSerializationElement <em>Create Case ID Response Type BDS Internal Serialization Element</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getGetDataRequestFromCaseIDTypeBDSInternalSerializationElement <em>Get Data Request From Case ID Type BDS Internal Serialization Element</em>}</li>
- *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getGetDataResponseFromCaseIDTypeBDSInternalSerializationElement <em>Get Data Response From Case ID Type BDS Internal Serialization Element</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getGetDataWFCaseIDResponseTypeBDSInternalSerializationElement <em>Get Data WF Case ID Response Type BDS Internal Serialization Element</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getSearchDataRequestTypeBDSInternalSerializationElement <em>Search Data Request Type BDS Internal Serialization Element</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getSearchDataResponsesTypeBDSInternalSerializationElement <em>Search Data Responses Type BDS Internal Serialization Element</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.DocumentRootImpl#getSearchDataResponseTypeBDSInternalSerializationElement <em>Search Data Response Type BDS Internal Serialization Element</em>}</li>
  * </ul>
  * </p>
  *
@@ -308,9 +316,9 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
    * <!-- end-user-doc -->
    * @generated
    */
-  public GetDataResponseFromCaseIDType getGetDataResponseFromCaseID()
+  public GetDataWFCaseIDResponseType getGetDataWFCaseIDResponse()
   {
-    return (GetDataResponseFromCaseIDType)((FeatureMap.Internal.Wrapper)getMixed()).featureMap().get(ComPackage.Literals.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID, true);
+    return (GetDataWFCaseIDResponseType)((FeatureMap.Internal.Wrapper)getMixed()).featureMap().get(ComPackage.Literals.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE, true);
   }
 
   /**
@@ -318,9 +326,9 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
    * <!-- end-user-doc -->
    * @generated
    */
-  public NotificationChain basicSetGetDataResponseFromCaseID(GetDataResponseFromCaseIDType newGetDataResponseFromCaseID, NotificationChain msgs)
+  public NotificationChain basicSetGetDataWFCaseIDResponse(GetDataWFCaseIDResponseType newGetDataWFCaseIDResponse, NotificationChain msgs)
   {
-    return ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).basicAdd(ComPackage.Literals.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID, newGetDataResponseFromCaseID, msgs);
+    return ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).basicAdd(ComPackage.Literals.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE, newGetDataWFCaseIDResponse, msgs);
   }
 
   /**
@@ -328,9 +336,69 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setGetDataResponseFromCaseID(GetDataResponseFromCaseIDType newGetDataResponseFromCaseID)
+  public void setGetDataWFCaseIDResponse(GetDataWFCaseIDResponseType newGetDataWFCaseIDResponse)
   {
-    ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).set(ComPackage.Literals.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID, newGetDataResponseFromCaseID);
+    ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).set(ComPackage.Literals.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE, newGetDataWFCaseIDResponse);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SearchDataRequestType getSearchDataRequest()
+  {
+    return (SearchDataRequestType)((FeatureMap.Internal.Wrapper)getMixed()).featureMap().get(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_REQUEST, true);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NotificationChain basicSetSearchDataRequest(SearchDataRequestType newSearchDataRequest, NotificationChain msgs)
+  {
+    return ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).basicAdd(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_REQUEST, newSearchDataRequest, msgs);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setSearchDataRequest(SearchDataRequestType newSearchDataRequest)
+  {
+    ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).set(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_REQUEST, newSearchDataRequest);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SearchDataResponsesType getSearchDataResponses()
+  {
+    return (SearchDataResponsesType)((FeatureMap.Internal.Wrapper)getMixed()).featureMap().get(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES, true);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NotificationChain basicSetSearchDataResponses(SearchDataResponsesType newSearchDataResponses, NotificationChain msgs)
+  {
+    return ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).basicAdd(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES, newSearchDataResponses, msgs);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setSearchDataResponses(SearchDataResponsesType newSearchDataResponses)
+  {
+    ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).set(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES, newSearchDataResponses);
   }
 
   /**
@@ -488,9 +556,9 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
    * <!-- end-user-doc -->
    * @generated
    */
-  public GetDataResponseFromCaseIDType getGetDataResponseFromCaseIDTypeBDSInternalSerializationElement()
+  public GetDataWFCaseIDResponseType getGetDataWFCaseIDResponseTypeBDSInternalSerializationElement()
   {
-    return (GetDataResponseFromCaseIDType)((FeatureMap.Internal.Wrapper)getMixed()).featureMap().get(ComPackage.Literals.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, true);
+    return (GetDataWFCaseIDResponseType)((FeatureMap.Internal.Wrapper)getMixed()).featureMap().get(ComPackage.Literals.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, true);
   }
 
   /**
@@ -498,9 +566,9 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
    * <!-- end-user-doc -->
    * @generated
    */
-  public NotificationChain basicSetGetDataResponseFromCaseIDTypeBDSInternalSerializationElement(GetDataResponseFromCaseIDType newGetDataResponseFromCaseIDTypeBDSInternalSerializationElement, NotificationChain msgs)
+  public NotificationChain basicSetGetDataWFCaseIDResponseTypeBDSInternalSerializationElement(GetDataWFCaseIDResponseType newGetDataWFCaseIDResponseTypeBDSInternalSerializationElement, NotificationChain msgs)
   {
-    return ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).basicAdd(ComPackage.Literals.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, newGetDataResponseFromCaseIDTypeBDSInternalSerializationElement, msgs);
+    return ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).basicAdd(ComPackage.Literals.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, newGetDataWFCaseIDResponseTypeBDSInternalSerializationElement, msgs);
   }
 
   /**
@@ -508,9 +576,99 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setGetDataResponseFromCaseIDTypeBDSInternalSerializationElement(GetDataResponseFromCaseIDType newGetDataResponseFromCaseIDTypeBDSInternalSerializationElement)
+  public void setGetDataWFCaseIDResponseTypeBDSInternalSerializationElement(GetDataWFCaseIDResponseType newGetDataWFCaseIDResponseTypeBDSInternalSerializationElement)
   {
-    ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).set(ComPackage.Literals.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, newGetDataResponseFromCaseIDTypeBDSInternalSerializationElement);
+    ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).set(ComPackage.Literals.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, newGetDataWFCaseIDResponseTypeBDSInternalSerializationElement);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SearchDataRequestType getSearchDataRequestTypeBDSInternalSerializationElement()
+  {
+    return (SearchDataRequestType)((FeatureMap.Internal.Wrapper)getMixed()).featureMap().get(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, true);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NotificationChain basicSetSearchDataRequestTypeBDSInternalSerializationElement(SearchDataRequestType newSearchDataRequestTypeBDSInternalSerializationElement, NotificationChain msgs)
+  {
+    return ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).basicAdd(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, newSearchDataRequestTypeBDSInternalSerializationElement, msgs);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setSearchDataRequestTypeBDSInternalSerializationElement(SearchDataRequestType newSearchDataRequestTypeBDSInternalSerializationElement)
+  {
+    ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).set(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, newSearchDataRequestTypeBDSInternalSerializationElement);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SearchDataResponsesType getSearchDataResponsesTypeBDSInternalSerializationElement()
+  {
+    return (SearchDataResponsesType)((FeatureMap.Internal.Wrapper)getMixed()).featureMap().get(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, true);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NotificationChain basicSetSearchDataResponsesTypeBDSInternalSerializationElement(SearchDataResponsesType newSearchDataResponsesTypeBDSInternalSerializationElement, NotificationChain msgs)
+  {
+    return ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).basicAdd(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, newSearchDataResponsesTypeBDSInternalSerializationElement, msgs);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setSearchDataResponsesTypeBDSInternalSerializationElement(SearchDataResponsesType newSearchDataResponsesTypeBDSInternalSerializationElement)
+  {
+    ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).set(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, newSearchDataResponsesTypeBDSInternalSerializationElement);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SearchDataResponseType getSearchDataResponseTypeBDSInternalSerializationElement()
+  {
+    return (SearchDataResponseType)((FeatureMap.Internal.Wrapper)getMixed()).featureMap().get(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, true);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NotificationChain basicSetSearchDataResponseTypeBDSInternalSerializationElement(SearchDataResponseType newSearchDataResponseTypeBDSInternalSerializationElement, NotificationChain msgs)
+  {
+    return ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).basicAdd(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, newSearchDataResponseTypeBDSInternalSerializationElement, msgs);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setSearchDataResponseTypeBDSInternalSerializationElement(SearchDataResponseType newSearchDataResponseTypeBDSInternalSerializationElement)
+  {
+    ((FeatureMap.Internal)((FeatureMap.Internal.Wrapper)getMixed()).featureMap()).set(ComPackage.Literals.DOCUMENT_ROOT__SEARCH_DATA_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT, newSearchDataResponseTypeBDSInternalSerializationElement);
   }
 
   /**
@@ -539,8 +697,12 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
         return basicSetCreateCaseIDResponseFromBPM(null, msgs);
       case ComPackage.DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID:
         return basicSetGetDataRequestFromCaseID(null, msgs);
-      case ComPackage.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID:
-        return basicSetGetDataResponseFromCaseID(null, msgs);
+      case ComPackage.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE:
+        return basicSetGetDataWFCaseIDResponse(null, msgs);
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_REQUEST:
+        return basicSetSearchDataRequest(null, msgs);
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES:
+        return basicSetSearchDataResponses(null, msgs);
       case ComPackage.DOCUMENT_ROOT__CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
         return basicSetCreateCaseIDRequestFromBPMTypeBDSInternalSerializationElement(null, msgs);
       case ComPackage.DOCUMENT_ROOT__CREATE_CASE_ID_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
@@ -551,8 +713,14 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
         return basicSetCreateCaseIDResponseTypeBDSInternalSerializationElement(null, msgs);
       case ComPackage.DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
         return basicSetGetDataRequestFromCaseIDTypeBDSInternalSerializationElement(null, msgs);
-      case ComPackage.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
-        return basicSetGetDataResponseFromCaseIDTypeBDSInternalSerializationElement(null, msgs);
+      case ComPackage.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        return basicSetGetDataWFCaseIDResponseTypeBDSInternalSerializationElement(null, msgs);
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        return basicSetSearchDataRequestTypeBDSInternalSerializationElement(null, msgs);
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        return basicSetSearchDataResponsesTypeBDSInternalSerializationElement(null, msgs);
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        return basicSetSearchDataResponseTypeBDSInternalSerializationElement(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -586,8 +754,12 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
         return getCreateCaseIDResponseFromBPM();
       case ComPackage.DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID:
         return getGetDataRequestFromCaseID();
-      case ComPackage.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID:
-        return getGetDataResponseFromCaseID();
+      case ComPackage.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE:
+        return getGetDataWFCaseIDResponse();
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_REQUEST:
+        return getSearchDataRequest();
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES:
+        return getSearchDataResponses();
       case ComPackage.DOCUMENT_ROOT__CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
         return getCreateCaseIDRequestFromBPMTypeBDSInternalSerializationElement();
       case ComPackage.DOCUMENT_ROOT__CREATE_CASE_ID_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
@@ -598,8 +770,14 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
         return getCreateCaseIDResponseTypeBDSInternalSerializationElement();
       case ComPackage.DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
         return getGetDataRequestFromCaseIDTypeBDSInternalSerializationElement();
-      case ComPackage.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
-        return getGetDataResponseFromCaseIDTypeBDSInternalSerializationElement();
+      case ComPackage.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        return getGetDataWFCaseIDResponseTypeBDSInternalSerializationElement();
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        return getSearchDataRequestTypeBDSInternalSerializationElement();
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        return getSearchDataResponsesTypeBDSInternalSerializationElement();
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        return getSearchDataResponseTypeBDSInternalSerializationElement();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -638,8 +816,14 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
       case ComPackage.DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID:
         setGetDataRequestFromCaseID((GetDataRequestFromCaseIDType)newValue);
         return;
-      case ComPackage.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID:
-        setGetDataResponseFromCaseID((GetDataResponseFromCaseIDType)newValue);
+      case ComPackage.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE:
+        setGetDataWFCaseIDResponse((GetDataWFCaseIDResponseType)newValue);
+        return;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_REQUEST:
+        setSearchDataRequest((SearchDataRequestType)newValue);
+        return;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES:
+        setSearchDataResponses((SearchDataResponsesType)newValue);
         return;
       case ComPackage.DOCUMENT_ROOT__CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
         setCreateCaseIDRequestFromBPMTypeBDSInternalSerializationElement((CreateCaseIDRequestFromBPMType)newValue);
@@ -656,8 +840,17 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
       case ComPackage.DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
         setGetDataRequestFromCaseIDTypeBDSInternalSerializationElement((GetDataRequestFromCaseIDType)newValue);
         return;
-      case ComPackage.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
-        setGetDataResponseFromCaseIDTypeBDSInternalSerializationElement((GetDataResponseFromCaseIDType)newValue);
+      case ComPackage.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        setGetDataWFCaseIDResponseTypeBDSInternalSerializationElement((GetDataWFCaseIDResponseType)newValue);
+        return;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        setSearchDataRequestTypeBDSInternalSerializationElement((SearchDataRequestType)newValue);
+        return;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        setSearchDataResponsesTypeBDSInternalSerializationElement((SearchDataResponsesType)newValue);
+        return;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        setSearchDataResponseTypeBDSInternalSerializationElement((SearchDataResponseType)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -697,8 +890,14 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
       case ComPackage.DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID:
         setGetDataRequestFromCaseID((GetDataRequestFromCaseIDType)null);
         return;
-      case ComPackage.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID:
-        setGetDataResponseFromCaseID((GetDataResponseFromCaseIDType)null);
+      case ComPackage.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE:
+        setGetDataWFCaseIDResponse((GetDataWFCaseIDResponseType)null);
+        return;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_REQUEST:
+        setSearchDataRequest((SearchDataRequestType)null);
+        return;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES:
+        setSearchDataResponses((SearchDataResponsesType)null);
         return;
       case ComPackage.DOCUMENT_ROOT__CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
         setCreateCaseIDRequestFromBPMTypeBDSInternalSerializationElement((CreateCaseIDRequestFromBPMType)null);
@@ -715,8 +914,17 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
       case ComPackage.DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
         setGetDataRequestFromCaseIDTypeBDSInternalSerializationElement((GetDataRequestFromCaseIDType)null);
         return;
-      case ComPackage.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
-        setGetDataResponseFromCaseIDTypeBDSInternalSerializationElement((GetDataResponseFromCaseIDType)null);
+      case ComPackage.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        setGetDataWFCaseIDResponseTypeBDSInternalSerializationElement((GetDataWFCaseIDResponseType)null);
+        return;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        setSearchDataRequestTypeBDSInternalSerializationElement((SearchDataRequestType)null);
+        return;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        setSearchDataResponsesTypeBDSInternalSerializationElement((SearchDataResponsesType)null);
+        return;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        setSearchDataResponseTypeBDSInternalSerializationElement((SearchDataResponseType)null);
         return;
     }
     super.eUnset(featureID);
@@ -748,8 +956,12 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
         return getCreateCaseIDResponseFromBPM() != null;
       case ComPackage.DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID:
         return getGetDataRequestFromCaseID() != null;
-      case ComPackage.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID:
-        return getGetDataResponseFromCaseID() != null;
+      case ComPackage.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE:
+        return getGetDataWFCaseIDResponse() != null;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_REQUEST:
+        return getSearchDataRequest() != null;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES:
+        return getSearchDataResponses() != null;
       case ComPackage.DOCUMENT_ROOT__CREATE_CASE_ID_REQUEST_FROM_BPM_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
         return getCreateCaseIDRequestFromBPMTypeBDSInternalSerializationElement() != null;
       case ComPackage.DOCUMENT_ROOT__CREATE_CASE_ID_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
@@ -760,8 +972,14 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot
         return getCreateCaseIDResponseTypeBDSInternalSerializationElement() != null;
       case ComPackage.DOCUMENT_ROOT__GET_DATA_REQUEST_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
         return getGetDataRequestFromCaseIDTypeBDSInternalSerializationElement() != null;
-      case ComPackage.DOCUMENT_ROOT__GET_DATA_RESPONSE_FROM_CASE_ID_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
-        return getGetDataResponseFromCaseIDTypeBDSInternalSerializationElement() != null;
+      case ComPackage.DOCUMENT_ROOT__GET_DATA_WF_CASE_ID_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        return getGetDataWFCaseIDResponseTypeBDSInternalSerializationElement() != null;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_REQUEST_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        return getSearchDataRequestTypeBDSInternalSerializationElement() != null;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSES_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        return getSearchDataResponsesTypeBDSInternalSerializationElement() != null;
+      case ComPackage.DOCUMENT_ROOT__SEARCH_DATA_RESPONSE_TYPE_BDS_INTERNAL_SERIALIZATION_ELEMENT:
+        return getSearchDataResponseTypeBDSInternalSerializationElement() != null;
     }
     return super.eIsSet(featureID);
   }

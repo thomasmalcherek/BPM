@@ -14,18 +14,19 @@
         </task>
         <task name="Unterlagenprfen">
             <startingVariables>
-                <variable>wp_fak_dokumente_erstellen</variable>
-                <variable>sp_weiterleiten_doku_steuerung</variable>
-                <variable>IN_ParGeschaeftsvorfall</variable>
-                <variable>wp_fak_erfassung_bezueger_pruefen</variable>
-                <variable>sp_brief_schreiben</variable>
-                <variable>wp_pv_daten_administrieren</variable>
                 <variable>wp_ik_va_erfassen_interner_auftraggeber</variable>
                 <variable>wp_el_pruefen</variable>
-                <variable>sp_wiedervorlagen</variable>
-                <variable>wp_fak_bezueger_aktivieren</variable>
-                <variable>wp_el_pruefen_starten</variable>
+                <variable>IN_ParGeschaeftsvorfall</variable>
                 <variable>wp_pendenzen_erstellen_partner</variable>
+                <variable>wp_pv_daten_administrieren</variable>
+                <variable>wp_fak_dokumente_erstellen</variable>
+                <variable>wp_el_pruefen_starten</variable>
+                <variable>wp_fak_bezueger_aktivieren</variable>
+                <variable>sp_brief_schreiben</variable>
+                <variable>wp_case_closed</variable>
+                <variable>sp_wiedervorlagen</variable>
+                <variable>sp_weiterleiten_doku_steuerung</variable>
+                <variable>wp_fak_erfassung_bezueger_pruefen</variable>
             </startingVariables>
         </task>
         <task name="GFanDokumentensteuerung">
@@ -35,19 +36,24 @@
         </task>
         <task name="_BX_SPInput_comigsfak001_automatische_steps">
             <startingVariables>
-                <variable>wp_fak_dokumente_erstellen</variable>
-                <variable>wp_fak_erfassung_bezueger_pruefen</variable>
-                <variable>IN_ParGeschaeftsvorfall</variable>
-                <variable>wp_pv_daten_administrieren</variable>
                 <variable>wp_ik_va_erfassen_interner_auftraggeber</variable>
+                <variable>IN_ParGeschaeftsvorfall</variable>
+                <variable>wp_pendenzen_erstellen_partner</variable>
+                <variable>wp_pv_daten_administrieren</variable>
                 <variable>wp_fak_bezueger_aktivieren</variable>
                 <variable>wp_el_pruefen_starten</variable>
-                <variable>wp_pendenzen_erstellen_partner</variable>
+                <variable>wp_fak_dokumente_erstellen</variable>
+                <variable>wp_fak_erfassung_bezueger_pruefen</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPOutput_comigsfak001_0101AnspruchAGpruefen">
             <startingVariables>
                 <variable>wp_case_closed</variable>
+            </startingVariables>
+        </task>
+        <task name="_BX_SPOutput_SucheexistierendeFlle">
+            <startingVariables>
+                <variable>ParGeschaeftsvorfall_FOUND</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_Wiedervorlagesetzen">
@@ -67,10 +73,6 @@
         <bpws:variable name="IN_ParGeschaeftsvorfall"
             tibex:class="com.example.comigsfak001.Geschaeftsvorfall"
             tibex:parameter="inout" tibex:xpdlId="_I3Y6ofo9EeiF0cp9x5MzdA"/>
-        <bpws:variable name="ParGeschaeftsvorfall_FOUND"
-            tibex:array="yes"
-            tibex:class="com.example.comigsfak001.Geschaeftsvorfall"
-            tibex:parameter="inout" tibex:xpdlId="_KWLfYfxXEeiF0cp9x5MzdA"/>
         <bpws:variable name="sp_klammern"
             tibex:xpdlId="_IRz1AfowEeiF0cp9x5MzdA" type="xsd:boolean">
             <bpws:from expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[false]]></bpws:from>
@@ -99,25 +101,25 @@
             tibex:xpdlId="_pJe5EPyaEeiF0cp9x5MzdA" type="xsd:boolean"/>
         <bpws:variable name="sp_weiterleiten_doku_steuerung"
             tibex:xpdlId="_F8RvAfybEeiF0cp9x5MzdA" type="xsd:boolean"/>
-        <bpws:variable name="sp_bezueger_verfuegen_ausbezahlen"
+        <bpws:variable name="sp_fak_bezueger_verfuegen_ausbezahlen"
             tibex:xpdlId="_26bTof1OEeiPopDWv-BhcA" type="xsd:boolean"/>
-        <bpws:variable name="sp_bezueger_erfassen"
+        <bpws:variable name="sp_fak_bezueger_erfassen"
             tibex:xpdlId="_qOwc0P1PEeiPopDWv-BhcA" type="xsd:boolean"/>
         <bpws:variable name="sp_anspruch_ag_pruefen"
             tibex:xpdlId="_xYOZ4P1PEeiPopDWv-BhcA" type="xsd:boolean"/>
+        <bpws:variable name="ParGeschaeftsvorfall_FOUND"
+            tibex:class="com.example.comigsfak001.Geschaeftsvorfall" tibex:xpdlId="_cVqYIf-WEeitVo1lH3Co-Q"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_I40TgP5aEeiFLcX4iMwVPw" tibex:sequenceFlow="yes">
+    <bpws:flow name="_BX_flow_jT-2UP-wEeitVo1lH3Co-Q" tibex:sequenceFlow="yes">
         <bpws:links>
             <bpws:link
-                name="_Bj9Tkf1OEeiPopDWv-BhcA to _GnONofyUEeiF0cp9x5MzdA" tibex:xpdlId="_8opv0P1QEeiPopDWv-BhcA"/>
+                name="_Bj9Tkf1OEeiPopDWv-BhcA to _IRz0zPowEeiF0cp9x5MzdA" tibex:xpdlId="_CrHkQP7gEeia4N05POO-ig"/>
             <bpws:link
-                name="_Bj9Tkf1OEeiPopDWv-BhcA to _IRz0zPowEeiF0cp9x5MzdA" tibex:xpdlId="_BpE8wP1REeiPopDWv-BhcA"/>
-            <bpws:link
-                name="_F3-Gcf1OEeiPopDWv-BhcA to _IRz0zPowEeiF0cp9x5MzdA" tibex:xpdlId="_CBhR8P1REeiPopDWv-BhcA"/>
+                name="_F3-Gcf1OEeiPopDWv-BhcA to _IRz0zPowEeiF0cp9x5MzdA" tibex:xpdlId="_IjaNUP7gEeia4N05POO-ig"/>
             <bpws:link name="AutoOpen" tibex:loopback="yes" tibex:xpdlId="_QKkMIPyUEeiF0cp9x5MzdA"/>
             <bpws:link name="_GnONofyUEeiF0cp9x5MzdA to Ende" tibex:xpdlId="_saOHcP1SEeiPopDWv-BhcA"/>
             <bpws:link name="Start to SucheexistierendeFlle" tibex:xpdlId="_qTMjEPo9EeiF0cp9x5MzdA"/>
@@ -125,30 +127,30 @@
             <bpws:link name="Unterlagenprfen to EndEvent" tibex:xpdlId="_9JVKYP5VEeiFLcX4iMwVPw"/>
             <bpws:link name="PrfeFlleaufbereinstimmung to Klammern" tibex:xpdlId="_IRz02PowEeiF0cp9x5MzdA"/>
             <bpws:link
-                name="GFanDokumentensteuerung to _IRz0zPowEeiF0cp9x5MzdA" tibex:xpdlId="_BSdzkP1REeiPopDWv-BhcA"/>
+                name="GFanDokumentensteuerung to _IRz0zPowEeiF0cp9x5MzdA" tibex:xpdlId="_Ad02MP70EeitVo1lH3Co-Q"/>
             <bpws:link name="Wiedervorlagesetzen to Unterlagenprfen"
                 tibex:loopback="yes" tibex:xpdlId="_TTa3oPyNEeiF0cp9x5MzdA"/>
             <bpws:link name="Wiedervorlage" tibex:xpdlId="_VddtUPyNEeiF0cp9x5MzdA"/>
             <bpws:link
                 name="AusgewhlteFunktion to _GnONofyUEeiF0cp9x5MzdA" tibex:xpdlId="_8RsyAPyYEeiF0cp9x5MzdA"/>
             <bpws:link
-                name="AusgewhlteFunktion to _JxHiQv1OEeiPopDWv-BhcA" tibex:xpdlId="_mkp_EP1OEeiPopDWv-BhcA"/>
-            <bpws:link
                 name="AusgewhlteFunktion to _F3-Gcf1OEeiPopDWv-BhcA" tibex:xpdlId="_ne6A0P1OEeiPopDWv-BhcA"/>
             <bpws:link
-                name="AusgewhlteFunktion to _Bj9Tkf1OEeiPopDWv-BhcA" tibex:xpdlId="_ocEMoP1OEeiPopDWv-BhcA"/>
-            <bpws:link
-                name="AusgewhlteFunktion to GFanDokumentensteuerung" tibex:xpdlId="_rF25YP1OEeiPopDWv-BhcA"/>
-            <bpws:link
                 name="AusgewhlteFunktion to comigsfak001_brief_schreiben" tibex:xpdlId="_xinhcP1OEeiPopDWv-BhcA"/>
+            <bpws:link
+                name="AusgewhlteFunktion to GFanDokumentensteuerung" tibex:xpdlId="_9vv90P7cEeia4N05POO-ig"/>
+            <bpws:link
+                name="AusgewhlteFunktion to _Bj9Tkf1OEeiPopDWv-BhcA" tibex:xpdlId="_uTF7MP7fEeia4N05POO-ig"/>
+            <bpws:link
+                name="AusgewhlteFunktion to _JxHiQv1OEeiPopDWv-BhcA" tibex:xpdlId="_MB_NAP7gEeia4N05POO-ig"/>
             <bpws:link name="Nein" tibex:xpdlId="_IRz01PowEeiF0cp9x5MzdA"/>
             <bpws:link name="Ja" tibex:xpdlId="_IRz02fowEeiF0cp9x5MzdA"/>
             <bpws:link name="Ja_1" tibex:xpdlId="_IRz01_owEeiF0cp9x5MzdA"/>
             <bpws:link name="Nein_2" tibex:xpdlId="_IRz02_owEeiF0cp9x5MzdA"/>
-            <bpws:link name="AUTOOpen" tibex:loopback="yes" tibex:xpdlId="_IRz05PowEeiF0cp9x5MzdA"/>
+            <bpws:link name="AutoOpen_3" tibex:loopback="yes" tibex:xpdlId="_IdPiYP95EeitVo1lH3Co-Q"/>
             <bpws:link
-                name="_JxHiQv1OEeiPopDWv-BhcA to _IRz0zPowEeiF0cp9x5MzdA" tibex:xpdlId="_DU17AP1REeiPopDWv-BhcA"/>
-            <bpws:link name="SucheexistierendeFlle to Fllegefunden" tibex:xpdlId="_tnbT8Po9EeiF0cp9x5MzdA"/>
+                name="_JxHiQv1OEeiPopDWv-BhcA to _IRz0zPowEeiF0cp9x5MzdA" tibex:xpdlId="_OHuxgP7gEeia4N05POO-ig"/>
+            <bpws:link name="SucheexistierendeFlle to Fllegefunden" tibex:xpdlId="_kS7wsP-WEeitVo1lH3Co-Q"/>
             <bpws:link
                 name="comigsfak001_brief_schreiben to _IRz0zPowEeiF0cp9x5MzdA" tibex:xpdlId="_BCVs4P1REeiPopDWv-BhcA"/>
             <bpws:link name="comigsfak001_close_new_case to Ende" tibex:xpdlId="_IRz02vowEeiF0cp9x5MzdA"/>
@@ -161,7 +163,6 @@
                     <bpws:source linkName="Start to SucheexistierendeFlle"/>
                 </bpws:sources>
                 <tibex:parameters>
-                    <parameterDescription mode="InOut" name="ParGeschaeftsvorfall_FOUND"/>
                     <parameterDescription mode="InOut" name="IN_ParGeschaeftsvorfall"/>
                 </tibex:parameters>
                 <tibex:eventSource>
@@ -178,7 +179,6 @@
                     <bpws:target linkName="Wiedervorlagesetzen to Unterlagenprfen"/>
                     <bpws:target linkName="Nein"/>
                     <bpws:target linkName="Nein_2"/>
-                    <bpws:target linkName="AUTOOpen"/>
                 </bpws:targets>
                 <bpws:sources>
                     <bpws:source linkName="Unterlagenprfen to AusgewhlteFunktion"/>
@@ -255,7 +255,6 @@
                             modelVersion="1" uniqueId="_ZMPp0PxZEeiF0cp9x5MzdA"/>
                     </userTaskParticipants>
                     <userTaskParameters>
-                        <userTaskParameter mandatory="false" mode="IN" name="ParGeschaeftsvorfall_FOUND"/>
                         <userTaskParameter mandatory="false"
                             mode="INOUT" name="sp_klammern"/>
                     </userTaskParameters>
@@ -269,6 +268,7 @@
         </bpws:extensionActivity>
         <bpws:extensionActivity>
             <tibex:extActivity name="GFanDokumentensteuerung"
+                tibex:description="&#xa;weiterleiten DMC "
                 tibex:type="userTask"
                 tibex:xpdlId="_IRz0q_owEeiF0cp9x5MzdA" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                 <bpws:targets>
@@ -351,8 +351,9 @@ if (IN_ParGeschaeftsvorfall != null) {
         </bpws:scope>
         <bpws:empty name="AusgewhlteFunktion"
             tibex:type="exclusiveGateway" tibex:xpdlId="_IRz0svowEeiF0cp9x5MzdA">
-            <bpws:targets>
+            <bpws:targets tibex:waitFor="1">
                 <bpws:target linkName="Unterlagenprfen to AusgewhlteFunktion"/>
+                <bpws:target linkName="AutoOpen_3"/>
             </bpws:targets>
             <bpws:sources tibex:maxTrue="1">
                 <bpws:source linkName="Wiedervorlage">
@@ -362,22 +363,22 @@ if (IN_ParGeschaeftsvorfall != null) {
                 <bpws:source linkName="AusgewhlteFunktion to _GnONofyUEeiF0cp9x5MzdA">
                     <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[##otherwise##]]></bpws:transitionCondition>
                 </bpws:source>
-                <bpws:source linkName="AusgewhlteFunktion to _JxHiQv1OEeiPopDWv-BhcA">
-                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[sp_bezueger_verfuegen_ausbezahlen==true;]]></bpws:transitionCondition>
-                </bpws:source>
                 <bpws:source linkName="AusgewhlteFunktion to _F3-Gcf1OEeiPopDWv-BhcA">
-                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[sp_bezueger_erfassen==true;]]></bpws:transitionCondition>
-                </bpws:source>
-                <bpws:source linkName="AusgewhlteFunktion to _Bj9Tkf1OEeiPopDWv-BhcA">
-                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[sp_anspruch_ag_pruefen==true;]]></bpws:transitionCondition>
-                </bpws:source>
-                <bpws:source linkName="AusgewhlteFunktion to GFanDokumentensteuerung">
-                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[sp_weiterleiten_doku_steuerung==true;
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[sp_fak_bezueger_erfassen==true;
 ]]></bpws:transitionCondition>
                 </bpws:source>
                 <bpws:source linkName="AusgewhlteFunktion to comigsfak001_brief_schreiben">
                     <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[sp_brief_schreiben==true;
 ]]></bpws:transitionCondition>
+                </bpws:source>
+                <bpws:source linkName="AusgewhlteFunktion to GFanDokumentensteuerung">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[sp_weiterleiten_doku_steuerung==true;]]></bpws:transitionCondition>
+                </bpws:source>
+                <bpws:source linkName="AusgewhlteFunktion to _Bj9Tkf1OEeiPopDWv-BhcA">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[sp_anspruch_ag_pruefen==true;]]></bpws:transitionCondition>
+                </bpws:source>
+                <bpws:source linkName="AusgewhlteFunktion to _JxHiQv1OEeiPopDWv-BhcA">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[sp_fak_bezueger_verfuegen_ausbezahlen==true;]]></bpws:transitionCondition>
                 </bpws:source>
             </bpws:sources>
         </bpws:empty>
@@ -388,7 +389,8 @@ if (IN_ParGeschaeftsvorfall != null) {
             </bpws:targets>
             <bpws:sources tibex:maxTrue="1">
                 <bpws:source linkName="Ja_1">
-                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[ParGeschaeftsvorfall_FOUND.size()>0;]]></bpws:transitionCondition>
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[ParGeschaeftsvorfall_FOUND.AHVNummer.length>0;
+]]></bpws:transitionCondition>
                 </bpws:source>
                 <bpws:source linkName="Nein_2">
                     <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[##otherwise##]]></bpws:transitionCondition>
@@ -426,24 +428,59 @@ if (IN_ParGeschaeftsvorfall != null) {
                 <bpws:target linkName="comigsfak001_brief_schreiben to _IRz0zPowEeiF0cp9x5MzdA"/>
             </bpws:targets>
             <bpws:sources>
-                <bpws:source linkName="AUTOOpen"/>
+                <bpws:source linkName="AutoOpen_3"/>
             </bpws:sources>
         </bpws:empty>
-        <bpws:extensionActivity>
-            <tibex:extActivity name="SucheexistierendeFlle"
-                tibex:migrationAllowed="yes"
-                tibex:type="reusableSubProcess"
-                tibex:xpdlId="_fr9eovo9EeiF0cp9x5MzdA" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                <bpws:targets>
-                    <bpws:target linkName="Start to SucheexistierendeFlle"/>
-                </bpws:targets>
-                <bpws:sources>
-                    <bpws:source linkName="SucheexistierendeFlle to Fllegefunden"/>
-                </bpws:sources>
-                <tibex:callProcess followParentLifecycle="yes"
-                    priority="inline" subProcessId="_TrgQYPowEeiF0cp9x5MzdA"/>
-            </tibex:extActivity>
-        </bpws:extensionActivity>
+        <bpws:scope name="SucheexistierendeFlle"
+            tibex:migrationAllowed="yes" tibex:type="reusableSubProcess" tibex:xpdlId="_fr9eovo9EeiF0cp9x5MzdA">
+            <bpws:targets>
+                <bpws:target linkName="Start to SucheexistierendeFlle"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="SucheexistierendeFlle to Fllegefunden"/>
+            </bpws:sources>
+            <bpws:variables>
+                <bpws:variable name="_BX_IN_ParGeschaeftsvorfall" tibex:class="com.example.comigsfak001.Geschaeftsvorfall"/>
+                <bpws:variable name="_BX_OUT_ParGeschaeftsvorfall" tibex:class="com.example.comigsfak001.Geschaeftsvorfall"/>
+            </bpws:variables>
+            <bpws:sequence name="_BX_sequence_2">
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPInput_SucheexistierendeFlle" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'IN_ParGeschaeftsvorfall' to 'IN_ParGeschaeftsvorfall'
+_BX_IN_ParGeschaeftsvorfall = ScriptUtil.copy(IN_ParGeschaeftsvorfall);
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity name="SucheexistierendeFlle" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:callProcess followParentLifecycle="yes"
+                            priority="inline" subProcessId="_TrgQYPowEeiF0cp9x5MzdA">
+                            <tibex:subProcessInput>
+                                <tibex:mapping
+                                    field="_BX_IN_ParGeschaeftsvorfall" formalParameter="IN_ParGeschaeftsvorfall"/>
+                            </tibex:subProcessInput>
+                            <tibex:subProcessOutput>
+                                <tibex:mapping
+                                    field="_BX_OUT_ParGeschaeftsvorfall" formalParameter="OUT_ParGeschaeftsvorfall"/>
+                            </tibex:subProcessOutput>
+                        </tibex:callProcess>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPOutput_SucheexistierendeFlle" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'OUT_ParGeschaeftsvorfall' to 'ParGeschaeftsvorfall_FOUND'
+ParGeschaeftsvorfall_FOUND = ScriptUtil.copy(_BX_OUT_ParGeschaeftsvorfall);
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+            </bpws:sequence>
+        </bpws:scope>
         <bpws:extensionActivity>
             <tibex:extActivity name="comigsfak001_close_new_case"
                 tibex:migrationAllowed="yes"
@@ -462,7 +499,6 @@ if (IN_ParGeschaeftsvorfall != null) {
         <bpws:scope name="comigsfak001_automatische_steps"
             tibex:type="reusableSubProcess" tibex:xpdlId="_GnONofyUEeiF0cp9x5MzdA">
             <bpws:targets>
-                <bpws:target linkName="_Bj9Tkf1OEeiPopDWv-BhcA to _GnONofyUEeiF0cp9x5MzdA"/>
                 <bpws:target linkName="AusgewhlteFunktion to _GnONofyUEeiF0cp9x5MzdA"/>
             </bpws:targets>
             <bpws:sources>
@@ -475,13 +511,13 @@ if (IN_ParGeschaeftsvorfall != null) {
             </bpws:sources>
             <bpws:variables>
                 <bpws:variable name="_BX_IN_ParGeschaeftsvorfall" tibex:class="com.example.comigsfak001.Geschaeftsvorfall"/>
+                <bpws:variable name="_BX_wp_el_pruefen_starten" type="xsd:boolean"/>
                 <bpws:variable
                     name="_BX_wp_fak_erfassung_bezueger_pruefen" type="xsd:boolean"/>
-                <bpws:variable name="_BX_wp_el_pruefen_starten" type="xsd:boolean"/>
                 <bpws:variable name="_BX_wp_case_closed" type="xsd:boolean"/>
                 <bpws:variable name="_BX_wp_fak_bezueger_aktivieren" type="xsd:boolean"/>
-                <bpws:variable name="_BX_wp_fak_dokumente_erstellen" type="xsd:boolean"/>
                 <bpws:variable name="_BX_wp_pv_daten_administrieren" type="xsd:boolean"/>
+                <bpws:variable name="_BX_wp_fak_dokumente_erstellen" type="xsd:boolean"/>
                 <bpws:variable
                     name="_BX_wp_ik_va_erfassen_interner_auftraggeber" type="xsd:boolean"/>
                 <bpws:variable name="_BX_wp_el_pruefen" type="xsd:boolean"/>
@@ -528,17 +564,17 @@ _BX_wp_pv_daten_administrieren = wp_pv_daten_administrieren;
                                 <tibex:mapping
                                     field="_BX_IN_ParGeschaeftsvorfall" formalParameter="IN_ParGeschaeftsvorfall"/>
                                 <tibex:mapping
-                                    field="_BX_wp_fak_erfassung_bezueger_pruefen" formalParameter="wp_fak_erfassung_bezueger_pruefen"/>
-                                <tibex:mapping
                                     field="_BX_wp_el_pruefen_starten" formalParameter="wp_el_pruefen_starten"/>
+                                <tibex:mapping
+                                    field="_BX_wp_fak_erfassung_bezueger_pruefen" formalParameter="wp_fak_erfassung_bezueger_pruefen"/>
                                 <tibex:mapping
                                     field="_BX_wp_case_closed" formalParameter="wp_case_closed"/>
                                 <tibex:mapping
                                     field="_BX_wp_fak_bezueger_aktivieren" formalParameter="wp_fak_bezueger_aktivieren"/>
                                 <tibex:mapping
-                                    field="_BX_wp_fak_dokumente_erstellen" formalParameter="wp_fak_dokumente_erstellen"/>
-                                <tibex:mapping
                                     field="_BX_wp_pv_daten_administrieren" formalParameter="wp_pv_daten_administrieren"/>
+                                <tibex:mapping
+                                    field="_BX_wp_fak_dokumente_erstellen" formalParameter="wp_fak_dokumente_erstellen"/>
                                 <tibex:mapping
                                     field="_BX_wp_ik_va_erfassen_interner_auftraggeber" formalParameter="wp_ik_va_erfassen_interner_auftraggeber"/>
                                 <tibex:mapping field="_BX_wp_el_pruefen" formalParameter="wp_el_pruefen"/>
@@ -570,12 +606,7 @@ _BX_wp_pv_daten_administrieren = wp_pv_daten_administrieren;
                 <bpws:target linkName="AusgewhlteFunktion to _Bj9Tkf1OEeiPopDWv-BhcA"/>
             </bpws:targets>
             <bpws:sources>
-                <bpws:source linkName="_Bj9Tkf1OEeiPopDWv-BhcA to _GnONofyUEeiF0cp9x5MzdA">
-                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[wp_case_closed==true;]]></bpws:transitionCondition>
-                </bpws:source>
-                <bpws:source linkName="_Bj9Tkf1OEeiPopDWv-BhcA to _IRz0zPowEeiF0cp9x5MzdA">
-                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[##otherwise##]]></bpws:transitionCondition>
-                </bpws:source>
+                <bpws:source linkName="_Bj9Tkf1OEeiPopDWv-BhcA to _IRz0zPowEeiF0cp9x5MzdA"/>
             </bpws:sources>
             <bpws:variables>
                 <bpws:variable name="_BX_wp_case_closed" type="xsd:boolean"/>

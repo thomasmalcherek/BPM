@@ -14,16 +14,16 @@
         </task>
         <task name="_BX_SPInput_Wiedervorlage">
             <startingVariables>
-                <variable>sp_wiedervorlagen</variable>
                 <variable>In_Geschaeftsvorfall</variable>
+                <variable>sp_wiedervorlagen</variable>
             </startingVariables>
         </task>
         <task name="AnspruchFAKerfassen">
             <startingVariables>
-                <variable>sp_brief_schreiben</variable>
-                <variable>back_to_main_process</variable>
-                <variable>sp_wiedervorlagen</variable>
                 <variable>wp_case_closed</variable>
+                <variable>sp_wiedervorlagen</variable>
+                <variable>back_to_main_process</variable>
+                <variable>sp_brief_schreiben</variable>
             </startingVariables>
         </task>
     </tibex:VariableDescriptor>
@@ -51,7 +51,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_I6w0QP5aEeiFLcX4iMwVPw" tibex:sequenceFlow="yes">
+    <bpws:flow name="_BX_flow_jbJOQP-wEeitVo1lH3Co-Q" tibex:sequenceFlow="yes">
         <bpws:links>
             <bpws:link
                 name="_FHrmEP1bEeiPopDWv-BhcA to _x_Yygf1NEeiPopDWv-BhcA" tibex:xpdlId="_x_Yyj_1NEeiPopDWv-BhcA"/>
@@ -85,8 +85,8 @@
                     <bpws:source linkName="StartEvent to AnspruchFAKerfassen"/>
                 </bpws:sources>
                 <tibex:parameters>
-                    <parameterDescription mode="In" name="In_Geschaeftsvorfall"/>
                     <parameterDescription mode="Out" name="wp_case_closed"/>
+                    <parameterDescription mode="In" name="In_Geschaeftsvorfall"/>
                 </tibex:parameters>
                 <tibex:eventSource>
                     <tibex:startEvent eventType="Default"/>

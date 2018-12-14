@@ -16,13 +16,13 @@
         <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//CreateCaseIDRequestFromBPMType/AHVNummer"/>
       </genFeatures>
       <genFeatures createChild="false">
-        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//CreateCaseIDRequestFromBPMType/partnerID"/>
-      </genFeatures>
-      <genFeatures createChild="false">
         <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//CreateCaseIDRequestFromBPMType/dokumentenArt"/>
       </genFeatures>
       <genFeatures createChild="false">
-        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//CreateCaseIDRequestFromBPMType/kanton"/>
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//CreateCaseIDRequestFromBPMType/geschaeftsfall"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//CreateCaseIDRequestFromBPMType/anzahl_der_Dokumente"/>
       </genFeatures>
     </genClasses>
     <genClasses>
@@ -31,13 +31,13 @@
         <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//CreateCaseIDRequestType/AHVNummer"/>
       </genFeatures>
       <genFeatures createChild="false">
-        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//CreateCaseIDRequestType/partnerID"/>
-      </genFeatures>
-      <genFeatures createChild="false">
         <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//CreateCaseIDRequestType/dokumentenArt"/>
       </genFeatures>
       <genFeatures createChild="false">
-        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//CreateCaseIDRequestType/kanton"/>
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//CreateCaseIDRequestType/geschaeftsfall"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//CreateCaseIDRequestType/anzahl_der_Dokumente"/>
       </genFeatures>
     </genClasses>
     <genClasses>
@@ -79,7 +79,13 @@
         <ecoreFeature xsi:type="ecore:EReference" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//DocumentRoot/getDataRequestFromCaseID"/>
       </genFeatures>
       <genFeatures property="None" children="true" createChild="true">
-        <ecoreFeature xsi:type="ecore:EReference" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//DocumentRoot/getDataResponseFromCaseID"/>
+        <ecoreFeature xsi:type="ecore:EReference" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//DocumentRoot/getDataWFCaseIDResponse"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//DocumentRoot/searchDataRequest"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//DocumentRoot/searchDataResponses"/>
       </genFeatures>
       <genFeatures property="None" children="true" createChild="true">
         <ecoreFeature xsi:type="ecore:EReference" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//DocumentRoot/createCaseIDRequestFromBPMTypeBDSInternalSerializationElement"/>
@@ -97,7 +103,16 @@
         <ecoreFeature xsi:type="ecore:EReference" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//DocumentRoot/getDataRequestFromCaseIDTypeBDSInternalSerializationElement"/>
       </genFeatures>
       <genFeatures property="None" children="true" createChild="true">
-        <ecoreFeature xsi:type="ecore:EReference" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//DocumentRoot/getDataResponseFromCaseIDTypeBDSInternalSerializationElement"/>
+        <ecoreFeature xsi:type="ecore:EReference" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//DocumentRoot/getDataWFCaseIDResponseTypeBDSInternalSerializationElement"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//DocumentRoot/searchDataRequestTypeBDSInternalSerializationElement"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//DocumentRoot/searchDataResponsesTypeBDSInternalSerializationElement"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//DocumentRoot/searchDataResponseTypeBDSInternalSerializationElement"/>
       </genFeatures>
     </genClasses>
     <genClasses>
@@ -107,21 +122,60 @@
       </genFeatures>
     </genClasses>
     <genClasses>
-      <ecoreClass href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//GetDataResponseFromCaseIDType"/>
+      <ecoreClass href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//GetDataWFCaseIDResponseType"/>
       <genFeatures createChild="false">
-        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//GetDataResponseFromCaseIDType/caseID"/>
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//GetDataWFCaseIDResponseType/caseID"/>
       </genFeatures>
       <genFeatures createChild="false">
-        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//GetDataResponseFromCaseIDType/AHVNummer"/>
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//GetDataWFCaseIDResponseType/AHVNummer"/>
       </genFeatures>
       <genFeatures createChild="false">
-        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//GetDataResponseFromCaseIDType/partnerID"/>
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//GetDataWFCaseIDResponseType/dokumentenArt"/>
       </genFeatures>
       <genFeatures createChild="false">
-        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//GetDataResponseFromCaseIDType/dokumentenArt"/>
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//GetDataWFCaseIDResponseType/geschaeftsfall"/>
       </genFeatures>
       <genFeatures createChild="false">
-        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//GetDataResponseFromCaseIDType/kanton"/>
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//GetDataWFCaseIDResponseType/anzahl_der_Dokumente"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//SearchDataRequestType"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//SearchDataRequestType/AHVNummer"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//SearchDataRequestType/dokumentenArt"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//SearchDataRequestType/geschaeftsfall"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//SearchDataResponsesType"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//SearchDataResponsesType/group"/>
+      </genFeatures>
+      <genFeatures property="None" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//SearchDataResponsesType/searchDataResponse"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//SearchDataResponseType"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//SearchDataResponseType/caseID"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//SearchDataResponseType/AHVNummer"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//SearchDataResponseType/dokumentenArt"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//SearchDataResponseType/geschaeftsfall"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="saveDataCaseXSD.bw.test.poc.tibco.com.bds.ecore#//SearchDataResponseType/anzahl_der_Dokumente"/>
       </genFeatures>
     </genClasses>
   </genPackages>

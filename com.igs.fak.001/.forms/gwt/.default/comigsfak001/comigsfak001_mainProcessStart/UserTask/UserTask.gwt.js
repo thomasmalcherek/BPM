@@ -2,9 +2,9 @@
 
 if (typeof(tibcoforms) == 'undefined') tibcoforms = new Object();
 if (typeof(tibcoforms.formCode) == 'undefined') tibcoforms.formCode = new Object();
-tibcoforms.formCode['_IfdYUP5aEeiFLcX4iMwVPw'] = new Object();
-tibcoforms.formCode['_IfdYUP5aEeiFLcX4iMwVPw']['defineActions'] = function() {
-var fc = tibcoforms.formCode['_IfdYUP5aEeiFLcX4iMwVPw'];
+tibcoforms.formCode['_jAt8EP-wEeitVo1lH3Co-Q'] = new Object();
+tibcoforms.formCode['_jAt8EP-wEeitVo1lH3Co-Q']['defineActions'] = function() {
+var fc = tibcoforms.formCode['_jAt8EP-wEeitVo1lH3Co-Q'];
     fc['rule_cancel'] = function(formId, context, thisObj) {
 	   try {
 			tibco.forms.Util.handleScriptAction.call(thisObj, formId, context, thisObj, "cancel", "cancel", fc['action_cancel']);
@@ -51,17 +51,12 @@ var fc = tibcoforms.formCode['_IfdYUP5aEeiFLcX4iMwVPw'];
         return "TIBCO Forms 4.1.0 V17 compliant";
     }
 };
-tibcoforms.formCode['_IfdYUP5aEeiFLcX4iMwVPw']['defineActions']();
+tibcoforms.formCode['_jAt8EP-wEeitVo1lH3Co-Q']['defineActions']();
 
-tibcoforms.formCode['_IfdYUP5aEeiFLcX4iMwVPw']['defineValidations'] = function() {
-var fc = tibcoforms.formCode['_IfdYUP5aEeiFLcX4iMwVPw'];
+tibcoforms.formCode['_jAt8EP-wEeitVo1lH3Co-Q']['defineValidations'] = function() {
+var fc = tibcoforms.formCode['_jAt8EP-wEeitVo1lH3Co-Q'];
 	
 	
-fc['validation_IN_ParGeschaeftsvorfall_frist_IN_ParGeschaeftsvorfall_frist__datetime'] = function(formId, controlName, cloneUID, listIndex) {
-	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.getLabel()] : true;';
-	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "IN_ParGeschaeftsvorfall_frist: IN_ParGeschaeftsvorfall_frist__datetime", true, true);
-	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "IN_ParGeschaeftsvorfall_frist__datetime", true, true);
-}
 	
 	
 fc['validation_IN_ParGeschaeftsvorfall_dokumentenArt_IN_ParGeschaeftsvorfall_dokumentenArt__length'] = function(formId, controlName, cloneUID, listIndex) {
@@ -71,11 +66,10 @@ fc['validation_IN_ParGeschaeftsvorfall_dokumentenArt_IN_ParGeschaeftsvorfall_dok
 }
 	
 	
-	
-fc['validation_IN_ParGeschaeftsvorfall_WFCaseID_IN_ParGeschaeftsvorfall_WFCaseID__length'] = function(formId, controlName, cloneUID, listIndex) {
-	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), \'50\'] : context.value.length <= 50;';
-	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "IN_ParGeschaeftsvorfall_WFCaseID: IN_ParGeschaeftsvorfall_WFCaseID__length", true, true);
-	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "IN_ParGeschaeftsvorfall_WFCaseID__length", true, true);
+fc['validation_IN_ParGeschaeftsvorfall_frist_IN_ParGeschaeftsvorfall_frist__datetime'] = function(formId, controlName, cloneUID, listIndex) {
+	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.getLabel()] : true;';
+	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "IN_ParGeschaeftsvorfall_frist: IN_ParGeschaeftsvorfall_frist__datetime", true, true);
+	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "IN_ParGeschaeftsvorfall_frist__datetime", true, true);
 }
 	
 fc['validation_IN_ParGeschaeftsvorfall_AHVNummer_IN_ParGeschaeftsvorfall_AHVNummer__length'] = function(formId, controlName, cloneUID, listIndex) {
@@ -92,6 +86,17 @@ fc['validation_IN_ParGeschaeftsvorfall_partnerID_IN_ParGeschaeftsvorfall_partner
 	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "IN_ParGeschaeftsvorfall_partnerID__length", true, true);
 }
 	
+fc['validation_IN_ParGeschaeftsvorfall_geschaeftsfall_IN_ParGeschaeftsvorfall_geschaeftsfall__length'] = function(formId, controlName, cloneUID, listIndex) {
+	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkTextLength(context.stringValue, 500) ? true : [context.control.getLabel(), \'500\'] : context.value.length <= 500;';
+	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "IN_ParGeschaeftsvorfall_geschaeftsfall: IN_ParGeschaeftsvorfall_geschaeftsfall__length", true, true);
+	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "IN_ParGeschaeftsvorfall_geschaeftsfall__length", true, true);
+}
+	
+fc['validation_IN_ParGeschaeftsvorfall_WFCaseID_IN_ParGeschaeftsvorfall_WFCaseID__length'] = function(formId, controlName, cloneUID, listIndex) {
+	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), \'50\'] : context.value.length <= 50;';
+	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "IN_ParGeschaeftsvorfall_WFCaseID: IN_ParGeschaeftsvorfall_WFCaseID__length", true, true);
+	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "IN_ParGeschaeftsvorfall_WFCaseID__length", true, true);
+}
 	fc['validate_required'] = function(formId, controlName, cloneUID, listIndex) {
 	var context = new Object();
     var form = tibcoforms.formCache[formId];
@@ -136,4 +141,4 @@ fc['validation_IN_ParGeschaeftsvorfall_partnerID_IN_ParGeschaeftsvorfall_partner
 	   
 	   
 };
-tibcoforms.formCode['_IfdYUP5aEeiFLcX4iMwVPw']['defineValidations']();
+tibcoforms.formCode['_jAt8EP-wEeitVo1lH3Co-Q']['defineValidations']();

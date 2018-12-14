@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xsd:schema xmlns="http://com.tibco.poc.test.bw.saveDataCaseXSD" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:tns1="http://com.tibco.poc.test.bw.saveDataCaseXSD" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://com.tibco.poc.test.bw.saveDataCaseXSD">
   <xsd:annotation>
-    <xsd:documentation>BOMORIGIN::/com.tibco.poc.test/Generated Business Objects/saveDataCaseXSD.bw.test.poc.tibco.com.bom</xsd:documentation>
+    <xsd:documentation>BOMORIGIN::/com.igs.fak.001/Generated Business Objects/saveDataCaseXSD.bw.test.poc.tibco.com.bom</xsd:documentation>
   </xsd:annotation>
   <xsd:element abstract="false" name="CreateCaseIDRequest" nillable="false">
     <xsd:complexType ecore:name="CreateCaseIDRequestType" id="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDRequestType" mixed="false">
       <xsd:sequence>
         <xsd:element ecore:name="AHVNummer" form="unqualified" maxOccurs="1" minOccurs="1" name="AHV-Nummer" type="xsd:string"/>
-        <xsd:element ecore:name="partnerID" form="unqualified" maxOccurs="1" minOccurs="1" name="Partner-ID" type="xsd:string"/>
         <xsd:element ecore:name="dokumentenArt" form="unqualified" maxOccurs="1" minOccurs="1" name="Dokumenten-Art" type="xsd:string"/>
-        <xsd:element ecore:name="kanton" form="unqualified" maxOccurs="1" minOccurs="1" name="Kanton" type="xsd:string"/>
+        <xsd:element ecore:name="geschaeftsfall" form="unqualified" maxOccurs="1" minOccurs="1" name="Geschaeftsfall" type="xsd:string"/>
+        <xsd:element ecore:name="anzahl_der_Dokumente" form="unqualified" maxOccurs="1" minOccurs="1" name="Anzahl_der_Dokumente" type="xsd:integer"/>
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
@@ -25,9 +25,9 @@
       <xsd:sequence>
         <xsd:element ecore:name="caseID" form="unqualified" maxOccurs="1" minOccurs="1" name="CaseID" type="xsd:string"/>
         <xsd:element ecore:name="AHVNummer" form="unqualified" maxOccurs="1" minOccurs="1" name="AHV-Nummer" type="xsd:string"/>
-        <xsd:element ecore:name="partnerID" form="unqualified" maxOccurs="1" minOccurs="1" name="Partner-ID" type="xsd:string"/>
         <xsd:element ecore:name="dokumentenArt" form="unqualified" maxOccurs="1" minOccurs="1" name="Dokumenten-Art" type="xsd:string"/>
-        <xsd:element ecore:name="kanton" form="unqualified" maxOccurs="1" minOccurs="1" name="Kanton" type="xsd:string"/>
+        <xsd:element ecore:name="geschaeftsfall" form="unqualified" maxOccurs="1" minOccurs="1" name="Geschaeftsfall" type="xsd:string"/>
+        <xsd:element ecore:name="anzahl_der_Dokumente" form="unqualified" maxOccurs="1" minOccurs="1" name="Anzahl_der_Dokumente" type="xsd:integer"/>
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
@@ -45,14 +45,40 @@
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
-  <xsd:element abstract="false" name="GetDataResponseFromCaseID" nillable="false">
-    <xsd:complexType ecore:name="GetDataResponseFromCaseIDType" id="saveDataCaseXSD.bw.test.poc.tibco.comGetDataResponseFromCaseIDType" mixed="false">
+  <xsd:element abstract="false" name="GetDataWFCaseIDResponse" nillable="false">
+    <xsd:complexType ecore:name="GetDataWFCaseIDResponseType" id="saveDataCaseXSD.bw.test.poc.tibco.comGetDataWFCaseIDResponseType" mixed="false">
       <xsd:sequence>
         <xsd:element ecore:name="caseID" form="unqualified" maxOccurs="1" minOccurs="1" name="CaseID" type="xsd:string"/>
         <xsd:element ecore:name="AHVNummer" form="unqualified" maxOccurs="1" minOccurs="1" name="AHV-Nummer" type="xsd:string"/>
-        <xsd:element ecore:name="partnerID" form="unqualified" maxOccurs="1" minOccurs="1" name="Partner-ID" type="xsd:string"/>
         <xsd:element ecore:name="dokumentenArt" form="unqualified" maxOccurs="1" minOccurs="1" name="Dokumenten-Art" type="xsd:string"/>
-        <xsd:element ecore:name="kanton" form="unqualified" maxOccurs="1" minOccurs="1" name="Kanton" type="xsd:string"/>
+        <xsd:element ecore:name="geschaeftsfall" form="unqualified" maxOccurs="1" minOccurs="1" name="Geschaeftsfall" type="xsd:string"/>
+        <xsd:element ecore:name="anzahl_der_Dokumente" form="unqualified" maxOccurs="1" minOccurs="1" name="Anzahl_der_Dokumente" type="xsd:integer"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element abstract="false" name="SearchDataResponses" nillable="false">
+    <xsd:complexType ecore:name="SearchDataResponsesType" id="saveDataCaseXSD.bw.test.poc.tibco.comSearchDataResponsesType" mixed="false">
+      <xsd:sequence maxOccurs="unbounded" minOccurs="0">
+        <xsd:element ecore:name="searchDataResponse" form="unqualified" maxOccurs="1" minOccurs="1" name="SearchDataResponse">
+          <xsd:complexType ecore:name="SearchDataResponseType" id="saveDataCaseXSD.bw.test.poc.tibco.comSearchDataResponseType" mixed="false">
+            <xsd:sequence>
+              <xsd:element ecore:name="caseID" form="unqualified" maxOccurs="1" minOccurs="1" name="CaseID" type="xsd:string"/>
+              <xsd:element ecore:name="AHVNummer" form="unqualified" maxOccurs="1" minOccurs="1" name="AHV-Nummer" type="xsd:string"/>
+              <xsd:element ecore:name="dokumentenArt" form="unqualified" maxOccurs="1" minOccurs="1" name="Dokumenten-Art" type="xsd:string"/>
+              <xsd:element ecore:name="geschaeftsfall" form="unqualified" maxOccurs="1" minOccurs="1" name="Geschaeftsfall" type="xsd:string"/>
+              <xsd:element ecore:name="anzahl_der_Dokumente" form="unqualified" maxOccurs="1" minOccurs="1" name="Anzahl_der_Dokumente" type="xsd:integer"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element abstract="false" name="SearchDataRequest" nillable="false">
+    <xsd:complexType ecore:name="SearchDataRequestType" id="saveDataCaseXSD.bw.test.poc.tibco.comSearchDataRequestType" mixed="false">
+      <xsd:sequence>
+        <xsd:element ecore:name="AHVNummer" form="unqualified" maxOccurs="1" minOccurs="1" name="AHV-Nummer" type="xsd:string"/>
+        <xsd:element ecore:name="dokumentenArt" form="unqualified" maxOccurs="1" minOccurs="1" name="Dokumenten-Art" type="xsd:string"/>
+        <xsd:element ecore:name="geschaeftsfall" form="unqualified" maxOccurs="1" minOccurs="1" name="Geschaeftsfall" type="xsd:string"/>
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>

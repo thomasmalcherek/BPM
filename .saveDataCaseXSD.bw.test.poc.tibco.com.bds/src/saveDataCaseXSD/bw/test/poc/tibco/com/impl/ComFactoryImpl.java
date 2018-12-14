@@ -70,7 +70,10 @@ public class ComFactoryImpl extends EFactoryImpl implements ComFactory
       case ComPackage.CREATE_CASE_ID_RESPONSE_TYPE: return createCreateCaseIDResponseType();
       case ComPackage.DOCUMENT_ROOT: return createDocumentRoot();
       case ComPackage.GET_DATA_REQUEST_FROM_CASE_ID_TYPE: return createGetDataRequestFromCaseIDType();
-      case ComPackage.GET_DATA_RESPONSE_FROM_CASE_ID_TYPE: return createGetDataResponseFromCaseIDType();
+      case ComPackage.GET_DATA_WF_CASE_ID_RESPONSE_TYPE: return createGetDataWFCaseIDResponseType();
+      case ComPackage.SEARCH_DATA_REQUEST_TYPE: return createSearchDataRequestType();
+      case ComPackage.SEARCH_DATA_RESPONSES_TYPE: return createSearchDataResponsesType();
+      case ComPackage.SEARCH_DATA_RESPONSE_TYPE: return createSearchDataResponseType();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -147,10 +150,43 @@ public class ComFactoryImpl extends EFactoryImpl implements ComFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public GetDataResponseFromCaseIDType createGetDataResponseFromCaseIDType()
+  public GetDataWFCaseIDResponseType createGetDataWFCaseIDResponseType()
   {
-    GetDataResponseFromCaseIDTypeImpl getDataResponseFromCaseIDType = new GetDataResponseFromCaseIDTypeImpl();
-    return getDataResponseFromCaseIDType;
+    GetDataWFCaseIDResponseTypeImpl getDataWFCaseIDResponseType = new GetDataWFCaseIDResponseTypeImpl();
+    return getDataWFCaseIDResponseType;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SearchDataRequestType createSearchDataRequestType()
+  {
+    SearchDataRequestTypeImpl searchDataRequestType = new SearchDataRequestTypeImpl();
+    return searchDataRequestType;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SearchDataResponsesType createSearchDataResponsesType()
+  {
+    SearchDataResponsesTypeImpl searchDataResponsesType = new SearchDataResponsesTypeImpl();
+    return searchDataResponsesType;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public SearchDataResponseType createSearchDataResponseType()
+  {
+    SearchDataResponseTypeImpl searchDataResponseType = new SearchDataResponseTypeImpl();
+    return searchDataResponseType;
   }
 
   /**

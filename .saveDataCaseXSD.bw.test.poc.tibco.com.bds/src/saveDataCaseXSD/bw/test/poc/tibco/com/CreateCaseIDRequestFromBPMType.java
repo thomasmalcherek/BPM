@@ -1,5 +1,7 @@
 package saveDataCaseXSD.bw.test.poc.tibco.com;
 
+import java.math.BigInteger;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -12,9 +14,9 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getCaseID <em>Case ID</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getAHVNummer <em>AHV Nummer</em>}</li>
- *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getPartnerID <em>Partner ID</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getDokumentenArt <em>Dokumenten Art</em>}</li>
- *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getKanton <em>Kanton</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getGeschaeftsfall <em>Geschaeftsfall</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getAnzahl_der_Dokumente <em>Anzahl der Dokumente</em>}</li>
  * </ul>
  * </p>
  *
@@ -80,33 +82,6 @@ public interface CreateCaseIDRequestFromBPMType extends EObject
   void setAHVNummer(String value);
 
   /**
-   * Returns the value of the '<em><b>Partner ID</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Partner ID</em>' attribute isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Partner ID</em>' attribute.
-   * @see #setPartnerID(String)
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.ComPackage#getCreateCaseIDRequestFromBPMType_PartnerID()
-   * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-   *        extendedMetaData="kind='element' name='Partner-ID'"
-   * @generated
-   */
-  String getPartnerID();
-
-  /**
-   * Sets the value of the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getPartnerID <em>Partner ID</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Partner ID</em>' attribute.
-   * @see #getPartnerID()
-   * @generated
-   */
-  void setPartnerID(String value);
-
-  /**
    * Returns the value of the '<em><b>Dokumenten Art</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
@@ -134,31 +109,58 @@ public interface CreateCaseIDRequestFromBPMType extends EObject
   void setDokumentenArt(String value);
 
   /**
-   * Returns the value of the '<em><b>Kanton</b></em>' attribute.
+   * Returns the value of the '<em><b>Geschaeftsfall</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Kanton</em>' attribute isn't clear,
+   * If the meaning of the '<em>Geschaeftsfall</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Kanton</em>' attribute.
-   * @see #setKanton(String)
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.ComPackage#getCreateCaseIDRequestFromBPMType_Kanton()
+   * @return the value of the '<em>Geschaeftsfall</em>' attribute.
+   * @see #setGeschaeftsfall(String)
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.ComPackage#getCreateCaseIDRequestFromBPMType_Geschaeftsfall()
    * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
-   *        extendedMetaData="kind='element' name='Kanton'"
+   *        extendedMetaData="kind='element' name='Geschaeftsfall'"
    * @generated
    */
-  String getKanton();
+  String getGeschaeftsfall();
 
   /**
-   * Sets the value of the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getKanton <em>Kanton</em>}' attribute.
+   * Sets the value of the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getGeschaeftsfall <em>Geschaeftsfall</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Kanton</em>' attribute.
-   * @see #getKanton()
+   * @param value the new value of the '<em>Geschaeftsfall</em>' attribute.
+   * @see #getGeschaeftsfall()
    * @generated
    */
-  void setKanton(String value);
+  void setGeschaeftsfall(String value);
+
+  /**
+   * Returns the value of the '<em><b>Anzahl der Dokumente</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Anzahl der Dokumente</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Anzahl der Dokumente</em>' attribute.
+   * @see #setAnzahl_der_Dokumente(BigInteger)
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.ComPackage#getCreateCaseIDRequestFromBPMType_Anzahl_der_Dokumente()
+   * @model dataType="org.eclipse.emf.ecore.xml.type.Integer" required="true"
+   *        extendedMetaData="kind='element' name='Anzahl_der_Dokumente'"
+   * @generated
+   */
+  BigInteger getAnzahl_der_Dokumente();
+
+  /**
+   * Sets the value of the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType#getAnzahl_der_Dokumente <em>Anzahl der Dokumente</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Anzahl der Dokumente</em>' attribute.
+   * @see #getAnzahl_der_Dokumente()
+   * @generated
+   */
+  void setAnzahl_der_Dokumente(BigInteger value);
 
   /**
    * Automatic type conversion method
@@ -182,15 +184,6 @@ public interface CreateCaseIDRequestFromBPMType extends EObject
    * Automatic type conversion method
    *
    * @param value		The value to set
-   * @see #getPartnerID()
-   * @generated
-   */
-  void setPartnerID(Object value);
-
-  /**
-   * Automatic type conversion method
-   *
-   * @param value		The value to set
    * @see #getDokumentenArt()
    * @generated
    */
@@ -200,9 +193,18 @@ public interface CreateCaseIDRequestFromBPMType extends EObject
    * Automatic type conversion method
    *
    * @param value		The value to set
-   * @see #getKanton()
+   * @see #getGeschaeftsfall()
    * @generated
    */
-  void setKanton(Object value);
+  void setGeschaeftsfall(Object value);
+
+  /**
+   * Automatic type conversion method
+   *
+   * @param value		The value to set
+   * @see #getAnzahl_der_Dokumente()
+   * @generated
+   */
+  void setAnzahl_der_Dokumente(Object value);
 
 } // CreateCaseIDRequestFromBPMType

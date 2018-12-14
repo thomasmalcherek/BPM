@@ -1,6 +1,8 @@
 
 package saveDataCaseXSD.bw.test.poc.tibco.com.impl;
 
+import java.math.BigInteger;
+
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -21,9 +23,9 @@ import saveDataCaseXSD.bw.test.poc.tibco.com.bdsutil.BDSTypeConversions;
  * The following features are implemented:
  * <ul>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.CreateCaseIDRequestTypeImpl#getAHVNummer <em>AHV Nummer</em>}</li>
- *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.CreateCaseIDRequestTypeImpl#getPartnerID <em>Partner ID</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.CreateCaseIDRequestTypeImpl#getDokumentenArt <em>Dokumenten Art</em>}</li>
- *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.CreateCaseIDRequestTypeImpl#getKanton <em>Kanton</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.CreateCaseIDRequestTypeImpl#getGeschaeftsfall <em>Geschaeftsfall</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.impl.CreateCaseIDRequestTypeImpl#getAnzahl_der_Dokumente <em>Anzahl der Dokumente</em>}</li>
  * </ul>
  * </p>
  *
@@ -53,26 +55,6 @@ public class CreateCaseIDRequestTypeImpl extends EObjectImpl implements CreateCa
   protected String ahvNummer = AHV_NUMMER_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getPartnerID() <em>Partner ID</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getPartnerID()
-   * @generated
-   * @ordered
-   */
-  protected static final String PARTNER_ID_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getPartnerID() <em>Partner ID</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getPartnerID()
-   * @generated
-   * @ordered
-   */
-  protected String partnerID = PARTNER_ID_EDEFAULT;
-
-  /**
    * The default value of the '{@link #getDokumentenArt() <em>Dokumenten Art</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -93,24 +75,44 @@ public class CreateCaseIDRequestTypeImpl extends EObjectImpl implements CreateCa
   protected String dokumentenArt = DOKUMENTEN_ART_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getKanton() <em>Kanton</em>}' attribute.
+   * The default value of the '{@link #getGeschaeftsfall() <em>Geschaeftsfall</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getKanton()
+   * @see #getGeschaeftsfall()
    * @generated
    * @ordered
    */
-  protected static final String KANTON_EDEFAULT = null;
+  protected static final String GESCHAEFTSFALL_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getKanton() <em>Kanton</em>}' attribute.
+   * The cached value of the '{@link #getGeschaeftsfall() <em>Geschaeftsfall</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getKanton()
+   * @see #getGeschaeftsfall()
    * @generated
    * @ordered
    */
-  protected String kanton = KANTON_EDEFAULT;
+  protected String geschaeftsfall = GESCHAEFTSFALL_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getAnzahl_der_Dokumente() <em>Anzahl der Dokumente</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getAnzahl_der_Dokumente()
+   * @generated
+   * @ordered
+   */
+  protected static final BigInteger ANZAHL_DER_DOKUMENTE_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getAnzahl_der_Dokumente() <em>Anzahl der Dokumente</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getAnzahl_der_Dokumente()
+   * @generated
+   * @ordered
+   */
+  protected BigInteger anzahl_der_Dokumente = ANZAHL_DER_DOKUMENTE_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -161,29 +163,6 @@ public class CreateCaseIDRequestTypeImpl extends EObjectImpl implements CreateCa
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getPartnerID()
-  {
-    return partnerID;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setPartnerID(String newPartnerID)
-  {
-    String oldPartnerID = partnerID;
-    partnerID = newPartnerID;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ComPackage.CREATE_CASE_ID_REQUEST_TYPE__PARTNER_ID, oldPartnerID, partnerID));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public String getDokumentenArt()
   {
     return dokumentenArt;
@@ -207,9 +186,9 @@ public class CreateCaseIDRequestTypeImpl extends EObjectImpl implements CreateCa
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getKanton()
+  public String getGeschaeftsfall()
   {
-    return kanton;
+    return geschaeftsfall;
   }
 
   /**
@@ -217,12 +196,35 @@ public class CreateCaseIDRequestTypeImpl extends EObjectImpl implements CreateCa
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setKanton(String newKanton)
+  public void setGeschaeftsfall(String newGeschaeftsfall)
   {
-    String oldKanton = kanton;
-    kanton = newKanton;
+    String oldGeschaeftsfall = geschaeftsfall;
+    geschaeftsfall = newGeschaeftsfall;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ComPackage.CREATE_CASE_ID_REQUEST_TYPE__KANTON, oldKanton, kanton));
+      eNotify(new ENotificationImpl(this, Notification.SET, ComPackage.CREATE_CASE_ID_REQUEST_TYPE__GESCHAEFTSFALL, oldGeschaeftsfall, geschaeftsfall));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public BigInteger getAnzahl_der_Dokumente()
+  {
+    return anzahl_der_Dokumente;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setAnzahl_der_Dokumente(BigInteger newAnzahl_der_Dokumente)
+  {
+    BigInteger oldAnzahl_der_Dokumente = anzahl_der_Dokumente;
+    anzahl_der_Dokumente = newAnzahl_der_Dokumente;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, ComPackage.CREATE_CASE_ID_REQUEST_TYPE__ANZAHL_DER_DOKUMENTE, oldAnzahl_der_Dokumente, anzahl_der_Dokumente));
   }
 
   /**
@@ -237,12 +239,12 @@ public class CreateCaseIDRequestTypeImpl extends EObjectImpl implements CreateCa
     {
       case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__AHV_NUMMER:
         return getAHVNummer();
-      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__PARTNER_ID:
-        return getPartnerID();
       case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__DOKUMENTEN_ART:
         return getDokumentenArt();
-      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__KANTON:
-        return getKanton();
+      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__GESCHAEFTSFALL:
+        return getGeschaeftsfall();
+      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__ANZAHL_DER_DOKUMENTE:
+        return getAnzahl_der_Dokumente();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -260,14 +262,14 @@ public class CreateCaseIDRequestTypeImpl extends EObjectImpl implements CreateCa
       case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__AHV_NUMMER:
         setAHVNummer((String)newValue);
         return;
-      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__PARTNER_ID:
-        setPartnerID((String)newValue);
-        return;
       case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__DOKUMENTEN_ART:
         setDokumentenArt((String)newValue);
         return;
-      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__KANTON:
-        setKanton((String)newValue);
+      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__GESCHAEFTSFALL:
+        setGeschaeftsfall((String)newValue);
+        return;
+      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__ANZAHL_DER_DOKUMENTE:
+        setAnzahl_der_Dokumente((BigInteger)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -286,14 +288,14 @@ public class CreateCaseIDRequestTypeImpl extends EObjectImpl implements CreateCa
       case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__AHV_NUMMER:
         setAHVNummer(AHV_NUMMER_EDEFAULT);
         return;
-      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__PARTNER_ID:
-        setPartnerID(PARTNER_ID_EDEFAULT);
-        return;
       case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__DOKUMENTEN_ART:
         setDokumentenArt(DOKUMENTEN_ART_EDEFAULT);
         return;
-      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__KANTON:
-        setKanton(KANTON_EDEFAULT);
+      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__GESCHAEFTSFALL:
+        setGeschaeftsfall(GESCHAEFTSFALL_EDEFAULT);
+        return;
+      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__ANZAHL_DER_DOKUMENTE:
+        setAnzahl_der_Dokumente(ANZAHL_DER_DOKUMENTE_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -311,12 +313,12 @@ public class CreateCaseIDRequestTypeImpl extends EObjectImpl implements CreateCa
     {
       case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__AHV_NUMMER:
         return AHV_NUMMER_EDEFAULT == null ? ahvNummer != null : !AHV_NUMMER_EDEFAULT.equals(ahvNummer);
-      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__PARTNER_ID:
-        return PARTNER_ID_EDEFAULT == null ? partnerID != null : !PARTNER_ID_EDEFAULT.equals(partnerID);
       case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__DOKUMENTEN_ART:
         return DOKUMENTEN_ART_EDEFAULT == null ? dokumentenArt != null : !DOKUMENTEN_ART_EDEFAULT.equals(dokumentenArt);
-      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__KANTON:
-        return KANTON_EDEFAULT == null ? kanton != null : !KANTON_EDEFAULT.equals(kanton);
+      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__GESCHAEFTSFALL:
+        return GESCHAEFTSFALL_EDEFAULT == null ? geschaeftsfall != null : !GESCHAEFTSFALL_EDEFAULT.equals(geschaeftsfall);
+      case ComPackage.CREATE_CASE_ID_REQUEST_TYPE__ANZAHL_DER_DOKUMENTE:
+        return ANZAHL_DER_DOKUMENTE_EDEFAULT == null ? anzahl_der_Dokumente != null : !ANZAHL_DER_DOKUMENTE_EDEFAULT.equals(anzahl_der_Dokumente);
     }
     return super.eIsSet(featureID);
   }
@@ -334,12 +336,12 @@ public class CreateCaseIDRequestTypeImpl extends EObjectImpl implements CreateCa
     StringBuffer result = new StringBuffer(super.toString());
     result.append(" (AHVNummer: ");
     result.append(ahvNummer);
-    result.append(", partnerID: ");
-    result.append(partnerID);
     result.append(", dokumentenArt: ");
     result.append(dokumentenArt);
-    result.append(", kanton: ");
-    result.append(kanton);
+    result.append(", geschaeftsfall: ");
+    result.append(geschaeftsfall);
+    result.append(", anzahl_der_Dokumente: ");
+    result.append(anzahl_der_Dokumente);
     result.append(')');
     return result.toString();
   }
@@ -355,14 +357,6 @@ public class CreateCaseIDRequestTypeImpl extends EObjectImpl implements CreateCa
   /**
    * @generated
    */
-  public void setPartnerID(Object value)
-  {
-    // Call the default set, passing in the converted value
-    setPartnerID(BDSTypeConversions.convertToString(value));
-  }
-  /**
-   * @generated
-   */
   public void setDokumentenArt(Object value)
   {
     // Call the default set, passing in the converted value
@@ -371,9 +365,17 @@ public class CreateCaseIDRequestTypeImpl extends EObjectImpl implements CreateCa
   /**
    * @generated
    */
-  public void setKanton(Object value)
+  public void setGeschaeftsfall(Object value)
   {
     // Call the default set, passing in the converted value
-    setKanton(BDSTypeConversions.convertToString(value));
+    setGeschaeftsfall(BDSTypeConversions.convertToString(value));
+  }
+  /**
+   * @generated
+   */
+  public void setAnzahl_der_Dokumente(Object value)
+  {
+    // Call the default set, passing in the converted value
+    setAnzahl_der_Dokumente(BDSTypeConversions.convertToBigInteger(value));
   }
 } //CreateCaseIDRequestTypeImpl

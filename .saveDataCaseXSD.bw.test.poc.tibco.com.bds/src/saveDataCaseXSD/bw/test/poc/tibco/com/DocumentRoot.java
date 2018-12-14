@@ -22,13 +22,18 @@ import saveDataCaseXSD.bw.test.poc.tibco.com.bdsutil.BDSFeatureMap;
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getCreateCaseIDResponse <em>Create Case ID Response</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getCreateCaseIDResponseFromBPM <em>Create Case ID Response From BPM</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataRequestFromCaseID <em>Get Data Request From Case ID</em>}</li>
- *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataResponseFromCaseID <em>Get Data Response From Case ID</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataWFCaseIDResponse <em>Get Data WF Case ID Response</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataRequest <em>Search Data Request</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataResponses <em>Search Data Responses</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getCreateCaseIDRequestFromBPMTypeBDSInternalSerializationElement <em>Create Case ID Request From BPM Type BDS Internal Serialization Element</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getCreateCaseIDRequestTypeBDSInternalSerializationElement <em>Create Case ID Request Type BDS Internal Serialization Element</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getCreateCaseIDResponseFromBPMTypeBDSInternalSerializationElement <em>Create Case ID Response From BPM Type BDS Internal Serialization Element</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getCreateCaseIDResponseTypeBDSInternalSerializationElement <em>Create Case ID Response Type BDS Internal Serialization Element</em>}</li>
  *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataRequestFromCaseIDTypeBDSInternalSerializationElement <em>Get Data Request From Case ID Type BDS Internal Serialization Element</em>}</li>
- *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataResponseFromCaseIDTypeBDSInternalSerializationElement <em>Get Data Response From Case ID Type BDS Internal Serialization Element</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataWFCaseIDResponseTypeBDSInternalSerializationElement <em>Get Data WF Case ID Response Type BDS Internal Serialization Element</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataRequestTypeBDSInternalSerializationElement <em>Search Data Request Type BDS Internal Serialization Element</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataResponsesTypeBDSInternalSerializationElement <em>Search Data Responses Type BDS Internal Serialization Element</em>}</li>
+ *   <li>{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataResponseTypeBDSInternalSerializationElement <em>Search Data Response Type BDS Internal Serialization Element</em>}</li>
  * </ul>
  * </p>
  *
@@ -227,31 +232,85 @@ public interface DocumentRoot extends EObject
   void setGetDataRequestFromCaseID(GetDataRequestFromCaseIDType value);
 
   /**
-   * Returns the value of the '<em><b>Get Data Response From Case ID</b></em>' containment reference.
+   * Returns the value of the '<em><b>Get Data WF Case ID Response</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Get Data Response From Case ID</em>' containment reference isn't clear,
+   * If the meaning of the '<em>Get Data WF Case ID Response</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Get Data Response From Case ID</em>' containment reference.
-   * @see #setGetDataResponseFromCaseID(GetDataResponseFromCaseIDType)
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.ComPackage#getDocumentRoot_GetDataResponseFromCaseID()
+   * @return the value of the '<em>Get Data WF Case ID Response</em>' containment reference.
+   * @see #setGetDataWFCaseIDResponse(GetDataWFCaseIDResponseType)
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.ComPackage#getDocumentRoot_GetDataWFCaseIDResponse()
    * @model containment="true" upper="-2" transient="true" volatile="true" derived="true"
-   *        extendedMetaData="kind='element' name='GetDataResponseFromCaseID' namespace='##targetNamespace'"
+   *        extendedMetaData="kind='element' name='GetDataWFCaseIDResponse' namespace='##targetNamespace'"
    * @generated
    */
-  GetDataResponseFromCaseIDType getGetDataResponseFromCaseID();
+  GetDataWFCaseIDResponseType getGetDataWFCaseIDResponse();
 
   /**
-   * Sets the value of the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataResponseFromCaseID <em>Get Data Response From Case ID</em>}' containment reference.
+   * Sets the value of the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataWFCaseIDResponse <em>Get Data WF Case ID Response</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Get Data Response From Case ID</em>' containment reference.
-   * @see #getGetDataResponseFromCaseID()
+   * @param value the new value of the '<em>Get Data WF Case ID Response</em>' containment reference.
+   * @see #getGetDataWFCaseIDResponse()
    * @generated
    */
-  void setGetDataResponseFromCaseID(GetDataResponseFromCaseIDType value);
+  void setGetDataWFCaseIDResponse(GetDataWFCaseIDResponseType value);
+
+  /**
+   * Returns the value of the '<em><b>Search Data Request</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Search Data Request</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Search Data Request</em>' containment reference.
+   * @see #setSearchDataRequest(SearchDataRequestType)
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.ComPackage#getDocumentRoot_SearchDataRequest()
+   * @model containment="true" upper="-2" transient="true" volatile="true" derived="true"
+   *        extendedMetaData="kind='element' name='SearchDataRequest' namespace='##targetNamespace'"
+   * @generated
+   */
+  SearchDataRequestType getSearchDataRequest();
+
+  /**
+   * Sets the value of the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataRequest <em>Search Data Request</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Search Data Request</em>' containment reference.
+   * @see #getSearchDataRequest()
+   * @generated
+   */
+  void setSearchDataRequest(SearchDataRequestType value);
+
+  /**
+   * Returns the value of the '<em><b>Search Data Responses</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Search Data Responses</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Search Data Responses</em>' containment reference.
+   * @see #setSearchDataResponses(SearchDataResponsesType)
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.ComPackage#getDocumentRoot_SearchDataResponses()
+   * @model containment="true" upper="-2" transient="true" volatile="true" derived="true"
+   *        extendedMetaData="kind='element' name='SearchDataResponses' namespace='##targetNamespace'"
+   * @generated
+   */
+  SearchDataResponsesType getSearchDataResponses();
+
+  /**
+   * Sets the value of the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataResponses <em>Search Data Responses</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Search Data Responses</em>' containment reference.
+   * @see #getSearchDataResponses()
+   * @generated
+   */
+  void setSearchDataResponses(SearchDataResponsesType value);
 
   /**
    * Returns the value of the '<em><b>Create Case ID Request From BPM Type BDS Internal Serialization Element</b></em>' containment reference.
@@ -389,30 +448,111 @@ public interface DocumentRoot extends EObject
   void setGetDataRequestFromCaseIDTypeBDSInternalSerializationElement(GetDataRequestFromCaseIDType value);
 
   /**
-   * Returns the value of the '<em><b>Get Data Response From Case ID Type BDS Internal Serialization Element</b></em>' containment reference.
+   * Returns the value of the '<em><b>Get Data WF Case ID Response Type BDS Internal Serialization Element</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Get Data Response From Case ID Type BDS Internal Serialization Element</em>' containment reference isn't clear,
+   * If the meaning of the '<em>Get Data WF Case ID Response Type BDS Internal Serialization Element</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Get Data Response From Case ID Type BDS Internal Serialization Element</em>' containment reference.
-   * @see #setGetDataResponseFromCaseIDTypeBDSInternalSerializationElement(GetDataResponseFromCaseIDType)
-   * @see saveDataCaseXSD.bw.test.poc.tibco.com.ComPackage#getDocumentRoot_GetDataResponseFromCaseIDTypeBDSInternalSerializationElement()
+   * @return the value of the '<em>Get Data WF Case ID Response Type BDS Internal Serialization Element</em>' containment reference.
+   * @see #setGetDataWFCaseIDResponseTypeBDSInternalSerializationElement(GetDataWFCaseIDResponseType)
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.ComPackage#getDocumentRoot_GetDataWFCaseIDResponseTypeBDSInternalSerializationElement()
    * @model containment="true" upper="-2" transient="true" volatile="true" derived="true"
-   *        extendedMetaData="kind='element' name='GetDataResponseFromCaseID_._type' namespace='##targetNamespace'"
+   *        extendedMetaData="kind='element' name='GetDataWFCaseIDResponse_._type' namespace='##targetNamespace'"
    * @generated
    */
-  GetDataResponseFromCaseIDType getGetDataResponseFromCaseIDTypeBDSInternalSerializationElement();
+  GetDataWFCaseIDResponseType getGetDataWFCaseIDResponseTypeBDSInternalSerializationElement();
 
   /**
-   * Sets the value of the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataResponseFromCaseIDTypeBDSInternalSerializationElement <em>Get Data Response From Case ID Type BDS Internal Serialization Element</em>}' containment reference.
+   * Sets the value of the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getGetDataWFCaseIDResponseTypeBDSInternalSerializationElement <em>Get Data WF Case ID Response Type BDS Internal Serialization Element</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Get Data Response From Case ID Type BDS Internal Serialization Element</em>' containment reference.
-   * @see #getGetDataResponseFromCaseIDTypeBDSInternalSerializationElement()
+   * @param value the new value of the '<em>Get Data WF Case ID Response Type BDS Internal Serialization Element</em>' containment reference.
+   * @see #getGetDataWFCaseIDResponseTypeBDSInternalSerializationElement()
    * @generated
    */
-  void setGetDataResponseFromCaseIDTypeBDSInternalSerializationElement(GetDataResponseFromCaseIDType value);
+  void setGetDataWFCaseIDResponseTypeBDSInternalSerializationElement(GetDataWFCaseIDResponseType value);
+
+  /**
+   * Returns the value of the '<em><b>Search Data Request Type BDS Internal Serialization Element</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Search Data Request Type BDS Internal Serialization Element</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Search Data Request Type BDS Internal Serialization Element</em>' containment reference.
+   * @see #setSearchDataRequestTypeBDSInternalSerializationElement(SearchDataRequestType)
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.ComPackage#getDocumentRoot_SearchDataRequestTypeBDSInternalSerializationElement()
+   * @model containment="true" upper="-2" transient="true" volatile="true" derived="true"
+   *        extendedMetaData="kind='element' name='SearchDataRequest_._type' namespace='##targetNamespace'"
+   * @generated
+   */
+  SearchDataRequestType getSearchDataRequestTypeBDSInternalSerializationElement();
+
+  /**
+   * Sets the value of the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataRequestTypeBDSInternalSerializationElement <em>Search Data Request Type BDS Internal Serialization Element</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Search Data Request Type BDS Internal Serialization Element</em>' containment reference.
+   * @see #getSearchDataRequestTypeBDSInternalSerializationElement()
+   * @generated
+   */
+  void setSearchDataRequestTypeBDSInternalSerializationElement(SearchDataRequestType value);
+
+  /**
+   * Returns the value of the '<em><b>Search Data Responses Type BDS Internal Serialization Element</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Search Data Responses Type BDS Internal Serialization Element</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Search Data Responses Type BDS Internal Serialization Element</em>' containment reference.
+   * @see #setSearchDataResponsesTypeBDSInternalSerializationElement(SearchDataResponsesType)
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.ComPackage#getDocumentRoot_SearchDataResponsesTypeBDSInternalSerializationElement()
+   * @model containment="true" upper="-2" transient="true" volatile="true" derived="true"
+   *        extendedMetaData="kind='element' name='SearchDataResponses_._type' namespace='##targetNamespace'"
+   * @generated
+   */
+  SearchDataResponsesType getSearchDataResponsesTypeBDSInternalSerializationElement();
+
+  /**
+   * Sets the value of the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataResponsesTypeBDSInternalSerializationElement <em>Search Data Responses Type BDS Internal Serialization Element</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Search Data Responses Type BDS Internal Serialization Element</em>' containment reference.
+   * @see #getSearchDataResponsesTypeBDSInternalSerializationElement()
+   * @generated
+   */
+  void setSearchDataResponsesTypeBDSInternalSerializationElement(SearchDataResponsesType value);
+
+  /**
+   * Returns the value of the '<em><b>Search Data Response Type BDS Internal Serialization Element</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Search Data Response Type BDS Internal Serialization Element</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Search Data Response Type BDS Internal Serialization Element</em>' containment reference.
+   * @see #setSearchDataResponseTypeBDSInternalSerializationElement(SearchDataResponseType)
+   * @see saveDataCaseXSD.bw.test.poc.tibco.com.ComPackage#getDocumentRoot_SearchDataResponseTypeBDSInternalSerializationElement()
+   * @model containment="true" upper="-2" transient="true" volatile="true" derived="true"
+   *        extendedMetaData="kind='element' name='SearchDataResponse_._type' namespace='##targetNamespace'"
+   * @generated
+   */
+  SearchDataResponseType getSearchDataResponseTypeBDSInternalSerializationElement();
+
+  /**
+   * Sets the value of the '{@link saveDataCaseXSD.bw.test.poc.tibco.com.DocumentRoot#getSearchDataResponseTypeBDSInternalSerializationElement <em>Search Data Response Type BDS Internal Serialization Element</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Search Data Response Type BDS Internal Serialization Element</em>' containment reference.
+   * @see #getSearchDataResponseTypeBDSInternalSerializationElement()
+   * @generated
+   */
+  void setSearchDataResponseTypeBDSInternalSerializationElement(SearchDataResponseType value);
 
 } // DocumentRoot

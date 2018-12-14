@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<de:model xmlns:de="http://tibco.com/bpm/directory-model/2.0" name="OrganizationModel" version="1.0.0.qualifier">
+  <de:meta-model>
+    <de:location-type id="_3BUj4_ovEeiF0cp9x5MzdA" label="Standard Location Type" name="StandardLocationType">
+      <de:attribute id="_3BUj5PovEeiF0cp9x5MzdA" label="Country" name="Country" data-type="String"/>
+      <de:attribute id="_3BUj5fovEeiF0cp9x5MzdA" label="State" name="State" data-type="String"/>
+      <de:attribute id="_3BUj5vovEeiF0cp9x5MzdA" label="City" name="City" data-type="String"/>
+      <de:attribute id="_3BUj5_ovEeiF0cp9x5MzdA" label="Street" name="Street" data-type="String"/>
+      <de:attribute id="_3BUj6PovEeiF0cp9x5MzdA" label="Postcode" name="Postcode" data-type="String"/>
+    </de:location-type>
+    <de:organization-type id="_3BUj6fovEeiF0cp9x5MzdA" label="Public Company" name="PublicCompany">
+      <de:org-unit-feature id="_3BUj6vovEeiF0cp9x5MzdA" label="Head Department" name="HeadDepartment" definition="_3BUj6_ovEeiF0cp9x5MzdA" lower-bound="0" upper-bound="1"/>
+    </de:organization-type>
+    <de:org-unit-type id="_3BUj6_ovEeiF0cp9x5MzdA" label="Department Type" name="DepartmentType">
+      <de:org-unit-feature id="_3BUj7PovEeiF0cp9x5MzdA" label="Department" name="Department" definition="_3BUj6_ovEeiF0cp9x5MzdA" lower-bound="0" upper-bound="-1"/>
+      <de:org-unit-feature id="_3BUj7fovEeiF0cp9x5MzdA" label="Business Unit" name="BusinessUnit" definition="_3BUj6_ovEeiF0cp9x5MzdA" lower-bound="0" upper-bound="-1"/>
+      <de:org-unit-feature id="_3BUj7vovEeiF0cp9x5MzdA" label="Team" name="Team" definition="_3BUj6_ovEeiF0cp9x5MzdA" lower-bound="0" upper-bound="-1"/>
+      <de:position-feature id="_3BUj7_ovEeiF0cp9x5MzdA" label="Manager" name="Manager" definition="_3BUj8fovEeiF0cp9x5MzdA" lower-bound="0" upper-bound="1"/>
+      <de:position-feature id="_3BUj8PovEeiF0cp9x5MzdA" label="Member" name="Member" definition="_3BUj8fovEeiF0cp9x5MzdA" lower-bound="0" upper-bound="-1"/>
+    </de:org-unit-type>
+    <de:position-type id="_3BUj8fovEeiF0cp9x5MzdA" label="Standard Position Type" name="StandardPositionType">
+      <de:attribute id="_3BUj8vovEeiF0cp9x5MzdA" label="Contract Type" name="ContractType" data-type="Enum">
+        <de:enum>temporary</de:enum>
+        <de:enum>permanent</de:enum>
+      </de:attribute>
+    </de:position-type>
+  </de:meta-model>
+  <de:organization id="_3BUj4fovEeiF0cp9x5MzdA" label="SVA_FAK_001" name="SVA_FAK_001" alloc-method="NEXT">
+    <de:org-unit id="_XKLEYPxZEeiF0cp9x5MzdA" label="SVA" name="SVA" alloc-method="NEXT">
+      <de:org-unit id="_ZMPp0PxZEeiF0cp9x5MzdA" label="FAK_001" name="FAK_001" alloc-method="NEXT">
+        <de:position id="_cQlkkPxZEeiF0cp9x5MzdA" label="Bearbeiter" name="Bearbeiter" alloc-method="ANY" ideal-number="1"/>
+      </de:org-unit>
+      <de:org-unit id="_eEpG0P1DEeiPopDWv-BhcA" label="WartePostKorb" name="WartePostKorb" alloc-method="NEXT">
+        <de:position id="_iydkUP5VEeiFLcX4iMwVPw" label="WartePostBearbeiter" name="WartePostBearbeiter" alloc-method="ANY" ideal-number="1"/>
+      </de:org-unit>
+    </de:org-unit>
+  </de:organization>
+</de:model>
