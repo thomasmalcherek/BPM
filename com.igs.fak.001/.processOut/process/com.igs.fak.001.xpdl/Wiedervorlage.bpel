@@ -14,8 +14,8 @@
         </task>
         <task name="UserTask">
             <startingVariables>
-                <variable>Task</variable>
                 <variable>Wiedervorlage</variable>
+                <variable>Task</variable>
                 <variable>Wiedervorlage_Datum</variable>
             </startingVariables>
         </task>
@@ -42,7 +42,7 @@ wenn Message kommt -&gt; sofrt aus der Warteschleife</bpws:documentation>
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_jYN2EP-wEeitVo1lH3Co-Q">
+    <bpws:flow name="_BX_flow_oKKN0AHvEemIk7NTiqhKoQ">
         <bpws:links>
             <bpws:link name="UserTask to _BX_scope_WiedervorlagePrfen" tibex:xpdlId="_VmvCgP5YEeiFLcX4iMwVPw"/>
             <bpws:link name="StartEvent to UserTask" tibex:xpdlId="_WxRGgP5ZEeiFLcX4iMwVPw"/>
@@ -58,8 +58,8 @@ wenn Message kommt -&gt; sofrt aus der Warteschleife</bpws:documentation>
                     <bpws:source linkName="StartEvent to UserTask"/>
                 </bpws:sources>
                 <tibex:parameters>
-                    <parameterDescription mandatory="yes" mode="InOut" name="Task"/>
                     <parameterDescription mandatory="yes" mode="In" name="Wiedervorlage"/>
+                    <parameterDescription mandatory="yes" mode="InOut" name="Task"/>
                     <parameterDescription mandatory="yes" mode="In" name="Wiedervorlage_Datum"/>
                 </tibex:parameters>
                 <tibex:eventSource>

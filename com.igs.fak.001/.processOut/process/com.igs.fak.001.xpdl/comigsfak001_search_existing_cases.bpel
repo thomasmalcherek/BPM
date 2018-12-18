@@ -42,7 +42,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_jV8lMP-wEeitVo1lH3Co-Q">
+    <bpws:flow name="_BX_flow_oEgRwAHvEemIk7NTiqhKoQ">
         <bpws:links>
             <bpws:link name="ServiceTask2 to UserTask" tibex:xpdlId="_JhVf0_99EeitVo1lH3Co-Q"/>
             <bpws:link name="UserTask to EndEvent" tibex:xpdlId="_LkruQf-WEeitVo1lH3Co-Q"/>
@@ -153,7 +153,7 @@ MESSAGE_GetDataPInputParameters.geschaeftsfall = fromReturn;]]></bpws:to>
                         <bpws:to variable="MESSAGE_GetDataOutputParameters"/>
                     </bpws:copy>
                     <bpws:copy ignoreMissingFromData="yes">
-                        <bpws:from expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[for(var index=0; index<MESSAGE_GetDataOutputParameters.searchDataResponse.size(); index++) {	// Get the first/next item in the response		var out_parameter_geschaeftsvorfall =com_example_comigsfak001_Factory.createGeschaeftsvorfall();		out_parameter_geschaeftsvorfall.AHVNummer=MESSAGE_GetDataOutputParameters.searchDataResponse.get(index).AHVNummer.toString();		out_parameter_geschaeftsvorfall.WFCaseID=MESSAGE_GetDataOutputParameters.searchDataResponse.get(index).caseID.toString();		out_parameter_geschaeftsvorfall.dokumentenArt=MESSAGE_GetDataOutputParameters.searchDataResponse.get(index).dokumentenArt.toString();		out_parameter_geschaeftsvorfall.geschaeftsfall=MESSAGE_GetDataOutputParameters.searchDataResponse.get(index).geschaeftsfall.toString();				}]]></bpws:from>
+                        <bpws:from expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[for(var index=0; index<MESSAGE_GetDataOutputParameters.searchDataResponse.size(); index++) {	// Get the first/next item in the response		var out_parameter_geschaeftsvorfall =com_example_comigsfak001_Factory.createGeschaeftsvorfall();		out_parameter_geschaeftsvorfall.AHVNummer=MESSAGE_GetDataOutputParameters.searchDataResponse.get(index).AHVNummer;		out_parameter_geschaeftsvorfall.WFCaseID=MESSAGE_GetDataOutputParameters.searchDataResponse.get(index).caseID;		out_parameter_geschaeftsvorfall.dokumentenArt=MESSAGE_GetDataOutputParameters.searchDataResponse.get(index).dokumentenArt;		out_parameter_geschaeftsvorfall.geschaeftsfall=MESSAGE_GetDataOutputParameters.searchDataResponse.get(index).geschaeftsfall;		Log.write("AHVNummer");		Log.write(MESSAGE_GetDataOutputParameters.searchDataResponse.get(index).AHVNummer);		Log.write("caseID");		Log.write(MESSAGE_GetDataOutputParameters.searchDataResponse.get(index).caseID);		Log.write("dokumentenArt");		Log.write(MESSAGE_GetDataOutputParameters.searchDataResponse.get(index).dokumentenArt);		Log.write("geschaeftsfall");		Log.write(MESSAGE_GetDataOutputParameters.searchDataResponse.get(index).geschaeftsfall);						}]]></bpws:from>
                         <bpws:to variable="OUT_ParGeschaeftsvorfall"/>
                     </bpws:copy>
                 </bpws:assign>

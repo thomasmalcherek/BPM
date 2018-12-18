@@ -5157,3 +5157,39 @@ java.lang.Thread.run(Unknown Source)
 14 Dez 2018 17:12:26,034 INFO  (AsyncActionExecutor.java:117)     - .
 14 Dez 2018 17:12:28,532 INFO  (UserTaskProgressIndicator.java:58)     - Application Deploy with Start finished successfully
 14 Dez 2018 17:12:28,534 INFO  (Processor.java:743)     - Action finished at 14.12.18 17:12 in 7,711 seconds
+17 Dez 2018 12:36:23,708 INFO  (AMXAdminTask.java:330)     - Connecting to AMX Admin server at 'http://ssva90322:8120' as user 'admin'.
+17 Dez 2018 12:36:24,629 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+17 Dez 2018 12:36:25,648 INFO  (AddAction.java:54)     - Uploading DAA...
+17 Dez 2018 12:36:25,656 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+17 Dez 2018 12:36:27,499 INFO  (AddAction.java:142)     - Successfully added Application Template 'com.igs.fak.001' (version: '1.0.0.20181217123353283') to the Administrator Staging Area
+17 Dez 2018 12:36:27,501 INFO  (AddAction.java:161)     - Successfully added Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181217123353283') to the Administrator Staging Area
+17 Dez 2018 12:36:27,506 INFO  (Processor.java:675)     - Action finished at 17.12.18 12:36 in 1,857 seconds
+17 Dez 2018 12:36:27,528 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+17 Dez 2018 12:36:28,271 INFO  (UpgradeAction.java:31)     - Upgrading application...
+17 Dez 2018 12:36:28,272 INFO  (AddAction.java:54)     - Uploading DAA...
+17 Dez 2018 12:36:28,273 INFO  (AddAction.java:56)     - DAA location: C:\Users\admin\Documents\GitHub\BPM\com.igs.fak.001\.bpm\com.igs.fak.001.daa
+17 Dez 2018 12:36:29,820 WARN  (AddAction.java:151)     - Application Template 'com.igs.fak.001' (version: '1.0.0.20181217123353283') was ignored and not added to the Administrator Staging Area, because it already exists.
+17 Dez 2018 12:36:29,822 WARN  (AddAction.java:198)     - Feature 'com.igs.fak.001.model.bds' (version: '1.0.0.20181217123353283') was ignored and not added to the Administrator Staging Area, because it already exists.
+17 Dez 2018 12:36:36,856 INFO  (LoggingUtil.java:119)     - Successfully upgraded Application 'com.igs.fak.001': Successfully upgraded application 'com.igs.fak.001' to application template version 1.0.0.20181217123353283
+17 Dez 2018 12:36:36,857 INFO  (LoggingUtil.java:182)     - 17.12.18 12:36 - 	  detail = Component 'OrganizationModel' upgraded from version '1.0.0.20181214155720262' to version: '1.0.0.20181217123353283'.
+
+17 Dez 2018 12:36:36,857 INFO  (LoggingUtil.java:182)     - 17.12.18 12:36 - 	  detail = Component 'comigsfak001ProcessFlow' upgraded from version '1.0.0.20181214155720262' to version: '1.0.0.20181217123353283'.
+
+17 Dez 2018 12:36:36,858 INFO  (LoggingUtil.java:182)     - 17.12.18 12:36 - 	  detail = Component 'BRM' upgraded from version '1.0.0.20181214155720262' to version: '1.0.0.20181217123353283'.
+
+17 Dez 2018 12:36:36,858 INFO  (LoggingUtil.java:182)     - 17.12.18 12:36 - 	  detail = Component 'comigsfak001PageFlow' upgraded from version '1.0.0.20181214155720262' to version: '1.0.0.20181217123353283'.
+
+17 Dez 2018 12:36:36,858 INFO  (LoggingUtil.java:182)     - 17.12.18 12:36 - 	  detail = Component 'WorkPresentation' upgraded from version '1.0.0.20181214155720262' to version: '1.0.0.20181217123353283'.
+
+17 Dez 2018 12:36:36,858 INFO  (LoggingUtil.java:182)     - 17.12.18 12:36 - 	  detail = TIBCO-AMX-ADMIN-012416: Binding 'SOAPReference_Binding1' on the application reference 'saveDataCaseSOAP_Consumer1' updated.
+
+17 Dez 2018 12:36:36,860 INFO  (Processor.java:675)     - Action finished at 17.12.18 12:36 in 8,59 seconds
+17 Dez 2018 12:36:36,886 INFO  (AMXAdminTask.java:289)     - Processing 0 objects
+17 Dez 2018 12:36:38,245 INFO  (AMXAdminTask.java:289)     - Processing 3 objects
+17 Dez 2018 12:36:39,183 INFO  (EditAction.java:27)     - Editing properties..
+17 Dez 2018 12:36:39,361 INFO  (Processor.java:751)     - Action finished at 17.12.18 12:36 in 0,178 seconds
+17 Dez 2018 12:36:39,368 INFO  (AMXAdminTask.java:289)     - Processing 1 objects
+17 Dez 2018 12:36:39,390 INFO  (DeployAction.java:38)     - Deploying application...
+17 Dez 2018 12:36:42,155 ERROR (LoggingUtil.java:132)     - 17.12.18 12:36 - Failed to deploy Application 'com.igs.fak.001': TIBCO-AMX-ADMIN-012016: Deployment failed for application 'com.igs.fak.001' at 12/17/18 12:36 PM .
+17 Dez 2018 12:36:42,156 ERROR (LoggingUtil.java:180)     - 17.12.18 12:36 - 	  detail = TIBCO-AMX-ADMIN-012126: Cannot deploy because there are upgraded components that are not running. Start the application and then try deploying again.
+

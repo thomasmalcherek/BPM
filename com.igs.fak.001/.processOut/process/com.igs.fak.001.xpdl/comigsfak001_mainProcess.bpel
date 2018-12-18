@@ -6,27 +6,31 @@
     xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <tibex:VariableDescriptor type="PersistentBatching">
+        <task name="_BX_SPInput_SucheexistierendeFlle">
+            <startingVariables>
+                <variable>IN_ParGeschaeftsvorfall</variable>
+            </startingVariables>
+        </task>
         <task name="PrfeFlleaufbereinstimmung">
             <startingVariables>
-                <variable>ParGeschaeftsvorfall_FOUND</variable>
                 <variable>sp_klammern</variable>
             </startingVariables>
         </task>
         <task name="Unterlagenprfen">
             <startingVariables>
                 <variable>wp_ik_va_erfassen_interner_auftraggeber</variable>
-                <variable>wp_el_pruefen</variable>
-                <variable>IN_ParGeschaeftsvorfall</variable>
-                <variable>wp_pendenzen_erstellen_partner</variable>
-                <variable>wp_pv_daten_administrieren</variable>
-                <variable>wp_fak_dokumente_erstellen</variable>
-                <variable>wp_el_pruefen_starten</variable>
-                <variable>wp_fak_bezueger_aktivieren</variable>
-                <variable>sp_brief_schreiben</variable>
                 <variable>wp_case_closed</variable>
+                <variable>wp_pendenzen_erstellen_partner</variable>
+                <variable>wp_fak_dokumente_erstellen</variable>
+                <variable>IN_ParGeschaeftsvorfall</variable>
+                <variable>wp_fak_bezueger_aktivieren</variable>
                 <variable>sp_wiedervorlagen</variable>
-                <variable>sp_weiterleiten_doku_steuerung</variable>
+                <variable>wp_pv_daten_administrieren</variable>
+                <variable>wp_el_pruefen</variable>
+                <variable>wp_el_pruefen_starten</variable>
                 <variable>wp_fak_erfassung_bezueger_pruefen</variable>
+                <variable>sp_brief_schreiben</variable>
+                <variable>sp_weiterleiten_doku_steuerung</variable>
             </startingVariables>
         </task>
         <task name="GFanDokumentensteuerung">
@@ -37,12 +41,12 @@
         <task name="_BX_SPInput_comigsfak001_automatische_steps">
             <startingVariables>
                 <variable>wp_ik_va_erfassen_interner_auftraggeber</variable>
-                <variable>IN_ParGeschaeftsvorfall</variable>
                 <variable>wp_pendenzen_erstellen_partner</variable>
-                <variable>wp_pv_daten_administrieren</variable>
-                <variable>wp_fak_bezueger_aktivieren</variable>
-                <variable>wp_el_pruefen_starten</variable>
                 <variable>wp_fak_dokumente_erstellen</variable>
+                <variable>IN_ParGeschaeftsvorfall</variable>
+                <variable>wp_fak_bezueger_aktivieren</variable>
+                <variable>wp_pv_daten_administrieren</variable>
+                <variable>wp_el_pruefen_starten</variable>
                 <variable>wp_fak_erfassung_bezueger_pruefen</variable>
             </startingVariables>
         </task>
@@ -114,7 +118,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_jT-2UP-wEeitVo1lH3Co-Q" tibex:sequenceFlow="yes">
+    <bpws:flow name="_BX_flow_n9fq0AHvEemIk7NTiqhKoQ" tibex:sequenceFlow="yes">
         <bpws:links>
             <bpws:link
                 name="_Bj9Tkf1OEeiPopDWv-BhcA to _IRz0zPowEeiF0cp9x5MzdA" tibex:xpdlId="_CrHkQP7gEeia4N05POO-ig"/>
@@ -511,13 +515,13 @@ ParGeschaeftsvorfall_FOUND = ScriptUtil.copy(_BX_OUT_ParGeschaeftsvorfall);
             </bpws:sources>
             <bpws:variables>
                 <bpws:variable name="_BX_IN_ParGeschaeftsvorfall" tibex:class="com.example.comigsfak001.Geschaeftsvorfall"/>
-                <bpws:variable name="_BX_wp_el_pruefen_starten" type="xsd:boolean"/>
                 <bpws:variable
                     name="_BX_wp_fak_erfassung_bezueger_pruefen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_wp_el_pruefen_starten" type="xsd:boolean"/>
                 <bpws:variable name="_BX_wp_case_closed" type="xsd:boolean"/>
                 <bpws:variable name="_BX_wp_fak_bezueger_aktivieren" type="xsd:boolean"/>
-                <bpws:variable name="_BX_wp_pv_daten_administrieren" type="xsd:boolean"/>
                 <bpws:variable name="_BX_wp_fak_dokumente_erstellen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_wp_pv_daten_administrieren" type="xsd:boolean"/>
                 <bpws:variable
                     name="_BX_wp_ik_va_erfassen_interner_auftraggeber" type="xsd:boolean"/>
                 <bpws:variable name="_BX_wp_el_pruefen" type="xsd:boolean"/>
@@ -564,17 +568,17 @@ _BX_wp_pv_daten_administrieren = wp_pv_daten_administrieren;
                                 <tibex:mapping
                                     field="_BX_IN_ParGeschaeftsvorfall" formalParameter="IN_ParGeschaeftsvorfall"/>
                                 <tibex:mapping
-                                    field="_BX_wp_el_pruefen_starten" formalParameter="wp_el_pruefen_starten"/>
-                                <tibex:mapping
                                     field="_BX_wp_fak_erfassung_bezueger_pruefen" formalParameter="wp_fak_erfassung_bezueger_pruefen"/>
+                                <tibex:mapping
+                                    field="_BX_wp_el_pruefen_starten" formalParameter="wp_el_pruefen_starten"/>
                                 <tibex:mapping
                                     field="_BX_wp_case_closed" formalParameter="wp_case_closed"/>
                                 <tibex:mapping
                                     field="_BX_wp_fak_bezueger_aktivieren" formalParameter="wp_fak_bezueger_aktivieren"/>
                                 <tibex:mapping
-                                    field="_BX_wp_pv_daten_administrieren" formalParameter="wp_pv_daten_administrieren"/>
-                                <tibex:mapping
                                     field="_BX_wp_fak_dokumente_erstellen" formalParameter="wp_fak_dokumente_erstellen"/>
+                                <tibex:mapping
+                                    field="_BX_wp_pv_daten_administrieren" formalParameter="wp_pv_daten_administrieren"/>
                                 <tibex:mapping
                                     field="_BX_wp_ik_va_erfassen_interner_auftraggeber" formalParameter="wp_ik_va_erfassen_interner_auftraggeber"/>
                                 <tibex:mapping field="_BX_wp_el_pruefen" formalParameter="wp_el_pruefen"/>
