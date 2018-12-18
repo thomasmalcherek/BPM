@@ -8235,3 +8235,44 @@ HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.e
 
 !ENTRY org.eclipse.bpel.validator 1 0 2018-12-18 10:01:50.579
 !MESSAGE Validator Startup 251ms
+
+!ENTRY com.google.gdt.eclipse.platform.shared 2 0 2018-12-18 15:48:50.240
+!MESSAGE org.mortbay.jetty: failed SocketConnector@0.0.0.0:50313: java.net.BindException: Address already in use: JVM_Bind
+
+!ENTRY com.google.gdt.eclipse.platform.shared 2 0 2018-12-18 15:48:50.256
+!MESSAGE org.mortbay.jetty: failed Server@a5f1b39: java.net.BindException: Address already in use: JVM_Bind
+
+!ENTRY com.tibco.xpd.resources 1 0 2018-12-18 15:49:02.684
+!MESSAGE Derby database closed.
+!SESSION 2018-12-18 15:49:35.991 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation
+
+!ENTRY org.eclipse.ui 2 0 2018-12-18 15:50:23.582
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-12-18 15:50:23.582
+!MESSAGE Commands should really have a category: plug-in='com.tibco.xpd.openspacegwtgadget.integration', id='com.tibco.xpd.openspacegwtgadget.integration.openspaceGadgetDevDropDownButtonCmd', categoryId='com.tibco.xpd.openspacegwtgadget.integration.commandCategory'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-12-18 15:50:25.325
+!MESSAGE Both 'com.tibco.amf.sharedresource.model.transport.eclipse' and 'com.tibco.amf.sharedresource.model.transport.eclipse' register a package for 'http://xsd.tns.tibco.com/amf/models/sharedresource/httpconnector'
+
+!ENTRY org.eclipse.ui.workbench 2 0 2018-12-18 15:50:38.668
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-12-18 15:50:38.668
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@2395a0d9),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2395a0d9)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@2395a0d9),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2395a0d9)),sourcePriority=16640)
+
+!ENTRY com.google.gdt.eclipse.platform.shared 2 0 2018-12-18 15:52:27.908
+!MESSAGE org.mortbay.jetty: failed SocketConnector@0.0.0.0:50313: java.net.BindException: Address already in use: JVM_Bind
+
+!ENTRY com.google.gdt.eclipse.platform.shared 2 0 2018-12-18 15:52:27.908
+!MESSAGE org.mortbay.jetty: failed Server@6159c275: java.net.BindException: Address already in use: JVM_Bind
