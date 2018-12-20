@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns="http://igs_bom" xmlns:tns1="http://igs_bom" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://igs_bom">
+  <xsd:annotation>
+    <xsd:documentation>BOMORIGIN::/IGS_BusinessObjects/Business Objects/IGS_BusinessObjects.bom</xsd:documentation>
+  </xsd:annotation>
+  <xsd:simpleType ecore:name="AHV13" id="_9ovN8ODWEeeJv9YCp_uzdA" name="AHV13">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="16"/>
+      <xsd:pattern value="\d{3}.\d{4}.\d{4}.\d{2}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="canton" id="_0uBjcODbEeeJv9YCp_uzdA" name="canton">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="ZH" value="ZH"/>
+      <xsd:enumeration ecore:name="SG" value="SG"/>
+      <xsd:enumeration ecore:name="BE" value="BE"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="title" id="_ssAS8NxAEeiQSvs4k4nBtA" name="title">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="FRAU" value="FRAU"/>
+      <xsd:enumeration ecore:name="HERR" value="HERR"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DossierStatus" id="_FRMOAN0HEei2r6YdhlhYRw" name="DossierStatus">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="INBEARBEITUNG" value="INBEARBEITUNG"/>
+      <xsd:enumeration ecore:name="ERLEDIGT" value="ERLEDIGT"/>
+      <xsd:enumeration ecore:name="ABGELEGT" value="ABGELEGT"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="DokumentArt" id="_z2nJUN0NEei2r6YdhlhYRw" name="DokumentArt">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="ANMELDEFORMULAR" value="ANMELDEFORMULAR"/>
+      <xsd:enumeration ecore:name="AUSWEISKOPIE" value="AUSWEISKOPIE"/>
+      <xsd:enumeration ecore:name="ETC" value="ETC"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType ecore:name="LeistungsArt" id="_1WZhEN0NEei2r6YdhlhYRw" name="LeistungsArt">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration ecore:name="LEISTUNGSART1" value="LEISTUNGSART1"/>
+      <xsd:enumeration ecore:name="LEISTUNGSART2" value="LEISTUNGSART2"/>
+      <xsd:enumeration ecore:name="ETC" value="ETC"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType ecore:name="Versicherte" id="_tItxMODWEeeJv9YCp_uzdA" name="Versicherte">
+    <xsd:complexContent mixed="false">
+      <xsd:extension base="tns1:Partner">
+        <xsd:sequence>
+          <xsd:element ecore:name="VSPartnerID" id="_wnLkgNw_EeiQSvs4k4nBtA" maxOccurs="1"
+              minOccurs="1" name="VSPartnerID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:pattern value="[\i-[:]][\c-[:]]*"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element ecore:name="secureNumber" id="__UFd0Nw_EeiQSvs4k4nBtA" maxOccurs="1"
+              minOccurs="1" name="secureNumber">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element ecore:name="personID" id="_BgUE0NxAEeiQSvs4k4nBtA" maxOccurs="1"
+              minOccurs="1" name="personID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element ecore:name="lastName" id="_OrD_IODaEeeJv9YCp_uzdA" maxOccurs="1"
+              minOccurs="0" name="lastName">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element ecore:name="firstName" id="_K_wyEODaEeeJv9YCp_uzdA" maxOccurs="1"
+              minOccurs="0" name="firstName">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element ecore:name="title" id="_EzK8sNxAEeiQSvs4k4nBtA" maxOccurs="1"
+              minOccurs="0" name="title" type="tns1:title"/>
+          <xsd:element ecore:name="degree" id="_KQ0bsNxBEeiQSvs4k4nBtA" maxOccurs="1"
+              minOccurs="0" name="degree">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element ecore:name="gender" id="_LS5jwNxBEeiQSvs4k4nBtA" maxOccurs="1"
+              minOccurs="0" name="gender">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element ecore:name="birthDate" id="_gC8bgODbEeeJv9YCp_uzdA" maxOccurs="1"
+              minOccurs="0" name="birthDate" type="xsd:date"/>
+          <xsd:element ecore:name="sprache" id="_i_G4INz2Eei2r6YdhlhYRw" maxOccurs="1"
+              minOccurs="0" name="sprache" type="tns1:language_StudioGeneratedTemplate"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="Mitglieder" id="_fVWLIODaEeeJv9YCp_uzdA" name="Mitglieder">
+    <xsd:complexContent mixed="false">
+      <xsd:extension base="tns1:Partner">
+        <xsd:sequence>
+          <xsd:element ecore:name="MGPartnerID" id="_aXNYwNz3Eei2r6YdhlhYRw" maxOccurs="1"
+              minOccurs="1" name="MGPartnerID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:pattern value="[\i-[:]][\c-[:]]*"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element ecore:name="accountNumber" id="_dLRb0Nz3Eei2r6YdhlhYRw" maxOccurs="1"
+              minOccurs="1" name="accountNumber">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element ecore:name="companyID" id="_xUt_4N0DEei2r6YdhlhYRw" maxOccurs="1"
+              minOccurs="1" name="companyID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:pattern value="[\i-[:]][\c-[:]]*"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element ecore:name="name" id="_y-1YUN0DEei2r6YdhlhYRw" maxOccurs="1"
+              minOccurs="0" name="name">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element ecore:name="additionalName" id="_3MJtUN0DEei2r6YdhlhYRw" maxOccurs="1"
+              minOccurs="0" name="additionalName">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element ecore:name="foundingDate" id="_5MM5gN0DEei2r6YdhlhYRw" maxOccurs="1"
+              minOccurs="0" name="foundingDate">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element ecore:name="anmeldenummer" id="_kHiUoARaEemE6uJwIK6Emw" maxOccurs="1"
+              minOccurs="0" name="anmeldenummer">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="address" id="_kqfOYODbEeeJv9YCp_uzdA" name="address">
+    <xsd:sequence>
+      <xsd:element ecore:name="street" id="_ljM_EODbEeeJv9YCp_uzdA" maxOccurs="1"
+          minOccurs="0" name="street">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="postal" id="_t-uZ4ODbEeeJv9YCp_uzdA" maxOccurs="1"
+          minOccurs="0" name="postal">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="city" id="_wCav8ODbEeeJv9YCp_uzdA" maxOccurs="1" minOccurs="0"
+          name="city">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="canton" id="_y2FKYODbEeeJv9YCp_uzdA" maxOccurs="1"
+          minOccurs="0" name="canton" type="tns1:canton"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="Geschftsfall" id="_D9UNoNuOEeigBNOMWQRbjA" name="Geschftsfall">
+    <xsd:sequence>
+      <xsd:element ecore:name="PKID" id="_LN8D0N0IEei2r6YdhlhYRw" maxOccurs="1" minOccurs="1"
+          name="PKID">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[\i-[:]][\c-[:]]*"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="processNumber" id="_XBE6sN0IEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="1" name="processNumber" type="xsd:int"/>
+      <xsd:element ecore:name="urgent" id="_NFj3UN0JEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="urgent" type="xsd:boolean"/>
+      <xsd:element ecore:name="processUser" id="_OSAcUN0JEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="processUser">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="workflowDate" id="_SJC_UN0JEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="workflowDate" type="xsd:dateTime"/>
+      <xsd:element ecore:name="messagePK" id="_VgMhUN0JEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="messagePK">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="senderName" id="_Y5RV8N0JEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="senderName">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="ownerName" id="_bpUbsN0JEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="ownerName">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="workflowState" id="_ucbVYN0JEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="workflowState">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="handlingReason" id="_yCQzoN0JEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="handlingReason">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="feedback" id="_zzA_kN0JEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="feedback">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="typNummer" id="_yG18MN0KEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="1" name="typNummer" type="xsd:int"/>
+      <xsd:element ecore:name="typBezeichnung" id="_7UdiUN0KEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="typBezeichnung">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="GeschftsfallDossier" id="_T87E8NuOEeigBNOMWQRbjA" name="GeschftsfallDossier">
+    <xsd:sequence>
+      <xsd:element ecore:name="GFDossierID" id="_sSRkQN0EEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="1" name="GFDossierID">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[\i-[:]][\c-[:]]*"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="dossierState" id="_wEGQEN0EEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="1" name="dossierState" type="tns1:DossierStatus"/>
+      <xsd:element ecore:name="created" id="_H19GQN0GEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="created" type="xsd:dateTime"/>
+      <xsd:element ecore:name="createdBy" id="_IaO4AN0GEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="createdBy">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="completed" id="_MVsA8N0GEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="completed" type="xsd:dateTime"/>
+      <xsd:element ecore:name="completedBy" id="_M7F0EN0GEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="completedBy">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="filed" id="_SWzO0N0GEei2r6YdhlhYRw" maxOccurs="1" minOccurs="0"
+          name="filed" type="xsd:dateTime"/>
+      <xsd:element ecore:name="filedBy" id="_Tpgz4N0GEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="filedBy">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="notes" id="_YdQ2wN0GEei2r6YdhlhYRw" maxOccurs="1" minOccurs="0"
+          name="notes">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="Dokument" id="_ctrI4NuOEeigBNOMWQRbjA" name="Dokument">
+    <xsd:sequence>
+      <xsd:element ecore:name="dokumentID" id="_4M8s4N0MEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="1" name="dokumentID">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[\i-[:]][\c-[:]]*"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="documentNumber" id="_6J-aQN0MEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="1" name="documentNumber" type="xsd:int"/>
+      <xsd:element ecore:name="documentType" id="_7LF5AN0MEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="1" name="documentType" type="tns1:DokumentArt"/>
+      <xsd:element ecore:name="documentSecurity" id="_HOc9MN0NEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="documentSecurity" type="xsd:int"/>
+      <xsd:element ecore:name="documentDateOfReceipt" id="_IbtagN0NEei2r6YdhlhYRw"
+          maxOccurs="1" minOccurs="0" name="documentDateOfReceipt" type="xsd:dateTime"/>
+      <xsd:element ecore:name="documentScanDate" id="_Jhv1gN0NEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="documentScanDate" type="xsd:dateTime"/>
+      <xsd:element ecore:name="stackName" id="_Kk8X4N0NEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="stackName">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="effortType" id="_MAJxoN0NEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="effortType" type="tns1:LeistungsArt"/>
+      <xsd:element ecore:name="keyword" id="_NI2fEN0NEei2r6YdhlhYRw" maxOccurs="unbounded"
+          minOccurs="0" name="keyword">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="kurztext" id="_N_w48N0NEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="kurztext">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="kommentar" id="_O7m2IN0NEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="kommentar">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="anmeldenummer" id="_PvXOUN0NEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="anmeldenummer">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="formularempfnger" id="_Q0XHgN0NEei2r6YdhlhYRw" maxOccurs="1"
+          minOccurs="0" name="formularempfnger">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="Partner" id="_PKSP4ARgEemE6uJwIK6Emw" name="Partner"/>
+  <xsd:simpleType name="language_StudioGeneratedTemplate">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="([a-zA-Z]{2}|[iI]-[a-zA-Z]+|[xX]-[a-zA-Z]{1,8})(-[a-zA-Z]{1,8})*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:element name="AHV13Element">
+    <xsd:simpleType>
+      <xsd:restriction base="tns1:AHV13"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="cantonElement">
+    <xsd:simpleType>
+      <xsd:restriction base="tns1:canton"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="titleElement">
+    <xsd:simpleType>
+      <xsd:restriction base="tns1:title"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="languageElement">
+    <xsd:simpleType>
+      <xsd:restriction base="tns1:language_StudioGeneratedTemplate"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DossierStatusElement">
+    <xsd:simpleType>
+      <xsd:restriction base="tns1:DossierStatus"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="DokumentArtElement">
+    <xsd:simpleType>
+      <xsd:restriction base="tns1:DokumentArt"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="LeistungsArtElement">
+    <xsd:simpleType>
+      <xsd:restriction base="tns1:LeistungsArt"/>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="VersicherteElement" type="Versicherte"/>
+  <xsd:element name="MitgliederElement" type="Mitglieder"/>
+  <xsd:element name="addressElement" type="address"/>
+  <xsd:element name="GeschftsfallElement" type="Geschftsfall"/>
+  <xsd:element name="GeschftsfallDossierElement" type="GeschftsfallDossier"/>
+  <xsd:element name="DokumentElement" type="Dokument"/>
+  <xsd:element name="PartnerElement" type="Partner"/>
+</xsd:schema>
