@@ -578,13 +578,13 @@
               <xpdl2:Length>500</xpdl2:Length>
             </xpdl2:BasicType>
           </xpdl2:DataType>
-          <xpdl2:InitialValue></xpdl2:InitialValue>
+          <xpdl2:InitialValue/>
         </xpdl2:DataField>
         <xpdl2:DataField Id="_kMwIkQKpEemSDu4q68s5GQ" xpdExt:DisplayName="rueckgabewert" Name="rueckgabewert" ReadOnly="false">
           <xpdl2:DataType>
             <xpdl2:BasicType Type="BOOLEAN"/>
           </xpdl2:DataType>
-          <xpdl2:InitialValue></xpdl2:InitialValue>
+          <xpdl2:InitialValue/>
         </xpdl2:DataField>
         <xpdl2:DataField Id="_2audcQLAEemSDu4q68s5GQ" xpdExt:DisplayName="wp_action" Name="wp_action" ReadOnly="false">
           <xpdl2:DataType>
@@ -592,11 +592,19 @@
               <xpdl2:Length>50</xpdl2:Length>
             </xpdl2:BasicType>
           </xpdl2:DataType>
-          <xpdl2:InitialValue></xpdl2:InitialValue>
+          <xpdl2:InitialValue/>
         </xpdl2:DataField>
         <xpdl2:DataField Id="_Pnw4MQLCEemSDu4q68s5GQ" xpdExt:DisplayName="sp_case_closed" Name="sp_case_closed" ReadOnly="false">
           <xpdl2:DataType>
             <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_eXLpQALeEem_G-97Kp4DSg" xpdExt:DisplayName="actionTodo" Name="actionTodo" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
           </xpdl2:DataType>
           <xpdl2:InitialValue></xpdl2:InitialValue>
         </xpdl2:DataField>
@@ -622,6 +630,7 @@
                 <xpdl2:MessageIn Id="_IRz0pvowEeiF0cp9x5MzdA"/>
                 <xpdl2:MessageOut Id="_IRz0p_owEeiF0cp9x5MzdA"/>
                 <xpdExt:UserTaskScripts/>
+                <xpdExt:FormImplementation FormType="Form" FormURI="form://comigsfak001/comigsfak001_mainProcess/Unterlagenprfen/Unterlagenprfen.form"/>
               </xpdl2:TaskUser>
             </xpdl2:Task>
           </xpdl2:Implementation>
@@ -639,6 +648,9 @@
               </xpdl2:Split>
             </xpdl2:TransitionRestriction>
           </xpdl2:TransitionRestrictions>
+          <xpdl2:ExtendedAttributes>
+            <xpdl2:ExtendedAttribute Name="bpmJspTask" Value="form://comigsfak001/comigsfak001_mainProcess/Unterlagenprfen/Unterlagenprfen.form"/>
+          </xpdl2:ExtendedAttributes>
           <xpdl2:NodeGraphicsInfos>
             <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="74.0" LaneId="_IRz1BPowEeiF0cp9x5MzdA" Width="108.0">
               <xpdl2:Coordinates XCoordinate="498.0" YCoordinate="137.0"/>
@@ -685,9 +697,12 @@
               <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="action" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="rueckgabewert" Mode="INOUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="actionTodo" Mode="INOUT" Mandatory="false">
               <xpdl2:Description/>
             </xpdExt:AssociatedParameter>
           </xpdExt:AssociatedParameters>
@@ -756,7 +771,7 @@ weiterleiten DMC </xpdl2:Description>
           <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
             <xpdExt:AssociatedParameter FormalParam="IN_ParGeschaeftsvorfall" Mode="INOUT" Mandatory="false"/>
             <xpdExt:AssociatedParameter FormalParam="sp_weiterleiten_doku_steuerung" Mode="OUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
           </xpdExt:AssociatedParameters>
         </xpdl2:Activity>
@@ -924,7 +939,7 @@ weiterleiten DMC </xpdl2:Description>
               <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN">
                 <xpdExt:DataMappings>
                   <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="action">
-                    <xpdl2:Actual ScriptGrammar="JavaScript">wp_action</xpdl2:Actual>
+                    <xpdl2:Actual ScriptGrammar="JavaScript">actionTodo</xpdl2:Actual>
                   </xpdExt:DataMapping>
                 </xpdExt:DataMappings>
               </xpdExt:InputMappings>
@@ -972,28 +987,28 @@ weiterleiten DMC </xpdl2:Description>
           </xpdl2:NodeGraphicsInfos>
           <xpdl2:Extensions/>
           <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
-            <xpdExt:AssociatedParameter FormalParam="wp_action" Mode="IN" Mandatory="false">
-              <xpdl2:Description/>
-            </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="wp_pendenzen_erstellen_partner" Mode="OUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="wp_el_pruefen" Mode="OUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="wp_fak_bezueger_aktivieren" Mode="OUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="wp_fak_dokumente_erstellen" Mode="OUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="wp_fak_erfassung_bezueger_pruefen" Mode="OUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="wp_pv_daten_administrieren" Mode="OUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="wp_ik_va_erfassen_interner_auftraggeber" Mode="OUT" Mandatory="false">
+              <xpdl2:Description></xpdl2:Description>
+            </xpdExt:AssociatedParameter>
+            <xpdExt:AssociatedParameter FormalParam="actionTodo" Mode="INOUT" Mandatory="false">
               <xpdl2:Description/>
             </xpdExt:AssociatedParameter>
           </xpdExt:AssociatedParameters>
@@ -1018,7 +1033,7 @@ weiterleiten DMC </xpdl2:Description>
           <xpdl2:Extensions/>
           <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
             <xpdExt:AssociatedParameter FormalParam="sp_brief_schreiben" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
           </xpdExt:AssociatedParameters>
         </xpdl2:Activity>
@@ -1180,24 +1195,6 @@ action.add(&quot;sp_case_closed&quot;);</xpdl2:Script>
             <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
           </xpdExt:ActivityResourcePatterns>
         </xpdl2:Activity>
-        <xpdl2:Activity Id="_wYToAALAEemSDu4q68s5GQ" Name="ArrayToNonArray" xpdExt:Visibility="Private" xpdExt:DisplayName="ArrayToNonArray">
-          <xpdl2:Implementation>
-            <xpdl2:Task>
-              <xpdl2:TaskScript>
-                <xpdl2:Script ScriptGrammar="JavaScript">wp_action=action.get(0);</xpdl2:Script>
-              </xpdl2:TaskScript>
-            </xpdl2:Task>
-          </xpdl2:Implementation>
-          <xpdl2:NodeGraphicsInfos>
-            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_IRz1A_owEeiF0cp9x5MzdA" Width="96.0">
-              <xpdl2:Coordinates XCoordinate="783.0" YCoordinate="496.0"/>
-            </xpdl2:NodeGraphicsInfo>
-          </xpdl2:NodeGraphicsInfos>
-          <xpdl2:Extensions/>
-          <xpdExt:ActivityResourcePatterns>
-            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
-          </xpdExt:ActivityResourcePatterns>
-        </xpdl2:Activity>
       </xpdl2:Activities>
       <xpdl2:Transitions>
         <xpdl2:Transition Id="_IRz01PowEeiF0cp9x5MzdA" xpdExt:DisplayName="Nein" Name="Nein" From="_IRz0u_owEeiF0cp9x5MzdA" To="_IRz0pfowEeiF0cp9x5MzdA">
@@ -1213,8 +1210,7 @@ action.add(&quot;sp_case_closed&quot;);</xpdl2:Script>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
         <xpdl2:Transition Id="_IRz01_owEeiF0cp9x5MzdA" xpdExt:DisplayName="Ja" Name="Ja" From="_IRz0uvowEeiF0cp9x5MzdA" To="_IRz0qPowEeiF0cp9x5MzdA">
-          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">ParGeschaeftsvorfall_FOUND.AHVNummer.length>0;
-</xpdl2:Expression></xpdl2:Condition>
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">IN_ParGeschaeftsvorfall.AHVNummer==85;</xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
             <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
@@ -1271,7 +1267,7 @@ action.add(&quot;sp_case_closed&quot;);</xpdl2:Script>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
         <xpdl2:Transition Id="_VddtUPyNEeiF0cp9x5MzdA" xpdExt:DisplayName="Wiedervorlage" Name="Wiedervorlage" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0rvowEeiF0cp9x5MzdA">
-          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">action.get(0)==&quot;sp_wiedervorlagen&quot;;
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">actionTodo==&quot;sp_wiedervorlagen&quot;;
 </xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
@@ -1281,15 +1277,8 @@ action.add(&quot;sp_case_closed&quot;);</xpdl2:Script>
             </xpdl2:ConnectorGraphicsInfo>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
-        <xpdl2:Transition Id="_8RsyAPyYEeiF0cp9x5MzdA" xpdExt:DisplayName="" Name="" From="_wYToAALAEemSDu4q68s5GQ" To="_GnONofyUEeiF0cp9x5MzdA">
-          <xpdl2:ConnectorGraphicsInfos>
-            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
-            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition"/>
-            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
-          </xpdl2:ConnectorGraphicsInfos>
-        </xpdl2:Transition>
         <xpdl2:Transition Id="_ne6A0P1OEeiPopDWv-BhcA" xpdExt:DisplayName="" Name="" From="_IRz0svowEeiF0cp9x5MzdA" To="_F3-Gcf1OEeiPopDWv-BhcA">
-          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">action.get(0)==&quot;sp_fak_bezueger_erfassen&quot;;</xpdl2:Expression></xpdl2:Condition>
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">actionTodo==&quot;sp_fak_bezueger_erfassen&quot;;</xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
             <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
@@ -1299,7 +1288,7 @@ action.add(&quot;sp_case_closed&quot;);</xpdl2:Script>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
         <xpdl2:Transition Id="_xinhcP1OEeiPopDWv-BhcA" xpdExt:DisplayName="" Name="" From="_IRz0svowEeiF0cp9x5MzdA" To="_kK8igPyaEeiF0cp9x5MzdA">
-          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">action.get(0)==&quot;sp_brief_schreiben&quot;;
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">actionTodo==&quot;sp_brief_schreiben&quot;;
 </xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
@@ -1342,7 +1331,7 @@ action.add(&quot;sp_case_closed&quot;);</xpdl2:Script>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
         <xpdl2:Transition Id="_9vv90P7cEeia4N05POO-ig" xpdExt:DisplayName="" Name="" From="_IRz0svowEeiF0cp9x5MzdA" To="_IRz0q_owEeiF0cp9x5MzdA">
-          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">action.get(0)==&quot;sp_weiterleiten_doku_steuerung&quot;;</xpdl2:Expression></xpdl2:Condition>
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">actionTodo==&quot;sp_weiterleiten_doku_steuerung&quot;;</xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
             <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
@@ -1352,7 +1341,7 @@ action.add(&quot;sp_case_closed&quot;);</xpdl2:Script>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
         <xpdl2:Transition Id="_uTF7MP7fEeia4N05POO-ig" xpdExt:DisplayName="" Name="" From="_IRz0svowEeiF0cp9x5MzdA" To="_Bj9Tkf1OEeiPopDWv-BhcA">
-          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">action.get(0)==&quot;sp_anspruch_ag_pruefen&quot;;</xpdl2:Expression></xpdl2:Condition>
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">actionTodo==&quot;sp_anspruch_ag_pruefen&quot;;</xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
             <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition">
@@ -1385,7 +1374,7 @@ action.add(&quot;sp_case_closed&quot;);</xpdl2:Script>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
         <xpdl2:Transition Id="_MB_NAP7gEeia4N05POO-ig" xpdExt:DisplayName="" Name="" From="_IRz0svowEeiF0cp9x5MzdA" To="_JxHiQv1OEeiPopDWv-BhcA">
-          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">action.get(0)==&quot;sp_fak_bezueger_verfuegen_ausbezahlen&quot;;</xpdl2:Expression></xpdl2:Condition>
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">actionTodo==&quot;sp_fak_bezueger_verfuegen_ausbezahlen&quot;;</xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
             <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition">
@@ -1483,7 +1472,7 @@ action.add(&quot;sp_case_closed&quot;);</xpdl2:Script>
             </xpdl2:ConnectorGraphicsInfo>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
-        <xpdl2:Transition Id="_wYToAQLAEemSDu4q68s5GQ" xpdExt:DisplayName="" Name="" From="_IRz0svowEeiF0cp9x5MzdA" To="_wYToAALAEemSDu4q68s5GQ">
+        <xpdl2:Transition Id="_wYToAQLAEemSDu4q68s5GQ" xpdExt:DisplayName="" Name="" From="_IRz0svowEeiF0cp9x5MzdA" To="_GnONofyUEeiF0cp9x5MzdA">
           <xpdl2:Condition Type="OTHERWISE"/>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
@@ -2657,7 +2646,7 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
           <xpdl2:DataType>
             <xpdl2:BasicType Type="BOOLEAN"/>
           </xpdl2:DataType>
-          <xpdl2:InitialValue></xpdl2:InitialValue>
+          <xpdl2:InitialValue/>
         </xpdl2:DataField>
         <xpdl2:DataField Id="_rBogQQKqEemSDu4q68s5GQ" xpdExt:DisplayName="action" Name="action" IsArray="true" ReadOnly="false">
           <xpdl2:DataType>
@@ -2665,7 +2654,7 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
               <xpdl2:Length>50</xpdl2:Length>
             </xpdl2:BasicType>
           </xpdl2:DataType>
-          <xpdl2:InitialValue></xpdl2:InitialValue>
+          <xpdl2:InitialValue/>
         </xpdl2:DataField>
       </xpdl2:DataFields>
       <xpdl2:Activities>
@@ -2717,7 +2706,7 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
           </xpdExt:ActivityResourcePatterns>
           <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
             <xpdExt:AssociatedParameter FormalParam="action" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="sp_brief_schreiben" Mode="INOUT" Mandatory="false">
               <xpdl2:Description></xpdl2:Description>
@@ -2726,16 +2715,16 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
               <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="sp_fak_auszahlung_bearbeiten" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="sp_drittauszahlung_pruefen" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="sp_bz_pendenz_partner_erstellen" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="sp_fak_dokument_erstellen" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="back_to_main_process" Mode="INOUT" Mandatory="false">
               <xpdl2:Description></xpdl2:Description>
@@ -3182,25 +3171,25 @@ action.add(&quot;sp_case_closed&quot;);</xpdl2:Script>
           <xpdl2:DataType>
             <xpdl2:BasicType Type="BOOLEAN"/>
           </xpdl2:DataType>
-          <xpdl2:InitialValue></xpdl2:InitialValue>
+          <xpdl2:InitialValue/>
         </xpdl2:DataField>
         <xpdl2:DataField Id="_elZR8QK-EemSDu4q68s5GQ" xpdExt:DisplayName="sp_ak_manuelle_rueckforderung_bearbeiten" Name="sp_ak_manuelle_rueckforderung_bearbeiten" ReadOnly="false">
           <xpdl2:DataType>
             <xpdl2:BasicType Type="BOOLEAN"/>
           </xpdl2:DataType>
-          <xpdl2:InitialValue></xpdl2:InitialValue>
+          <xpdl2:InitialValue/>
         </xpdl2:DataField>
         <xpdl2:DataField Id="_iMqTkQK-EemSDu4q68s5GQ" xpdExt:DisplayName="sp_fak_auszahlung_bearbeiten" Name="sp_fak_auszahlung_bearbeiten" ReadOnly="false">
           <xpdl2:DataType>
             <xpdl2:BasicType Type="BOOLEAN"/>
           </xpdl2:DataType>
-          <xpdl2:InitialValue></xpdl2:InitialValue>
+          <xpdl2:InitialValue/>
         </xpdl2:DataField>
         <xpdl2:DataField Id="_lW4M0QK-EemSDu4q68s5GQ" xpdExt:DisplayName="sp_fak_bezueger_aktivieren" Name="sp_fak_bezueger_aktivieren" ReadOnly="false">
           <xpdl2:DataType>
             <xpdl2:BasicType Type="BOOLEAN"/>
           </xpdl2:DataType>
-          <xpdl2:InitialValue></xpdl2:InitialValue>
+          <xpdl2:InitialValue/>
         </xpdl2:DataField>
         <xpdl2:DataField Id="_j8THYQLNEemSDu4q68s5GQ" xpdExt:DisplayName="action" Name="action" IsArray="true" ReadOnly="false">
           <xpdl2:DataType>
@@ -3208,7 +3197,7 @@ action.add(&quot;sp_case_closed&quot;);</xpdl2:Script>
               <xpdl2:Length>50</xpdl2:Length>
             </xpdl2:BasicType>
           </xpdl2:DataType>
-          <xpdl2:InitialValue></xpdl2:InitialValue>
+          <xpdl2:InitialValue/>
         </xpdl2:DataField>
       </xpdl2:DataFields>
       <xpdl2:Activities>
@@ -3625,7 +3614,7 @@ action.add(&quot;back_to_main_prozess&quot;);</xpdl2:Script>
               <xpdl2:Length>50</xpdl2:Length>
             </xpdl2:BasicType>
           </xpdl2:DataType>
-          <xpdl2:InitialValue></xpdl2:InitialValue>
+          <xpdl2:InitialValue/>
         </xpdl2:DataField>
       </xpdl2:DataFields>
       <xpdl2:Activities>
@@ -3706,34 +3695,34 @@ action.add(&quot;back_to_main_prozess&quot;);</xpdl2:Script>
           </xpdExt:ActivityResourcePatterns>
           <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
             <xpdExt:AssociatedParameter FormalParam="action" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="sp_fak_an_erfassen" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="sp_fak_bezueger_erfassen_ne_se_an" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="sp_fak_flg_bezueger_an_erfassen" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="sp_fak_flg_bezueger_se_erfassen" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="sp_fak_familien_mitglied_erfassen" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="sp_fak_bezueger_aktivieren" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="back_to_main_process" Mode="INOUT" Mandatory="false">
               <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="sp_brief_schreiben" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="sp_wiedervorlagen" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="sp_case_closed" Mode="OUT" Mandatory="false"/>
           </xpdExt:AssociatedParameters>
