@@ -7,7 +7,6 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ory59ODWEeeJv9YCp_uzdA" key="version" value="4"/>
     </eAnnotations>
     <packagedElement xmi:type="uml:Class" xmi:id="_tItxMODWEeeJv9YCp_uzdA" name="Versicherte">
-      <generalization xmi:type="uml:Generalization" xmi:id="_ZrVz0ARgEemE6uJwIK6Emw" general="_PKSP4ARgEemE6uJwIK6Emw?igs_bom%3a%3aPartner?"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_wnLkgNw_EeiQSvs4k4nBtA" name="VSPartnerID" aggregation="composite">
         <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_-5uA0NywEd2GZPqUy0hUvg?BomPrimitiveTypes%3a%3aID?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wnOn0dw_EeiQSvs4k4nBtA" value="1"/>
@@ -63,7 +62,6 @@
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_fVWLIODaEeeJv9YCp_uzdA" name="Mitglieder">
-      <generalization xmi:type="uml:Generalization" xmi:id="_aYyvsARgEemE6uJwIK6Emw" general="_PKSP4ARgEemE6uJwIK6Emw?igs_bom%3a%3aPartner?"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_aXNYwNz3Eei2r6YdhlhYRw" name="MGPartnerID" aggregation="composite">
         <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_-5uA0NywEd2GZPqUy0hUvg?BomPrimitiveTypes%3a%3aID?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aXOm4tz3Eei2r6YdhlhYRw" value="1"/>
@@ -401,7 +399,6 @@
         </eAnnotations>
       </ownedLiteral>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_PKSP4ARgEemE6uJwIK6Emw" name="Partner"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oxRP0ODWEeeJv9YCp_uzdA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oxTFAODWEeeJv9YCp_uzdA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw"/>
@@ -718,45 +715,8 @@
       <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_1Wzwwt0NEei2r6YdhlhYRw" gradStartColor="8454143" gradEndColor="16777215"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1Wzww90NEei2r6YdhlhYRw" x="680" y="797" height="116"/>
     </children>
-    <children xmi:type="notation:Node" xmi:id="_PKu70ARgEemE6uJwIK6Emw" type="1002" element="_PKSP4ARgEemE6uJwIK6Emw?igs_bom%3a%3aPartner?">
-      <children xmi:type="notation:Node" xmi:id="_PKu71ARgEemE6uJwIK6Emw" type="4003"/>
-      <children xmi:type="notation:Node" xmi:id="_PK4FwARgEemE6uJwIK6Emw" type="4004"/>
-      <children xmi:type="notation:Node" xmi:id="_PK4FwQRgEemE6uJwIK6Emw" type="4005"/>
-      <children xmi:type="notation:Node" xmi:id="_PK4FwgRgEemE6uJwIK6Emw" type="5002">
-        <styles xmi:type="notation:DrawerStyle" xmi:id="_PK4FwwRgEemE6uJwIK6Emw"/>
-        <styles xmi:type="notation:SortingStyle" xmi:id="_PK4FxARgEemE6uJwIK6Emw"/>
-        <styles xmi:type="notation:FilteringStyle" xmi:id="_PK4FxQRgEemE6uJwIK6Emw"/>
-      </children>
-      <children xmi:type="notation:Node" xmi:id="_PK4FxgRgEemE6uJwIK6Emw" type="5003">
-        <styles xmi:type="notation:DrawerStyle" xmi:id="_PK4FxwRgEemE6uJwIK6Emw"/>
-        <styles xmi:type="notation:SortingStyle" xmi:id="_PK4FyARgEemE6uJwIK6Emw"/>
-        <styles xmi:type="notation:FilteringStyle" xmi:id="_PK4FyQRgEemE6uJwIK6Emw"/>
-      </children>
-      <styles xmi:type="notation:ShapeStyle" xmi:id="_PKu70QRgEemE6uJwIK6Emw" fontName="Segoe UI" fontHeight="10"/>
-      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_PKu70gRgEemE6uJwIK6Emw" gradStartColor="6356832" gradEndColor="16777215"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PKu70wRgEemE6uJwIK6Emw" x="100" y="154"/>
-    </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_or19QeDWEeeJv9YCp_uzdA"/>
     <styles xmi:type="notation:FillStyle" xmi:id="_or19QuDWEeeJv9YCp_uzdA"/>
-    <edges xmi:type="notation:Edge" xmi:id="_ZrVz0QRgEemE6uJwIK6Emw" type="3001" element="_ZrVz0ARgEemE6uJwIK6Emw" source="_tJLrQODWEeeJv9YCp_uzdA" target="_PKu70ARgEemE6uJwIK6Emw">
-      <children xmi:type="notation:Node" xmi:id="_ZrVz1QRgEemE6uJwIK6Emw" type="4009">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZrVz1gRgEemE6uJwIK6Emw" y="-15"/>
-      </children>
-      <styles xmi:type="notation:ConnectorStyle" xmi:id="_ZrVz0gRgEemE6uJwIK6Emw"/>
-      <styles xmi:type="notation:FontStyle" xmi:id="_ZrVz0wRgEemE6uJwIK6Emw" fontName="Segoe UI" fontHeight="10"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZrVz1ARgEemE6uJwIK6Emw" points="[0, 0, -79, 77]$[21, -75, -58, 2]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZrhaAARgEemE6uJwIK6Emw" id="(0.20361990950226244,0.0)"/>
-    </edges>
-    <edges xmi:type="notation:Edge" xmi:id="_aYyvsQRgEemE6uJwIK6Emw" type="3001" element="_aYyvsARgEemE6uJwIK6Emw" source="_fVmp0ODaEeeJv9YCp_uzdA" target="_PKu70ARgEemE6uJwIK6Emw">
-      <children xmi:type="notation:Node" xmi:id="_aYyvtQRgEemE6uJwIK6Emw" type="4009">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_aYyvtgRgEemE6uJwIK6Emw" y="-15"/>
-      </children>
-      <styles xmi:type="notation:ConnectorStyle" xmi:id="_aYyvsgRgEemE6uJwIK6Emw"/>
-      <styles xmi:type="notation:FontStyle" xmi:id="_aYyvswRgEemE6uJwIK6Emw" fontName="Segoe UI" fontHeight="10"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_aYyvtARgEemE6uJwIK6Emw" points="[0, 0, 149, 46]$[-146, -18, 3, 28]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_aY8gsARgEemE6uJwIK6Emw" id="(0.21052631578947367,0.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_aY8gsQRgEemE6uJwIK6Emw" id="(0.5583333333333333,0.7666666666666667)"/>
-    </edges>
   </notation:Diagram>
   <PrimitiveTypeFacets:LabeledElement xmi:id="_tIxbkODWEeeJv9YCp_uzdA" displayLabel="Versicherte" base_NamedElement="_tItxMODWEeeJv9YCp_uzdA?igs_bom%3a%3aVersicherte?"/>
   <PrimitiveTypeFacets:LabeledElement xmi:id="_9owcEODWEeeJv9YCp_uzdA" displayLabel="AHV13" base_NamedElement="_9ovN8ODWEeeJv9YCp_uzdA?igs_bom%3a%3aAHV13?"/>
@@ -848,5 +808,4 @@
   <PrimitiveTypeFacets:LabeledElement xmi:id="_5Lu-cN0OEei2r6YdhlhYRw" displayLabel="LeistungsArt2" base_NamedElement="_4OmAwN0OEei2r6YdhlhYRw?igs_bom%3a%3aLeistungsArt%3a%3aLEISTUNGSART2?"/>
   <PrimitiveTypeFacets:LabeledElement xmi:id="_52a6MN0OEei2r6YdhlhYRw" displayLabel="etc." base_NamedElement="_5V4Y8N0OEei2r6YdhlhYRw?igs_bom%3a%3aLeistungsArt%3a%3aETC?"/>
   <PrimitiveTypeFacets:LabeledElement xmi:id="_kHiUoQRaEemE6uJwIK6Emw" displayLabel="Anmeldenummer" base_NamedElement="_kHiUoARaEemE6uJwIK6Emw?igs_bom%3a%3aMitglieder%3a%3aanmeldenummer?"/>
-  <PrimitiveTypeFacets:LabeledElement xmi:id="_PKSP4QRgEemE6uJwIK6Emw" displayLabel="Partner" base_NamedElement="_PKSP4ARgEemE6uJwIK6Emw?igs_bom%3a%3aPartner?"/>
 </xmi:XMI>
