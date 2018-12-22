@@ -15,15 +15,15 @@
       <units xmi:type="om:OrgUnit" xmi:id="_b98rMAUGEem-aMI85c3QiA" name="IVKernprozessleitung" displayName="IV- Kernprozessleitung" allocationMethod="NEXT" outgoingRelationships="_fOqOAAUGEem-aMI85c3QiA _oWPdkAUGEem-aMI85c3QiA" incomingRelationships="_KTWcQAUHEem-aMI85c3QiA">
         <positions xmi:type="om:Position" xmi:id="_erG1AAUGEem-aMI85c3QiA" name="Kernprozessleitung" displayName="Kernprozessleitung"/>
       </units>
-      <units xmi:type="om:OrgUnit" xmi:id="_lrr70AUGEem-aMI85c3QiA" name="Aussendienst" displayName="Aussendienst" allocationMethod="NEXT" incomingRelationships="_oWPdkAUGEem-aMI85c3QiA">
+      <units xmi:type="om:OrgUnit" xmi:id="_lrr70AUGEem-aMI85c3QiA" name="IVAussendienst" displayName="IV-Aussendienst" allocationMethod="NEXT" incomingRelationships="_oWPdkAUGEem-aMI85c3QiA">
         <positions xmi:type="om:Position" xmi:id="_naiqUAUGEem-aMI85c3QiA" name="Mitarbeiter" displayName="Mitarbeiter"/>
       </units>
       <units xmi:type="om:OrgUnit" xmi:id="_psp24AUGEem-aMI85c3QiA" name="Rechtdienst" displayName="Rechtdienst" allocationMethod="NEXT" incomingRelationships="_LpKYoAUHEem-aMI85c3QiA">
         <positions xmi:type="om:Position" xmi:id="_rCyjYAUGEem-aMI85c3QiA" name="Mitarbeiter" displayName="Mitarbeiter"/>
       </units>
-      <units xmi:type="om:OrgUnit" xmi:id="_8ZiMwAUGEem-aMI85c3QiA" name="RAD" displayName="RAD" allocationMethod="NEXT" outgoingRelationships="_SyB4wAUHEem-aMI85c3QiA" incomingRelationships="_JBOGAAUHEem-aMI85c3QiA"/>
+      <units xmi:type="om:OrgUnit" xmi:id="_8ZiMwAUGEem-aMI85c3QiA" name="RADORG" displayName="RAD-ORG" allocationMethod="NEXT" outgoingRelationships="_SyB4wAUHEem-aMI85c3QiA _AvXLwAY_Eem_4e3M9ri6oA" incomingRelationships="_JBOGAAUHEem-aMI85c3QiA"/>
       <units xmi:type="om:OrgUnit" xmi:id="_FbU9YAUHEem-aMI85c3QiA" name="SVAZuerich" displayName="SVA-Zuerich" allocationMethod="NEXT" outgoingRelationships="_JBOGAAUHEem-aMI85c3QiA _KTWcQAUHEem-aMI85c3QiA _LpKYoAUHEem-aMI85c3QiA _ZPGC0AUHEem-aMI85c3QiA _toPagAU5Eemo_Z8OZ5HXPw"/>
-      <units xmi:type="om:OrgUnit" xmi:id="_NLVWAAUHEem-aMI85c3QiA" name="Sekretariat" displayName="Sekretariat" allocationMethod="NEXT" incomingRelationships="_SyB4wAUHEem-aMI85c3QiA">
+      <units xmi:type="om:OrgUnit" xmi:id="_NLVWAAUHEem-aMI85c3QiA" name="RADSekretariat" displayName="RAD-Sekretariat" allocationMethod="NEXT" incomingRelationships="_SyB4wAUHEem-aMI85c3QiA">
         <positions xmi:type="om:Position" xmi:id="_VBO7QAUHEem-aMI85c3QiA" name="Mitarbeiter" displayName="Mitarbeiter"/>
       </units>
       <units xmi:type="om:OrgUnit" xmi:id="_YJVUoAUHEem-aMI85c3QiA" name="DMC" displayName="DMC" allocationMethod="NEXT" incomingRelationships="_ZPGC0AUHEem-aMI85c3QiA">
@@ -32,16 +32,23 @@
       <units xmi:type="om:OrgUnit" xmi:id="_sxs0EAU5Eemo_Z8OZ5HXPw" name="Wartepostkorb" displayName="Wartepostkorb" allocationMethod="NEXT" incomingRelationships="_toPagAU5Eemo_Z8OZ5HXPw">
         <positions xmi:type="om:Position" xmi:id="_vtB8wAU5Eemo_Z8OZ5HXPw" name="WarteKorb" displayName="WarteKorb"/>
       </units>
+      <units xmi:type="om:OrgUnit" xmi:id="_nigjwAYoEem_4e3M9ri6oA" name="SUVA" displayName="SUVA" allocationMethod="NEXT">
+        <positions xmi:type="om:Position" xmi:id="_oNc-MAYoEem_4e3M9ri6oA" name="Mitarbeiter" displayName="Mitarbeiter"/>
+      </units>
+      <units xmi:type="om:OrgUnit" xmi:id="_-2gzwAY-Eem_4e3M9ri6oA" name="RAD" displayName="RAD" allocationMethod="NEXT" incomingRelationships="_AvXLwAY_Eem_4e3M9ri6oA">
+        <positions xmi:type="om:Position" xmi:id="_FexhMAY_Eem_4e3M9ri6oA" name="Mitarbeiter" displayName="Mitarbeiter"/>
+      </units>
       <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_Yhl5EAUGEem-aMI85c3QiA" name="IVTeamleiterIVSachbearbeitung" displayName="IVTeamleiter-IVSachbearbeitung" from="__33KQAUFEem-aMI85c3QiA" to="_Phi04AUGEem-aMI85c3QiA" isHierarchical="true"/>
       <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_fOqOAAUGEem-aMI85c3QiA" name="IVKernprozessleitungIVTeamleiter" displayName="IVKernprozessleitung-IVTeamleiter" from="_b98rMAUGEem-aMI85c3QiA" to="__33KQAUFEem-aMI85c3QiA" isHierarchical="true"/>
       <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_gsAVwAUGEem-aMI85c3QiA" name="IVTeamleiterIVSekretariat" displayName="IVTeamleiter-IVSekretariat" from="__33KQAUFEem-aMI85c3QiA" to="_3RwQEAUFEem-aMI85c3QiA" isHierarchical="true"/>
-      <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_oWPdkAUGEem-aMI85c3QiA" name="IVKernprozessleitungAussendienst" displayName="IVKernprozessleitung-Aussendienst" from="_b98rMAUGEem-aMI85c3QiA" to="_lrr70AUGEem-aMI85c3QiA" isHierarchical="true"/>
-      <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_JBOGAAUHEem-aMI85c3QiA" name="SVAZuerichRAD" displayName="SVAZuerich-RAD" from="_FbU9YAUHEem-aMI85c3QiA" to="_8ZiMwAUGEem-aMI85c3QiA" isHierarchical="true"/>
+      <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_oWPdkAUGEem-aMI85c3QiA" name="IVKernprozessleitungIVAussendienst" displayName="IVKernprozessleitung-IVAussendienst" from="_b98rMAUGEem-aMI85c3QiA" to="_lrr70AUGEem-aMI85c3QiA" isHierarchical="true"/>
+      <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_JBOGAAUHEem-aMI85c3QiA" name="SVAZuerichRADORG" displayName="SVAZuerich-RADORG" from="_FbU9YAUHEem-aMI85c3QiA" to="_8ZiMwAUGEem-aMI85c3QiA" isHierarchical="true"/>
       <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_KTWcQAUHEem-aMI85c3QiA" name="SVAZuerichIVKernprozessleitung" displayName="SVAZuerich-IVKernprozessleitung" from="_FbU9YAUHEem-aMI85c3QiA" to="_b98rMAUGEem-aMI85c3QiA" isHierarchical="true"/>
       <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_LpKYoAUHEem-aMI85c3QiA" name="SVAZuerichRechtdienst" displayName="SVAZuerich-Rechtdienst" from="_FbU9YAUHEem-aMI85c3QiA" to="_psp24AUGEem-aMI85c3QiA" isHierarchical="true"/>
-      <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_SyB4wAUHEem-aMI85c3QiA" name="RADSekretariat" displayName="RAD-Sekretariat" from="_8ZiMwAUGEem-aMI85c3QiA" to="_NLVWAAUHEem-aMI85c3QiA" isHierarchical="true"/>
+      <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_SyB4wAUHEem-aMI85c3QiA" name="RADORGRADSekretariat" displayName="RADORG-RADSekretariat" from="_8ZiMwAUGEem-aMI85c3QiA" to="_NLVWAAUHEem-aMI85c3QiA" isHierarchical="true"/>
       <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_ZPGC0AUHEem-aMI85c3QiA" name="SVAZuerichDMC" displayName="SVAZuerich-DMC" from="_FbU9YAUHEem-aMI85c3QiA" to="_YJVUoAUHEem-aMI85c3QiA" isHierarchical="true"/>
       <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_toPagAU5Eemo_Z8OZ5HXPw" name="SVAZuerichWartepostkorb" displayName="SVAZuerich-Wartepostkorb" from="_FbU9YAUHEem-aMI85c3QiA" to="_sxs0EAU5Eemo_Z8OZ5HXPw" isHierarchical="true"/>
+      <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_AvXLwAY_Eem_4e3M9ri6oA" name="RADORGRAD" displayName="RADORG-RAD" from="_8ZiMwAUGEem-aMI85c3QiA" to="_-2gzwAY-Eem_4e3M9ri6oA" isHierarchical="true"/>
     </organizations>
     <embeddedMetamodel xmi:type="om:OrgMetaModel" xmi:id="_wJd-wgUFEem-aMI85c3QiA">
       <locationTypes xmi:type="om:LocationType" xmi:id="_wJd-wwUFEem-aMI85c3QiA" name="StandardLocationType" displayName="Standard Location Type">
@@ -505,7 +512,7 @@
       <styles xmi:type="omnotation:ShapeGradientStyle" xmi:id="_NLdR0gUHEem-aMI85c3QiA" gradEndColor="4227327"/>
       <styles xmi:type="notation:LineStyle" xmi:id="_NLdR0wUHEem-aMI85c3QiA"/>
       <styles xmi:type="notation:FillStyle" xmi:id="_NLdR1AUHEem-aMI85c3QiA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NLdR1QUHEem-aMI85c3QiA" x="980" y="272"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NLdR1QUHEem-aMI85c3QiA" x="1008" y="280"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_YJVUoQUHEem-aMI85c3QiA" type="1001" element="_YJVUoAUHEem-aMI85c3QiA">
       <children xmi:type="notation:Node" xmi:id="_YJVUpwUHEem-aMI85c3QiA" type="4001"/>
@@ -544,6 +551,44 @@
       <styles xmi:type="notation:LineStyle" xmi:id="_syAWEwU5Eemo_Z8OZ5HXPw"/>
       <styles xmi:type="notation:FillStyle" xmi:id="_syAWFAU5Eemo_Z8OZ5HXPw"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_syAWFQU5Eemo_Z8OZ5HXPw" x="1232" y="168"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_ni0FwAYoEem_4e3M9ri6oA" type="1001" element="_nigjwAYoEem_4e3M9ri6oA">
+      <children xmi:type="notation:Node" xmi:id="_ni9PsAYoEem_4e3M9ri6oA" type="4001"/>
+      <children xmi:type="notation:Node" xmi:id="_ni9PsQYoEem_4e3M9ri6oA" type="4002">
+        <styles xmi:type="notation:FontStyle" xmi:id="_ni9PsgYoEem_4e3M9ri6oA" fontName="Segoe UI" fontHeight="10" italic="true"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_ni9PswYoEem_4e3M9ri6oA" type="5001">
+        <children xmi:type="notation:Node" xmi:id="_oNmIIAYoEem_4e3M9ri6oA" type="2001" element="_oNc-MAYoEem_4e3M9ri6oA">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oNmIIQYoEem_4e3M9ri6oA"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_ni9PtAYoEem_4e3M9ri6oA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_ni9PtQYoEem_4e3M9ri6oA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_ni9PtgYoEem_4e3M9ri6oA"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_ni0FwQYoEem_4e3M9ri6oA" fontName="Segoe UI" fontHeight="10" fillColor="14548991" lineColor="2263786"/>
+      <styles xmi:type="omnotation:ShapeGradientStyle" xmi:id="_ni0FwgYoEem_4e3M9ri6oA" gradEndColor="4227327"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_ni0FwwYoEem_4e3M9ri6oA"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_ni0FxAYoEem_4e3M9ri6oA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ni0FxQYoEem_4e3M9ri6oA" x="1483" y="49"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-2zusAY-Eem_4e3M9ri6oA" type="1001" element="_-2gzwAY-Eem_4e3M9ri6oA">
+      <children xmi:type="notation:Node" xmi:id="_-2zutgY-Eem_4e3M9ri6oA" type="4001"/>
+      <children xmi:type="notation:Node" xmi:id="_-2zutwY-Eem_4e3M9ri6oA" type="4002">
+        <styles xmi:type="notation:FontStyle" xmi:id="_-2zuuAY-Eem_4e3M9ri6oA" fontName="Segoe UI" fontHeight="10" italic="true"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_-2zuuQY-Eem_4e3M9ri6oA" type="5001">
+        <children xmi:type="notation:Node" xmi:id="_Fe7SMAY_Eem_4e3M9ri6oA" type="2001" element="_FexhMAY_Eem_4e3M9ri6oA">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Fe7SMQY_Eem_4e3M9ri6oA"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_-2zuugY-Eem_4e3M9ri6oA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_-2zuuwY-Eem_4e3M9ri6oA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_-2zuvAY-Eem_4e3M9ri6oA"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_-2zusQY-Eem_4e3M9ri6oA" fontName="Segoe UI" fontHeight="10" fillColor="14548991" lineColor="2263786"/>
+      <styles xmi:type="omnotation:ShapeGradientStyle" xmi:id="_-2zusgY-Eem_4e3M9ri6oA" gradEndColor="4227327"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_-2zuswY-Eem_4e3M9ri6oA"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-2zutAY-Eem_4e3M9ri6oA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-2zutQY-Eem_4e3M9ri6oA" x="1176" y="280"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_wJw5vwUFEem-aMI85c3QiA"/>
     <styles xmi:type="notation:FillStyle" xmi:id="_wJw5wAUFEem-aMI85c3QiA"/>
@@ -646,6 +691,16 @@
       <styles xmi:type="notation:LineStyle" xmi:id="_toZykwU5Eemo_Z8OZ5HXPw"/>
       <styles xmi:type="notation:LineTypeStyle" xmi:id="_toZylAU5Eemo_Z8OZ5HXPw"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_toZylQU5Eemo_Z8OZ5HXPw" points="[60, 12, -508, -111]$[519, 97, -49, -26]"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_Avg8wAY_Eem_4e3M9ri6oA" type="3001" element="_AvXLwAY_Eem_4e3M9ri6oA" source="_8ZrWsAUGEem-aMI85c3QiA" target="_-2zusAY-Eem_4e3M9ri6oA">
+      <children xmi:type="notation:Node" xmi:id="_Avg8xgY_Eem_4e3M9ri6oA" visible="false" type="4003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Avg8xwY_Eem_4e3M9ri6oA" y="15"/>
+      </children>
+      <styles xmi:type="notation:ConnectorStyle" xmi:id="_Avg8wQY_Eem_4e3M9ri6oA" routing="Tree" lineColor="4622313" lineWidth="2"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Avg8wgY_Eem_4e3M9ri6oA" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_Avg8wwY_Eem_4e3M9ri6oA"/>
+      <styles xmi:type="notation:LineTypeStyle" xmi:id="_Avg8xAY_Eem_4e3M9ri6oA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Avg8xQY_Eem_4e3M9ri6oA" points="[41, 25, -127, -87]$[151, 86, -17, -26]"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>
