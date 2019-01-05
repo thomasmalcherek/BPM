@@ -3569,6 +3569,54 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
           </xpdl2:DataType>
         </xpdl2:FormalParameter>
       </xpdl2:FormalParameters>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_1vPVERDlEemL1fgQcoPlqQ" xpdExt:DisplayName="action" Name="action" IsArray="true" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_1vPVEhDlEemL1fgQcoPlqQ" xpdExt:DisplayName="actionToDo" Name="actionToDo" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_dn5FIRDmEemL1fgQcoPlqQ" xpdExt:DisplayName="SP_Beschluss_fassen" Name="SP_Beschluss_fassen" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_EyEloBDnEemL1fgQcoPlqQ" xpdExt:DisplayName="SP_weitere_Abklaerungen_vornehmen" Name="SP_weitere_Abklaerungen_vornehmen" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue></xpdl2:InitialValue>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_6phdwRDlEemL1fgQcoPlqQ" xpdExt:DisplayName="WP_Gesuch_anzeigen" Name="WP_Gesuch_anzeigen" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_HKaygRDmEemL1fgQcoPlqQ" xpdExt:DisplayName="WP_Formular_zum_Gesuch_anzeigen" Name="WP_Formular_zum_Gesuch_anzeigen" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_58LPkRDlEemL1fgQcoPlqQ" xpdExt:DisplayName="WP_WW_Protokolle_bearbeiten" Name="WP_WW_Protokolle_bearbeiten" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
       <xpdl2:Activities>
         <xpdl2:Activity Id="_UkN_twYmEem_4e3M9ri6oA" Name="Start" xpdExt:DisplayName="Start">
           <xpdl2:Event>
@@ -3611,9 +3659,39 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
             <xpdExt:WorkItemPriority InitialPriority="50"/>
           </xpdExt:ActivityResourcePatterns>
         </xpdl2:Activity>
-        <xpdl2:Activity Id="_UkN_uwYmEem_4e3M9ri6oA" Name="WFormularzumGesuchanzeigen964" FinishMode="Manual" IsATransaction="false" StartMode="Manual" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="W Formular zum Gesuch anzeigen (96.4)">
+        <xpdl2:Activity Id="_UkN_uwYmEem_4e3M9ri6oA" Name="WFormularzumGesuchanzeigen964" FinishMode="Automatic" IsATransaction="false" StartMode="Automatic" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="W Formular zum Gesuch anzeigen (96.4)">
           <xpdl2:Implementation>
-            <xpdl2:SubFlow Id="-unknown-" PackageRef="IGS_RE_IH_004" xpdExt:SuspendResumeWithParent="true"/>
+            <xpdl2:SubFlow Id="_pmVaMAULEem-aMI85c3QiA" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true">
+              <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="Task">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">actionToDo</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:InputMappings>
+              <xpdExt:OutputMappings MapperContext="SubProcessToProcess" MappingDirection="OUT">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:OutputMappings>
+            </xpdl2:SubFlow>
           </xpdl2:Implementation>
           <xpdl2:NodeGraphicsInfos>
             <xpdl2:NodeGraphicsInfo Height="76.0" LaneId="_UkOBcQYmEem_4e3M9ri6oA" Width="117.0">
@@ -3622,9 +3700,39 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
           </xpdl2:NodeGraphicsInfos>
           <xpdl2:Extensions/>
         </xpdl2:Activity>
-        <xpdl2:Activity Id="_UkN_vAYmEem_4e3M9ri6oA" Name="WWProtokollebearbeiten963" FinishMode="Manual" IsATransaction="false" StartMode="Manual" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="WW Protokolle bearbeiten (96.3)">
+        <xpdl2:Activity Id="_UkN_vAYmEem_4e3M9ri6oA" Name="WWProtokollebearbeiten963" FinishMode="Automatic" IsATransaction="false" StartMode="Automatic" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="WW Protokolle bearbeiten (96.3)">
           <xpdl2:Implementation>
-            <xpdl2:SubFlow Id="-unknown-" PackageRef="IGS_RE_IH_004" xpdExt:SuspendResumeWithParent="true"/>
+            <xpdl2:SubFlow Id="_pmVaMAULEem-aMI85c3QiA" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true">
+              <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="Task">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">actionToDo</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:InputMappings>
+              <xpdExt:OutputMappings MapperContext="SubProcessToProcess" MappingDirection="OUT">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:OutputMappings>
+            </xpdl2:SubFlow>
           </xpdl2:Implementation>
           <xpdl2:NodeGraphicsInfos>
             <xpdl2:NodeGraphicsInfo Height="76.0" LaneId="_UkOBcgYmEem_4e3M9ri6oA" Width="117.0">
@@ -3716,9 +3824,39 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
           </xpdl2:NodeGraphicsInfos>
           <xpdl2:Extensions/>
         </xpdl2:Activity>
-        <xpdl2:Activity Id="_UkN_wwYmEem_4e3M9ri6oA" Name="WVerfgungzumGesuch3002" FinishMode="Manual" IsATransaction="false" StartMode="Manual" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="W Verfügung zum Gesuch (3002)">
+        <xpdl2:Activity Id="_UkN_wwYmEem_4e3M9ri6oA" Name="WVerfgungzumGesuch3002" FinishMode="Automatic" IsATransaction="false" StartMode="Automatic" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="W Verfügung zum Gesuch (3002)">
           <xpdl2:Implementation>
-            <xpdl2:SubFlow Id="-unknown-" PackageRef="IGS_RE_IH_004" xpdExt:SuspendResumeWithParent="true"/>
+            <xpdl2:SubFlow Id="_pmVaMAULEem-aMI85c3QiA" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true">
+              <xpdExt:OutputMappings MapperContext="SubProcessToProcess" MappingDirection="OUT">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:OutputMappings>
+              <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="Task">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">actionToDo</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:InputMappings>
+            </xpdl2:SubFlow>
           </xpdl2:Implementation>
           <xpdl2:NodeGraphicsInfos>
             <xpdl2:NodeGraphicsInfo Height="76.0" LaneId="_UkOBcQYmEem_4e3M9ri6oA" Width="117.0">
@@ -3765,9 +3903,9 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
             </xpdl2:NodeGraphicsInfo>
           </xpdl2:NodeGraphicsInfos>
         </xpdl2:Activity>
-        <xpdl2:Activity Id="_UkN_xwYmEem_4e3M9ri6oA" Name="WGesuchanzeigen3000" FinishMode="Manual" IsATransaction="false" StartMode="Manual" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="W Gesuch anzeigen (3000)">
+        <xpdl2:Activity Id="_UkN_xwYmEem_4e3M9ri6oA" Name="WGesuchanzeigen3000" FinishMode="Automatic" IsATransaction="false" StartMode="Automatic" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="W Gesuch anzeigen (3000)">
           <xpdl2:Implementation>
-            <xpdl2:SubFlow Id="-unknown-" PackageRef="IGS_RE_IH_004" xpdExt:SuspendResumeWithParent="true"/>
+            <xpdl2:SubFlow Id="_pmVaMAULEem-aMI85c3QiA" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true"/>
           </xpdl2:Implementation>
           <xpdl2:NodeGraphicsInfos>
             <xpdl2:NodeGraphicsInfo FillColor="255,219,74" Height="76.0" LaneId="_UkOBcQYmEem_4e3M9ri6oA" Width="117.0">
@@ -3818,6 +3956,7 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
       </xpdl2:Activities>
       <xpdl2:Transitions>
         <xpdl2:Transition Id="_UkN_ygYmEem_4e3M9ri6oA" xpdExt:DisplayName="" Name="" From="_UkN_vQYmEem_4e3M9ri6oA" To="_UkN_uwYmEem_4e3M9ri6oA">
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">String(actionToDo).toLowerCase()==String(&quot;WP_Formular_zum_Gesuch_anzeigen&quot;).toLowerCase();</xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
             <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
@@ -3836,6 +3975,7 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
         <xpdl2:Transition Id="_UkN_zAYmEem_4e3M9ri6oA" xpdExt:DisplayName="Weitere Abklärungen vornehmen (96.5)" Name="WeitereAbklrungenvornehmen965" From="_UkN_vQYmEem_4e3M9ri6oA" To="_UkN_xwYmEem_4e3M9ri6oA">
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">String(actionToDo).toLowerCase()==String(&quot;SP_weitere_Abklaerungen_vornehmen &quot;).toLowerCase();</xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
               <xpdl2:Coordinates XCoordinate="40.0" YCoordinate="15.0"/>
@@ -3895,6 +4035,7 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
         <xpdl2:Transition Id="_UkN_0QYmEem_4e3M9ri6oA" xpdExt:DisplayName="" Name="" From="_UkN_vQYmEem_4e3M9ri6oA" To="_UkN_vwYmEem_4e3M9ri6oA">
+          <xpdl2:Condition Type="OTHERWISE"/>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
             <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
@@ -3913,6 +4054,7 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
         <xpdl2:Transition Id="_UkN_0wYmEem_4e3M9ri6oA" xpdExt:DisplayName="Beschluss fassen -> (96.2)" Name="Beschlussfassen962" From="_UkN_vQYmEem_4e3M9ri6oA" To="_UkN_wwYmEem_4e3M9ri6oA">
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">String(actionToDo).toLowerCase()==String(&quot;SP_Beschluss_fassen&quot;).toLowerCase();</xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
               <xpdl2:Coordinates XCoordinate="73.0" YCoordinate="-1.0"/>
@@ -3951,6 +4093,7 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
         <xpdl2:Transition Id="_UkN_1gYmEem_4e3M9ri6oA" xpdExt:DisplayName="" Name="" From="_UkN_vQYmEem_4e3M9ri6oA" To="_UkN_vAYmEem_4e3M9ri6oA">
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">String(actionToDo).toLowerCase()==String(&quot;WP_WW_Protokolle_bearbeiten&quot;).toLowerCase();</xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
               <xpdl2:Coordinates XCoordinate="10.0" YCoordinate="102.0"/>
