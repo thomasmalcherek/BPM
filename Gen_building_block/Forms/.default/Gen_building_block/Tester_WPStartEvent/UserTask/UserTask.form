@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" generatorSource="Gen_building_block.xpdl#_g49tHxQeEemj5-ScqcIGvQ?p=Gen_building_block%26s=Process%20Packages%26t=xpdl2%3aActivity%26q=Gen_building_block%3a%3aTester_WPStartEvent%26n=UserTask?" formatVersion="4.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri=".default/Gen_building_block/Tester_WPStartEvent/UserTask/UserTask.properties" sfRelative="true" internal="true" localized="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" generatorSource="Gen_building_block.xpdl#_g49tFBQeEemj5-ScqcIGvQ?p=Gen_building_block%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=Gen_building_block%3a%3aTester_WPStartEvent%26n=Geschaeftsfall?" name="data.Geschaeftsfall" label="Geschaeftsfall" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_BRY7wHvBEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Integer" length="9" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="Gen_building_block.xpdl#_g49tFRQeEemj5-ScqcIGvQ?p=Gen_building_block%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=Gen_building_block%3a%3aTester_WPStartEvent%26n=DokumentenArt?" name="data.DokumentenArt" label="DokumentenArt" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="Gen_building_block.xpdl#_g49tFhQeEemj5-ScqcIGvQ?p=Gen_building_block%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=Gen_building_block%3a%3aTester_WPStartEvent%26n=AHVNummer?" name="data.AHVNummer" label="AHV-Nummer" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="Gen_building_block.xpdl#_17BtQRQlEemj5-ScqcIGvQ?p=Gen_building_block%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=Gen_building_block%3a%3aTester_WPStartEvent%26n=Frist?" name="data.Frist" label="Frist" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AMizkHvBEdy0U8_1u7Q20g" type="BomPrimitiveTypes::DateTime" inout="INOUT"/>
+  </form:dataModel>
+  <form:services/>
+  <form:actions/>
+  <form:conditions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancel" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancel.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submit" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submit.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_6LHCYBQlEemj5-ScqcIGvQ">
+      <form:source target="data.Geschaeftsfall" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Geschaeftsfall.value"/>
+      <form:destination target="control.Geschaeftsfall" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_6LHCYRQlEemj5-ScqcIGvQ">
+      <form:source target="data.DokumentenArt" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.DokumentenArt.value"/>
+      <form:destination target="control.DokumentenArt" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.DokumentenArt.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_6LHCYhQlEemj5-ScqcIGvQ">
+      <form:source target="data.AHVNummer" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.AHVNummer.value"/>
+      <form:destination target="control.AHVNummer" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.AHVNummer.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_6LHCYxQlEemj5-ScqcIGvQ">
+      <form:source target="data.Frist" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Frist.value"/>
+      <form:destination target="control.Frist" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Frist.value"/>
+    </form:binding>
+  </form:bindings>
+  <form:targets>
+    <form:target ref="iProcessWorkspace_10.7"/>
+  </form:targets>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>User Task</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="left"/>
+    </form:defaults>
+    <form:control generated="true" generatorSource="Gen_building_block.xpdl#_g49tFBQeEemj5-ScqcIGvQ?p=Gen_building_block%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=Gen_building_block%3a%3aTester_WPStartEvent%26n=Geschaeftsfall?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Geschaeftsfall">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>10</et:displayLength>
+        <et:maxLength>9</et:maxLength>
+        <et:numeric>true</et:numeric>
+        <et:formatRef>resource.common.format_integer</et:formatRef>
+      </form:propertySet>
+      <form:label>Geschaeftsfall</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>true</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="Gen_building_block.xpdl#_g49tFRQeEemj5-ScqcIGvQ?p=Gen_building_block%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=Gen_building_block%3a%3aTester_WPStartEvent%26n=DokumentenArt?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.DokumentenArt">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>DokumentenArt</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>true</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="Gen_building_block.xpdl#_g49tFhQeEemj5-ScqcIGvQ?p=Gen_building_block%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=Gen_building_block%3a%3aTester_WPStartEvent%26n=AHVNummer?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.AHVNummer">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>AHV-Nummer</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>true</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="Gen_building_block.xpdl#_17BtQRQlEemj5-ScqcIGvQ?p=Gen_building_block%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=Gen_building_block%3a%3aTester_WPStartEvent%26n=Frist?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.Frist">
+      <form:propertySet xsi:type="et:DateTimePropertySet">
+        <et:minRelative>true</et:minRelative>
+        <et:maxRelative>true</et:maxRelative>
+        <et:year min="-20" max="20"/>
+        <et:minute increment="15"/>
+      </form:propertySet>
+      <form:label>Frist</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>true</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancel">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submit">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

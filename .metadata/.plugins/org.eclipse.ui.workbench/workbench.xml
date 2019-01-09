@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="133" version="2.0">
+<workbench progressCount="132" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="104" y="56">
 <fastViewData fastViewLocation="1024"/>
@@ -8,17 +8,17 @@
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="122" y="22"/>
-<coolItem id="com.google.gdt.eclipse.suite.GDTPulldownToolbar" itemType="typeToolBarContribution" x="91" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="126" y="22"/>
+<coolItem id="com.google.gdt.eclipse.suite.GDTPulldownToolbar" itemType="typeToolBarContribution" x="99" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="com.tibco.xpd.resources.ui.actionSet.enableFeature1" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="com.tibco.xpd.resources.ui.actionSet.enableFeature1" itemType="typeToolBarContribution" x="57" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="221" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="130" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" itemType="typePlaceholder" x="104" y="22"/>
 <coolItem id="com.tibco.xpd.worklistfacade.presentation.WorkListFacadeEditorID" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -29,7 +29,7 @@
 <coolItem id="com.tibco.xpd.analyst.editor.ProcessInterfaceEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.tibco.xpd.om.modeler.subdiagram.part.OrganizationModelSubDiagramEditorID" itemType="typePlaceholder" x="898" y="22"/>
 <coolItem id="com.tibco.xpd.om.modeler.diagram.part.OrganizationModelDiagramEditorID" itemType="typePlaceholder" x="898" y="22"/>
-<coolItem id="com.tibco.xpd.processeditor.xpdl2.editor" itemType="typePlaceholder" x="401" y="22"/>
+<coolItem id="com.tibco.xpd.processeditor.xpdl2.editor" itemType="typeToolBarContribution" x="425" y="22"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -38,10 +38,17 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="com.tibco.xpd.processeditor.xpdl2.editor" name="ArrayMapping-Process (ArrayMappingProcess)" partName="ArrayMapping-Process (ArrayMappingProcess)" title="ArrayMapping-Process (ArrayMappingProcess)" tooltip="/ArrayMapping/Process Packages/ArrayMapping.xpdl/ArrayMapping-Process (ArrayMappingProcess)" workbook="DefaultEditorWorkbook">
+<input factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory">
+<xpdl path="/ArrayMapping/Process Packages/ArrayMapping.xpdl" processid="_XUvmIAQvEem_G-97Kp4DSg"/>
+</input>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
@@ -59,7 +66,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (1 item)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="1110"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -88,7 +95,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.tibco.xpd.bpm.modeling.perspective">
+<perspectives activePart="org.eclipse.ui.views.PropertySheet" activePerspective="com.tibco.xpd.bpm.modeling.perspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.tibco.xpd.bpm.simplified.ui.BpmModelingPerspectiveFactory" id="com.tibco.xpd.bpm.modeling.perspective" label="BPM Modeling"/>
 <alwaysOnActionSet id="com.google.gdt.eclipse.core.actionSet"/>
@@ -158,8 +165,8 @@
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.forwardHistory"/>
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.next"/>
 <hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.ProfileDropDownAction"/>
-<hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.RunDropDownAction"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.gotoLastEditPosition"/>
+<hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.RunDropDownAction"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="com.tibco.xpd.deploy.server.view"/>
@@ -188,7 +195,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2750131" ratioLeft="525" ratioRight="1384" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.56283563" ratioLeft="524" ratioRight="407" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="com.tibco.xpd.fragments.view" label="Fragments"/>
@@ -251,32 +258,22 @@
 <view id="org.eclipse.team.ui.GenericHistoryView"/>
 <view id="com.tibco.xpd.deploy.server.view"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="top">
-<folder activePageID="org.tigris.subversion.subclipse.ui.repository.RepositoriesView" appearance="2" expanded="2">
-<page content="org.tigris.subversion.subclipse.ui.repository.RepositoriesView" label="SVN Repositories"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="top">&#x0A;<folder activePageID="org.tigris.subversion.subclipse.ui.repository.RepositoriesView" appearance="2" expanded="2">&#x0A;<page content="org.tigris.subversion.subclipse.ui.repository.RepositoriesView" label="SVN Repositories"/>
 <page content="org.tigris.subversion.subclipse.ui.annotations.AnnotateView" label="SVN Annotate"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="top">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="top">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.39958158" ratioLeft="764" ratioRight="1148" relationship="2" relative="top"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@41fefcf4" ratio="0.699241" ratioLeft="737" ratioRight="317" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.team.ui.GenericHistoryView" appearance="2" expanded="2">
-<page content="org.eclipse.team.ui.GenericHistoryView" label="History"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@41fefcf4" ratio="0.699241" ratioLeft="737" ratioRight="317" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.team.ui.GenericHistoryView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.team.ui.GenericHistoryView" label="History"/>
 <page content="com.tibco.xpd.deploy.server.view" label="Deployment Server"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -286,7 +283,19 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor">
+<xpdl path="/ArrayMapping/Process Packages/ArrayMapping.xpdl" processid="_XUvmIAQvEem_G-97Kp4DSg"/>
+</editor>
+</editors>
+<item historyLabel="ArrayMapping-Process (ArrayMappingProcess)" index="0">
+<position/>
+</item>
+<item active="true" historyLabel="ArrayMapping-Process (ArrayMappingProcess)" index="0">
+<position>_36TNEQUhEem91O5jBpLYhA</position>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -304,6 +313,11 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="ArrayMapping-Process (ArrayMappingProcess)" tooltip="/ArrayMapping/Process Packages/ArrayMapping.xpdl/ArrayMapping-Process (ArrayMappingProcess)">
+<persistable>
+<xpdl path="/ArrayMapping/Process Packages/ArrayMapping.xpdl" processid="_XUvmIAQvEem_G-97Kp4DSg"/>
+</persistable>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.packageeditor.editor" name="igs.com.fak.001.xpdl" tooltip="igs.com.fak.001/Process Packages/igs.com.fak.001.xpdl">
 <persistable path="/igs.com.fak.001/Process Packages/igs.com.fak.001.xpdl"/>
 </file>
@@ -311,8 +325,7 @@
 <persistable path="/igs.com.fak.001/Business Objects/igs.com.fak001.bom"/>
 </file>
 <file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="igscomfak001-Process (igscomfak001Process)" tooltip="/igs.com.fak.001/Process Packages/igs.com.fak.001.xpdl/igscomfak001-Process (igscomfak001Process)">
-<persistable>
-<xpdl path="/igs.com.fak.001/Process Packages/igs.com.fak.001.xpdl" processid="_YoloYQLWEem1eMvSVe3PZQ"/>
+<persistable>&#x0A;<xpdl path="/igs.com.fak.001/Process Packages/igs.com.fak.001.xpdl" processid="_YoloYQLWEem1eMvSVe3PZQ"/>
 </persistable>
 </file>
 <file factoryID="org.eclipse.emf.common.ui.URIEditorInputFactory" id="com.tibco.xpd.om.modeler.subdiagram.part.OrganizationModelSubDiagramEditorID" name="Organization1" tooltip="platform:/resource/igs.com.fak.001/Organization/igs.com.fak.001.om#_gmNmRALWEem1eMvSVe3PZQ">

@@ -1,0 +1,1348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xpdl2:Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:database="http://www.tibco.com/XPD/database1.0.0" xmlns:eaijava="http://www.tibco.com/XPD/EAIJava1.0.0" xmlns:email="http://www.tibco.com/XPD/email1.0.0" xmlns:iProcessExt="http://www.tibco.com/XPD/iProcessExt1.0.0" xmlns:orchestrator="http://www.tibco.com/XPD/orchestrator1.0.0" xmlns:order="http://www.tibco.com/XPD/order1.0.0" xmlns:simulation="http://www.tibco.com/xpd/Simulation1.0.1" xmlns:xpdExt="http://www.tibco.com/XPD/xpdExtension1.0.0" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" xsi:schemaLocation="http://www.wfmc.org/2008/XPDL2.1 http://www.wfmc.org/standards/bpmnxpdl_31.xsd" Id="_j-dF8BNUEem5tPB5xUwBFQ" xpdExt:DisplayName="IV-SL_building_block" Name="IVSL_building_block">
+  <xpdl2:PackageHeader xpdExt:Language="de_CH">
+    <xpdl2:XPDLVersion>2.1</xpdl2:XPDLVersion>
+    <xpdl2:Vendor>TIBCO</xpdl2:Vendor>
+    <xpdl2:Created>2019-01-08</xpdl2:Created>
+    <xpdl2:Description></xpdl2:Description>
+    <xpdl2:Documentation></xpdl2:Documentation>
+    <xpdl2:CostUnit>CHF</xpdl2:CostUnit>
+  </xpdl2:PackageHeader>
+  <xpdl2:RedefinableHeader PublicationStatus="UNDER_REVISION">
+    <xpdl2:Author>admin</xpdl2:Author>
+    <xpdl2:Version>1.0.0.qualifier</xpdl2:Version>
+  </xpdl2:RedefinableHeader>
+  <xpdl2:ExternalPackages>
+    <xpdl2:ExternalPackage Id="_vdgjMhNUEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_vdgjMRNUEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_vdgjMBNUEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_xWQ0lRNUEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_xWQ0kxNUEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_xWQ0lBNUEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_EjAWzBNVEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_EjAW0BNVEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_EjAW0RNVEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_EjAWzRNVEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_EjAWyxNVEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_EjAWzhNVEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_EjAWxxNVEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_EjAWzxNVEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_EjAWyRNVEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_EjAW0hNVEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_EjAWyBNVEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_EjAWyhNVEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_SWR44xNVEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+    <xpdl2:ExternalPackage Id="_SWR44hNVEem5tPB5xUwBFQ" href="Gen_building_block">
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="location" Value="/Gen_building_block.xpdl"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:ExternalPackage>
+  </xpdl2:ExternalPackages>
+  <xpdl2:Participants>
+    <xpdl2:Participant Id="_vdNBeRNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Mitarbeiter_RD" Name="Mitarbeiter_RD">
+      <xpdl2:ParticipantType Type="RESOURCE"/>
+      <xpdl2:ExternalReference location="com.igs.org.om" namespace="http://www.tibco.com/om/1.0" xref="_rCyjYAUGEem-aMI85c3QiA"/>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_xWIR9RNUEem5tPB5xUwBFQ" xpdExt:DisplayName="KernprozessLeitung" Name="KernprozessLeitung">
+      <xpdl2:ParticipantType Type="RESOURCE"/>
+      <xpdl2:ExternalReference location="com.igs.org.om" namespace="http://www.tibco.com/om/1.0" xref="_erG1AAUGEem-aMI85c3QiA"/>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_EjAWuBNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Mitarbeiter_RAD" Name="Mitarbeiter_RAD">
+      <xpdl2:ParticipantType Type="RESOURCE"/>
+      <xpdl2:ExternalReference location="com.igs.org.om" namespace="http://www.tibco.com/om/1.0" xref="_FexhMAY_Eem_4e3M9ri6oA"/>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_EjAWuRNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Arzt_RAD" Name="Arzt_RAD">
+      <xpdl2:ParticipantType Type="RESOURCE"/>
+      <xpdl2:ExternalReference location="com.igs.org.om" namespace="http://www.tibco.com/om/1.0" xref="_HWkEIA9REemQq6K7WaVxVw"/>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_EjAWuhNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Sekretariat_RAD" Name="Sekretariat_RAD">
+      <xpdl2:ParticipantType Type="RESOURCE"/>
+      <xpdl2:ExternalReference location="com.igs.org.om" namespace="http://www.tibco.com/om/1.0" xref="_VBO7QAUHEem-aMI85c3QiA"/>
+    </xpdl2:Participant>
+    <xpdl2:Participant Id="_SV--PxNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Mitarbeiter_RD (2)" Name="Mitarbeiter_RD2">
+      <xpdl2:ParticipantType Type="RESOURCE"/>
+      <xpdl2:ExternalReference location="com.igs.org.om" namespace="http://www.tibco.com/om/1.0" xref="_rCyjYAUGEem-aMI85c3QiA"/>
+    </xpdl2:Participant>
+  </xpdl2:Participants>
+  <xpdl2:Pools>
+    <xpdl2:Pool Id="_vdNBdRNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_vdNBVRNUEem5tPB5xUwBFQ">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_vdNBdhNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Automat" Name="Automat">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="128,155,183" Height="286.0" IsVisible="true"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+        <xpdl2:Lane Id="_vdNBdxNUEem5tPB5xUwBFQ" xpdExt:DisplayName="AD" Name="AD">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo FillColor="128,128,255" Height="444.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+        <xpdl2:Lane Id="_vdNBeBNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Sachbearbeiter SB1" Name="SachbearbeiterSB1">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="0,255,255" Height="160.0" IsVisible="true"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+      <xpdl2:NodeGraphicsInfos>
+        <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="223,179,0" IsVisible="true"/>
+      </xpdl2:NodeGraphicsInfos>
+    </xpdl2:Pool>
+    <xpdl2:Pool Id="_xWIR8hNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_xWIR0xNUEem5tPB5xUwBFQ">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_xWIR8xNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Automat" Name="Automat">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="128,155,183" Height="344.0" IsVisible="true"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+        <xpdl2:Lane Id="_xWIR9BNUEem5tPB5xUwBFQ" xpdExt:DisplayName="KPL" Name="KPL">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo FillColor="128,128,255" Height="239.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+      <xpdl2:NodeGraphicsInfos>
+        <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="223,179,0" IsVisible="true"/>
+      </xpdl2:NodeGraphicsInfos>
+    </xpdl2:Pool>
+    <xpdl2:Pool Id="_SV--OxNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_SV--GBNVEem5tPB5xUwBFQ">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_SV--PBNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Automat" Name="Automat">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="128,155,183" Height="462.0" IsVisible="true"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+        <xpdl2:Lane Id="_SV--PRNVEem5tPB5xUwBFQ" xpdExt:DisplayName="RD" Name="RD">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo FillColor="128,128,255" Height="321.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+        <xpdl2:Lane Id="_SV--PhNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Sachbearbeiter SB1" Name="SachbearbeiterSB1">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="0,255,255" Height="134.0" IsVisible="true"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+      <xpdl2:NodeGraphicsInfos>
+        <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="223,179,0" IsVisible="true"/>
+      </xpdl2:NodeGraphicsInfos>
+    </xpdl2:Pool>
+  </xpdl2:Pools>
+  <xpdl2:WorkflowProcesses>
+    <xpdl2:WorkflowProcess Id="_vdNBVRNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Sub101 Auftrag AD" Name="Sub101AuftragAD">
+      <xpdl2:ProcessHeader/>
+      <xpdl2:FormalParameters>
+        <xpdl2:FormalParameter Id="_vdNBaxNUEem5tPB5xUwBFQ" Name="Geschaeftsfall" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Geschaeftsfall">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6XgUFEem-aMI85c3QiA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_vdNBbBNUEem5tPB5xUwBFQ" Name="IVSachbearbeiter" ReadOnly="false" Mode="INOUT" Required="true" xpdExt:DisplayName="IV-Sachbearbeiter">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="PERFORMER"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_vdNBbRNUEem5tPB5xUwBFQ" Name="Mitglied" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Mitglied">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6MQUFEem-aMI85c3QiA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_vdNBbhNUEem5tPB5xUwBFQ" Name="Versicherter" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Versicherter">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6EAUFEem-aMI85c3QiA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+      </xpdl2:FormalParameters>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_vdNBbxNUEem5tPB5xUwBFQ" xpdExt:DisplayName="WP_Formular_zum_Gesuch_anzeigen" Name="WP_Formular_zum_Gesuch_anzeigen" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_vdNBcBNUEem5tPB5xUwBFQ" xpdExt:DisplayName="WP_WW_Protokolle_bearbeiten" Name="WP_WW_Protokolle_bearbeiten" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_vdNBcRNUEem5tPB5xUwBFQ" xpdExt:DisplayName="EXC_Excel_Dokumente" Name="EXC_Excel_Dokumente" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_vdNBchNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Zurueck_zu_Hauptprozess" Name="Zurueck_zu_Hauptprozess" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_vdNBcxNUEem5tPB5xUwBFQ" xpdExt:DisplayName="actionToDo" Name="actionToDo" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_vdNBdBNUEem5tPB5xUwBFQ" xpdExt:DisplayName="action" Name="action" IsArray="true" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_vdNBVhNUEem5tPB5xUwBFQ" Name="Start" xpdExt:DisplayName="Start" xpdExt:Visibility="Private">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="47.0" LaneId="_vdNBdxNUEem5tPB5xUwBFQ" Width="31.0">
+              <xpdl2:Coordinates XCoordinate="43.0" YCoordinate="318.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_vdNBVxNUEem5tPB5xUwBFQ" Name="AnfrageRD101" FinishMode="Manual" IsATransaction="false" StartMode="Manual" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="Anfrage RD (101)">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_vdNBWBNUEem5tPB5xUwBFQ"/>
+                <xpdl2:MessageOut Id="_vdNBWRNUEem5tPB5xUwBFQ"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:Performers>
+            <xpdl2:Performer>_vdNBeRNUEem5tPB5xUwBFQ</xpdl2:Performer>
+          </xpdl2:Performers>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Join Type="Exclusive" ExclusiveType="Data"/>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="76.0" LaneId="_vdNBdxNUEem5tPB5xUwBFQ" Width="117.0">
+              <xpdl2:Coordinates XCoordinate="160.0" YCoordinate="318.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_vdNBWhNUEem5tPB5xUwBFQ" Name="EXCExcelDokumente1021" FinishMode="Automatic" IsATransaction="false" StartMode="Automatic" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="EXC Excel-Dokumente (102.1)">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="_eAeDgxM6EemnLOiGQkEvTQ" PackageRef="Gen_building_block" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true">
+              <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="Task">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">actionToDo</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="EXC_Excel_Dokumente">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">EXC_Excel_Dokumente</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:InputMappings>
+              <xpdExt:OutputMappings MapperContext="SubProcessToProcess" MappingDirection="OUT">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="EXC_Excel_Dokumente">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">EXC_Excel_Dokumente</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:OutputMappings>
+            </xpdl2:SubFlow>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="76.0" LaneId="_vdNBdxNUEem5tPB5xUwBFQ" Width="117.0">
+              <xpdl2:Coordinates XCoordinate="520.0" YCoordinate="206.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_vdNBWxNUEem5tPB5xUwBFQ" Name="WP_CALLS" FinishMode="Automatic" IsATransaction="false" StartMode="Automatic" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="WP_CALLS">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="_eAeDgxM6EemnLOiGQkEvTQ" PackageRef="Gen_building_block" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true">
+              <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="Task">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">actionToDo</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:InputMappings>
+              <xpdExt:OutputMappings MapperContext="SubProcessToProcess" MappingDirection="OUT">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:OutputMappings>
+            </xpdl2:SubFlow>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="76.0" LaneId="_vdNBdhNUEem5tPB5xUwBFQ" Width="117.0">
+              <xpdl2:Coordinates XCoordinate="474.0" YCoordinate="114.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_vdNBXBNUEem5tPB5xUwBFQ" Name="Funktion" xpdExt:DisplayName="Funktion?">
+          <xpdl2:Route GatewayType="Exclusive" MarkerVisible="true" ExclusiveType="Data"/>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Split Type="Exclusive" ExclusiveType="Data">
+                <xpdl2:TransitionRefs>
+                  <xpdl2:TransitionRef Id="_vdNBZRNUEem5tPB5xUwBFQ"/>
+                  <xpdl2:TransitionRef Id="_vdNBZxNUEem5tPB5xUwBFQ"/>
+                  <xpdl2:TransitionRef Id="_vdNBaBNUEem5tPB5xUwBFQ"/>
+                </xpdl2:TransitionRefs>
+              </xpdl2:Split>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="45.0" LaneId="_vdNBdxNUEem5tPB5xUwBFQ" Width="43.0">
+              <xpdl2:Coordinates XCoordinate="266.0" YCoordinate="318.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_vdNBXRNUEem5tPB5xUwBFQ" Name="zurck" xpdExt:Visibility="Private" xpdExt:DisplayName="zurück">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="47.0" LaneId="_vdNBeBNUEem5tPB5xUwBFQ" Width="37.0">
+              <xpdl2:Coordinates XCoordinate="979.0" YCoordinate="78.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_vdNBXhNUEem5tPB5xUwBFQ" Name="WGesuchanzeigen3000" FinishMode="Automatic" IsATransaction="false" StartMode="Automatic" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="W Gesuch anzeigen (3000)">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="_eAeDgxM6EemnLOiGQkEvTQ" PackageRef="Gen_building_block" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true">
+              <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="Task">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">actionToDo</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:InputMappings>
+              <xpdExt:OutputMappings MapperContext="SubProcessToProcess" MappingDirection="OUT">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:OutputMappings>
+            </xpdl2:SubFlow>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo FillColor="255,219,74" Height="76.0" LaneId="_vdNBdhNUEem5tPB5xUwBFQ" Width="117.0">
+              <xpdl2:Coordinates XCoordinate="692.0" YCoordinate="210.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_vdNBXxNUEem5tPB5xUwBFQ" Name="WLMWeiterleitenmanuell" FinishMode="Manual" IsATransaction="false" StartMode="Manual" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="WL/M Weiterleiten manuell ?????">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_vdNBYBNUEem5tPB5xUwBFQ"/>
+                <xpdl2:MessageOut Id="_vdNBYRNUEem5tPB5xUwBFQ"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo FillColor="255,0,0" Height="76.0" LaneId="_vdNBdxNUEem5tPB5xUwBFQ" Width="117.0">
+              <xpdl2:Coordinates XCoordinate="520.0" YCoordinate="88.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_vdNBYhNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_vdNBWhNUEem5tPB5xUwBFQ" To="_vdNBVxNUEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="121.0" YCoordinate="186.0"/>
+              <xpdl2:Coordinates XCoordinate="481.0" YCoordinate="74.0"/>
+              <xpdl2:Coordinates XCoordinate="-320.0" YCoordinate="198.0"/>
+              <xpdl2:Coordinates XCoordinate="40.0" YCoordinate="86.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_vdNBYxNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_vdNBVhNUEem5tPB5xUwBFQ" To="_vdNBVxNUEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_vdNBZBNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_vdNBVxNUEem5tPB5xUwBFQ" To="_vdNBXBNUEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_vdNBZRNUEem5tPB5xUwBFQ" xpdExt:DisplayName="zurück zu Sachleistungen (102.4)" Name="zurckzuSachleistungen1024" From="_vdNBXBNUEem5tPB5xUwBFQ" To="_vdNBXxNUEem5tPB5xUwBFQ">
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">String(actionToDo).toLowerCase()==String(&quot;Zurueck_zu_Hauptprozess&quot;).toLowerCase();</xpdl2:Expression></xpdl2:Condition>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="107.0" YCoordinate="-231.0"/>
+              <xpdl2:Coordinates XCoordinate="-147.0" YCoordinate="-1.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="84.26150121065376" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-28.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelSize">
+              <xpdl2:Coordinates XCoordinate="93.0" YCoordinate="30.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_vdNBZhNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_vdNBXhNUEem5tPB5xUwBFQ" To="_vdNBXRNUEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_vdNBZxNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_vdNBXBNUEem5tPB5xUwBFQ" To="_vdNBWxNUEem5tPB5xUwBFQ">
+          <xpdl2:Condition Type="OTHERWISE"/>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="59.0" YCoordinate="-492.0"/>
+              <xpdl2:Coordinates XCoordinate="-149.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_vdNBaBNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_vdNBXBNUEem5tPB5xUwBFQ" To="_vdNBWhNUEem5tPB5xUwBFQ">
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">String(actionToDo).toLowerCase()==String(&quot;WP_EXC_Excel_Dokumente&quot;).toLowerCase();</xpdl2:Expression></xpdl2:Condition>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="228.0" YCoordinate="8.0"/>
+              <xpdl2:Coordinates XCoordinate="-26.0" YCoordinate="120.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_vdNBaRNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_vdNBXxNUEem5tPB5xUwBFQ" To="_vdNBXhNUEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_vdNBahNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_vdNBWxNUEem5tPB5xUwBFQ" To="_vdNBVxNUEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="255,128,0" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="95.0" YCoordinate="-77.0"/>
+              <xpdl2:Coordinates XCoordinate="409.0" YCoordinate="-569.0"/>
+              <xpdl2:Coordinates XCoordinate="-295.0" YCoordinate="-77.0"/>
+              <xpdl2:Coordinates XCoordinate="19.0" YCoordinate="-569.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="BPM"/>
+        <xpdl2:ExtendedAttribute Name="WorkflowProcessSimulationData"><simulation:WorkflowProcessSimulationData>
+            <simulation:ParameterDistribution ParameterId="Geschaeftsfall"/>
+            <simulation:ParameterDistribution ParameterId="IVSachbearbeiter"/>
+            <simulation:ParameterDistribution ParameterId="Mitglied"/>
+            <simulation:ParameterDistribution ParameterId="Versicherter"/>
+          </simulation:WorkflowProcessSimulationData></xpdl2:ExtendedAttribute>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:WorkflowProcess>
+    <xpdl2:WorkflowProcess Id="_xWIR0xNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Sub105 Anfrage BSV" Name="Sub105AnfrageBSV">
+      <xpdl2:ProcessHeader/>
+      <xpdl2:FormalParameters>
+        <xpdl2:FormalParameter Id="_xWIR5hNUEem5tPB5xUwBFQ" Name="IVSachbearbeiter" ReadOnly="false" Mode="INOUT" Required="true" xpdExt:DisplayName="IV-Sachbearbeiter">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="PERFORMER"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_xWIR5xNUEem5tPB5xUwBFQ" Name="Versicherter" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Versicherter">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6EAUFEem-aMI85c3QiA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_xWIR6BNUEem5tPB5xUwBFQ" Name="Mitglied" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Mitglied">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6MQUFEem-aMI85c3QiA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_xWIR6RNUEem5tPB5xUwBFQ" Name="Geschaeftsfall" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Geschaeftsfall">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6XgUFEem-aMI85c3QiA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_xWIR6hNUEem5tPB5xUwBFQ" Name="BSV_ist_OK" ReadOnly="false" Mode="OUT" Required="true" xpdExt:DisplayName="BSV_ist_OK">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+      </xpdl2:FormalParameters>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_xWIR6xNUEem5tPB5xUwBFQ" xpdExt:DisplayName="WP_Formular_zum_Gesuch_anzeigen" Name="WP_Formular_zum_Gesuch_anzeigen" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_xWIR7BNUEem5tPB5xUwBFQ" xpdExt:DisplayName="WP_WW_Protokolle_bearbeiten" Name="WP_WW_Protokolle_bearbeiten" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_xWIR7RNUEem5tPB5xUwBFQ" xpdExt:DisplayName="WP_Gesuch_anzeigen" Name="WP_Gesuch_anzeigen" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_xWIR7hNUEem5tPB5xUwBFQ" xpdExt:DisplayName="actionToDo" Name="actionToDo" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_xWIR7xNUEem5tPB5xUwBFQ" xpdExt:DisplayName="action" Name="action" IsArray="true" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_xWIR8BNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Gesuch_ist_OK" Name="Gesuch_ist_OK" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_xWIR8RNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Gesuch_ist_nicht_OK" Name="Gesuch_ist_nicht_OK" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_xWIR1BNUEem5tPB5xUwBFQ" Name="Start" xpdExt:DisplayName="Start">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="47.0" LaneId="_xWIR9BNUEem5tPB5xUwBFQ" Width="31.0">
+              <xpdl2:Coordinates XCoordinate="58.0" YCoordinate="98.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_xWIR1RNUEem5tPB5xUwBFQ" Name="AnfrageBSV105" FinishMode="Manual" IsATransaction="false" StartMode="Manual" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="Anfrage BSV (105)" xpdExt:Visibility="Private">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_xWIR1hNUEem5tPB5xUwBFQ"/>
+                <xpdl2:MessageOut Id="_xWIR1xNUEem5tPB5xUwBFQ"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:Performers>
+            <xpdl2:Performer>_xWIR9RNUEem5tPB5xUwBFQ</xpdl2:Performer>
+          </xpdl2:Performers>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Join Type="Exclusive" ExclusiveType="Data"/>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="76.0" LaneId="_xWIR9BNUEem5tPB5xUwBFQ" Width="117.0">
+              <xpdl2:Coordinates XCoordinate="167.0" YCoordinate="98.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_xWIR2BNUEem5tPB5xUwBFQ" Name="Funktion" xpdExt:DisplayName="Funktion?">
+          <xpdl2:Route GatewayType="Exclusive" MarkerVisible="true" ExclusiveType="Data"/>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Split Type="Exclusive" ExclusiveType="Data">
+                <xpdl2:TransitionRefs>
+                  <xpdl2:TransitionRef Id="_xWIR3hNUEem5tPB5xUwBFQ"/>
+                  <xpdl2:TransitionRef Id="_xWIR4xNUEem5tPB5xUwBFQ"/>
+                  <xpdl2:TransitionRef Id="_xWIR5BNUEem5tPB5xUwBFQ"/>
+                </xpdl2:TransitionRefs>
+              </xpdl2:Split>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="61.0" LaneId="_xWIR9BNUEem5tPB5xUwBFQ" Width="54.0">
+              <xpdl2:Coordinates XCoordinate="285.0" YCoordinate="98.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_xWIR2RNUEem5tPB5xUwBFQ" Name="ZurckOK" xpdExt:Visibility="Private" xpdExt:DisplayName="Zurück OK">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="47.0" LaneId="_xWIR8xNUEem5tPB5xUwBFQ" Width="58.0">
+              <xpdl2:Coordinates XCoordinate="775.0" YCoordinate="209.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">BSV_ist_OK=true;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_xWIR2hNUEem5tPB5xUwBFQ" Name="ZurckNotOK" xpdExt:Visibility="Private" xpdExt:DisplayName="Zurück NotOK">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="62.0" LaneId="_xWIR8xNUEem5tPB5xUwBFQ" Width="39.0">
+              <xpdl2:Coordinates XCoordinate="775.0" YCoordinate="94.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:Audit>
+            <xpdExt:AuditEvent Type="Initiated">
+              <xpdExt:Information ScriptGrammar="JavaScript">BSV_ist_OK=false;
+</xpdExt:Information>
+            </xpdExt:AuditEvent>
+          </xpdExt:Audit>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_xWIR2xNUEem5tPB5xUwBFQ" Name="WGesuchanzeigen3000_NOK" FinishMode="Automatic" IsATransaction="false" StartMode="Automatic" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="W Gesuch anzeigen (3000)_NOK">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="_eAeDgxM6EemnLOiGQkEvTQ" PackageRef="Gen_building_block" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true">
+              <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="Task">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">actionToDo</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:InputMappings>
+              <xpdExt:OutputMappings MapperContext="SubProcessToProcess" MappingDirection="OUT">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:OutputMappings>
+            </xpdl2:SubFlow>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo FillColor="255,219,74" Height="76.0" LaneId="_xWIR8xNUEem5tPB5xUwBFQ" Width="117.0">
+              <xpdl2:Coordinates XCoordinate="634.0" YCoordinate="94.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_xWIR3BNUEem5tPB5xUwBFQ" Name="WGesuchanzeigen3000_OK" FinishMode="Automatic" IsATransaction="false" StartMode="Automatic" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="W Gesuch anzeigen (3000)_OK">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="_eAeDgxM6EemnLOiGQkEvTQ" PackageRef="Gen_building_block" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true">
+              <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="Task">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">actionToDo</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:InputMappings>
+            </xpdl2:SubFlow>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo FillColor="255,219,74" Height="76.0" LaneId="_xWIR8xNUEem5tPB5xUwBFQ" Width="117.0">
+              <xpdl2:Coordinates XCoordinate="634.0" YCoordinate="209.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_xWIR3RNUEem5tPB5xUwBFQ" Name="WP_CALLS" FinishMode="Automatic" IsATransaction="false" StartMode="Automatic" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="WP_CALLS">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="_eAeDgxM6EemnLOiGQkEvTQ" PackageRef="Gen_building_block" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true">
+              <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="Task">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">actionToDo</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:InputMappings>
+              <xpdExt:OutputMappings MapperContext="SubProcessToProcess" MappingDirection="OUT">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:OutputMappings>
+            </xpdl2:SubFlow>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo FillColor="255,219,74" Height="76.0" LaneId="_xWIR9BNUEem5tPB5xUwBFQ" Width="117.0">
+              <xpdl2:Coordinates XCoordinate="597.0" YCoordinate="98.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_xWIR3hNUEem5tPB5xUwBFQ" xpdExt:DisplayName="BSV-Anfrage VISIERT - zurück (106.2)" Name="BSVAnfrageVISIERTzurck1062" From="_xWIR2BNUEem5tPB5xUwBFQ" To="_xWIR3BNUEem5tPB5xUwBFQ">
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">String(actionToDo).toLowerCase()==String(&quot;Gesuch_ist_OK&quot;).toLowerCase();</xpdl2:Expression></xpdl2:Condition>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="94.0" YCoordinate="-235.0"/>
+              <xpdl2:Coordinates XCoordinate="-255.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="78.39116719242902" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-10.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_xWIR3xNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_xWIR1BNUEem5tPB5xUwBFQ" To="_xWIR1RNUEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_xWIR4BNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_xWIR1RNUEem5tPB5xUwBFQ" To="_xWIR2BNUEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_xWIR4RNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_xWIR2xNUEem5tPB5xUwBFQ" To="_xWIR2hNUEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_xWIR4hNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_xWIR3BNUEem5tPB5xUwBFQ" To="_xWIR2RNUEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_xWIR4xNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Gesuch ansehen etc." Name="Gesuchansehenetc" From="_xWIR2BNUEem5tPB5xUwBFQ" To="_xWIR3RNUEem5tPB5xUwBFQ">
+          <xpdl2:Condition Type="OTHERWISE"/>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_xWIR5BNUEem5tPB5xUwBFQ" xpdExt:DisplayName="BSV-Anfrage nicht io - zurück (106.1)" Name="BSVAnfragenichtiozurck1061" From="_xWIR2BNUEem5tPB5xUwBFQ" To="_xWIR2xNUEem5tPB5xUwBFQ">
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">String(actionToDo).toLowerCase()==String(&quot;Gesuch_ist_nicht_OK&quot;).toLowerCase();</xpdl2:Expression></xpdl2:Condition>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="-261.0"/>
+              <xpdl2:Coordinates XCoordinate="-350.0" YCoordinate="89.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="80.8695652173913" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-9.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_xWIR5RNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_xWIR3RNUEem5tPB5xUwBFQ" To="_xWIR1RNUEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="-34.0" YCoordinate="129.0"/>
+              <xpdl2:Coordinates XCoordinate="396.0" YCoordinate="129.0"/>
+              <xpdl2:Coordinates XCoordinate="-379.0" YCoordinate="129.0"/>
+              <xpdl2:Coordinates XCoordinate="51.0" YCoordinate="129.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="BPM"/>
+        <xpdl2:ExtendedAttribute Name="WorkflowProcessSimulationData"><simulation:WorkflowProcessSimulationData>
+            <simulation:ParameterDistribution ParameterId="IVSachbearbeiter"/>
+            <simulation:ParameterDistribution ParameterId="Versicherter"/>
+            <simulation:ParameterDistribution ParameterId="Mitglied"/>
+            <simulation:ParameterDistribution ParameterId="Geschaeftsfall"/>
+            <simulation:ParameterDistribution ParameterId="BSV_ist_OK"/>
+          </simulation:WorkflowProcessSimulationData></xpdl2:ExtendedAttribute>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:WorkflowProcess>
+    <xpdl2:WorkflowProcess Id="_SV--GBNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Sub99 Anfrage RD" Name="Sub99AnfrageRD">
+      <xpdl2:ProcessHeader/>
+      <xpdl2:FormalParameters>
+        <xpdl2:FormalParameter Id="_SV--LxNVEem5tPB5xUwBFQ" Name="Versicherter" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Versicherter">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6EAUFEem-aMI85c3QiA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_SV--MBNVEem5tPB5xUwBFQ" Name="IVSachbearbeiter" ReadOnly="false" Mode="INOUT" Required="true" xpdExt:DisplayName="IV-Sachbearbeiter">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="PERFORMER"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_SV--MRNVEem5tPB5xUwBFQ" Name="Geschaeftsfall" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Geschaeftsfall">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6XgUFEem-aMI85c3QiA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_SV--MhNVEem5tPB5xUwBFQ" Name="Mitglied" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Mitglied">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6MQUFEem-aMI85c3QiA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+      </xpdl2:FormalParameters>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_SV--MxNVEem5tPB5xUwBFQ" xpdExt:DisplayName="WP_Formular_zum_Gesuch_anzeigen" Name="WP_Formular_zum_Gesuch_anzeigen" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_SV--NBNVEem5tPB5xUwBFQ" xpdExt:DisplayName="WP_Auftrage_zum_Gesuch_anzeigen" Name="WP_Auftrage_zum_Gesuch_anzeigen" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_SV--NRNVEem5tPB5xUwBFQ" xpdExt:DisplayName="WP_Zuteilung_zum_Gesuch_anzeigen" Name="WP_Zuteilung_zum_Gesuch_anzeigen" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_SV--NhNVEem5tPB5xUwBFQ" xpdExt:DisplayName="WP_WW_Protokolle_bearbeiten" Name="WP_WW_Protokolle_bearbeiten" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_SV--NxNVEem5tPB5xUwBFQ" xpdExt:DisplayName="WP_Gesuch_anzeigen" Name="WP_Gesuch_anzeigen" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_SV--OBNVEem5tPB5xUwBFQ" xpdExt:DisplayName="SP_zurueck_zu_SB_IV" Name="SP_zurueck_zu_SB_IV" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_SV--ORNVEem5tPB5xUwBFQ" xpdExt:DisplayName="action" Name="action" IsArray="true" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_SV--OhNVEem5tPB5xUwBFQ" xpdExt:DisplayName="actionToDo" Name="actionToDo" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>50</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_SV--GRNVEem5tPB5xUwBFQ" Name="Start" xpdExt:DisplayName="Start">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="47.0" LaneId="_SV--PRNVEem5tPB5xUwBFQ" Width="31.0">
+              <xpdl2:Coordinates XCoordinate="56.0" YCoordinate="194.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_SV--GhNVEem5tPB5xUwBFQ" Name="AnfrageRD99" FinishMode="Manual" IsATransaction="false" StartMode="Manual" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="Anfrage RD (99)">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_SV--GxNVEem5tPB5xUwBFQ"/>
+                <xpdl2:MessageOut Id="_SV--HBNVEem5tPB5xUwBFQ"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:Performers>
+            <xpdl2:Performer>_SV--PxNVEem5tPB5xUwBFQ</xpdl2:Performer>
+          </xpdl2:Performers>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Join Type="Exclusive" ExclusiveType="Data"/>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="76.0" LaneId="_SV--PRNVEem5tPB5xUwBFQ" Width="117.0">
+              <xpdl2:Coordinates XCoordinate="185.0" YCoordinate="194.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_SV--HRNVEem5tPB5xUwBFQ" Name="WP_CALLS" FinishMode="Automatic" IsATransaction="false" StartMode="Automatic" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="WP_CALLS">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="_eAeDgxM6EemnLOiGQkEvTQ" PackageRef="Gen_building_block" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true">
+              <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Zuteilung_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Zuteilung_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="Task">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">actionToDo</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Auftraege_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Auftrage_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:InputMappings>
+              <xpdExt:OutputMappings MapperContext="SubProcessToProcess" MappingDirection="OUT">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Formular_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Formular_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_WW_Protokolle_bearbeiten">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_WW_Protokolle_bearbeiten</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Zuteilung_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Zuteilung_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Auftrage_zum_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Auftraege_zum_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:OutputMappings>
+            </xpdl2:SubFlow>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="76.0" LaneId="_SV--PBNVEem5tPB5xUwBFQ" Width="117.0">
+              <xpdl2:Coordinates XCoordinate="588.0" YCoordinate="296.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_SV--HhNVEem5tPB5xUwBFQ" Name="Funktion" xpdExt:DisplayName="Funktion?">
+          <xpdl2:Route GatewayType="Exclusive" MarkerVisible="true" ExclusiveType="Data"/>
+          <xpdl2:TransitionRestrictions>
+            <xpdl2:TransitionRestriction>
+              <xpdl2:Split Type="Exclusive" ExclusiveType="Data">
+                <xpdl2:TransitionRefs>
+                  <xpdl2:TransitionRef Id="_SV--KBNVEem5tPB5xUwBFQ"/>
+                  <xpdl2:TransitionRef Id="_SV--KhNVEem5tPB5xUwBFQ"/>
+                </xpdl2:TransitionRefs>
+              </xpdl2:Split>
+            </xpdl2:TransitionRestriction>
+          </xpdl2:TransitionRestrictions>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="61.0" LaneId="_SV--PRNVEem5tPB5xUwBFQ" Width="54.0">
+              <xpdl2:Coordinates XCoordinate="305.0" YCoordinate="194.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_SV--HxNVEem5tPB5xUwBFQ">
+          <xpdl2:Route GatewayType="Exclusive" MarkerVisible="true" ExclusiveType="Data"/>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="45.0" LaneId="_SV--PBNVEem5tPB5xUwBFQ" Width="43.0">
+              <xpdl2:Coordinates XCoordinate="767.0" YCoordinate="296.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_SV--IBNVEem5tPB5xUwBFQ" Name="WLMWeiterleitenmanuell" FinishMode="Manual" IsATransaction="false" StartMode="Manual" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="WL/M Weiterleiten manuell ?????">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskUser Implementation="Unspecified">
+                <xpdl2:Performers>
+                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
+                </xpdl2:Performers>
+                <xpdl2:MessageIn Id="_SV--IRNVEem5tPB5xUwBFQ"/>
+                <xpdl2:MessageOut Id="_SV--IhNVEem5tPB5xUwBFQ"/>
+              </xpdl2:TaskUser>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo FillColor="255,0,0" Height="76.0" LaneId="_SV--PRNVEem5tPB5xUwBFQ" Width="117.0">
+              <xpdl2:Coordinates XCoordinate="547.0" YCoordinate="194.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
+            <xpdExt:WorkItemPriority InitialPriority="50"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_SV--IxNVEem5tPB5xUwBFQ" Name="WGesuchanzeigen3000" FinishMode="Automatic" IsATransaction="false" StartMode="Automatic" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="W Gesuch anzeigen (3000)">
+          <xpdl2:Implementation>
+            <xpdl2:SubFlow Id="_eAeDgxM6EemnLOiGQkEvTQ" PackageRef="Gen_building_block" xpdExt:StartStrategy="StartImmediately" xpdExt:SuspendResumeWithParent="true">
+              <xpdExt:InputMappings MapperContext="ProcessToSubProcess" MappingDirection="IN">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="Task">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">actionToDo</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WP_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:InputMappings>
+              <xpdExt:OutputMappings MapperContext="SubProcessToProcess" MappingDirection="OUT">
+                <xpdExt:DataMappings>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="SubProcessToProcess.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="WP_Gesuch_anzeigen">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">WP_Gesuch_anzeigen</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                </xpdExt:DataMappings>
+              </xpdExt:OutputMappings>
+            </xpdl2:SubFlow>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo FillColor="255,219,74" Height="76.0" LaneId="_SV--PRNVEem5tPB5xUwBFQ" Width="117.0">
+              <xpdl2:Coordinates XCoordinate="804.0" YCoordinate="194.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_SV--JBNVEem5tPB5xUwBFQ" Name="zurck" xpdExt:Visibility="Private" xpdExt:DisplayName="zurück">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="47.0" LaneId="_SV--PhNVEem5tPB5xUwBFQ" Width="54.0">
+              <xpdl2:Coordinates XCoordinate="965.0" YCoordinate="71.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_SV--JRNVEem5tPB5xUwBFQ" Name="ScriptTask" xpdExt:Visibility="Private" xpdExt:DisplayName="Script Task">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">actionToDo=&quot;WP_Gesuch_anzeigen&quot;;</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_SV--PRNVEem5tPB5xUwBFQ" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="684.0" YCoordinate="194.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_SV--JhNVEem5tPB5xUwBFQ" xpdExt:DisplayName="" From="_SV--GRNVEem5tPB5xUwBFQ" To="_SV--GhNVEem5tPB5xUwBFQ"/>
+        <xpdl2:Transition Id="_SV--JxNVEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_SV--GhNVEem5tPB5xUwBFQ" To="_SV--HhNVEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_SV--KBNVEem5tPB5xUwBFQ" xpdExt:DisplayName="zurück zu Sachleistungen (100.5)" Name="zurckzuSachleistungen1005" From="_SV--HhNVEem5tPB5xUwBFQ" To="_SV--IBNVEem5tPB5xUwBFQ">
+          <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">String(actionToDo).toLowerCase()==String(&quot;SP_zurueck_zu_SB_IV&quot;).toLowerCase();</xpdl2:Expression></xpdl2:Condition>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="78.02690582959642" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="-25.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelSize">
+              <xpdl2:Coordinates XCoordinate="99.0" YCoordinate="45.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_SV--KRNVEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_SV--HRNVEem5tPB5xUwBFQ" To="_SV--HxNVEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_SV--KhNVEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_SV--HhNVEem5tPB5xUwBFQ" To="_SV--HRNVEem5tPB5xUwBFQ">
+          <xpdl2:Condition Type="OTHERWISE"/>
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="74.0" YCoordinate="-362.0"/>
+              <xpdl2:Coordinates XCoordinate="-209.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_SV--KxNVEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_SV--JRNVEem5tPB5xUwBFQ" To="_SV--IxNVEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_SV--LBNVEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_SV--IxNVEem5tPB5xUwBFQ" To="_SV--JBNVEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_SV--LRNVEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_SV--HxNVEem5tPB5xUwBFQ" To="_SV--GhNVEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="255,128,0" ToolId="XPD.ConnectionInfo">
+              <xpdl2:Coordinates XCoordinate="46.0" YCoordinate="-74.0"/>
+              <xpdl2:Coordinates XCoordinate="638.0" YCoordinate="-623.0"/>
+              <xpdl2:Coordinates XCoordinate="-564.0" YCoordinate="-76.0"/>
+              <xpdl2:Coordinates XCoordinate="28.0" YCoordinate="-625.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_SV--LhNVEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_SV--IBNVEem5tPB5xUwBFQ" To="_SV--JRNVEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="BPM"/>
+        <xpdl2:ExtendedAttribute Name="WorkflowProcessSimulationData"><simulation:WorkflowProcessSimulationData>
+            <simulation:ParameterDistribution ParameterId="Versicherter"/>
+            <simulation:ParameterDistribution ParameterId="IVSachbearbeiter"/>
+            <simulation:ParameterDistribution ParameterId="Geschaeftsfall"/>
+            <simulation:ParameterDistribution ParameterId="Mitglied"/>
+          </simulation:WorkflowProcessSimulationData></xpdl2:ExtendedAttribute>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:WorkflowProcess>
+  </xpdl2:WorkflowProcesses>
+  <xpdl2:ExtendedAttributes>
+    <xpdl2:ExtendedAttribute Name="CreatedBy" Value="TIBCO Business Studio"/>
+    <xpdl2:ExtendedAttribute Name="FormatVersion" Value="20"/>
+    <xpdl2:ExtendedAttribute Name="OriginalFormatVersion" Value="20"/>
+  </xpdl2:ExtendedAttributes>
+</xpdl2:Package>

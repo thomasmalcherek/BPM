@@ -8391,3 +8391,159 @@ HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.e
 
 !ENTRY com.tibco.xpd.resources 1 0 2018-12-18 16:21:22.447
 !MESSAGE Derby database closed.
+!SESSION 2019-01-09 14:54:47.731 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation
+
+!ENTRY org.eclipse.ui 2 0 2019-01-09 14:55:01.309
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-01-09 14:55:01.309
+!MESSAGE Commands should really have a category: plug-in='com.tibco.xpd.openspacegwtgadget.integration', id='com.tibco.xpd.openspacegwtgadget.integration.openspaceGadgetDevDropDownButtonCmd', categoryId='com.tibco.xpd.openspacegwtgadget.integration.commandCategory'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-01-09 14:55:04.169
+!MESSAGE Both 'com.tibco.amf.sharedresource.model.transport.eclipse' and 'com.tibco.amf.sharedresource.model.transport.eclipse' register a package for 'http://xsd.tns.tibco.com/amf/models/sharedresource/httpconnector'
+
+!ENTRY org.eclipse.ui.workbench 2 0 2019-01-09 14:55:13.888
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2019-01-09 14:55:13.888
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@393b085a),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@393b085a)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@393b085a),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@393b085a)),sourcePriority=16640)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-01-09 14:55:55.967
+!MESSAGE Could not write metadata for '/.bsProject'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\admin\Documents\GitHub\BPM\.metadata\.plugins\org.eclipse.core.resources\.projects\.bsProject\.markers.snap (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1685)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1167)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.tibco.xpd.forms.designer.editor 4 0 2019-01-09 14:56:00.155
+!MESSAGE Unable to start Jetty server. Possible conflict on port 8888?
+Forms preview will be unavailable until resolved.
+See Window > Preferences > Form Designer > Preview > Port
+!STACK 0
+org.osgi.service.cm.ConfigurationException: org.eclipse.equinox.http.jetty.JettyConfigurator.com.tibco.xpd.forms.designer.editor : Address already in use: bind
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager.updated(HttpServerManager.java:111)
+	at org.eclipse.equinox.http.jetty.internal.Activator.startServer(Activator.java:231)
+	at org.eclipse.equinox.http.jetty.JettyConfigurator.startServer(JettyConfigurator.java:44)
+	at com.tibco.xpd.forms.designer.DesignerPlugin.new(DesignerPlugin.java:433)
+	at com.tibco.xpd.forms.designer.DesignerPlugin.start(DesignerPlugin.java:401)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:299)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at com.tibco.xpd.forms.designer.validation.util.FormClientSelector.<clinit>(FormClientSelector.java:33)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.emf.validation.internal.service.ClientContext.initializeCustomSelector(ClientContext.java:233)
+	at org.eclipse.emf.validation.internal.service.ClientContext.initializeSelector(ClientContext.java:169)
+	at org.eclipse.emf.validation.internal.service.ClientContext.initialize(ClientContext.java:119)
+	at org.eclipse.emf.validation.internal.service.ClientContext.<init>(ClientContext.java:76)
+	at org.eclipse.emf.validation.internal.service.ClientContextManager.configureClientContexts(ClientContextManager.java:410)
+	at org.eclipse.emf.validation.internal.service.ClientContextManager.access$1(ClientContextManager.java:390)
+	at org.eclipse.emf.validation.internal.service.ClientContextManager$1.addExtension(ClientContextManager.java:83)
+	at org.eclipse.emf.validation.internal.service.ClientContextManager.configureConstraintBindings(ClientContextManager.java:120)
+	at org.eclipse.emf.validation.internal.service.ClientContextManager.<init>(ClientContextManager.java:99)
+	at org.eclipse.emf.validation.internal.service.ClientContextManager.<clinit>(ClientContextManager.java:65)
+	at org.eclipse.emf.validation.internal.service.BatchValidator.validate(BatchValidator.java:203)
+	at org.eclipse.emf.validation.internal.service.BatchValidator.doValidate(BatchValidator.java:149)
+	at org.eclipse.emf.validation.internal.service.AbstractValidator.validate(AbstractValidator.java:147)
+	at org.eclipse.emf.validation.internal.service.AbstractValidator.validate(AbstractValidator.java:126)
+	at org.eclipse.emf.validation.internal.service.BatchValidator.validate(BatchValidator.java:1)
+	at com.tibco.xpd.validation.internal.EMFValidator.runBatchValidation(EMFValidator.java:208)
+	at com.tibco.xpd.validation.internal.EMFValidator.runBatchValidation(EMFValidator.java:182)
+	at com.tibco.xpd.validation.internal.EMFValidator.o00000(EMFValidator.java:242)
+	at com.tibco.xpd.validation.internal.EMFValidator.runBatchValidation(EMFValidator.java:141)
+	at com.tibco.xpd.validation.internal.engine.ValidationEngine.validate(ValidationEngine.java:268)
+	at com.tibco.xpd.validation.explicit.Validator.o00000(Validator.java:219)
+	at com.tibco.xpd.validation.explicit.Validator.validate(Validator.java:140)
+	at com.tibco.xpd.validation.internal.builder.ValidationBuilder.validate(ValidationBuilder.java:1228)
+	at com.tibco.xpd.validation.internal.builder.ValidationBuilder.super(ValidationBuilder.java:775)
+	at com.tibco.xpd.validation.internal.builder.ValidationBuilder.super(ValidationBuilder.java:446)
+	at com.tibco.xpd.validation.internal.builder.ValidationBuilder.build(ValidationBuilder.java:172)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.mortbay.jetty.nio.SelectChannelConnector.open(SelectChannelConnector.java:216)
+	at org.mortbay.jetty.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:315)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.Server.doStart(Server.java:235)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager.updated(HttpServerManager.java:109)
+	... 70 more
+
+!ENTRY org.eclipse.ui.ide 4 4 2019-01-09 14:57:44.579
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2019-01-09 14:57:44.595
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2019-01-09 14:57:44.595
+!MESSAGE Could not write metadata for '/.bsProject'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\admin\Documents\GitHub\BPM\.metadata\.plugins\org.eclipse.core.resources\.projects\.bsProject\.markers (Das System kann den angegebenen Pfad nicht finden)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1576)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1656)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1142)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.tibco.xpd.resources 1 0 2019-01-09 14:57:46.173
+!MESSAGE Derby database closed.
