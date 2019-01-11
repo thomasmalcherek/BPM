@@ -11,7 +11,7 @@
           minOccurs="1" name="VSPartnerID">
         <xsd:simpleType>
           <xsd:restriction base="xsd:string">
-            <xsd:pattern value="[\i-[:]][\c-[:]]*"/>
+            <xsd:maxLength value="50"/>
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>
@@ -43,7 +43,7 @@
           minOccurs="0" name="firstName">
         <xsd:simpleType>
           <xsd:restriction base="xsd:string">
-            <xsd:maxLength value="50"/>
+            <xsd:maxLength value="22"/>
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>
@@ -89,7 +89,7 @@
           minOccurs="1" name="MGPartnerID">
         <xsd:simpleType>
           <xsd:restriction base="xsd:string">
-            <xsd:pattern value="[\i-[:]][\c-[:]]*"/>
+            <xsd:maxLength value="50"/>
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>
@@ -97,7 +97,7 @@
           minOccurs="1" name="accountNumber">
         <xsd:simpleType>
           <xsd:restriction base="xsd:string">
-            <xsd:maxLength value="50"/>
+            <xsd:maxLength value="22"/>
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>
@@ -105,7 +105,7 @@
           minOccurs="1" name="companyID">
         <xsd:simpleType>
           <xsd:restriction base="xsd:string">
-            <xsd:pattern value="[\i-[:]][\c-[:]]*"/>
+            <xsd:maxLength value="22"/>
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>
@@ -121,7 +121,7 @@
           minOccurs="0" name="additionalName">
         <xsd:simpleType>
           <xsd:restriction base="xsd:string">
-            <xsd:maxLength value="50"/>
+            <xsd:maxLength value="22"/>
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>
@@ -137,7 +137,7 @@
           minOccurs="0" name="anmeldenummer">
         <xsd:simpleType>
           <xsd:restriction base="xsd:string">
-            <xsd:maxLength value="50"/>
+            <xsd:maxLength value="22"/>
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>
@@ -185,7 +185,7 @@
           name="PKID">
         <xsd:simpleType>
           <xsd:restriction base="xsd:string">
-            <xsd:pattern value="[\i-[:]][\c-[:]]*"/>
+            <xsd:maxLength value="50"/>
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>
@@ -269,7 +269,7 @@
           minOccurs="1" name="dokumentID">
         <xsd:simpleType>
           <xsd:restriction base="xsd:string">
-            <xsd:pattern value="[\i-[:]][\c-[:]]*"/>
+            <xsd:maxLength value="50"/>
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>
@@ -279,7 +279,7 @@
           minOccurs="1" name="documentType">
         <xsd:simpleType>
           <xsd:restriction base="xsd:string">
-            <xsd:maxLength value="50"/>
+            <xsd:maxLength value="22"/>
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>

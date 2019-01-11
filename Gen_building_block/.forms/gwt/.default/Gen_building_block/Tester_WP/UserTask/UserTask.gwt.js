@@ -2,9 +2,9 @@
 
 if (typeof(tibcoforms) == 'undefined') tibcoforms = new Object();
 if (typeof(tibcoforms.formCode) == 'undefined') tibcoforms.formCode = new Object();
-tibcoforms.formCode['_7KusUBQlEemj5-ScqcIGvQ'] = new Object();
-tibcoforms.formCode['_7KusUBQlEemj5-ScqcIGvQ']['defineActions'] = function() {
-var fc = tibcoforms.formCode['_7KusUBQlEemj5-ScqcIGvQ'];
+tibcoforms.formCode['_g7ozABW2Eemwx6NixRoh7A'] = new Object();
+tibcoforms.formCode['_g7ozABW2Eemwx6NixRoh7A']['defineActions'] = function() {
+var fc = tibcoforms.formCode['_g7ozABW2Eemwx6NixRoh7A'];
     fc['rule_cancel'] = function(formId, context, thisObj) {
 	   try {
 			tibco.forms.Util.handleScriptAction.call(thisObj, formId, context, thisObj, "cancel", "cancel", fc['action_cancel']);
@@ -60,17 +60,22 @@ var fc = tibcoforms.formCode['_7KusUBQlEemj5-ScqcIGvQ'];
         return "TIBCO Forms 4.1.0 V17 compliant";
     }
 };
-tibcoforms.formCode['_7KusUBQlEemj5-ScqcIGvQ']['defineActions']();
+tibcoforms.formCode['_g7ozABW2Eemwx6NixRoh7A']['defineActions']();
 
-tibcoforms.formCode['_7KusUBQlEemj5-ScqcIGvQ']['defineValidations'] = function() {
-var fc = tibcoforms.formCode['_7KusUBQlEemj5-ScqcIGvQ'];
+tibcoforms.formCode['_g7ozABW2Eemwx6NixRoh7A']['defineValidations'] = function() {
+var fc = tibcoforms.formCode['_g7ozABW2Eemwx6NixRoh7A'];
 	
+fc['validation_Geschaeftsfall_found_ahvNummer_Geschaeftsfall_found_ahvNummer__length'] = function(formId, controlName, cloneUID, listIndex) {
+	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), \'50\'] : context.value.length <= 50;';
+	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall_found_ahvNummer: Geschaeftsfall_found_ahvNummer__length", true, true);
+	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall_found_ahvNummer__length", true, true);
+}
 	
-	
-	
-	
-	
-	
+fc['validation_Geschaeftsfall_found_caseID_Geschaeftsfall_found_caseID__length'] = function(formId, controlName, cloneUID, listIndex) {
+	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), \'50\'] : context.value.length <= 50;';
+	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall_found_caseID: Geschaeftsfall_found_caseID__length", true, true);
+	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall_found_caseID__length", true, true);
+}
 	
 fc['validation_Geschaeftsfall_found_dokumentenArt_Geschaeftsfall_found_dokumentenArt__length'] = function(formId, controlName, cloneUID, listIndex) {
 	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), \'50\'] : context.value.length <= 50;';
@@ -79,11 +84,9 @@ fc['validation_Geschaeftsfall_found_dokumentenArt_Geschaeftsfall_found_dokumente
 }
 	
 	
-fc['validation_Geschaeftsfall_found_ahvNummer_Geschaeftsfall_found_ahvNummer__length'] = function(formId, controlName, cloneUID, listIndex) {
-	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), \'50\'] : context.value.length <= 50;';
-	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall_found_ahvNummer: Geschaeftsfall_found_ahvNummer__length", true, true);
-	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall_found_ahvNummer__length", true, true);
-}
+	
+	
+	
 	
 fc['validation_Geschaeftsfall_found_geschaeftsfall_Geschaeftsfall_found_geschaeftsfall__length'] = function(formId, controlName, cloneUID, listIndex) {
 	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), \'50\'] : context.value.length <= 50;';
@@ -91,19 +94,16 @@ fc['validation_Geschaeftsfall_found_geschaeftsfall_Geschaeftsfall_found_geschaef
 	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall_found_geschaeftsfall__length", true, true);
 }
 	
-	
-	
-fc['validation_Geschaeftsfall_found_caseID_Geschaeftsfall_found_caseID__length'] = function(formId, controlName, cloneUID, listIndex) {
-	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), \'50\'] : context.value.length <= 50;';
-	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall_found_caseID: Geschaeftsfall_found_caseID__length", true, true);
-	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall_found_caseID__length", true, true);
-}
-	
 fc['validation_Geschaeftsfall_found_dossierID_Geschaeftsfall_found_dossierID__length'] = function(formId, controlName, cloneUID, listIndex) {
 	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), \'50\'] : context.value.length <= 50;';
 	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall_found_dossierID: Geschaeftsfall_found_dossierID__length", true, true);
 	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall_found_dossierID__length", true, true);
 }
+	
+	
+	
+	
+	
 	fc['validate_required'] = function(formId, controlName, cloneUID, listIndex) {
 	var context = new Object();
     var form = tibcoforms.formCache[formId];
@@ -146,4 +146,4 @@ fc['validation_Geschaeftsfall_found_dossierID_Geschaeftsfall_found_dossierID__le
 	   
 	   
 };
-tibcoforms.formCode['_7KusUBQlEemj5-ScqcIGvQ']['defineValidations']();
+tibcoforms.formCode['_g7ozABW2Eemwx6NixRoh7A']['defineValidations']();

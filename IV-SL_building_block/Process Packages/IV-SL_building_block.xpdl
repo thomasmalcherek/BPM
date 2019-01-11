@@ -123,22 +123,6 @@
       <xpdl2:ParticipantType Type="RESOURCE"/>
       <xpdl2:ExternalReference location="com.igs.org.om" namespace="http://www.tibco.com/om/1.0" xref="_erG1AAUGEem-aMI85c3QiA"/>
     </xpdl2:Participant>
-    <xpdl2:Participant Id="_EjAWuBNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Mitarbeiter_RAD" Name="Mitarbeiter_RAD">
-      <xpdl2:ParticipantType Type="RESOURCE"/>
-      <xpdl2:ExternalReference location="com.igs.org.om" namespace="http://www.tibco.com/om/1.0" xref="_FexhMAY_Eem_4e3M9ri6oA"/>
-    </xpdl2:Participant>
-    <xpdl2:Participant Id="_EjAWuRNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Arzt_RAD" Name="Arzt_RAD">
-      <xpdl2:ParticipantType Type="RESOURCE"/>
-      <xpdl2:ExternalReference location="com.igs.org.om" namespace="http://www.tibco.com/om/1.0" xref="_HWkEIA9REemQq6K7WaVxVw"/>
-    </xpdl2:Participant>
-    <xpdl2:Participant Id="_EjAWuhNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Sekretariat_RAD" Name="Sekretariat_RAD">
-      <xpdl2:ParticipantType Type="RESOURCE"/>
-      <xpdl2:ExternalReference location="com.igs.org.om" namespace="http://www.tibco.com/om/1.0" xref="_VBO7QAUHEem-aMI85c3QiA"/>
-    </xpdl2:Participant>
-    <xpdl2:Participant Id="_SV--PxNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Mitarbeiter_RD (2)" Name="Mitarbeiter_RD2">
-      <xpdl2:ParticipantType Type="RESOURCE"/>
-      <xpdl2:ExternalReference location="com.igs.org.om" namespace="http://www.tibco.com/om/1.0" xref="_rCyjYAUGEem-aMI85c3QiA"/>
-    </xpdl2:Participant>
   </xpdl2:Participants>
   <xpdl2:Pools>
     <xpdl2:Pool Id="_vdNBdRNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_vdNBVRNUEem5tPB5xUwBFQ">
@@ -150,7 +134,7 @@
         </xpdl2:Lane>
         <xpdl2:Lane Id="_vdNBdxNUEem5tPB5xUwBFQ" xpdExt:DisplayName="AD" Name="AD">
           <xpdl2:NodeGraphicsInfos>
-            <xpdl2:NodeGraphicsInfo FillColor="128,128,255" Height="444.0"/>
+            <xpdl2:NodeGraphicsInfo FillColor="128,128,255" Height="447.0"/>
           </xpdl2:NodeGraphicsInfos>
         </xpdl2:Lane>
         <xpdl2:Lane Id="_vdNBeBNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Sachbearbeiter SB1" Name="SachbearbeiterSB1">
@@ -184,12 +168,12 @@
       <xpdl2:Lanes>
         <xpdl2:Lane Id="_SV--PBNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Automat" Name="Automat">
           <xpdl2:NodeGraphicsInfos>
-            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="128,155,183" Height="462.0" IsVisible="true"/>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="128,155,183" Height="161.0" IsVisible="true"/>
           </xpdl2:NodeGraphicsInfos>
         </xpdl2:Lane>
         <xpdl2:Lane Id="_SV--PRNVEem5tPB5xUwBFQ" xpdExt:DisplayName="RD" Name="RD">
           <xpdl2:NodeGraphicsInfos>
-            <xpdl2:NodeGraphicsInfo FillColor="128,128,255" Height="321.0"/>
+            <xpdl2:NodeGraphicsInfo FillColor="128,128,255" Height="325.0"/>
           </xpdl2:NodeGraphicsInfos>
         </xpdl2:Lane>
         <xpdl2:Lane Id="_SV--PhNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Sachbearbeiter SB1" Name="SachbearbeiterSB1">
@@ -225,6 +209,21 @@
         <xpdl2:FormalParameter Id="_vdNBbhNUEem5tPB5xUwBFQ" Name="Versicherter" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Versicherter">
           <xpdl2:DataType>
             <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6EAUFEem-aMI85c3QiA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_1HxN1xT1Eemwx6NixRoh7A" Name="Versicherte" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Versicherte">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6EAUFEem-aMI85c3QiA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_1HxN2RT1Eemwx6NixRoh7A" Name="WorkListFasade" ReadOnly="false" Mode="IN" Required="true" xpdExt:DisplayName="WorkListFasade">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="WorkListFasade.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_LTh0cBTtEemMqIXY9z_1Iw"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_1HxN2hT1Eemwx6NixRoh7A" Name="Dokument" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Dokument">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6ogUFEem-aMI85c3QiA"/>
           </xpdl2:DataType>
         </xpdl2:FormalParameter>
       </xpdl2:FormalParameters>
@@ -269,6 +268,12 @@
           </xpdl2:DataType>
           <xpdl2:InitialValue/>
         </xpdl2:DataField>
+        <xpdl2:DataField Id="_1HxN2BT1Eemwx6NixRoh7A" xpdExt:DisplayName="UserCompleteTaskGuid" Name="UserCompleteTaskGuid" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="PERFORMER"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
       </xpdl2:DataFields>
       <xpdl2:Activities>
         <xpdl2:Activity Id="_vdNBVhNUEem5tPB5xUwBFQ" Name="Start" xpdExt:DisplayName="Start" xpdExt:Visibility="Private">
@@ -290,6 +295,9 @@
                 </xpdl2:Performers>
                 <xpdl2:MessageIn Id="_vdNBWBNUEem5tPB5xUwBFQ"/>
                 <xpdl2:MessageOut Id="_vdNBWRNUEem5tPB5xUwBFQ"/>
+                <xpdExt:UserTaskScripts>
+                  <xpdExt:SubmitScript ScriptGrammar="JavaScript">UserCompleteTaskGuid=WorkManagerFactory.getWorkItem().getWorkItemResource().getGuid();</xpdExt:SubmitScript>
+                </xpdExt:UserTaskScripts>
               </xpdl2:TaskUser>
             </xpdl2:Task>
           </xpdl2:Implementation>
@@ -440,34 +448,11 @@
           </xpdl2:NodeGraphicsInfos>
           <xpdl2:Extensions/>
         </xpdl2:Activity>
-        <xpdl2:Activity Id="_vdNBXxNUEem5tPB5xUwBFQ" Name="WLMWeiterleitenmanuell" FinishMode="Manual" IsATransaction="false" StartMode="Manual" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="WL/M Weiterleiten manuell ?????">
-          <xpdl2:Implementation>
-            <xpdl2:Task>
-              <xpdl2:TaskUser Implementation="Unspecified">
-                <xpdl2:Performers>
-                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
-                </xpdl2:Performers>
-                <xpdl2:MessageIn Id="_vdNBYBNUEem5tPB5xUwBFQ"/>
-                <xpdl2:MessageOut Id="_vdNBYRNUEem5tPB5xUwBFQ"/>
-              </xpdl2:TaskUser>
-            </xpdl2:Task>
-          </xpdl2:Implementation>
-          <xpdl2:NodeGraphicsInfos>
-            <xpdl2:NodeGraphicsInfo FillColor="255,0,0" Height="76.0" LaneId="_vdNBdxNUEem5tPB5xUwBFQ" Width="117.0">
-              <xpdl2:Coordinates XCoordinate="520.0" YCoordinate="88.0"/>
-            </xpdl2:NodeGraphicsInfo>
-          </xpdl2:NodeGraphicsInfos>
-          <xpdl2:Extensions/>
-          <xpdExt:ActivityResourcePatterns>
-            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
-            <xpdExt:WorkItemPriority InitialPriority="50"/>
-          </xpdExt:ActivityResourcePatterns>
-        </xpdl2:Activity>
       </xpdl2:Activities>
       <xpdl2:Transitions>
         <xpdl2:Transition Id="_vdNBYhNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_vdNBWhNUEem5tPB5xUwBFQ" To="_vdNBVxNUEem5tPB5xUwBFQ">
           <xpdl2:ConnectorGraphicsInfos>
-            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
+            <xpdl2:ConnectorGraphicsInfo BorderColor="255,128,64" ToolId="XPD.ConnectionInfo">
               <xpdl2:Coordinates XCoordinate="121.0" YCoordinate="186.0"/>
               <xpdl2:Coordinates XCoordinate="481.0" YCoordinate="74.0"/>
               <xpdl2:Coordinates XCoordinate="-320.0" YCoordinate="198.0"/>
@@ -495,9 +480,10 @@
               <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
               <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
             </xpdl2:ConnectorGraphicsInfo>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.EndAnchorPosition"/>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
-        <xpdl2:Transition Id="_vdNBZRNUEem5tPB5xUwBFQ" xpdExt:DisplayName="zurück zu Sachleistungen (102.4)" Name="zurckzuSachleistungen1024" From="_vdNBXBNUEem5tPB5xUwBFQ" To="_vdNBXxNUEem5tPB5xUwBFQ">
+        <xpdl2:Transition Id="_vdNBZRNUEem5tPB5xUwBFQ" xpdExt:DisplayName="zurück zu Sachleistungen (102.4)" Name="zurckzuSachleistungen1024" From="_vdNBXBNUEem5tPB5xUwBFQ" To="_vdNBXhNUEem5tPB5xUwBFQ">
           <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">String(actionToDo).toLowerCase()==String(&quot;Zurueck_zu_Hauptprozess&quot;).toLowerCase();</xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
@@ -550,15 +536,6 @@
             </xpdl2:ConnectorGraphicsInfo>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
-        <xpdl2:Transition Id="_vdNBaRNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_vdNBXxNUEem5tPB5xUwBFQ" To="_vdNBXhNUEem5tPB5xUwBFQ">
-          <xpdl2:ConnectorGraphicsInfos>
-            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
-            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
-              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
-              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
-            </xpdl2:ConnectorGraphicsInfo>
-          </xpdl2:ConnectorGraphicsInfos>
-        </xpdl2:Transition>
         <xpdl2:Transition Id="_vdNBahNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_vdNBWxNUEem5tPB5xUwBFQ" To="_vdNBVxNUEem5tPB5xUwBFQ">
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="255,128,0" ToolId="XPD.ConnectionInfo">
@@ -581,8 +558,58 @@
             <simulation:ParameterDistribution ParameterId="IVSachbearbeiter"/>
             <simulation:ParameterDistribution ParameterId="Mitglied"/>
             <simulation:ParameterDistribution ParameterId="Versicherter"/>
+            <simulation:ParameterDistribution ParameterId="Versicherte"/>
+            <simulation:ParameterDistribution ParameterId="WorkListFasade"/>
+            <simulation:ParameterDistribution ParameterId="Dokument"/>
           </simulation:WorkflowProcessSimulationData></xpdl2:ExtendedAttribute>
       </xpdl2:ExtendedAttributes>
+      <xpdl2:Extensions/>
+      <xpdExt:ProcessDataWorkItemAttributeMappings>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute11</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.abrechNr</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute9</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.anmeldeNr</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute7</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.dokEingangsdatum</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute14</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.dokumentenArt</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute3</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.personenID</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute12</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.unternehmensID</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute4</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.versNachname</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute13</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.versVorname</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute2</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.versichNr</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute10</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.zusatzbezeichnung</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute8</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>UserCompleteTaskGuid</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+      </xpdExt:ProcessDataWorkItemAttributeMappings>
     </xpdl2:WorkflowProcess>
     <xpdl2:WorkflowProcess Id="_xWIR0xNUEem5tPB5xUwBFQ" xpdExt:DisplayName="Sub105 Anfrage BSV" Name="Sub105AnfrageBSV">
       <xpdl2:ProcessHeader/>
@@ -610,6 +637,16 @@
         <xpdl2:FormalParameter Id="_xWIR6hNUEem5tPB5xUwBFQ" Name="BSV_ist_OK" ReadOnly="false" Mode="OUT" Required="true" xpdExt:DisplayName="BSV_ist_OK">
           <xpdl2:DataType>
             <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_YblmuRV4Eemwx6NixRoh7A" Name="Dokument" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Dokument">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6ogUFEem-aMI85c3QiA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_YblmuxV4Eemwx6NixRoh7A" Name="WorkListFasade" ReadOnly="false" Mode="IN" Required="true" xpdExt:DisplayName="WorkListFasade">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="WorkListFasade.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_LTh0cBTtEemMqIXY9z_1Iw"/>
           </xpdl2:DataType>
         </xpdl2:FormalParameter>
       </xpdl2:FormalParameters>
@@ -660,6 +697,12 @@
           </xpdl2:DataType>
           <xpdl2:InitialValue/>
         </xpdl2:DataField>
+        <xpdl2:DataField Id="_YblmuhV4Eemwx6NixRoh7A" xpdExt:DisplayName="UserCompleteTaskGuid" Name="UserCompleteTaskGuid" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="PERFORMER"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
       </xpdl2:DataFields>
       <xpdl2:Activities>
         <xpdl2:Activity Id="_xWIR1BNUEem5tPB5xUwBFQ" Name="Start" xpdExt:DisplayName="Start">
@@ -681,6 +724,9 @@
                 </xpdl2:Performers>
                 <xpdl2:MessageIn Id="_xWIR1hNUEem5tPB5xUwBFQ"/>
                 <xpdl2:MessageOut Id="_xWIR1xNUEem5tPB5xUwBFQ"/>
+                <xpdExt:UserTaskScripts>
+                  <xpdExt:SubmitScript ScriptGrammar="JavaScript">UserCompleteTaskGuid=WorkManagerFactory.getWorkItem().getWorkItemResource().getGuid();</xpdExt:SubmitScript>
+                </xpdExt:UserTaskScripts>
               </xpdl2:TaskUser>
             </xpdl2:Task>
           </xpdl2:Implementation>
@@ -891,15 +937,6 @@
             </xpdl2:ConnectorGraphicsInfo>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
-        <xpdl2:Transition Id="_xWIR4BNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_xWIR1RNUEem5tPB5xUwBFQ" To="_xWIR2BNUEem5tPB5xUwBFQ">
-          <xpdl2:ConnectorGraphicsInfos>
-            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
-            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
-              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
-              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
-            </xpdl2:ConnectorGraphicsInfo>
-          </xpdl2:ConnectorGraphicsInfos>
-        </xpdl2:Transition>
         <xpdl2:Transition Id="_xWIR4RNUEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_xWIR2xNUEem5tPB5xUwBFQ" To="_xWIR2hNUEem5tPB5xUwBFQ">
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
@@ -955,6 +992,15 @@
             </xpdl2:ConnectorGraphicsInfo>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
+        <xpdl2:Transition Id="_awzKkBV4Eemwx6NixRoh7A" xpdExt:DisplayName="" Name="" From="_xWIR1RNUEem5tPB5xUwBFQ" To="_xWIR2BNUEem5tPB5xUwBFQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
       </xpdl2:Transitions>
       <xpdl2:ExtendedAttributes>
         <xpdl2:ExtendedAttribute Name="Destination" Value="BPM"/>
@@ -964,8 +1010,57 @@
             <simulation:ParameterDistribution ParameterId="Mitglied"/>
             <simulation:ParameterDistribution ParameterId="Geschaeftsfall"/>
             <simulation:ParameterDistribution ParameterId="BSV_ist_OK"/>
+            <simulation:ParameterDistribution ParameterId="Dokument"/>
+            <simulation:ParameterDistribution ParameterId="WorkListFasade"/>
           </simulation:WorkflowProcessSimulationData></xpdl2:ExtendedAttribute>
       </xpdl2:ExtendedAttributes>
+      <xpdl2:Extensions/>
+      <xpdExt:ProcessDataWorkItemAttributeMappings>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute11</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.abrechNr</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute9</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.anmeldeNr</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute7</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.dokEingangsdatum</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute14</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.dokumentenArt</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute3</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.personenID</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute12</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.unternehmensID</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute4</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.versNachname</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute13</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.versVorname</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute2</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.versichNr</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute10</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.zusatzbezeichnung</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute8</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>UserCompleteTaskGuid</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+      </xpdExt:ProcessDataWorkItemAttributeMappings>
     </xpdl2:WorkflowProcess>
     <xpdl2:WorkflowProcess Id="_SV--GBNVEem5tPB5xUwBFQ" xpdExt:DisplayName="Sub99 Anfrage RD" Name="Sub99AnfrageRD">
       <xpdl2:ProcessHeader/>
@@ -988,6 +1083,21 @@
         <xpdl2:FormalParameter Id="_SV--MhNVEem5tPB5xUwBFQ" Name="Mitglied" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Mitglied">
           <xpdl2:DataType>
             <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6MQUFEem-aMI85c3QiA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_JDt0URT1Eemwx6NixRoh7A" Name="WorkListFasade" ReadOnly="false" Mode="IN" Required="true" xpdExt:DisplayName="WorkListFasade">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="WorkListFasade.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_LTh0cBTtEemMqIXY9z_1Iw"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_RnGxuRT1Eemwx6NixRoh7A" Name="Versicherte" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Versicherte">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6EAUFEem-aMI85c3QiA"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_RnGxuxT1Eemwx6NixRoh7A" Name="Dokument" ReadOnly="false" Mode="INOUT" Required="false" xpdExt:DisplayName="Dokument">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="comigsbom.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_JLd6ogUFEem-aMI85c3QiA"/>
           </xpdl2:DataType>
         </xpdl2:FormalParameter>
       </xpdl2:FormalParameters>
@@ -1044,6 +1154,12 @@
           </xpdl2:DataType>
           <xpdl2:InitialValue/>
         </xpdl2:DataField>
+        <xpdl2:DataField Id="_RnGxuhT1Eemwx6NixRoh7A" xpdExt:DisplayName="UserCompleteTaskGuid" Name="UserCompleteTaskGuid" ReadOnly="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="PERFORMER"/>
+          </xpdl2:DataType>
+          <xpdl2:InitialValue/>
+        </xpdl2:DataField>
       </xpdl2:DataFields>
       <xpdl2:Activities>
         <xpdl2:Activity Id="_SV--GRNVEem5tPB5xUwBFQ" Name="Start" xpdExt:DisplayName="Start">
@@ -1056,7 +1172,7 @@
             </xpdl2:NodeGraphicsInfo>
           </xpdl2:NodeGraphicsInfos>
         </xpdl2:Activity>
-        <xpdl2:Activity Id="_SV--GhNVEem5tPB5xUwBFQ" Name="AnfrageRD99" FinishMode="Manual" IsATransaction="false" StartMode="Manual" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="Anfrage RD (99)">
+        <xpdl2:Activity Id="_SV--GhNVEem5tPB5xUwBFQ" Name="AnfrageRD99" FinishMode="Manual" IsATransaction="false" StartMode="Manual" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="Anfrage RD (99)" xpdExt:Visibility="Private">
           <xpdl2:Implementation>
             <xpdl2:Task>
               <xpdl2:TaskUser Implementation="Unspecified">
@@ -1065,11 +1181,14 @@
                 </xpdl2:Performers>
                 <xpdl2:MessageIn Id="_SV--GxNVEem5tPB5xUwBFQ"/>
                 <xpdl2:MessageOut Id="_SV--HBNVEem5tPB5xUwBFQ"/>
+                <xpdExt:UserTaskScripts>
+                  <xpdExt:SubmitScript ScriptGrammar="JavaScript">UserCompleteTaskGuid=WorkManagerFactory.getWorkItem().getWorkItemResource().getGuid();</xpdExt:SubmitScript>
+                </xpdExt:UserTaskScripts>
               </xpdl2:TaskUser>
             </xpdl2:Task>
           </xpdl2:Implementation>
           <xpdl2:Performers>
-            <xpdl2:Performer>_SV--PxNVEem5tPB5xUwBFQ</xpdl2:Performer>
+            <xpdl2:Performer>_vdNBeRNUEem5tPB5xUwBFQ</xpdl2:Performer>
           </xpdl2:Performers>
           <xpdl2:TransitionRestrictions>
             <xpdl2:TransitionRestriction>
@@ -1129,7 +1248,7 @@
           </xpdl2:Implementation>
           <xpdl2:NodeGraphicsInfos>
             <xpdl2:NodeGraphicsInfo Height="76.0" LaneId="_SV--PBNVEem5tPB5xUwBFQ" Width="117.0">
-              <xpdl2:Coordinates XCoordinate="588.0" YCoordinate="296.0"/>
+              <xpdl2:Coordinates XCoordinate="549.0" YCoordinate="76.0"/>
             </xpdl2:NodeGraphicsInfo>
           </xpdl2:NodeGraphicsInfos>
           <xpdl2:Extensions/>
@@ -1156,32 +1275,9 @@
           <xpdl2:Route GatewayType="Exclusive" MarkerVisible="true" ExclusiveType="Data"/>
           <xpdl2:NodeGraphicsInfos>
             <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="45.0" LaneId="_SV--PBNVEem5tPB5xUwBFQ" Width="43.0">
-              <xpdl2:Coordinates XCoordinate="767.0" YCoordinate="296.0"/>
+              <xpdl2:Coordinates XCoordinate="719.0" YCoordinate="76.0"/>
             </xpdl2:NodeGraphicsInfo>
           </xpdl2:NodeGraphicsInfos>
-        </xpdl2:Activity>
-        <xpdl2:Activity Id="_SV--IBNVEem5tPB5xUwBFQ" Name="WLMWeiterleitenmanuell" FinishMode="Manual" IsATransaction="false" StartMode="Manual" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="WL/M Weiterleiten manuell ?????">
-          <xpdl2:Implementation>
-            <xpdl2:Task>
-              <xpdl2:TaskUser Implementation="Unspecified">
-                <xpdl2:Performers>
-                  <xpdl2:Performer>-defined-in-Activity-Performer-</xpdl2:Performer>
-                </xpdl2:Performers>
-                <xpdl2:MessageIn Id="_SV--IRNVEem5tPB5xUwBFQ"/>
-                <xpdl2:MessageOut Id="_SV--IhNVEem5tPB5xUwBFQ"/>
-              </xpdl2:TaskUser>
-            </xpdl2:Task>
-          </xpdl2:Implementation>
-          <xpdl2:NodeGraphicsInfos>
-            <xpdl2:NodeGraphicsInfo FillColor="255,0,0" Height="76.0" LaneId="_SV--PRNVEem5tPB5xUwBFQ" Width="117.0">
-              <xpdl2:Coordinates XCoordinate="547.0" YCoordinate="194.0"/>
-            </xpdl2:NodeGraphicsInfo>
-          </xpdl2:NodeGraphicsInfos>
-          <xpdl2:Extensions/>
-          <xpdExt:ActivityResourcePatterns>
-            <xpdExt:AllocationStrategy xpdExt:Offer="OfferAll" xpdExt:Strategy="SYSTEM_DETERMINED" xpdExt:ReOfferOnClose="true" xpdExt:ReOfferOnCancel="true"/>
-            <xpdExt:WorkItemPriority InitialPriority="50"/>
-          </xpdExt:ActivityResourcePatterns>
         </xpdl2:Activity>
         <xpdl2:Activity Id="_SV--IxNVEem5tPB5xUwBFQ" Name="WGesuchanzeigen3000" FinishMode="Automatic" IsATransaction="false" StartMode="Automatic" xpdExt:RequireNewTransaction="false" xpdExt:DisplayName="W Gesuch anzeigen (3000)">
           <xpdl2:Implementation>
@@ -1243,16 +1339,7 @@
       </xpdl2:Activities>
       <xpdl2:Transitions>
         <xpdl2:Transition Id="_SV--JhNVEem5tPB5xUwBFQ" xpdExt:DisplayName="" From="_SV--GRNVEem5tPB5xUwBFQ" To="_SV--GhNVEem5tPB5xUwBFQ"/>
-        <xpdl2:Transition Id="_SV--JxNVEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_SV--GhNVEem5tPB5xUwBFQ" To="_SV--HhNVEem5tPB5xUwBFQ">
-          <xpdl2:ConnectorGraphicsInfos>
-            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
-            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
-              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
-              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
-            </xpdl2:ConnectorGraphicsInfo>
-          </xpdl2:ConnectorGraphicsInfos>
-        </xpdl2:Transition>
-        <xpdl2:Transition Id="_SV--KBNVEem5tPB5xUwBFQ" xpdExt:DisplayName="zurück zu Sachleistungen (100.5)" Name="zurckzuSachleistungen1005" From="_SV--HhNVEem5tPB5xUwBFQ" To="_SV--IBNVEem5tPB5xUwBFQ">
+        <xpdl2:Transition Id="_SV--KBNVEem5tPB5xUwBFQ" xpdExt:DisplayName="zurück zu Sachleistungen (100.5)" Name="zurckzuSachleistungen1005" From="_SV--HhNVEem5tPB5xUwBFQ" To="_SV--JRNVEem5tPB5xUwBFQ">
           <xpdl2:Condition Type="CONDITION"><xpdl2:Expression ScriptGrammar="JavaScript">String(actionToDo).toLowerCase()==String(&quot;SP_zurueck_zu_SB_IV&quot;).toLowerCase();</xpdl2:Expression></xpdl2:Condition>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
@@ -1279,8 +1366,8 @@
           <xpdl2:Condition Type="OTHERWISE"/>
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
-              <xpdl2:Coordinates XCoordinate="74.0" YCoordinate="-362.0"/>
-              <xpdl2:Coordinates XCoordinate="-209.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="63.0" YCoordinate="-281.0"/>
+              <xpdl2:Coordinates XCoordinate="-181.0" YCoordinate="0.0"/>
             </xpdl2:ConnectorGraphicsInfo>
             <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
               <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
@@ -1319,7 +1406,7 @@
             </xpdl2:ConnectorGraphicsInfo>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
-        <xpdl2:Transition Id="_SV--LhNVEem5tPB5xUwBFQ" xpdExt:DisplayName="" Name="" From="_SV--IBNVEem5tPB5xUwBFQ" To="_SV--JRNVEem5tPB5xUwBFQ">
+        <xpdl2:Transition Id="_TMT08BT1Eemwx6NixRoh7A" xpdExt:DisplayName="" Name="" From="_SV--GhNVEem5tPB5xUwBFQ" To="_SV--HhNVEem5tPB5xUwBFQ">
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
             <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
@@ -1336,8 +1423,62 @@
             <simulation:ParameterDistribution ParameterId="IVSachbearbeiter"/>
             <simulation:ParameterDistribution ParameterId="Geschaeftsfall"/>
             <simulation:ParameterDistribution ParameterId="Mitglied"/>
+            <simulation:ParameterDistribution ParameterId="WorkListFasade"/>
+            <simulation:ParameterDistribution ParameterId="Versicherte"/>
+            <simulation:ParameterDistribution ParameterId="Dokument"/>
           </simulation:WorkflowProcessSimulationData></xpdl2:ExtendedAttribute>
       </xpdl2:ExtendedAttributes>
+      <xpdl2:Extensions/>
+      <xpdExt:ProcessDataWorkItemAttributeMappings>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute11</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.abrechNr</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute8</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>UserCompleteTaskGuid</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute9</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.anmeldeNr</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute7</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.dokEingangsdatum</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute14</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.dokumentenArt</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute3</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.personenID</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute12</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.unternehmensID</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute4</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.versNachname</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute13</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.versVorname</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute2</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.versichNr</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute6</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.wiedervorlagedatum</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute10</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.zusatzbezeichnung</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+      </xpdExt:ProcessDataWorkItemAttributeMappings>
     </xpdl2:WorkflowProcess>
   </xpdl2:WorkflowProcesses>
   <xpdl2:ExtendedAttributes>

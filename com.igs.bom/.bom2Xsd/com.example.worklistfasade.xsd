@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns="http://example.com/worklistfasade" xmlns:tns1="http://example.com/worklistfasade"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://example.com/worklistfasade">
+  <xsd:annotation>
+    <xsd:documentation>BOMORIGIN::/com.igs.bom/Business Objects/WorkListFasade.bom</xsd:documentation>
+  </xsd:annotation>
+  <xsd:complexType ecore:name="WorkListFasade" id="_LTh0cBTtEemMqIXY9z_1Iw" name="WorkListFasade">
+    <xsd:sequence>
+      <xsd:element ecore:name="versichNr" id="_R0qmMBTtEemMqIXY9z_1Iw" maxOccurs="1"
+          minOccurs="0" name="versichNr">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="64"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="personenID" id="_UYsCIBTtEemMqIXY9z_1Iw" maxOccurs="1"
+          minOccurs="0" name="personenID">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="64"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="versNachname" id="_6XLyoBTtEemMqIXY9z_1Iw" maxOccurs="1"
+          minOccurs="0" name="versNachname">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="64"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="wiedervorlagedatum" id="_9b45wBTtEemMqIXY9z_1Iw" maxOccurs="1"
+          minOccurs="0" name="wiedervorlagedatum" type="xsd:dateTime"/>
+      <xsd:element ecore:name="dokEingangsdatum" id="__X3eQBTtEemMqIXY9z_1Iw" maxOccurs="1"
+          minOccurs="0" name="dokEingangsdatum" type="xsd:dateTime"/>
+      <xsd:element ecore:name="aktuelleBearbeiter" id="_FxKioBTuEemMqIXY9z_1Iw" maxOccurs="1"
+          minOccurs="0" name="aktuelleBearbeiter">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="20"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="anmeldeNr" id="_HjWR8BTuEemMqIXY9z_1Iw" maxOccurs="1"
+          minOccurs="0" name="anmeldeNr">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="20"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="zusatzbezeichnung" id="_JLhwsBTuEemMqIXY9z_1Iw" maxOccurs="1"
+          minOccurs="0" name="zusatzbezeichnung">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="20"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="abrechNr" id="_LQcOwBTuEemMqIXY9z_1Iw" maxOccurs="1"
+          minOccurs="0" name="abrechNr">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="20"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="unternehmensID" id="_MwY-kBTuEemMqIXY9z_1Iw" maxOccurs="1"
+          minOccurs="0" name="unternehmensID">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="20"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="versVorname" id="_O6rE0BTuEemMqIXY9z_1Iw" maxOccurs="1"
+          minOccurs="0" name="versVorname">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="20"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="dokumentenArt" id="_QfHTEBTuEemMqIXY9z_1Iw" maxOccurs="1"
+          minOccurs="0" name="dokumentenArt">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="20"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="WorkListFasadeElement" type="WorkListFasade"/>
+</xsd:schema>

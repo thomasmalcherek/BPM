@@ -1,0 +1,2184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpws:process exitOnStandardFault="no" name="Sub69Mitteilungbearbeiten"
+    suppressJoinFailure="yes" tibex:bxVersion="1.15.0"
+    tibex:explicitCompensation="yes"
+    tibex:xpdlId="_UkOBqAYmEem_4e3M9ri6oA"
+    xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+    xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="PersistentBatching">
+        <task name="_BX_SPOutput_WJournalzumGesuchanzeigen3009">
+            <startingVariables>
+                <variable>WP_eM_Mitt_des_Beschlusses_an_ext_AK</variable>
+                <variable>WP_Journal_zum_Gesuch_anzeigen</variable>
+                <variable>WP_Auszufuehrender_Versand_anzeigen</variable>
+                <variable>WP_Gesuch_anzeigen</variable>
+                <variable>WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL</variable>
+                <variable>WP_Verfuegung_zum_Gesuch</variable>
+                <variable>WP_eM_Aktenversand_an_UV</variable>
+                <variable>WP_WW_Protokolle_bearbeiten</variable>
+            </startingVariables>
+        </task>
+        <task name="_BX_SPOutput_WGesuchanzeigen3000">
+            <startingVariables>
+                <variable>WP_eM_Mitt_des_Beschlusses_an_ext_AK</variable>
+                <variable>WP_Journal_zum_Gesuch_anzeigen</variable>
+                <variable>WP_Auszufuehrender_Versand_anzeigen</variable>
+                <variable>WP_Gesuch_anzeigen</variable>
+                <variable>WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL</variable>
+                <variable>WP_Verfuegung_zum_Gesuch</variable>
+                <variable>WP_WW_Protokolle_bearbeiten</variable>
+                <variable>WP_eM_Aktenversand_an_UV</variable>
+            </startingVariables>
+        </task>
+        <task name="_BX_SPInput_FallimWebAIabschliessen71">
+            <startingVariables>
+                <variable>IVSachbearbeiter</variable>
+                <variable>Dokument</variable>
+                <variable>Versicherter</variable>
+                <variable>WorkListFasade</variable>
+                <variable>Geschaeftsfall</variable>
+                <variable>Mitglied</variable>
+            </startingVariables>
+        </task>
+        <task name="Mitteilungbearbeiten69">
+            <startingVariables>
+                <variable>SP_Taggeld_Meldung_an_AK_LEI</variable>
+                <variable>Versicherter</variable>
+                <variable>WP_Gesuch_anzeigen</variable>
+                <variable>actionToDo</variable>
+                <variable>WP_WW_Protokolle_bearbeiten</variable>
+                <variable>WP_eM_Aktenversand_an_UV</variable>
+                <variable>action</variable>
+                <variable>IVSachbearbeiter</variable>
+                <variable>Dokument</variable>
+                <variable>UserCompleteTaskGuid</variable>
+                <variable>WP_Auszufuehrender_Versand_anzeigen</variable>
+                <variable>SP_Verfuegungskopie_an_ZL</variable>
+                <variable>SP_Abschluss_in_WebAI</variable>
+                <variable>WP_eM_Mitt_des_Beschlusses_an_ext_AK</variable>
+                <variable>Geschaeftsfall</variable>
+                <variable>Mitglied</variable>
+                <variable>SP_Verfuegungskopie_an_RB</variable>
+                <variable>SP_Mitteilungskopie_an_Regress</variable>
+                <variable>WP_Verfuegung_zum_Gesuch</variable>
+                <variable>SP_weitere_Gesuche_bearbeiten</variable>
+                <variable>WP_Journal_zum_Gesuch_anzeigen</variable>
+                <variable>WorkListFasade</variable>
+                <variable>WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL</variable>
+                <variable>RuntimeIdentifier</variable>
+                <variable>MasterProcessID</variable>
+            </startingVariables>
+        </task>
+        <task name="_BX_SPOutput_WVerfgungzumGesuch7011">
+            <startingVariables>
+                <variable>WP_eM_Mitt_des_Beschlusses_an_ext_AK</variable>
+                <variable>WP_Journal_zum_Gesuch_anzeigen</variable>
+                <variable>WP_Auszufuehrender_Versand_anzeigen</variable>
+                <variable>WP_Gesuch_anzeigen</variable>
+                <variable>WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL</variable>
+                <variable>WP_Verfuegung_zum_Gesuch</variable>
+                <variable>WP_eM_Aktenversand_an_UV</variable>
+                <variable>WP_WW_Protokolle_bearbeiten</variable>
+            </startingVariables>
+        </task>
+        <task name="_BX_SPInput_WAuszufhrenderVersandanzei7010">
+            <startingVariables>
+                <variable>WP_eM_Mitt_des_Beschlusses_an_ext_AK</variable>
+                <variable>WP_Journal_zum_Gesuch_anzeigen</variable>
+                <variable>WP_Auszufuehrender_Versand_anzeigen</variable>
+                <variable>WP_Gesuch_anzeigen</variable>
+                <variable>WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL</variable>
+                <variable>WP_Verfuegung_zum_Gesuch</variable>
+                <variable>WP_WW_Protokolle_bearbeiten</variable>
+                <variable>WP_eM_Aktenversand_an_UV</variable>
+                <variable>actionToDo</variable>
+            </startingVariables>
+        </task>
+        <task name="_BX_SPOutput_SDXAuftragausfhren">
+            <startingVariables>
+                <variable>WP_eM_Mitt_des_Beschlusses_an_ext_AK</variable>
+                <variable>WP_Journal_zum_Gesuch_anzeigen</variable>
+                <variable>WP_Auszufuehrender_Versand_anzeigen</variable>
+                <variable>WP_Gesuch_anzeigen</variable>
+                <variable>WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL</variable>
+                <variable>WP_Verfuegung_zum_Gesuch</variable>
+                <variable>WP_WW_Protokolle_bearbeiten</variable>
+                <variable>WP_eM_Aktenversand_an_UV</variable>
+            </startingVariables>
+        </task>
+        <task name="_BX_SPInput_WVerfgungzumGesuch7011">
+            <startingVariables>
+                <variable>WP_eM_Mitt_des_Beschlusses_an_ext_AK</variable>
+                <variable>WP_Journal_zum_Gesuch_anzeigen</variable>
+                <variable>WP_Auszufuehrender_Versand_anzeigen</variable>
+                <variable>WP_Gesuch_anzeigen</variable>
+                <variable>WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL</variable>
+                <variable>WP_Verfuegung_zum_Gesuch</variable>
+                <variable>WP_eM_Aktenversand_an_UV</variable>
+                <variable>actionToDo</variable>
+                <variable>WP_WW_Protokolle_bearbeiten</variable>
+            </startingVariables>
+        </task>
+        <task name="_BX_SPInput_Sachleistungenprfen5">
+            <startingVariables>
+                <variable>IVSachbearbeiter</variable>
+                <variable>Dokument</variable>
+                <variable>Versicherter</variable>
+                <variable>WorkListFasade</variable>
+                <variable>Geschaeftsfall</variable>
+                <variable>Mitglied</variable>
+            </startingVariables>
+        </task>
+        <task name="_BX_SPInput_SDXAuftragausfhren">
+            <startingVariables>
+                <variable>WP_eM_Mitt_des_Beschlusses_an_ext_AK</variable>
+                <variable>WP_Journal_zum_Gesuch_anzeigen</variable>
+                <variable>WP_Auszufuehrender_Versand_anzeigen</variable>
+                <variable>WP_Gesuch_anzeigen</variable>
+                <variable>WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL</variable>
+                <variable>WP_Verfuegung_zum_Gesuch</variable>
+                <variable>actionToDo</variable>
+                <variable>WP_WW_Protokolle_bearbeiten</variable>
+                <variable>WP_eM_Aktenversand_an_UV</variable>
+            </startingVariables>
+        </task>
+        <task name="_BX_SPInput_FolgeWorkflowstarten">
+            <startingVariables>
+                <variable>Dokument</variable>
+                <variable>Versicherter</variable>
+                <variable>WorkListFasade</variable>
+                <variable>Geschaeftsfall</variable>
+                <variable>Mitglied</variable>
+                <variable>MasterProcessID</variable>
+            </startingVariables>
+        </task>
+        <task name="ScriptTask_1">
+            <startingVariables>
+                <variable>MasterProcessID</variable>
+                <variable>RuntimeIdentifier</variable>
+            </startingVariables>
+        </task>
+        <task name="_BX_SPOutput_WAuszufhrenderVersandanzei7010">
+            <startingVariables>
+                <variable>WP_eM_Mitt_des_Beschlusses_an_ext_AK</variable>
+                <variable>WP_Journal_zum_Gesuch_anzeigen</variable>
+                <variable>WP_Auszufuehrender_Versand_anzeigen</variable>
+                <variable>WP_Gesuch_anzeigen</variable>
+                <variable>WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL</variable>
+                <variable>WP_Verfuegung_zum_Gesuch</variable>
+                <variable>WP_WW_Protokolle_bearbeiten</variable>
+                <variable>WP_eM_Aktenversand_an_UV</variable>
+            </startingVariables>
+        </task>
+        <task name="ScriptTask_2">
+            <startingVariables>
+                <variable>MasterProcessID</variable>
+                <variable>RuntimeIdentifier</variable>
+            </startingVariables>
+        </task>
+        <task name="ScriptTask_3">
+            <startingVariables>
+                <variable>MasterProcessID</variable>
+                <variable>RuntimeIdentifier</variable>
+            </startingVariables>
+        </task>
+        <task name="ScriptTask">
+            <startingVariables>
+                <variable>MasterProcessID</variable>
+                <variable>RuntimeIdentifier</variable>
+            </startingVariables>
+        </task>
+        <task name="_BX_SPInput_WJournalzumGesuchanzeigen3009">
+            <startingVariables>
+                <variable>WP_eM_Mitt_des_Beschlusses_an_ext_AK</variable>
+                <variable>WP_Journal_zum_Gesuch_anzeigen</variable>
+                <variable>WP_Auszufuehrender_Versand_anzeigen</variable>
+                <variable>WP_Gesuch_anzeigen</variable>
+                <variable>WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL</variable>
+                <variable>WP_Verfuegung_zum_Gesuch</variable>
+                <variable>WP_eM_Aktenversand_an_UV</variable>
+                <variable>actionToDo</variable>
+                <variable>WP_WW_Protokolle_bearbeiten</variable>
+            </startingVariables>
+        </task>
+        <task name="_BX_SPInput_WWProtokollebearbeiten706">
+            <startingVariables>
+                <variable>actionToDo</variable>
+            </startingVariables>
+        </task>
+        <task name="_BX_SPInput_WGesuchanzeigen3000">
+            <startingVariables>
+                <variable>WP_eM_Mitt_des_Beschlusses_an_ext_AK</variable>
+                <variable>WP_Journal_zum_Gesuch_anzeigen</variable>
+                <variable>WP_Auszufuehrender_Versand_anzeigen</variable>
+                <variable>WP_Gesuch_anzeigen</variable>
+                <variable>WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL</variable>
+                <variable>WP_Verfuegung_zum_Gesuch</variable>
+                <variable>WP_WW_Protokolle_bearbeiten</variable>
+                <variable>actionToDo</variable>
+                <variable>WP_eM_Aktenversand_an_UV</variable>
+            </startingVariables>
+        </task>
+    </tibex:VariableDescriptor>
+    <tibex:AuditDescriptor>
+        <auditAttribute name="attribute11" type="Complex" value="WorkListFasade.abrechNr"/>
+        <auditAttribute name="attribute9" type="Complex" value="WorkListFasade.anmeldeNr"/>
+        <auditAttribute name="attribute7" type="Complex" value="WorkListFasade.dokEingangsdatum"/>
+        <auditAttribute name="attribute14" type="Complex" value="WorkListFasade.dokumentenArt"/>
+        <auditAttribute name="attribute3" type="Complex" value="WorkListFasade.personenID"/>
+        <auditAttribute name="attribute12" type="Complex" value="WorkListFasade.unternehmensID"/>
+        <auditAttribute name="attribute4" type="Complex" value="WorkListFasade.versNachname"/>
+        <auditAttribute name="attribute13" type="Complex" value="WorkListFasade.versVorname"/>
+        <auditAttribute name="attribute2" type="Complex" value="WorkListFasade.versichNr"/>
+        <auditAttribute name="attribute10" type="Complex" value="WorkListFasade.zusatzbezeichnung"/>
+        <auditAttribute name="attribute8" type="Simple" value="UserCompleteTaskGuid"/>
+    </tibex:AuditDescriptor>
+    <bpws:documentation>*** Generated by TIBCO Business Studio.</bpws:documentation>
+    <bpws:variables>
+        <bpws:variable name="Versicherter"
+            tibex:class="com.example.comigsbom.Versicherter"
+            tibex:parameter="inout" tibex:xpdlId="_K-ELFBBpEemgUacshDsXHg"/>
+        <bpws:variable name="Geschaeftsfall"
+            tibex:class="com.example.comigsbom.Geschftsfall"
+            tibex:parameter="inout" tibex:xpdlId="_K-ELFRBpEemgUacshDsXHg"/>
+        <bpws:variable name="IVSachbearbeiter" tibex:parameter="inout"
+            tibex:xpdlId="_K-ELFhBpEemgUacshDsXHg" type="xsd:string"/>
+        <bpws:variable name="Mitglied"
+            tibex:class="com.example.comigsbom.Mitglied"
+            tibex:parameter="inout" tibex:xpdlId="_K-ELFxBpEemgUacshDsXHg"/>
+        <bpws:variable name="Dokument"
+            tibex:class="com.example.comigsbom.Dokument"
+            tibex:parameter="inout" tibex:xpdlId="_olfeMRTjEemMqIXY9z_1Iw"/>
+        <bpws:variable name="WorkListFasade"
+            tibex:class="com.example.worklistfasade.WorkListFasade"
+            tibex:parameter="in" tibex:xpdlId="_6U5bwRV-Eemwx6NixRoh7A"/>
+        <bpws:variable name="actionToDo"
+            tibex:xpdlId="_PI5z0BBpEemgUacshDsXHg" type="xsd:string"/>
+        <bpws:variable name="action" tibex:array="yes"
+            tibex:xpdlId="_PI5z0RBpEemgUacshDsXHg" type="xsd:string"/>
+        <bpws:variable name="WP_WW_Protokolle_bearbeiten"
+            tibex:xpdlId="_QrCU8RBpEemgUacshDsXHg" type="xsd:boolean"/>
+        <bpws:variable name="WP_Verfuegung_zum_Gesuch"
+            tibex:xpdlId="_RvrBwRBpEemgUacshDsXHg" type="xsd:boolean"/>
+        <bpws:variable name="WP_Auszufuehrender_Versand_anzeigen"
+            tibex:xpdlId="_USx3sRBpEemgUacshDsXHg" type="xsd:boolean"/>
+        <bpws:variable name="WP_Journal_zum_Gesuch_anzeigen"
+            tibex:xpdlId="_mID3MRBpEemgUacshDsXHg" type="xsd:boolean"/>
+        <bpws:variable name="WP_Gesuch_anzeigen"
+            tibex:xpdlId="_nPlf8RBpEemgUacshDsXHg" type="xsd:boolean"/>
+        <bpws:variable name="WP_eM_Aktenversand_an_UV"
+            tibex:xpdlId="_xJmSARBpEemgUacshDsXHg" type="xsd:boolean"/>
+        <bpws:variable
+            name="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL"
+            tibex:xpdlId="_QCntQRBtEemgUacshDsXHg" type="xsd:boolean"/>
+        <bpws:variable name="WP_eM_Mitt_des_Beschlusses_an_ext_AK"
+            tibex:xpdlId="_m2pesBBtEemgUacshDsXHg" type="xsd:boolean"/>
+        <bpws:variable name="SP_weitere_Gesuche_bearbeiten"
+            tibex:xpdlId="_anWFsRBsEemgUacshDsXHg" type="xsd:boolean"/>
+        <bpws:variable name="SP_Abschluss_in_WebAI"
+            tibex:xpdlId="_s5tp0BBsEemgUacshDsXHg" type="xsd:boolean"/>
+        <bpws:variable name="SP_Mitteilungskopie_an_Regress"
+            tibex:xpdlId="__iUHMBBtEemgUacshDsXHg" type="xsd:boolean"/>
+        <bpws:variable name="SP_Taggeld_Meldung_an_AK_LEI"
+            tibex:xpdlId="_tzWqwBBwEemC7fSLJGfkbw" type="xsd:boolean"/>
+        <bpws:variable name="SP_Verfuegungskopie_an_RB"
+            tibex:xpdlId="_I93UQBBxEemC7fSLJGfkbw" type="xsd:boolean"/>
+        <bpws:variable name="SP_Verfuegungskopie_an_ZL"
+            tibex:xpdlId="_SPB9oBBxEemC7fSLJGfkbw" type="xsd:boolean"/>
+        <bpws:variable name="RuntimeIdentifier"
+            tibex:xpdlId="_U8bikBByEemC7fSLJGfkbw" type="xsd:string"/>
+        <bpws:variable name="MasterProcessID"
+            tibex:xpdlId="_NqGEMhTiEemMqIXY9z_1Iw" type="xsd:string"/>
+        <bpws:variable name="UserCompleteTaskGuid"
+            tibex:xpdlId="_UnrMARV_Eemwx6NixRoh7A" type="xsd:string"/>
+    </bpws:variables>
+    <bpws:extensions>
+        <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
+    </bpws:extensions>
+    <bpws:eventHandlers/>
+    <bpws:flow name="_BX_flow_vQBP4BW8Eemwx6NixRoh7A" tibex:sequenceFlow="yes">
+        <bpws:links>
+            <bpws:link name="ScriptTask to _UkOBzAYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB6gYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="WWProtokollebearbeiten706 to _UkOB0wYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB_QYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOB0QYmEem_4e3M9ri6oA to _UkOBvQYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOCAAYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="WVerfgungzumGesuch7011 to _UkOBvQYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOCAQYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOB0wYmEem_4e3M9ri6oA to Mitteilungbearbeiten69"
+                tibex:loopback="yes" tibex:xpdlId="_UkOB_wYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="WGesuchanzeigen3000 to Sachleistungenprfen5" tibex:xpdlId="_UkOCBAYmEem_4e3M9ri6oA"/>
+            <bpws:link name="Sachleistungenprfen5 to Ende3" tibex:xpdlId="_UkOCAwYmEem_4e3M9ri6oA"/>
+            <bpws:link name="Start to Mitteilungbearbeiten69" tibex:xpdlId="_UkOB3QYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="SDXAuftragausfhren to _UkOB0wYmEem_4e3M9ri6oA" tibex:xpdlId="_QoaXYBBsEemgUacshDsXHg"/>
+            <bpws:link
+                name="FolgeWorkflowstarten to _UkOB0wYmEem_4e3M9ri6oA" tibex:xpdlId="_QP6X0BBsEemgUacshDsXHg"/>
+            <bpws:link name="Mitteilungbearbeiten69 to Funktion" tibex:xpdlId="_UkOB3gYmEem_4e3M9ri6oA"/>
+            <bpws:link name="AbschlussFallimWebAI701" tibex:xpdlId="_UkOB2QYmEem_4e3M9ri6oA"/>
+            <bpws:link name="Funktion to _UkOBvAYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB3wYmEem_4e3M9ri6oA"/>
+            <bpws:link name="Funktion to _UkOB0QYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB4AYmEem_4e3M9ri6oA"/>
+            <bpws:link name="Funktion to WVerfgungzumGesuch7011" tibex:xpdlId="_UkOB4QYmEem_4e3M9ri6oA"/>
+            <bpws:link name="Funktion to _UkOBvgYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB4gYmEem_4e3M9ri6oA"/>
+            <bpws:link name="Funktion to _UkOBvwYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB4wYmEem_4e3M9ri6oA"/>
+            <bpws:link name="Funktion to ScriptTask" tibex:xpdlId="_UkOB5AYmEem_4e3M9ri6oA"/>
+            <bpws:link name="Funktion to ScriptTask_3" tibex:xpdlId="_UkOB5QYmEem_4e3M9ri6oA"/>
+            <bpws:link name="Funktion to ScriptTask_2" tibex:xpdlId="_UkOB5gYmEem_4e3M9ri6oA"/>
+            <bpws:link name="Funktion to ScriptTask_1" tibex:xpdlId="_UkOB5wYmEem_4e3M9ri6oA"/>
+            <bpws:link name="Funktion to WWProtokollebearbeiten706" tibex:xpdlId="_UkOB6AYmEem_4e3M9ri6oA"/>
+            <bpws:link name="weitereGesuchebearbeiten7012" tibex:xpdlId="_UkOB6QYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBswYmEem_4e3M9ri6oA to FallimWebAIabschliessen71" tibex:xpdlId="_UkOB1wYmEem_4e3M9ri6oA"/>
+            <bpws:link name="FallimWebAIabschliessen71 to zurck" tibex:xpdlId="_UkOB2AYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBvAYmEem_4e3M9ri6oA to SDXAuftragausfhren" tibex:xpdlId="_UkOB7gYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBvAYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB9wYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBvQYmEem_4e3M9ri6oA to Mitteilungbearbeiten69"
+                tibex:loopback="yes" tibex:xpdlId="_UkOCAgYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBvgYmEem_4e3M9ri6oA to SDXAuftragausfhren" tibex:xpdlId="_UkOB7wYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBvgYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB-AYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBvwYmEem_4e3M9ri6oA to SDXAuftragausfhren" tibex:xpdlId="_UkOB8AYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBvwYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB-QYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBzAYmEem_4e3M9ri6oA to FolgeWorkflowstarten" tibex:xpdlId="_UkOB8QYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBzAYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB-gYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBzQYmEem_4e3M9ri6oA to FolgeWorkflowstarten" tibex:xpdlId="_UkOB8wYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBzQYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB_AYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBzgYmEem_4e3M9ri6oA to FolgeWorkflowstarten" tibex:xpdlId="_UkOB8gYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBzgYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB-wYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBzwYmEem_4e3M9ri6oA to FolgeWorkflowstarten" tibex:xpdlId="_UkOB9AYmEem_4e3M9ri6oA"/>
+            <bpws:link
+                name="_UkOBzwYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB_gYmEem_4e3M9ri6oA"/>
+            <bpws:link name="ScriptTask_1 to _UkOBzwYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB7QYmEem_4e3M9ri6oA"/>
+            <bpws:link name="ScriptTask_2 to _UkOBzQYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB7AYmEem_4e3M9ri6oA"/>
+            <bpws:link name="ScriptTask_3 to _UkOBzgYmEem_4e3M9ri6oA" tibex:xpdlId="_UkOB6wYmEem_4e3M9ri6oA"/>
+        </bpws:links>
+        <bpws:extensionActivity>
+            <tibex:receiveEvent createInstance="yes" eventTimeout="0"
+                name="Start" tibex:type="startEvent"
+                tibex:xpdlId="_UkOBqQYmEem_4e3M9ri6oA" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                <bpws:sources>
+                    <bpws:source linkName="Start to Mitteilungbearbeiten69"/>
+                </bpws:sources>
+                <tibex:parameters>
+                    <parameterDescription mandatory="yes" mode="InOut" name="IVSachbearbeiter"/>
+                    <parameterDescription mode="InOut" name="Dokument"/>
+                    <parameterDescription mandatory="yes" mode="In" name="WorkListFasade"/>
+                    <parameterDescription mode="InOut" name="Versicherter"/>
+                    <parameterDescription mode="InOut" name="Geschaeftsfall"/>
+                    <parameterDescription mode="InOut" name="Mitglied"/>
+                </tibex:parameters>
+                <tibex:eventSource>
+                    <tibex:startEvent eventType="Default"/>
+                </tibex:eventSource>
+            </tibex:receiveEvent>
+        </bpws:extensionActivity>
+        <bpws:scope name="SDXAuftragausfhren"
+            tibex:type="reusableSubProcess" tibex:xpdlId="_UkOBqgYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="_UkOBvAYmEem_4e3M9ri6oA to SDXAuftragausfhren"/>
+                <bpws:target linkName="_UkOBvgYmEem_4e3M9ri6oA to SDXAuftragausfhren"/>
+                <bpws:target linkName="_UkOBvwYmEem_4e3M9ri6oA to SDXAuftragausfhren"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="SDXAuftragausfhren to _UkOB0wYmEem_4e3M9ri6oA"/>
+            </bpws:sources>
+            <bpws:variables>
+                <bpws:variable
+                    name="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Auszug_drucken_EP" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Formular_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_VP" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Geschaeftsfall_klammern" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" type="xsd:boolean"/>
+                <bpws:variable name="_BX_Z_Fall_erledigt_Ablage" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Verfuegung_zum_Gesuch" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Aktenversand_an_UV_Antw" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_IV_Akte_anfordern" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_PV_Versicherter_mutieren" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Auftraege_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_loeschen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_EXC_Excel_Dokumente" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Journal_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Auszug_drucken_VP" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Aktenversand_an_UV" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Aktenbestellung_DMC" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Auszufuehrender_Versand_anzeigen" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Verhandlungspartner_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Nachlieferung_IVST_IVST" type="xsd:boolean"/>
+                <bpws:variable name="_BX_Task" type="xsd:string"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_EP" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_WW_Protokolle_bearbeiten" type="xsd:boolean"/>
+            </bpws:variables>
+            <bpws:sequence name="_BX_sequence">
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPInput_SDXAuftragausfhren" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'actionToDo' to 'Task'
+_BX_Task = actionToDo;
+
+// Map from 'WP_Auszufuehrender_Versand_anzeigen' to 'WP_Auszufuehrender_Versand_anzeigen'
+_BX_WP_Auszufuehrender_Versand_anzeigen = WP_Auszufuehrender_Versand_anzeigen;
+
+// Map from 'WP_eM_Aktenversand_an_UV' to 'WP_eM_Aktenversand_an_UV'
+_BX_WP_eM_Aktenversand_an_UV = WP_eM_Aktenversand_an_UV;
+
+// Map from 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL' to 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL'
+_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL = WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL;
+
+// Map from 'WP_eM_Mitt_des_Beschlusses_an_ext_AK' to 'WP_eM_Mitt_des_Beschlusses_an_ext_AK'
+_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK = WP_eM_Mitt_des_Beschlusses_an_ext_AK;
+
+// Map from 'WP_Gesuch_anzeigen' to 'WP_Gesuch_anzeigen'
+_BX_WP_Gesuch_anzeigen = WP_Gesuch_anzeigen;
+
+// Map from 'WP_Journal_zum_Gesuch_anzeigen' to 'WP_Journal_zum_Gesuch_anzeigen'
+_BX_WP_Journal_zum_Gesuch_anzeigen = WP_Journal_zum_Gesuch_anzeigen;
+
+// Map from 'WP_Verfuegung_zum_Gesuch' to 'WP_Verfuegung_zum_Gesuch'
+_BX_WP_Verfuegung_zum_Gesuch = WP_Verfuegung_zum_Gesuch;
+
+// Map from 'WP_WW_Protokolle_bearbeiten' to 'WP_WW_Protokolle_bearbeiten'
+_BX_WP_WW_Protokolle_bearbeiten = WP_WW_Protokolle_bearbeiten;
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity name="SDXAuftragausfhren" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:callProcess followParentLifecycle="yes"
+                            packageRef="/Gen_building_block/Process Packages/Gen_building_block.xpdl"
+                            priority="inline"
+                            subProcessId="_eAeDgxM6EemnLOiGQkEvTQ" version="[1.0.0,2.0.0)">
+                            <tibex:subProcessInput>
+                                <tibex:mapping
+                                    field="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" formalParameter="WP_Zuteilung_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_EP" formalParameter="WP_IK_Auszug_drucken_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Formular_zum_Gesuch_anzeigen" formalParameter="WP_Formular_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_VP" formalParameter="WP_IK_Ausz_ZAS_best_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Geschaeftsfall_klammern" formalParameter="WP_Geschaeftsfall_klammern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" formalParameter="WP_eM_Mitt_des_Beschlusses_an_ext_AK"/>
+                                <tibex:mapping
+                                    field="_BX_Z_Fall_erledigt_Ablage" formalParameter="Z_Fall_erledigt_Ablage"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verfuegung_zum_Gesuch" formalParameter="WP_Verfuegung_zum_Gesuch"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV_Antw" formalParameter="WP_eM_Aktenversand_an_UV_Antw"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_IV_Akte_anfordern" formalParameter="WP_eM_IV_Akte_anfordern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_PV_Versicherter_mutieren" formalParameter="WP_PV_Versicherter_mutieren"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auftraege_zum_Gesuch_anzeigen" formalParameter="WP_Auftraege_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_loeschen" formalParameter="WP_IK_Ausz_ZAS_best_loeschen"/>
+                                <tibex:mapping
+                                    field="_BX_EXC_Excel_Dokumente" formalParameter="EXC_Excel_Dokumente"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" formalParameter="WP_IK_Erstellen_VA_Eroeffnen_IK"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Journal_zum_Gesuch_anzeigen" formalParameter="WP_Journal_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Gesuch_anzeigen" formalParameter="WP_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_VP" formalParameter="WP_IK_Auszug_drucken_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" formalParameter="WP_eM_Gesuch_um_Akteneinsicht_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV" formalParameter="WP_eM_Aktenversand_an_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Aktenbestellung_DMC" formalParameter="WP_Aktenbestellung_DMC"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auszufuehrender_Versand_anzeigen" formalParameter="WP_Auszufuehrender_Versand_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" formalParameter="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verhandlungspartner_anzeigen" formalParameter="WP_Verhandlungspartner_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Nachlieferung_IVST_IVST" formalParameter="WP_eM_Nachlieferung_IVST_IVST"/>
+                                <tibex:mapping field="_BX_Task" formalParameter="Task"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_EP" formalParameter="WP_IK_Ausz_ZAS_best_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_WW_Protokolle_bearbeiten" formalParameter="WP_WW_Protokolle_bearbeiten"/>
+                            </tibex:subProcessInput>
+                            <tibex:subProcessOutput>
+                                <tibex:mapping
+                                    field="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" formalParameter="WP_Zuteilung_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_EP" formalParameter="WP_IK_Auszug_drucken_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Formular_zum_Gesuch_anzeigen" formalParameter="WP_Formular_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_VP" formalParameter="WP_IK_Ausz_ZAS_best_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Geschaeftsfall_klammern" formalParameter="WP_Geschaeftsfall_klammern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" formalParameter="WP_eM_Mitt_des_Beschlusses_an_ext_AK"/>
+                                <tibex:mapping
+                                    field="_BX_Z_Fall_erledigt_Ablage" formalParameter="Z_Fall_erledigt_Ablage"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verfuegung_zum_Gesuch" formalParameter="WP_Verfuegung_zum_Gesuch"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV_Antw" formalParameter="WP_eM_Aktenversand_an_UV_Antw"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_IV_Akte_anfordern" formalParameter="WP_eM_IV_Akte_anfordern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_PV_Versicherter_mutieren" formalParameter="WP_PV_Versicherter_mutieren"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auftraege_zum_Gesuch_anzeigen" formalParameter="WP_Auftraege_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_loeschen" formalParameter="WP_IK_Ausz_ZAS_best_loeschen"/>
+                                <tibex:mapping
+                                    field="_BX_EXC_Excel_Dokumente" formalParameter="EXC_Excel_Dokumente"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" formalParameter="WP_IK_Erstellen_VA_Eroeffnen_IK"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Journal_zum_Gesuch_anzeigen" formalParameter="WP_Journal_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Gesuch_anzeigen" formalParameter="WP_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_VP" formalParameter="WP_IK_Auszug_drucken_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" formalParameter="WP_eM_Gesuch_um_Akteneinsicht_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV" formalParameter="WP_eM_Aktenversand_an_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Aktenbestellung_DMC" formalParameter="WP_Aktenbestellung_DMC"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auszufuehrender_Versand_anzeigen" formalParameter="WP_Auszufuehrender_Versand_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" formalParameter="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verhandlungspartner_anzeigen" formalParameter="WP_Verhandlungspartner_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Nachlieferung_IVST_IVST" formalParameter="WP_eM_Nachlieferung_IVST_IVST"/>
+                                <tibex:mapping field="_BX_Task" formalParameter="Task"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_EP" formalParameter="WP_IK_Ausz_ZAS_best_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_WW_Protokolle_bearbeiten" formalParameter="WP_WW_Protokolle_bearbeiten"/>
+                            </tibex:subProcessOutput>
+                        </tibex:callProcess>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPOutput_SDXAuftragausfhren" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'WP_Auszufuehrender_Versand_anzeigen' to 'WP_Auszufuehrender_Versand_anzeigen'
+WP_Auszufuehrender_Versand_anzeigen = _BX_WP_Auszufuehrender_Versand_anzeigen;
+
+// Map from 'WP_eM_Aktenversand_an_UV' to 'WP_eM_Aktenversand_an_UV'
+WP_eM_Aktenversand_an_UV = _BX_WP_eM_Aktenversand_an_UV;
+
+// Map from 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL' to 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL'
+WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL = _BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL;
+
+// Map from 'WP_eM_Mitt_des_Beschlusses_an_ext_AK' to 'WP_eM_Mitt_des_Beschlusses_an_ext_AK'
+WP_eM_Mitt_des_Beschlusses_an_ext_AK = _BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK;
+
+// Map from 'WP_Gesuch_anzeigen' to 'WP_Gesuch_anzeigen'
+WP_Gesuch_anzeigen = _BX_WP_Gesuch_anzeigen;
+
+// Map from 'WP_Journal_zum_Gesuch_anzeigen' to 'WP_Journal_zum_Gesuch_anzeigen'
+WP_Journal_zum_Gesuch_anzeigen = _BX_WP_Journal_zum_Gesuch_anzeigen;
+
+// Map from 'WP_Verfuegung_zum_Gesuch' to 'WP_Verfuegung_zum_Gesuch'
+WP_Verfuegung_zum_Gesuch = _BX_WP_Verfuegung_zum_Gesuch;
+
+// Map from 'WP_WW_Protokolle_bearbeiten' to 'WP_WW_Protokolle_bearbeiten'
+WP_WW_Protokolle_bearbeiten = _BX_WP_WW_Protokolle_bearbeiten;
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+            </bpws:sequence>
+        </bpws:scope>
+        <bpws:scope name="FolgeWorkflowstarten"
+            tibex:type="reusableSubProcess" tibex:xpdlId="_UkOBqwYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="_UkOBzAYmEem_4e3M9ri6oA to FolgeWorkflowstarten"/>
+                <bpws:target linkName="_UkOBzQYmEem_4e3M9ri6oA to FolgeWorkflowstarten"/>
+                <bpws:target linkName="_UkOBzgYmEem_4e3M9ri6oA to FolgeWorkflowstarten"/>
+                <bpws:target linkName="_UkOBzwYmEem_4e3M9ri6oA to FolgeWorkflowstarten"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="FolgeWorkflowstarten to _UkOB0wYmEem_4e3M9ri6oA"/>
+            </bpws:sources>
+            <bpws:variables>
+                <bpws:variable name="_BX_WorkkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
+                <bpws:variable name="_BX_Geschaeftsfall" tibex:class="com.example.comigsbom.Geschftsfall"/>
+                <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
+                <bpws:variable name="_BX_Versicherte" tibex:class="com.example.comigsbom.Versicherter"/>
+                <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
+                <bpws:variable name="_BX_MasterProcessID" type="xsd:string"/>
+            </bpws:variables>
+            <bpws:sequence name="_BX_sequence_2">
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPInput_FolgeWorkflowstarten" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'Dokument' to 'Dokument'
+_BX_Dokument = ScriptUtil.copy(Dokument);
+
+// Map from 'Geschaeftsfall' to 'Geschaeftsfall'
+_BX_Geschaeftsfall = ScriptUtil.copy(Geschaeftsfall);
+
+// Map from 'MasterProcessID' to 'MasterProcessID'
+_BX_MasterProcessID = MasterProcessID;
+
+// Map from 'Mitglied' to 'Mitglied'
+_BX_Mitglied = ScriptUtil.copy(Mitglied);
+
+// Map from 'Versicherter' to 'Versicherte'
+_BX_Versicherte = ScriptUtil.copy(Versicherter);
+
+// Map from 'WorkListFasade' to 'WorkkListFasade'
+_BX_WorkkListFasade = ScriptUtil.copy(WorkListFasade);
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity name="FolgeWorkflowstarten" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:callProcess asynch="yes" attached="no"
+                            processIdentifierField="RuntimeIdentifier" subProcessId="_HgtfQAU4Eemo_Z8OZ5HXPw">
+                            <tibex:subProcessInput>
+                                <tibex:mapping
+                                    field="_BX_WorkkListFasade" formalParameter="WorkkListFasade"/>
+                                <tibex:mapping
+                                    field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
+                                <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
+                                <tibex:mapping field="_BX_Versicherte" formalParameter="Versicherte"/>
+                                <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
+                                <tibex:mapping
+                                    field="_BX_MasterProcessID" formalParameter="MasterProcessID"/>
+                            </tibex:subProcessInput>
+                        </tibex:callProcess>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+            </bpws:sequence>
+        </bpws:scope>
+        <bpws:extensionActivity>
+            <tibex:extActivity name="Mitteilungbearbeiten69"
+                tibex:type="userTask"
+                tibex:xpdlId="_UkOBrgYmEem_4e3M9ri6oA" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                <bpws:targets>
+                    <bpws:target linkName="_UkOB0wYmEem_4e3M9ri6oA to Mitteilungbearbeiten69"/>
+                    <bpws:target linkName="Start to Mitteilungbearbeiten69"/>
+                    <bpws:target linkName="_UkOBvQYmEem_4e3M9ri6oA to Mitteilungbearbeiten69"/>
+                </bpws:targets>
+                <bpws:sources>
+                    <bpws:source linkName="Mitteilungbearbeiten69 to Funktion"/>
+                </bpws:sources>
+                <model:UserTaskDataModelType
+                    distributionStrategy="OFFER" userTaskPriority="50"
+                    workModelID="WM__UkOBrgYmEem_4e3M9ri6oA"
+                    workModelVersionRange="[1.0.0.qualifier,1.0.0.qualifier]"
+                    xmi:version="2.0"
+                    xmlns:model="http://model.ut.n2.tibco.com" xmlns:xmi="http://www.omg.org/XMI">
+                    <userTaskParticipants>
+                        <userTaskParticipant entity="FIELD" performer="IVSachbearbeiter"/>
+                    </userTaskParticipants>
+                    <userTaskParameters>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="Versicherter"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="Geschaeftsfall"/>
+                        <userTaskParameter mandatory="true" mode="INOUT" name="IVSachbearbeiter"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="Mitglied"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="Dokument"/>
+                        <userTaskParameter mandatory="true" mode="IN" name="WorkListFasade"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="actionToDo"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="action"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="WP_WW_Protokolle_bearbeiten"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="WP_Verfuegung_zum_Gesuch"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="WP_Auszufuehrender_Versand_anzeigen"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="WP_Journal_zum_Gesuch_anzeigen"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="WP_Gesuch_anzeigen"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="WP_eM_Aktenversand_an_UV"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="WP_eM_Mitt_des_Beschlusses_an_ext_AK"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="SP_weitere_Gesuche_bearbeiten"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="SP_Abschluss_in_WebAI"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="SP_Mitteilungskopie_an_Regress"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="SP_Taggeld_Meldung_an_AK_LEI"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="SP_Verfuegungskopie_an_RB"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="SP_Verfuegungskopie_an_ZL"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="RuntimeIdentifier"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="MasterProcessID"/>
+                        <userTaskParameter mandatory="false"
+                            mode="INOUT" name="UserCompleteTaskGuid"/>
+                    </userTaskParameters>
+                    <userTaskGroupMemberships/>
+                </model:UserTaskDataModelType>
+            </tibex:extActivity>
+        </bpws:extensionActivity>
+        <bpws:empty name="Funktion" tibex:migrationAllowed="yes"
+            tibex:type="exclusiveGateway" tibex:xpdlId="_UkOBrwYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="Mitteilungbearbeiten69 to Funktion"/>
+            </bpws:targets>
+            <bpws:sources tibex:maxTrue="1">
+                <bpws:source linkName="AbschlussFallimWebAI701">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[String(actionToDo).toLowerCase()==String("SP_Abschluss_in_WebAI").toLowerCase();]]></bpws:transitionCondition>
+                </bpws:source>
+                <bpws:source linkName="Funktion to _UkOBvAYmEem_4e3M9ri6oA">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[String(actionToDo).toLowerCase()==String("WP_eM_Aktenversand_an_UV").toLowerCase();]]></bpws:transitionCondition>
+                </bpws:source>
+                <bpws:source linkName="Funktion to _UkOB0QYmEem_4e3M9ri6oA">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[##otherwise##]]></bpws:transitionCondition>
+                </bpws:source>
+                <bpws:source linkName="Funktion to WVerfgungzumGesuch7011">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[String(actionToDo).toLowerCase()==String("WP_Verfuegung_zum_Gesuch").toLowerCase();]]></bpws:transitionCondition>
+                </bpws:source>
+                <bpws:source linkName="Funktion to _UkOBvgYmEem_4e3M9ri6oA">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[String(actionToDo).toLowerCase()==String("WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL").toLowerCase();]]></bpws:transitionCondition>
+                </bpws:source>
+                <bpws:source linkName="Funktion to _UkOBvwYmEem_4e3M9ri6oA">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[String(actionToDo).toLowerCase()==String("WP_eM_Mitt_des_Beschlusses_an_ext_A").toLowerCase();]]></bpws:transitionCondition>
+                </bpws:source>
+                <bpws:source linkName="Funktion to ScriptTask">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[String(actionToDo).toLowerCase()==String("SP_Mitteilungskopie_an_Regress").toLowerCase();]]></bpws:transitionCondition>
+                </bpws:source>
+                <bpws:source linkName="Funktion to ScriptTask_3">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[String(actionToDo).toLowerCase()==String("SP_Taggeld_Meldung_an_AK_LEI").toLowerCase();]]></bpws:transitionCondition>
+                </bpws:source>
+                <bpws:source linkName="Funktion to ScriptTask_2">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[String(actionToDo).toLowerCase()==String("SP_Verfuegungskopie_an_RB").toLowerCase();]]></bpws:transitionCondition>
+                </bpws:source>
+                <bpws:source linkName="Funktion to ScriptTask_1">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[String(actionToDo).toLowerCase()==String("SP_Verfuegungskopie_an_ZL").toLowerCase();]]></bpws:transitionCondition>
+                </bpws:source>
+                <bpws:source linkName="Funktion to WWProtokollebearbeiten706">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[String(actionToDo).toLowerCase()==String("WP_WW_Protokolle_bearbeiten").toLowerCase();]]></bpws:transitionCondition>
+                </bpws:source>
+                <bpws:source linkName="weitereGesuchebearbeiten7012">
+                    <bpws:transitionCondition expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[String(actionToDo).toLowerCase()==String("SP_weitere_Gesuche_bearbeiten").toLowerCase();]]></bpws:transitionCondition>
+                </bpws:source>
+            </bpws:sources>
+        </bpws:empty>
+        <bpws:scope name="WJournalzumGesuchanzeigen3009"
+            tibex:migrationAllowed="yes" tibex:type="reusableSubProcess" tibex:xpdlId="_UkOBswYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="AbschlussFallimWebAI701"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="_UkOBswYmEem_4e3M9ri6oA to FallimWebAIabschliessen71"/>
+            </bpws:sources>
+            <bpws:variables>
+                <bpws:variable
+                    name="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Auszug_drucken_EP" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Formular_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_VP" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Geschaeftsfall_klammern" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" type="xsd:boolean"/>
+                <bpws:variable name="_BX_Z_Fall_erledigt_Ablage" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Verfuegung_zum_Gesuch" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Aktenversand_an_UV_Antw" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_IV_Akte_anfordern" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_PV_Versicherter_mutieren" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Auftraege_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_loeschen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_EXC_Excel_Dokumente" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Journal_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Auszug_drucken_VP" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Aktenversand_an_UV" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Aktenbestellung_DMC" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Auszufuehrender_Versand_anzeigen" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Verhandlungspartner_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Nachlieferung_IVST_IVST" type="xsd:boolean"/>
+                <bpws:variable name="_BX_Task" type="xsd:string"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_EP" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_WW_Protokolle_bearbeiten" type="xsd:boolean"/>
+            </bpws:variables>
+            <bpws:sequence name="_BX_sequence_3">
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPInput_WJournalzumGesuchanzeigen3009" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'actionToDo' to 'Task'
+_BX_Task = actionToDo;
+
+// Map from 'WP_Auszufuehrender_Versand_anzeigen' to 'WP_Auszufuehrender_Versand_anzeigen'
+_BX_WP_Auszufuehrender_Versand_anzeigen = WP_Auszufuehrender_Versand_anzeigen;
+
+// Map from 'WP_eM_Aktenversand_an_UV' to 'WP_eM_Aktenversand_an_UV'
+_BX_WP_eM_Aktenversand_an_UV = WP_eM_Aktenversand_an_UV;
+
+// Map from 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL' to 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL'
+_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL = WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL;
+
+// Map from 'WP_eM_Mitt_des_Beschlusses_an_ext_AK' to 'WP_eM_Mitt_des_Beschlusses_an_ext_AK'
+_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK = WP_eM_Mitt_des_Beschlusses_an_ext_AK;
+
+// Map from 'WP_Gesuch_anzeigen' to 'WP_Gesuch_anzeigen'
+_BX_WP_Gesuch_anzeigen = WP_Gesuch_anzeigen;
+
+// Map from 'WP_Journal_zum_Gesuch_anzeigen' to 'WP_Journal_zum_Gesuch_anzeigen'
+_BX_WP_Journal_zum_Gesuch_anzeigen = WP_Journal_zum_Gesuch_anzeigen;
+
+// Map from 'WP_Verfuegung_zum_Gesuch' to 'WP_Verfuegung_zum_Gesuch'
+_BX_WP_Verfuegung_zum_Gesuch = WP_Verfuegung_zum_Gesuch;
+
+// Map from 'WP_WW_Protokolle_bearbeiten' to 'WP_WW_Protokolle_bearbeiten'
+_BX_WP_WW_Protokolle_bearbeiten = WP_WW_Protokolle_bearbeiten;
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="WJournalzumGesuchanzeigen3009" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:callProcess followParentLifecycle="yes"
+                            packageRef="/Gen_building_block/Process Packages/Gen_building_block.xpdl"
+                            priority="inline"
+                            subProcessId="_eAeDgxM6EemnLOiGQkEvTQ" version="[1.0.0,2.0.0)">
+                            <tibex:subProcessInput>
+                                <tibex:mapping
+                                    field="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" formalParameter="WP_Zuteilung_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_EP" formalParameter="WP_IK_Auszug_drucken_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Formular_zum_Gesuch_anzeigen" formalParameter="WP_Formular_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_VP" formalParameter="WP_IK_Ausz_ZAS_best_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Geschaeftsfall_klammern" formalParameter="WP_Geschaeftsfall_klammern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" formalParameter="WP_eM_Mitt_des_Beschlusses_an_ext_AK"/>
+                                <tibex:mapping
+                                    field="_BX_Z_Fall_erledigt_Ablage" formalParameter="Z_Fall_erledigt_Ablage"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verfuegung_zum_Gesuch" formalParameter="WP_Verfuegung_zum_Gesuch"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV_Antw" formalParameter="WP_eM_Aktenversand_an_UV_Antw"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_IV_Akte_anfordern" formalParameter="WP_eM_IV_Akte_anfordern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_PV_Versicherter_mutieren" formalParameter="WP_PV_Versicherter_mutieren"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auftraege_zum_Gesuch_anzeigen" formalParameter="WP_Auftraege_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_loeschen" formalParameter="WP_IK_Ausz_ZAS_best_loeschen"/>
+                                <tibex:mapping
+                                    field="_BX_EXC_Excel_Dokumente" formalParameter="EXC_Excel_Dokumente"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" formalParameter="WP_IK_Erstellen_VA_Eroeffnen_IK"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Journal_zum_Gesuch_anzeigen" formalParameter="WP_Journal_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Gesuch_anzeigen" formalParameter="WP_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_VP" formalParameter="WP_IK_Auszug_drucken_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" formalParameter="WP_eM_Gesuch_um_Akteneinsicht_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV" formalParameter="WP_eM_Aktenversand_an_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Aktenbestellung_DMC" formalParameter="WP_Aktenbestellung_DMC"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auszufuehrender_Versand_anzeigen" formalParameter="WP_Auszufuehrender_Versand_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" formalParameter="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verhandlungspartner_anzeigen" formalParameter="WP_Verhandlungspartner_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Nachlieferung_IVST_IVST" formalParameter="WP_eM_Nachlieferung_IVST_IVST"/>
+                                <tibex:mapping field="_BX_Task" formalParameter="Task"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_EP" formalParameter="WP_IK_Ausz_ZAS_best_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_WW_Protokolle_bearbeiten" formalParameter="WP_WW_Protokolle_bearbeiten"/>
+                            </tibex:subProcessInput>
+                            <tibex:subProcessOutput>
+                                <tibex:mapping
+                                    field="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" formalParameter="WP_Zuteilung_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_EP" formalParameter="WP_IK_Auszug_drucken_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Formular_zum_Gesuch_anzeigen" formalParameter="WP_Formular_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_VP" formalParameter="WP_IK_Ausz_ZAS_best_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Geschaeftsfall_klammern" formalParameter="WP_Geschaeftsfall_klammern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" formalParameter="WP_eM_Mitt_des_Beschlusses_an_ext_AK"/>
+                                <tibex:mapping
+                                    field="_BX_Z_Fall_erledigt_Ablage" formalParameter="Z_Fall_erledigt_Ablage"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verfuegung_zum_Gesuch" formalParameter="WP_Verfuegung_zum_Gesuch"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV_Antw" formalParameter="WP_eM_Aktenversand_an_UV_Antw"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_IV_Akte_anfordern" formalParameter="WP_eM_IV_Akte_anfordern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_PV_Versicherter_mutieren" formalParameter="WP_PV_Versicherter_mutieren"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auftraege_zum_Gesuch_anzeigen" formalParameter="WP_Auftraege_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_loeschen" formalParameter="WP_IK_Ausz_ZAS_best_loeschen"/>
+                                <tibex:mapping
+                                    field="_BX_EXC_Excel_Dokumente" formalParameter="EXC_Excel_Dokumente"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" formalParameter="WP_IK_Erstellen_VA_Eroeffnen_IK"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Journal_zum_Gesuch_anzeigen" formalParameter="WP_Journal_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Gesuch_anzeigen" formalParameter="WP_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_VP" formalParameter="WP_IK_Auszug_drucken_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" formalParameter="WP_eM_Gesuch_um_Akteneinsicht_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV" formalParameter="WP_eM_Aktenversand_an_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Aktenbestellung_DMC" formalParameter="WP_Aktenbestellung_DMC"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auszufuehrender_Versand_anzeigen" formalParameter="WP_Auszufuehrender_Versand_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" formalParameter="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verhandlungspartner_anzeigen" formalParameter="WP_Verhandlungspartner_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Nachlieferung_IVST_IVST" formalParameter="WP_eM_Nachlieferung_IVST_IVST"/>
+                                <tibex:mapping field="_BX_Task" formalParameter="Task"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_EP" formalParameter="WP_IK_Ausz_ZAS_best_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_WW_Protokolle_bearbeiten" formalParameter="WP_WW_Protokolle_bearbeiten"/>
+                            </tibex:subProcessOutput>
+                        </tibex:callProcess>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPOutput_WJournalzumGesuchanzeigen3009" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'WP_Auszufuehrender_Versand_anzeigen' to 'WP_Auszufuehrender_Versand_anzeigen'
+WP_Auszufuehrender_Versand_anzeigen = _BX_WP_Auszufuehrender_Versand_anzeigen;
+
+// Map from 'WP_eM_Aktenversand_an_UV' to 'WP_eM_Aktenversand_an_UV'
+WP_eM_Aktenversand_an_UV = _BX_WP_eM_Aktenversand_an_UV;
+
+// Map from 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL' to 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL'
+WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL = _BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL;
+
+// Map from 'WP_eM_Mitt_des_Beschlusses_an_ext_AK' to 'WP_eM_Mitt_des_Beschlusses_an_ext_AK'
+WP_eM_Mitt_des_Beschlusses_an_ext_AK = _BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK;
+
+// Map from 'WP_Gesuch_anzeigen' to 'WP_Gesuch_anzeigen'
+WP_Gesuch_anzeigen = _BX_WP_Gesuch_anzeigen;
+
+// Map from 'WP_Journal_zum_Gesuch_anzeigen' to 'WP_Journal_zum_Gesuch_anzeigen'
+WP_Journal_zum_Gesuch_anzeigen = _BX_WP_Journal_zum_Gesuch_anzeigen;
+
+// Map from 'WP_Verfuegung_zum_Gesuch' to 'WP_Verfuegung_zum_Gesuch'
+WP_Verfuegung_zum_Gesuch = _BX_WP_Verfuegung_zum_Gesuch;
+
+// Map from 'WP_WW_Protokolle_bearbeiten' to 'WP_WW_Protokolle_bearbeiten'
+WP_WW_Protokolle_bearbeiten = _BX_WP_WW_Protokolle_bearbeiten;
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+            </bpws:sequence>
+        </bpws:scope>
+        <bpws:scope name="FallimWebAIabschliessen71"
+            tibex:migrationAllowed="yes" tibex:type="reusableSubProcess" tibex:xpdlId="_UkOBtAYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="_UkOBswYmEem_4e3M9ri6oA to FallimWebAIabschliessen71"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="FallimWebAIabschliessen71 to zurck"/>
+            </bpws:sources>
+            <bpws:variables>
+                <bpws:variable name="_BX_Geschaeftsfall" tibex:class="com.example.comigsbom.Geschftsfall"/>
+                <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
+                <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
+                <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
+                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
+                <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
+            </bpws:variables>
+            <bpws:sequence name="_BX_sequence_4">
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPInput_FallimWebAIabschliessen71" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'Dokument' to 'Dokument'
+_BX_Dokument = ScriptUtil.copy(Dokument);
+
+// Map from 'Geschaeftsfall' to 'Geschaeftsfall'
+_BX_Geschaeftsfall = ScriptUtil.copy(Geschaeftsfall);
+
+// Map from 'IVSachbearbeiter' to 'IVSachbearbeiter'
+_BX_IVSachbearbeiter = IVSachbearbeiter;
+
+// Map from 'Mitglied' to 'Mitglied'
+_BX_Mitglied = ScriptUtil.copy(Mitglied);
+
+// Map from 'Versicherter' to 'Versicherter'
+_BX_Versicherter = ScriptUtil.copy(Versicherter);
+
+// Map from 'WorkListFasade' to 'WorkListFasade'
+_BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity name="FallimWebAIabschliessen71" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:callProcess followParentLifecycle="yes"
+                            priority="inline" subProcessId="_UkOCZgYmEem_4e3M9ri6oA">
+                            <tibex:subProcessInput>
+                                <tibex:mapping
+                                    field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
+                                <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
+                                <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
+                                <tibex:mapping
+                                    field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
+                                <tibex:mapping
+                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
+                                <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
+                            </tibex:subProcessInput>
+                        </tibex:callProcess>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+            </bpws:sequence>
+        </bpws:scope>
+        <bpws:empty name="zurck" tibex:migrationAllowed="yes"
+            tibex:type="endEvent" tibex:xpdlId="_UkOBtQYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="FallimWebAIabschliessen71 to zurck"/>
+            </bpws:targets>
+        </bpws:empty>
+        <bpws:empty name="_BX_gateway__UkOBvAYmEem_4e3M9ri6oA"
+            tibex:type="parallelGateway" tibex:xpdlId="_UkOBvAYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="Funktion to _UkOBvAYmEem_4e3M9ri6oA"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="_UkOBvAYmEem_4e3M9ri6oA to SDXAuftragausfhren"/>
+                <bpws:source linkName="_UkOBvAYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA"/>
+            </bpws:sources>
+        </bpws:empty>
+        <bpws:empty name="_BX_gateway__UkOBvQYmEem_4e3M9ri6oA"
+            tibex:type="exclusiveGateway" tibex:xpdlId="_UkOBvQYmEem_4e3M9ri6oA">
+            <bpws:targets tibex:waitFor="1">
+                <bpws:target linkName="_UkOB0QYmEem_4e3M9ri6oA to _UkOBvQYmEem_4e3M9ri6oA"/>
+                <bpws:target linkName="WVerfgungzumGesuch7011 to _UkOBvQYmEem_4e3M9ri6oA"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="_UkOBvQYmEem_4e3M9ri6oA to Mitteilungbearbeiten69"/>
+            </bpws:sources>
+        </bpws:empty>
+        <bpws:empty name="_BX_gateway__UkOBvgYmEem_4e3M9ri6oA"
+            tibex:type="parallelGateway" tibex:xpdlId="_UkOBvgYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="Funktion to _UkOBvgYmEem_4e3M9ri6oA"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="_UkOBvgYmEem_4e3M9ri6oA to SDXAuftragausfhren"/>
+                <bpws:source linkName="_UkOBvgYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA"/>
+            </bpws:sources>
+        </bpws:empty>
+        <bpws:empty name="_BX_gateway__UkOBvwYmEem_4e3M9ri6oA"
+            tibex:type="parallelGateway" tibex:xpdlId="_UkOBvwYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="Funktion to _UkOBvwYmEem_4e3M9ri6oA"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="_UkOBvwYmEem_4e3M9ri6oA to SDXAuftragausfhren"/>
+                <bpws:source linkName="_UkOBvwYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA"/>
+            </bpws:sources>
+        </bpws:empty>
+        <bpws:empty name="_BX_gateway__UkOBzAYmEem_4e3M9ri6oA"
+            tibex:type="parallelGateway" tibex:xpdlId="_UkOBzAYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="ScriptTask to _UkOBzAYmEem_4e3M9ri6oA"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="_UkOBzAYmEem_4e3M9ri6oA to FolgeWorkflowstarten"/>
+                <bpws:source linkName="_UkOBzAYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA"/>
+            </bpws:sources>
+        </bpws:empty>
+        <bpws:empty name="_BX_gateway__UkOBzQYmEem_4e3M9ri6oA"
+            tibex:type="parallelGateway" tibex:xpdlId="_UkOBzQYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="ScriptTask_2 to _UkOBzQYmEem_4e3M9ri6oA"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="_UkOBzQYmEem_4e3M9ri6oA to FolgeWorkflowstarten"/>
+                <bpws:source linkName="_UkOBzQYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA"/>
+            </bpws:sources>
+        </bpws:empty>
+        <bpws:empty name="_BX_gateway__UkOBzgYmEem_4e3M9ri6oA"
+            tibex:type="parallelGateway" tibex:xpdlId="_UkOBzgYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="ScriptTask_3 to _UkOBzgYmEem_4e3M9ri6oA"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="_UkOBzgYmEem_4e3M9ri6oA to FolgeWorkflowstarten"/>
+                <bpws:source linkName="_UkOBzgYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA"/>
+            </bpws:sources>
+        </bpws:empty>
+        <bpws:empty name="_BX_gateway__UkOBzwYmEem_4e3M9ri6oA"
+            tibex:type="parallelGateway" tibex:xpdlId="_UkOBzwYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="ScriptTask_1 to _UkOBzwYmEem_4e3M9ri6oA"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="_UkOBzwYmEem_4e3M9ri6oA to FolgeWorkflowstarten"/>
+                <bpws:source linkName="_UkOBzwYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA"/>
+            </bpws:sources>
+        </bpws:empty>
+        <bpws:scope name="WWProtokollebearbeiten706"
+            tibex:migrationAllowed="yes" tibex:type="reusableSubProcess" tibex:xpdlId="_UkOB0AYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="Funktion to WWProtokollebearbeiten706"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="WWProtokollebearbeiten706 to _UkOB0wYmEem_4e3M9ri6oA"/>
+            </bpws:sources>
+            <bpws:variables>
+                <bpws:variable
+                    name="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Auszug_drucken_EP" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Formular_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_VP" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Geschaeftsfall_klammern" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" type="xsd:boolean"/>
+                <bpws:variable name="_BX_Z_Fall_erledigt_Ablage" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Verfuegung_zum_Gesuch" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Aktenversand_an_UV_Antw" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_IV_Akte_anfordern" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_PV_Versicherter_mutieren" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Auftraege_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_loeschen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_EXC_Excel_Dokumente" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Journal_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Auszug_drucken_VP" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Aktenversand_an_UV" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Aktenbestellung_DMC" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Auszufuehrender_Versand_anzeigen" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Verhandlungspartner_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Nachlieferung_IVST_IVST" type="xsd:boolean"/>
+                <bpws:variable name="_BX_Task" type="xsd:string"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_EP" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_WW_Protokolle_bearbeiten" type="xsd:boolean"/>
+            </bpws:variables>
+            <bpws:sequence name="_BX_sequence_5">
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPInput_WWProtokollebearbeiten706" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'actionToDo' to 'Task'
+_BX_Task = actionToDo;
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity name="WWProtokollebearbeiten706" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:callProcess followParentLifecycle="yes"
+                            packageRef="/Gen_building_block/Process Packages/Gen_building_block.xpdl"
+                            priority="inline"
+                            subProcessId="_eAeDgxM6EemnLOiGQkEvTQ" version="[1.0.0,2.0.0)">
+                            <tibex:subProcessInput>
+                                <tibex:mapping
+                                    field="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" formalParameter="WP_Zuteilung_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_EP" formalParameter="WP_IK_Auszug_drucken_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Formular_zum_Gesuch_anzeigen" formalParameter="WP_Formular_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_VP" formalParameter="WP_IK_Ausz_ZAS_best_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Geschaeftsfall_klammern" formalParameter="WP_Geschaeftsfall_klammern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" formalParameter="WP_eM_Mitt_des_Beschlusses_an_ext_AK"/>
+                                <tibex:mapping
+                                    field="_BX_Z_Fall_erledigt_Ablage" formalParameter="Z_Fall_erledigt_Ablage"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verfuegung_zum_Gesuch" formalParameter="WP_Verfuegung_zum_Gesuch"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV_Antw" formalParameter="WP_eM_Aktenversand_an_UV_Antw"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_IV_Akte_anfordern" formalParameter="WP_eM_IV_Akte_anfordern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_PV_Versicherter_mutieren" formalParameter="WP_PV_Versicherter_mutieren"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auftraege_zum_Gesuch_anzeigen" formalParameter="WP_Auftraege_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_loeschen" formalParameter="WP_IK_Ausz_ZAS_best_loeschen"/>
+                                <tibex:mapping
+                                    field="_BX_EXC_Excel_Dokumente" formalParameter="EXC_Excel_Dokumente"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" formalParameter="WP_IK_Erstellen_VA_Eroeffnen_IK"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Journal_zum_Gesuch_anzeigen" formalParameter="WP_Journal_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Gesuch_anzeigen" formalParameter="WP_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_VP" formalParameter="WP_IK_Auszug_drucken_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" formalParameter="WP_eM_Gesuch_um_Akteneinsicht_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV" formalParameter="WP_eM_Aktenversand_an_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Aktenbestellung_DMC" formalParameter="WP_Aktenbestellung_DMC"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auszufuehrender_Versand_anzeigen" formalParameter="WP_Auszufuehrender_Versand_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" formalParameter="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verhandlungspartner_anzeigen" formalParameter="WP_Verhandlungspartner_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Nachlieferung_IVST_IVST" formalParameter="WP_eM_Nachlieferung_IVST_IVST"/>
+                                <tibex:mapping field="_BX_Task" formalParameter="Task"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_EP" formalParameter="WP_IK_Ausz_ZAS_best_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_WW_Protokolle_bearbeiten" formalParameter="WP_WW_Protokolle_bearbeiten"/>
+                            </tibex:subProcessInput>
+                        </tibex:callProcess>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+            </bpws:sequence>
+        </bpws:scope>
+        <bpws:scope name="WAuszufhrenderVersandanzei7010"
+            tibex:migrationAllowed="yes" tibex:type="reusableSubProcess" tibex:xpdlId="_UkOB0QYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="Funktion to _UkOB0QYmEem_4e3M9ri6oA"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="_UkOB0QYmEem_4e3M9ri6oA to _UkOBvQYmEem_4e3M9ri6oA"/>
+            </bpws:sources>
+            <bpws:variables>
+                <bpws:variable
+                    name="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Auszug_drucken_EP" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Formular_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_VP" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Geschaeftsfall_klammern" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" type="xsd:boolean"/>
+                <bpws:variable name="_BX_Z_Fall_erledigt_Ablage" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Verfuegung_zum_Gesuch" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Aktenversand_an_UV_Antw" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_IV_Akte_anfordern" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_PV_Versicherter_mutieren" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Auftraege_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_loeschen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_EXC_Excel_Dokumente" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Journal_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Auszug_drucken_VP" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Aktenversand_an_UV" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Aktenbestellung_DMC" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Auszufuehrender_Versand_anzeigen" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Verhandlungspartner_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Nachlieferung_IVST_IVST" type="xsd:boolean"/>
+                <bpws:variable name="_BX_Task" type="xsd:string"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_EP" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_WW_Protokolle_bearbeiten" type="xsd:boolean"/>
+            </bpws:variables>
+            <bpws:sequence name="_BX_sequence_6">
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPInput_WAuszufhrenderVersandanzei7010" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'actionToDo' to 'Task'
+_BX_Task = actionToDo;
+
+// Map from 'WP_Auszufuehrender_Versand_anzeigen' to 'WP_Auszufuehrender_Versand_anzeigen'
+_BX_WP_Auszufuehrender_Versand_anzeigen = WP_Auszufuehrender_Versand_anzeigen;
+
+// Map from 'WP_eM_Aktenversand_an_UV' to 'WP_eM_Aktenversand_an_UV'
+_BX_WP_eM_Aktenversand_an_UV = WP_eM_Aktenversand_an_UV;
+
+// Map from 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL' to 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL'
+_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL = WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL;
+
+// Map from 'WP_eM_Mitt_des_Beschlusses_an_ext_AK' to 'WP_eM_Mitt_des_Beschlusses_an_ext_AK'
+_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK = WP_eM_Mitt_des_Beschlusses_an_ext_AK;
+
+// Map from 'WP_Gesuch_anzeigen' to 'WP_Gesuch_anzeigen'
+_BX_WP_Gesuch_anzeigen = WP_Gesuch_anzeigen;
+
+// Map from 'WP_Journal_zum_Gesuch_anzeigen' to 'WP_Journal_zum_Gesuch_anzeigen'
+_BX_WP_Journal_zum_Gesuch_anzeigen = WP_Journal_zum_Gesuch_anzeigen;
+
+// Map from 'WP_Verfuegung_zum_Gesuch' to 'WP_Verfuegung_zum_Gesuch'
+_BX_WP_Verfuegung_zum_Gesuch = WP_Verfuegung_zum_Gesuch;
+
+// Map from 'WP_WW_Protokolle_bearbeiten' to 'WP_WW_Protokolle_bearbeiten'
+_BX_WP_WW_Protokolle_bearbeiten = WP_WW_Protokolle_bearbeiten;
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="WAuszufhrenderVersandanzei7010" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:callProcess followParentLifecycle="yes"
+                            packageRef="/Gen_building_block/Process Packages/Gen_building_block.xpdl"
+                            priority="inline"
+                            subProcessId="_eAeDgxM6EemnLOiGQkEvTQ" version="[1.0.0,2.0.0)">
+                            <tibex:subProcessInput>
+                                <tibex:mapping
+                                    field="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" formalParameter="WP_Zuteilung_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_EP" formalParameter="WP_IK_Auszug_drucken_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Formular_zum_Gesuch_anzeigen" formalParameter="WP_Formular_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_VP" formalParameter="WP_IK_Ausz_ZAS_best_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Geschaeftsfall_klammern" formalParameter="WP_Geschaeftsfall_klammern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" formalParameter="WP_eM_Mitt_des_Beschlusses_an_ext_AK"/>
+                                <tibex:mapping
+                                    field="_BX_Z_Fall_erledigt_Ablage" formalParameter="Z_Fall_erledigt_Ablage"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verfuegung_zum_Gesuch" formalParameter="WP_Verfuegung_zum_Gesuch"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV_Antw" formalParameter="WP_eM_Aktenversand_an_UV_Antw"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_IV_Akte_anfordern" formalParameter="WP_eM_IV_Akte_anfordern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_PV_Versicherter_mutieren" formalParameter="WP_PV_Versicherter_mutieren"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auftraege_zum_Gesuch_anzeigen" formalParameter="WP_Auftraege_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_loeschen" formalParameter="WP_IK_Ausz_ZAS_best_loeschen"/>
+                                <tibex:mapping
+                                    field="_BX_EXC_Excel_Dokumente" formalParameter="EXC_Excel_Dokumente"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" formalParameter="WP_IK_Erstellen_VA_Eroeffnen_IK"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Journal_zum_Gesuch_anzeigen" formalParameter="WP_Journal_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Gesuch_anzeigen" formalParameter="WP_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_VP" formalParameter="WP_IK_Auszug_drucken_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" formalParameter="WP_eM_Gesuch_um_Akteneinsicht_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV" formalParameter="WP_eM_Aktenversand_an_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Aktenbestellung_DMC" formalParameter="WP_Aktenbestellung_DMC"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auszufuehrender_Versand_anzeigen" formalParameter="WP_Auszufuehrender_Versand_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" formalParameter="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verhandlungspartner_anzeigen" formalParameter="WP_Verhandlungspartner_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Nachlieferung_IVST_IVST" formalParameter="WP_eM_Nachlieferung_IVST_IVST"/>
+                                <tibex:mapping field="_BX_Task" formalParameter="Task"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_EP" formalParameter="WP_IK_Ausz_ZAS_best_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_WW_Protokolle_bearbeiten" formalParameter="WP_WW_Protokolle_bearbeiten"/>
+                            </tibex:subProcessInput>
+                            <tibex:subProcessOutput>
+                                <tibex:mapping
+                                    field="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" formalParameter="WP_Zuteilung_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_EP" formalParameter="WP_IK_Auszug_drucken_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Formular_zum_Gesuch_anzeigen" formalParameter="WP_Formular_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_VP" formalParameter="WP_IK_Ausz_ZAS_best_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Geschaeftsfall_klammern" formalParameter="WP_Geschaeftsfall_klammern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" formalParameter="WP_eM_Mitt_des_Beschlusses_an_ext_AK"/>
+                                <tibex:mapping
+                                    field="_BX_Z_Fall_erledigt_Ablage" formalParameter="Z_Fall_erledigt_Ablage"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verfuegung_zum_Gesuch" formalParameter="WP_Verfuegung_zum_Gesuch"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV_Antw" formalParameter="WP_eM_Aktenversand_an_UV_Antw"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_IV_Akte_anfordern" formalParameter="WP_eM_IV_Akte_anfordern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_PV_Versicherter_mutieren" formalParameter="WP_PV_Versicherter_mutieren"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auftraege_zum_Gesuch_anzeigen" formalParameter="WP_Auftraege_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_loeschen" formalParameter="WP_IK_Ausz_ZAS_best_loeschen"/>
+                                <tibex:mapping
+                                    field="_BX_EXC_Excel_Dokumente" formalParameter="EXC_Excel_Dokumente"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" formalParameter="WP_IK_Erstellen_VA_Eroeffnen_IK"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Journal_zum_Gesuch_anzeigen" formalParameter="WP_Journal_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Gesuch_anzeigen" formalParameter="WP_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_VP" formalParameter="WP_IK_Auszug_drucken_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" formalParameter="WP_eM_Gesuch_um_Akteneinsicht_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV" formalParameter="WP_eM_Aktenversand_an_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Aktenbestellung_DMC" formalParameter="WP_Aktenbestellung_DMC"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auszufuehrender_Versand_anzeigen" formalParameter="WP_Auszufuehrender_Versand_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" formalParameter="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verhandlungspartner_anzeigen" formalParameter="WP_Verhandlungspartner_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Nachlieferung_IVST_IVST" formalParameter="WP_eM_Nachlieferung_IVST_IVST"/>
+                                <tibex:mapping field="_BX_Task" formalParameter="Task"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_EP" formalParameter="WP_IK_Ausz_ZAS_best_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_WW_Protokolle_bearbeiten" formalParameter="WP_WW_Protokolle_bearbeiten"/>
+                            </tibex:subProcessOutput>
+                        </tibex:callProcess>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPOutput_WAuszufhrenderVersandanzei7010" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'WP_Auszufuehrender_Versand_anzeigen' to 'WP_Auszufuehrender_Versand_anzeigen'
+WP_Auszufuehrender_Versand_anzeigen = _BX_WP_Auszufuehrender_Versand_anzeigen;
+
+// Map from 'WP_eM_Aktenversand_an_UV' to 'WP_eM_Aktenversand_an_UV'
+WP_eM_Aktenversand_an_UV = _BX_WP_eM_Aktenversand_an_UV;
+
+// Map from 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL' to 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL'
+WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL = _BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL;
+
+// Map from 'WP_eM_Mitt_des_Beschlusses_an_ext_AK' to 'WP_eM_Mitt_des_Beschlusses_an_ext_AK'
+WP_eM_Mitt_des_Beschlusses_an_ext_AK = _BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK;
+
+// Map from 'WP_Gesuch_anzeigen' to 'WP_Gesuch_anzeigen'
+WP_Gesuch_anzeigen = _BX_WP_Gesuch_anzeigen;
+
+// Map from 'WP_Journal_zum_Gesuch_anzeigen' to 'WP_Journal_zum_Gesuch_anzeigen'
+WP_Journal_zum_Gesuch_anzeigen = _BX_WP_Journal_zum_Gesuch_anzeigen;
+
+// Map from 'WP_Verfuegung_zum_Gesuch' to 'WP_Verfuegung_zum_Gesuch'
+WP_Verfuegung_zum_Gesuch = _BX_WP_Verfuegung_zum_Gesuch;
+
+// Map from 'WP_WW_Protokolle_bearbeiten' to 'WP_WW_Protokolle_bearbeiten'
+WP_WW_Protokolle_bearbeiten = _BX_WP_WW_Protokolle_bearbeiten;
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+            </bpws:sequence>
+        </bpws:scope>
+        <bpws:scope name="WVerfgungzumGesuch7011"
+            tibex:migrationAllowed="yes" tibex:type="reusableSubProcess" tibex:xpdlId="_UkOB0gYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="Funktion to WVerfgungzumGesuch7011"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="WVerfgungzumGesuch7011 to _UkOBvQYmEem_4e3M9ri6oA"/>
+            </bpws:sources>
+            <bpws:variables>
+                <bpws:variable
+                    name="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Auszug_drucken_EP" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Formular_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_VP" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Geschaeftsfall_klammern" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" type="xsd:boolean"/>
+                <bpws:variable name="_BX_Z_Fall_erledigt_Ablage" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Verfuegung_zum_Gesuch" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Aktenversand_an_UV_Antw" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_IV_Akte_anfordern" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_PV_Versicherter_mutieren" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Auftraege_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_loeschen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_EXC_Excel_Dokumente" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Journal_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Auszug_drucken_VP" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Aktenversand_an_UV" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Aktenbestellung_DMC" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Auszufuehrender_Versand_anzeigen" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Verhandlungspartner_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Nachlieferung_IVST_IVST" type="xsd:boolean"/>
+                <bpws:variable name="_BX_Task" type="xsd:string"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_EP" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_WW_Protokolle_bearbeiten" type="xsd:boolean"/>
+            </bpws:variables>
+            <bpws:sequence name="_BX_sequence_7">
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPInput_WVerfgungzumGesuch7011" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'actionToDo' to 'Task'
+_BX_Task = actionToDo;
+
+// Map from 'WP_Auszufuehrender_Versand_anzeigen' to 'WP_Auszufuehrender_Versand_anzeigen'
+_BX_WP_Auszufuehrender_Versand_anzeigen = WP_Auszufuehrender_Versand_anzeigen;
+
+// Map from 'WP_eM_Aktenversand_an_UV' to 'WP_eM_Aktenversand_an_UV'
+_BX_WP_eM_Aktenversand_an_UV = WP_eM_Aktenversand_an_UV;
+
+// Map from 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL' to 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL'
+_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL = WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL;
+
+// Map from 'WP_eM_Mitt_des_Beschlusses_an_ext_AK' to 'WP_eM_Mitt_des_Beschlusses_an_ext_AK'
+_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK = WP_eM_Mitt_des_Beschlusses_an_ext_AK;
+
+// Map from 'WP_Gesuch_anzeigen' to 'WP_Gesuch_anzeigen'
+_BX_WP_Gesuch_anzeigen = WP_Gesuch_anzeigen;
+
+// Map from 'WP_Journal_zum_Gesuch_anzeigen' to 'WP_Journal_zum_Gesuch_anzeigen'
+_BX_WP_Journal_zum_Gesuch_anzeigen = WP_Journal_zum_Gesuch_anzeigen;
+
+// Map from 'WP_Verfuegung_zum_Gesuch' to 'WP_Verfuegung_zum_Gesuch'
+_BX_WP_Verfuegung_zum_Gesuch = WP_Verfuegung_zum_Gesuch;
+
+// Map from 'WP_WW_Protokolle_bearbeiten' to 'WP_WW_Protokolle_bearbeiten'
+_BX_WP_WW_Protokolle_bearbeiten = WP_WW_Protokolle_bearbeiten;
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity name="WVerfgungzumGesuch7011" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:callProcess followParentLifecycle="yes"
+                            packageRef="/Gen_building_block/Process Packages/Gen_building_block.xpdl"
+                            priority="inline"
+                            subProcessId="_eAeDgxM6EemnLOiGQkEvTQ" version="[1.0.0,2.0.0)">
+                            <tibex:subProcessInput>
+                                <tibex:mapping
+                                    field="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" formalParameter="WP_Zuteilung_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_EP" formalParameter="WP_IK_Auszug_drucken_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Formular_zum_Gesuch_anzeigen" formalParameter="WP_Formular_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_VP" formalParameter="WP_IK_Ausz_ZAS_best_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Geschaeftsfall_klammern" formalParameter="WP_Geschaeftsfall_klammern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" formalParameter="WP_eM_Mitt_des_Beschlusses_an_ext_AK"/>
+                                <tibex:mapping
+                                    field="_BX_Z_Fall_erledigt_Ablage" formalParameter="Z_Fall_erledigt_Ablage"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verfuegung_zum_Gesuch" formalParameter="WP_Verfuegung_zum_Gesuch"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV_Antw" formalParameter="WP_eM_Aktenversand_an_UV_Antw"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_IV_Akte_anfordern" formalParameter="WP_eM_IV_Akte_anfordern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_PV_Versicherter_mutieren" formalParameter="WP_PV_Versicherter_mutieren"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auftraege_zum_Gesuch_anzeigen" formalParameter="WP_Auftraege_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_loeschen" formalParameter="WP_IK_Ausz_ZAS_best_loeschen"/>
+                                <tibex:mapping
+                                    field="_BX_EXC_Excel_Dokumente" formalParameter="EXC_Excel_Dokumente"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" formalParameter="WP_IK_Erstellen_VA_Eroeffnen_IK"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Journal_zum_Gesuch_anzeigen" formalParameter="WP_Journal_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Gesuch_anzeigen" formalParameter="WP_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_VP" formalParameter="WP_IK_Auszug_drucken_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" formalParameter="WP_eM_Gesuch_um_Akteneinsicht_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV" formalParameter="WP_eM_Aktenversand_an_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Aktenbestellung_DMC" formalParameter="WP_Aktenbestellung_DMC"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auszufuehrender_Versand_anzeigen" formalParameter="WP_Auszufuehrender_Versand_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" formalParameter="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verhandlungspartner_anzeigen" formalParameter="WP_Verhandlungspartner_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Nachlieferung_IVST_IVST" formalParameter="WP_eM_Nachlieferung_IVST_IVST"/>
+                                <tibex:mapping field="_BX_Task" formalParameter="Task"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_EP" formalParameter="WP_IK_Ausz_ZAS_best_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_WW_Protokolle_bearbeiten" formalParameter="WP_WW_Protokolle_bearbeiten"/>
+                            </tibex:subProcessInput>
+                            <tibex:subProcessOutput>
+                                <tibex:mapping
+                                    field="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" formalParameter="WP_Zuteilung_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_EP" formalParameter="WP_IK_Auszug_drucken_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Formular_zum_Gesuch_anzeigen" formalParameter="WP_Formular_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_VP" formalParameter="WP_IK_Ausz_ZAS_best_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Geschaeftsfall_klammern" formalParameter="WP_Geschaeftsfall_klammern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" formalParameter="WP_eM_Mitt_des_Beschlusses_an_ext_AK"/>
+                                <tibex:mapping
+                                    field="_BX_Z_Fall_erledigt_Ablage" formalParameter="Z_Fall_erledigt_Ablage"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verfuegung_zum_Gesuch" formalParameter="WP_Verfuegung_zum_Gesuch"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV_Antw" formalParameter="WP_eM_Aktenversand_an_UV_Antw"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_IV_Akte_anfordern" formalParameter="WP_eM_IV_Akte_anfordern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_PV_Versicherter_mutieren" formalParameter="WP_PV_Versicherter_mutieren"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auftraege_zum_Gesuch_anzeigen" formalParameter="WP_Auftraege_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_loeschen" formalParameter="WP_IK_Ausz_ZAS_best_loeschen"/>
+                                <tibex:mapping
+                                    field="_BX_EXC_Excel_Dokumente" formalParameter="EXC_Excel_Dokumente"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" formalParameter="WP_IK_Erstellen_VA_Eroeffnen_IK"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Journal_zum_Gesuch_anzeigen" formalParameter="WP_Journal_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Gesuch_anzeigen" formalParameter="WP_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_VP" formalParameter="WP_IK_Auszug_drucken_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" formalParameter="WP_eM_Gesuch_um_Akteneinsicht_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV" formalParameter="WP_eM_Aktenversand_an_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Aktenbestellung_DMC" formalParameter="WP_Aktenbestellung_DMC"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auszufuehrender_Versand_anzeigen" formalParameter="WP_Auszufuehrender_Versand_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" formalParameter="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verhandlungspartner_anzeigen" formalParameter="WP_Verhandlungspartner_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Nachlieferung_IVST_IVST" formalParameter="WP_eM_Nachlieferung_IVST_IVST"/>
+                                <tibex:mapping field="_BX_Task" formalParameter="Task"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_EP" formalParameter="WP_IK_Ausz_ZAS_best_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_WW_Protokolle_bearbeiten" formalParameter="WP_WW_Protokolle_bearbeiten"/>
+                            </tibex:subProcessOutput>
+                        </tibex:callProcess>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPOutput_WVerfgungzumGesuch7011" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'WP_Auszufuehrender_Versand_anzeigen' to 'WP_Auszufuehrender_Versand_anzeigen'
+WP_Auszufuehrender_Versand_anzeigen = _BX_WP_Auszufuehrender_Versand_anzeigen;
+
+// Map from 'WP_eM_Aktenversand_an_UV' to 'WP_eM_Aktenversand_an_UV'
+WP_eM_Aktenversand_an_UV = _BX_WP_eM_Aktenversand_an_UV;
+
+// Map from 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL' to 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL'
+WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL = _BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL;
+
+// Map from 'WP_eM_Mitt_des_Beschlusses_an_ext_AK' to 'WP_eM_Mitt_des_Beschlusses_an_ext_AK'
+WP_eM_Mitt_des_Beschlusses_an_ext_AK = _BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK;
+
+// Map from 'WP_Gesuch_anzeigen' to 'WP_Gesuch_anzeigen'
+WP_Gesuch_anzeigen = _BX_WP_Gesuch_anzeigen;
+
+// Map from 'WP_Journal_zum_Gesuch_anzeigen' to 'WP_Journal_zum_Gesuch_anzeigen'
+WP_Journal_zum_Gesuch_anzeigen = _BX_WP_Journal_zum_Gesuch_anzeigen;
+
+// Map from 'WP_Verfuegung_zum_Gesuch' to 'WP_Verfuegung_zum_Gesuch'
+WP_Verfuegung_zum_Gesuch = _BX_WP_Verfuegung_zum_Gesuch;
+
+// Map from 'WP_WW_Protokolle_bearbeiten' to 'WP_WW_Protokolle_bearbeiten'
+WP_WW_Protokolle_bearbeiten = _BX_WP_WW_Protokolle_bearbeiten;
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+            </bpws:sequence>
+        </bpws:scope>
+        <bpws:empty name="_BX_gateway__UkOB0wYmEem_4e3M9ri6oA"
+            tibex:type="exclusiveGateway" tibex:xpdlId="_UkOB0wYmEem_4e3M9ri6oA">
+            <bpws:targets tibex:waitFor="1">
+                <bpws:target linkName="WWProtokollebearbeiten706 to _UkOB0wYmEem_4e3M9ri6oA"/>
+                <bpws:target linkName="SDXAuftragausfhren to _UkOB0wYmEem_4e3M9ri6oA"/>
+                <bpws:target linkName="FolgeWorkflowstarten to _UkOB0wYmEem_4e3M9ri6oA"/>
+                <bpws:target linkName="_UkOBvAYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA"/>
+                <bpws:target linkName="_UkOBvgYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA"/>
+                <bpws:target linkName="_UkOBvwYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA"/>
+                <bpws:target linkName="_UkOBzAYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA"/>
+                <bpws:target linkName="_UkOBzQYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA"/>
+                <bpws:target linkName="_UkOBzgYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA"/>
+                <bpws:target linkName="_UkOBzwYmEem_4e3M9ri6oA to _UkOB0wYmEem_4e3M9ri6oA"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="_UkOB0wYmEem_4e3M9ri6oA to Mitteilungbearbeiten69"/>
+            </bpws:sources>
+        </bpws:empty>
+        <bpws:scope name="WGesuchanzeigen3000"
+            tibex:migrationAllowed="yes" tibex:type="reusableSubProcess" tibex:xpdlId="_UkOB1AYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="weitereGesuchebearbeiten7012"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="WGesuchanzeigen3000 to Sachleistungenprfen5"/>
+            </bpws:sources>
+            <bpws:variables>
+                <bpws:variable
+                    name="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Auszug_drucken_EP" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Formular_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_VP" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Geschaeftsfall_klammern" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" type="xsd:boolean"/>
+                <bpws:variable name="_BX_Z_Fall_erledigt_Ablage" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Verfuegung_zum_Gesuch" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Aktenversand_an_UV_Antw" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_IV_Akte_anfordern" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_PV_Versicherter_mutieren" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Auftraege_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_loeschen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_EXC_Excel_Dokumente" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Journal_zum_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Gesuch_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_IK_Auszug_drucken_VP" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Aktenversand_an_UV" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_Aktenbestellung_DMC" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Auszufuehrender_Versand_anzeigen" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" type="xsd:boolean"/>
+                <bpws:variable
+                    name="_BX_WP_Verhandlungspartner_anzeigen" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_eM_Nachlieferung_IVST_IVST" type="xsd:boolean"/>
+                <bpws:variable name="_BX_Task" type="xsd:string"/>
+                <bpws:variable name="_BX_WP_IK_Ausz_ZAS_best_EP" type="xsd:boolean"/>
+                <bpws:variable name="_BX_WP_WW_Protokolle_bearbeiten" type="xsd:boolean"/>
+            </bpws:variables>
+            <bpws:sequence name="_BX_sequence_8">
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPInput_WGesuchanzeigen3000" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'actionToDo' to 'Task'
+_BX_Task = actionToDo;
+
+// Map from 'WP_Auszufuehrender_Versand_anzeigen' to 'WP_Auszufuehrender_Versand_anzeigen'
+_BX_WP_Auszufuehrender_Versand_anzeigen = WP_Auszufuehrender_Versand_anzeigen;
+
+// Map from 'WP_eM_Aktenversand_an_UV' to 'WP_eM_Aktenversand_an_UV'
+_BX_WP_eM_Aktenversand_an_UV = WP_eM_Aktenversand_an_UV;
+
+// Map from 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL' to 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL'
+_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL = WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL;
+
+// Map from 'WP_eM_Mitt_des_Beschlusses_an_ext_AK' to 'WP_eM_Mitt_des_Beschlusses_an_ext_AK'
+_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK = WP_eM_Mitt_des_Beschlusses_an_ext_AK;
+
+// Map from 'WP_Gesuch_anzeigen' to 'WP_Gesuch_anzeigen'
+_BX_WP_Gesuch_anzeigen = WP_Gesuch_anzeigen;
+
+// Map from 'WP_Journal_zum_Gesuch_anzeigen' to 'WP_Journal_zum_Gesuch_anzeigen'
+_BX_WP_Journal_zum_Gesuch_anzeigen = WP_Journal_zum_Gesuch_anzeigen;
+
+// Map from 'WP_Verfuegung_zum_Gesuch' to 'WP_Verfuegung_zum_Gesuch'
+_BX_WP_Verfuegung_zum_Gesuch = WP_Verfuegung_zum_Gesuch;
+
+// Map from 'WP_WW_Protokolle_bearbeiten' to 'WP_WW_Protokolle_bearbeiten'
+_BX_WP_WW_Protokolle_bearbeiten = WP_WW_Protokolle_bearbeiten;
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity name="WGesuchanzeigen3000" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:callProcess followParentLifecycle="yes"
+                            packageRef="/Gen_building_block/Process Packages/Gen_building_block.xpdl"
+                            priority="inline"
+                            subProcessId="_eAeDgxM6EemnLOiGQkEvTQ" version="[1.0.0,2.0.0)">
+                            <tibex:subProcessInput>
+                                <tibex:mapping
+                                    field="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" formalParameter="WP_Zuteilung_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_EP" formalParameter="WP_IK_Auszug_drucken_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Formular_zum_Gesuch_anzeigen" formalParameter="WP_Formular_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_VP" formalParameter="WP_IK_Ausz_ZAS_best_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Geschaeftsfall_klammern" formalParameter="WP_Geschaeftsfall_klammern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" formalParameter="WP_eM_Mitt_des_Beschlusses_an_ext_AK"/>
+                                <tibex:mapping
+                                    field="_BX_Z_Fall_erledigt_Ablage" formalParameter="Z_Fall_erledigt_Ablage"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verfuegung_zum_Gesuch" formalParameter="WP_Verfuegung_zum_Gesuch"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV_Antw" formalParameter="WP_eM_Aktenversand_an_UV_Antw"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_IV_Akte_anfordern" formalParameter="WP_eM_IV_Akte_anfordern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_PV_Versicherter_mutieren" formalParameter="WP_PV_Versicherter_mutieren"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auftraege_zum_Gesuch_anzeigen" formalParameter="WP_Auftraege_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_loeschen" formalParameter="WP_IK_Ausz_ZAS_best_loeschen"/>
+                                <tibex:mapping
+                                    field="_BX_EXC_Excel_Dokumente" formalParameter="EXC_Excel_Dokumente"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" formalParameter="WP_IK_Erstellen_VA_Eroeffnen_IK"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Journal_zum_Gesuch_anzeigen" formalParameter="WP_Journal_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Gesuch_anzeigen" formalParameter="WP_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_VP" formalParameter="WP_IK_Auszug_drucken_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" formalParameter="WP_eM_Gesuch_um_Akteneinsicht_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV" formalParameter="WP_eM_Aktenversand_an_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Aktenbestellung_DMC" formalParameter="WP_Aktenbestellung_DMC"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auszufuehrender_Versand_anzeigen" formalParameter="WP_Auszufuehrender_Versand_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" formalParameter="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verhandlungspartner_anzeigen" formalParameter="WP_Verhandlungspartner_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Nachlieferung_IVST_IVST" formalParameter="WP_eM_Nachlieferung_IVST_IVST"/>
+                                <tibex:mapping field="_BX_Task" formalParameter="Task"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_EP" formalParameter="WP_IK_Ausz_ZAS_best_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_WW_Protokolle_bearbeiten" formalParameter="WP_WW_Protokolle_bearbeiten"/>
+                            </tibex:subProcessInput>
+                            <tibex:subProcessOutput>
+                                <tibex:mapping
+                                    field="_BX_WP_Zuteilung_zum_Gesuch_anzeigen" formalParameter="WP_Zuteilung_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_EP" formalParameter="WP_IK_Auszug_drucken_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Formular_zum_Gesuch_anzeigen" formalParameter="WP_Formular_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_VP" formalParameter="WP_IK_Ausz_ZAS_best_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Geschaeftsfall_klammern" formalParameter="WP_Geschaeftsfall_klammern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK" formalParameter="WP_eM_Mitt_des_Beschlusses_an_ext_AK"/>
+                                <tibex:mapping
+                                    field="_BX_Z_Fall_erledigt_Ablage" formalParameter="Z_Fall_erledigt_Ablage"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verfuegung_zum_Gesuch" formalParameter="WP_Verfuegung_zum_Gesuch"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV_Antw" formalParameter="WP_eM_Aktenversand_an_UV_Antw"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_IV_Akte_anfordern" formalParameter="WP_eM_IV_Akte_anfordern"/>
+                                <tibex:mapping
+                                    field="_BX_WP_PV_Versicherter_mutieren" formalParameter="WP_PV_Versicherter_mutieren"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auftraege_zum_Gesuch_anzeigen" formalParameter="WP_Auftraege_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_loeschen" formalParameter="WP_IK_Ausz_ZAS_best_loeschen"/>
+                                <tibex:mapping
+                                    field="_BX_EXC_Excel_Dokumente" formalParameter="EXC_Excel_Dokumente"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Erstellen_VA_Eroeffnen_IK" formalParameter="WP_IK_Erstellen_VA_Eroeffnen_IK"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Journal_zum_Gesuch_anzeigen" formalParameter="WP_Journal_zum_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Gesuch_anzeigen" formalParameter="WP_Gesuch_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Auszug_drucken_VP" formalParameter="WP_IK_Auszug_drucken_VP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Gesuch_um_Akteneinsicht_UV" formalParameter="WP_eM_Gesuch_um_Akteneinsicht_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Aktenversand_an_UV" formalParameter="WP_eM_Aktenversand_an_UV"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Aktenbestellung_DMC" formalParameter="WP_Aktenbestellung_DMC"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Auszufuehrender_Versand_anzeigen" formalParameter="WP_Auszufuehrender_Versand_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" formalParameter="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL"/>
+                                <tibex:mapping
+                                    field="_BX_WP_Verhandlungspartner_anzeigen" formalParameter="WP_Verhandlungspartner_anzeigen"/>
+                                <tibex:mapping
+                                    field="_BX_WP_eM_Nachlieferung_IVST_IVST" formalParameter="WP_eM_Nachlieferung_IVST_IVST"/>
+                                <tibex:mapping field="_BX_Task" formalParameter="Task"/>
+                                <tibex:mapping
+                                    field="_BX_WP_IK_Ausz_ZAS_best_EP" formalParameter="WP_IK_Ausz_ZAS_best_EP"/>
+                                <tibex:mapping
+                                    field="_BX_WP_WW_Protokolle_bearbeiten" formalParameter="WP_WW_Protokolle_bearbeiten"/>
+                            </tibex:subProcessOutput>
+                        </tibex:callProcess>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPOutput_WGesuchanzeigen3000" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'WP_Auszufuehrender_Versand_anzeigen' to 'WP_Auszufuehrender_Versand_anzeigen'
+WP_Auszufuehrender_Versand_anzeigen = _BX_WP_Auszufuehrender_Versand_anzeigen;
+
+// Map from 'WP_eM_Aktenversand_an_UV' to 'WP_eM_Aktenversand_an_UV'
+WP_eM_Aktenversand_an_UV = _BX_WP_eM_Aktenversand_an_UV;
+
+// Map from 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL' to 'WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL'
+WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL = _BX_WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL;
+
+// Map from 'WP_eM_Mitt_des_Beschlusses_an_ext_AK' to 'WP_eM_Mitt_des_Beschlusses_an_ext_AK'
+WP_eM_Mitt_des_Beschlusses_an_ext_AK = _BX_WP_eM_Mitt_des_Beschlusses_an_ext_AK;
+
+// Map from 'WP_Gesuch_anzeigen' to 'WP_Gesuch_anzeigen'
+WP_Gesuch_anzeigen = _BX_WP_Gesuch_anzeigen;
+
+// Map from 'WP_Journal_zum_Gesuch_anzeigen' to 'WP_Journal_zum_Gesuch_anzeigen'
+WP_Journal_zum_Gesuch_anzeigen = _BX_WP_Journal_zum_Gesuch_anzeigen;
+
+// Map from 'WP_Verfuegung_zum_Gesuch' to 'WP_Verfuegung_zum_Gesuch'
+WP_Verfuegung_zum_Gesuch = _BX_WP_Verfuegung_zum_Gesuch;
+
+// Map from 'WP_WW_Protokolle_bearbeiten' to 'WP_WW_Protokolle_bearbeiten'
+WP_WW_Protokolle_bearbeiten = _BX_WP_WW_Protokolle_bearbeiten;
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+            </bpws:sequence>
+        </bpws:scope>
+        <bpws:scope name="Sachleistungenprfen5"
+            tibex:migrationAllowed="yes" tibex:type="reusableSubProcess" tibex:xpdlId="_UkOB1QYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="WGesuchanzeigen3000 to Sachleistungenprfen5"/>
+            </bpws:targets>
+            <bpws:sources>
+                <bpws:source linkName="Sachleistungenprfen5 to Ende3"/>
+            </bpws:sources>
+            <bpws:variables>
+                <bpws:variable name="_BX_Geschaeftsfall" tibex:class="com.example.comigsbom.Geschftsfall"/>
+                <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
+                <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
+                <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
+                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
+                <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
+            </bpws:variables>
+            <bpws:sequence name="_BX_sequence_9">
+                <bpws:extensionActivity>
+                    <tibex:extActivity
+                        name="_BX_SPInput_Sachleistungenprfen5" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'Dokument' to 'Dokument'
+_BX_Dokument = ScriptUtil.copy(Dokument);
+
+// Map from 'Geschaeftsfall' to 'Geschaeftsfall'
+_BX_Geschaeftsfall = ScriptUtil.copy(Geschaeftsfall);
+
+// Map from 'IVSachbearbeiter' to 'IVSachbearbeiter'
+_BX_IVSachbearbeiter = IVSachbearbeiter;
+
+// Map from 'Mitglied' to 'Mitglied'
+_BX_Mitglied = ScriptUtil.copy(Mitglied);
+
+// Map from 'Versicherter' to 'Versicherter'
+_BX_Versicherter = ScriptUtil.copy(Versicherter);
+
+// Map from 'WorkListFasade' to 'WorkListFasade'
+_BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
+
+
+]]></tibex:script>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+                <bpws:extensionActivity>
+                    <tibex:extActivity name="Sachleistungenprfen5" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                        <tibex:callProcess asynch="yes" attached="no" subProcessId="_UkOAhwYmEem_4e3M9ri6oA">
+                            <tibex:subProcessInput>
+                                <tibex:mapping
+                                    field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
+                                <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
+                                <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
+                                <tibex:mapping
+                                    field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
+                                <tibex:mapping
+                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
+                                <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
+                            </tibex:subProcessInput>
+                        </tibex:callProcess>
+                    </tibex:extActivity>
+                </bpws:extensionActivity>
+            </bpws:sequence>
+        </bpws:scope>
+        <bpws:empty name="Ende3" tibex:migrationAllowed="yes"
+            tibex:type="endEvent" tibex:xpdlId="_UkOB1gYmEem_4e3M9ri6oA">
+            <bpws:targets>
+                <bpws:target linkName="Sachleistungenprfen5 to Ende3"/>
+            </bpws:targets>
+        </bpws:empty>
+        <bpws:extensionActivity>
+            <tibex:extActivity name="ScriptTask_1"
+                tibex:migrationAllowed="yes" tibex:type="scriptTask"
+                tibex:xpdlId="_bEqFEBByEemC7fSLJGfkbw" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                <bpws:targets>
+                    <bpws:target linkName="Funktion to ScriptTask_1"/>
+                </bpws:targets>
+                <bpws:sources>
+                    <bpws:source linkName="ScriptTask_1 to _UkOBzwYmEem_4e3M9ri6oA"/>
+                </bpws:sources>
+                <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[RuntimeIdentifier="IVFolgeworkflow_Verfuegungskopie_an_ZL";
+MasterProcessID=Process.getMasterProcessId();]]></tibex:script>
+            </tibex:extActivity>
+        </bpws:extensionActivity>
+        <bpws:extensionActivity>
+            <tibex:extActivity name="ScriptTask_2"
+                tibex:migrationAllowed="yes" tibex:type="scriptTask"
+                tibex:xpdlId="_iyprgBByEemC7fSLJGfkbw" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                <bpws:targets>
+                    <bpws:target linkName="Funktion to ScriptTask_2"/>
+                </bpws:targets>
+                <bpws:sources>
+                    <bpws:source linkName="ScriptTask_2 to _UkOBzQYmEem_4e3M9ri6oA"/>
+                </bpws:sources>
+                <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[RuntimeIdentifier="IVFolgeworkflow_Verfuegungskopie_an_RB";
+MasterProcessID=Process.getMasterProcessId();]]></tibex:script>
+            </tibex:extActivity>
+        </bpws:extensionActivity>
+        <bpws:extensionActivity>
+            <tibex:extActivity name="ScriptTask_3"
+                tibex:migrationAllowed="yes" tibex:type="scriptTask"
+                tibex:xpdlId="_nENAQBByEemC7fSLJGfkbw" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                <bpws:targets>
+                    <bpws:target linkName="Funktion to ScriptTask_3"/>
+                </bpws:targets>
+                <bpws:sources>
+                    <bpws:source linkName="ScriptTask_3 to _UkOBzgYmEem_4e3M9ri6oA"/>
+                </bpws:sources>
+                <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[RuntimeIdentifier="IVFolgeworkflow_Taggeld_Meldung_an_AK_LEI";
+MasterProcessID=Process.getMasterProcessId();]]></tibex:script>
+            </tibex:extActivity>
+        </bpws:extensionActivity>
+        <bpws:extensionActivity>
+            <tibex:extActivity name="ScriptTask"
+                tibex:migrationAllowed="yes" tibex:type="scriptTask"
+                tibex:xpdlId="_6HsfUBByEemC7fSLJGfkbw" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                <bpws:targets>
+                    <bpws:target linkName="Funktion to ScriptTask"/>
+                </bpws:targets>
+                <bpws:sources>
+                    <bpws:source linkName="ScriptTask to _UkOBzAYmEem_4e3M9ri6oA"/>
+                </bpws:sources>
+                <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[RuntimeIdentifier="IVFolgeworkflow_Mitteilungskopie_an_Regress";
+MasterProcessID=Process.getMasterProcessId();]]></tibex:script>
+            </tibex:extActivity>
+        </bpws:extensionActivity>
+    </bpws:flow>
+</bpws:process>

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" generated="true" id="_txPkwBW8Eemwx6NixRoh7A" formatVersion="4.0.0">
+  <form:runtimeDependencies>
+    <form:package>com.example.arraymapping.ArraymappingPackage</form:package>
+    <form:package>com.example.worklistfasade.WorklistfasadePackage</form:package>
+    <form:factory>com.example.arraymapping.ArraymappingFactory</form:factory>
+    <form:factory>com.example.worklistfasade.WorklistfasadeFactory</form:factory>
+    <form:class>com.example.arraymapping.GS</form:class>
+    <form:class>com.example.worklistfasade.WorkListFasade</form:class>
+  </form:runtimeDependencies>
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="PrfeFlleaufbereinstimmung.properties" internal="true" localized="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" name="data.Geschaeftsfall_found" label="Geschaeftsfall_found" dataType="uml:Class ArrayMapping.bom#_3hXeoAQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.arraymapping%26n=GS?" type="com.example.arraymapping::GS" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" name="data.UserCompleteTaskGuid" label="UserCompleteTaskGuid" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Geschaeftsfall_klammern" label="WP_Geschaeftsfall_klammern" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WorkListFasade" label="WorkListFasade" dataType="uml:Class WorkListFasade.bom#_LTh0cBTtEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.worklistfasade%26n=WorkListFasade?" type="com.example.worklistfasade::WorkListFasade" inout="IN"/>
+  </form:dataModel>
+  <form:services/>
+  <form:actions/>
+  <form:conditions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancel" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancel.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.close" label="Close">
+      <form:event source="#control.close" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.close.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.close"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submit" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submit.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.Geschaeftsfall_found__add" label="Add Geschaeftsfall_found">
+      <form:event source="#control.Geschaeftsfall_found__add" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.Geschaeftsfall_found__add.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.Geschaeftsfall_found__add" label="Add Geschaeftsfall_found">
+        <form:script>var collectionPane = pane.Geschaeftsfall_found;
+var newRecord = factory.com_example_arraymapping.createGS();
+collectionPane.getValue().add(newRecord);
+collectionPane.setSelection(newRecord);
+</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule generated="true" name="rule.Geschaeftsfall_found__delete" label="Delete Geschaeftsfall_found">
+      <form:event source="#control.Geschaeftsfall_found__delete" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.Geschaeftsfall_found__delete.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.Geschaeftsfall_found__delete" label="Delete Geschaeftsfall_found">
+        <form:script>var collectionPane = pane.Geschaeftsfall_found;
+var selection = collectionPane.getSelection();
+if (selection != null) {
+    var rc = confirm(&quot;Delete the current record?&quot;);
+    if (rc == true) {
+        var list = collectionPane.getValue();
+        var size = list.size();
+        var selectionIndex = list.remove(selection);
+        var newSelection = null;
+        if(selectionIndex != -1) {
+            if(selectionIndex == size - 1) {
+                selectionIndex--;
+            }
+            newSelection = list.get(selectionIndex)
+            collectionPane.setSelection(newSelection);
+        }
+        collectionPane.setSelection(newSelection);
+    }
+}</form:script>
+      </form:action>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_RiFnYBW8Eemwx6NixRoh7A">
+      <form:source target="data.Geschaeftsfall_found" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Geschaeftsfall_found.value"/>
+      <form:destination target="pane.Geschaeftsfall_found" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.Geschaeftsfall_found.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_RiGOdBW8Eemwx6NixRoh7A">
+      <form:source target="data.UserCompleteTaskGuid" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.UserCompleteTaskGuid.value"/>
+      <form:destination target="control.UserCompleteTaskGuid" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.UserCompleteTaskGuid.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_RiG1gBW8Eemwx6NixRoh7A">
+      <form:source target="data.WP_Geschaeftsfall_klammern" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.WP_Geschaeftsfall_klammern.value"/>
+      <form:destination target="control.WP_Geschaeftsfall_klammern" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WP_Geschaeftsfall_klammern.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_RiG1gRW8Eemwx6NixRoh7A">
+      <form:source target="data.WorkListFasade" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.WorkListFasade.value"/>
+      <form:destination target="pane.WorkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.WorkListFasade.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_RiFnYRW8Eemwx6NixRoh7A">
+      <form:source target="pane.Geschaeftsfall_found" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value ArrayMapping.bom#_4lAs8AQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.arraymapping%3a%3aGS%26n=caseID?" data="form.pane.Geschaeftsfall_found.value.caseID"/>
+      <form:destination target="control.Geschaeftsfall_found_caseID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_found_caseID.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_RiGOcBW8Eemwx6NixRoh7A">
+      <form:source target="pane.Geschaeftsfall_found" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value ArrayMapping.bom#_4zw6oAQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.arraymapping%3a%3aGS%26n=ahvNummer?" data="form.pane.Geschaeftsfall_found.value.ahvNummer"/>
+      <form:destination target="control.Geschaeftsfall_found_ahvNummer" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_found_ahvNummer.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_RiGOcRW8Eemwx6NixRoh7A">
+      <form:source target="pane.Geschaeftsfall_found" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value ArrayMapping.bom#_5DIMUAQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.arraymapping%3a%3aGS%26n=dokumentenArt?" data="form.pane.Geschaeftsfall_found.value.dokumentenArt"/>
+      <form:destination target="control.Geschaeftsfall_found_dokumentenArt" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_found_dokumentenArt.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_RiGOchW8Eemwx6NixRoh7A">
+      <form:source target="pane.Geschaeftsfall_found" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value ArrayMapping.bom#_5z13kAQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.arraymapping%3a%3aGS%26n=dossierID?" data="form.pane.Geschaeftsfall_found.value.dossierID"/>
+      <form:destination target="control.Geschaeftsfall_found_dossierID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_found_dossierID.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_RiGOcxW8Eemwx6NixRoh7A">
+      <form:source target="pane.Geschaeftsfall_found" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value ArrayMapping.bom#_5UGnkAQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.arraymapping%3a%3aGS%26n=geschaeftsfall?" data="form.pane.Geschaeftsfall_found.value.geschaeftsfall"/>
+      <form:destination target="control.Geschaeftsfall_found_geschaeftsfall" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_found_geschaeftsfall.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_RiG1ghW8Eemwx6NixRoh7A">
+      <form:source target="pane.WorkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_R0qmMBTtEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=versichNr?" data="form.pane.WorkListFasade.value.versichNr"/>
+      <form:destination target="control.WorkListFasade_versichNr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkListFasade_versichNr.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_RiG1gxW8Eemwx6NixRoh7A">
+      <form:source target="pane.WorkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_UYsCIBTtEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=personenID?" data="form.pane.WorkListFasade.value.personenID"/>
+      <form:destination target="control.WorkListFasade_personenID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkListFasade_personenID.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_RiG1hBW8Eemwx6NixRoh7A">
+      <form:source target="pane.WorkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_6XLyoBTtEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=versNachname?" data="form.pane.WorkListFasade.value.versNachname"/>
+      <form:destination target="control.WorkListFasade_versNachname" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkListFasade_versNachname.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_RiG1hRW8Eemwx6NixRoh7A">
+      <form:source target="pane.WorkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_9b45wBTtEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=wiedervorlagedatum?" data="form.pane.WorkListFasade.value.wiedervorlagedatum"/>
+      <form:destination target="control.WorkListFasade_wiedervorlagedatum" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkListFasade_wiedervorlagedatum.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_RiG1hhW8Eemwx6NixRoh7A">
+      <form:source target="pane.WorkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#__X3eQBTtEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=dokEingangsdatum?" data="form.pane.WorkListFasade.value.dokEingangsdatum"/>
+      <form:destination target="control.WorkListFasade_dokEingangsdatum" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkListFasade_dokEingangsdatum.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_RiG1hxW8Eemwx6NixRoh7A">
+      <form:source target="pane.WorkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_FxKioBTuEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=aktuelleBearbeiter?" data="form.pane.WorkListFasade.value.aktuelleBearbeiter"/>
+      <form:destination target="control.WorkListFasade_aktuelleBearbeiter" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkListFasade_aktuelleBearbeiter.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_RiG1iBW8Eemwx6NixRoh7A">
+      <form:source target="pane.WorkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_HjWR8BTuEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=anmeldeNr?" data="form.pane.WorkListFasade.value.anmeldeNr"/>
+      <form:destination target="control.WorkListFasade_anmeldeNr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkListFasade_anmeldeNr.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_RiG1iRW8Eemwx6NixRoh7A">
+      <form:source target="pane.WorkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_JLhwsBTuEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=zusatzbezeichnung?" data="form.pane.WorkListFasade.value.zusatzbezeichnung"/>
+      <form:destination target="control.WorkListFasade_zusatzbezeichnung" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkListFasade_zusatzbezeichnung.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_RiHckBW8Eemwx6NixRoh7A">
+      <form:source target="pane.WorkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_LQcOwBTuEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=abrechNr?" data="form.pane.WorkListFasade.value.abrechNr"/>
+      <form:destination target="control.WorkListFasade_abrechNr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkListFasade_abrechNr.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_RiHckRW8Eemwx6NixRoh7A">
+      <form:source target="pane.WorkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_MwY-kBTuEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=unternehmensID?" data="form.pane.WorkListFasade.value.unternehmensID"/>
+      <form:destination target="control.WorkListFasade_unternehmensID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkListFasade_unternehmensID.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_RiHckhW8Eemwx6NixRoh7A">
+      <form:source target="pane.WorkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_O6rE0BTuEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=versVorname?" data="form.pane.WorkListFasade.value.versVorname"/>
+      <form:destination target="control.WorkListFasade_versVorname" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkListFasade_versVorname.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_RiHckxW8Eemwx6NixRoh7A">
+      <form:source target="pane.WorkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_QfHTEBTuEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=dokumentenArt?" data="form.pane.WorkListFasade.value.dokumentenArt"/>
+      <form:destination target="control.WorkListFasade_dokumentenArt" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkListFasade_dokumentenArt.value"/>
+    </form:binding>
+  </form:bindings>
+  <form:targets>
+    <form:target ref="iProcessWorkspace_10.7"/>
+  </form:targets>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Prüfe Fälle Auf Übereinstimmung</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="left"/>
+    </form:defaults>
+    <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class ArrayMapping.bom#_3hXeoAQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.arraymapping%26n=GS?" name="pane.Geschaeftsfall_found" paneType="com.tibco.forms.panes.grid">
+      <form:propertySet xsi:type="et:GridPanePropertySet">
+        <et:showNavigator>false</et:showNavigator>
+        <et:supportAddOperation>true</et:supportAddOperation>
+        <et:supportDeleteOperation>true</et:supportDeleteOperation>
+        <et:addOperationLabelRef>resource.common.pane_new_label</et:addOperationLabelRef>
+        <et:deleteOperationLabelRef>resource.common.pane_delete_label</et:deleteOperationLabelRef>
+        <et:editable>true</et:editable>
+        <et:sortable>true</et:sortable>
+        <et:rowLabel>{0}</et:rowLabel>
+      </form:propertySet>
+      <form:label>Geschaeftsfall_found</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Geschaeftsfall_found_caseID">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>caseID</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="Geschaeftsfall_found_caseID__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Geschaeftsfall_found_ahvNummer">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>ahv-Nummer</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="Geschaeftsfall_found_ahvNummer__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Geschaeftsfall_found_dokumentenArt">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>dokumenten-Art</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="Geschaeftsfall_found_dokumentenArt__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Geschaeftsfall_found_dossierID">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>dossierID</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="Geschaeftsfall_found_dossierID__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Geschaeftsfall_found_geschaeftsfall">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>geschaeftsfall</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="Geschaeftsfall_found_geschaeftsfall__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.Geschaeftsfall_found__add_delete" paneType="com.tibco.forms.panes.horizontal">
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.Geschaeftsfall_found__add">
+        <form:propertySet xsi:type="et:ButtonPropertySet"/>
+        <form:label valueRef="resource.common.pane_new_label"/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.Geschaeftsfall_found__delete">
+        <form:propertySet xsi:type="et:ButtonPropertySet"/>
+        <form:label valueRef="resource.common.pane_delete_label"/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.UserCompleteTaskGuid">
+      <form:propertySet xsi:type="et:TextAreaPropertySet">
+        <et:rows>10</et:rows>
+        <et:cols>25</et:cols>
+      </form:propertySet>
+      <form:label>UserCompleteTaskGuid</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.WP_Geschaeftsfall_klammern">
+      <form:label>WP_Geschaeftsfall_klammern</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class WorkListFasade.bom#_LTh0cBTtEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.worklistfasade%26n=WorkListFasade?" name="pane.WorkListFasade" paneType="com.tibco.forms.panes.vertical">
+      <form:label>WorkListFasade</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.WorkListFasade_versichNr">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>64</et:maxLength>
+        </form:propertySet>
+        <form:label>Versich.-Nr.</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="WorkListFasade_versichNr__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 64) ? true : [context.control.getLabel(), '64'] : context.value.length &lt;= 64;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.WorkListFasade_personenID">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>64</et:maxLength>
+        </form:propertySet>
+        <form:label>Personen-ID</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="WorkListFasade_personenID__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 64) ? true : [context.control.getLabel(), '64'] : context.value.length &lt;= 64;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.WorkListFasade_versNachname">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>64</et:maxLength>
+        </form:propertySet>
+        <form:label>Vers.-Nachname</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="WorkListFasade_versNachname__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 64) ? true : [context.control.getLabel(), '64'] : context.value.length &lt;= 64;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" readOnly="true" controlType="com.tibco.forms.controls.datetime" name="control.WorkListFasade_wiedervorlagedatum">
+        <form:propertySet xsi:type="et:DateTimePropertySet">
+          <et:minRelative>true</et:minRelative>
+          <et:maxRelative>true</et:maxRelative>
+          <et:year min="-20" max="20"/>
+          <et:minute increment="15"/>
+        </form:propertySet>
+        <form:label>Wiedervorlagedatum</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_datetime_format" name="WorkListFasade_wiedervorlagedatum__datetime" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.getLabel()] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" readOnly="true" controlType="com.tibco.forms.controls.datetime" name="control.WorkListFasade_dokEingangsdatum">
+        <form:propertySet xsi:type="et:DateTimePropertySet">
+          <et:minRelative>true</et:minRelative>
+          <et:maxRelative>true</et:maxRelative>
+          <et:year min="-20" max="20"/>
+          <et:minute increment="15"/>
+        </form:propertySet>
+        <form:label>Dok-Eingangsdatum</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_datetime_format" name="WorkListFasade_dokEingangsdatum__datetime" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.getLabel()] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.WorkListFasade_aktuelleBearbeiter">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>25</et:displayLength>
+          <et:maxLength>20</et:maxLength>
+        </form:propertySet>
+        <form:label>aktuelle Bearbeiter</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="WorkListFasade_aktuelleBearbeiter__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 20) ? true : [context.control.getLabel(), '20'] : context.value.length &lt;= 20;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.WorkListFasade_anmeldeNr">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>25</et:displayLength>
+          <et:maxLength>20</et:maxLength>
+        </form:propertySet>
+        <form:label>Anmelde-Nr.</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="WorkListFasade_anmeldeNr__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 20) ? true : [context.control.getLabel(), '20'] : context.value.length &lt;= 20;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.WorkListFasade_zusatzbezeichnung">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>25</et:displayLength>
+          <et:maxLength>20</et:maxLength>
+        </form:propertySet>
+        <form:label>Zusatzbezeichnung</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="WorkListFasade_zusatzbezeichnung__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 20) ? true : [context.control.getLabel(), '20'] : context.value.length &lt;= 20;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.WorkListFasade_abrechNr">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>25</et:displayLength>
+          <et:maxLength>20</et:maxLength>
+        </form:propertySet>
+        <form:label>Abrech.-Nr.</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="WorkListFasade_abrechNr__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 20) ? true : [context.control.getLabel(), '20'] : context.value.length &lt;= 20;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.WorkListFasade_unternehmensID">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>25</et:displayLength>
+          <et:maxLength>20</et:maxLength>
+        </form:propertySet>
+        <form:label>Unternehmens-ID</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="WorkListFasade_unternehmensID__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 20) ? true : [context.control.getLabel(), '20'] : context.value.length &lt;= 20;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.WorkListFasade_versVorname">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>25</et:displayLength>
+          <et:maxLength>20</et:maxLength>
+        </form:propertySet>
+        <form:label>Vers.-Vorname</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="WorkListFasade_versVorname__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 20) ? true : [context.control.getLabel(), '20'] : context.value.length &lt;= 20;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.WorkListFasade_dokumentenArt">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>25</et:displayLength>
+          <et:maxLength>20</et:maxLength>
+        </form:propertySet>
+        <form:label>DokumentenArt</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="WorkListFasade_dokumentenArt__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 20) ? true : [context.control.getLabel(), '20'] : context.value.length &lt;= 20;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancel">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.close">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Close</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submit">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

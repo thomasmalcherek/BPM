@@ -46,7 +46,7 @@ theClass.ATTR_ANMELDENUMMER = "anmeldenummer";
 theClass.ATTR_FORMULAREMPFNGER = "formularempfnger";
 
 theClass.TYPE_ARRAY = new Object();
-theClass.TYPE_ARRAY[theClass.ATTR_DOKUMENTID] = {type:"BomPrimitiveTypes.ID", baseType:"BomPrimitiveTypes.ID", primitive:true, multivalued:false, required:true, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_DOKUMENTID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_DOCUMENTNUMBER] = {type:"BomPrimitiveTypes.Integer", baseType:"BomPrimitiveTypes.Integer", primitive:true, multivalued:false, required:true, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_DOCUMENTTYPE] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_DOCUMENTSECURITY] = {type:"BomPrimitiveTypes.Integer", baseType:"BomPrimitiveTypes.Integer", primitive:true, multivalued:false, required:false, defaultValue:""};

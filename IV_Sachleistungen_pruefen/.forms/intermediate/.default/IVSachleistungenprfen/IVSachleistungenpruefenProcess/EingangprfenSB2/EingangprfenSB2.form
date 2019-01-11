@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" generated="true" id="_uJY_ABW8Eemwx6NixRoh7A" formatVersion="4.0.0">
+  <form:runtimeDependencies/>
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="EingangprfenSB2.properties" internal="true" localized="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" name="data.WP_eM_IV_Akte_anfordern" label="WP_eM_IV_Akte_anfordern" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_Nachlieferung_IVST_IVST" label="WP_eM_Nachlieferung_IVST_IVST" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SP_Suva_IV_Regressfall_an_RGD" label="SP_Suva_IV_Regressfall_an_RGD" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SP_Eigener_IV_Regressfall_an_RGD" label="SP_Eigener_IV_Regressfall_an_RGD" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SP_Wiedervorlage" label="SP_Wiedervorlage" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Frist" label="Frist" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AMizkHvBEdy0U8_1u7Q20g" type="BomPrimitiveTypes::DateTime" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_WW_Protokolle_bearbeiten" label="WP_WW_Protokolle_bearbeiten" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Gesuch_anzeigen" label="WP_Gesuch_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Aktenbestellung_DMC" label="WP_Aktenbestellung_DMC" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Ausz_ZAS_best_EP" label="WP_IK_Ausz_ZAS_best_EP" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Ausz_ZAS_best_VP" label="WP_IK_Ausz_ZAS_best_VP" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Auszug_drucken_EP" label="WP_IK_Auszug_drucken_EP" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Auszug_drucken_VP" label="WP_IK_Auszug_drucken_VP" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Erstellen_VA_Eroeffnen_IK" label="WP_IK_Erstellen_VA_Eroeffnen_IK" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Z_Fall_erledigt_Ablage" label="Z_Fall_erledigt_Ablage" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.actionToDo" label="actionToDo" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.action" label="action" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" isArray="true" length="50" inout="IN"/>
+    <form:parameter generated="true" name="data.UserCompleteTaskGuid" label="UserCompleteTaskGuid" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" inout="INOUT"/>
+  </form:dataModel>
+  <form:services/>
+  <form:actions/>
+  <form:conditions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancel" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancel.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.close" label="Close">
+      <form:event source="#control.close" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.close.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.close"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submit" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submit.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_R5eMoBW8Eemwx6NixRoh7A">
+      <form:source target="data.WP_eM_IV_Akte_anfordern" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.WP_eM_IV_Akte_anfordern.value"/>
+      <form:destination target="control.WP_eM_IV_Akte_anfordern" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WP_eM_IV_Akte_anfordern.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMoRW8Eemwx6NixRoh7A">
+      <form:source target="data.WP_eM_Nachlieferung_IVST_IVST" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.WP_eM_Nachlieferung_IVST_IVST.value"/>
+      <form:destination target="control.WP_eM_Nachlieferung_IVST_IVST" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WP_eM_Nachlieferung_IVST_IVST.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMohW8Eemwx6NixRoh7A">
+      <form:source target="data.SP_Suva_IV_Regressfall_an_RGD" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.SP_Suva_IV_Regressfall_an_RGD.value"/>
+      <form:destination target="control.SP_Suva_IV_Regressfall_an_RGD" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.SP_Suva_IV_Regressfall_an_RGD.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMoxW8Eemwx6NixRoh7A">
+      <form:source target="data.SP_Eigener_IV_Regressfall_an_RGD" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.SP_Eigener_IV_Regressfall_an_RGD.value"/>
+      <form:destination target="control.SP_Eigener_IV_Regressfall_an_RGD" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.SP_Eigener_IV_Regressfall_an_RGD.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMpBW8Eemwx6NixRoh7A">
+      <form:source target="data.SP_Wiedervorlage" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.SP_Wiedervorlage.value"/>
+      <form:destination target="control.SP_Wiedervorlage" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.SP_Wiedervorlage.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMpRW8Eemwx6NixRoh7A">
+      <form:source target="data.Frist" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Frist.value"/>
+      <form:destination target="control.Frist" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Frist.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMphW8Eemwx6NixRoh7A">
+      <form:source target="data.WP_WW_Protokolle_bearbeiten" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.WP_WW_Protokolle_bearbeiten.value"/>
+      <form:destination target="control.WP_WW_Protokolle_bearbeiten" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WP_WW_Protokolle_bearbeiten.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMpxW8Eemwx6NixRoh7A">
+      <form:source target="data.WP_Gesuch_anzeigen" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.WP_Gesuch_anzeigen.value"/>
+      <form:destination target="control.WP_Gesuch_anzeigen" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WP_Gesuch_anzeigen.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMqBW8Eemwx6NixRoh7A">
+      <form:source target="data.WP_Aktenbestellung_DMC" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.WP_Aktenbestellung_DMC.value"/>
+      <form:destination target="control.WP_Aktenbestellung_DMC" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WP_Aktenbestellung_DMC.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMqRW8Eemwx6NixRoh7A">
+      <form:source target="data.WP_IK_Ausz_ZAS_best_EP" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.WP_IK_Ausz_ZAS_best_EP.value"/>
+      <form:destination target="control.WP_IK_Ausz_ZAS_best_EP" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WP_IK_Ausz_ZAS_best_EP.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMqhW8Eemwx6NixRoh7A">
+      <form:source target="data.WP_IK_Ausz_ZAS_best_VP" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.WP_IK_Ausz_ZAS_best_VP.value"/>
+      <form:destination target="control.WP_IK_Ausz_ZAS_best_VP" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WP_IK_Ausz_ZAS_best_VP.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMqxW8Eemwx6NixRoh7A">
+      <form:source target="data.WP_IK_Auszug_drucken_EP" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.WP_IK_Auszug_drucken_EP.value"/>
+      <form:destination target="control.WP_IK_Auszug_drucken_EP" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WP_IK_Auszug_drucken_EP.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMrBW8Eemwx6NixRoh7A">
+      <form:source target="data.WP_IK_Auszug_drucken_VP" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.WP_IK_Auszug_drucken_VP.value"/>
+      <form:destination target="control.WP_IK_Auszug_drucken_VP" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WP_IK_Auszug_drucken_VP.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMrRW8Eemwx6NixRoh7A">
+      <form:source target="data.WP_IK_Erstellen_VA_Eroeffnen_IK" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.WP_IK_Erstellen_VA_Eroeffnen_IK.value"/>
+      <form:destination target="control.WP_IK_Erstellen_VA_Eroeffnen_IK" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WP_IK_Erstellen_VA_Eroeffnen_IK.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMrhW8Eemwx6NixRoh7A">
+      <form:source target="data.Z_Fall_erledigt_Ablage" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Z_Fall_erledigt_Ablage.value"/>
+      <form:destination target="control.Z_Fall_erledigt_Ablage" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Z_Fall_erledigt_Ablage.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMrxW8Eemwx6NixRoh7A">
+      <form:source target="data.actionToDo" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.actionToDo.value"/>
+      <form:destination target="control.actionToDo" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.actionToDo.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_R5eMsBW8Eemwx6NixRoh7A">
+      <form:source target="data.action" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.action.value"/>
+      <form:destination target="control.action" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.action.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_R5eMsRW8Eemwx6NixRoh7A">
+      <form:source target="data.UserCompleteTaskGuid" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.UserCompleteTaskGuid.value"/>
+      <form:destination target="control.UserCompleteTaskGuid" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.UserCompleteTaskGuid.value"/>
+    </form:binding>
+  </form:bindings>
+  <form:targets>
+    <form:target ref="iProcessWorkspace_10.7"/>
+  </form:targets>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Eingang Prüfen Sb (2)</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="left"/>
+    </form:defaults>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.WP_eM_IV_Akte_anfordern">
+      <form:label>WP_eM_IV_Akte_anfordern</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.WP_eM_Nachlieferung_IVST_IVST">
+      <form:label>WP_eM_Nachlieferung_IVST_IVST</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.SP_Suva_IV_Regressfall_an_RGD">
+      <form:label>SP_Suva_IV_Regressfall_an_RGD</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.SP_Eigener_IV_Regressfall_an_RGD">
+      <form:label>SP_Eigener_IV_Regressfall_an_RGD</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.SP_Wiedervorlage">
+      <form:label>SP_Wiedervorlage</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.Frist">
+      <form:propertySet xsi:type="et:DateTimePropertySet">
+        <et:minRelative>true</et:minRelative>
+        <et:maxRelative>true</et:maxRelative>
+        <et:year min="-20" max="20"/>
+        <et:minute increment="15"/>
+      </form:propertySet>
+      <form:label>Frist</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_datetime_format" name="Frist__datetime" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.getLabel()] : true;</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.WP_WW_Protokolle_bearbeiten">
+      <form:label>WP_WW_Protokolle_bearbeiten</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.WP_Gesuch_anzeigen">
+      <form:label>WP_Gesuch_anzeigen</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.WP_Aktenbestellung_DMC">
+      <form:label>WP_Aktenbestellung_DMC</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.WP_IK_Ausz_ZAS_best_EP">
+      <form:label>WP_IK_Ausz_ZAS_best_EP</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.WP_IK_Ausz_ZAS_best_VP">
+      <form:label>WP_IK_Ausz_ZAS_best_VP</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.WP_IK_Auszug_drucken_EP">
+      <form:label>WP_IK_Auszug_drucken_EP</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.WP_IK_Auszug_drucken_VP">
+      <form:label>WP_IK_Auszug_drucken_VP</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.WP_IK_Erstellen_VA_Eroeffnen_IK">
+      <form:label>WP_IK_Erstellen_VA_Eroeffnen_IK</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.Z_Fall_erledigt_Ablage">
+      <form:label>Z_Fall_erledigt_Ablage</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.actionToDo">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>actionToDo</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_text_length" name="actionToDo__length" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.action">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <form:list>true</form:list>
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>action</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_text_length" name="action__length" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.UserCompleteTaskGuid">
+      <form:propertySet xsi:type="et:TextAreaPropertySet">
+        <et:rows>10</et:rows>
+        <et:cols>25</et:cols>
+      </form:propertySet>
+      <form:label>UserCompleteTaskGuid</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancel">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.close">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Close</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submit">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

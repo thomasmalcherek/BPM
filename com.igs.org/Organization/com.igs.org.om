@@ -9,7 +9,9 @@
         <positions xmi:type="om:Position" xmi:id="_HdkXYAUGEem-aMI85c3QiA" name="Vorgesetzter" displayName="Vorgesetzter"/>
       </units>
       <units xmi:type="om:OrgUnit" xmi:id="_Phi04AUGEem-aMI85c3QiA" name="IVSachbearbeitung" displayName="IV-Sachbearbeitung" allocationMethod="NEXT" incomingRelationships="_Yhl5EAUGEem-aMI85c3QiA">
-        <positions xmi:type="om:Position" xmi:id="_ZemT4AUGEem-aMI85c3QiA" name="Mitarbeiter" displayName="Mitarbeiter"/>
+        <positions xmi:type="om:Position" xmi:id="_ZemT4AUGEem-aMI85c3QiA" name="Mitarbeiter" displayName="Mitarbeiter">
+          <resourceAssociation xmi:type="om:ResourceAssociation" xmi:id="_s25U0BWaEemwx6NixRoh7A" resource="_Z1ncQBWaEemwx6NixRoh7A"/>
+        </positions>
         <positions xmi:type="om:Position" xmi:id="_6sCwMAUGEem-aMI85c3QiA" name="Fachexperte" displayName="Fachexperte "/>
       </units>
       <units xmi:type="om:OrgUnit" xmi:id="_b98rMAUGEem-aMI85c3QiA" name="IVKernprozessleitung" displayName="IV- Kernprozessleitung" allocationMethod="NEXT" outgoingRelationships="_fOqOAAUGEem-aMI85c3QiA _oWPdkAUGEem-aMI85c3QiA" incomingRelationships="_KTWcQAUHEem-aMI85c3QiA">
@@ -51,6 +53,7 @@
       <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_toPagAU5Eemo_Z8OZ5HXPw" name="SVAZuerichWartepostkorb" displayName="SVAZuerich-Wartepostkorb" from="_FbU9YAUHEem-aMI85c3QiA" to="_sxs0EAU5Eemo_Z8OZ5HXPw" isHierarchical="true"/>
       <orgUnitRelationships xmi:type="om:OrgUnitRelationship" xmi:id="_AvXLwAY_Eem_4e3M9ri6oA" name="RADORGRAD" displayName="RADORG-RAD" from="_8ZiMwAUGEem-aMI85c3QiA" to="_-2gzwAY-Eem_4e3M9ri6oA" isHierarchical="true"/>
     </organizations>
+    <resources xmi:type="om:Resource" xmi:id="_Z1ncQBWaEemwx6NixRoh7A" name="Mitarbeiter" displayName="Mitarbeiter" resourceType="_wJd-1QUFEem-aMI85c3QiA"/>
     <embeddedMetamodel xmi:type="om:OrgMetaModel" xmi:id="_wJd-wgUFEem-aMI85c3QiA">
       <locationTypes xmi:type="om:LocationType" xmi:id="_wJd-wwUFEem-aMI85c3QiA" name="StandardLocationType" displayName="Standard Location Type">
         <attributes xmi:type="om:Attribute" xmi:id="_wJd-xAUFEem-aMI85c3QiA" name="Country" displayName="Country"/>
@@ -75,7 +78,11 @@
           <values xmi:type="om:EnumValue" xmi:id="_wJd-1AUFEem-aMI85c3QiA" value="permanent"/>
         </attributes>
       </positionTypes>
-      <resourceTypes xmi:type="om:ResourceType" xmi:id="_wJd-1QUFEem-aMI85c3QiA" name="HumanResourceType" displayName="Human Resource Type"/>
+      <resourceTypes xmi:type="om:ResourceType" xmi:id="_wJd-1QUFEem-aMI85c3QiA" name="HumanResourceType" displayName="Human Resource Type">
+        <attributes xmi:type="om:Attribute" xmi:id="_fHuPEBWaEemwx6NixRoh7A" name="Name" displayName="Name"/>
+        <attributes xmi:type="om:Attribute" xmi:id="_jATDIBWaEemwx6NixRoh7A" name="Telefonnummer" displayName="Telefonnummer"/>
+        <attributes xmi:type="om:Attribute" xmi:id="_lHv30BWaEemwx6NixRoh7A" name="Emailadresse" displayName="Emailadresse"/>
+      </resourceTypes>
       <resourceTypes xmi:type="om:ResourceType" xmi:id="_wJd-1gUFEem-aMI85c3QiA" name="ConsumableResourceType" displayName="Consumable Resource Type"/>
       <resourceTypes xmi:type="om:ResourceType" xmi:id="_wJd-1wUFEem-aMI85c3QiA" name="DurableResourceType" displayName="Durable Resource Type"/>
     </embeddedMetamodel>
@@ -128,7 +135,7 @@
           <styles xmi:type="omnotation:ShapeGradientStyle" xmi:id="_3SFAMgUFEem-aMI85c3QiA" gradEndColor="4227327"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_3SFAMwUFEem-aMI85c3QiA"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_3SFANAUFEem-aMI85c3QiA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3SFANQUFEem-aMI85c3QiA" x="24" y="297"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3SFANQUFEem-aMI85c3QiA" x="29" y="297"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="__4AUPQUFEem-aMI85c3QiA" type="2001" element="__33KQAUFEem-aMI85c3QiA">
           <children xmi:type="notation:Node" xmi:id="__4AUQwUFEem-aMI85c3QiA" type="4001"/>
