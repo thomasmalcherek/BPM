@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="132" version="2.0">
+<workbench progressCount="244" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="104" y="56">
 <fastViewData fastViewLocation="1024"/>
@@ -8,17 +8,17 @@
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="126" y="22"/>
-<coolItem id="com.google.gdt.eclipse.suite.GDTPulldownToolbar" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="122" y="22"/>
+<coolItem id="com.google.gdt.eclipse.suite.GDTPulldownToolbar" itemType="typeToolBarContribution" x="91" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="com.tibco.xpd.resources.ui.actionSet.enableFeature1" itemType="typeToolBarContribution" x="57" y="22"/>
+<coolItem id="com.tibco.xpd.resources.ui.actionSet.enableFeature1" itemType="typeToolBarContribution" x="53" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="130" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="122" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" itemType="typePlaceholder" x="104" y="22"/>
 <coolItem id="com.tibco.xpd.worklistfacade.presentation.WorkListFacadeEditorID" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -29,7 +29,7 @@
 <coolItem id="com.tibco.xpd.analyst.editor.ProcessInterfaceEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.tibco.xpd.om.modeler.subdiagram.part.OrganizationModelSubDiagramEditorID" itemType="typePlaceholder" x="898" y="22"/>
 <coolItem id="com.tibco.xpd.om.modeler.diagram.part.OrganizationModelDiagramEditorID" itemType="typePlaceholder" x="898" y="22"/>
-<coolItem id="com.tibco.xpd.processeditor.xpdl2.editor" itemType="typeToolBarContribution" x="425" y="22"/>
+<coolItem id="com.tibco.xpd.processeditor.xpdl2.editor" itemType="typePlaceholder" x="401" y="22"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -38,17 +38,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.tibco.xpd.processeditor.xpdl2.editor" name="ArrayMapping-Process (ArrayMappingProcess)" partName="ArrayMapping-Process (ArrayMappingProcess)" title="ArrayMapping-Process (ArrayMappingProcess)" tooltip="/ArrayMapping/Process Packages/ArrayMapping.xpdl/ArrayMapping-Process (ArrayMappingProcess)" workbook="DefaultEditorWorkbook">
-<input factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory">
-<xpdl path="/ArrayMapping/Process Packages/ArrayMapping.xpdl" processid="_XUvmIAQvEem_G-97Kp4DSg"/>
-</input>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
@@ -66,7 +59,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="1110"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -95,7 +88,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.views.PropertySheet" activePerspective="com.tibco.xpd.bpm.modeling.perspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.tibco.xpd.bpm.modeling.perspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.tibco.xpd.bpm.simplified.ui.BpmModelingPerspectiveFactory" id="com.tibco.xpd.bpm.modeling.perspective" label="BPM Modeling"/>
 <alwaysOnActionSet id="com.google.gdt.eclipse.core.actionSet"/>
@@ -165,8 +158,8 @@
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.forwardHistory"/>
 <hide_toolbar_item_id id="org.eclipse.ui.navigate.next"/>
 <hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.ProfileDropDownAction"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.gotoLastEditPosition"/>
 <hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.RunDropDownAction"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.gotoLastEditPosition"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="com.tibco.xpd.deploy.server.view"/>
@@ -195,7 +188,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2750131" ratioLeft="525" ratioRight="1384" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.56283563" ratioLeft="524" ratioRight="407" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="com.tibco.xpd.fragments.view" label="Fragments"/>
@@ -283,19 +276,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor">
-<xpdl path="/ArrayMapping/Process Packages/ArrayMapping.xpdl" processid="_XUvmIAQvEem_G-97Kp4DSg"/>
-</editor>
-</editors>
-<item historyLabel="ArrayMapping-Process (ArrayMappingProcess)" index="0">
-<position/>
-</item>
-<item active="true" historyLabel="ArrayMapping-Process (ArrayMappingProcess)" index="0">
-<position>_36TNEQUhEem91O5jBpLYhA</position>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -313,9 +294,32 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.packageeditor.editor" name="com.tibco.poc.test.xpdl" tooltip="com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl">
+<persistable path="/com.tibco.poc.test/Process Packages/com.tibco.poc.test.xpdl"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.packageeditor.editor" name="com.tibco.poc.data.process.xpdl" tooltip="com.tibco.poc.data.process/Process Packages/com.tibco.poc.data.process.xpdl">
+<persistable path="/com.tibco.poc.data.process/Process Packages/com.tibco.poc.data.process.xpdl"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.bom.modeler.diagram.part.UMLDiagramEditorID" name="com.tibco.bwse.simpleaddresslookup.bom" tooltip="Thomas_WF/Generated Business Objects/com.tibco.bwse.simpleaddresslookup.bom">
+<persistable path="/Thomas_WF/Generated Business Objects/com.tibco.bwse.simpleaddresslookup.bom"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.packageeditor.editor" name="Thomas_WF.xpdl" tooltip="Thomas_WF/Process Packages/Thomas_WF.xpdl">
+<persistable path="/Thomas_WF/Process Packages/Thomas_WF.xpdl"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="bpm_callService.wsdl" tooltip="Thomas_WF/Service Descriptors/bpm_callService.wsdl">
+<persistable path="/Thomas_WF/Service Descriptors/bpm_callService.wsdl"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.om.modeler.diagram.part.OrganizationModelDiagramEditorID" name="Thomas_ORG.om" tooltip="Thomas_ORG/Organization/Thomas_ORG.om">
+<persistable path="/Thomas_ORG/Organization/Thomas_ORG.om"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.bom.modeler.diagram.part.UMLDiagramEditorID" name="Thomas_BD.bom" tooltip="Thomas_BD/Business Objects/Thomas_BD.bom">
+<persistable path="/Thomas_BD/Business Objects/Thomas_BD.bom"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.packageeditor.editor" name="Subprozesse.xpdl" tooltip="Subprozesse/Process Packages/Subprozesse.xpdl">
+<persistable path="/Subprozesse/Process Packages/Subprozesse.xpdl"/>
+</file>
 <file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="ArrayMapping-Process (ArrayMappingProcess)" tooltip="/ArrayMapping/Process Packages/ArrayMapping.xpdl/ArrayMapping-Process (ArrayMappingProcess)">
-<persistable>
-<xpdl path="/ArrayMapping/Process Packages/ArrayMapping.xpdl" processid="_XUvmIAQvEem_G-97Kp4DSg"/>
+<persistable>&#x0A;<xpdl path="/ArrayMapping/Process Packages/ArrayMapping.xpdl" processid="_XUvmIAQvEem_G-97Kp4DSg"/>
 </persistable>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.packageeditor.editor" name="igs.com.fak.001.xpdl" tooltip="igs.com.fak.001/Process Packages/igs.com.fak.001.xpdl">
@@ -336,27 +340,6 @@
 </file>
 <file factoryID="org.eclipse.emf.common.ui.URIEditorInputFactory" id="com.tibco.xpd.om.modeler.subdiagram.part.OrganizationModelSubDiagramEditorID" name="SVA_FAK_001" tooltip="com.igs.fak.001.om#_3CWeoPovEeiF0cp9x5MzdA">
 <persistable bundle="org.eclipse.emf.common.ui" class="org.eclipse.emf.common.ui.URIEditorInput" name="SVA_FAK_001" uri="com.igs.fak.001.om#_3CWeoPovEeiF0cp9x5MzdA"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.om.modeler.diagram.part.OrganizationModelDiagramEditorID" name="com.igs.fak.001.om" tooltip="TECHNICAL_WORK/com.igs.fak.001/Organization/com.igs.fak.001.om">
-<persistable path="/TECHNICAL_WORK/com.igs.fak.001/Organization/com.igs.fak.001.om"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.bom.modeler.diagram.part.UMLDiagramEditorID" name="comigsfak001.bom" tooltip="TECHNICAL_WORK/com.igs.fak.001/Business Objects/comigsfak001.bom">
-<persistable path="/TECHNICAL_WORK/com.igs.fak.001/Business Objects/comigsfak001.bom"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tibco.xpd.packageeditor.editor" name="com.igs.fak.001.xpdl" tooltip="TECHNICAL_WORK/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl">
-<persistable path="/TECHNICAL_WORK/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl"/>
-</file>
-<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="com.igs.fak.001_search_existing_cases (comigsfak001_search_existing_cases)" tooltip="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl/com.igs.fak.001_search_existing_cases (comigsfak001_search_existing_cases)">
-<persistable>&#x0A;<xpdl path="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl" processid="_TrgQYPowEeiF0cp9x5MzdA"/>
-</persistable>
-</file>
-<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="com.igs.fak.001_01.03_fak_manuelle_rueckforderung_bearbeiten (comigsfak001_0103_fak_manuelle_rueckforderung_bearbeiten)" tooltip="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl/com.igs.fak.001_01.03_fak_manuelle_rueckforderung_bearbeiten (comigsfak001_0103_fak_manuelle_rueckforderung_bearbeiten)">
-<persistable>&#x0A;<xpdl path="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl" processid="_-9zAMP4qEeiPopDWv-BhcA"/>
-</persistable>
-</file>
-<file factoryID="com.tibco.xpd.processeditor.xpdl2.processelementfactory" id="com.tibco.xpd.processeditor.xpdl2.editor" name="com.igs.fak.001_01.03_fak_auszahlung_bearbeiten (comigsfak001_0103_fak_auszahlung_bearbeiten)" tooltip="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl/com.igs.fak.001_01.03_fak_auszahlung_bearbeiten (comigsfak001_0103_fak_auszahlung_bearbeiten)">
-<persistable>&#x0A;<xpdl path="/com.igs.fak.001/Process Packages/com.igs.fak.001.xpdl" processid="_6gypYP4qEeiPopDWv-BhcA"/>
-</persistable>
 </file>
 </mruList>
 </workbench>
