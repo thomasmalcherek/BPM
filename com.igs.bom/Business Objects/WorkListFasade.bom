@@ -67,6 +67,16 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QfHTExTuEemMqIXY9z_1Iw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QfHTEhTuEemMqIXY9z_1Iw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yLSr0Bf5EemVOau1wk8QzA" name="prozessstatus" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yLcc0hf5EemVOau1wk8QzA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yLcc0Rf5EemVOau1wk8QzA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_qMNxkCCuEem5u_wcRlbMKw" name="geschaeftsfallNr" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qMWUcSCuEem5u_wcRlbMKw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qMWUcCCuEem5u_wcRlbMKw"/>
+      </ownedAttribute>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_I2oUNRTtEemMqIXY9z_1Iw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I2oUNhTtEemMqIXY9z_1Iw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -144,6 +154,12 @@
         <children xmi:type="notation:Node" xmi:id="_QfP18BTuEemMqIXY9z_1Iw" type="2001" element="_QfHTEBTuEemMqIXY9z_1Iw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3adokumentenArt?">
           <layoutConstraint xmi:type="notation:Location" xmi:id="_QfP18RTuEemMqIXY9z_1Iw"/>
         </children>
+        <children xmi:type="notation:Node" xmi:id="_yLcc0xf5EemVOau1wk8QzA" type="2001" element="_yLSr0Bf5EemVOau1wk8QzA?com.example.worklistfasade%3a%3aWorkListFasade%3a%3aprozessstatus?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_yLcc1Bf5EemVOau1wk8QzA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_qMcbECCuEem5u_wcRlbMKw" type="2001" element="_qMNxkCCuEem5u_wcRlbMKw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3ageschaeftsfallNr?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_qMcbESCuEem5u_wcRlbMKw"/>
+        </children>
         <styles xmi:type="notation:DrawerStyle" xmi:id="_LUHqWBTtEemMqIXY9z_1Iw"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_LUHqWRTtEemMqIXY9z_1Iw"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_LUHqWhTtEemMqIXY9z_1Iw"/>
@@ -176,11 +192,14 @@
   <PrimitiveTypeFacets:RestrictedType xmi:id="_xGFCIBWGEemwx6NixRoh7A" textLength="64" base_Property="_R0qmMBTtEemMqIXY9z_1Iw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3aversichNr?"/>
   <PrimitiveTypeFacets:RestrictedType xmi:id="_ysipoBWGEemwx6NixRoh7A" textLength="64" base_Property="_UYsCIBTtEemMqIXY9z_1Iw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3apersonenID?"/>
   <PrimitiveTypeFacets:RestrictedType xmi:id="_0XDDoBWGEemwx6NixRoh7A" textLength="64" base_Property="_6XLyoBTtEemMqIXY9z_1Iw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3aversNachname?"/>
-  <PrimitiveTypeFacets:RestrictedType xmi:id="_1yz3ABWGEemwx6NixRoh7A" textLength="20" base_Property="_FxKioBTuEemMqIXY9z_1Iw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3aaktuelleBearbeiter?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_1yz3ABWGEemwx6NixRoh7A" base_Property="_FxKioBTuEemMqIXY9z_1Iw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3aaktuelleBearbeiter?"/>
   <PrimitiveTypeFacets:RestrictedType xmi:id="_3PM8gBWGEemwx6NixRoh7A" textLength="20" base_Property="_HjWR8BTuEemMqIXY9z_1Iw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3aanmeldeNr?"/>
   <PrimitiveTypeFacets:RestrictedType xmi:id="_4IBa4BWGEemwx6NixRoh7A" textLength="20" base_Property="_JLhwsBTuEemMqIXY9z_1Iw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3azusatzbezeichnung?"/>
   <PrimitiveTypeFacets:RestrictedType xmi:id="_5bwToBWGEemwx6NixRoh7A" textLength="20" base_Property="_LQcOwBTuEemMqIXY9z_1Iw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3aabrechNr?"/>
   <PrimitiveTypeFacets:RestrictedType xmi:id="_59Wk0BWGEemwx6NixRoh7A" textLength="20" base_Property="_MwY-kBTuEemMqIXY9z_1Iw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3aunternehmensID?"/>
   <PrimitiveTypeFacets:RestrictedType xmi:id="_7Nq9MBWGEemwx6NixRoh7A" textLength="20" base_Property="_O6rE0BTuEemMqIXY9z_1Iw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3aversVorname?"/>
-  <PrimitiveTypeFacets:RestrictedType xmi:id="_7mGrUBWGEemwx6NixRoh7A" textLength="20" base_Property="_QfHTEBTuEemMqIXY9z_1Iw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3adokumentenArt?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_7mGrUBWGEemwx6NixRoh7A" base_Property="_QfHTEBTuEemMqIXY9z_1Iw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3adokumentenArt?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_yLcc0Bf5EemVOau1wk8QzA" displayLabel="Prozessstatus" base_NamedElement="_yLSr0Bf5EemVOau1wk8QzA?com.example.worklistfasade%3a%3aWorkListFasade%3a%3aprozessstatus?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_8W56QB2WEemZUOP_4Kz1-w" textLength="20" base_Property="_yLSr0Bf5EemVOau1wk8QzA?com.example.worklistfasade%3a%3aWorkListFasade%3a%3aprozessstatus?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_qMVGUCCuEem5u_wcRlbMKw" displayLabel="GeschaeftsfallNr." base_NamedElement="_qMNxkCCuEem5u_wcRlbMKw?com.example.worklistfasade%3a%3aWorkListFasade%3a%3ageschaeftsfallNr?"/>
 </xmi:XMI>

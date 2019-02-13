@@ -39,7 +39,7 @@
           minOccurs="0" name="aktuelleBearbeiter">
         <xsd:simpleType>
           <xsd:restriction base="xsd:string">
-            <xsd:maxLength value="20"/>
+            <xsd:maxLength value="50"/>
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>
@@ -87,7 +87,23 @@
           minOccurs="0" name="dokumentenArt">
         <xsd:simpleType>
           <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="prozessstatus" id="_yLSr0Bf5EemVOau1wk8QzA" maxOccurs="1"
+          minOccurs="0" name="prozessstatus">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
             <xsd:maxLength value="20"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="geschaeftsfallNr" id="_qMNxkCCuEem5u_wcRlbMKw" maxOccurs="1"
+          minOccurs="0" name="geschaeftsfallNr">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>

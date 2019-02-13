@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" generated="true" formatVersion="4.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="Subforms/Dokument.properties" sfRelative="true" internal="true" localized="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" name="data.dokument" label="Dokument" dataType="uml:Class comigsbom.bom#_JLd6ogUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Dokument?" type="com.example.comigsbom::Dokument" inout="INOUT"/>
+  </form:dataModel>
+  <form:services/>
+  <form:actions/>
+  <form:conditions/>
+  <form:rules/>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_OsAvhB16EemfRsoxMiyUuQ">
+      <form:source target="data.dokument" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.dokument.value"/>
+      <form:destination target="pane.dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.dokument.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvhR16EemfRsoxMiyUuQ">
+      <form:source target="pane.dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6owUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=dokumentID?" data="form.pane.dokument.value.dokumentID"/>
+      <form:destination target="control.dokument_dokumentID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dokument_dokumentID.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvhh16EemfRsoxMiyUuQ">
+      <form:source target="pane.dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6pgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentNumber?" data="form.pane.dokument.value.documentNumber"/>
+      <form:destination target="control.dokument_documentNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dokument_documentNumber.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvhx16EemfRsoxMiyUuQ">
+      <form:source target="pane.dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6qQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentType?" data="form.pane.dokument.value.documentType"/>
+      <form:destination target="control.dokument_documentType" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dokument_documentType.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAviB16EemfRsoxMiyUuQ">
+      <form:source target="pane.dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6rAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentSecurity?" data="form.pane.dokument.value.documentSecurity"/>
+      <form:destination target="control.dokument_documentSecurity" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dokument_documentSecurity.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAviR16EemfRsoxMiyUuQ">
+      <form:source target="pane.dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6rwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentDateOfReceipt?" data="form.pane.dokument.value.documentDateOfReceipt"/>
+      <form:destination target="control.dokument_documentDateOfReceipt" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dokument_documentDateOfReceipt.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvih16EemfRsoxMiyUuQ">
+      <form:source target="pane.dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6sgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentScanDate?" data="form.pane.dokument.value.documentScanDate"/>
+      <form:destination target="control.dokument_documentScanDate" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dokument_documentScanDate.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvix16EemfRsoxMiyUuQ">
+      <form:source target="pane.dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6tQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=stackName?" data="form.pane.dokument.value.stackName"/>
+      <form:destination target="control.dokument_stackName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dokument_stackName.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvjB16EemfRsoxMiyUuQ">
+      <form:source target="pane.dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6uAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=effortType?" data="form.pane.dokument.value.effortType"/>
+      <form:destination target="control.dokument_effortType" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dokument_effortType.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvjR16EemfRsoxMiyUuQ">
+      <form:source target="pane.dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6uwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=keyword?" data="form.pane.dokument.value.keyword"/>
+      <form:destination target="control.dokument_keyword" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dokument_keyword.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsJ5cB16EemfRsoxMiyUuQ">
+      <form:source target="pane.dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6vgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=kurztext?" data="form.pane.dokument.value.kurztext"/>
+      <form:destination target="control.dokument_kurztext" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dokument_kurztext.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsJ5cR16EemfRsoxMiyUuQ">
+      <form:source target="pane.dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6wQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=kommentar?" data="form.pane.dokument.value.kommentar"/>
+      <form:destination target="control.dokument_kommentar" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dokument_kommentar.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsJ5ch16EemfRsoxMiyUuQ">
+      <form:source target="pane.dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6xAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=anmeldenummer?" data="form.pane.dokument.value.anmeldenummer"/>
+      <form:destination target="control.dokument_anmeldenummer" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dokument_anmeldenummer.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsJ5cx16EemfRsoxMiyUuQ">
+      <form:source target="pane.dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6xwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=formularempfnger?" data="form.pane.dokument.value.formularempfnger"/>
+      <form:destination target="control.dokument_formularempfnger" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dokument_formularempfnger.value"/>
+    </form:binding>
+  </form:bindings>
+  <form:targets>
+    <form:target ref="iProcessWorkspace_10.7"/>
+  </form:targets>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane generated="true" generatorSource="comigsbom.bom#_JLd6ogUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Dokument?" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class comigsbom.bom#_JLd6ogUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Dokument?" name="pane.dokument" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Dokument</form:label>
+    <form:hint/>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:defaults>
+      <form:labelProperties position="left"/>
+    </form:defaults>
+    <form:control generated="true" generatorSource="comigsbom.bom#_JLd6owUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=dokumentID?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.dokument_dokumentID">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>DokumentID</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>true</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="comigsbom.bom#_JLd6pgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentNumber?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.dokument_documentNumber">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:numeric>true</et:numeric>
+        <et:formatRef>resource.common.format_integer</et:formatRef>
+      </form:propertySet>
+      <form:label>Dokumentennummer</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>true</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="comigsbom.bom#_JLd6qQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentType?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.dokument_documentType">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>25</et:displayLength>
+        <et:maxLength>22</et:maxLength>
+      </form:propertySet>
+      <form:label>DokumenterArt</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>true</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="comigsbom.bom#_JLd6rAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentSecurity?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.dokument_documentSecurity">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:numeric>true</et:numeric>
+        <et:formatRef>resource.common.format_integer</et:formatRef>
+      </form:propertySet>
+      <form:label>DokSchutz</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="comigsbom.bom#_JLd6rwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentDateOfReceipt?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.dokument_documentDateOfReceipt">
+      <form:propertySet xsi:type="et:DateTimePropertySet">
+        <et:minRelative>true</et:minRelative>
+        <et:maxRelative>true</et:maxRelative>
+        <et:year min="-20" max="20"/>
+        <et:minute increment="15"/>
+      </form:propertySet>
+      <form:label>DokEingangsDatum</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="comigsbom.bom#_JLd6sgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentScanDate?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.dokument_documentScanDate">
+      <form:propertySet xsi:type="et:DateTimePropertySet">
+        <et:minRelative>true</et:minRelative>
+        <et:maxRelative>true</et:maxRelative>
+        <et:year min="-20" max="20"/>
+        <et:minute increment="15"/>
+      </form:propertySet>
+      <form:label>DokScanDatum</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="comigsbom.bom#_JLd6tQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=stackName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.dokument_stackName">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>Stapelname</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="comigsbom.bom#_JLd6uAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=effortType?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.dokument_effortType">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>LeistungsArt</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="comigsbom.bom#_JLd6uwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=keyword?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.dokument_keyword">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <form:list>true</form:list>
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>Schlagwort</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="comigsbom.bom#_JLd6vgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=kurztext?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.dokument_kurztext">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>Kurztext</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="comigsbom.bom#_JLd6wQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=kommentar?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.dokument_kommentar">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>Kommentar</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="comigsbom.bom#_JLd6xAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=anmeldenummer?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.dokument_anmeldenummer">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>Anmeldenummer</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="comigsbom.bom#_JLd6xwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=formularempfnger?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.dokument_formularempfnger">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>Formularempfänger</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+</form:form>

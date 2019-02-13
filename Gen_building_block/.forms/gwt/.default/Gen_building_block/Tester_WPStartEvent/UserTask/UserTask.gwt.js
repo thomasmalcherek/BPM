@@ -2,9 +2,9 @@
 
 if (typeof(tibcoforms) == 'undefined') tibcoforms = new Object();
 if (typeof(tibcoforms.formCode) == 'undefined') tibcoforms.formCode = new Object();
-tibcoforms.formCode['_g8P3ABW2Eemwx6NixRoh7A'] = new Object();
-tibcoforms.formCode['_g8P3ABW2Eemwx6NixRoh7A']['defineActions'] = function() {
-var fc = tibcoforms.formCode['_g8P3ABW2Eemwx6NixRoh7A'];
+tibcoforms.formCode['_IYXSMC94Eem8NYwCvBPJhw'] = new Object();
+tibcoforms.formCode['_IYXSMC94Eem8NYwCvBPJhw']['defineActions'] = function() {
+var fc = tibcoforms.formCode['_IYXSMC94Eem8NYwCvBPJhw'];
     fc['rule_cancel'] = function(formId, context, thisObj) {
 	   try {
 			tibco.forms.Util.handleScriptAction.call(thisObj, formId, context, thisObj, "cancel", "cancel", fc['action_cancel']);
@@ -51,16 +51,11 @@ var fc = tibcoforms.formCode['_g8P3ABW2Eemwx6NixRoh7A'];
         return "TIBCO Forms 4.1.0 V17 compliant";
     }
 };
-tibcoforms.formCode['_g8P3ABW2Eemwx6NixRoh7A']['defineActions']();
+tibcoforms.formCode['_IYXSMC94Eem8NYwCvBPJhw']['defineActions']();
 
-tibcoforms.formCode['_g8P3ABW2Eemwx6NixRoh7A']['defineValidations'] = function() {
-var fc = tibcoforms.formCode['_g8P3ABW2Eemwx6NixRoh7A'];
+tibcoforms.formCode['_IYXSMC94Eem8NYwCvBPJhw']['defineValidations'] = function() {
+var fc = tibcoforms.formCode['_IYXSMC94Eem8NYwCvBPJhw'];
 	
-fc['validation_DokumentenArt_DokumentenArt__length'] = function(formId, controlName, cloneUID, listIndex) {
-	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), \'50\'] : context.value.length <= 50;';
-	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "DokumentenArt: DokumentenArt__length", true, true);
-	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "DokumentenArt__length", true, true);
-}
 	
 	
 	
@@ -71,18 +66,23 @@ fc['validation_AHVNummer_AHVNummer__length'] = function(formId, controlName, clo
 }
 	
 	
-fc['validation_Geschaeftsfall_Geschaeftsfall__length'] = function(formId, controlName, cloneUID, listIndex) {
-	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkNumberConstraint(context.stringValue, 9, 0) ? true : [context.control.getLabel(), \'9\'] : !isNaN(context.value) && this.getForm().numberFormat(context.value,9, 0);';
-	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall: Geschaeftsfall__length", true, true);
-	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall__length", true, true);
-}
-	
-	
-	
 fc['validation_Frist_Frist__datetime'] = function(formId, controlName, cloneUID, listIndex) {
 	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.getLabel()] : true;';
 	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Frist: Frist__datetime", true, true);
 	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Frist__datetime", true, true);
+}
+	
+	
+fc['validation_DokumentenArt_DokumentenArt__length'] = function(formId, controlName, cloneUID, listIndex) {
+	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), \'50\'] : context.value.length <= 50;';
+	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "DokumentenArt: DokumentenArt__length", true, true);
+	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "DokumentenArt__length", true, true);
+}
+	
+fc['validation_Geschaeftsfall_Geschaeftsfall__length'] = function(formId, controlName, cloneUID, listIndex) {
+	var valScr = 'typeof context.stringValue != \'undefined\' && typeof tibco.forms.Util != \'undefined\' ? tibco.forms.Util.checkNumberConstraint(context.stringValue, 9, 0) ? true : [context.control.getLabel(), \'9\'] : !isNaN(context.value) && this.getForm().numberFormat(context.value,9, 0);';
+	// return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall: Geschaeftsfall__length", true, true);
+	return tibco.forms.Util.handleInlineValidation.call(this, formId, this, cloneUID, listIndex, valScr, "Geschaeftsfall__length", true, true);
 }
 	fc['validate_required'] = function(formId, controlName, cloneUID, listIndex) {
 	var context = new Object();
@@ -145,4 +145,4 @@ fc['validation_Frist_Frist__datetime'] = function(formId, controlName, cloneUID,
 	   
 	   
 };
-tibcoforms.formCode['_g8P3ABW2Eemwx6NixRoh7A']['defineValidations']();
+tibcoforms.formCode['_IYXSMC94Eem8NYwCvBPJhw']['defineValidations']();

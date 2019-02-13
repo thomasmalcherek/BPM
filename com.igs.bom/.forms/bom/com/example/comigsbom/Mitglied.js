@@ -45,7 +45,7 @@ theClass.TYPE_ARRAY[theClass.ATTR_ACCOUNTNUMBER] = {type:"BomPrimitiveTypes.Text
 theClass.TYPE_ARRAY[theClass.ATTR_COMPANYID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_NAME] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_ADDITIONALNAME] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
-theClass.TYPE_ARRAY[theClass.ATTR_FOUNDINGDATE] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_FOUNDINGDATE] = {type:"BomPrimitiveTypes.Date", baseType:"BomPrimitiveTypes.Date", primitive:true, multivalued:false, required:false, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_ANMELDENUMMER] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
 
 theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_MGPARTNERID, theClass.ATTR_ACCOUNTNUMBER, theClass.ATTR_COMPANYID, theClass.ATTR_NAME, theClass.ATTR_ADDITIONALNAME, theClass.ATTR_FOUNDINGDATE, theClass.ATTR_ANMELDENUMMER];

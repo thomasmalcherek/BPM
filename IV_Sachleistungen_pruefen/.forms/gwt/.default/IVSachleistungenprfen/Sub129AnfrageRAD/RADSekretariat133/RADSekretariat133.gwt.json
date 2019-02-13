@@ -1,29 +1,23 @@
 {"bindings":[],"rules":[],"name":"RADSekretariat133","type":"form",
-  "reverseBindings":[],"formModelId":"_t2USABW8Eemwx6NixRoh7A",
+  "reverseBindings":[],"formModelId":"_jQxiQC98Eem8NYwCvBPJhw",
   "formPathSegmentCount":5,"formatVersion":"2.7.0.002","bomJSNames":[
-    "com.example.worklistfasade.WorklistfasadePackage",
     "com.example.comigsbom.ComigsbomPackage",
-    "com.example.worklistfasade.WorklistfasadeFactory",
+    "com.example.worklistfasade.WorklistfasadePackage",
     "com.example.comigsbom.ComigsbomFactory",
-    "com.example.worklistfasade.WorkListFasade",
-    "com.example.comigsbom.Geschftsfall",
-    "com.example.comigsbom.Versicherter","com.example.comigsbom.Mitglied",
-    "com.example.comigsbom.Dokument"],"styleName":null,"genCssClass":
-  "f5c91ce61-8dcd-4fb7-be57-4742c25fc1b6","labelPosition":"top",
-  "externalResources":[{"name":"","uri":"RADSekretariat133.gwt.js",
+    "com.example.worklistfasade.WorklistfasadeFactory",
+    "com.example.comigsbom.Mitglied","com.example.comigsbom.Versicherter",
+    "com.example.comigsbom.Geschftsfall","com.example.comigsbom.Dokument",
+    "com.example.worklistfasade.WorkListFasade"],"styleName":null,
+  "genCssClass":"fdee59ccb-fc32-4707-b730-6ef4f306bd75","labelPosition":
+  "top","externalResources":[{"name":"","uri":"RADSekretariat133.gwt.js",
       "localized":false},{"name":null,"uri":"RADSekretariat133.gwt.css",
       "localized":false},{"name":"resource.common","uri":
       "pathmap://FORMS_RESOURCES/common.properties","localized":true},{
       "name":"resource.form","uri":"RADSekretariat133.properties",
-      "localized":true}],"data":[{"bindings":[{"name":
-          "control.IVSachbearbeiter","type":"control","sourceFeature":[
-            "value"],"destinationFeature":["value"]}],"rules":[],"name":
-      "data.IVSachbearbeiter","type":"data","reverseBindings":[],"datumType":
-      "BomPrimitiveTypes::Text","label":"IV-Sachbearbeiter","inout":
-      "INOUT","array":false,"decimalPlaces":0,"length":0,"primitive":true},{
-      "bindings":[{"name":"pane.Versicherter","type":"pane","sourceFeature":[
-            "value"],"destinationFeature":["value"]}],"rules":[],"name":
-      "data.Versicherter","type":"data","reverseBindings":[],"datumType":
+      "localized":true}],"data":[{"bindings":[{"name":"pane.Versicherter",
+          "type":"pane","sourceFeature":["value"],"destinationFeature":[
+            "value"]}],"rules":[],"name":"data.Versicherter","type":"data",
+      "reverseBindings":[],"datumType":
       "com.example.comigsbom.Versicherter","label":"Versicherter","inout":
       "INOUT","array":false,"decimalPlaces":0,"length":0,"primitive":false},{
       "bindings":[{"name":"pane.Geschaeftsfall","type":"pane",
@@ -47,11 +41,16 @@
       "data.WorkListFasade","type":"data","reverseBindings":[],"datumType":
       "com.example.worklistfasade.WorkListFasade","label":"WorkListFasade",
       "inout":"IN","array":false,"decimalPlaces":0,"length":0,"primitive":
-      false},{"bindings":[{"name":
-          "control.WP_Formular_zum_Gesuch_anzeigen","type":"control",
+      false},{"bindings":[{"name":"control.WorkFlowID","type":"control",
           "sourceFeature":["value"],"destinationFeature":["value"]}],"rules":
-      [],"name":"data.WP_Formular_zum_Gesuch_anzeigen","type":"data",
-      "reverseBindings":[],"datumType":"BomPrimitiveTypes::Boolean","label":
+      [],"name":"data.WorkFlowID","type":"data","reverseBindings":[],
+      "datumType":"BomPrimitiveTypes::Text","label":"WorkFlowID","inout":
+      "INOUT","array":false,"decimalPlaces":0,"length":50,"primitive":true},{
+      "bindings":[{"name":"control.WP_Formular_zum_Gesuch_anzeigen","type":
+          "control","sourceFeature":["value"],"destinationFeature":[
+            "value"]}],"rules":[],"name":
+      "data.WP_Formular_zum_Gesuch_anzeigen","type":"data","reverseBindings":
+      [],"datumType":"BomPrimitiveTypes::Boolean","label":
       "WP_Formular_zum_Gesuch_anzeigen","inout":"INOUT","array":false,
       "decimalPlaces":0,"length":0,"primitive":true},{"bindings":[{"name":
           "control.WP_Auftraege_zum_Gesuch_anzeigen","type":"control",
@@ -172,7 +171,9 @@
       "control.WorkListFasade_unternehmensID","type":"control"},{"name":
       "control.WorkListFasade_versVorname","type":"control"},{"name":
       "control.WorkListFasade_dokumentenArt","type":"control"},{"name":
-      "control.IVSachbearbeiter","type":"control"},{"name":
+      "control.WorkListFasade_prozessstatus","type":"control"},{"name":
+      "control.WorkListFasade_geschaeftsfallNr","type":"control"},{"name":
+      "control.WorkFlowID","type":"control"},{"name":
       "control.WP_Formular_zum_Gesuch_anzeigen","type":"control"},{"name":
       "control.WP_Auftraege_zum_Gesuch_anzeigen","type":"control"},{"name":
       "control.WP_WW_Protokolle_bearbeiten","type":"control"},{"name":
@@ -368,21 +369,15 @@
             "value"]}],"componentType":
       "com.tibco.forms.controls.textinput","shortLabelRef":"","labelRef":
       "","hintRef":"","enabled":true,"visible":true,"styleName":"",
-      "validations":[{"name":"Geschaeftsfall_processNumber__integer",
-          "message":"","messageRef":"resource.common.validation_integer",
-          "when":"oncontrolchange","list":false},{"name":
-          "Geschaeftsfall_processNumber__lowerLimit","message":"",
-          "messageRef":"resource.common.validation_lower_limit_inclusive",
-          "when":"oncontrolchange","list":false},{"name":
-          "Geschaeftsfall_processNumber__upperLimit","message":"",
-          "messageRef":"resource.common.validation_upper_limit_inclusive",
-          "when":"oncontrolchange","list":false}],
-      "inheritsDeferInitialization":false,"readOnly":false,"required":true,
-      "value":[],"tabIndex":0,"alwaysRenderControl":false,"propSetList":
-      false,"propSetMaxVisibleRows":0,"propSetTextBoxBaseMaxLen":0,
-      "propSetTextDisLen":0,"propSetTextSecret":false,"propSetTextNumeric":
-      true,"propSetFormat":"","propSetFormatRef":
-      "resource.common.format_integer"},{"bindings":[{"name":
+      "validations":[{"name":"Geschaeftsfall_processNumber__length",
+          "message":"","messageRef":
+          "resource.common.validation_text_length","when":
+          "oncontrolchange","list":false}],"inheritsDeferInitialization":
+      false,"readOnly":false,"required":true,"value":[],"tabIndex":0,
+      "alwaysRenderControl":false,"propSetList":false,
+      "propSetMaxVisibleRows":0,"propSetTextBoxBaseMaxLen":50,
+      "propSetTextDisLen":40,"propSetTextSecret":false,"propSetTextNumeric":
+      false,"propSetFormat":"","propSetFormatRef":""},{"bindings":[{"name":
           "pane.Geschaeftsfall","type":"pane","sourceFeature":["value"],
           "destinationFeature":["value","urgent"]}],"rules":[],"name":
       "control.Geschaeftsfall_urgent","type":"control","reverseBindings":[{
@@ -645,26 +640,25 @@
       "control.Mitglied_foundingDate","type":"control","reverseBindings":[{
           "name":"pane.Mitglied","type":"pane","sourceFeature":["value",
             "foundingDate"],"destinationFeature":["value"]}],"componentType":
-      "com.tibco.forms.controls.textinput","shortLabelRef":"","labelRef":
-      "","hintRef":"","enabled":true,"visible":true,"styleName":"",
-      "validations":[{"name":"Mitglied_foundingDate__length","message":"",
-          "messageRef":"resource.common.validation_text_length","when":
+      "com.tibco.forms.controls.date","shortLabelRef":"","labelRef":"",
+      "hintRef":"","enabled":true,"visible":true,"styleName":"",
+      "validations":[{"name":"Mitglied_foundingDate__datetime","message":
+          "","messageRef":"resource.common.validation_date_format","when":
           "oncontrolchange","list":false}],"inheritsDeferInitialization":
       false,"readOnly":false,"required":false,"value":[],"tabIndex":0,
       "alwaysRenderControl":false,"propSetList":false,
-      "propSetMaxVisibleRows":0,"propSetTextBoxBaseMaxLen":50,
-      "propSetTextDisLen":40,"propSetTextSecret":false,"propSetTextNumeric":
-      false,"propSetFormat":"","propSetFormatRef":""},{"bindings":[{"name":
-          "pane.Mitglied","type":"pane","sourceFeature":["value"],
-          "destinationFeature":["value","anmeldenummer"]}],"rules":[],"name":
-      "control.Mitglied_anmeldenummer","type":"control","reverseBindings":[{
-          "name":"pane.Mitglied","type":"pane","sourceFeature":["value",
-            "anmeldenummer"],"destinationFeature":["value"]}],
-      "componentType":"com.tibco.forms.controls.textinput","shortLabelRef":
-      "","labelRef":"","hintRef":"","enabled":true,"visible":true,
-      "styleName":"","validations":[{"name":
-          "Mitglied_anmeldenummer__length","message":"","messageRef":
-          "resource.common.validation_text_length","when":
+      "propSetMaxVisibleRows":0,"propSetMinRelative":true,
+      "propSetMaxRelative":true,"propSetYearMin":-20,"propSetYearMax":20},{
+      "bindings":[{"name":"pane.Mitglied","type":"pane","sourceFeature":[
+            "value"],"destinationFeature":["value","anmeldenummer"]}],
+      "rules":[],"name":"control.Mitglied_anmeldenummer","type":"control",
+      "reverseBindings":[{"name":"pane.Mitglied","type":"pane",
+          "sourceFeature":["value","anmeldenummer"],"destinationFeature":[
+            "value"]}],"componentType":
+      "com.tibco.forms.controls.textinput","shortLabelRef":"","labelRef":
+      "","hintRef":"","enabled":true,"visible":true,"styleName":"",
+      "validations":[{"name":"Mitglied_anmeldenummer__length","message":"",
+          "messageRef":"resource.common.validation_text_length","when":
           "oncontrolchange","list":false}],"inheritsDeferInitialization":
       false,"readOnly":false,"required":false,"value":[],"tabIndex":0,
       "alwaysRenderControl":false,"propSetList":false,
@@ -721,8 +715,8 @@
           "oncontrolchange","list":false}],"inheritsDeferInitialization":
       false,"readOnly":false,"required":true,"value":[],"tabIndex":0,
       "alwaysRenderControl":false,"propSetList":false,
-      "propSetMaxVisibleRows":0,"propSetTextBoxBaseMaxLen":22,
-      "propSetTextDisLen":25,"propSetTextSecret":false,"propSetTextNumeric":
+      "propSetMaxVisibleRows":0,"propSetTextBoxBaseMaxLen":50,
+      "propSetTextDisLen":40,"propSetTextSecret":false,"propSetTextNumeric":
       false,"propSetFormat":"","propSetFormatRef":""},{"bindings":[{"name":
           "pane.Dokument","type":"pane","sourceFeature":["value"],
           "destinationFeature":["value","documentSecurity"]}],"rules":[],
@@ -973,8 +967,8 @@
           "oncontrolchange","list":false}],"inheritsDeferInitialization":
       false,"readOnly":true,"required":false,"value":[],"tabIndex":0,
       "alwaysRenderControl":false,"propSetList":false,
-      "propSetMaxVisibleRows":0,"propSetTextBoxBaseMaxLen":20,
-      "propSetTextDisLen":25,"propSetTextSecret":false,"propSetTextNumeric":
+      "propSetMaxVisibleRows":0,"propSetTextBoxBaseMaxLen":50,
+      "propSetTextDisLen":40,"propSetTextSecret":false,"propSetTextNumeric":
       false,"propSetFormat":"","propSetFormatRef":""},{"bindings":[],"rules":
       [],"name":"control.WorkListFasade_anmeldeNr","type":"control",
       "reverseBindings":[{"name":"pane.WorkListFasade","type":"pane",
@@ -1060,21 +1054,54 @@
           "oncontrolchange","list":false}],"inheritsDeferInitialization":
       false,"readOnly":true,"required":false,"value":[],"tabIndex":0,
       "alwaysRenderControl":false,"propSetList":false,
+      "propSetMaxVisibleRows":0,"propSetTextBoxBaseMaxLen":50,
+      "propSetTextDisLen":40,"propSetTextSecret":false,"propSetTextNumeric":
+      false,"propSetFormat":"","propSetFormatRef":""},{"bindings":[],"rules":
+      [],"name":"control.WorkListFasade_prozessstatus","type":"control",
+      "reverseBindings":[{"name":"pane.WorkListFasade","type":"pane",
+          "sourceFeature":["value","prozessstatus"],"destinationFeature":[
+            "value"]}],"componentType":
+      "com.tibco.forms.controls.textinput","shortLabelRef":"","labelRef":
+      "","hintRef":"","enabled":true,"visible":true,"styleName":"",
+      "validations":[{"name":"WorkListFasade_prozessstatus__length",
+          "message":"","messageRef":
+          "resource.common.validation_text_length","when":
+          "oncontrolchange","list":false}],"inheritsDeferInitialization":
+      false,"readOnly":true,"required":false,"value":[],"tabIndex":0,
+      "alwaysRenderControl":false,"propSetList":false,
       "propSetMaxVisibleRows":0,"propSetTextBoxBaseMaxLen":20,
       "propSetTextDisLen":25,"propSetTextSecret":false,"propSetTextNumeric":
+      false,"propSetFormat":"","propSetFormatRef":""},{"bindings":[],"rules":
+      [],"name":"control.WorkListFasade_geschaeftsfallNr","type":"control",
+      "reverseBindings":[{"name":"pane.WorkListFasade","type":"pane",
+          "sourceFeature":["value","geschaeftsfallNr"],"destinationFeature":[
+            "value"]}],"componentType":
+      "com.tibco.forms.controls.textinput","shortLabelRef":"","labelRef":
+      "","hintRef":"","enabled":true,"visible":true,"styleName":"",
+      "validations":[{"name":"WorkListFasade_geschaeftsfallNr__length",
+          "message":"","messageRef":
+          "resource.common.validation_text_length","when":
+          "oncontrolchange","list":false}],"inheritsDeferInitialization":
+      false,"readOnly":true,"required":false,"value":[],"tabIndex":0,
+      "alwaysRenderControl":false,"propSetList":false,
+      "propSetMaxVisibleRows":0,"propSetTextBoxBaseMaxLen":50,
+      "propSetTextDisLen":40,"propSetTextSecret":false,"propSetTextNumeric":
       false,"propSetFormat":"","propSetFormatRef":""},{"bindings":[{"name":
-          "data.IVSachbearbeiter","type":"data","sourceFeature":["value"],
+          "data.WorkFlowID","type":"data","sourceFeature":["value"],
           "destinationFeature":["value"]}],"rules":[],"name":
-      "control.IVSachbearbeiter","type":"control","reverseBindings":[{"name":
-          "data.IVSachbearbeiter","type":"data","sourceFeature":["value"],
+      "control.WorkFlowID","type":"control","reverseBindings":[{"name":
+          "data.WorkFlowID","type":"data","sourceFeature":["value"],
           "destinationFeature":["value"]}],"componentType":
-      "com.tibco.forms.controls.textarea","shortLabelRef":"","labelRef":"",
-      "hintRef":"","enabled":true,"visible":true,"styleName":"",
-      "validations":[],"inheritsDeferInitialization":false,"readOnly":
-      false,"required":true,"value":[],"tabIndex":0,"alwaysRenderControl":
-      false,"propSetList":false,"propSetMaxVisibleRows":0,
-      "propSetTextBoxBaseMaxLen":0,"propSetTextAreaRows":10,
-      "propSetTextAreaCols":25},{"bindings":[{"name":
+      "com.tibco.forms.controls.textinput","shortLabelRef":"","labelRef":
+      "","hintRef":"","enabled":true,"visible":true,"styleName":"",
+      "validations":[{"name":"WorkFlowID__length","message":"","messageRef":
+          "resource.common.validation_text_length","when":
+          "oncontrolchange","list":false}],"inheritsDeferInitialization":
+      false,"readOnly":false,"required":true,"value":[],"tabIndex":0,
+      "alwaysRenderControl":false,"propSetList":false,
+      "propSetMaxVisibleRows":0,"propSetTextBoxBaseMaxLen":50,
+      "propSetTextDisLen":40,"propSetTextSecret":false,"propSetTextNumeric":
+      false,"propSetFormat":"","propSetFormatRef":""},{"bindings":[{"name":
           "data.WP_Formular_zum_Gesuch_anzeigen","type":"data",
           "sourceFeature":["value"],"destinationFeature":["value"]}],"rules":
       [],"name":"control.WP_Formular_zum_Gesuch_anzeigen","type":"control",
@@ -1550,6 +1577,11 @@
           "destinationFeature":["value"]},{"name":
           "control.WorkListFasade_dokumentenArt","type":"control",
           "sourceFeature":["value","dokumentenArt"],"destinationFeature":[
+            "value"]},{"name":"control.WorkListFasade_prozessstatus","type":
+          "control","sourceFeature":["value","prozessstatus"],
+          "destinationFeature":["value"]},{"name":
+          "control.WorkListFasade_geschaeftsfallNr","type":"control",
+          "sourceFeature":["value","geschaeftsfallNr"],"destinationFeature":[
             "value"]},{"name":"data.WorkListFasade","type":"data",
           "sourceFeature":["value"],"destinationFeature":["value"]}],"rules":
       [],"name":"pane.WorkListFasade","type":"pane","reverseBindings":[{
@@ -1574,7 +1606,9 @@
           "name":"control.WorkListFasade_abrechNr","type":"control"},{"name":
           "control.WorkListFasade_unternehmensID","type":"control"},{"name":
           "control.WorkListFasade_versVorname","type":"control"},{"name":
-          "control.WorkListFasade_dokumentenArt","type":"control"}],
+          "control.WorkListFasade_dokumentenArt","type":"control"},{"name":
+          "control.WorkListFasade_prozessstatus","type":"control"},{"name":
+          "control.WorkListFasade_geschaeftsfallNr","type":"control"}],
       "staticRendering":false,"textOnly":false,"deferRendering":false,
       "deferInitialization":false,"staticCustomContent":{}},{"bindings":[],
       "rules":[],"name":"pane.content","type":"pane","reverseBindings":[],
@@ -1583,33 +1617,32 @@
       "","validations":[],"inheritsDeferInitialization":false,"readOnly":
       false,"labelPosition":"left","dataType":null,"concreteClassifierNames":
       [],"concreteClassifierLabels":[],"children":[{"name":
-          "control.IVSachbearbeiter","type":"control"},{"name":
           "pane.Versicherter","type":"pane"},{"name":"pane.Geschaeftsfall",
           "type":"pane"},{"name":"pane.Mitglied","type":"pane"},{"name":
           "pane.Dokument","type":"pane"},{"name":"pane.WorkListFasade",
-          "type":"pane"},{"name":"control.WP_Formular_zum_Gesuch_anzeigen",
-          "type":"control"},{"name":
-          "control.WP_Auftraege_zum_Gesuch_anzeigen","type":"control"},{
-          "name":"control.WP_WW_Protokolle_bearbeiten","type":"control"},{
-          "name":"control.WP_Gesuch_anzeigen","type":"control"},{"name":
-          "control.WP_Verfuegung_zum_Gesuch","type":"control"},{"name":
-          "control.SP_Weiterleiten_an_RAD_Sekretariat","type":"control"},{
-          "name":"control.SP_Anfrage_RAD_abschliessen","type":"control"},{
-          "name":"control.UserCompleteTaskGuid","type":"control"},{"name":
-          "control.RuntimeIdentifier","type":"control"},{"name":
-          "control.actionToDo","type":"control"},{"name":"control.action",
-          "type":"control"},{"name":"control.SP_Weiterleiten_an_RAD_Arzt",
-          "type":"control"}],"staticRendering":false,"textOnly":false,
-      "deferRendering":false,"deferInitialization":false,
-      "staticCustomContent":{}},{"bindings":[],"rules":[],"name":
-      "pane.toolbar","type":"pane","reverseBindings":[],"componentType":
-      "com.tibco.forms.panes.horizontal","shortLabelRef":"","labelRef":"",
-      "hintRef":"","enabled":true,"visible":true,"styleName":"toolbar",
-      "validations":[],"inheritsDeferInitialization":false,"readOnly":
-      false,"labelPosition":"left","dataType":null,"concreteClassifierNames":
-      [],"concreteClassifierLabels":[],"children":[{"name":
-          "control.cancel","type":"control"},{"name":"control.close","type":
-          "control"},{"name":"control.submit","type":"control"}],
+          "type":"pane"},{"name":"control.WorkFlowID","type":"control"},{
+          "name":"control.WP_Formular_zum_Gesuch_anzeigen","type":
+          "control"},{"name":"control.WP_Auftraege_zum_Gesuch_anzeigen",
+          "type":"control"},{"name":"control.WP_WW_Protokolle_bearbeiten",
+          "type":"control"},{"name":"control.WP_Gesuch_anzeigen","type":
+          "control"},{"name":"control.WP_Verfuegung_zum_Gesuch","type":
+          "control"},{"name":"control.SP_Weiterleiten_an_RAD_Sekretariat",
+          "type":"control"},{"name":"control.SP_Anfrage_RAD_abschliessen",
+          "type":"control"},{"name":"control.UserCompleteTaskGuid","type":
+          "control"},{"name":"control.RuntimeIdentifier","type":"control"},{
+          "name":"control.actionToDo","type":"control"},{"name":
+          "control.action","type":"control"},{"name":
+          "control.SP_Weiterleiten_an_RAD_Arzt","type":"control"}],
+      "staticRendering":false,"textOnly":false,"deferRendering":false,
+      "deferInitialization":false,"staticCustomContent":{}},{"bindings":[],
+      "rules":[],"name":"pane.toolbar","type":"pane","reverseBindings":[],
+      "componentType":"com.tibco.forms.panes.horizontal","shortLabelRef":
+      "","labelRef":"","hintRef":"","enabled":true,"visible":true,
+      "styleName":"toolbar","validations":[],"inheritsDeferInitialization":
+      false,"readOnly":false,"labelPosition":"left","dataType":null,
+      "concreteClassifierNames":[],"concreteClassifierLabels":[],"children":[
+        {"name":"control.cancel","type":"control"},{"name":"control.close",
+          "type":"control"},{"name":"control.submit","type":"control"}],
       "staticRendering":false,"textOnly":false,"deferRendering":false,
       "deferInitialization":false,"staticCustomContent":{}},{"bindings":[],
       "rules":[],"name":"pane.messages","type":"pane","reverseBindings":[],

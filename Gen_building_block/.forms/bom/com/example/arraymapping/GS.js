@@ -31,24 +31,24 @@ theClass.LOADER.registerClass(theClass, "com.example.arraymapping.GS");
 
 com.tibco.data.Loader.extendClass(com.tibco.data.BomBase, theClass);
 
-theClass.ATTR_CASEID = "caseID";
-theClass.ATTR_AHVNUMMER = "ahvNummer";
+theClass.ATTR_GESCHAEFTSFALLNR = "geschaeftsfallNr";
+theClass.ATTR_VERSICHNR = "versichNr";
 theClass.ATTR_DOKUMENTENART = "dokumentenArt";
-theClass.ATTR_DOSSIERID = "dossierID";
+theClass.ATTR_PARTNERID = "partnerID";
 theClass.ATTR_GESCHAEFTSFALL = "geschaeftsfall";
 
 theClass.TYPE_ARRAY = new Object();
-theClass.TYPE_ARRAY[theClass.ATTR_CASEID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
-theClass.TYPE_ARRAY[theClass.ATTR_AHVNUMMER] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_GESCHAEFTSFALLNR] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_VERSICHNR] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_DOKUMENTENART] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
-theClass.TYPE_ARRAY[theClass.ATTR_DOSSIERID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_PARTNERID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_GESCHAEFTSFALL] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
 
-theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_CASEID, theClass.ATTR_AHVNUMMER, theClass.ATTR_DOKUMENTENART, theClass.ATTR_DOSSIERID, theClass.ATTR_GESCHAEFTSFALL];
+theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_GESCHAEFTSFALLNR, theClass.ATTR_VERSICHNR, theClass.ATTR_DOKUMENTENART, theClass.ATTR_PARTNERID, theClass.ATTR_GESCHAEFTSFALL];
 
 theClass.COMPOSITE_ATTRIBUTE_NAMES = [];
 
-theClass.ATTRIBUTE_NAMES = [theClass.ATTR_CASEID, theClass.ATTR_AHVNUMMER, theClass.ATTR_DOKUMENTENART, theClass.ATTR_DOSSIERID, theClass.ATTR_GESCHAEFTSFALL];
+theClass.ATTRIBUTE_NAMES = [theClass.ATTR_GESCHAEFTSFALLNR, theClass.ATTR_VERSICHNR, theClass.ATTR_DOKUMENTENART, theClass.ATTR_PARTNERID, theClass.ATTR_GESCHAEFTSFALL];
 
 theClass.getName = function() {
     return "com.example.arraymapping.GS";
@@ -90,21 +90,21 @@ theClass.prototype.getClass  = function() {
     return this.loader.getClass("com.example.arraymapping.GS");
 };
 
-theClass.prototype.getCaseID = function(useInternal) {
-    return this._getPrimitiveAttribute(this.loader.getClass("com.example.arraymapping.GS").ATTR_CASEID, useInternal);
+theClass.prototype.getGeschaeftsfallNr = function(useInternal) {
+    return this._getPrimitiveAttribute(this.loader.getClass("com.example.arraymapping.GS").ATTR_GESCHAEFTSFALLNR, useInternal);
 };
 
-theClass.prototype.setCaseID = function(caseID) {
-    this._setPrimitiveAttribute(this.loader.getClass("com.example.arraymapping.GS").ATTR_CASEID, caseID);
+theClass.prototype.setGeschaeftsfallNr = function(geschaeftsfallNr) {
+    this._setPrimitiveAttribute(this.loader.getClass("com.example.arraymapping.GS").ATTR_GESCHAEFTSFALLNR, geschaeftsfallNr);
 };
 
 
-theClass.prototype.getAhvNummer = function(useInternal) {
-    return this._getPrimitiveAttribute(this.loader.getClass("com.example.arraymapping.GS").ATTR_AHVNUMMER, useInternal);
+theClass.prototype.getVersichNr = function(useInternal) {
+    return this._getPrimitiveAttribute(this.loader.getClass("com.example.arraymapping.GS").ATTR_VERSICHNR, useInternal);
 };
 
-theClass.prototype.setAhvNummer = function(ahvNummer) {
-    this._setPrimitiveAttribute(this.loader.getClass("com.example.arraymapping.GS").ATTR_AHVNUMMER, ahvNummer);
+theClass.prototype.setVersichNr = function(versichNr) {
+    this._setPrimitiveAttribute(this.loader.getClass("com.example.arraymapping.GS").ATTR_VERSICHNR, versichNr);
 };
 
 
@@ -117,12 +117,12 @@ theClass.prototype.setDokumentenArt = function(dokumentenArt) {
 };
 
 
-theClass.prototype.getDossierID = function(useInternal) {
-    return this._getPrimitiveAttribute(this.loader.getClass("com.example.arraymapping.GS").ATTR_DOSSIERID, useInternal);
+theClass.prototype.getPartnerID = function(useInternal) {
+    return this._getPrimitiveAttribute(this.loader.getClass("com.example.arraymapping.GS").ATTR_PARTNERID, useInternal);
 };
 
-theClass.prototype.setDossierID = function(dossierID) {
-    this._setPrimitiveAttribute(this.loader.getClass("com.example.arraymapping.GS").ATTR_DOSSIERID, dossierID);
+theClass.prototype.setPartnerID = function(partnerID) {
+    this._setPrimitiveAttribute(this.loader.getClass("com.example.arraymapping.GS").ATTR_PARTNERID, partnerID);
 };
 
 

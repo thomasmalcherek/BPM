@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:comigsformswidgets="http://example.com/comigsformswidgets" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" xsi:schemaLocation="http://example.com/comigsformswidgets comigsformswidgets.library.ecore" generated="true" generatorSource="IVSachleistungenPruefenForms.xpdl#_Q90iYR4wEemfRsoxMiyUuQ?p=com.igs.forms%26s=Process%20Packages%26t=xpdl2%3aActivity%26q=IVSachleistungenPruefenForms%3a%3aMainFormFormsProcess%26n=MainUserTask?" formatVersion="4.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="MainForm.properties" sfRelative="true" internal="true" localized="true"/>
+    <form:externalResource name="resource.igsformsadv" uri="default-css/igs-forms-adv.css" sfRelative="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" name="data.Dokument" label="Dokument" dataType="uml:Class comigsbom.bom#_JLd6ogUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Dokument?" type="com.example.comigsbom::Dokument" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Versicherte" label="Versicherte" dataType="uml:Class comigsbom.bom#_JLd6EAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Versicherter?" type="com.example.comigsbom::Versicherter" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Geschaeftsfall" label="Geschaeftsfall" dataType="uml:Class comigsbom.bom#_JLd6XgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Geschftsfall?" type="com.example.comigsbom::Geschftsfall" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Mitglied" label="Mitglied" dataType="uml:Class comigsbom.bom#_JLd6MQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Mitglied?" type="com.example.comigsbom::Mitglied" inout="INOUT"/>
+    <form:parameter generated="true" name="data.action" label="action" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" isArray="true" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WorkflowID" label="WorkflowID" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="IN"/>
+    <form:parameter generated="true" name="data.CorrelationID" label="CorrelationID" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.ProzessStatus_Neu" label="ProzessStatus_Neu" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WorkListFasade" label="WorkListFasade" dataType="uml:Class WorkListFasade.bom#_LTh0cBTtEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.worklistfasade%26n=WorkListFasade?" type="com.example.worklistfasade::WorkListFasade" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Geschaeftsfall_found" label="Geschaeftsfall_found" dataType="uml:Class ArrayMapping.bom#_3hXeoAQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.arraymapping%26n=GS?" type="com.example.arraymapping::GS" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Geschaeftsfall_klammern" label="WP_Geschaeftsfall_klammern" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.actionToDo" label="actionToDo" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Gesuch_anzeigen" label="WP_Gesuch_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_WW_Protokolle_bearbeiten" label="WP_WW_Protokolle_bearbeiten" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Z_Fall_erledigt_Ablage" label="Z_Fall_erledigt_Ablage" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Auszug_drucken_VP" label="WP_IK_Auszug_drucken_VP" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Ausz_ZAS_best_VP" label="WP_IK_Ausz_ZAS_best_VP" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Auszug_drucken_EP" label="WP_IK_Auszug_drucken_EP" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Ausz_ZAS_best_loeschen" label="WP_IK_Ausz_ZAS_best_loeschen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Ausz_ZAS_best_EP" label="WP_IK_Ausz_ZAS_best_EP" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_Nachlieferung_IVST_IVST" label="WP_eM_Nachlieferung_IVST_IVST" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_IV_Akte_anfordern" label="WP_eM_IV_Akte_anfordern" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SP_Wiedervorlage" label="SP_Wiedervorlage" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Frist" label="Frist" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AMizkHvBEdy0U8_1u7Q20g" type="BomPrimitiveTypes::DateTime" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WarteKorbPerformer" label="WarteKorbPerformer" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Aktenbestellung_DMC" label="WP_Aktenbestellung_DMC" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Erstellen_VA_Eroeffnen_IK" label="WP_IK_Erstellen_VA_Eroeffnen_IK" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Formular_zum_Gesuch_anzeigen" label="WP_Formular_zum_Gesuch_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Verhandlungspartner_anzeigen" label="WP_Verhandlungspartner_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Zuteilung_zum_Gesuch_anzeigen" label="WP_Zuteilung_zum_Gesuch_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_Aktenversand_an_UV_Antw" label="WP_eM_Aktenversand_an_UV_Antw" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_Aktenversand_an_UV" label="WP_eM_Aktenversand_an_UV" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_Gesuch_um_Akteneinsicht_UV" label="WP_eM_Gesuch_um_Akteneinsicht_UV" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.EXC_Excel_Dokumente" label="EXC_Excel_Dokumente" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Auftraege_zum_Gesuch_anzeigen" label="WP_Auftraege_zum_Gesuch_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Journal_zum_Gesuch_anzeigen" label="WP_Journal_zum_Gesuch_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SP_Anfrage_RAD" label="SP_Anfrage_RAD" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SP_Zurueck_zu_Eingang_pruefen" label="SP_Zurueck_zu_Eingang_pruefen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SP_Zurueck_zu_Sachleistung_pruefen" label="SP_Zurueck_zu_Sachleistung_pruefen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Verfuegung_zum_Gesuch" label="WP_Verfuegung_zum_Gesuch" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Stepname" label="Stepname" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.vorheriger_Bearbeiter" label="vorheriger_Bearbeiter" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.neuer_Bearbeiter" label="neuer_Bearbeiter" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.init_wiedervorlagedatum" label="init_wiedervorlagedatum" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AMizkHvBEdy0U8_1u7Q20g" type="BomPrimitiveTypes::DateTime" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_Mitt_des_Beschlusses_an_ext_AK" label="WP_eM_Mitt_des_Beschlusses_an_ext_AK" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Responsecode" label="Responsecode" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_PV_Versicherter_mutieren" label="WP_PV_Versicherter_mutieren" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Task" label="Task" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" label="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Auszufuehrender_Versand_anzeigen" label="WP_Auszufuehrender_Versand_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+  </form:dataModel>
+  <form:services/>
+  <form:actions/>
+  <form:conditions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.abbrechen" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.abbrechen.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submit" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submit.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+    <form:rule name="rule.close" label="Close">
+      <form:event source="#control.schliessen" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.schliessen.select"/>
+      <form:action name="action.Close" ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.validate" label="Close"/>
+      <form:action name="action.Close1" ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.apply" label="Close 1"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.close"/>
+    </form:rule>
+    <form:rule name="rule.openDossier" label="openDossier">
+      <form:event source="#control.dossieranzeigen" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.dossieranzeigen.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.actionOpenDossier" label="actionOpenDossier">
+        <form:script>open(&quot;http://ssva90321:9081/navigator/?desktop=POC&amp;feature=BTCSearchViewFeature&amp;searchId=%7BD0005668-0000-CD6D-81A1-10EDD72874F8%7D&amp;searchCriteria=[{%22property%22%3A%22BPM_ID%22%2C%22value%22%3A%225d293e37-da91-4d51-8e68-c0399662f89d%22}]&quot;,&quot;icn&quot;);</form:script>
+      </form:action>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding direction="bothways" name="_GQFOkB2GEemfRsoxMiyUuQ">
+      <form:source target="data.Mitglied" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Mitglied.value"></form:source>
+      <form:destination target="pane.pane1 form:Parameter Subforms/Mitglied.form#data.mitglied?p=com.igs.forms%26s=Forms%26t=form%3aParameter%26q=%26n=data.mitglied?" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.pane1__mitglied.value"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_p5H80CC2EemRmtuSweV7eg">
+      <form:source target="data.Stepname" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Stepname.value"></form:source>
+      <form:destination target="pane.content" feature="http://www.tibco.com/forms/model/form#//UIElement/label" data="form.pane.content.label"></form:destination>
+    </form:binding>
+    <form:binding direction="bothways" name="_PWnT8CFlEem9LYB_NYgfoQ">
+      <form:source target="data.Versicherte" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Versicherte.value"></form:source>
+      <form:destination target="pane.pane7 form:Parameter Subforms/Versicherter.form#data.versicherter?p=com.igs.forms%26s=Forms%26t=form%3aParameter%26q=%26n=data.versicherter?" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.pane7__versicherter.value"></form:destination>
+    </form:binding>
+    <form:binding direction="bothways" name="_K4kwcCFnEem9LYB_NYgfoQ">
+      <form:source target="data.Geschaeftsfall" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Geschaeftsfall.value"></form:source>
+      <form:destination target="pane.pane8 form:Parameter Subforms/Geschaeftsfall.form#data.geschftsfall?p=com.igs.forms%26s=Forms%26t=form%3aParameter%26q=%26n=data.geschftsfall?" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.pane8__geschftsfall.value"></form:destination>
+    </form:binding>
+    <form:binding direction="bothways" name="_lVo5kCFxEemvAvYZkNhQ6Q">
+      <form:source target="data.Frist" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Frist.value"></form:source>
+      <form:destination target="control.frist" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.frist.value"></form:destination>
+    </form:binding>
+  </form:bindings>
+  <form:targets>
+    <form:target ref="iProcessWorkspace_10.7"/>
+  </form:targets>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane styleClass="validation-class" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+  <form:pane styleClass="form_title" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Main Form</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="left"/>
+    </form:defaults>
+    <form:pane styleClass="igsforms-top-pane" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.top" paneType="com.tibco.forms.panes.horizontal">
+      <form:label>top</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane9" paneType="com.tibco.forms.panes.vertical">
+        <form:label>Pane 9</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:pane styleClass="geschaeftsfall_pane_class" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.tabbed" name="pane.geschaeftsfall_pane" paneType="com.tibco.forms.panes.tabbed">
+          <form:label>geschaeftsfall_pane</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.geschftsfalldaten" paneType="com.tibco.forms.panes.vertical">
+            <form:label>Geschäftsfalldaten</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.subform" name="pane.pane8" paneType="com.tibco.forms.panes.subform">
+              <form:propertySet xsi:type="et:SubformPanePropertySet" subform="Subforms/Geschaeftsfall.form#//@form?p=com.igs.forms%26s=Forms%26t=form%3aForm%26q=?"/>
+              <form:label>Pane 8</form:label>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+            </form:pane>
+          </form:pane>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.tabbed" name="pane.pane10" paneType="com.tibco.forms.panes.tabbed">
+          <form:label>Pane 10</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.frist" paneType="com.tibco.forms.panes.vertical">
+            <form:label>Frist</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:control styleClass="frist_control" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.frist">
+              <form:propertySet xsi:type="et:DateTimePropertySet">
+                <et:minRelative>true</et:minRelative>
+                <et:maxRelative>true</et:maxRelative>
+                <et:year min="-20" max="20"/>
+                <et:minute increment="15"/>
+              </form:propertySet>
+              <form:label>Frist</form:label>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+          </form:pane>
+        </form:pane>
+      </form:pane>
+      <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.tabbed" name="pane.tabbedPaneVersicherterMitglied" paneType="com.tibco.forms.panes.tabbed">
+        <form:label>tabbedPaneVersicherterMitglied</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.versicherter" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Versicherter</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.subform" name="pane.pane7" paneType="com.tibco.forms.panes.subform">
+            <form:propertySet xsi:type="et:SubformPanePropertySet" subform="Subforms/Versicherter.form#//@form?p=com.igs.forms%26s=Forms%26t=form%3aForm%26q=?"/>
+            <form:label>Pane 7</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+          </form:pane>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.mitglied" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Mitglied</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.subform" name="pane.pane1" paneType="com.tibco.forms.panes.subform">
+            <form:propertySet xsi:type="et:SubformPanePropertySet" subform="Subforms/Mitglied.form#//@form?p=com.igs.forms%26s=Forms%26t=form%3aForm%26q=?"/>
+            <form:label>Pane 1</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+          </form:pane>
+        </form:pane>
+      </form:pane>
+    </form:pane>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.middle" paneType="com.tibco.forms.panes.horizontal">
+      <form:label>middle</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.tabbed" name="pane.documentlist_pane" paneType="com.tibco.forms.panes.tabbed">
+        <form:label>Pane 4</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.dokumente" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Dokumente</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane4" paneType="com.tibco.forms.panes.vertical">
+            <form:label>Pane 4</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pane5" paneType="com.tibco.forms.panes.horizontal">
+              <form:label>Pane 5</form:label>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:labelProperties visible="false"/>
+              <form:defaults>
+                <form:labelProperties position="top"/>
+              </form:defaults>
+              <form:control elementType="form:ControlType comigsformswidgets.library.elemtypes#com.example.comigsformswidgets.controls.DocumentListWidget?p=com.igs.forms.widgets%26s=.forms%2Fcomponents%26t=form%3aControlType%26q=%26n=com.example.comigsformswidgets.controls.DocumentListWidget?" controlType="com.example.comigsformswidgets.controls.DocumentListWidget" name="control.DocumentListWidget1">
+                <form:propertySet xsi:type="comigsformswidgets:DocumentListWidgetPropertySet"/>
+                <form:label>Document List Widget 1</form:label>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:labelProperties visible="false"/>
+                <form:required>false</form:required>
+              </form:control>
+            </form:pane>
+            <form:pane styleClass="document-toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pane3" paneType="com.tibco.forms.panes.horizontal">
+              <form:label>Pane 3</form:label>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:labelProperties visible="false"/>
+              <form:defaults>
+                <form:labelProperties position="top"/>
+              </form:defaults>
+              <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.dossieranzeigen">
+                <form:propertySet xsi:type="et:ButtonPropertySet"/>
+                <form:label>Dossier anzeigen</form:label>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+              </form:control>
+            </form:pane>
+          </form:pane>
+        </form:pane>
+      </form:pane>
+      <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.tabbed" name="pane.pane2" paneType="com.tibco.forms.panes.tabbed">
+        <form:label>Pane 2</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.funktionen" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Funktionen</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:control elementType="form:ControlType comigsformswidgets.library.elemtypes#com.example.comigsformswidgets.controls.NavigationWidget?p=com.igs.forms.widgets%26s=.forms%2Fcomponents%26t=form%3aControlType%26q=%26n=com.example.comigsformswidgets.controls.NavigationWidget?" controlType="com.example.comigsformswidgets.controls.NavigationWidget" name="control.NavigationWidget1">
+            <form:propertySet xsi:type="comigsformswidgets:NavigationWidgetPropertySet"/>
+            <form:label>Navigation Widget 1</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:required>false</form:required>
+          </form:control>
+        </form:pane>
+      </form:pane>
+    </form:pane>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.bottom" paneType="com.tibco.forms.panes.horizontal">
+      <form:label>bottom</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+    </form:pane>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.abbrechen">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Abbrechen</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button.close" controlType="com.tibco.forms.controls.button" name="control.schliessen">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Schliessen</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submit">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>false</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+</form:form>

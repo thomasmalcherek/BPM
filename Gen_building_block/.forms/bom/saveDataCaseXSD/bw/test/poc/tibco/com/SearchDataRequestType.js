@@ -31,20 +31,20 @@ theClass.LOADER.registerClass(theClass, "saveDataCaseXSD.bw.test.poc.tibco.com.S
 
 com.tibco.data.Loader.extendClass(com.tibco.data.BomBase, theClass);
 
-theClass.ATTR_AHVNUMMER = "AHVNummer";
+theClass.ATTR_VERSICHNR = "versichNr";
 theClass.ATTR_DOKUMENTENART = "dokumentenArt";
 theClass.ATTR_GESCHAEFTSFALL = "geschaeftsfall";
 
 theClass.TYPE_ARRAY = new Object();
-theClass.TYPE_ARRAY[theClass.ATTR_AHVNUMMER] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_VERSICHNR] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_DOKUMENTENART] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_GESCHAEFTSFALL] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
 
-theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_AHVNUMMER, theClass.ATTR_DOKUMENTENART, theClass.ATTR_GESCHAEFTSFALL];
+theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_VERSICHNR, theClass.ATTR_DOKUMENTENART, theClass.ATTR_GESCHAEFTSFALL];
 
 theClass.COMPOSITE_ATTRIBUTE_NAMES = [];
 
-theClass.ATTRIBUTE_NAMES = [theClass.ATTR_AHVNUMMER, theClass.ATTR_DOKUMENTENART, theClass.ATTR_GESCHAEFTSFALL];
+theClass.ATTRIBUTE_NAMES = [theClass.ATTR_VERSICHNR, theClass.ATTR_DOKUMENTENART, theClass.ATTR_GESCHAEFTSFALL];
 
 theClass.getName = function() {
     return "saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType";
@@ -86,12 +86,12 @@ theClass.prototype.getClass  = function() {
     return this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType");
 };
 
-theClass.prototype.getAHVNummer = function(useInternal) {
-    return this._getPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType").ATTR_AHVNUMMER, useInternal);
+theClass.prototype.getVersichNr = function(useInternal) {
+    return this._getPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType").ATTR_VERSICHNR, useInternal);
 };
 
-theClass.prototype.setAHVNummer = function(AHVNummer) {
-    this._setPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType").ATTR_AHVNUMMER, AHVNummer);
+theClass.prototype.setVersichNr = function(versichNr) {
+    this._setPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType").ATTR_VERSICHNR, versichNr);
 };
 
 

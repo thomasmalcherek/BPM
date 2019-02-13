@@ -31,16 +31,22 @@ theClass.LOADER.registerClass(theClass, "saveDataCaseXSD.bw.test.poc.tibco.com.G
 
 com.tibco.data.Loader.extendClass(com.tibco.data.BomBase, theClass);
 
-theClass.ATTR_GESCHAEFTSFALL = "geschaeftsfall";
+theClass.ATTR_GESCHAEFTSFALL = "GESCHAEFTSFALL";
+theClass.ATTR_DOKUMENTENART = "DOKUMENTENART";
+theClass.ATTR_DOKUMENTENART_MAIN = "DOKUMENTENART_MAIN";
+theClass.ATTR_DOKUMENTENART_SPEC = "DOKUMENTENART_SPEC";
 
 theClass.TYPE_ARRAY = new Object();
 theClass.TYPE_ARRAY[theClass.ATTR_GESCHAEFTSFALL] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_DOKUMENTENART] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_DOKUMENTENART_MAIN] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_DOKUMENTENART_SPEC] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
 
-theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_GESCHAEFTSFALL];
+theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_GESCHAEFTSFALL, theClass.ATTR_DOKUMENTENART, theClass.ATTR_DOKUMENTENART_MAIN, theClass.ATTR_DOKUMENTENART_SPEC];
 
 theClass.COMPOSITE_ATTRIBUTE_NAMES = [];
 
-theClass.ATTRIBUTE_NAMES = [theClass.ATTR_GESCHAEFTSFALL];
+theClass.ATTRIBUTE_NAMES = [theClass.ATTR_GESCHAEFTSFALL, theClass.ATTR_DOKUMENTENART, theClass.ATTR_DOKUMENTENART_MAIN, theClass.ATTR_DOKUMENTENART_SPEC];
 
 theClass.getName = function() {
     return "saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtResponseType";
@@ -82,12 +88,39 @@ theClass.prototype.getClass  = function() {
     return this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtResponseType");
 };
 
-theClass.prototype.getGeschaeftsfall = function(useInternal) {
+theClass.prototype.getGESCHAEFTSFALL = function(useInternal) {
     return this._getPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtResponseType").ATTR_GESCHAEFTSFALL, useInternal);
 };
 
-theClass.prototype.setGeschaeftsfall = function(geschaeftsfall) {
-    this._setPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtResponseType").ATTR_GESCHAEFTSFALL, geschaeftsfall);
+theClass.prototype.setGESCHAEFTSFALL = function(GESCHAEFTSFALL) {
+    this._setPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtResponseType").ATTR_GESCHAEFTSFALL, GESCHAEFTSFALL);
+};
+
+
+theClass.prototype.getDOKUMENTENART = function(useInternal) {
+    return this._getPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtResponseType").ATTR_DOKUMENTENART, useInternal);
+};
+
+theClass.prototype.setDOKUMENTENART = function(DOKUMENTENART) {
+    this._setPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtResponseType").ATTR_DOKUMENTENART, DOKUMENTENART);
+};
+
+
+theClass.prototype.getDOKUMENTENART_MAIN = function(useInternal) {
+    return this._getPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtResponseType").ATTR_DOKUMENTENART_MAIN, useInternal);
+};
+
+theClass.prototype.setDOKUMENTENART_MAIN = function(DOKUMENTENART_MAIN) {
+    this._setPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtResponseType").ATTR_DOKUMENTENART_MAIN, DOKUMENTENART_MAIN);
+};
+
+
+theClass.prototype.getDOKUMENTENART_SPEC = function(useInternal) {
+    return this._getPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtResponseType").ATTR_DOKUMENTENART_SPEC, useInternal);
+};
+
+theClass.prototype.setDOKUMENTENART_SPEC = function(DOKUMENTENART_SPEC) {
+    this._setPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtResponseType").ATTR_DOKUMENTENART_SPEC, DOKUMENTENART_SPEC);
 };
 
 theClass.getAttributeNames = function() {

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<lib:Library xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lib="http://www.tibco.com/forms/2013/Library" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" name="comigsformswidgets" qualifier="com.example.comigsformswidgets" nsPrefix="comigsformswidgets" nsURI="http://example.com/comigsformswidgets">
+  <drawer label="Comigsformswidgets" name="drawer.comigsformswidgets"/>
+  <resource name="resource.jquery" relativeURI="frameworks/jquery-3.3.1.js"/>
+  <resource name="resource.jqueryui" relativeURI="frameworks/jquery-ui.min.js"/>
+  <resource name="resource.NavigationWidgetWrapper" relativeURI="widget-js/NavigationWidgetWrapper.js"/>
+  <resource name="resource.DocumentListWidgetWrapper" relativeURI="widget-js/DocumentListWidgetWrapper.js"/>
+  <resource name="resource.jsgrid" relativeURI="frameworks/jsgrid.min.js"/>
+  <resource name="resource.jsgridcss" relativeURI="frameworks/jsgrid.min.css"/>
+  <component xsi:type="lib:ControlType" label="Navigation Widget" multivalued="true" canvasIcon="icons/comigsforms_NavigationWidget.gif" paletteIcon16="icons/comigsforms_NavigationWidget_16.gif" paletteIcon24="icons/comigsforms_NavigationWidget_24.gif" hint="Navigation Widget - illustrates a list of process actions" constructorClass="comigsformswidgets.library.NavigationWidgetWrapper" drawer="drawer.comigsformswidgets" name="controls.NavigationWidget">
+    <renderMode>normal</renderMode>
+    <capabilities xsi:type="lib:ControlCapabilities">
+      <label>form</label>
+      <hint>form</hint>
+      <invalid>form</invalid>
+      <readOnly>component</readOnly>
+      <disabled>component</disabled>
+      <invisible>form</invisible>
+      <required>form</required>
+      <focus>component</focus>
+    </capabilities>
+    <dataType xsi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+    <event href="pathmap://FORMS_LIBRARIES/Standard.library#update"/>
+    <superType xsi:type="lib:ControlType" href="pathmap://FORMS_LIBRARIES/Standard.library#com.tibco.forms.controls.custom"/>
+  </component>
+  <component xsi:type="lib:ControlType" label="Document List Widget" canvasIcon="icons/comigsforms_DocumentListWidget.gif" paletteIcon16="icons/comigsforms_DocumentListWidget_16.gif" paletteIcon24="icons/comigsforms_DocumentListWidget_24.gif" hint="A list of all filenet documents in specific case" constructorClass="comigsformswidgets.library.DocumentListWidgetWrapper" drawer="drawer.comigsformswidgets" name="controls.DocumentListWidget">
+    <renderMode>normal</renderMode>
+    <capabilities xsi:type="lib:ControlCapabilities">
+      <label>form</label>
+      <hint>form</hint>
+      <invalid>form</invalid>
+      <readOnly>component</readOnly>
+      <disabled>component</disabled>
+      <invisible>form</invisible>
+      <required>form</required>
+      <focus>component</focus>
+    </capabilities>
+    <dataType xsi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug"/>
+    <event href="pathmap://FORMS_LIBRARIES/Standard.library#update"/>
+    <superType xsi:type="lib:ControlType" href="pathmap://FORMS_LIBRARIES/Standard.library#com.tibco.forms.controls.custom"/>
+  </component>
+</lib:Library>

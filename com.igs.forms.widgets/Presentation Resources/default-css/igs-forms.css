@@ -1,0 +1,102 @@
+@CHARSET "ISO-8859-1";
+
+/* specific Form Design Changes
+apply niceForm CSS Tag to Form Main, and add bpm-nice.css to Form Resources 
+*/
+
+/* **** Form Style Changes */
+
+
+.igsforms-top-pane {
+	border-width: 20px !important;	
+}
+
+.igsforms-tabbed-pane {
+	font-size: 14px;
+    font-weight: bold;
+	
+}
+
+.tf-compact-3 .table>tbody>tr>td, .tf-compact-3 .table>tfoot>tr>td {
+    padding: 60px;
+}
+
+/* Change Form Header containing Form Name */
+.niceForm .panel-heading .label-visible {
+ 	color: #108CDE !important; /* TIBCO Blue */
+    font-family: Helvetica !important;
+    font-size: 16px;
+    font-weight: bold !important;
+    margin: 10px 0 0 0px !important;
+}
+
+/* Header with Logo */
+.niceForm .tf-container:first-child > .pane-vertical-top > .panel-heading {
+		height:30px;
+	    background-image: url("../img/formlogo.png");
+	    background-size: 100px;
+	    background-repeat: no-repeat;
+	    background-position: right;
+}
+
+/* Form Controls general - Control Size */
+.niceForm .form-group > .form-control {
+	padding: 3px 3px 3px 3px;
+	height: 24px;
+	line-height: 1.2;
+}
+
+/* Form Controls general - Label Size */
+.niceForm .control >.label > .label-visible {
+	padding: 3px 3px 3px 3px !important;
+	height: 20px !important;
+	line-height: 1.1 !important;
+}
+
+/* Checkbox addon - Size */
+.niceForm > .tf-container .control-checkbox > .tf-container > .forms-span-panel > .input-group-addon {
+	padding: 1px 2px 2px 2px;
+}
+
+/* Checkbox box - Position */
+.niceForm .control-checkbox > .tf-container > .forms-span-panel > .gwt-CheckBox > input {
+    margin-top: 1px;
+}
+
+/* Optionlist addon - Size */
+.niceForm > .tf-container .control-optionlist > .tf-container > .forms-span-panel > .input-group-addon {
+	padding: 1px 2px 2px 2px;
+}
+
+/* Hint Size */
+.niceForm .hint {
+   font-size: 12px;
+}
+
+/* **** Form Style fixes */
+
+/* fix Tab Folder Size to store full Tab Name */
+.niceForm > .tf-container > .pane_content > .panel-body .pane-tabbed-top .nav-tabs-label {
+    padding: 3px 45px 3px 0px;
+    color: #108CDE; /* TIBCO Blue */
+}
+
+/* fix right padding on Form controls */
+.niceForm .tf-container > .form-group .form-control {
+   padding-right: 5px;
+}
+
+/* fix toolbar to left */
+.niceForm > .tf-container .pane_toolbar > .pane-content {
+   float: left !important;
+}
+
+/* fix pane margin */
+.niceForm .tf-container > .panel {
+	margin-bottom: 0px;
+}
+
+/* first tab GWT space */
+.niceForm .gwt-TabBar .gwt-TabBarFirst {
+	width: 0px;
+}

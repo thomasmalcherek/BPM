@@ -15,6 +15,10 @@ com.tibco.data.Loader.currentLoader.registerClass(theClass, "saveDataCaseXSD.bw.
 
 
 // Load the classes defined by this package.
+com.tibco.data.Loader.currentLoader.load("saveDataCaseXSD.bw.test.poc.tibco.com.dokument");
+com.tibco.data.Loader.currentLoader.load("saveDataCaseXSD.bw.test.poc.tibco.com.versicherter");
+com.tibco.data.Loader.currentLoader.load("saveDataCaseXSD.bw.test.poc.tibco.com.geschaeftsfall");
+com.tibco.data.Loader.currentLoader.load("saveDataCaseXSD.bw.test.poc.tibco.com.mitglied");
 com.tibco.data.Loader.currentLoader.load("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType");
 com.tibco.data.Loader.currentLoader.load("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseType");
 com.tibco.data.Loader.currentLoader.load("saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtRequestType");

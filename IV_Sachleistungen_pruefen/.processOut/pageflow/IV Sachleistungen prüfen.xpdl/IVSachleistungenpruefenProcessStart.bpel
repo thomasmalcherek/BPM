@@ -8,11 +8,11 @@
     <tibex:VariableDescriptor type="PersistentBatching">
         <task name="UserTask">
             <startingVariables>
-                <variable>WorkflowID</variable>
                 <variable>Geschaeftsfall</variable>
-                <variable>Versicherte</variable>
-                <variable>Dokument</variable>
                 <variable>Mitglied</variable>
+                <variable>Versicherte</variable>
+                <variable>WorkflowID</variable>
+                <variable>Dokument</variable>
             </startingVariables>
         </task>
     </tibex:VariableDescriptor>
@@ -33,7 +33,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_vZQEYBW8Eemwx6NixRoh7A">
+    <bpws:flow name="_BX_flow_lZW_YC98Eem8NYwCvBPJhw">
         <bpws:links>
             <bpws:link name="Start to UserTask" tibex:xpdlId="_ZMCqLxW2Eemwx6NixRoh7A"/>
             <bpws:link name="UserTask to _ZMCqLhW2Eemwx6NixRoh7A" tibex:xpdlId="_ZMCqMBW2Eemwx6NixRoh7A"/>

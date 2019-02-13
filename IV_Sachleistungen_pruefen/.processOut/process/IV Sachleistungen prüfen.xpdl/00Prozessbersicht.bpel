@@ -8,79 +8,71 @@
     <tibex:VariableDescriptor type="PersistentBatching">
         <task name="_BX_SPInput_Beschlussprfen65">
             <startingVariables>
-                <variable>performer</variable>
                 <variable>WorkListFasade</variable>
+                <variable>CorrelationID</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_Verfgungdrucken77">
             <startingVariables>
-                <variable>performer</variable>
                 <variable>WorkListFasade</variable>
+                <variable>CorrelationID</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_FallimWebAIabschliessen71">
             <startingVariables>
-                <variable>performer</variable>
                 <variable>WorkListFasade</variable>
+                <variable>CorrelationID</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_Sachleistungenprfen5">
             <startingVariables>
-                <variable>performer</variable>
                 <variable>WorkListFasade</variable>
-            </startingVariables>
-        </task>
-        <task name="_BX_SPOutput_Sachleistungenprfen5">
-            <startingVariables>
-                <variable>performer</variable>
+                <variable>CorrelationID</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_EinwzuVorbescheidbearb95">
             <startingVariables>
-                <variable>performer</variable>
                 <variable>WorkListFasade</variable>
+                <variable>CorrelationID</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_AuftragAD101">
             <startingVariables>
-                <variable>performer</variable>
                 <variable>WorkListFasade</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_AnfrageBSV105">
             <startingVariables>
-                <variable>performer</variable>
                 <variable>WorkListFasade</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_AnfrageRAD129">
             <startingVariables>
-                <variable>performer</variable>
                 <variable>WorkListFasade</variable>
+                <variable>CorrelationID</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_Beschlussfassen59">
             <startingVariables>
-                <variable>performer</variable>
                 <variable>WorkListFasade</variable>
+                <variable>CorrelationID</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_Vorbescheidverfahren73">
             <startingVariables>
-                <variable>performer</variable>
                 <variable>WorkListFasade</variable>
+                <variable>CorrelationID</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_AnfrageRD99">
             <startingVariables>
-                <variable>performer</variable>
                 <variable>WorkListFasade</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_Beschlussvisiert67">
             <startingVariables>
-                <variable>performer</variable>
                 <variable>WorkListFasade</variable>
+                <variable>CorrelationID</variable>
             </startingVariables>
         </task>
         <task name="_BX_SPInput_HauptProzess">
@@ -90,8 +82,8 @@
         </task>
         <task name="_BX_SPInput_Mitteilungbearbeiten69">
             <startingVariables>
-                <variable>performer</variable>
                 <variable>WorkListFasade</variable>
+                <variable>CorrelationID</variable>
             </startingVariables>
         </task>
     </tibex:VariableDescriptor>
@@ -108,7 +100,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_vVPHEBW8Eemwx6NixRoh7A" tibex:sequenceFlow="yes">
+    <bpws:flow name="_BX_flow_lT4CcC98Eem8NYwCvBPJhw" tibex:sequenceFlow="yes">
         <bpws:links>
             <bpws:link name="AnfrageRAD129 to Beschlussfassen59" tibex:xpdlId="_rEX_DBM6EemnLOiGQkEvTQ"/>
             <bpws:link
@@ -173,7 +165,6 @@
                 <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
                 <bpws:variable name="_BX_WorkflowID" type="xsd:string"/>
                 <bpws:variable name="_BX_Versicherte" tibex:class="com.example.comigsbom.Versicherter"/>
-                <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
                 <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
             </bpws:variables>
             <bpws:sequence name="_BX_sequence">
@@ -196,8 +187,6 @@ _BX_WorkflowID = CorrelationID;
                                 <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
                                 <tibex:mapping field="_BX_WorkflowID" formalParameter="WorkflowID"/>
                                 <tibex:mapping field="_BX_Versicherte" formalParameter="Versicherte"/>
-                                <tibex:mapping
-                                    field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
                             </tibex:subProcessInput>
                         </tibex:callProcess>
@@ -224,16 +213,16 @@ _BX_WorkflowID = CorrelationID;
                 <bpws:variable name="_BX_Geschaeftsfall" tibex:class="com.example.comigsbom.Geschftsfall"/>
                 <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
                 <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
+                <bpws:variable name="_BX_WorkflowID" type="xsd:string"/>
                 <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
-                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
                 <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
             </bpws:variables>
             <bpws:sequence name="_BX_sequence_2">
                 <bpws:extensionActivity>
                     <tibex:extActivity
                         name="_BX_SPInput_Sachleistungenprfen5" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'performer' to 'IVSachbearbeiter'
-_BX_IVSachbearbeiter = performer;
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'CorrelationID' to 'WorkflowID'
+_BX_WorkflowID = CorrelationID;
 
 // Map from 'WorkListFasade' to 'WorkListFasade'
 _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
@@ -251,10 +240,9 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                                     field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
                                 <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
                                 <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
+                                <tibex:mapping field="_BX_WorkflowID" formalParameter="WorkflowID"/>
                                 <tibex:mapping
                                     field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
-                                <tibex:mapping
-                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
                             </tibex:subProcessInput>
                             <tibex:subProcessOutput>
@@ -262,10 +250,6 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                                     field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
                                 <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
                                 <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
-                                <tibex:mapping
-                                    field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
-                                <tibex:mapping
-                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
                             </tibex:subProcessOutput>
                         </tibex:callProcess>
@@ -274,9 +258,7 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                 <bpws:extensionActivity>
                     <tibex:extActivity
                         name="_BX_SPOutput_Sachleistungenprfen5" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'IVSachbearbeiter' to 'performer'
-performer = _BX_IVSachbearbeiter;
-
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[
 
 ]]></tibex:script>
                     </tibex:extActivity>
@@ -289,20 +271,18 @@ performer = _BX_IVSachbearbeiter;
             </bpws:targets>
             <bpws:variables>
                 <bpws:variable name="_BX_Geschaeftsfall" tibex:class="com.example.comigsbom.Geschftsfall"/>
-                <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
                 <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
-                <bpws:variable name="_BX_Versicherte" tibex:class="com.example.comigsbom.Versicherter"/>
+                <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
                 <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
-                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
+                <bpws:variable name="_BX_Mitarbeiter_RD" type="xsd:string"/>
+                <bpws:variable name="_BX_KernprozessLeitung" type="xsd:string"/>
                 <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
+                <bpws:variable name="_BX_Mitarbeiter_AD" type="xsd:string"/>
             </bpws:variables>
             <bpws:sequence name="_BX_sequence_3">
                 <bpws:extensionActivity>
                     <tibex:extActivity name="_BX_SPInput_AnfrageRD99" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'performer' to 'IVSachbearbeiter'
-_BX_IVSachbearbeiter = performer;
-
-// Map from 'WorkListFasade' to 'WorkListFasade'
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'WorkListFasade' to 'WorkListFasade'
 _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
 
 
@@ -312,20 +292,22 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                 <bpws:extensionActivity>
                     <tibex:extActivity name="AnfrageRD99" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                         <tibex:callProcess followParentLifecycle="yes"
-                            packageRef="/IV-SL_building_block/Process Packages/IV-SL_building_block.xpdl"
                             priority="inline"
-                            subProcessId="_SV--GBNVEem5tPB5xUwBFQ" version="[1.0.0,2.0.0)">
+                            processIdentifierField="CorrelationID" subProcessId="_zWhMCBf9EemVOau1wk8QzA">
                             <tibex:subProcessInput>
                                 <tibex:mapping
                                     field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
-                                <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
                                 <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
-                                <tibex:mapping field="_BX_Versicherte" formalParameter="Versicherte"/>
+                                <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
                                 <tibex:mapping
                                     field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
                                 <tibex:mapping
-                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
+                                    field="_BX_Mitarbeiter_RD" formalParameter="Mitarbeiter_RD"/>
+                                <tibex:mapping
+                                    field="_BX_KernprozessLeitung" formalParameter="KernprozessLeitung"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
+                                <tibex:mapping
+                                    field="_BX_Mitarbeiter_AD" formalParameter="Mitarbeiter_AD"/>
                             </tibex:subProcessInput>
                         </tibex:callProcess>
                     </tibex:extActivity>
@@ -338,20 +320,18 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
             </bpws:targets>
             <bpws:variables>
                 <bpws:variable name="_BX_Geschaeftsfall" tibex:class="com.example.comigsbom.Geschftsfall"/>
-                <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
                 <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
-                <bpws:variable name="_BX_Versicherte" tibex:class="com.example.comigsbom.Versicherter"/>
+                <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
                 <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
-                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
+                <bpws:variable name="_BX_Mitarbeiter_RD" type="xsd:string"/>
+                <bpws:variable name="_BX_KernprozessLeitung" type="xsd:string"/>
                 <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
+                <bpws:variable name="_BX_Mitarbeiter_AD" type="xsd:string"/>
             </bpws:variables>
             <bpws:sequence name="_BX_sequence_4">
                 <bpws:extensionActivity>
                     <tibex:extActivity name="_BX_SPInput_AuftragAD101" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'performer' to 'IVSachbearbeiter'
-_BX_IVSachbearbeiter = performer;
-
-// Map from 'WorkListFasade' to 'WorkListFasade'
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'WorkListFasade' to 'WorkListFasade'
 _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
 
 
@@ -361,20 +341,22 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                 <bpws:extensionActivity>
                     <tibex:extActivity name="AuftragAD101" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                         <tibex:callProcess followParentLifecycle="yes"
-                            packageRef="/IV-SL_building_block/Process Packages/IV-SL_building_block.xpdl"
                             priority="inline"
-                            subProcessId="_vdNBVRNUEem5tPB5xUwBFQ" version="[1.0.0,2.0.0)">
+                            processIdentifierField="CorrelationID" subProcessId="_zWhMCBf9EemVOau1wk8QzA">
                             <tibex:subProcessInput>
                                 <tibex:mapping
                                     field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
-                                <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
                                 <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
-                                <tibex:mapping field="_BX_Versicherte" formalParameter="Versicherte"/>
+                                <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
                                 <tibex:mapping
                                     field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
                                 <tibex:mapping
-                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
+                                    field="_BX_Mitarbeiter_RD" formalParameter="Mitarbeiter_RD"/>
+                                <tibex:mapping
+                                    field="_BX_KernprozessLeitung" formalParameter="KernprozessLeitung"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
+                                <tibex:mapping
+                                    field="_BX_Mitarbeiter_AD" formalParameter="Mitarbeiter_AD"/>
                             </tibex:subProcessInput>
                         </tibex:callProcess>
                     </tibex:extActivity>
@@ -390,17 +372,15 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                 <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
                 <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
                 <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
-                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
-                <bpws:variable name="_BX_BSV_ist_OK" type="xsd:boolean"/>
+                <bpws:variable name="_BX_Mitarbeiter_RD" type="xsd:string"/>
+                <bpws:variable name="_BX_KernprozessLeitung" type="xsd:string"/>
                 <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
+                <bpws:variable name="_BX_Mitarbeiter_AD" type="xsd:string"/>
             </bpws:variables>
             <bpws:sequence name="_BX_sequence_5">
                 <bpws:extensionActivity>
                     <tibex:extActivity name="_BX_SPInput_AnfrageBSV105" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'performer' to 'IVSachbearbeiter'
-_BX_IVSachbearbeiter = performer;
-
-// Map from 'WorkListFasade' to 'WorkListFasade'
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'WorkListFasade' to 'WorkListFasade'
 _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
 
 
@@ -410,9 +390,8 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                 <bpws:extensionActivity>
                     <tibex:extActivity name="AnfrageBSV105" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                         <tibex:callProcess followParentLifecycle="yes"
-                            packageRef="/IV-SL_building_block/Process Packages/IV-SL_building_block.xpdl"
                             priority="inline"
-                            subProcessId="_xWIR0xNUEem5tPB5xUwBFQ" version="[1.0.0,2.0.0)">
+                            processIdentifierField="CorrelationID" subProcessId="_zWhMCBf9EemVOau1wk8QzA">
                             <tibex:subProcessInput>
                                 <tibex:mapping
                                     field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
@@ -421,8 +400,12 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                                 <tibex:mapping
                                     field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
                                 <tibex:mapping
-                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
+                                    field="_BX_Mitarbeiter_RD" formalParameter="Mitarbeiter_RD"/>
+                                <tibex:mapping
+                                    field="_BX_KernprozessLeitung" formalParameter="KernprozessLeitung"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
+                                <tibex:mapping
+                                    field="_BX_Mitarbeiter_AD" formalParameter="Mitarbeiter_AD"/>
                             </tibex:subProcessInput>
                         </tibex:callProcess>
                     </tibex:extActivity>
@@ -438,17 +421,17 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
             </bpws:sources>
             <bpws:variables>
                 <bpws:variable name="_BX_Geschaeftsfall" tibex:class="com.example.comigsbom.Geschftsfall"/>
-                <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
                 <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
+                <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
                 <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
-                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
+                <bpws:variable name="_BX_WorkFlowID" type="xsd:string"/>
                 <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
             </bpws:variables>
             <bpws:sequence name="_BX_sequence_6">
                 <bpws:extensionActivity>
                     <tibex:extActivity name="_BX_SPInput_AnfrageRAD129" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'performer' to 'IVSachbearbeiter'
-_BX_IVSachbearbeiter = performer;
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'CorrelationID' to 'WorkFlowID'
+_BX_WorkFlowID = CorrelationID;
 
 // Map from 'WorkListFasade' to 'WorkListFasade'
 _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
@@ -464,12 +447,11 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                             <tibex:subProcessInput>
                                 <tibex:mapping
                                     field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
-                                <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
                                 <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
+                                <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
                                 <tibex:mapping
                                     field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
-                                <tibex:mapping
-                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
+                                <tibex:mapping field="_BX_WorkFlowID" formalParameter="WorkFlowID"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
                             </tibex:subProcessInput>
                         </tibex:callProcess>
@@ -488,18 +470,18 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
             </bpws:sources>
             <bpws:variables>
                 <bpws:variable name="_BX_Geschaeftsfall" tibex:class="com.example.comigsbom.Geschftsfall"/>
-                <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
                 <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
+                <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
+                <bpws:variable name="_BX_WorkflowID" type="xsd:string"/>
                 <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
-                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
                 <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
             </bpws:variables>
             <bpws:sequence name="_BX_sequence_7">
                 <bpws:extensionActivity>
                     <tibex:extActivity
                         name="_BX_SPInput_EinwzuVorbescheidbearb95" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'performer' to 'IVSachbearbeiter'
-_BX_IVSachbearbeiter = performer;
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'CorrelationID' to 'WorkflowID'
+_BX_WorkflowID = CorrelationID;
 
 // Map from 'WorkListFasade' to 'WorkListFasade'
 _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
@@ -515,12 +497,11 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                             <tibex:subProcessInput>
                                 <tibex:mapping
                                     field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
-                                <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
                                 <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
+                                <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
+                                <tibex:mapping field="_BX_WorkflowID" formalParameter="WorkflowID"/>
                                 <tibex:mapping
                                     field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
-                                <tibex:mapping
-                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
                             </tibex:subProcessInput>
                         </tibex:callProcess>
@@ -543,7 +524,7 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                 <bpws:variable name="_BX_Geschaeftsfall" tibex:class="com.example.comigsbom.Geschftsfall"/>
                 <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
                 <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
-                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
+                <bpws:variable name="_BX_WorkFlowID" type="xsd:string"/>
                 <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
                 <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
             </bpws:variables>
@@ -551,8 +532,8 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                 <bpws:extensionActivity>
                     <tibex:extActivity
                         name="_BX_SPInput_Beschlussfassen59" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'performer' to 'IVSachbearbeiter'
-_BX_IVSachbearbeiter = performer;
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'CorrelationID' to 'WorkFlowID'
+_BX_WorkFlowID = CorrelationID;
 
 // Map from 'WorkListFasade' to 'WorkListFasade'
 _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
@@ -570,8 +551,7 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                                     field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
                                 <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
                                 <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
-                                <tibex:mapping
-                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
+                                <tibex:mapping field="_BX_WorkFlowID" formalParameter="WorkFlowID"/>
                                 <tibex:mapping
                                     field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
@@ -592,18 +572,18 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
             </bpws:sources>
             <bpws:variables>
                 <bpws:variable name="_BX_Geschaeftsfall" tibex:class="com.example.comigsbom.Geschftsfall"/>
-                <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
                 <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
+                <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
                 <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
-                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
+                <bpws:variable name="_BX_WorkFlowID" type="xsd:string"/>
                 <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
             </bpws:variables>
             <bpws:sequence name="_BX_sequence_9">
                 <bpws:extensionActivity>
                     <tibex:extActivity
                         name="_BX_SPInput_Beschlussprfen65" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'performer' to 'IVSachbearbeiter'
-_BX_IVSachbearbeiter = performer;
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'CorrelationID' to 'WorkFlowID'
+_BX_WorkFlowID = CorrelationID;
 
 // Map from 'WorkListFasade' to 'WorkListFasade'
 _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
@@ -619,12 +599,11 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                             <tibex:subProcessInput>
                                 <tibex:mapping
                                     field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
-                                <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
                                 <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
+                                <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
                                 <tibex:mapping
                                     field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
-                                <tibex:mapping
-                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
+                                <tibex:mapping field="_BX_WorkFlowID" formalParameter="WorkFlowID"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
                             </tibex:subProcessInput>
                         </tibex:callProcess>
@@ -648,7 +627,7 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                 <bpws:variable name="_BX_Geschaeftsfall" tibex:class="com.example.comigsbom.Geschftsfall"/>
                 <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
                 <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
-                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
+                <bpws:variable name="_BX_WorkFlowID" type="xsd:string"/>
                 <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
                 <bpws:variable name="_BX_WorklistFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
             </bpws:variables>
@@ -656,8 +635,8 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                 <bpws:extensionActivity>
                     <tibex:extActivity
                         name="_BX_SPInput_Beschlussvisiert67" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'performer' to 'IVSachbearbeiter'
-_BX_IVSachbearbeiter = performer;
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'CorrelationID' to 'WorkFlowID'
+_BX_WorkFlowID = CorrelationID;
 
 // Map from 'WorkListFasade' to 'WorklistFasade'
 _BX_WorklistFasade = ScriptUtil.copy(WorkListFasade);
@@ -675,8 +654,7 @@ _BX_WorklistFasade = ScriptUtil.copy(WorkListFasade);
                                     field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
                                 <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
                                 <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
-                                <tibex:mapping
-                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
+                                <tibex:mapping field="_BX_WorkFlowID" formalParameter="WorkFlowID"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
                                 <tibex:mapping
                                     field="_BX_WorklistFasade" formalParameter="WorklistFasade"/>
@@ -700,16 +678,16 @@ _BX_WorklistFasade = ScriptUtil.copy(WorkListFasade);
                 <bpws:variable name="_BX_Geschaeftsfall" tibex:class="com.example.comigsbom.Geschftsfall"/>
                 <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
                 <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
+                <bpws:variable name="_BX_WorkflowID" type="xsd:string"/>
                 <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
-                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
                 <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
             </bpws:variables>
             <bpws:sequence name="_BX_sequence_11">
                 <bpws:extensionActivity>
                     <tibex:extActivity
                         name="_BX_SPInput_Vorbescheidverfahren73" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'performer' to 'IVSachbearbeiter'
-_BX_IVSachbearbeiter = performer;
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'CorrelationID' to 'WorkflowID'
+_BX_WorkflowID = CorrelationID;
 
 // Map from 'WorkListFasade' to 'WorkListFasade'
 _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
@@ -727,10 +705,9 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                                     field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
                                 <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
                                 <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
+                                <tibex:mapping field="_BX_WorkflowID" formalParameter="WorkflowID"/>
                                 <tibex:mapping
                                     field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
-                                <tibex:mapping
-                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
                             </tibex:subProcessInput>
                         </tibex:callProcess>
@@ -746,18 +723,18 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
             </bpws:targets>
             <bpws:variables>
                 <bpws:variable name="_BX_Geschaeftsfall" tibex:class="com.example.comigsbom.Geschftsfall"/>
-                <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
                 <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
+                <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
+                <bpws:variable name="_BX_WorkflowID" type="xsd:string"/>
                 <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
-                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
                 <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
             </bpws:variables>
             <bpws:sequence name="_BX_sequence_12">
                 <bpws:extensionActivity>
                     <tibex:extActivity
                         name="_BX_SPInput_FallimWebAIabschliessen71" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'performer' to 'IVSachbearbeiter'
-_BX_IVSachbearbeiter = performer;
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'CorrelationID' to 'WorkflowID'
+_BX_WorkflowID = CorrelationID;
 
 // Map from 'WorkListFasade' to 'WorkListFasade'
 _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
@@ -773,12 +750,11 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                             <tibex:subProcessInput>
                                 <tibex:mapping
                                     field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
-                                <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
                                 <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
+                                <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
+                                <tibex:mapping field="_BX_WorkflowID" formalParameter="WorkflowID"/>
                                 <tibex:mapping
                                     field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
-                                <tibex:mapping
-                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
                             </tibex:subProcessInput>
                         </tibex:callProcess>
@@ -797,18 +773,18 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
             </bpws:sources>
             <bpws:variables>
                 <bpws:variable name="_BX_Geschaeftsfall" tibex:class="com.example.comigsbom.Geschftsfall"/>
-                <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
                 <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
+                <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
+                <bpws:variable name="_BX_WorkFlowID" type="xsd:string"/>
                 <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
-                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
                 <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
             </bpws:variables>
             <bpws:sequence name="_BX_sequence_13">
                 <bpws:extensionActivity>
                     <tibex:extActivity
                         name="_BX_SPInput_Verfgungdrucken77" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'performer' to 'IVSachbearbeiter'
-_BX_IVSachbearbeiter = performer;
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'CorrelationID' to 'WorkFlowID'
+_BX_WorkFlowID = CorrelationID;
 
 // Map from 'WorkListFasade' to 'WorkListFasade'
 _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
@@ -824,12 +800,11 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                             <tibex:subProcessInput>
                                 <tibex:mapping
                                     field="_BX_Geschaeftsfall" formalParameter="Geschaeftsfall"/>
-                                <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
                                 <tibex:mapping field="_BX_Mitglied" formalParameter="Mitglied"/>
+                                <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
+                                <tibex:mapping field="_BX_WorkFlowID" formalParameter="WorkFlowID"/>
                                 <tibex:mapping
                                     field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
-                                <tibex:mapping
-                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
                             </tibex:subProcessInput>
                         </tibex:callProcess>
@@ -851,15 +826,15 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                 <bpws:variable name="_BX_Mitglied" tibex:class="com.example.comigsbom.Mitglied"/>
                 <bpws:variable name="_BX_Versicherter" tibex:class="com.example.comigsbom.Versicherter"/>
                 <bpws:variable name="_BX_WorkListFasade" tibex:class="com.example.worklistfasade.WorkListFasade"/>
-                <bpws:variable name="_BX_IVSachbearbeiter" type="xsd:string"/>
+                <bpws:variable name="_BX_WorkFlowID" type="xsd:string"/>
                 <bpws:variable name="_BX_Dokument" tibex:class="com.example.comigsbom.Dokument"/>
             </bpws:variables>
             <bpws:sequence name="_BX_sequence_14">
                 <bpws:extensionActivity>
                     <tibex:extActivity
                         name="_BX_SPInput_Mitteilungbearbeiten69" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'performer' to 'IVSachbearbeiter'
-_BX_IVSachbearbeiter = performer;
+                        <tibex:script expressionLanguage="urn:tibco:wsbpel:2.0:sublang:javascript"><![CDATA[// Map from 'CorrelationID' to 'WorkFlowID'
+_BX_WorkFlowID = CorrelationID;
 
 // Map from 'WorkListFasade' to 'WorkListFasade'
 _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
@@ -879,8 +854,7 @@ _BX_WorkListFasade = ScriptUtil.copy(WorkListFasade);
                                 <tibex:mapping field="_BX_Versicherter" formalParameter="Versicherter"/>
                                 <tibex:mapping
                                     field="_BX_WorkListFasade" formalParameter="WorkListFasade"/>
-                                <tibex:mapping
-                                    field="_BX_IVSachbearbeiter" formalParameter="IVSachbearbeiter"/>
+                                <tibex:mapping field="_BX_WorkFlowID" formalParameter="WorkFlowID"/>
                                 <tibex:mapping field="_BX_Dokument" formalParameter="Dokument"/>
                             </tibex:subProcessInput>
                         </tibex:callProcess>

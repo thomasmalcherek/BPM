@@ -126,13 +126,7 @@
         </xsd:simpleType>
       </xsd:element>
       <xsd:element ecore:name="foundingDate" id="_JLd6QQUFEem-aMI85c3QiA" maxOccurs="1"
-          minOccurs="0" name="foundingDate">
-        <xsd:simpleType>
-          <xsd:restriction base="xsd:string">
-            <xsd:maxLength value="50"/>
-          </xsd:restriction>
-        </xsd:simpleType>
-      </xsd:element>
+          minOccurs="0" name="foundingDate" type="xsd:date"/>
       <xsd:element ecore:name="anmeldenummer" id="_JLd6RAUFEem-aMI85c3QiA" maxOccurs="1"
           minOccurs="0" name="anmeldenummer">
         <xsd:simpleType>
@@ -190,7 +184,13 @@
         </xsd:simpleType>
       </xsd:element>
       <xsd:element ecore:name="processNumber" id="_JLd6YgUFEem-aMI85c3QiA" maxOccurs="1"
-          minOccurs="1" name="processNumber" type="xsd:int"/>
+          minOccurs="1" name="processNumber">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
       <xsd:element ecore:name="urgent" id="_JLd6ZQUFEem-aMI85c3QiA" maxOccurs="1"
           minOccurs="0" name="urgent" type="xsd:boolean"/>
       <xsd:element ecore:name="processUser" id="_JLd6aAUFEem-aMI85c3QiA" maxOccurs="1"
@@ -279,7 +279,7 @@
           minOccurs="1" name="documentType">
         <xsd:simpleType>
           <xsd:restriction base="xsd:string">
-            <xsd:maxLength value="22"/>
+            <xsd:maxLength value="50"/>
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>

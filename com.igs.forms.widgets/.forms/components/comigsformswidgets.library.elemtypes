@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:elementTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <library name="comigsformswidgets" qualifier="com.example.comigsformswidgets" uri="comigsformswidgets.library.js"/>
+  <form:elementType xsi:type="form:ControlType" name="com.example.comigsformswidgets.controls.NavigationWidget" superType="form:ControlType pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#com.tibco.forms.controls.custom" propertySetClass="comigsformswidgets.library.ecore#//NavigationWidgetPropertySet" propertySetRequired="true" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" multivalued="true" supportsAlwaysRender="false" supportsTabIndex="false">
+    <form:designerProperties canvasIcon="icons/comigsforms_NavigationWidget.gif" paletteIcon16="icons/comigsforms_NavigationWidget_16.gif" paletteIcon24="icons/comigsforms_NavigationWidget_24.gif" paletteLabel="Navigation Widget" paletteHint="Navigation Widget - illustrates a list of process actions" paletteDrawer="#com.example.comigsformswidgets.drawer.comigsformswidgets"/>
+    <form:eventType>pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#update</form:eventType>
+  </form:elementType>
+  <form:elementType xsi:type="form:ControlType" name="com.example.comigsformswidgets.controls.DocumentListWidget" superType="form:ControlType pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#com.tibco.forms.controls.custom" propertySetClass="comigsformswidgets.library.ecore#//DocumentListWidgetPropertySet" propertySetRequired="true" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" supportsAlwaysRender="false" supportsTabIndex="false">
+    <form:designerProperties canvasIcon="icons/comigsforms_DocumentListWidget.gif" paletteIcon16="icons/comigsforms_DocumentListWidget_16.gif" paletteIcon24="icons/comigsforms_DocumentListWidget_24.gif" paletteLabel="Document List Widget" paletteHint="A list of all filenet documents in specific case" paletteDrawer="#com.example.comigsformswidgets.drawer.comigsformswidgets"/>
+    <form:eventType>pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#update</form:eventType>
+  </form:elementType>
+  <form:paletteDrawer name="com.example.comigsformswidgets.drawer.comigsformswidgets" label="Comigsformswidgets"/>
+</form:elementTypes>

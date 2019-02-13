@@ -13,7 +13,7 @@
     <xpdl2:Version>1.0.0.qualifier</xpdl2:Version>
   </xpdl2:RedefinableHeader>
   <xpdl2:Participants>
-    <xpdl2:Participant Id="_cUmaphM-EemnLOiGQkEvTQ" xpdExt:DisplayName="saveDataCaseSOAP_Consumer" Name="saveDataCaseSOAP_Consumer">
+    <xpdl2:Participant Id="___xMYCM-EemMt43W4eho3w" xpdExt:DisplayName="saveDataCase_JMSSOAP_Consumer" Name="saveDataCase_JMSSOAP_Consumer">
       <xpdl2:ParticipantType Type="SYSTEM"/>
       <xpdExt:ParticipantSharedResource>
         <xpdExt:WebService>
@@ -400,7 +400,7 @@ wenn Message kommt -> sofrt aus der Warteschleife</xpdl2:Description>
           <xpdl2:DataType>
             <xpdl2:BasicType Type="BOOLEAN"/>
           </xpdl2:DataType>
-          <xpdl2:InitialValue></xpdl2:InitialValue>
+          <xpdl2:InitialValue/>
         </xpdl2:DataField>
       </xpdl2:DataFields>
       <xpdl2:Activities>
@@ -498,11 +498,11 @@ else {&#xD;
             <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
           </xpdExt:ActivityResourcePatterns>
         </xpdl2:Activity>
-        <xpdl2:Activity Id="_AVlCkBQQEemj5-ScqcIGvQ" Name="ServiceTask" xpdExt:Visibility="Private" xpdExt:DisplayName="Service Task">
+        <xpdl2:Activity Id="_AVlCkBQQEemj5-ScqcIGvQ" Name="ServiceTask" xpdExt:Visibility="Private" xpdExt:DisplayName="Service Task" xpdExt:ActivityDeadlineEventId="_nYiU4xpfEemb0rCdq_bDnQ">
           <xpdl2:Implementation>
             <xpdl2:Task>
               <xpdl2:TaskService xpdExt:ImplementationType="WebService" Implementation="WebService">
-                <xpdl2:MessageIn Id="_Cp_VMhQQEemj5-ScqcIGvQ">
+                <xpdl2:MessageIn Id="_JPwKAiM_EemMt43W4eho3w">
                   <xpdExt:InputMappings MapperContext="InputToService" MappingDirection="IN">
                     <xpdExt:DataMappings>
                       <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="InputToService.DataMapperContent" Direction="IN" Formal="WorkPerformerInputParameters.workPerformer">
@@ -511,7 +511,7 @@ else {&#xD;
                     </xpdExt:DataMappings>
                   </xpdExt:InputMappings>
                 </xpdl2:MessageIn>
-                <xpdl2:MessageOut Id="_Cp_VMxQQEemj5-ScqcIGvQ">
+                <xpdl2:MessageOut Id="_JPwKAyM_EemMt43W4eho3w">
                   <xpdExt:OutputMappings MapperContext="OutputFromService" MappingDirection="OUT">
                     <xpdExt:DataMappings>
                       <xpdExt:DataMapping xpdExt:SourceContributorId="OutputFromService.DataMapperContent" xpdExt:TargetContributorId="ActivityInterface.DataMapperContent" Direction="IN" Formal="Responsecode">
@@ -520,8 +520,8 @@ else {&#xD;
                     </xpdExt:DataMappings>
                   </xpdExt:OutputMappings>
                 </xpdl2:MessageOut>
-                <xpdl2:WebServiceOperation xpdExt:SecurityProfile="" xpdExt:Transport="http://www.tibco.com/namespaces/ws/2004/soap/binding/JMS" xpdExt:Alias="_cUmaphM-EemnLOiGQkEvTQ" OperationName="WorkPerformer">
-                  <xpdl2:Service xpdExt:IsRemote="true" PortName="saveDataCaseSOAP" ServiceName="saveDataCase">
+                <xpdl2:WebServiceOperation xpdExt:SecurityProfile="" xpdExt:Transport="http://www.tibco.com/namespaces/ws/2004/soap/binding/JMS" xpdExt:Alias="___xMYCM-EemMt43W4eho3w" OperationName="WorkPerformer">
+                  <xpdl2:Service xpdExt:IsRemote="true" PortName="saveDataCase_JMSSOAP" ServiceName="saveDataCase_JMS">
                     <xpdl2:EndPoint EndPointType="WSDL">
                       <xpdl2:ExternalReference location="saveDataCase_JMS.wsdl"/>
                     </xpdl2:EndPoint>
@@ -534,7 +534,7 @@ else {&#xD;
             </xpdl2:Task>
           </xpdl2:Implementation>
           <xpdl2:Performers>
-            <xpdl2:Performer>_cUmaphM-EemnLOiGQkEvTQ</xpdl2:Performer>
+            <xpdl2:Performer>___xMYCM-EemMt43W4eho3w</xpdl2:Performer>
           </xpdl2:Performers>
           <xpdl2:TransitionRestrictions>
             <xpdl2:TransitionRestriction>
@@ -623,6 +623,26 @@ else {&#xD;
             <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
           </xpdExt:ActivityResourcePatterns>
         </xpdl2:Activity>
+        <xpdl2:Activity Id="_nYiU4xpfEemb0rCdq_bDnQ" Name="TimerEvent" xpdExt:Visibility="Private" xpdExt:DisplayName="Timer Event">
+          <xpdl2:Event>
+            <xpdl2:IntermediateEvent Target="_AVlCkBQQEemj5-ScqcIGvQ" Trigger="Timer">
+              <xpdl2:TriggerTimer>
+                <xpdl2:TimeDate/>
+              </xpdl2:TriggerTimer>
+            </xpdl2:IntermediateEvent>
+          </xpdl2:Event>
+          <xpdl2:Deadline>
+            <xpdl2:DeadlineDuration ScriptGrammar="ConstantPeriod"><xpdExt:ConstantPeriod Minutes="3"/></xpdl2:DeadlineDuration>
+          </xpdl2:Deadline>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="27.0" LaneId="_eAeDpRM6EemnLOiGQkEvTQ" Width="27.0">
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:NodeGraphicsInfo>
+            <xpdl2:NodeGraphicsInfo ToolId="XPD.BorderEventPosition">
+              <xpdl2:Coordinates XCoordinate="17.5" YCoordinate="0.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
       </xpdl2:Activities>
       <xpdl2:Transitions>
         <xpdl2:Transition Id="_eAeDhxM6EemnLOiGQkEvTQ" xpdExt:DisplayName="" Name="" From="_AVlCkBQQEemj5-ScqcIGvQ" To="_eAeDhRM6EemnLOiGQkEvTQ">
@@ -653,6 +673,15 @@ else {&#xD;
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
         <xpdl2:Transition Id="_KfvwgBQQEemj5-ScqcIGvQ" xpdExt:DisplayName="" Name="" From="_IKJLEBQQEemj5-ScqcIGvQ" To="_eAeDhRM6EemnLOiGQkEvTQ">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
+              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
+              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </xpdl2:ConnectorGraphicsInfo>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_oFAZUBpfEemb0rCdq_bDnQ" xpdExt:DisplayName="" Name="" From="_nYiU4xpfEemb0rCdq_bDnQ" To="_eAeDhRM6EemnLOiGQkEvTQ">
           <xpdl2:ConnectorGraphicsInfos>
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
             <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
@@ -727,6 +756,11 @@ else {&#xD;
             <xpdl2:ExternalReference location="ArrayMapping.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_3hXeoAQvEem_G-97Kp4DSg"/>
           </xpdl2:DataType>
         </xpdl2:FormalParameter>
+        <xpdl2:FormalParameter Id="_D5mKYRmLEemV_YRdBkkrJg" Name="WorkListFasade" ReadOnly="false" Mode="IN" Required="true" xpdExt:DisplayName="WorkListFasade">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="WorkListFasade.bom" namespace="http://www.eclipse.org/uml2/3.0.0/UML" xref="_LTh0cBTtEemMqIXY9z_1Iw"/>
+          </xpdl2:DataType>
+        </xpdl2:FormalParameter>
       </xpdl2:FormalParameters>
       <xpdl2:DataFields>
         <xpdl2:DataField Id="_npPfPRM7EemnLOiGQkEvTQ" xpdExt:DisplayName="GS_FOUND_BOM" Name="GS_FOUND_BOM" IsArray="true" ReadOnly="false">
@@ -757,11 +791,6 @@ else {&#xD;
           <xpdl2:Event>
             <xpdl2:EndEvent Result="None"/>
           </xpdl2:Event>
-          <xpdl2:TransitionRestrictions>
-            <xpdl2:TransitionRestriction>
-              <xpdl2:Join Type="Exclusive" ExclusiveType="Data"/>
-            </xpdl2:TransitionRestriction>
-          </xpdl2:TransitionRestrictions>
           <xpdl2:NodeGraphicsInfos>
             <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="52.0" LaneId="_npPfQRM7EemnLOiGQkEvTQ" Width="67.0">
               <xpdl2:Coordinates XCoordinate="569.0" YCoordinate="155.0"/>
@@ -770,21 +799,21 @@ else {&#xD;
           <xpdl2:Extensions/>
           <xpdExt:AssociatedParameters DisableImplicitAssociation="false"/>
         </xpdl2:Activity>
-        <xpdl2:Activity Id="_npPfMRM7EemnLOiGQkEvTQ" Name="ServiceTask_2" xpdExt:Visibility="Private" xpdExt:DisplayName="Service Task_2" xpdExt:ActivityDeadlineEventId="_MGsbABQiEemj5-ScqcIGvQ">
+        <xpdl2:Activity Id="_npPfMRM7EemnLOiGQkEvTQ" Name="ServiceTask_2" xpdExt:Visibility="Private" xpdExt:DisplayName="Service Task_2">
           <xpdl2:Implementation>
             <xpdl2:Task>
               <xpdl2:TaskService xpdExt:ImplementationType="WebService" Implementation="WebService">
                 <xpdl2:MessageIn Id="_Q81BUhQTEemj5-ScqcIGvQ">
                   <xpdExt:InputMappings MapperContext="InputToService" MappingDirection="IN">
                     <xpdExt:DataMappings>
-                      <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="InputToService.DataMapperContent" Direction="IN" Formal="SearchDataInputParameters.AHVNummer">
-                        <xpdl2:Actual ScriptGrammar="JavaScript">AHVNummer</xpdl2:Actual>
-                      </xpdExt:DataMapping>
                       <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="InputToService.DataMapperContent" Direction="IN" Formal="SearchDataInputParameters.dokumentenArt">
                         <xpdl2:Actual ScriptGrammar="JavaScript">DokumentenArt</xpdl2:Actual>
                       </xpdExt:DataMapping>
                       <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="InputToService.DataMapperContent" Direction="IN" Formal="SearchDataInputParameters.geschaeftsfall">
                         <xpdl2:Actual ScriptGrammar="JavaScript">Geschaeftsfall</xpdl2:Actual>
+                      </xpdExt:DataMapping>
+                      <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="InputToService.DataMapperContent" Direction="IN" Formal="SearchDataInputParameters.versichNr">
+                        <xpdl2:Actual ScriptGrammar="JavaScript">AHVNummer</xpdl2:Actual>
                       </xpdExt:DataMapping>
                     </xpdExt:DataMappings>
                   </xpdExt:InputMappings>
@@ -798,8 +827,8 @@ else {&#xD;
                     </xpdExt:DataMappings>
                   </xpdExt:OutputMappings>
                 </xpdl2:MessageOut>
-                <xpdl2:WebServiceOperation xpdExt:SecurityProfile="" xpdExt:Transport="http://www.tibco.com/namespaces/ws/2004/soap/binding/JMS" xpdExt:Alias="_cUmaphM-EemnLOiGQkEvTQ" OperationName="SearchData">
-                  <xpdl2:Service xpdExt:IsRemote="true" PortName="saveDataCaseSOAP" ServiceName="saveDataCase">
+                <xpdl2:WebServiceOperation xpdExt:SecurityProfile="" xpdExt:Transport="http://www.tibco.com/namespaces/ws/2004/soap/binding/JMS" xpdExt:Alias="___xMYCM-EemMt43W4eho3w" OperationName="SearchData">
+                  <xpdl2:Service xpdExt:IsRemote="true" PortName="saveDataCase_JMSSOAP" ServiceName="saveDataCase_JMS">
                     <xpdl2:EndPoint EndPointType="WSDL">
                       <xpdl2:ExternalReference location="saveDataCase_JMS.wsdl"/>
                     </xpdl2:EndPoint>
@@ -812,7 +841,7 @@ else {&#xD;
             </xpdl2:Task>
           </xpdl2:Implementation>
           <xpdl2:Performers>
-            <xpdl2:Performer>_cUmaphM-EemnLOiGQkEvTQ</xpdl2:Performer>
+            <xpdl2:Performer>___xMYCM-EemMt43W4eho3w</xpdl2:Performer>
           </xpdl2:Performers>
           <xpdl2:NodeGraphicsInfos>
             <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_npPfQRM7EemnLOiGQkEvTQ" Width="96.0">
@@ -833,7 +862,7 @@ else {&#xD;
           </xpdExt:AssociatedParameters>
           <xpdExt:Audit/>
           <xpdExt:ScriptInformation Id="_wDEecBNAEemPWeDHMRBmHQ" Direction="OUT">
-            <xpdExt:Expression ScriptGrammar="XPath"></xpdExt:Expression>
+            <xpdExt:Expression ScriptGrammar="XPath"/>
           </xpdExt:ScriptInformation>
         </xpdl2:Activity>
         <xpdl2:Activity Id="_npPfNRM7EemnLOiGQkEvTQ" Name="ScriptTaskMappingIntern" xpdExt:Visibility="Private" xpdExt:DisplayName="ScriptTaskMappingIntern">
@@ -847,9 +876,9 @@ else {&#xD;
 				var targetline = com_example_arraymapping_Factory.createGS();&#xD;
 				&#xD;
    					 &#xD;
-				targetline.ahvNummer = responseline.AHVNummer;&#xD;
-				targetline.dossierID = responseline.dossierID;&#xD;
-				targetline.caseID = responseline.caseID;&#xD;
+				targetline.versichNr = responseline.versichNr;&#xD;
+				targetline.partnerID = responseline.partnerID;&#xD;
+				targetline.geschaeftsfallNr = responseline.geschaeftsfallNr;&#xD;
 				targetline.dokumentenArt=responseline.dokumentenArt;&#xD;
 				targetline.geschaeftsfall=responseline.geschaeftsfall;	 				     			         				      &#xD;
 				&#xD;
@@ -903,26 +932,6 @@ else {&#xD;
           </xpdExt:ActivityResourcePatterns>
           <xpdExt:AssociatedParameters DisableImplicitAssociation="false"/>
         </xpdl2:Activity>
-        <xpdl2:Activity Id="_MGsbABQiEemj5-ScqcIGvQ" Name="TimerEvent" xpdExt:Visibility="Private" xpdExt:DisplayName="Timer Event">
-          <xpdl2:Event>
-            <xpdl2:IntermediateEvent Target="_npPfMRM7EemnLOiGQkEvTQ" Trigger="Timer">
-              <xpdl2:TriggerTimer>
-                <xpdl2:TimeDate></xpdl2:TimeDate>
-              </xpdl2:TriggerTimer>
-            </xpdl2:IntermediateEvent>
-          </xpdl2:Event>
-          <xpdl2:Deadline>
-            <xpdl2:DeadlineDuration ScriptGrammar="ConstantPeriod"><xpdExt:ConstantPeriod Minutes="2"/></xpdl2:DeadlineDuration>
-          </xpdl2:Deadline>
-          <xpdl2:NodeGraphicsInfos>
-            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="27.0" LaneId="_npPfQRM7EemnLOiGQkEvTQ" Width="27.0">
-              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
-            </xpdl2:NodeGraphicsInfo>
-            <xpdl2:NodeGraphicsInfo ToolId="XPD.BorderEventPosition">
-              <xpdl2:Coordinates XCoordinate="12.812499999999998" YCoordinate="0.0"/>
-            </xpdl2:NodeGraphicsInfo>
-          </xpdl2:NodeGraphicsInfos>
-        </xpdl2:Activity>
       </xpdl2:Activities>
       <xpdl2:Transitions>
         <xpdl2:Transition Id="_npPfNhM7EemnLOiGQkEvTQ" xpdExt:DisplayName="" Name="" From="_npPfJBM7EemnLOiGQkEvTQ" To="_npPfMRM7EemnLOiGQkEvTQ">
@@ -951,18 +960,6 @@ else {&#xD;
             <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
           </xpdl2:ConnectorGraphicsInfos>
         </xpdl2:Transition>
-        <xpdl2:Transition Id="_M3HyYBQiEemj5-ScqcIGvQ" xpdExt:DisplayName="" Name="" From="_MGsbABQiEemj5-ScqcIGvQ" To="_npPfJRM7EemnLOiGQkEvTQ">
-          <xpdl2:ConnectorGraphicsInfos>
-            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo">
-              <xpdl2:Coordinates XCoordinate="234.0" YCoordinate="-1.0"/>
-              <xpdl2:Coordinates XCoordinate="-1.0" YCoordinate="-83.0"/>
-            </xpdl2:ConnectorGraphicsInfo>
-            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.LabelAnchorPosition">
-              <xpdl2:Coordinates XCoordinate="50.0" YCoordinate="0.0"/>
-              <xpdl2:Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
-            </xpdl2:ConnectorGraphicsInfo>
-          </xpdl2:ConnectorGraphicsInfos>
-        </xpdl2:Transition>
       </xpdl2:Transitions>
       <xpdl2:ExtendedAttributes>
         <xpdl2:ExtendedAttribute Name="Destination" Value="BPM"/>
@@ -971,8 +968,64 @@ else {&#xD;
             <simulation:ParameterDistribution ParameterId="DokumentenArt"/>
             <simulation:ParameterDistribution ParameterId="Geschaeftsfall"/>
             <simulation:ParameterDistribution ParameterId="Geschaeftsfall_found"/>
+            <simulation:ParameterDistribution ParameterId="WorkListFasade"/>
           </simulation:WorkflowProcessSimulationData></xpdl2:ExtendedAttribute>
       </xpdl2:ExtendedAttributes>
+      <xpdl2:Extensions/>
+      <xpdExt:ProcessDataWorkItemAttributeMappings>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute11</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.abrechNr</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute8</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.aktuelleBearbeiter</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute9</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.anmeldeNr</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute7</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.dokEingangsdatum</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute14</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.dokumentenArt</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute3</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.personenID</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute21</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.prozessstatus</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute12</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.unternehmensID</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute4</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.versNachname</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute13</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.versVorname</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute2</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.versichNr</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute6</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.wiedervorlagedatum</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+        <xpdExt:DataWorkItemAttributeMapping>
+          <xpdExt:WorkItemAttribute>attribute10</xpdExt:WorkItemAttribute>
+          <xpdExt:ProcessData>WorkListFasade.zusatzbezeichnung</xpdExt:ProcessData>
+        </xpdExt:DataWorkItemAttributeMapping>
+      </xpdExt:ProcessDataWorkItemAttributeMappings>
     </xpdl2:WorkflowProcess>
     <xpdl2:WorkflowProcess Id="_xWZRABQQEemj5-ScqcIGvQ" xpdExt:DisplayName="Tester_WP" Name="Tester_WP">
       <xpdl2:ProcessHeader/>
@@ -1016,7 +1069,7 @@ else {&#xD;
               <xpdl2:Length>50</xpdl2:Length>
             </xpdl2:BasicType>
           </xpdl2:DataType>
-          <xpdl2:InitialValue></xpdl2:InitialValue>
+          <xpdl2:InitialValue/>
         </xpdl2:DataField>
         <xpdl2:DataField Id="_HCGAERQfEemj5-ScqcIGvQ" xpdExt:DisplayName="Geschaeftsfall_found" Name="Geschaeftsfall_found" IsArray="true" ReadOnly="false">
           <xpdl2:DataType>
@@ -1103,6 +1156,18 @@ else {&#xD;
                   <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="Geschaeftsfall">
                     <xpdl2:Actual ScriptGrammar="JavaScript">Geschaeftsfall</xpdl2:Actual>
                   </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WorkListFasade.versichNr">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">AHVNummer</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WorkListFasade.dokumentenArt">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">DokumentenArt</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WorkListFasade.wiedervorlagedatum">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">Frist</xpdl2:Actual>
+                  </xpdExt:DataMapping>
+                  <xpdExt:DataMapping xpdExt:SourceContributorId="ActivityInterface.DataMapperContent" xpdExt:TargetContributorId="ProcessToSubProcess.DataMapperContent" Direction="IN" Formal="WorkListFasade.aktuelleBearbeiter">
+                    <xpdl2:Actual ScriptGrammar="JavaScript">Performer</xpdl2:Actual>
+                  </xpdExt:DataMapping>
                 </xpdExt:DataMappings>
               </xpdExt:InputMappings>
             </xpdl2:SubFlow>
@@ -1140,7 +1205,7 @@ else {&#xD;
           </xpdExt:ActivityResourcePatterns>
           <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
             <xpdExt:AssociatedParameter FormalParam="Geschaeftsfall_found" Mode="INOUT" Mandatory="false">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
           </xpdExt:AssociatedParameters>
         </xpdl2:Activity>
@@ -1270,7 +1335,7 @@ else {&#xD;
           <xpdl2:DataType>
             <xpdl2:BasicType Type="DATETIME"/>
           </xpdl2:DataType>
-          <xpdl2:InitialValue></xpdl2:InitialValue>
+          <xpdl2:InitialValue/>
         </xpdl2:DataField>
       </xpdl2:DataFields>
       <xpdl2:Activities>
@@ -1308,16 +1373,16 @@ else {&#xD;
           </xpdExt:ActivityResourcePatterns>
           <xpdExt:AssociatedParameters DisableImplicitAssociation="false">
             <xpdExt:AssociatedParameter FormalParam="Geschaeftsfall" Mode="INOUT" Mandatory="true">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="DokumentenArt" Mode="INOUT" Mandatory="true">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="AHVNummer" Mode="INOUT" Mandatory="true">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
             <xpdExt:AssociatedParameter FormalParam="Frist" Mode="INOUT" Mandatory="true">
-              <xpdl2:Description/>
+              <xpdl2:Description></xpdl2:Description>
             </xpdExt:AssociatedParameter>
           </xpdExt:AssociatedParameters>
         </xpdl2:Activity>

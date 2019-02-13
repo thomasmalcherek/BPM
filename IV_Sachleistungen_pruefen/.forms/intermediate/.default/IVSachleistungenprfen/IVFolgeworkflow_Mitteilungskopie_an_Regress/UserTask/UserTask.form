@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" generated="true" id="_tkIV0BW8Eemwx6NixRoh7A" formatVersion="4.0.0">
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" generated="true" id="_i3SEMC98Eem8NYwCvBPJhw" formatVersion="4.0.0">
   <form:runtimeDependencies>
-    <form:package>com.example.worklistfasade.WorklistfasadePackage</form:package>
     <form:package>com.example.comigsbom.ComigsbomPackage</form:package>
-    <form:factory>com.example.worklistfasade.WorklistfasadeFactory</form:factory>
+    <form:package>com.example.worklistfasade.WorklistfasadePackage</form:package>
     <form:factory>com.example.comigsbom.ComigsbomFactory</form:factory>
-    <form:class>com.example.worklistfasade.WorkListFasade</form:class>
-    <form:class>com.example.comigsbom.Geschftsfall</form:class>
-    <form:class>com.example.comigsbom.Versicherter</form:class>
+    <form:factory>com.example.worklistfasade.WorklistfasadeFactory</form:factory>
     <form:class>com.example.comigsbom.Mitglied</form:class>
+    <form:class>com.example.comigsbom.Versicherter</form:class>
+    <form:class>com.example.comigsbom.Geschftsfall</form:class>
     <form:class>com.example.comigsbom.Dokument</form:class>
+    <form:class>com.example.worklistfasade.WorkListFasade</form:class>
   </form:runtimeDependencies>
   <form:externalResources>
     <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
@@ -41,249 +41,257 @@
     </form:rule>
   </form:rules>
   <form:bindings>
-    <form:binding generated="true" direction="bothways" name="_RU6HABW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgKNoC98Eem8NYwCvBPJhw">
       <form:source target="data.Geschaeftsfall" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Geschaeftsfall.value"/>
       <form:destination target="pane.Geschaeftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.Geschaeftsfall.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HDhW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgMC0i98Eem8NYwCvBPJhw">
       <form:source target="data.Mitglied" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Mitglied.value"/>
       <form:destination target="pane.Mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.Mitglied.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HFhW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgMp5y98Eem8NYwCvBPJhw">
       <form:source target="data.Versicherte" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Versicherte.value"/>
       <form:destination target="pane.Versicherte" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.Versicherte.value"/>
     </form:binding>
-    <form:binding generated="true" direction="sourceToDest" name="_RU6HIRW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="sourceToDest" name="_UgOfEy98Eem8NYwCvBPJhw">
       <form:source target="data.MasterProcessID" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.MasterProcessID.value"/>
       <form:destination target="control.MasterProcessID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.MasterProcessID.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HIhW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgPGIC98Eem8NYwCvBPJhw">
       <form:source target="data.Dokument" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Dokument.value"/>
       <form:destination target="pane.Dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.Dokument.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HMBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgSwgi98Eem8NYwCvBPJhw">
       <form:source target="data.WorkkListFasade" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.WorkkListFasade.value"/>
       <form:destination target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.WorkkListFasade.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HARW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgKNoS98Eem8NYwCvBPJhw">
       <form:source target="pane.Geschaeftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6XwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=PKID?" data="form.pane.Geschaeftsfall.value.PKID"/>
       <form:destination target="control.Geschaeftsfall_PKID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_PKID.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HAhW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgK0sC98Eem8NYwCvBPJhw">
       <form:source target="pane.Geschaeftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6YgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=processNumber?" data="form.pane.Geschaeftsfall.value.processNumber"/>
       <form:destination target="control.Geschaeftsfall_processNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_processNumber.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HAxW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgK0sS98Eem8NYwCvBPJhw">
       <form:source target="pane.Geschaeftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6ZQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=urgent?" data="form.pane.Geschaeftsfall.value.urgent"/>
       <form:destination target="control.Geschaeftsfall_urgent" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_urgent.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HBBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgK0si98Eem8NYwCvBPJhw">
       <form:source target="pane.Geschaeftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6aAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=processUser?" data="form.pane.Geschaeftsfall.value.processUser"/>
       <form:destination target="control.Geschaeftsfall_processUser" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_processUser.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HBRW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgLbwC98Eem8NYwCvBPJhw">
       <form:source target="pane.Geschaeftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6awUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=workflowDate?" data="form.pane.Geschaeftsfall.value.workflowDate"/>
       <form:destination target="control.Geschaeftsfall_workflowDate" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_workflowDate.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HBhW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgLbwS98Eem8NYwCvBPJhw">
       <form:source target="pane.Geschaeftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6bgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=messagePK?" data="form.pane.Geschaeftsfall.value.messagePK"/>
       <form:destination target="control.Geschaeftsfall_messagePK" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_messagePK.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HBxW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgLbwi98Eem8NYwCvBPJhw">
       <form:source target="pane.Geschaeftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6cQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=senderName?" data="form.pane.Geschaeftsfall.value.senderName"/>
       <form:destination target="control.Geschaeftsfall_senderName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_senderName.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HCBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgLbwy98Eem8NYwCvBPJhw">
       <form:source target="pane.Geschaeftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6dAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=ownerName?" data="form.pane.Geschaeftsfall.value.ownerName"/>
       <form:destination target="control.Geschaeftsfall_ownerName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_ownerName.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HCRW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgLbxC98Eem8NYwCvBPJhw">
       <form:source target="pane.Geschaeftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6dwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=workflowState?" data="form.pane.Geschaeftsfall.value.workflowState"/>
       <form:destination target="control.Geschaeftsfall_workflowState" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_workflowState.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HChW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgLbxS98Eem8NYwCvBPJhw">
       <form:source target="pane.Geschaeftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6egUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=handlingReason?" data="form.pane.Geschaeftsfall.value.handlingReason"/>
       <form:destination target="control.Geschaeftsfall_handlingReason" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_handlingReason.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HCxW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgLbxi98Eem8NYwCvBPJhw">
       <form:source target="pane.Geschaeftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6fQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=feedback?" data="form.pane.Geschaeftsfall.value.feedback"/>
       <form:destination target="control.Geschaeftsfall_feedback" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_feedback.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HDBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgMC0C98Eem8NYwCvBPJhw">
       <form:source target="pane.Geschaeftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6gAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=typNummer?" data="form.pane.Geschaeftsfall.value.typNummer"/>
       <form:destination target="control.Geschaeftsfall_typNummer" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_typNummer.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HDRW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgMC0S98Eem8NYwCvBPJhw">
       <form:source target="pane.Geschaeftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6gwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=typBezeichnung?" data="form.pane.Geschaeftsfall.value.typBezeichnung"/>
       <form:destination target="control.Geschaeftsfall_typBezeichnung" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_typBezeichnung.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HDxW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgMp4C98Eem8NYwCvBPJhw">
       <form:source target="pane.Mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6MgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=MGPartnerID?" data="form.pane.Mitglied.value.MGPartnerID"/>
       <form:destination target="control.Mitglied_MGPartnerID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Mitglied_MGPartnerID.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HEBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgMp4S98Eem8NYwCvBPJhw">
       <form:source target="pane.Mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6NQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=accountNumber?" data="form.pane.Mitglied.value.accountNumber"/>
       <form:destination target="control.Mitglied_accountNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Mitglied_accountNumber.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HERW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgMp4i98Eem8NYwCvBPJhw">
       <form:source target="pane.Mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6OAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=companyID?" data="form.pane.Mitglied.value.companyID"/>
       <form:destination target="control.Mitglied_companyID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Mitglied_companyID.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HEhW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgMp4y98Eem8NYwCvBPJhw">
       <form:source target="pane.Mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6OwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=name?" data="form.pane.Mitglied.value.name"/>
       <form:destination target="control.Mitglied_name" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Mitglied_name.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HExW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgMp5C98Eem8NYwCvBPJhw">
       <form:source target="pane.Mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6PgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=additionalName?" data="form.pane.Mitglied.value.additionalName"/>
       <form:destination target="control.Mitglied_additionalName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Mitglied_additionalName.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HFBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgMp5S98Eem8NYwCvBPJhw">
       <form:source target="pane.Mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6QQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=foundingDate?" data="form.pane.Mitglied.value.foundingDate"/>
       <form:destination target="control.Mitglied_foundingDate" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Mitglied_foundingDate.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HFRW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgMp5i98Eem8NYwCvBPJhw">
       <form:source target="pane.Mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6RAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=anmeldenummer?" data="form.pane.Mitglied.value.anmeldenummer"/>
       <form:destination target="control.Mitglied_anmeldenummer" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Mitglied_anmeldenummer.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HFxW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgNQ8C98Eem8NYwCvBPJhw">
       <form:source target="pane.Versicherte" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6EQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=VSPartnerID?" data="form.pane.Versicherte.value.VSPartnerID"/>
       <form:destination target="control.Versicherte_VSPartnerID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Versicherte_VSPartnerID.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HGBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgNQ8S98Eem8NYwCvBPJhw">
       <form:source target="pane.Versicherte" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6FAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=secureNumber?" data="form.pane.Versicherte.value.secureNumber"/>
       <form:destination target="control.Versicherte_secureNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Versicherte_secureNumber.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HGRW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgNQ8i98Eem8NYwCvBPJhw">
       <form:source target="pane.Versicherte" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6FwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=personID?" data="form.pane.Versicherte.value.personID"/>
       <form:destination target="control.Versicherte_personID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Versicherte_personID.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HGhW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgN4AC98Eem8NYwCvBPJhw">
       <form:source target="pane.Versicherte" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6GgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=lastName?" data="form.pane.Versicherte.value.lastName"/>
       <form:destination target="control.Versicherte_lastName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Versicherte_lastName.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HGxW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgN4AS98Eem8NYwCvBPJhw">
       <form:source target="pane.Versicherte" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6HQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=firstName?" data="form.pane.Versicherte.value.firstName"/>
       <form:destination target="control.Versicherte_firstName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Versicherte_firstName.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HHBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgN4Ai98Eem8NYwCvBPJhw">
       <form:source target="pane.Versicherte" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6IAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=title?" data="form.pane.Versicherte.value.title"/>
       <form:destination target="control.Versicherte_title" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Versicherte_title.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HHRW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgN4Ay98Eem8NYwCvBPJhw">
       <form:source target="pane.Versicherte" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6IwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=degree?" data="form.pane.Versicherte.value.degree"/>
       <form:destination target="control.Versicherte_degree" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Versicherte_degree.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HHhW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgOfEC98Eem8NYwCvBPJhw">
       <form:source target="pane.Versicherte" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6JgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=gender?" data="form.pane.Versicherte.value.gender"/>
       <form:destination target="control.Versicherte_gender" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Versicherte_gender.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HHxW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgOfES98Eem8NYwCvBPJhw">
       <form:source target="pane.Versicherte" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6KQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=birthDate?" data="form.pane.Versicherte.value.birthDate"/>
       <form:destination target="control.Versicherte_birthDate" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Versicherte_birthDate.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HIBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgOfEi98Eem8NYwCvBPJhw">
       <form:source target="pane.Versicherte" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6LAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=sprache?" data="form.pane.Versicherte.value.sprache"/>
       <form:destination target="control.Versicherte_sprache" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Versicherte_sprache.value"/>
     </form:binding>
-    <form:binding generated="true" direction="sourceToDest" name="_RU6HIxW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="sourceToDest" name="_UgQUQC98Eem8NYwCvBPJhw">
       <form:source target="pane.Dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6owUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=dokumentID?" data="form.pane.Dokument.value.dokumentID"/>
       <form:destination target="control.Dokument_dokumentID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Dokument_dokumentID.value"/>
     </form:binding>
-    <form:binding generated="true" direction="sourceToDest" name="_RU6HJBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="sourceToDest" name="_UgQUQS98Eem8NYwCvBPJhw">
       <form:source target="pane.Dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6pgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentNumber?" data="form.pane.Dokument.value.documentNumber"/>
       <form:destination target="control.Dokument_documentNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Dokument_documentNumber.value"/>
     </form:binding>
-    <form:binding generated="true" direction="sourceToDest" name="_RU6HJRW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="sourceToDest" name="_UgRiYC98Eem8NYwCvBPJhw">
       <form:source target="pane.Dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6qQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentType?" data="form.pane.Dokument.value.documentType"/>
       <form:destination target="control.Dokument_documentType" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Dokument_documentType.value"/>
     </form:binding>
-    <form:binding generated="true" direction="sourceToDest" name="_RU6HJhW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="sourceToDest" name="_UgRiYS98Eem8NYwCvBPJhw">
       <form:source target="pane.Dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6rAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentSecurity?" data="form.pane.Dokument.value.documentSecurity"/>
       <form:destination target="control.Dokument_documentSecurity" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Dokument_documentSecurity.value"/>
     </form:binding>
-    <form:binding generated="true" direction="sourceToDest" name="_RU6HJxW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="sourceToDest" name="_UgRiYi98Eem8NYwCvBPJhw">
       <form:source target="pane.Dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6rwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentDateOfReceipt?" data="form.pane.Dokument.value.documentDateOfReceipt"/>
       <form:destination target="control.Dokument_documentDateOfReceipt" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Dokument_documentDateOfReceipt.value"/>
     </form:binding>
-    <form:binding generated="true" direction="sourceToDest" name="_RU6HKBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="sourceToDest" name="_UgRiYy98Eem8NYwCvBPJhw">
       <form:source target="pane.Dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6sgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentScanDate?" data="form.pane.Dokument.value.documentScanDate"/>
       <form:destination target="control.Dokument_documentScanDate" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Dokument_documentScanDate.value"/>
     </form:binding>
-    <form:binding generated="true" direction="sourceToDest" name="_RU6HKRW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="sourceToDest" name="_UgRiZC98Eem8NYwCvBPJhw">
       <form:source target="pane.Dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6tQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=stackName?" data="form.pane.Dokument.value.stackName"/>
       <form:destination target="control.Dokument_stackName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Dokument_stackName.value"/>
     </form:binding>
-    <form:binding generated="true" direction="sourceToDest" name="_RU6HKhW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="sourceToDest" name="_UgRiZS98Eem8NYwCvBPJhw">
       <form:source target="pane.Dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6uAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=effortType?" data="form.pane.Dokument.value.effortType"/>
       <form:destination target="control.Dokument_effortType" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Dokument_effortType.value"/>
     </form:binding>
-    <form:binding generated="true" direction="sourceToDest" name="_RU6HKxW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="sourceToDest" name="_UgSJcC98Eem8NYwCvBPJhw">
       <form:source target="pane.Dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6uwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=keyword?" data="form.pane.Dokument.value.keyword"/>
       <form:destination target="control.Dokument_keyword" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Dokument_keyword.value"/>
     </form:binding>
-    <form:binding generated="true" direction="sourceToDest" name="_RU6HLBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="sourceToDest" name="_UgSJcS98Eem8NYwCvBPJhw">
       <form:source target="pane.Dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6vgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=kurztext?" data="form.pane.Dokument.value.kurztext"/>
       <form:destination target="control.Dokument_kurztext" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Dokument_kurztext.value"/>
     </form:binding>
-    <form:binding generated="true" direction="sourceToDest" name="_RU6HLRW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="sourceToDest" name="_UgSJci98Eem8NYwCvBPJhw">
       <form:source target="pane.Dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6wQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=kommentar?" data="form.pane.Dokument.value.kommentar"/>
       <form:destination target="control.Dokument_kommentar" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Dokument_kommentar.value"/>
     </form:binding>
-    <form:binding generated="true" direction="sourceToDest" name="_RU6HLhW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="sourceToDest" name="_UgSwgC98Eem8NYwCvBPJhw">
       <form:source target="pane.Dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6xAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=anmeldenummer?" data="form.pane.Dokument.value.anmeldenummer"/>
       <form:destination target="control.Dokument_anmeldenummer" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Dokument_anmeldenummer.value"/>
     </form:binding>
-    <form:binding generated="true" direction="sourceToDest" name="_RU6HLxW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="sourceToDest" name="_UgSwgS98Eem8NYwCvBPJhw">
       <form:source target="pane.Dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6xwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=formularempfnger?" data="form.pane.Dokument.value.formularempfnger"/>
       <form:destination target="control.Dokument_formularempfnger" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Dokument_formularempfnger.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HMRW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgSwgy98Eem8NYwCvBPJhw">
       <form:source target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_R0qmMBTtEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=versichNr?" data="form.pane.WorkkListFasade.value.versichNr"/>
       <form:destination target="control.WorkkListFasade_versichNr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkkListFasade_versichNr.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HMhW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgSwhC98Eem8NYwCvBPJhw">
       <form:source target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_UYsCIBTtEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=personenID?" data="form.pane.WorkkListFasade.value.personenID"/>
       <form:destination target="control.WorkkListFasade_personenID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkkListFasade_personenID.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HMxW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgSwhS98Eem8NYwCvBPJhw">
       <form:source target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_6XLyoBTtEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=versNachname?" data="form.pane.WorkkListFasade.value.versNachname"/>
       <form:destination target="control.WorkkListFasade_versNachname" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkkListFasade_versNachname.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HNBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgSwhi98Eem8NYwCvBPJhw">
       <form:source target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_9b45wBTtEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=wiedervorlagedatum?" data="form.pane.WorkkListFasade.value.wiedervorlagedatum"/>
       <form:destination target="control.WorkkListFasade_wiedervorlagedatum" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkkListFasade_wiedervorlagedatum.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HNRW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgTXkC98Eem8NYwCvBPJhw">
       <form:source target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#__X3eQBTtEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=dokEingangsdatum?" data="form.pane.WorkkListFasade.value.dokEingangsdatum"/>
       <form:destination target="control.WorkkListFasade_dokEingangsdatum" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkkListFasade_dokEingangsdatum.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HNhW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgTXkS98Eem8NYwCvBPJhw">
       <form:source target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_FxKioBTuEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=aktuelleBearbeiter?" data="form.pane.WorkkListFasade.value.aktuelleBearbeiter"/>
       <form:destination target="control.WorkkListFasade_aktuelleBearbeiter" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkkListFasade_aktuelleBearbeiter.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HNxW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgTXki98Eem8NYwCvBPJhw">
       <form:source target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_HjWR8BTuEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=anmeldeNr?" data="form.pane.WorkkListFasade.value.anmeldeNr"/>
       <form:destination target="control.WorkkListFasade_anmeldeNr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkkListFasade_anmeldeNr.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HOBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgT-oC98Eem8NYwCvBPJhw">
       <form:source target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_JLhwsBTuEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=zusatzbezeichnung?" data="form.pane.WorkkListFasade.value.zusatzbezeichnung"/>
       <form:destination target="control.WorkkListFasade_zusatzbezeichnung" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkkListFasade_zusatzbezeichnung.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HORW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgT-oS98Eem8NYwCvBPJhw">
       <form:source target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_LQcOwBTuEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=abrechNr?" data="form.pane.WorkkListFasade.value.abrechNr"/>
       <form:destination target="control.WorkkListFasade_abrechNr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkkListFasade_abrechNr.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HOhW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgT-oi98Eem8NYwCvBPJhw">
       <form:source target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_MwY-kBTuEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=unternehmensID?" data="form.pane.WorkkListFasade.value.unternehmensID"/>
       <form:destination target="control.WorkkListFasade_unternehmensID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkkListFasade_unternehmensID.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HOxW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgT-oy98Eem8NYwCvBPJhw">
       <form:source target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_O6rE0BTuEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=versVorname?" data="form.pane.WorkkListFasade.value.versVorname"/>
       <form:destination target="control.WorkkListFasade_versVorname" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkkListFasade_versVorname.value"/>
     </form:binding>
-    <form:binding generated="true" direction="bothways" name="_RU6HPBW8Eemwx6NixRoh7A">
+    <form:binding generated="true" direction="bothways" name="_UgT-pC98Eem8NYwCvBPJhw">
       <form:source target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_QfHTEBTuEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=dokumentenArt?" data="form.pane.WorkkListFasade.value.dokumentenArt"/>
       <form:destination target="control.WorkkListFasade_dokumentenArt" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkkListFasade_dokumentenArt.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_UgT-pS98Eem8NYwCvBPJhw">
+      <form:source target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_yLSr0Bf5EemVOau1wk8QzA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=prozessstatus?" data="form.pane.WorkkListFasade.value.prozessstatus"/>
+      <form:destination target="control.WorkkListFasade_prozessstatus" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkkListFasade_prozessstatus.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_UgT-pi98Eem8NYwCvBPJhw">
+      <form:source target="pane.WorkkListFasade" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value WorkListFasade.bom#_qMNxkCCuEem5u_wcRlbMKw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.worklistfasade%3a%3aWorkListFasade%26n=geschaeftsfallNr?" data="form.pane.WorkkListFasade.value.geschaeftsfallNr"/>
+      <form:destination target="control.WorkkListFasade_geschaeftsfallNr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WorkkListFasade_geschaeftsfallNr.value"/>
     </form:binding>
   </form:bindings>
   <form:targets>
@@ -324,24 +332,15 @@
       </form:control>
       <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Geschaeftsfall_processNumber">
         <form:propertySet xsi:type="et:TextPropertySet">
-          <et:numeric>true</et:numeric>
-          <et:formatRef>resource.common.format_integer</et:formatRef>
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
         </form:propertySet>
         <form:label>GeschäftsfallNummer</form:label>
         <form:hint/>
         <form:visible>true</form:visible>
         <form:enabled>true</form:enabled>
-        <form:validation generated="true" messageRef="resource.common.validation_integer" name="Geschaeftsfall_processNumber__integer" type="javascript" when="oncontrolchange" simple="true">
-          <form:script>if (typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined') {
-tibco.forms.Util.checkInteger(typeof context.stringValue == 'undefined' ? context.value : context.stringValue) ? true :  [context.control.getLabel()]} else {
-var regex = new RegExp(&quot;^-?[0-9]+$&quot;);
-regex.test(typeof context.stringValue == 'undefined' ? context.value : context.stringValue);}</form:script>
-        </form:validation>
-        <form:validation generated="true" messageRef="resource.common.validation_lower_limit_inclusive" name="Geschaeftsfall_processNumber__lowerLimit" type="javascript" when="oncontrolchange" simple="true">
-          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkLowerLimit(context.stringValue, '-2147483648', true) ? true : [context.control.getLabel(), '-2147483648'] : isNaN(context.value) || context.value.valueOf() >= -2147483648;</form:script>
-        </form:validation>
-        <form:validation generated="true" messageRef="resource.common.validation_upper_limit_inclusive" name="Geschaeftsfall_processNumber__upperLimit" type="javascript" when="oncontrolchange" simple="true">
-          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkUpperLimit(context.stringValue, '2147483647', true) ? true : [context.control.getLabel(), '2147483647'] : isNaN(context.value) || context.value.valueOf() &lt;= 2147483647;</form:script>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="Geschaeftsfall_processNumber__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
         </form:validation>
         <form:required>true</form:required>
       </form:control>
@@ -582,17 +581,18 @@ regex.test(typeof context.stringValue == 'undefined' ? context.value : context.s
         </form:validation>
         <form:required>false</form:required>
       </form:control>
-      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Mitglied_foundingDate">
-        <form:propertySet xsi:type="et:TextPropertySet">
-          <et:displayLength>40</et:displayLength>
-          <et:maxLength>50</et:maxLength>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.date" controlType="com.tibco.forms.controls.date" name="control.Mitglied_foundingDate">
+        <form:propertySet xsi:type="et:DatePropertySet">
+          <et:minRelative>true</et:minRelative>
+          <et:maxRelative>true</et:maxRelative>
+          <et:year min="-20" max="20"/>
         </form:propertySet>
         <form:label>GründungsDatum</form:label>
         <form:hint/>
         <form:visible>true</form:visible>
         <form:enabled>true</form:enabled>
-        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="Mitglied_foundingDate__length" type="javascript" when="oncontrolchange" simple="true">
-          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+        <form:validation generated="true" messageRef="resource.common.validation_date_format" name="Mitglied_foundingDate__datetime" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkDateFormat(context.stringValue) ?  true : [context.control.getLabel()] : true;</form:script>
         </form:validation>
         <form:required>false</form:required>
       </form:control>
@@ -822,15 +822,15 @@ regex.test(typeof context.stringValue == 'undefined' ? context.value : context.s
       </form:control>
       <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.Dokument_documentType">
         <form:propertySet xsi:type="et:TextPropertySet">
-          <et:displayLength>25</et:displayLength>
-          <et:maxLength>22</et:maxLength>
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
         </form:propertySet>
         <form:label>DokumenterArt</form:label>
         <form:hint/>
         <form:visible>true</form:visible>
         <form:enabled>true</form:enabled>
         <form:validation generated="true" messageRef="resource.common.validation_text_length" name="Dokument_documentType__length" type="javascript" when="oncontrolchange" simple="true">
-          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 22) ? true : [context.control.getLabel(), '22'] : context.value.length &lt;= 22;</form:script>
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
         </form:validation>
         <form:required>false</form:required>
       </form:control>
@@ -1073,15 +1073,15 @@ regex.test(typeof context.stringValue == 'undefined' ? context.value : context.s
       </form:control>
       <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.WorkkListFasade_aktuelleBearbeiter">
         <form:propertySet xsi:type="et:TextPropertySet">
-          <et:displayLength>25</et:displayLength>
-          <et:maxLength>20</et:maxLength>
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
         </form:propertySet>
         <form:label>aktuelle Bearbeiter</form:label>
         <form:hint/>
         <form:visible>true</form:visible>
         <form:enabled>true</form:enabled>
         <form:validation generated="true" messageRef="resource.common.validation_text_length" name="WorkkListFasade_aktuelleBearbeiter__length" type="javascript" when="oncontrolchange" simple="true">
-          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 20) ? true : [context.control.getLabel(), '20'] : context.value.length &lt;= 20;</form:script>
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
         </form:validation>
         <form:required>false</form:required>
       </form:control>
@@ -1157,15 +1157,43 @@ regex.test(typeof context.stringValue == 'undefined' ? context.value : context.s
       </form:control>
       <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.WorkkListFasade_dokumentenArt">
         <form:propertySet xsi:type="et:TextPropertySet">
-          <et:displayLength>25</et:displayLength>
-          <et:maxLength>20</et:maxLength>
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
         </form:propertySet>
         <form:label>DokumentenArt</form:label>
         <form:hint/>
         <form:visible>true</form:visible>
         <form:enabled>true</form:enabled>
         <form:validation generated="true" messageRef="resource.common.validation_text_length" name="WorkkListFasade_dokumentenArt__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.WorkkListFasade_prozessstatus">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>25</et:displayLength>
+          <et:maxLength>20</et:maxLength>
+        </form:propertySet>
+        <form:label>Prozessstatus</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="WorkkListFasade_prozessstatus__length" type="javascript" when="oncontrolchange" simple="true">
           <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 20) ? true : [context.control.getLabel(), '20'] : context.value.length &lt;= 20;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.WorkkListFasade_geschaeftsfallNr">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>GeschaeftsfallNr.</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="WorkkListFasade_geschaeftsfallNr__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
         </form:validation>
         <form:required>false</form:required>
       </form:control>

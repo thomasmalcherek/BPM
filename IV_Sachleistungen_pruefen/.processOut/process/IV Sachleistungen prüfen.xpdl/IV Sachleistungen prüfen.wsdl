@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:ns="http://www.tibco.com/bs3.0/_q_32sAHvEemexrh4L8sbdw" xmlns:tibex="http://www.tibco.com/bs3.2/extensions" xmlns:ttns="http://example.com/comigsbom" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="IVSachleistungenprfen" targetNamespace="http://www.tibco.com/bs3.0/_q_32sAHvEemexrh4L8sbdw" tibex:XPDL="IV Sachleistungen prüfen.xpdl">
+    <partnerLinkType name="IVSachleistungenpruefenGeschaeftsfallStart_PLT" xmlns="http://docs.oasis-open.org/wsbpel/2.0/plnktype">
+    <role name="IVSachleistungenpruefenGeschaeftsfallStartProvider" portType="ns:IVSachleistungenpruefenGeschaeftsfallStart"/>
+  </partnerLinkType>
+    <wsdl:types>
+    <xsd:schema xmlns="http://www.tibco.com/bs3.0/_q_32sAHvEemexrh4L8sbdw" targetNamespace="http://www.tibco.com/bs3.0/_q_32sAHvEemexrh4L8sbdw">
+      <xsd:simpleType name="string_50">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="50"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema xmlns="http://example.com/comigsbom" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:tns1="http://example.com/comigsbom" targetNamespace="http://example.com/comigsbom">
+      <xsd:annotation>
+        <xsd:documentation>
+          <DocumentationElement BOMORIGIN="/com.igs.bom/Business Objects/comigsbom.bom"/>
+        </xsd:documentation>
+      </xsd:annotation>
+      <xsd:complexType name="Versicherter">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="VSPartnerID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="1" name="secureNumber">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="1" name="personID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="lastName">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="firstName">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="22"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="title">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="degree">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="gender">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="birthDate" type="xsd:date"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="sprache">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Mitglied">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="MGPartnerID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="1" name="accountNumber">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="22"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="1" name="companyID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="22"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="name">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="additionalName">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="22"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="foundingDate" type="xsd:date"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="anmeldenummer">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="22"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="address">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="street">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="postal">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="city">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="canton">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Geschftsfall">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="PKID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="1" name="processNumber">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="urgent" type="xsd:boolean"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="processUser">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="workflowDate" type="xsd:dateTime"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="messagePK">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="senderName">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="ownerName">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="workflowState">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="handlingReason">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="feedback">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="1" name="typNummer" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="typBezeichnung">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Dokument">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="dokumentID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="1" name="documentNumber" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="documentType">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="documentSecurity" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="documentDateOfReceipt" type="xsd:dateTime"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="documentScanDate" type="xsd:dateTime"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="stackName">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="effortType">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="keyword">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="kurztext">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="kommentar">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="anmeldenummer">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="formularempfnger">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="VersicherterElement" type="Versicherter"/>
+      <xsd:element name="MitgliedElement" type="Mitglied"/>
+      <xsd:element name="addressElement" type="address"/>
+      <xsd:element name="GeschftsfallElement" type="Geschftsfall"/>
+      <xsd:element name="DokumentElement" type="Dokument"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IVSachleistungenpruefenGeschaeftsfallStart_StartIVSLGeschaeftsfall_INPUT">
+    <wsdl:part name="Dokument" type="ttns:Dokument"/>
+    <wsdl:part name="Geschaeftsfall" type="ttns:Geschftsfall"/>
+    <wsdl:part name="Mitglied" type="ttns:Mitglied"/>
+    <wsdl:part name="Versicherte" type="ttns:Versicherter"/>
+    <wsdl:part name="WorkflowID" type="ns:string_50"/>
+  </wsdl:message>
+  <wsdl:message name="IVSachleistungenpruefenGeschaeftsfallStart_StartIVSLGeschaeftsfall_OUTPUT">
+    <wsdl:part name="ProcessId" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:portType name="IVSachleistungenpruefenGeschaeftsfallStart" tibex:FlowContainer="_7tJOIBt-Eem5MsW2cdk9dA">
+    <wsdl:operation name="StartIVSLGeschaeftsfall">
+      <wsdl:input message="ns:IVSachleistungenpruefenGeschaeftsfallStart_StartIVSLGeschaeftsfall_INPUT" tibex:Event="_7y9iQht-Eem5MsW2cdk9dA"/>
+      <wsdl:output message="ns:IVSachleistungenpruefenGeschaeftsfallStart_StartIVSLGeschaeftsfall_OUTPUT" tibex:Event="_7y9iQht-Eem5MsW2cdk9dA"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

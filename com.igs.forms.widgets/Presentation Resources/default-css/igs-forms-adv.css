@@ -1,0 +1,434 @@
+@CHARSET "ISO-8859-1";
+
+/* specific Form Design Changes, by JGR
+apply niceForm CSS Tag to Form-Main, and add bpm-nice.css or bpm-nice-adv.css to Form Resources 
+*/
+
+.jsGridDocs {
+	width: 960px !important;
+}
+
+.existingCases_pane {
+	width: 960px !important;
+}
+
+.geschaeftsfall_pane_class {
+	width: 980px !important;
+}
+
+.jsGridNavi {
+	width: 490px !important;
+}
+
+.igsforms-top-pane {
+	height: 460px !important;
+}
+
+.form_title > div > label {
+	font-size: 24px !important;	
+	line-height: 2 !important;
+}
+
+.jsgrid-cell {	
+	font-family: "av45",sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    text-align: left !important;
+}
+
+.jsgrid-header-cell {	
+    padding: .5em !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-align: left !important;
+}
+
+.gwt-Label.nav-tabs-label{
+	font-size: 16px !important;
+	padding-right: 45px !important;
+}
+
+.labelFunktionen{
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+	font-size: 16px !important;
+	font-family: "av65",sans-serif !important;
+	
+}
+
+.document-toolbar {	
+	float: right !important;	
+}
+
+.validation-class {
+	font-size: 14px !important;
+	font-family: "av65",sans-serif !important;
+}
+
+.pane-message-validation-error {
+	font-size: 14px !important;
+}
+
+.frist_control > div {	
+	padding-top: 12px !important;
+}
+
+.frist_control > div > label {
+	margin-right: 111px !important;    
+	margin-top: 10px !important;
+	padding-left: 12px !important;
+}
+
+.dotGreen {
+  	height: 14px;
+  	width: 14px;
+  	margin-top: 5px;
+  	background-color: #00CE00;
+  	border: 2px solid #666666;
+  	border-radius: 50%;
+  	display: inline-block;
+}
+
+.dotRed {
+	height: 14px;
+ 	width: 14px;
+  	margin-top: 5px;
+  	background-color: #ff0000;
+  	border-radius: 50%;
+  	display: inline-block;
+}
+
+.dotCircle {
+  	height: 14px;
+  	width: 14px;
+  	margin-top: 5px;
+  	border: 2px solid #666666;  
+ 	border-radius: 50%;
+  	display: inline-block;
+}
+
+.gwt-TabBar { 
+	border-top: 0px !important;
+}
+
+.hint {
+    padding: 0px 0 !important;
+}
+
+/* **** Form Style Changes */
+/* Change Form Header containing Form Name */
+.niceForm .panel-heading label {
+ 	color: #0A3478 !important; /* PB Blue */
+    font-family: Helvetica !important;
+    font-size: 16px;
+    font-weight: bold !important;
+    margin: 10px 0 0 0px !important;
+}
+
+/* Header with Logo */
+.niceForm .tf-container:first-child > .pane-vertical-top > .panel-heading {
+		height:30px;
+	    background-image: url("../img/formlogo.png");
+	    background-size: 100px;
+	    background-repeat: no-repeat;
+	    background-position: right;
+	    
+	    /* Header bottom Line 
+	    border-bottom : #bbbbbb 1px solid; */
+}
+
+/* disable default panel borders */
+.niceForm .panel {
+	border: 0px;
+}
+
+/* Form Controls general - Control Size */
+.niceForm .form-group > .form-control {
+	padding: 3px 3px 3px 3px;
+	height: 22px;
+	line-height: 1.2;
+}
+
+/* Form Controls general - Label Size > .label-visible */
+.niceForm .control > .label  {
+	padding: 3px 3px 3px 3px !important;
+	height: 20px !important;
+	line-height: 1.1 !important;
+}
+
+/* Checkbox addon - Size */
+.niceForm > .tf-container .control-checkbox > .tf-container > .forms-span-panel > .input-group-addon {
+	padding: 1px 2px 2px 2px;
+}
+
+/* Checkbox addon - Size */
+.niceForm > .tf-container .control-textinput > .tf-container > .forms-span-panel > .input-group-addon {
+	padding: 1px 2px 2px 2px;
+}
+
+/* Checkbox box - Position */
+.niceForm .control-checkbox > .tf-container > .forms-span-panel > .gwt-CheckBox > input {
+    margin-top: 1px;
+}
+
+/* Check box - change Label Order */
+.niceForm > .tf-container .control-checkbox { display: flex !important; }
+.niceForm > .tf-container .control-checkbox > .label { order: 2; display: flex !important; }
+.niceForm > .tf-container .control-checkbox > .tf-container { order: 1; display: flex !important; }
+
+/* Optionlist addon - Size */
+.niceForm > .tf-container .control-optionlist > .tf-container > .forms-span-panel > .input-group-addon {
+	padding: 1px 2px 2px 2px;
+}
+
+/* Hint Size */
+.niceForm .hint {
+   font-size: 12px;
+}
+
+/* **** Static rendering Form Style */
+.niceForm .static-textonly .pane-content > .control > .label {
+  	width: 180px;
+}
+.niceForm .static-textonly .pane-content > .control > .control-widget {
+  	width: 200px;
+  	padding-top: 1px;
+  	border-bottom : #bbbbbb 1px solid;
+}
+
+/* **** Pane Horizontal Left Form Style */
+.niceForm .pane-horizontal-left > .pane-content >  .control > .label {
+  	width: 180px;
+}
+.niceForm .pane-horizontal-left > .pane-content > .control-textinput > .tf-container > .forms-span-panel {
+  	width: 300px; 
+  	padding-top: 1px;
+}
+.niceForm .pane-horizontal-left > .pane-content > .control-optionlist > .tf-container > .forms-span-panel {
+  	width: 300px; 
+  	padding-top: 1px;
+}
+
+/* required Field modifications */
+.niceForm .required .tf-container input{
+	border: rgba(240, 230, 140, 1) 1px solid !important;
+}
+.required .label:after {
+  content:"*" !important; color:red !important;
+}
+.TibcoForms .control.required > div:first-child:before {
+    content: "" !important;
+}
+
+/* **** Form Style fixes */
+
+/* fix Tab Folder Size to store full Tab Name */
+.niceForm > .tf-container > .pane_content > .panel-body .pane-tabbed-top .nav-tabs-label {
+    padding: 3px 45px 3px 0px;
+    color: #0A3478; /* PB Blue */
+}
+.niceForm > .tf-container > .pane_content > .panel-body .gwt-TabBar {
+    /* Header bottom Line */
+	border-bottom : #bbbbbb 1px solid;
+}
+
+/* fix right padding on Form controls */
+.niceForm .tf-container > .form-group .form-control {
+   padding-right: 5px;
+}
+
+/* fix toolbar to left */
+.niceForm > .tf-container .pane_toolbar {
+   border-top : #bbbbbb 1px solid;
+}
+.niceForm > .tf-container .pane_toolbar > .pane-content {
+   float: left !important;
+}
+
+/* fix pane margin */
+.niceForm .tf-container > .panel {
+	margin-bottom: 0px;
+}
+
+/* first tab GWT space */
+.niceForm .gwt-TabBar .gwt-TabBarFirst {
+	width: 0px;
+}
+
+/* ***** general layout fixes */
+
+.niceForm .form-control {
+	border-radius: 1px;
+}
+ 
+.actionlist table tbody{
+	display: inline-flex;
+	flex-direction: row;
+}
+.actionlist  table tbody tr:first-child {
+  	 display:none; 
+}
+.actionlist  table tbody tr {
+	background: transparent;
+	padding-left:10px;
+	padding-right:10px;
+}
+  
+.actionlist  table tbody tr td {
+	background: linear-gradient(to bottom, #1388D8, #277AC1);
+	border-color: #1F619C;
+	color: #FFFFFF;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+.TibcoForms.tf-uir-enabled .actionlist .grid-line-table td {
+  	border: none;
+}
+
+element.style {
+}
+
+.TibcoForms.tf-uir-enabled.tf-compact-3 .pane-grid .control .has-feedback .control-widget {
+	padding-right: 25px;
+}
+.TibcoForms.tf-uir-enabled .pane-grid .control .has-feedback .control-widget {
+	padding-right: 42.5px;
+}
+
+.TibcoForms.tf-uir-enabled .pane-grid.actionlist .control.tfc-shared-mode .control-widget {
+  	color: inherit;
+}
+.TibcoForms.tf-uir-enabled.tf-compact-3 .form-inline .input-group-addon, .tf-compact-3 .input-group-addon {
+	display: none !important;
+}
+.TibcoForms .component .panel-default  {
+	border:none;
+}
+.TibcoForms .pane-grid-content-selected-row {
+	border:	3px solid;
+}
+:focus {
+	outline-style : none;
+}
+.TibcoForms .gwt-CheckBox {
+  	border: none;
+  	background: transparent;
+}
+.pane-horizontal > .tf-container > .component > .label {
+/*	padding-top: 6px;*/
+    padding: 2px;
+}
+.disabled  .input-group-addon {
+	display: none !important;
+}
+.disabled  .choice-button {
+	display: none !important;
+}
+#dual_mode_popup_inner .form-control {
+	height: auto;
+	padding-top: 0px;
+}
+.TibcoForms .toolbar > .pane-content {
+	float: left;
+	width: 100%;
+}
+.TibcoForms .toolbar  .btn {
+	width: 100%;
+	font-size: 12px;
+}
+
+.tf-compact-3 .has-feedback .form-control {
+	padding-right: 0px;
+}
+.TibcoForms .pane-vertical-left > .tf-container > .component > .label {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.TibcoForms .pane-vertical-left > .tf-container > .component > * {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.TibcoForms .form-group {
+   margin-bottom: 0px;
+   }
+   
+.TibcoForms .form-control {
+	height: inherit;
+}
+
+.TibcoForms  textarea.form-control {
+	height: auto;
+}
+
+.TibcoForms .toolbar .pane-content{
+	position: relative;
+	float: left;
+}
+
+.TibcoForms .pane-tabbed > .pane-content  > .component {
+	border: 1px solid;
+	border-color: #ddd;
+}
+.TibcoForms.tf-uir-enabled .gwt-TabBarItem-wrapper-selected .gwt-Label.nav-tabs-label {
+	top: 2px;
+}
+.TibcoForms {
+	background-color: #fff;
+}
+/* remove dotted line on focus */
+#JSX *:focus {
+	outline: inherit;
+}
+#JSX .jsx-tibco-forms  {
+	height: auto !important;
+}
+
+/* set table 100% */
+.TibcoForms.tf-uir-enabled table.table-striped {
+	width: 100%;
+}
+
+.TibcoForms .form-group textarea {
+	width: 100%;
+}
+.TibcoForms  .menuButton .btn {
+	/* width:  200px; */
+	font-size: 200%;
+}
+.TibcoForms.tf-uir-enabled .control-radiogroup .tf-container .form-group {
+	border: none;
+}
+/* remove +- buttons in the readonly list of text */
+.TibcoForms .read-only .list-commands {
+	display: none;
+}
+
+.TibcoForms .pane-horizontal > .pane-content > .control > div {
+ 	vertical-align: middle;
+ }
+ /* pane navigation for record list */
+ .TibcoForms .pane-page-navigation:nth-child(3) {
+    /* display: none; */
+}
+
+/*special formating */
+
+.niceForm .btn-help .tf-container .btn {
+    /* cleanup default button display */
+    display: inline-block;
+    position: relative;
+    border-radius: 0px;
+    border: 0;
+    background-position: 0px 0px; 
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    color: transparent !important;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+    
+    /* setup new Icon Graphic */
+    background:url(../img/help-24.png);
+    width: 24px;
+    height: 24px;
+}

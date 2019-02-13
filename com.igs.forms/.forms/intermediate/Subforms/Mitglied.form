@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" generated="true" id="_I00ksC94Eem8NYwCvBPJhw" formatVersion="4.0.0">
+  <form:runtimeDependencies>
+    <form:package>com.example.comigsbom.ComigsbomPackage</form:package>
+    <form:factory>com.example.comigsbom.ComigsbomFactory</form:factory>
+    <form:class>com.example.comigsbom.Mitglied</form:class>
+  </form:runtimeDependencies>
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="Mitglied.properties" internal="true" localized="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" name="data.mitglied" label="Mitglied" dataType="uml:Class comigsbom.bom#_JLd6MQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Mitglied?" type="com.example.comigsbom::Mitglied" inout="INOUT"/>
+  </form:dataModel>
+  <form:services/>
+  <form:actions/>
+  <form:conditions/>
+  <form:rules/>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_z1loKB5UEemYEd9aUpmElQ">
+      <form:source target="data.mitglied" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.mitglied.value"></form:source>
+      <form:destination target="pane.mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.mitglied.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loKR5UEemYEd9aUpmElQ">
+      <form:source target="pane.mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6MgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=MGPartnerID?" data="form.pane.mitglied.value.MGPartnerID"></form:source>
+      <form:destination target="control.mitglied_MGPartnerID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.mitglied_MGPartnerID.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loKh5UEemYEd9aUpmElQ">
+      <form:source target="pane.mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6NQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=accountNumber?" data="form.pane.mitglied.value.accountNumber"></form:source>
+      <form:destination target="control.mitglied_accountNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.mitglied_accountNumber.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loKx5UEemYEd9aUpmElQ">
+      <form:source target="pane.mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6OAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=companyID?" data="form.pane.mitglied.value.companyID"></form:source>
+      <form:destination target="control.mitglied_companyID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.mitglied_companyID.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loLB5UEemYEd9aUpmElQ">
+      <form:source target="pane.mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6OwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=name?" data="form.pane.mitglied.value.name"></form:source>
+      <form:destination target="control.mitglied_name" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.mitglied_name.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loLR5UEemYEd9aUpmElQ">
+      <form:source target="pane.mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6PgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=additionalName?" data="form.pane.mitglied.value.additionalName"></form:source>
+      <form:destination target="control.mitglied_additionalName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.mitglied_additionalName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loLh5UEemYEd9aUpmElQ">
+      <form:source target="pane.mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6QQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=foundingDate?" data="form.pane.mitglied.value.foundingDate"></form:source>
+      <form:destination target="control.mitglied_foundingDate" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.mitglied_foundingDate.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loLx5UEemYEd9aUpmElQ">
+      <form:source target="pane.mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6RAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=anmeldenummer?" data="form.pane.mitglied.value.anmeldenummer"></form:source>
+      <form:destination target="control.mitglied_anmeldenummer" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.mitglied_anmeldenummer.value"></form:destination>
+    </form:binding>
+  </form:bindings>
+  <form:targets>
+    <form:target ref="iProcessWorkspace_10.7"/>
+  </form:targets>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Mitglied</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:defaults>
+      <form:labelProperties position="left"/>
+    </form:defaults>
+    <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class comigsbom.bom#_JLd6MQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Mitglied?" name="pane.mitglied" paneType="com.tibco.forms.panes.vertical">
+      <form:label>Mitglied</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="left"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.mitglied_MGPartnerID">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>MGPartnerID</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="mitglied_MGPartnerID__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>true</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.mitglied_accountNumber">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>25</et:displayLength>
+          <et:maxLength>22</et:maxLength>
+        </form:propertySet>
+        <form:label>Abrechnungsnummer</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="mitglied_accountNumber__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 22) ? true : [context.control.getLabel(), '22'] : context.value.length &lt;= 22;</form:script>
+        </form:validation>
+        <form:required>true</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.mitglied_companyID">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>25</et:displayLength>
+          <et:maxLength>22</et:maxLength>
+        </form:propertySet>
+        <form:label>UnternehmensID</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="mitglied_companyID__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 22) ? true : [context.control.getLabel(), '22'] : context.value.length &lt;= 22;</form:script>
+        </form:validation>
+        <form:required>true</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.mitglied_name">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="mitglied_name__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.mitglied_additionalName">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>25</et:displayLength>
+          <et:maxLength>22</et:maxLength>
+        </form:propertySet>
+        <form:label>Zusatzbezeichnung</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="mitglied_additionalName__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 22) ? true : [context.control.getLabel(), '22'] : context.value.length &lt;= 22;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.date" readOnly="true" controlType="com.tibco.forms.controls.date" name="control.mitglied_foundingDate">
+        <form:propertySet xsi:type="et:DatePropertySet">
+          <et:minRelative>true</et:minRelative>
+          <et:maxRelative>true</et:maxRelative>
+          <et:year min="-20" max="20"/>
+        </form:propertySet>
+        <form:label>GründungsDatum</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_date_format" name="mitglied_foundingDate__datetime" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkDateFormat(context.stringValue) ?  true : [context.control.getLabel()] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.mitglied_anmeldenummer">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>25</et:displayLength>
+          <et:maxLength>22</et:maxLength>
+        </form:propertySet>
+        <form:label>Anmeldenummer</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="mitglied_anmeldenummer__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 22) ? true : [context.control.getLabel(), '22'] : context.value.length &lt;= 22;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+  </form:pane>
+</form:form>

@@ -20,7 +20,7 @@ var theClass = function(form) {
 
 com.tibco.data.Loader.currentLoader.registerClass(theClass, "saveDataCaseXSD.bw.test.poc.tibco.com.ComFactory");
 
-theClass.prototype.SUPPORTED_CLASSES = ["saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType", "saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseType", "saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtRequestType", "saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtResponseType", "saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType", "saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseFromBPMType", "saveDataCaseXSD.bw.test.poc.tibco.com.GetDataRequestFromCaseIDType", "saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType", "saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponsesType", "saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType", "saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType", "saveDataCaseXSD.bw.test.poc.tibco.com.WorkPerformerRequestType", "saveDataCaseXSD.bw.test.poc.tibco.com.WorkPerformerResponseType"];
+theClass.prototype.SUPPORTED_CLASSES = ["saveDataCaseXSD.bw.test.poc.tibco.com.dokument", "saveDataCaseXSD.bw.test.poc.tibco.com.versicherter", "saveDataCaseXSD.bw.test.poc.tibco.com.geschaeftsfall", "saveDataCaseXSD.bw.test.poc.tibco.com.mitglied", "saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType", "saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseType", "saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtRequestType", "saveDataCaseXSD.bw.test.poc.tibco.com.GetGeschaeftsfallPerDokumentenArtResponseType", "saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestFromBPMType", "saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseFromBPMType", "saveDataCaseXSD.bw.test.poc.tibco.com.GetDataRequestFromCaseIDType", "saveDataCaseXSD.bw.test.poc.tibco.com.GetDataWFCaseIDResponseType", "saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponsesType", "saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataResponseType", "saveDataCaseXSD.bw.test.poc.tibco.com.SearchDataRequestType", "saveDataCaseXSD.bw.test.poc.tibco.com.WorkPerformerRequestType", "saveDataCaseXSD.bw.test.poc.tibco.com.WorkPerformerResponseType"];
 
 theClass.prototype.checkClassName = function(className) {
     for(i = 0; i < this.SUPPORTED_CLASSES.length; i++) {
@@ -37,6 +37,62 @@ theClass.prototype.create = function(className, jsonData) {
     return classObject;
 };
 
+theClass.prototype.createDokument = function(jsonData) {
+    var classObject = this.loader.newInstance("saveDataCaseXSD.bw.test.poc.tibco.com.dokument", this.context);
+    if(jsonData != undefined)
+        classObject = classObject._setValue(classObject, jsonData);
+    return classObject;
+};
+
+theClass.prototype.listCreateDokument = function(jsonData) {
+    var classObject = this.loader.newInstance("saveDataCaseXSD.bw.test.poc.tibco.com.dokument", this.context);
+    var classList;
+    classList = classObject._setValueList(classObject, jsonData);
+    return classList;
+};
+    
+theClass.prototype.createVersicherter = function(jsonData) {
+    var classObject = this.loader.newInstance("saveDataCaseXSD.bw.test.poc.tibco.com.versicherter", this.context);
+    if(jsonData != undefined)
+        classObject = classObject._setValue(classObject, jsonData);
+    return classObject;
+};
+
+theClass.prototype.listCreateVersicherter = function(jsonData) {
+    var classObject = this.loader.newInstance("saveDataCaseXSD.bw.test.poc.tibco.com.versicherter", this.context);
+    var classList;
+    classList = classObject._setValueList(classObject, jsonData);
+    return classList;
+};
+    
+theClass.prototype.createGeschaeftsfall = function(jsonData) {
+    var classObject = this.loader.newInstance("saveDataCaseXSD.bw.test.poc.tibco.com.geschaeftsfall", this.context);
+    if(jsonData != undefined)
+        classObject = classObject._setValue(classObject, jsonData);
+    return classObject;
+};
+
+theClass.prototype.listCreateGeschaeftsfall = function(jsonData) {
+    var classObject = this.loader.newInstance("saveDataCaseXSD.bw.test.poc.tibco.com.geschaeftsfall", this.context);
+    var classList;
+    classList = classObject._setValueList(classObject, jsonData);
+    return classList;
+};
+    
+theClass.prototype.createMitglied = function(jsonData) {
+    var classObject = this.loader.newInstance("saveDataCaseXSD.bw.test.poc.tibco.com.mitglied", this.context);
+    if(jsonData != undefined)
+        classObject = classObject._setValue(classObject, jsonData);
+    return classObject;
+};
+
+theClass.prototype.listCreateMitglied = function(jsonData) {
+    var classObject = this.loader.newInstance("saveDataCaseXSD.bw.test.poc.tibco.com.mitglied", this.context);
+    var classList;
+    classList = classObject._setValueList(classObject, jsonData);
+    return classList;
+};
+    
 theClass.prototype.createCreateCaseIDRequestType = function(jsonData) {
     var classObject = this.loader.newInstance("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType", this.context);
     if(jsonData != undefined)

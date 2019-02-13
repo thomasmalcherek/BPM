@@ -3,6 +3,10 @@
  * This provides an implementation of the class saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType. 
  */ 
 
+com.tibco.data.Loader.currentLoader.load("saveDataCaseXSD.bw.test.poc.tibco.com.dokument");
+com.tibco.data.Loader.currentLoader.load("saveDataCaseXSD.bw.test.poc.tibco.com.geschaeftsfall");
+com.tibco.data.Loader.currentLoader.load("saveDataCaseXSD.bw.test.poc.tibco.com.mitglied");
+com.tibco.data.Loader.currentLoader.load("saveDataCaseXSD.bw.test.poc.tibco.com.versicherter");
 
 com.tibco.data.Loader.classDefiner["saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType"] = function() {
 
@@ -31,22 +35,24 @@ theClass.LOADER.registerClass(theClass, "saveDataCaseXSD.bw.test.poc.tibco.com.C
 
 com.tibco.data.Loader.extendClass(com.tibco.data.BomBase, theClass);
 
-theClass.ATTR_AHVNUMMER = "AHVNummer";
-theClass.ATTR_DOKUMENTENART = "dokumentenArt";
-theClass.ATTR_DOSSIERID = "dossierID";
+theClass.ATTR_DOKUMENT = "dokument";
+theClass.ATTR_GESCHAEFTSFALL = "geschaeftsfall";
+theClass.ATTR_MITGLIED = "mitglied";
+theClass.ATTR_VERSICHERTER = "versicherter";
 theClass.ATTR_ANZAHL_DER_DOKUMENTE = "anzahl_der_Dokumente";
 
 theClass.TYPE_ARRAY = new Object();
-theClass.TYPE_ARRAY[theClass.ATTR_AHVNUMMER] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
-theClass.TYPE_ARRAY[theClass.ATTR_DOKUMENTENART] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
-theClass.TYPE_ARRAY[theClass.ATTR_DOSSIERID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_DOKUMENT] = {type:"saveDataCaseXSD.bw.test.poc.tibco.com.dokument", baseType:"saveDataCaseXSD.bw.test.poc.tibco.com.dokument", primitive:false, multivalued:false, required:true, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_GESCHAEFTSFALL] = {type:"saveDataCaseXSD.bw.test.poc.tibco.com.geschaeftsfall", baseType:"saveDataCaseXSD.bw.test.poc.tibco.com.geschaeftsfall", primitive:false, multivalued:false, required:false, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_MITGLIED] = {type:"saveDataCaseXSD.bw.test.poc.tibco.com.mitglied", baseType:"saveDataCaseXSD.bw.test.poc.tibco.com.mitglied", primitive:false, multivalued:false, required:false, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_VERSICHERTER] = {type:"saveDataCaseXSD.bw.test.poc.tibco.com.versicherter", baseType:"saveDataCaseXSD.bw.test.poc.tibco.com.versicherter", primitive:false, multivalued:false, required:false, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_ANZAHL_DER_DOKUMENTE] = {type:"BomPrimitiveTypes.Integer", baseType:"BomPrimitiveTypes.Integer", primitive:true, multivalued:false, required:true, defaultValue:""};
 
-theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_AHVNUMMER, theClass.ATTR_DOKUMENTENART, theClass.ATTR_DOSSIERID, theClass.ATTR_ANZAHL_DER_DOKUMENTE];
+theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_ANZAHL_DER_DOKUMENTE];
 
-theClass.COMPOSITE_ATTRIBUTE_NAMES = [];
+theClass.COMPOSITE_ATTRIBUTE_NAMES = [theClass.ATTR_DOKUMENT, theClass.ATTR_GESCHAEFTSFALL, theClass.ATTR_MITGLIED, theClass.ATTR_VERSICHERTER];
 
-theClass.ATTRIBUTE_NAMES = [theClass.ATTR_AHVNUMMER, theClass.ATTR_DOKUMENTENART, theClass.ATTR_DOSSIERID, theClass.ATTR_ANZAHL_DER_DOKUMENTE];
+theClass.ATTRIBUTE_NAMES = [theClass.ATTR_DOKUMENT, theClass.ATTR_GESCHAEFTSFALL, theClass.ATTR_MITGLIED, theClass.ATTR_VERSICHERTER, theClass.ATTR_ANZAHL_DER_DOKUMENTE];
 
 theClass.getName = function() {
     return "saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType";
@@ -88,30 +94,67 @@ theClass.prototype.getClass  = function() {
     return this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType");
 };
 
-theClass.prototype.getAHVNummer = function(useInternal) {
-    return this._getPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType").ATTR_AHVNUMMER, useInternal);
+theClass.prototype.getDokument = function() {
+    return this._getComplexAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType").ATTR_DOKUMENT);
 };
 
-theClass.prototype.setAHVNummer = function(AHVNummer) {
-    this._setPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType").ATTR_AHVNUMMER, AHVNummer);
+theClass.prototype.setDokument = function(dokument) {
+    var classRef = this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType");
+    var attrRef = classRef.ATTR_DOKUMENT;
+    var attrType = classRef._getTypeDef(attrRef);
+    if (eval("dokument instanceof this.loader.getClass(attrType.type)")) {
+        this._setComplexAttribute(attrRef, dokument);
+    } else {
+        throw("Wrong input object type.");
+    }
 };
 
 
-theClass.prototype.getDokumentenArt = function(useInternal) {
-    return this._getPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType").ATTR_DOKUMENTENART, useInternal);
+theClass.prototype.getGeschaeftsfall = function() {
+    return this._getComplexAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType").ATTR_GESCHAEFTSFALL);
 };
 
-theClass.prototype.setDokumentenArt = function(dokumentenArt) {
-    this._setPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType").ATTR_DOKUMENTENART, dokumentenArt);
+theClass.prototype.setGeschaeftsfall = function(geschaeftsfall) {
+    var classRef = this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType");
+    var attrRef = classRef.ATTR_GESCHAEFTSFALL;
+    var attrType = classRef._getTypeDef(attrRef);
+    if (eval("geschaeftsfall instanceof this.loader.getClass(attrType.type)")) {
+        this._setComplexAttribute(attrRef, geschaeftsfall);
+    } else {
+        throw("Wrong input object type.");
+    }
 };
 
 
-theClass.prototype.getDossierID = function(useInternal) {
-    return this._getPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType").ATTR_DOSSIERID, useInternal);
+theClass.prototype.getMitglied = function() {
+    return this._getComplexAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType").ATTR_MITGLIED);
 };
 
-theClass.prototype.setDossierID = function(dossierID) {
-    this._setPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType").ATTR_DOSSIERID, dossierID);
+theClass.prototype.setMitglied = function(mitglied) {
+    var classRef = this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType");
+    var attrRef = classRef.ATTR_MITGLIED;
+    var attrType = classRef._getTypeDef(attrRef);
+    if (eval("mitglied instanceof this.loader.getClass(attrType.type)")) {
+        this._setComplexAttribute(attrRef, mitglied);
+    } else {
+        throw("Wrong input object type.");
+    }
+};
+
+
+theClass.prototype.getVersicherter = function() {
+    return this._getComplexAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType").ATTR_VERSICHERTER);
+};
+
+theClass.prototype.setVersicherter = function(versicherter) {
+    var classRef = this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDRequestType");
+    var attrRef = classRef.ATTR_VERSICHERTER;
+    var attrType = classRef._getTypeDef(attrRef);
+    if (eval("versicherter instanceof this.loader.getClass(attrType.type)")) {
+        this._setComplexAttribute(attrRef, versicherter);
+    } else {
+        throw("Wrong input object type.");
+    }
 };
 
 

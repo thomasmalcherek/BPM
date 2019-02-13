@@ -31,16 +31,20 @@ theClass.LOADER.registerClass(theClass, "saveDataCaseXSD.bw.test.poc.tibco.com.C
 
 com.tibco.data.Loader.extendClass(com.tibco.data.BomBase, theClass);
 
-theClass.ATTR_CASEID = "caseID";
+theClass.ATTR_BUSINESSPROCESSID = "businessProcessID";
+theClass.ATTR_GESCHAEFSTFALLNAME = "geschaefstfallName";
+theClass.ATTR_WFCASEID = "WFCaseID";
 
 theClass.TYPE_ARRAY = new Object();
-theClass.TYPE_ARRAY[theClass.ATTR_CASEID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:true, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_BUSINESSPROCESSID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_GESCHAEFSTFALLNAME] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_WFCASEID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
 
-theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_CASEID];
+theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_BUSINESSPROCESSID, theClass.ATTR_GESCHAEFSTFALLNAME, theClass.ATTR_WFCASEID];
 
 theClass.COMPOSITE_ATTRIBUTE_NAMES = [];
 
-theClass.ATTRIBUTE_NAMES = [theClass.ATTR_CASEID];
+theClass.ATTRIBUTE_NAMES = [theClass.ATTR_BUSINESSPROCESSID, theClass.ATTR_GESCHAEFSTFALLNAME, theClass.ATTR_WFCASEID];
 
 theClass.getName = function() {
     return "saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseType";
@@ -82,12 +86,30 @@ theClass.prototype.getClass  = function() {
     return this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseType");
 };
 
-theClass.prototype.getCaseID = function(useInternal) {
-    return this._getPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseType").ATTR_CASEID, useInternal);
+theClass.prototype.getBusinessProcessID = function(useInternal) {
+    return this._getPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseType").ATTR_BUSINESSPROCESSID, useInternal);
 };
 
-theClass.prototype.setCaseID = function(caseID) {
-    this._setPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseType").ATTR_CASEID, caseID);
+theClass.prototype.setBusinessProcessID = function(businessProcessID) {
+    this._setPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseType").ATTR_BUSINESSPROCESSID, businessProcessID);
+};
+
+
+theClass.prototype.getGeschaefstfallName = function(useInternal) {
+    return this._getPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseType").ATTR_GESCHAEFSTFALLNAME, useInternal);
+};
+
+theClass.prototype.setGeschaefstfallName = function(geschaefstfallName) {
+    this._setPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseType").ATTR_GESCHAEFSTFALLNAME, geschaefstfallName);
+};
+
+
+theClass.prototype.getWFCaseID = function(useInternal) {
+    return this._getPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseType").ATTR_WFCASEID, useInternal);
+};
+
+theClass.prototype.setWFCaseID = function(WFCaseID) {
+    this._setPrimitiveAttribute(this.loader.getClass("saveDataCaseXSD.bw.test.poc.tibco.com.CreateCaseIDResponseType").ATTR_WFCASEID, WFCaseID);
 };
 
 theClass.getAttributeNames = function() {

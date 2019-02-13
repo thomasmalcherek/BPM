@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:jms="http://www.tibco.com/namespaces/ws/2004/soap/binding/JMS" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://com.tibco.poc.test.bw.saveDataCase" xmlns:tns0="http://com.tibco.poc.test.bw.saveDataCaseXSD" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="saveDataCase_JMS" targetNamespace="http://com.tibco.poc.test.bw.saveDataCase">
+    <partnerLinkType name="saveDataCase_PLT" xmlns="http://docs.oasis-open.org/wsbpel/2.0/plnktype">
+    <role name="saveDataCaseProvider" portType="tns:saveDataCase"/>
+  </partnerLinkType>
+    <wsdl:types>
+    <xsd:schema xmlns="http://com.tibco.poc.test.bw.saveDataCaseXSD" elementFormDefault="unqualified" targetNamespace="http://com.tibco.poc.test.bw.saveDataCaseXSD">
+      <xsd:element name="CreateCaseIDRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="dokument" type="dokument"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="geschaeftsfall" type="geschaeftsfall"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="mitglied" type="mitglied"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="versicherter" type="versicherter"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Anzahl_der_Dokumente" type="xsd:integer"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="dokument">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="dokumentenID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="documentenNummer" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="documentenArt">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="22"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="DokSchutz" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="DokEingangsDatum" type="xsd:dateTime"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="DokScanDatum" type="xsd:dateTime"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Stapelname">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="LeistungsArt">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Schlagwort">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Kurztext">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Kommentar">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Anmeldenummer">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Formularempfaenger">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="versicherter">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="VSPartnerID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Versicherungsnummer">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="PersonenID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Nachname">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Vorname">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="22"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Anrede">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Titel">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Geschlecht">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Geburtsdatum" type="xsd:date"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Sprache">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="geschaeftsfall">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="PKID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="1" name="GeschaeftsfallNummer" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Dringend" type="xsd:boolean"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Bearbeiter">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="WorkflowDatum" type="xsd:dateTime"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="PKNachricht">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="AbsenderName">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="BesitzerName">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="WorkflowStatus">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="BearbeitungsGrund">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Rueckmeldung">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="1" name="TypNummer" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="TypBezeichnung">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="mitglied">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="MGPartnerID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="1" name="Abrechnungsnummer">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="22"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="1" name="UnternehmensID">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="22"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Name">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Zusatzbezeichnung">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="22"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="GruendungsDatum">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="50"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Anmeldenummer">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:maxLength value="22"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="CreateCaseIDResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="BusinessProcessID" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="GeschaefstfallName" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="WFCaseID" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetGeschaeftsfallPerDokumentenArtRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Dokumenten-Art" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetGeschaeftsfallPerDokumentenArtResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="GESCHAEFTSFALL" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="DOKUMENTENART" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="DOKUMENTENART_MAIN" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="DOKUMENTENART_SPEC" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateCaseIDRequestFromBPM">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="CaseID" type="xsd:string"/>
+            <xsd:element name="AHV-Nummer" type="xsd:string"/>
+            <xsd:element name="Dokumenten-Art" type="xsd:string"/>
+            <xsd:element name="Geschaeftsfall" type="xsd:string"/>
+            <xsd:element name="Anzahl_der_Dokumente" type="xsd:integer"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateCaseIDResponseFromBPM">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="Acknowledgement" type="xsd:boolean"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetDataRequestFromCaseID">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="CaseID" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetDataWFCaseIDResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="CaseID" type="xsd:string"/>
+            <xsd:element name="AHV-Nummer" type="xsd:string"/>
+            <xsd:element name="Dokumenten-Art" type="xsd:string"/>
+            <xsd:element name="Geschaeftsfall" type="xsd:string"/>
+            <xsd:element name="DossierID" type="xsd:string"/>
+            <xsd:element name="Anzahl_der_Dokumente" type="xsd:integer"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SearchDataResponses">
+        <xsd:complexType>
+          <xsd:sequence maxOccurs="unbounded" minOccurs="0">
+            <xsd:element name="SearchDataResponse">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:element name="GeschaeftsfallNr" type="xsd:string"/>
+                  <xsd:element name="Versich.-Nr" type="xsd:string"/>
+                  <xsd:element name="Dokumenten-Art" type="xsd:string"/>
+                  <xsd:element name="PartnerID" type="xsd:string"/>
+                  <xsd:element name="Geschaeftsfall" type="xsd:string"/>
+                  <xsd:element name="Anzahl_der_Dokumente" type="xsd:integer"/>
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SearchDataRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="VersichNr" type="xsd:string"/>
+            <xsd:element name="Dokumenten-Art" type="xsd:string"/>
+            <xsd:element name="Geschaeftsfall" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WorkPerformerRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="WorkPerformer" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WorkPerformerResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="ResponseCode" type="xsd:boolean"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateCaseIDRequest">
+    <wsdl:part element="tns0:CreateCaseIDRequest" name="InputParameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreateCaseIDResponse">
+    <wsdl:part element="tns0:CreateCaseIDResponse" name="OutputParameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreateCaseIDRequestFromBPM">
+    <wsdl:part element="tns0:CreateCaseIDRequestFromBPM" name="InputParametersFromBPM"/>
+  </wsdl:message>
+  <wsdl:message name="CreateCaseIDResponseFromBPM">
+    <wsdl:part element="tns0:CreateCaseIDResponseFromBPM" name="OutputParametersFromBPM"/>
+  </wsdl:message>
+  <wsdl:message name="GetDataWFCaseIDRequest">
+    <wsdl:part element="tns0:GetDataRequestFromCaseID" name="GetDataPInputParameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetDataWFCaseIDResponse">
+    <wsdl:part element="tns0:GetDataWFCaseIDResponse" name="GetDataOutputParameters"/>
+  </wsdl:message>
+  <wsdl:message name="SearchDataRequest">
+    <wsdl:part element="tns0:SearchDataRequest" name="SearchDataInputParameters"/>
+  </wsdl:message>
+  <wsdl:message name="SearchDataResponse">
+    <wsdl:part element="tns0:SearchDataResponses" name="SearchDataOutputParameters"/>
+  </wsdl:message>
+  <wsdl:message name="WorkPerformerRequest">
+    <wsdl:part element="tns0:WorkPerformerRequest" name="WorkPerformerInputParameters"/>
+  </wsdl:message>
+  <wsdl:message name="WorkPerformerResponse">
+    <wsdl:part element="tns0:WorkPerformerResponse" name="WorkPerformerOutputParameters"/>
+  </wsdl:message>
+  <wsdl:portType name="saveDataCase">
+    <wsdl:operation name="CreateCaseID">
+      <wsdl:input message="tns:CreateCaseIDRequest" name="CreateCaseIDRequest"/>
+      <wsdl:output message="tns:CreateCaseIDResponse" name="CreateCaseIDResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCaseIDFromBPM">
+      <wsdl:input message="tns:CreateCaseIDRequestFromBPM" name="CreateCaseIDRequestFromBPM"/>
+      <wsdl:output message="tns:CreateCaseIDResponseFromBPM" name="CreateCaseIDResponseFromBPM"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataWFCaseID">
+      <wsdl:input message="tns:GetDataWFCaseIDRequest" name="GetDataRequest"/>
+      <wsdl:output message="tns:GetDataWFCaseIDResponse" name="GetDataResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="SearchData">
+      <wsdl:input message="tns:SearchDataRequest" name="SearchDataRequest"/>
+      <wsdl:output message="tns:SearchDataResponse" name="SearchDataResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="WorkPerformer">
+      <wsdl:input message="tns:WorkPerformerRequest" name="WorkPerformerRequest"/>
+      <wsdl:output message="tns:WorkPerformerResponse" name="WorkPerformerResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SOAPServiceBinding_JMS" type="tns:saveDataCase">
+    <soap:binding style="document" transport="http://www.tibco.com/namespaces/ws/2004/soap/binding/JMS"/>
+    <jms:binding messageFormat="text"/>
+    <wsdl:operation name="CreateCaseID">
+      <soap:operation soapAction="CreateCaseID" style="document"/>
+      <wsdl:input>
+        <soap:body parts="InputParameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="OutputParameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCaseIDFromBPM">
+      <soap:operation soapAction="CreateCaseIDFromBPM" style="document"/>
+      <wsdl:input>
+        <soap:body parts="InputParametersFromBPM" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="OutputParametersFromBPM" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataWFCaseID">
+      <soap:operation soapAction="GetDataWFCaseID" style="document"/>
+      <wsdl:input>
+        <soap:body parts="GetDataPInputParameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="GetDataOutputParameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchData">
+      <soap:operation soapAction="SearchData" style="document"/>
+      <wsdl:input>
+        <soap:body parts="SearchDataInputParameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="SearchDataOutputParameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WorkPerformer">
+      <soap:operation soapAction="WorkPerformer" style="document"/>
+      <wsdl:input>
+        <soap:body parts="WorkPerformerInputParameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="WorkPerformerOutputParameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="saveDataCase_JMS">
+    <wsdl:port binding="tns:SOAPServiceBinding_JMS" name="saveDataCase_JMSSOAP">
+       <soap:address location="tcp://ssva90322:8222"/>
+      <jms:connectionFactory>QueueConnectionFactory</jms:connectionFactory>
+      <jms:targetAddress destination="queue">com.tibco.poc.test.bw.savedata</jms:targetAddress>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -7,12 +7,12 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eXG1pAQvEem_G-97Kp4DSg" key="version" value="4"/>
     </eAnnotations>
     <packagedElement xmi:type="uml:Class" xmi:id="_3hXeoAQvEem_G-97Kp4DSg" name="GS">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_4lAs8AQvEem_G-97Kp4DSg" name="caseID" aggregation="composite">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4lAs8AQvEem_G-97Kp4DSg" name="geschaeftsfallNr" aggregation="composite">
         <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4lAs8wQvEem_G-97Kp4DSg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4lAs8gQvEem_G-97Kp4DSg"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_4zw6oAQvEem_G-97Kp4DSg" name="ahvNummer" aggregation="composite">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4zw6oAQvEem_G-97Kp4DSg" name="versichNr" aggregation="composite">
         <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4z6roAQvEem_G-97Kp4DSg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4zw6ogQvEem_G-97Kp4DSg"/>
@@ -22,7 +22,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5DIMUwQvEem_G-97Kp4DSg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5DIMUgQvEem_G-97Kp4DSg"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_5z13kAQvEem_G-97Kp4DSg" name="dossierID" aggregation="composite">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5z13kAQvEem_G-97Kp4DSg" name="partnerID" aggregation="composite">
         <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5z13kwQvEem_G-97Kp4DSg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5z13kgQvEem_G-97Kp4DSg"/>
@@ -67,16 +67,16 @@
       <children xmi:type="notation:Node" xmi:id="_3hzjhQQvEem_G-97Kp4DSg" type="4004"/>
       <children xmi:type="notation:Node" xmi:id="_3hzjhgQvEem_G-97Kp4DSg" type="4005"/>
       <children xmi:type="notation:Node" xmi:id="_3hzjhwQvEem_G-97Kp4DSg" type="5002">
-        <children xmi:type="notation:Node" xmi:id="_4lAs9AQvEem_G-97Kp4DSg" type="2001" element="_4lAs8AQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3acaseID?">
+        <children xmi:type="notation:Node" xmi:id="_4lAs9AQvEem_G-97Kp4DSg" type="2001" element="_4lAs8AQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3ageschaeftsfallNr?">
           <layoutConstraint xmi:type="notation:Location" xmi:id="_4lAs9QQvEem_G-97Kp4DSg"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_4z6roQQvEem_G-97Kp4DSg" type="2001" element="_4zw6oAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3aahvNummer?">
+        <children xmi:type="notation:Node" xmi:id="_4z6roQQvEem_G-97Kp4DSg" type="2001" element="_4zw6oAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3aversichNr?">
           <layoutConstraint xmi:type="notation:Location" xmi:id="_4z6rogQvEem_G-97Kp4DSg"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_5DQvMAQvEem_G-97Kp4DSg" type="2001" element="_5DIMUAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3adokumentenArt?">
           <layoutConstraint xmi:type="notation:Location" xmi:id="_5DQvMQQvEem_G-97Kp4DSg"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_5z13lAQvEem_G-97Kp4DSg" type="2001" element="_5z13kAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3adossierID?">
+        <children xmi:type="notation:Node" xmi:id="_5z13lAQvEem_G-97Kp4DSg" type="2001" element="_5z13kAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3apartnerID?">
           <layoutConstraint xmi:type="notation:Location" xmi:id="_5z13lQQvEem_G-97Kp4DSg"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_5UGnlAQvEem_G-97Kp4DSg" type="2001" element="_5UGnkAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3ageschaeftsfall?">
@@ -99,9 +99,9 @@
     <styles xmi:type="notation:FillStyle" xmi:id="_eXG1pwQvEem_G-97Kp4DSg"/>
   </notation:Diagram>
   <PrimitiveTypeFacets:LabeledElement xmi:id="_3hXeowQvEem_G-97Kp4DSg" displayLabel="GS" base_NamedElement="_3hXeoAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS?"/>
-  <PrimitiveTypeFacets:LabeledElement xmi:id="_4lAs8QQvEem_G-97Kp4DSg" displayLabel="caseID" base_NamedElement="_4lAs8AQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3acaseID?"/>
-  <PrimitiveTypeFacets:LabeledElement xmi:id="_4zw6oQQvEem_G-97Kp4DSg" displayLabel="ahv-Nummer" base_NamedElement="_4zw6oAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3aahvNummer?"/>
-  <PrimitiveTypeFacets:LabeledElement xmi:id="_5DIMUQQvEem_G-97Kp4DSg" displayLabel="dokumenten-Art" base_NamedElement="_5DIMUAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3adokumentenArt?"/>
-  <PrimitiveTypeFacets:LabeledElement xmi:id="_5UGnkQQvEem_G-97Kp4DSg" displayLabel="geschaeftsfall" base_NamedElement="_5UGnkAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3ageschaeftsfall?"/>
-  <PrimitiveTypeFacets:LabeledElement xmi:id="_5z13kQQvEem_G-97Kp4DSg" displayLabel="dossierID" base_NamedElement="_5z13kAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3adossierID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_4lAs8QQvEem_G-97Kp4DSg" displayLabel="GeschaeftsfallNr" base_NamedElement="_4lAs8AQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3ageschaeftsfallNr?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_4zw6oQQvEem_G-97Kp4DSg" displayLabel="Versich.-Nr." base_NamedElement="_4zw6oAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3aversichNr?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_5DIMUQQvEem_G-97Kp4DSg" displayLabel="DokumentenArt" base_NamedElement="_5DIMUAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3adokumentenArt?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_5UGnkQQvEem_G-97Kp4DSg" displayLabel="Geschaeftsfall" base_NamedElement="_5UGnkAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3ageschaeftsfall?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_5z13kQQvEem_G-97Kp4DSg" displayLabel="PartnerID" base_NamedElement="_5z13kAQvEem_G-97Kp4DSg?com.example.arraymapping%3a%3aGS%3a%3apartnerID?"/>
 </xmi:XMI>

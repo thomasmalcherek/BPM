@@ -10,12 +10,12 @@
     <tibex:VariableDescriptor type="PersistentBatching">
         <task name="UserTask">
             <startingVariables>
-                <variable>Geschaeftsfall</variable>
-                <variable>MasterProcessID</variable>
-                <variable>WorkkListFasade</variable>
                 <variable>Dokument</variable>
-                <variable>Mitglied</variable>
+                <variable>WorkkListFasade</variable>
+                <variable>MasterProcessID</variable>
+                <variable>Geschaeftsfall</variable>
                 <variable>Versicherte</variable>
+                <variable>Mitglied</variable>
             </startingVariables>
         </task>
     </tibex:VariableDescriptor>
@@ -43,7 +43,7 @@
         <bpws:extension mustUnderstand="yes" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:eventHandlers/>
-    <bpws:flow name="_BX_flow_vStXgBW8Eemwx6NixRoh7A">
+    <bpws:flow name="_BX_flow_lRdnoC98Eem8NYwCvBPJhw">
         <bpws:links>
             <bpws:link name="StartEvent to UserTask" tibex:xpdlId="_6BHoIBBwEemC7fSLJGfkbw"/>
             <bpws:link name="UserTask to EndEvent" tibex:xpdlId="_5GJNqRBwEemC7fSLJGfkbw"/>
@@ -56,12 +56,12 @@
                     <bpws:source linkName="StartEvent to UserTask"/>
                 </bpws:sources>
                 <tibex:parameters>
-                    <parameterDescription mode="InOut" name="Geschaeftsfall"/>
-                    <parameterDescription mandatory="yes" mode="In" name="MasterProcessID"/>
-                    <parameterDescription mandatory="yes" mode="InOut" name="WorkkListFasade"/>
                     <parameterDescription mandatory="yes" mode="In" name="Dokument"/>
-                    <parameterDescription mode="InOut" name="Mitglied"/>
+                    <parameterDescription mandatory="yes" mode="InOut" name="WorkkListFasade"/>
+                    <parameterDescription mandatory="yes" mode="In" name="MasterProcessID"/>
+                    <parameterDescription mode="InOut" name="Geschaeftsfall"/>
                     <parameterDescription mode="InOut" name="Versicherte"/>
+                    <parameterDescription mode="InOut" name="Mitglied"/>
                 </tibex:parameters>
                 <tibex:eventSource>
                     <tibex:startEvent eventType="Default"/>

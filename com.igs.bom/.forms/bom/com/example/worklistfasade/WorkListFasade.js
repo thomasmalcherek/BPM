@@ -43,6 +43,8 @@ theClass.ATTR_ABRECHNR = "abrechNr";
 theClass.ATTR_UNTERNEHMENSID = "unternehmensID";
 theClass.ATTR_VERSVORNAME = "versVorname";
 theClass.ATTR_DOKUMENTENART = "dokumentenArt";
+theClass.ATTR_PROZESSSTATUS = "prozessstatus";
+theClass.ATTR_GESCHAEFTSFALLNR = "geschaeftsfallNr";
 
 theClass.TYPE_ARRAY = new Object();
 theClass.TYPE_ARRAY[theClass.ATTR_VERSICHNR] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
@@ -57,12 +59,14 @@ theClass.TYPE_ARRAY[theClass.ATTR_ABRECHNR] = {type:"BomPrimitiveTypes.Text", ba
 theClass.TYPE_ARRAY[theClass.ATTR_UNTERNEHMENSID] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_VERSVORNAME] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
 theClass.TYPE_ARRAY[theClass.ATTR_DOKUMENTENART] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_PROZESSSTATUS] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
+theClass.TYPE_ARRAY[theClass.ATTR_GESCHAEFTSFALLNR] = {type:"BomPrimitiveTypes.Text", baseType:"BomPrimitiveTypes.Text", primitive:true, multivalued:false, required:false, defaultValue:""};
 
-theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_VERSICHNR, theClass.ATTR_PERSONENID, theClass.ATTR_VERSNACHNAME, theClass.ATTR_WIEDERVORLAGEDATUM, theClass.ATTR_DOKEINGANGSDATUM, theClass.ATTR_AKTUELLEBEARBEITER, theClass.ATTR_ANMELDENR, theClass.ATTR_ZUSATZBEZEICHNUNG, theClass.ATTR_ABRECHNR, theClass.ATTR_UNTERNEHMENSID, theClass.ATTR_VERSVORNAME, theClass.ATTR_DOKUMENTENART];
+theClass.PRIMITIVE_ATTRIBUTE_NAMES = [theClass.ATTR_VERSICHNR, theClass.ATTR_PERSONENID, theClass.ATTR_VERSNACHNAME, theClass.ATTR_WIEDERVORLAGEDATUM, theClass.ATTR_DOKEINGANGSDATUM, theClass.ATTR_AKTUELLEBEARBEITER, theClass.ATTR_ANMELDENR, theClass.ATTR_ZUSATZBEZEICHNUNG, theClass.ATTR_ABRECHNR, theClass.ATTR_UNTERNEHMENSID, theClass.ATTR_VERSVORNAME, theClass.ATTR_DOKUMENTENART, theClass.ATTR_PROZESSSTATUS, theClass.ATTR_GESCHAEFTSFALLNR];
 
 theClass.COMPOSITE_ATTRIBUTE_NAMES = [];
 
-theClass.ATTRIBUTE_NAMES = [theClass.ATTR_VERSICHNR, theClass.ATTR_PERSONENID, theClass.ATTR_VERSNACHNAME, theClass.ATTR_WIEDERVORLAGEDATUM, theClass.ATTR_DOKEINGANGSDATUM, theClass.ATTR_AKTUELLEBEARBEITER, theClass.ATTR_ANMELDENR, theClass.ATTR_ZUSATZBEZEICHNUNG, theClass.ATTR_ABRECHNR, theClass.ATTR_UNTERNEHMENSID, theClass.ATTR_VERSVORNAME, theClass.ATTR_DOKUMENTENART];
+theClass.ATTRIBUTE_NAMES = [theClass.ATTR_VERSICHNR, theClass.ATTR_PERSONENID, theClass.ATTR_VERSNACHNAME, theClass.ATTR_WIEDERVORLAGEDATUM, theClass.ATTR_DOKEINGANGSDATUM, theClass.ATTR_AKTUELLEBEARBEITER, theClass.ATTR_ANMELDENR, theClass.ATTR_ZUSATZBEZEICHNUNG, theClass.ATTR_ABRECHNR, theClass.ATTR_UNTERNEHMENSID, theClass.ATTR_VERSVORNAME, theClass.ATTR_DOKUMENTENART, theClass.ATTR_PROZESSSTATUS, theClass.ATTR_GESCHAEFTSFALLNR];
 
 theClass.getName = function() {
     return "com.example.worklistfasade.WorkListFasade";
@@ -209,6 +213,24 @@ theClass.prototype.getDokumentenArt = function(useInternal) {
 
 theClass.prototype.setDokumentenArt = function(dokumentenArt) {
     this._setPrimitiveAttribute(this.loader.getClass("com.example.worklistfasade.WorkListFasade").ATTR_DOKUMENTENART, dokumentenArt);
+};
+
+
+theClass.prototype.getProzessstatus = function(useInternal) {
+    return this._getPrimitiveAttribute(this.loader.getClass("com.example.worklistfasade.WorkListFasade").ATTR_PROZESSSTATUS, useInternal);
+};
+
+theClass.prototype.setProzessstatus = function(prozessstatus) {
+    this._setPrimitiveAttribute(this.loader.getClass("com.example.worklistfasade.WorkListFasade").ATTR_PROZESSSTATUS, prozessstatus);
+};
+
+
+theClass.prototype.getGeschaeftsfallNr = function(useInternal) {
+    return this._getPrimitiveAttribute(this.loader.getClass("com.example.worklistfasade.WorkListFasade").ATTR_GESCHAEFTSFALLNR, useInternal);
+};
+
+theClass.prototype.setGeschaeftsfallNr = function(geschaeftsfallNr) {
+    this._setPrimitiveAttribute(this.loader.getClass("com.example.worklistfasade.WorkListFasade").ATTR_GESCHAEFTSFALLNR, geschaeftsfallNr);
 };
 
 theClass.getAttributeNames = function() {

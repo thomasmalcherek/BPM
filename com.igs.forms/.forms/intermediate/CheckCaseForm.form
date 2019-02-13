@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" generated="true" id="_24kjEC-OEemsjvUqMFpQBw" formatVersion="4.0.0">
+  <form:runtimeDependencies>
+    <form:package>com.example.comigsbom.ComigsbomPackage</form:package>
+    <form:package>com.example.worklistfasade.WorklistfasadePackage</form:package>
+    <form:package>com.example.arraymapping.ArraymappingPackage</form:package>
+    <form:factory>com.example.comigsbom.ComigsbomFactory</form:factory>
+    <form:factory>com.example.worklistfasade.WorklistfasadeFactory</form:factory>
+    <form:factory>com.example.arraymapping.ArraymappingFactory</form:factory>
+    <form:class>com.example.comigsbom.Geschftsfall</form:class>
+    <form:class>com.example.comigsbom.Mitglied</form:class>
+    <form:class>com.example.worklistfasade.WorkListFasade</form:class>
+    <form:class>com.example.arraymapping.GS</form:class>
+    <form:class>com.example.comigsbom.Versicherter</form:class>
+    <form:class>com.example.comigsbom.Dokument</form:class>
+  </form:runtimeDependencies>
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="CheckCaseForm.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.igsformsadv" uri="default-css/igs-forms-adv.css"/>
+    <form:externalResource name="resource.pane7__common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.pane7__form" uri="Subforms/Geschaeftsfall.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.pane4__common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.pane4__form" uri="Subforms/Versicherter.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.pane1__common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.pane1__form" uri="Subforms/Mitglied.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.pane6__common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.pane6__form" uri="Subforms/Dokument.properties" internal="true" localized="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" name="data.Dokument" label="Dokument" dataType="uml:Class comigsbom.bom#_JLd6ogUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Dokument?" type="com.example.comigsbom::Dokument" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Versicherte" label="Versicherte" dataType="uml:Class comigsbom.bom#_JLd6EAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Versicherter?" type="com.example.comigsbom::Versicherter" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Geschaeftsfall" label="Geschaeftsfall" dataType="uml:Class comigsbom.bom#_JLd6XgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Geschftsfall?" type="com.example.comigsbom::Geschftsfall" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Mitglied" label="Mitglied" dataType="uml:Class comigsbom.bom#_JLd6MQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Mitglied?" type="com.example.comigsbom::Mitglied" inout="INOUT"/>
+    <form:parameter generated="true" name="data.action" label="action" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" isArray="true" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WorkflowID" label="WorkflowID" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="IN"/>
+    <form:parameter generated="true" name="data.CorrelationID" label="CorrelationID" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.ProzessStatus_Neu" label="ProzessStatus_Neu" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WorkListFasade" label="WorkListFasade" dataType="uml:Class WorkListFasade.bom#_LTh0cBTtEemMqIXY9z_1Iw?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.worklistfasade%26n=WorkListFasade?" type="com.example.worklistfasade::WorkListFasade" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Geschaeftsfall_found" label="Geschaeftsfall_found" dataType="uml:Class ArrayMapping.bom#_3hXeoAQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.arraymapping%26n=GS?" type="com.example.arraymapping::GS" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Geschaeftsfall_klammern" label="WP_Geschaeftsfall_klammern" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.actionToDo" label="actionToDo" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Gesuch_anzeigen" label="WP_Gesuch_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_WW_Protokolle_bearbeiten" label="WP_WW_Protokolle_bearbeiten" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Z_Fall_erledigt_Ablage" label="Z_Fall_erledigt_Ablage" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Auszug_drucken_VP" label="WP_IK_Auszug_drucken_VP" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Ausz_ZAS_best_VP" label="WP_IK_Ausz_ZAS_best_VP" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Auszug_drucken_EP" label="WP_IK_Auszug_drucken_EP" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Ausz_ZAS_best_loeschen" label="WP_IK_Ausz_ZAS_best_loeschen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Ausz_ZAS_best_EP" label="WP_IK_Ausz_ZAS_best_EP" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_Nachlieferung_IVST_IVST" label="WP_eM_Nachlieferung_IVST_IVST" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_IV_Akte_anfordern" label="WP_eM_IV_Akte_anfordern" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SP_Wiedervorlage" label="SP_Wiedervorlage" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Frist" label="Frist" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AMizkHvBEdy0U8_1u7Q20g" type="BomPrimitiveTypes::DateTime" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WarteKorbPerformer" label="WarteKorbPerformer" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Aktenbestellung_DMC" label="WP_Aktenbestellung_DMC" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_IK_Erstellen_VA_Eroeffnen_IK" label="WP_IK_Erstellen_VA_Eroeffnen_IK" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Formular_zum_Gesuch_anzeigen" label="WP_Formular_zum_Gesuch_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Verhandlungspartner_anzeigen" label="WP_Verhandlungspartner_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Zuteilung_zum_Gesuch_anzeigen" label="WP_Zuteilung_zum_Gesuch_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_Aktenversand_an_UV_Antw" label="WP_eM_Aktenversand_an_UV_Antw" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_Aktenversand_an_UV" label="WP_eM_Aktenversand_an_UV" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_Gesuch_um_Akteneinsicht_UV" label="WP_eM_Gesuch_um_Akteneinsicht_UV" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.EXC_Excel_Dokumente" label="EXC_Excel_Dokumente" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Auftraege_zum_Gesuch_anzeigen" label="WP_Auftraege_zum_Gesuch_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Journal_zum_Gesuch_anzeigen" label="WP_Journal_zum_Gesuch_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SP_Anfrage_RAD" label="SP_Anfrage_RAD" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SP_Zurueck_zu_Eingang_pruefen" label="SP_Zurueck_zu_Eingang_pruefen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.SP_Zurueck_zu_Sachleistung_pruefen" label="SP_Zurueck_zu_Sachleistung_pruefen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Verfuegung_zum_Gesuch" label="WP_Verfuegung_zum_Gesuch" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Stepname" label="Stepname" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.vorheriger_Bearbeiter" label="vorheriger_Bearbeiter" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.neuer_Bearbeiter" label="neuer_Bearbeiter" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.init_wiedervorlagedatum" label="init_wiedervorlagedatum" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AMizkHvBEdy0U8_1u7Q20g" type="BomPrimitiveTypes::DateTime" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Responsecode" label="Responsecode" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_PV_Versicherter_mutieren" label="WP_PV_Versicherter_mutieren" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" label="WP_eM_Mitteilungskopie_Hilfsmittel_AHV_fuer_EL" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_eM_Mitt_des_Beschlusses_an_ext_AK" label="WP_eM_Mitt_des_Beschlusses_an_ext_AK" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.WP_Auszufuehrender_Versand_anzeigen" label="WP_Auszufuehrender_Versand_anzeigen" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" type="BomPrimitiveTypes::Boolean" inout="INOUT"/>
+    <form:parameter generated="true" name="data.Task" label="Task" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" type="BomPrimitiveTypes::Text" length="50" inout="INOUT"/>
+    <form:dataField name="data.pane7__geschftsfall" label="Geschäftsfall" dataType="uml:Class comigsbom.bom#_JLd6XgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Geschftsfall?" type="com.example.comigsbom::Geschftsfall" isArray="false"/>
+    <form:dataField name="data.pane4__versicherter" label="Versicherter" dataType="uml:Class comigsbom.bom#_JLd6EAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Versicherter?" type="com.example.comigsbom::Versicherter" isArray="false"/>
+    <form:dataField name="data.pane1__mitglied" label="Mitglied" dataType="uml:Class comigsbom.bom#_JLd6MQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Mitglied?" type="com.example.comigsbom::Mitglied" isArray="false"/>
+    <form:dataField name="data.pane6__dokument" label="Dokument" dataType="uml:Class comigsbom.bom#_JLd6ogUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Dokument?" type="com.example.comigsbom::Dokument" isArray="false"/>
+  </form:dataModel>
+  <form:services/>
+  <form:actions/>
+  <form:conditions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.abbrechen" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.abbrechen.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.weiter" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.weiter.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+    <form:rule name="rule.close" label="Close">
+      <form:event source="#control.schliessen" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.schliessen.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.close"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.Geschaeftsfall_found__add" label="Add Geschaeftsfall_found">
+      <form:event source="#control.Geschaeftsfall_found__add" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.Geschaeftsfall_found__add.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.Geschaeftsfall_found__add" label="Add Geschaeftsfall_found">
+        <form:script>var collectionPane = pane.Geschaeftsfall_found;
+var newRecord = factory.com_example_arraymapping.createGS();
+collectionPane.getValue().add(newRecord);
+collectionPane.setSelection(newRecord);
+</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule generated="true" name="rule.Geschaeftsfall_found__delete" label="Delete Geschaeftsfall_found">
+      <form:event source="#control.Geschaeftsfall_found__delete" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.Geschaeftsfall_found__delete.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.Geschaeftsfall_found__delete" label="Delete Geschaeftsfall_found">
+        <form:script>var collectionPane = pane.Geschaeftsfall_found;
+var selection = collectionPane.getSelection();
+if (selection != null) {
+    var rc = confirm(&quot;Delete the current record?&quot;);
+    if (rc == true) {
+        var list = collectionPane.getValue();
+        var size = list.size();
+        var selectionIndex = list.remove(selection);
+        var newSelection = null;
+        if(selectionIndex != -1) {
+            if(selectionIndex == size - 1) {
+                selectionIndex--;
+            }
+            newSelection = list.get(selectionIndex)
+            collectionPane.setSelection(newSelection);
+        }
+        collectionPane.setSelection(newSelection);
+    }
+}</form:script>
+      </form:action>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding direction="bothways" name="_cOHx4CFlEem9LYB_NYgfoQ">
+      <form:source target="data.Dokument" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Dokument.value"></form:source>
+      <form:destination target="data.pane6__dokument" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.pane6__dokument.value"></form:destination>
+    </form:binding>
+    <form:binding direction="bothways" name="_N_nZ4CFnEem9LYB_NYgfoQ">
+      <form:source target="data.Versicherte" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Versicherte.value"></form:source>
+      <form:destination target="data.pane4__versicherter" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.pane4__versicherter.value"></form:destination>
+    </form:binding>
+    <form:binding direction="bothways" name="_S8uNECFnEem9LYB_NYgfoQ">
+      <form:source target="data.Geschaeftsfall" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Geschaeftsfall.value"></form:source>
+      <form:destination target="data.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.pane7__geschftsfall.value"></form:destination>
+    </form:binding>
+    <form:binding direction="bothways" name="_GQFOkB2GEemfRsoxMiyUuQ">
+      <form:source target="data.Mitglied" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Mitglied.value"></form:source>
+      <form:destination target="data.pane1__mitglied" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.pane1__mitglied.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_5Qxq0CCLEemsd8utlktqMg">
+      <form:source target="data.Geschaeftsfall_found" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Geschaeftsfall_found.value"></form:source>
+      <form:destination target="pane.Geschaeftsfall_found" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.Geschaeftsfall_found.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_EuqDYCCMEemsd8utlktqMg">
+      <form:source target="data.WP_Geschaeftsfall_klammern" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.WP_Geschaeftsfall_klammern.value"></form:source>
+      <form:destination target="control.WP_Geschaeftsfall_klammern" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.WP_Geschaeftsfall_klammern.value"></form:destination>
+    </form:binding>
+    <form:binding direction="sourceToDest" name="_SAm-QCLUEemljuNbYRTChQ">
+      <form:source target="data.Stepname" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Stepname.value"></form:source>
+      <form:destination target="pane.content" feature="http://www.tibco.com/forms/model/form#//UIElement/label" data="form.pane.content.label"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDFL0CFmEem9LYB_NYgfoQ">
+      <form:source target="data.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.pane7__geschftsfall.value"></form:source>
+      <form:destination target="pane.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.pane7__geschftsfall.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDbZIBsbEem6Me9w914_MA">
+      <form:source target="data.pane4__versicherter" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.pane4__versicherter.value"></form:source>
+      <form:destination target="pane.pane4__versicherter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.pane4__versicherter.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loKB5UEemYEd9aUpmElQ">
+      <form:source target="data.pane1__mitglied" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.pane1__mitglied.value"></form:source>
+      <form:destination target="pane.pane1__mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.pane1__mitglied.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvhB16EemfRsoxMiyUuQ">
+      <form:source target="data.pane6__dokument" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.pane6__dokument.value"></form:source>
+      <form:destination target="pane.pane6__dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.pane6__dokument.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDOVwCFmEem9LYB_NYgfoQ">
+      <form:source target="pane.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6XwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=PKID?" data="form.pane.pane7__geschftsfall.value.PKID"></form:source>
+      <form:destination target="control.pane7__geschftsfall_PKID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane7__geschftsfall_PKID.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDYGwCFmEem9LYB_NYgfoQ">
+      <form:source target="pane.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6YgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=processNumber?" data="form.pane.pane7__geschftsfall.value.processNumber"></form:source>
+      <form:destination target="control.pane7__geschftsfall_processNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane7__geschftsfall_processNumber.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDh3wCFmEem9LYB_NYgfoQ">
+      <form:source target="pane.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6ZQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=urgent?" data="form.pane.pane7__geschftsfall.value.urgent"></form:source>
+      <form:destination target="control.pane7__geschftsfall_urgent" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane7__geschftsfall_urgent.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDrBsCFmEem9LYB_NYgfoQ">
+      <form:source target="pane.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6aAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=processUser?" data="form.pane.pane7__geschftsfall.value.processUser"></form:source>
+      <form:destination target="control.pane7__geschftsfall_processUser" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane7__geschftsfall_processUser.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uD0ysCFmEem9LYB_NYgfoQ">
+      <form:source target="pane.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6awUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=workflowDate?" data="form.pane.pane7__geschftsfall.value.workflowDate"></form:source>
+      <form:destination target="control.pane7__geschftsfall_workflowDate" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane7__geschftsfall_workflowDate.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uD-jsCFmEem9LYB_NYgfoQ">
+      <form:source target="pane.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6bgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=messagePK?" data="form.pane.pane7__geschftsfall.value.messagePK"></form:source>
+      <form:destination target="control.pane7__geschftsfall_messagePK" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane7__geschftsfall_messagePK.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uEHtoCFmEem9LYB_NYgfoQ">
+      <form:source target="pane.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6cQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=senderName?" data="form.pane.pane7__geschftsfall.value.senderName"></form:source>
+      <form:destination target="control.pane7__geschftsfall_senderName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane7__geschftsfall_senderName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uEReoCFmEem9LYB_NYgfoQ">
+      <form:source target="pane.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6dAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=ownerName?" data="form.pane.pane7__geschftsfall.value.ownerName"></form:source>
+      <form:destination target="control.pane7__geschftsfall_ownerName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane7__geschftsfall_ownerName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uEbPoCFmEem9LYB_NYgfoQ">
+      <form:source target="pane.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6dwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=workflowState?" data="form.pane.pane7__geschftsfall.value.workflowState"></form:source>
+      <form:destination target="control.pane7__geschftsfall_workflowState" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane7__geschftsfall_workflowState.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uEkZkCFmEem9LYB_NYgfoQ">
+      <form:source target="pane.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6egUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=handlingReason?" data="form.pane.pane7__geschftsfall.value.handlingReason"></form:source>
+      <form:destination target="control.pane7__geschftsfall_handlingReason" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane7__geschftsfall_handlingReason.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uEuKkCFmEem9LYB_NYgfoQ">
+      <form:source target="pane.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6fQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=feedback?" data="form.pane.pane7__geschftsfall.value.feedback"></form:source>
+      <form:destination target="control.pane7__geschftsfall_feedback" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane7__geschftsfall_feedback.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uEuKkSFmEem9LYB_NYgfoQ">
+      <form:source target="pane.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6gAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=typNummer?" data="form.pane.pane7__geschftsfall.value.typNummer"></form:source>
+      <form:destination target="control.pane7__geschftsfall_typNummer" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane7__geschftsfall_typNummer.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uE3UgCFmEem9LYB_NYgfoQ">
+      <form:source target="pane.pane7__geschftsfall" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6gwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aGeschftsfall%26n=typBezeichnung?" data="form.pane.pane7__geschftsfall.value.typBezeichnung"></form:source>
+      <form:destination target="control.pane7__geschftsfall_typBezeichnung" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane7__geschftsfall_typBezeichnung.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDdOUBsbEem6Me9w914_MA">
+      <form:source target="pane.pane4__versicherter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6EQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=VSPartnerID?" data="form.pane.pane4__versicherter.value.VSPartnerID"></form:source>
+      <form:destination target="control.pane4__versicherter_VSPartnerID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane4__versicherter_VSPartnerID.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDeccBsbEem6Me9w914_MA">
+      <form:source target="pane.pane4__versicherter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6FAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=secureNumber?" data="form.pane.pane4__versicherter.value.secureNumber"></form:source>
+      <form:destination target="control.pane4__versicherter_secureNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane4__versicherter_secureNumber.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDfDgBsbEem6Me9w914_MA">
+      <form:source target="pane.pane4__versicherter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6FwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=personID?" data="form.pane.pane4__versicherter.value.personID"></form:source>
+      <form:destination target="control.pane4__versicherter_personID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane4__versicherter_personID.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDfqkBsbEem6Me9w914_MA">
+      <form:source target="pane.pane4__versicherter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6GgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=lastName?" data="form.pane.pane4__versicherter.value.lastName"></form:source>
+      <form:destination target="control.pane4__versicherter_lastName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane4__versicherter_lastName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDhfwBsbEem6Me9w914_MA">
+      <form:source target="pane.pane4__versicherter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6HQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=firstName?" data="form.pane.pane4__versicherter.value.firstName"></form:source>
+      <form:destination target="control.pane4__versicherter_firstName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane4__versicherter_firstName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDlKIBsbEem6Me9w914_MA">
+      <form:source target="pane.pane4__versicherter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6IAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=title?" data="form.pane.pane4__versicherter.value.title"></form:source>
+      <form:destination target="control.pane4__versicherter_title" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane4__versicherter_title.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDlxMBsbEem6Me9w914_MA">
+      <form:source target="pane.pane4__versicherter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6IwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=degree?" data="form.pane.pane4__versicherter.value.degree"></form:source>
+      <form:destination target="control.pane4__versicherter_degree" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane4__versicherter_degree.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDlxMRsbEem6Me9w914_MA">
+      <form:source target="pane.pane4__versicherter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6JgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=gender?" data="form.pane.pane4__versicherter.value.gender"></form:source>
+      <form:destination target="control.pane4__versicherter_gender" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane4__versicherter_gender.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDmYQBsbEem6Me9w914_MA">
+      <form:source target="pane.pane4__versicherter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6KQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=birthDate?" data="form.pane.pane4__versicherter.value.birthDate"></form:source>
+      <form:destination target="control.pane4__versicherter_birthDate" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane4__versicherter_birthDate.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_uDm_UBsbEem6Me9w914_MA">
+      <form:source target="pane.pane4__versicherter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6LAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aVersicherter%26n=sprache?" data="form.pane.pane4__versicherter.value.sprache"></form:source>
+      <form:destination target="control.pane4__versicherter_sprache" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane4__versicherter_sprache.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loKR5UEemYEd9aUpmElQ">
+      <form:source target="pane.pane1__mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6MgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=MGPartnerID?" data="form.pane.pane1__mitglied.value.MGPartnerID"></form:source>
+      <form:destination target="control.pane1__mitglied_MGPartnerID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane1__mitglied_MGPartnerID.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loKh5UEemYEd9aUpmElQ">
+      <form:source target="pane.pane1__mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6NQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=accountNumber?" data="form.pane.pane1__mitglied.value.accountNumber"></form:source>
+      <form:destination target="control.pane1__mitglied_accountNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane1__mitglied_accountNumber.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loKx5UEemYEd9aUpmElQ">
+      <form:source target="pane.pane1__mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6OAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=companyID?" data="form.pane.pane1__mitglied.value.companyID"></form:source>
+      <form:destination target="control.pane1__mitglied_companyID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane1__mitglied_companyID.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loLB5UEemYEd9aUpmElQ">
+      <form:source target="pane.pane1__mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6OwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=name?" data="form.pane.pane1__mitglied.value.name"></form:source>
+      <form:destination target="control.pane1__mitglied_name" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane1__mitglied_name.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loLR5UEemYEd9aUpmElQ">
+      <form:source target="pane.pane1__mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6PgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=additionalName?" data="form.pane.pane1__mitglied.value.additionalName"></form:source>
+      <form:destination target="control.pane1__mitglied_additionalName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane1__mitglied_additionalName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loLh5UEemYEd9aUpmElQ">
+      <form:source target="pane.pane1__mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6QQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=foundingDate?" data="form.pane.pane1__mitglied.value.foundingDate"></form:source>
+      <form:destination target="control.pane1__mitglied_foundingDate" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane1__mitglied_foundingDate.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_z1loLx5UEemYEd9aUpmElQ">
+      <form:source target="pane.pane1__mitglied" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6RAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aMitglied%26n=anmeldenummer?" data="form.pane.pane1__mitglied.value.anmeldenummer"></form:source>
+      <form:destination target="control.pane1__mitglied_anmeldenummer" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane1__mitglied_anmeldenummer.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_5Q8C4CCLEemsd8utlktqMg">
+      <form:source target="pane.Geschaeftsfall_found" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value ArrayMapping.bom#_4lAs8AQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.arraymapping%3a%3aGS%26n=geschaeftsfallNr?" data="form.pane.Geschaeftsfall_found.value.geschaeftsfallNr"></form:source>
+      <form:destination target="control.Geschaeftsfall_found_geschaeftsfallNr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_found_geschaeftsfallNr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_5RGa8CCLEemsd8utlktqMg">
+      <form:source target="pane.Geschaeftsfall_found" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value ArrayMapping.bom#_4zw6oAQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.arraymapping%3a%3aGS%26n=versichNr?" data="form.pane.Geschaeftsfall_found.value.versichNr"></form:source>
+      <form:destination target="control.Geschaeftsfall_found_versichNr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_found_versichNr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_5RRaECCLEemsd8utlktqMg">
+      <form:source target="pane.Geschaeftsfall_found" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value ArrayMapping.bom#_5DIMUAQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.arraymapping%3a%3aGS%26n=dokumentenArt?" data="form.pane.Geschaeftsfall_found.value.dokumentenArt"></form:source>
+      <form:destination target="control.Geschaeftsfall_found_dokumentenArt" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_found_dokumentenArt.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_5RakACCLEemsd8utlktqMg">
+      <form:source target="pane.Geschaeftsfall_found" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value ArrayMapping.bom#_5z13kAQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.arraymapping%3a%3aGS%26n=partnerID?" data="form.pane.Geschaeftsfall_found.value.partnerID"></form:source>
+      <form:destination target="control.Geschaeftsfall_found_partnerID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_found_partnerID.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_5Rjt8CCLEemsd8utlktqMg">
+      <form:source target="pane.Geschaeftsfall_found" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value ArrayMapping.bom#_5UGnkAQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.arraymapping%3a%3aGS%26n=geschaeftsfall?" data="form.pane.Geschaeftsfall_found.value.geschaeftsfall"></form:source>
+      <form:destination target="control.Geschaeftsfall_found_geschaeftsfall" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Geschaeftsfall_found_geschaeftsfall.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvhR16EemfRsoxMiyUuQ">
+      <form:source target="pane.pane6__dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6owUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=dokumentID?" data="form.pane.pane6__dokument.value.dokumentID"></form:source>
+      <form:destination target="control.pane6__dokument_dokumentID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane6__dokument_dokumentID.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvhh16EemfRsoxMiyUuQ">
+      <form:source target="pane.pane6__dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6pgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentNumber?" data="form.pane.pane6__dokument.value.documentNumber"></form:source>
+      <form:destination target="control.pane6__dokument_documentNumber" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane6__dokument_documentNumber.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvhx16EemfRsoxMiyUuQ">
+      <form:source target="pane.pane6__dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6qQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentType?" data="form.pane.pane6__dokument.value.documentType"></form:source>
+      <form:destination target="control.pane6__dokument_documentType" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane6__dokument_documentType.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAviB16EemfRsoxMiyUuQ">
+      <form:source target="pane.pane6__dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6rAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentSecurity?" data="form.pane.pane6__dokument.value.documentSecurity"></form:source>
+      <form:destination target="control.pane6__dokument_documentSecurity" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane6__dokument_documentSecurity.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAviR16EemfRsoxMiyUuQ">
+      <form:source target="pane.pane6__dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6rwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentDateOfReceipt?" data="form.pane.pane6__dokument.value.documentDateOfReceipt"></form:source>
+      <form:destination target="control.pane6__dokument_documentDateOfReceipt" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane6__dokument_documentDateOfReceipt.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvih16EemfRsoxMiyUuQ">
+      <form:source target="pane.pane6__dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6sgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=documentScanDate?" data="form.pane.pane6__dokument.value.documentScanDate"></form:source>
+      <form:destination target="control.pane6__dokument_documentScanDate" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane6__dokument_documentScanDate.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvix16EemfRsoxMiyUuQ">
+      <form:source target="pane.pane6__dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6tQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=stackName?" data="form.pane.pane6__dokument.value.stackName"></form:source>
+      <form:destination target="control.pane6__dokument_stackName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane6__dokument_stackName.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvjB16EemfRsoxMiyUuQ">
+      <form:source target="pane.pane6__dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6uAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=effortType?" data="form.pane.pane6__dokument.value.effortType"></form:source>
+      <form:destination target="control.pane6__dokument_effortType" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane6__dokument_effortType.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsAvjR16EemfRsoxMiyUuQ">
+      <form:source target="pane.pane6__dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6uwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=keyword?" data="form.pane.pane6__dokument.value.keyword"></form:source>
+      <form:destination target="control.pane6__dokument_keyword" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane6__dokument_keyword.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsJ5cB16EemfRsoxMiyUuQ">
+      <form:source target="pane.pane6__dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6vgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=kurztext?" data="form.pane.pane6__dokument.value.kurztext"></form:source>
+      <form:destination target="control.pane6__dokument_kurztext" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane6__dokument_kurztext.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsJ5cR16EemfRsoxMiyUuQ">
+      <form:source target="pane.pane6__dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6wQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=kommentar?" data="form.pane.pane6__dokument.value.kommentar"></form:source>
+      <form:destination target="control.pane6__dokument_kommentar" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane6__dokument_kommentar.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsJ5ch16EemfRsoxMiyUuQ">
+      <form:source target="pane.pane6__dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6xAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=anmeldenummer?" data="form.pane.pane6__dokument.value.anmeldenummer"></form:source>
+      <form:destination target="control.pane6__dokument_anmeldenummer" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane6__dokument_anmeldenummer.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_OsJ5cx16EemfRsoxMiyUuQ">
+      <form:source target="pane.pane6__dokument" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value comigsbom.bom#_JLd6xwUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.comigsbom%3a%3aDokument%26n=formularempfnger?" data="form.pane.pane6__dokument.value.formularempfnger"></form:source>
+      <form:destination target="control.pane6__dokument_formularempfnger" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.pane6__dokument_formularempfnger.value"></form:destination>
+    </form:binding>
+  </form:bindings>
+  <form:targets>
+    <form:target ref="iProcessWorkspace_10.7"/>
+  </form:targets>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+  <form:pane styleClass="form_title" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Main Form</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="left"/>
+    </form:defaults>
+    <form:pane styleClass="igsforms-top-pane" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.top" paneType="com.tibco.forms.panes.horizontal">
+      <form:label>top</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:pane styleClass="geschaeftsfall_pane_class" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.tabbed" name="pane.geschaeftsfall_pane" paneType="com.tibco.forms.panes.tabbed">
+        <form:label>geschaeftsfall_pane</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.geschftsfalldaten" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Geschäftsfalldaten</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class comigsbom.bom#_JLd6XgUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Geschftsfall?" name="pane.pane7__geschftsfall" paneType="com.tibco.forms.panes.vertical">
+            <form:label valueRef="resource.pane7__form.pane_geschftsfall_label"/>
+            <form:hint valueRef="resource.pane7__form.pane_geschftsfall_hint"/>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="left"/>
+            </form:defaults>
+            <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pane7__pane1" paneType="com.tibco.forms.panes.horizontal">
+              <form:label valueRef="resource.pane7__form.pane_pane1_label"/>
+              <form:hint valueRef="resource.pane7__form.pane_pane1_hint"/>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:labelProperties visible="false"/>
+              <form:defaults>
+                <form:labelProperties position="top"/>
+              </form:defaults>
+              <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane7__pane2" paneType="com.tibco.forms.panes.vertical">
+                <form:label valueRef="resource.pane7__form.pane_pane2_label"/>
+                <form:hint valueRef="resource.pane7__form.pane_pane2_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:labelProperties visible="false"/>
+                <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane7__geschftsfall_PKID">
+                  <form:propertySet xsi:type="et:TextPropertySet">
+                    <et:displayLength>40</et:displayLength>
+                    <et:maxLength>50</et:maxLength>
+                  </form:propertySet>
+                  <form:label valueRef="resource.pane7__form.control_geschftsfall_PKID_label"/>
+                  <form:hint valueRef="resource.pane7__form.control_geschftsfall_PKID_hint"/>
+                  <form:visible>true</form:visible>
+                  <form:enabled>true</form:enabled>
+                  <form:validation generated="true" messageRef="resource.common.validation_text_length" name="geschftsfall_PKID__length" type="javascript" when="oncontrolchange" simple="true">
+                    <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                  </form:validation>
+                  <form:required>true</form:required>
+                </form:control>
+                <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane7__geschftsfall_processNumber">
+                  <form:propertySet xsi:type="et:TextPropertySet">
+                    <et:displayLength>40</et:displayLength>
+                    <et:maxLength>50</et:maxLength>
+                  </form:propertySet>
+                  <form:label valueRef="resource.pane7__form.control_geschftsfall_processNumber_label"/>
+                  <form:hint valueRef="resource.pane7__form.control_geschftsfall_processNumber_hint"/>
+                  <form:visible>true</form:visible>
+                  <form:enabled>true</form:enabled>
+                  <form:validation generated="true" messageRef="resource.common.validation_text_length" name="geschftsfall_processNumber__length" type="javascript" when="oncontrolchange" simple="true">
+                    <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                  </form:validation>
+                  <form:required>true</form:required>
+                </form:control>
+                <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.pane7__geschftsfall_urgent">
+                  <form:label valueRef="resource.pane7__form.control_geschftsfall_urgent_label"/>
+                  <form:hint valueRef="resource.pane7__form.control_geschftsfall_urgent_hint"/>
+                  <form:visible>true</form:visible>
+                  <form:enabled>true</form:enabled>
+                  <form:required>false</form:required>
+                </form:control>
+                <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane7__geschftsfall_processUser">
+                  <form:propertySet xsi:type="et:TextPropertySet">
+                    <et:displayLength>40</et:displayLength>
+                    <et:maxLength>50</et:maxLength>
+                  </form:propertySet>
+                  <form:label valueRef="resource.pane7__form.control_geschftsfall_processUser_label"/>
+                  <form:hint valueRef="resource.pane7__form.control_geschftsfall_processUser_hint"/>
+                  <form:visible>true</form:visible>
+                  <form:enabled>true</form:enabled>
+                  <form:validation generated="true" messageRef="resource.common.validation_text_length" name="geschftsfall_processUser__length" type="javascript" when="oncontrolchange" simple="true">
+                    <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                  </form:validation>
+                  <form:required>false</form:required>
+                </form:control>
+                <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.pane7__geschftsfall_workflowDate">
+                  <form:propertySet xsi:type="et:DateTimePropertySet">
+                    <et:minRelative>true</et:minRelative>
+                    <et:maxRelative>true</et:maxRelative>
+                    <et:year min="-20" max="20"/>
+                    <et:minute increment="15"/>
+                  </form:propertySet>
+                  <form:label valueRef="resource.pane7__form.control_geschftsfall_workflowDate_label"/>
+                  <form:hint valueRef="resource.pane7__form.control_geschftsfall_workflowDate_hint"/>
+                  <form:visible>true</form:visible>
+                  <form:enabled>true</form:enabled>
+                  <form:validation generated="true" messageRef="resource.common.validation_datetime_format" name="geschftsfall_workflowDate__datetime" type="javascript" when="oncontrolchange" simple="true">
+                    <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.getLabel()] : true;</form:script>
+                  </form:validation>
+                  <form:required>false</form:required>
+                </form:control>
+                <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane7__geschftsfall_messagePK">
+                  <form:propertySet xsi:type="et:TextPropertySet">
+                    <et:displayLength>40</et:displayLength>
+                    <et:maxLength>50</et:maxLength>
+                  </form:propertySet>
+                  <form:label valueRef="resource.pane7__form.control_geschftsfall_messagePK_label"/>
+                  <form:hint valueRef="resource.pane7__form.control_geschftsfall_messagePK_hint"/>
+                  <form:visible>true</form:visible>
+                  <form:enabled>true</form:enabled>
+                  <form:validation generated="true" messageRef="resource.common.validation_text_length" name="geschftsfall_messagePK__length" type="javascript" when="oncontrolchange" simple="true">
+                    <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                  </form:validation>
+                  <form:required>false</form:required>
+                </form:control>
+              </form:pane>
+              <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane7__pane3" paneType="com.tibco.forms.panes.vertical">
+                <form:label valueRef="resource.pane7__form.pane_pane3_label"/>
+                <form:hint valueRef="resource.pane7__form.pane_pane3_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:labelProperties visible="false"/>
+                <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane7__geschftsfall_senderName">
+                  <form:propertySet xsi:type="et:TextPropertySet">
+                    <et:displayLength>40</et:displayLength>
+                    <et:maxLength>50</et:maxLength>
+                  </form:propertySet>
+                  <form:label valueRef="resource.pane7__form.control_geschftsfall_senderName_label"/>
+                  <form:hint valueRef="resource.pane7__form.control_geschftsfall_senderName_hint"/>
+                  <form:visible>true</form:visible>
+                  <form:enabled>true</form:enabled>
+                  <form:validation generated="true" messageRef="resource.common.validation_text_length" name="geschftsfall_senderName__length" type="javascript" when="oncontrolchange" simple="true">
+                    <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                  </form:validation>
+                  <form:required>false</form:required>
+                </form:control>
+                <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane7__geschftsfall_ownerName">
+                  <form:propertySet xsi:type="et:TextPropertySet">
+                    <et:displayLength>40</et:displayLength>
+                    <et:maxLength>50</et:maxLength>
+                  </form:propertySet>
+                  <form:label valueRef="resource.pane7__form.control_geschftsfall_ownerName_label"/>
+                  <form:hint valueRef="resource.pane7__form.control_geschftsfall_ownerName_hint"/>
+                  <form:visible>true</form:visible>
+                  <form:enabled>true</form:enabled>
+                  <form:validation generated="true" messageRef="resource.common.validation_text_length" name="geschftsfall_ownerName__length" type="javascript" when="oncontrolchange" simple="true">
+                    <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                  </form:validation>
+                  <form:required>false</form:required>
+                </form:control>
+                <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane7__geschftsfall_workflowState">
+                  <form:propertySet xsi:type="et:TextPropertySet">
+                    <et:displayLength>40</et:displayLength>
+                    <et:maxLength>50</et:maxLength>
+                  </form:propertySet>
+                  <form:label valueRef="resource.pane7__form.control_geschftsfall_workflowState_label"/>
+                  <form:hint valueRef="resource.pane7__form.control_geschftsfall_workflowState_hint"/>
+                  <form:visible>true</form:visible>
+                  <form:enabled>true</form:enabled>
+                  <form:validation generated="true" messageRef="resource.common.validation_text_length" name="geschftsfall_workflowState__length" type="javascript" when="oncontrolchange" simple="true">
+                    <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                  </form:validation>
+                  <form:required>false</form:required>
+                </form:control>
+                <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane7__geschftsfall_handlingReason">
+                  <form:propertySet xsi:type="et:TextPropertySet">
+                    <et:displayLength>40</et:displayLength>
+                    <et:maxLength>50</et:maxLength>
+                  </form:propertySet>
+                  <form:label valueRef="resource.pane7__form.control_geschftsfall_handlingReason_label"/>
+                  <form:hint valueRef="resource.pane7__form.control_geschftsfall_handlingReason_hint"/>
+                  <form:visible>true</form:visible>
+                  <form:enabled>true</form:enabled>
+                  <form:validation generated="true" messageRef="resource.common.validation_text_length" name="geschftsfall_handlingReason__length" type="javascript" when="oncontrolchange" simple="true">
+                    <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                  </form:validation>
+                  <form:required>false</form:required>
+                </form:control>
+                <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane7__geschftsfall_feedback">
+                  <form:propertySet xsi:type="et:TextPropertySet">
+                    <et:displayLength>40</et:displayLength>
+                    <et:maxLength>50</et:maxLength>
+                  </form:propertySet>
+                  <form:label valueRef="resource.pane7__form.control_geschftsfall_feedback_label"/>
+                  <form:hint valueRef="resource.pane7__form.control_geschftsfall_feedback_hint"/>
+                  <form:visible>true</form:visible>
+                  <form:enabled>true</form:enabled>
+                  <form:validation generated="true" messageRef="resource.common.validation_text_length" name="geschftsfall_feedback__length" type="javascript" when="oncontrolchange" simple="true">
+                    <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                  </form:validation>
+                  <form:required>false</form:required>
+                </form:control>
+                <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane7__geschftsfall_typNummer">
+                  <form:propertySet xsi:type="et:TextPropertySet">
+                    <et:numeric>true</et:numeric>
+                    <et:formatRef>resource.common.format_integer</et:formatRef>
+                  </form:propertySet>
+                  <form:label valueRef="resource.pane7__form.control_geschftsfall_typNummer_label"/>
+                  <form:hint valueRef="resource.pane7__form.control_geschftsfall_typNummer_hint"/>
+                  <form:visible>true</form:visible>
+                  <form:enabled>true</form:enabled>
+                  <form:validation generated="true" messageRef="resource.common.validation_integer" name="geschftsfall_typNummer__integer" type="javascript" when="oncontrolchange" simple="true">
+                    <form:script>if (typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined') {
+tibco.forms.Util.checkInteger(typeof context.stringValue == 'undefined' ? context.value : context.stringValue) ? true :  [context.control.getLabel()]} else {
+var regex = new RegExp(&quot;^-?[0-9]+$&quot;);
+regex.test(typeof context.stringValue == 'undefined' ? context.value : context.stringValue);}</form:script>
+                  </form:validation>
+                  <form:validation generated="true" messageRef="resource.common.validation_lower_limit_inclusive" name="geschftsfall_typNummer__lowerLimit" type="javascript" when="oncontrolchange" simple="true">
+                    <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkLowerLimit(context.stringValue, '-2147483648', true) ? true : [context.control.getLabel(), '-2147483648'] : isNaN(context.value) || context.value.valueOf() >= -2147483648;</form:script>
+                  </form:validation>
+                  <form:validation generated="true" messageRef="resource.common.validation_upper_limit_inclusive" name="geschftsfall_typNummer__upperLimit" type="javascript" when="oncontrolchange" simple="true">
+                    <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkUpperLimit(context.stringValue, '2147483647', true) ? true : [context.control.getLabel(), '2147483647'] : isNaN(context.value) || context.value.valueOf() &lt;= 2147483647;</form:script>
+                  </form:validation>
+                  <form:required>true</form:required>
+                </form:control>
+                <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane7__geschftsfall_typBezeichnung">
+                  <form:propertySet xsi:type="et:TextPropertySet">
+                    <et:displayLength>40</et:displayLength>
+                    <et:maxLength>50</et:maxLength>
+                  </form:propertySet>
+                  <form:label valueRef="resource.pane7__form.control_geschftsfall_typBezeichnung_label"/>
+                  <form:hint valueRef="resource.pane7__form.control_geschftsfall_typBezeichnung_hint"/>
+                  <form:visible>true</form:visible>
+                  <form:enabled>true</form:enabled>
+                  <form:validation generated="true" messageRef="resource.common.validation_text_length" name="geschftsfall_typBezeichnung__length" type="javascript" when="oncontrolchange" simple="true">
+                    <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                  </form:validation>
+                  <form:required>false</form:required>
+                </form:control>
+              </form:pane>
+            </form:pane>
+          </form:pane>
+        </form:pane>
+      </form:pane>
+      <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.tabbed" name="pane.tabbedPaneVersicherterMitglied" paneType="com.tibco.forms.panes.tabbed">
+        <form:label>tabbedPaneVersicherterMitglied</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.versicherter" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Versicherter</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane4__content" paneType="com.tibco.forms.panes.vertical">
+            <form:label valueRef="resource.pane4__form.pane_content_label"/>
+            <form:hint valueRef="resource.pane4__form.pane_content_hint"/>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="top"/>
+            </form:defaults>
+            <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class comigsbom.bom#_JLd6EAUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Versicherter?" name="pane.pane4__versicherter" paneType="com.tibco.forms.panes.vertical">
+              <form:label valueRef="resource.pane4__form.pane_versicherter_label"/>
+              <form:hint valueRef="resource.pane4__form.pane_versicherter_hint"/>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:labelProperties visible="false"/>
+              <form:defaults>
+                <form:labelProperties position="left"/>
+              </form:defaults>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane4__versicherter_VSPartnerID">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane4__form.control_versicherter_VSPartnerID_label"/>
+                <form:hint valueRef="resource.pane4__form.control_versicherter_VSPartnerID_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="versicherter_VSPartnerID__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                </form:validation>
+                <form:required>true</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane4__versicherter_secureNumber">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane4__form.control_versicherter_secureNumber_label"/>
+                <form:hint valueRef="resource.pane4__form.control_versicherter_secureNumber_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="versicherter_secureNumber__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                </form:validation>
+                <form:required>true</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane4__versicherter_personID">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane4__form.control_versicherter_personID_label"/>
+                <form:hint valueRef="resource.pane4__form.control_versicherter_personID_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="versicherter_personID__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                </form:validation>
+                <form:required>true</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane4__versicherter_lastName">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane4__form.control_versicherter_lastName_label"/>
+                <form:hint valueRef="resource.pane4__form.control_versicherter_lastName_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="versicherter_lastName__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                </form:validation>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane4__versicherter_firstName">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>25</et:displayLength>
+                  <et:maxLength>22</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane4__form.control_versicherter_firstName_label"/>
+                <form:hint valueRef="resource.pane4__form.control_versicherter_firstName_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="versicherter_firstName__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 22) ? true : [context.control.getLabel(), '22'] : context.value.length &lt;= 22;</form:script>
+                </form:validation>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane4__versicherter_title">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane4__form.control_versicherter_title_label"/>
+                <form:hint valueRef="resource.pane4__form.control_versicherter_title_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="versicherter_title__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                </form:validation>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane4__versicherter_degree">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane4__form.control_versicherter_degree_label"/>
+                <form:hint valueRef="resource.pane4__form.control_versicherter_degree_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="versicherter_degree__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                </form:validation>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane4__versicherter_gender">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane4__form.control_versicherter_gender_label"/>
+                <form:hint valueRef="resource.pane4__form.control_versicherter_gender_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="versicherter_gender__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                </form:validation>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.date" readOnly="true" controlType="com.tibco.forms.controls.date" name="control.pane4__versicherter_birthDate">
+                <form:propertySet xsi:type="et:DatePropertySet">
+                  <et:minRelative>true</et:minRelative>
+                  <et:maxRelative>true</et:maxRelative>
+                  <et:year min="-20" max="20"/>
+                </form:propertySet>
+                <form:label valueRef="resource.pane4__form.control_versicherter_birthDate_label"/>
+                <form:hint valueRef="resource.pane4__form.control_versicherter_birthDate_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_date_format" name="versicherter_birthDate__datetime" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkDateFormat(context.stringValue) ?  true : [context.control.getLabel()] : true;</form:script>
+                </form:validation>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane4__versicherter_sprache">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane4__form.control_versicherter_sprache_label"/>
+                <form:hint valueRef="resource.pane4__form.control_versicherter_sprache_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="versicherter_sprache__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                </form:validation>
+                <form:required>false</form:required>
+              </form:control>
+            </form:pane>
+          </form:pane>
+        </form:pane>
+        <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.mitglied" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Mitglied</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.pane1__content" paneType="com.tibco.forms.panes.vertical">
+            <form:label valueRef="resource.pane1__form.pane_content_label"/>
+            <form:hint valueRef="resource.pane1__form.pane_content_hint"/>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="left"/>
+            </form:defaults>
+            <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class comigsbom.bom#_JLd6MQUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Mitglied?" name="pane.pane1__mitglied" paneType="com.tibco.forms.panes.vertical">
+              <form:label valueRef="resource.pane1__form.pane_mitglied_label"/>
+              <form:hint valueRef="resource.pane1__form.pane_mitglied_hint"/>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:labelProperties visible="false"/>
+              <form:defaults>
+                <form:labelProperties position="left"/>
+              </form:defaults>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane1__mitglied_MGPartnerID">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane1__form.control_mitglied_MGPartnerID_label"/>
+                <form:hint valueRef="resource.pane1__form.control_mitglied_MGPartnerID_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="mitglied_MGPartnerID__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                </form:validation>
+                <form:required>true</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane1__mitglied_accountNumber">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>25</et:displayLength>
+                  <et:maxLength>22</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane1__form.control_mitglied_accountNumber_label"/>
+                <form:hint valueRef="resource.pane1__form.control_mitglied_accountNumber_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="mitglied_accountNumber__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 22) ? true : [context.control.getLabel(), '22'] : context.value.length &lt;= 22;</form:script>
+                </form:validation>
+                <form:required>true</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane1__mitglied_companyID">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>25</et:displayLength>
+                  <et:maxLength>22</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane1__form.control_mitglied_companyID_label"/>
+                <form:hint valueRef="resource.pane1__form.control_mitglied_companyID_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="mitglied_companyID__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 22) ? true : [context.control.getLabel(), '22'] : context.value.length &lt;= 22;</form:script>
+                </form:validation>
+                <form:required>true</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane1__mitglied_name">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>40</et:displayLength>
+                  <et:maxLength>50</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane1__form.control_mitglied_name_label"/>
+                <form:hint valueRef="resource.pane1__form.control_mitglied_name_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="mitglied_name__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+                </form:validation>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane1__mitglied_additionalName">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>25</et:displayLength>
+                  <et:maxLength>22</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane1__form.control_mitglied_additionalName_label"/>
+                <form:hint valueRef="resource.pane1__form.control_mitglied_additionalName_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="mitglied_additionalName__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 22) ? true : [context.control.getLabel(), '22'] : context.value.length &lt;= 22;</form:script>
+                </form:validation>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.date" readOnly="true" controlType="com.tibco.forms.controls.date" name="control.pane1__mitglied_foundingDate">
+                <form:propertySet xsi:type="et:DatePropertySet">
+                  <et:minRelative>true</et:minRelative>
+                  <et:maxRelative>true</et:maxRelative>
+                  <et:year min="-20" max="20"/>
+                </form:propertySet>
+                <form:label valueRef="resource.pane1__form.control_mitglied_foundingDate_label"/>
+                <form:hint valueRef="resource.pane1__form.control_mitglied_foundingDate_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_date_format" name="mitglied_foundingDate__datetime" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkDateFormat(context.stringValue) ?  true : [context.control.getLabel()] : true;</form:script>
+                </form:validation>
+                <form:required>false</form:required>
+              </form:control>
+              <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.pane1__mitglied_anmeldenummer">
+                <form:propertySet xsi:type="et:TextPropertySet">
+                  <et:displayLength>25</et:displayLength>
+                  <et:maxLength>22</et:maxLength>
+                </form:propertySet>
+                <form:label valueRef="resource.pane1__form.control_mitglied_anmeldenummer_label"/>
+                <form:hint valueRef="resource.pane1__form.control_mitglied_anmeldenummer_hint"/>
+                <form:visible>true</form:visible>
+                <form:enabled>true</form:enabled>
+                <form:validation generated="true" messageRef="resource.common.validation_text_length" name="mitglied_anmeldenummer__length" type="javascript" when="oncontrolchange" simple="true">
+                  <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 22) ? true : [context.control.getLabel(), '22'] : context.value.length &lt;= 22;</form:script>
+                </form:validation>
+                <form:required>false</form:required>
+              </form:control>
+            </form:pane>
+          </form:pane>
+        </form:pane>
+      </form:pane>
+    </form:pane>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.middle" paneType="com.tibco.forms.panes.horizontal">
+      <form:label>middle</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:pane styleClass="geschaeftsfall_pane_class" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.tabbed" name="pane.ExistingCases" paneType="com.tibco.forms.panes.tabbed">
+        <form:label>Pane 4</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:pane styleClass="existingCases_pane" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.existierendeFlle" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Existierende Fälle</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class ArrayMapping.bom#_3hXeoAQvEem_G-97Kp4DSg?p=Gen_building_block%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.arraymapping%26n=GS?" name="pane.Geschaeftsfall_found" paneType="com.tibco.forms.panes.grid">
+            <form:propertySet xsi:type="et:GridPanePropertySet">
+              <et:showNavigator>false</et:showNavigator>
+              <et:supportAddOperation>true</et:supportAddOperation>
+              <et:supportDeleteOperation>true</et:supportDeleteOperation>
+              <et:addOperationLabelRef>resource.common.pane_new_label</et:addOperationLabelRef>
+              <et:deleteOperationLabelRef>resource.common.pane_delete_label</et:deleteOperationLabelRef>
+              <et:editable>true</et:editable>
+              <et:sortable>true</et:sortable>
+              <et:rowLabel>{0}</et:rowLabel>
+            </form:propertySet>
+            <form:label>Geschaeftsfall_found</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="top"/>
+            </form:defaults>
+            <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Geschaeftsfall_found_geschaeftsfallNr">
+              <form:propertySet xsi:type="et:TextPropertySet">
+                <et:displayLength>40</et:displayLength>
+                <et:maxLength>50</et:maxLength>
+              </form:propertySet>
+              <form:label>GeschaeftsfallNr</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:validation generated="true" messageRef="resource.common.validation_text_length" name="Geschaeftsfall_found_geschaeftsfallNr__length" type="javascript" when="oncontrolchange" simple="true">
+                <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+              </form:validation>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Geschaeftsfall_found_versichNr">
+              <form:propertySet xsi:type="et:TextPropertySet">
+                <et:displayLength>40</et:displayLength>
+                <et:maxLength>50</et:maxLength>
+              </form:propertySet>
+              <form:label>Versich.-Nr.</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:validation generated="true" messageRef="resource.common.validation_text_length" name="Geschaeftsfall_found_versichNr__length" type="javascript" when="oncontrolchange" simple="true">
+                <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+              </form:validation>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Geschaeftsfall_found_dokumentenArt">
+              <form:propertySet xsi:type="et:TextPropertySet">
+                <et:displayLength>40</et:displayLength>
+                <et:maxLength>50</et:maxLength>
+              </form:propertySet>
+              <form:label>DokumentenArt</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:validation generated="true" messageRef="resource.common.validation_text_length" name="Geschaeftsfall_found_dokumentenArt__length" type="javascript" when="oncontrolchange" simple="true">
+                <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+              </form:validation>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Geschaeftsfall_found_partnerID">
+              <form:propertySet xsi:type="et:TextPropertySet">
+                <et:displayLength>40</et:displayLength>
+                <et:maxLength>50</et:maxLength>
+              </form:propertySet>
+              <form:label>PartnerID</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:validation generated="true" messageRef="resource.common.validation_text_length" name="Geschaeftsfall_found_partnerID__length" type="javascript" when="oncontrolchange" simple="true">
+                <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+              </form:validation>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Geschaeftsfall_found_geschaeftsfall">
+              <form:propertySet xsi:type="et:TextPropertySet">
+                <et:displayLength>40</et:displayLength>
+                <et:maxLength>50</et:maxLength>
+              </form:propertySet>
+              <form:label>Geschaeftsfall</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:validation generated="true" messageRef="resource.common.validation_text_length" name="Geschaeftsfall_found_geschaeftsfall__length" type="javascript" when="oncontrolchange" simple="true">
+                <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+              </form:validation>
+              <form:required>false</form:required>
+            </form:control>
+          </form:pane>
+          <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.Geschaeftsfall_found__add_delete" paneType="com.tibco.forms.panes.horizontal">
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.Geschaeftsfall_found__add">
+              <form:propertySet xsi:type="et:ButtonPropertySet"/>
+              <form:label valueRef="resource.common.pane_new_label"/>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+            <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.Geschaeftsfall_found__delete">
+              <form:propertySet xsi:type="et:ButtonPropertySet"/>
+              <form:label valueRef="resource.common.pane_delete_label"/>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+          </form:pane>
+          <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.pane3" paneType="com.tibco.forms.panes.horizontal">
+            <form:label>Pane 3</form:label>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:labelProperties visible="false"/>
+            <form:defaults>
+              <form:labelProperties position="top"/>
+            </form:defaults>
+            <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.WP_Geschaeftsfall_klammern">
+              <form:label>WP_Geschaeftsfall_klammern</form:label>
+              <form:hint></form:hint>
+              <form:visible>true</form:visible>
+              <form:enabled>true</form:enabled>
+              <form:required>false</form:required>
+            </form:control>
+          </form:pane>
+        </form:pane>
+      </form:pane>
+    </form:pane>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.bottom" paneType="com.tibco.forms.panes.horizontal">
+      <form:label>bottom</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+    </form:pane>
+    <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.hiddenPane" paneType="com.tibco.forms.panes.horizontal">
+      <form:label>hiddenPane</form:label>
+      <form:visible>false</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:labelProperties visible="false"/>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class comigsbom.bom#_JLd6ogUFEem-aMI85c3QiA?p=com.igs.bom%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.comigsbom%26n=Dokument?" name="pane.pane6__dokument" paneType="com.tibco.forms.panes.vertical">
+        <form:label valueRef="resource.pane6__form.pane_dokument_label"/>
+        <form:hint valueRef="resource.pane6__form.pane_dokument_hint"/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:defaults>
+          <form:labelProperties position="left"/>
+        </form:defaults>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane6__dokument_dokumentID">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label valueRef="resource.pane6__form.control_dokument_dokumentID_label"/>
+          <form:hint valueRef="resource.pane6__form.control_dokument_dokumentID_hint"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="dokument_dokumentID__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>true</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane6__dokument_documentNumber">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:numeric>true</et:numeric>
+            <et:formatRef>resource.common.format_integer</et:formatRef>
+          </form:propertySet>
+          <form:label valueRef="resource.pane6__form.control_dokument_documentNumber_label"/>
+          <form:hint valueRef="resource.pane6__form.control_dokument_documentNumber_hint"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_integer" name="dokument_documentNumber__integer" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>if (typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined') {
+tibco.forms.Util.checkInteger(typeof context.stringValue == 'undefined' ? context.value : context.stringValue) ? true :  [context.control.getLabel()]} else {
+var regex = new RegExp(&quot;^-?[0-9]+$&quot;);
+regex.test(typeof context.stringValue == 'undefined' ? context.value : context.stringValue);}</form:script>
+          </form:validation>
+          <form:validation generated="true" messageRef="resource.common.validation_lower_limit_inclusive" name="dokument_documentNumber__lowerLimit" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkLowerLimit(context.stringValue, '-2147483648', true) ? true : [context.control.getLabel(), '-2147483648'] : isNaN(context.value) || context.value.valueOf() >= -2147483648;</form:script>
+          </form:validation>
+          <form:validation generated="true" messageRef="resource.common.validation_upper_limit_inclusive" name="dokument_documentNumber__upperLimit" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkUpperLimit(context.stringValue, '2147483647', true) ? true : [context.control.getLabel(), '2147483647'] : isNaN(context.value) || context.value.valueOf() &lt;= 2147483647;</form:script>
+          </form:validation>
+          <form:required>true</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane6__dokument_documentType">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>25</et:displayLength>
+            <et:maxLength>22</et:maxLength>
+          </form:propertySet>
+          <form:label valueRef="resource.pane6__form.control_dokument_documentType_label"/>
+          <form:hint valueRef="resource.pane6__form.control_dokument_documentType_hint"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="dokument_documentType__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 22) ? true : [context.control.getLabel(), '22'] : context.value.length &lt;= 22;</form:script>
+          </form:validation>
+          <form:required>true</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane6__dokument_documentSecurity">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:numeric>true</et:numeric>
+            <et:formatRef>resource.common.format_integer</et:formatRef>
+          </form:propertySet>
+          <form:label valueRef="resource.pane6__form.control_dokument_documentSecurity_label"/>
+          <form:hint valueRef="resource.pane6__form.control_dokument_documentSecurity_hint"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_integer" name="dokument_documentSecurity__integer" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>if (typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined') {
+tibco.forms.Util.checkInteger(typeof context.stringValue == 'undefined' ? context.value : context.stringValue) ? true :  [context.control.getLabel()]} else {
+var regex = new RegExp(&quot;^-?[0-9]+$&quot;);
+regex.test(typeof context.stringValue == 'undefined' ? context.value : context.stringValue);}</form:script>
+          </form:validation>
+          <form:validation generated="true" messageRef="resource.common.validation_lower_limit_inclusive" name="dokument_documentSecurity__lowerLimit" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkLowerLimit(context.stringValue, '-2147483648', true) ? true : [context.control.getLabel(), '-2147483648'] : isNaN(context.value) || context.value.valueOf() >= -2147483648;</form:script>
+          </form:validation>
+          <form:validation generated="true" messageRef="resource.common.validation_upper_limit_inclusive" name="dokument_documentSecurity__upperLimit" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkUpperLimit(context.stringValue, '2147483647', true) ? true : [context.control.getLabel(), '2147483647'] : isNaN(context.value) || context.value.valueOf() &lt;= 2147483647;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.pane6__dokument_documentDateOfReceipt">
+          <form:propertySet xsi:type="et:DateTimePropertySet">
+            <et:minRelative>true</et:minRelative>
+            <et:maxRelative>true</et:maxRelative>
+            <et:year min="-20" max="20"/>
+            <et:minute increment="15"/>
+          </form:propertySet>
+          <form:label valueRef="resource.pane6__form.control_dokument_documentDateOfReceipt_label"/>
+          <form:hint valueRef="resource.pane6__form.control_dokument_documentDateOfReceipt_hint"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_datetime_format" name="dokument_documentDateOfReceipt__datetime" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.getLabel()] : true;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.pane6__dokument_documentScanDate">
+          <form:propertySet xsi:type="et:DateTimePropertySet">
+            <et:minRelative>true</et:minRelative>
+            <et:maxRelative>true</et:maxRelative>
+            <et:year min="-20" max="20"/>
+            <et:minute increment="15"/>
+          </form:propertySet>
+          <form:label valueRef="resource.pane6__form.control_dokument_documentScanDate_label"/>
+          <form:hint valueRef="resource.pane6__form.control_dokument_documentScanDate_hint"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_datetime_format" name="dokument_documentScanDate__datetime" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.getLabel()] : true;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane6__dokument_stackName">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label valueRef="resource.pane6__form.control_dokument_stackName_label"/>
+          <form:hint valueRef="resource.pane6__form.control_dokument_stackName_hint"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="dokument_stackName__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane6__dokument_effortType">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label valueRef="resource.pane6__form.control_dokument_effortType_label"/>
+          <form:hint valueRef="resource.pane6__form.control_dokument_effortType_hint"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="dokument_effortType__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane6__dokument_keyword">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <form:list>true</form:list>
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label valueRef="resource.pane6__form.control_dokument_keyword_label"/>
+          <form:hint valueRef="resource.pane6__form.control_dokument_keyword_hint"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="dokument_keyword__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:validation generated="true" messageRef="resource.common.validation_multiplicity_minimum" name="dokument_keyword__multiplicity" type="javascript" when="onformsubmit" list="true" simple="true">
+            <form:script>typeof tibco.forms.Util.checkMultiplicity != 'undefined' ? tibco.forms.Util.checkMultiplicity(context.value, 0, 2147483647) ?  true : [this.getLabel(), '0'] : true;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane6__dokument_kurztext">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label valueRef="resource.pane6__form.control_dokument_kurztext_label"/>
+          <form:hint valueRef="resource.pane6__form.control_dokument_kurztext_hint"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="dokument_kurztext__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane6__dokument_kommentar">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label valueRef="resource.pane6__form.control_dokument_kommentar_label"/>
+          <form:hint valueRef="resource.pane6__form.control_dokument_kommentar_hint"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="dokument_kommentar__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane6__dokument_anmeldenummer">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label valueRef="resource.pane6__form.control_dokument_anmeldenummer_label"/>
+          <form:hint valueRef="resource.pane6__form.control_dokument_anmeldenummer_hint"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="dokument_anmeldenummer__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.pane6__dokument_formularempfnger">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label valueRef="resource.pane6__form.control_dokument_formularempfnger_label"/>
+          <form:hint valueRef="resource.pane6__form.control_dokument_formularempfnger_hint"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="dokument_formularempfnger__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof tibco.forms.Util != 'undefined' ? tibco.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.getLabel(), '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+      </form:pane>
+    </form:pane>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.abbrechen">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Abbrechen</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.schliessen">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Schliessen</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.weiter">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Weiter</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+</form:form>

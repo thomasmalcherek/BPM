@@ -5,16 +5,329 @@
   <xsd:annotation>
     <xsd:documentation>BOMORIGIN::/Gen_building_block/Generated Business Objects/saveDataCaseXSD.bw.test.poc.tibco.com.bom</xsd:documentation>
   </xsd:annotation>
+  <xsd:complexType ecore:name="dokument" id="saveDataCaseXSD.bw.test.poc.tibco.comdokument"
+      abstract="false" mixed="false" name="dokument">
+    <xsd:sequence>
+      <xsd:element ecore:name="dokumentenID" id="dokumentdokumentenID" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="dokumentenID">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="documentenNummer" id="dokumentdocumentenNummer" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="documentenNummer" type="xsd:int"/>
+      <xsd:element ecore:name="documentenArt" id="dokumentdocumentenArt" form="unqualified"
+          maxOccurs="1" minOccurs="1" name="documentenArt">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="22"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="dokSchutz" id="dokumentDokSchutz" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="DokSchutz" type="xsd:int"/>
+      <xsd:element ecore:name="dokEingangsDatum" id="dokumentDokEingangsDatum" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="DokEingangsDatum" type="xsd:dateTime"/>
+      <xsd:element ecore:name="dokScanDatum" id="dokumentDokScanDatum" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="DokScanDatum" type="xsd:dateTime"/>
+      <xsd:element ecore:name="stapelname" id="dokumentStapelname" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Stapelname">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="leistungsArt" id="dokumentLeistungsArt" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="LeistungsArt">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="schlagwort" id="dokumentSchlagwort" form="unqualified"
+          maxOccurs="unbounded" minOccurs="0" name="Schlagwort">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="kurztext" id="dokumentKurztext" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Kurztext">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="kommentar" id="dokumentKommentar" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Kommentar">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="anmeldenummer" id="dokumentAnmeldenummer" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Anmeldenummer">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="formularempfaenger" id="dokumentFormularempfaenger"
+          form="unqualified" maxOccurs="1" minOccurs="0" name="Formularempfaenger">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="versicherter" id="saveDataCaseXSD.bw.test.poc.tibco.comversicherter"
+      abstract="false" mixed="false" name="versicherter">
+    <xsd:sequence>
+      <xsd:element ecore:name="VSPartnerID" id="versicherterVSPartnerID" form="unqualified"
+          maxOccurs="1" minOccurs="1" name="VSPartnerID">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="versicherungsnummer" id="versicherterVersicherungsnummer"
+          form="unqualified" maxOccurs="1" minOccurs="0" name="Versicherungsnummer">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="personenID" id="versicherterPersonenID" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="PersonenID">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="nachname" id="versicherterNachname" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Nachname">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="vorname" id="versicherterVorname" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Vorname">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="22"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="anrede" id="versicherterAnrede" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Anrede">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="titel" id="versicherterTitel" form="unqualified" maxOccurs="1"
+          minOccurs="0" name="Titel">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="geschlecht" id="versicherterGeschlecht" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Geschlecht">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="geburtsdatum" id="versicherterGeburtsdatum" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Geburtsdatum" type="xsd:date"/>
+      <xsd:element ecore:name="sprache" id="versicherterSprache" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Sprache">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="geschaeftsfall" id="saveDataCaseXSD.bw.test.poc.tibco.comgeschaeftsfall"
+      abstract="false" mixed="false" name="geschaeftsfall">
+    <xsd:sequence>
+      <xsd:element ecore:name="PKID" id="geschaeftsfallPKID" form="unqualified" maxOccurs="1"
+          minOccurs="0" name="PKID">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="geschaeftsfallNummer" id="geschaeftsfallGeschaeftsfallNummer"
+          form="unqualified" maxOccurs="1" minOccurs="1" name="GeschaeftsfallNummer"
+          type="xsd:string"/>
+      <xsd:element ecore:name="dringend" id="geschaeftsfallDringend" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Dringend" type="xsd:boolean"/>
+      <xsd:element ecore:name="bearbeiter" id="geschaeftsfallBearbeiter" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Bearbeiter">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="workflowDatum" id="geschaeftsfallWorkflowDatum" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="WorkflowDatum" type="xsd:dateTime"/>
+      <xsd:element ecore:name="PKNachricht" id="geschaeftsfallPKNachricht" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="PKNachricht">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="absenderName" id="geschaeftsfallAbsenderName" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="AbsenderName">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="besitzerName" id="geschaeftsfallBesitzerName" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="BesitzerName">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="workflowStatus" id="geschaeftsfallWorkflowStatus" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="WorkflowStatus">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="bearbeitungsGrund" id="geschaeftsfallBearbeitungsGrund"
+          form="unqualified" maxOccurs="1" minOccurs="0" name="BearbeitungsGrund">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="rueckmeldung" id="geschaeftsfallRueckmeldung" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Rueckmeldung">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="typNummer" id="geschaeftsfallTypNummer" form="unqualified"
+          maxOccurs="1" minOccurs="1" name="TypNummer" type="xsd:int"/>
+      <xsd:element ecore:name="typBezeichnung" id="geschaeftsfallTypBezeichnung" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="TypBezeichnung">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="mitglied" id="saveDataCaseXSD.bw.test.poc.tibco.commitglied"
+      abstract="false" mixed="false" name="mitglied">
+    <xsd:sequence>
+      <xsd:element ecore:name="MGPartnerID" id="mitgliedMGPartnerID" form="unqualified"
+          maxOccurs="1" minOccurs="1" name="MGPartnerID">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="abrechnungsnummer" id="mitgliedAbrechnungsnummer" form="unqualified"
+          maxOccurs="1" minOccurs="1" name="Abrechnungsnummer">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="22"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="unternehmensID" id="mitgliedUnternehmensID" form="unqualified"
+          maxOccurs="1" minOccurs="1" name="UnternehmensID">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="22"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="name" id="mitgliedName" form="unqualified" maxOccurs="1"
+          minOccurs="0" name="Name">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="zusatzbezeichnung" id="mitgliedZusatzbezeichnung" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Zusatzbezeichnung">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="22"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="gruendungsDatum" id="mitgliedGruendungsDatum" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="GruendungsDatum">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="50"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ecore:name="anmeldenummer" id="mitgliedAnmeldenummer" form="unqualified"
+          maxOccurs="1" minOccurs="0" name="Anmeldenummer">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="22"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
   <xsd:element abstract="false" name="CreateCaseIDRequest" nillable="false">
     <xsd:complexType ecore:name="CreateCaseIDRequestType" id="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDRequestType"
         mixed="false">
       <xsd:sequence>
-        <xsd:element ecore:name="AHVNummer" form="unqualified" maxOccurs="1" minOccurs="1"
-            name="AHV-Nummer" type="xsd:string"/>
-        <xsd:element ecore:name="dokumentenArt" form="unqualified" maxOccurs="1" minOccurs="1"
-            name="Dokumenten-Art" type="xsd:string"/>
-        <xsd:element ecore:name="dossierID" form="unqualified" maxOccurs="1" minOccurs="1"
-            name="DossierID" type="xsd:string"/>
+        <xsd:element ecore:name="dokument" form="unqualified" maxOccurs="1" minOccurs="1"
+            name="dokument" type="dokument"/>
+        <xsd:element ecore:name="geschaeftsfall" form="unqualified" maxOccurs="1"
+            minOccurs="0" name="geschaeftsfall" type="geschaeftsfall"/>
+        <xsd:element ecore:name="mitglied" form="unqualified" maxOccurs="1" minOccurs="0"
+            name="mitglied" type="mitglied"/>
+        <xsd:element ecore:name="versicherter" form="unqualified" maxOccurs="1" minOccurs="0"
+            name="versicherter" type="versicherter"/>
         <xsd:element ecore:name="anzahl_der_Dokumente" form="unqualified" maxOccurs="1"
             minOccurs="1" name="Anzahl_der_Dokumente" type="xsd:integer"/>
       </xsd:sequence>
@@ -24,8 +337,12 @@
     <xsd:complexType ecore:name="CreateCaseIDResponseType" id="saveDataCaseXSD.bw.test.poc.tibco.comCreateCaseIDResponseType"
         mixed="false">
       <xsd:sequence>
-        <xsd:element ecore:name="caseID" form="unqualified" maxOccurs="1" minOccurs="1"
-            name="CaseID" type="xsd:string"/>
+        <xsd:element ecore:name="businessProcessID" form="unqualified" maxOccurs="1"
+            minOccurs="0" name="BusinessProcessID" type="xsd:string"/>
+        <xsd:element ecore:name="geschaefstfallName" form="unqualified" maxOccurs="1"
+            minOccurs="0" name="GeschaefstfallName" type="xsd:string"/>
+        <xsd:element ecore:name="WFCaseID" form="unqualified" maxOccurs="1" minOccurs="0"
+            name="WFCaseID" type="xsd:string"/>
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
@@ -42,8 +359,14 @@
     <xsd:complexType ecore:name="GetGeschaeftsfallPerDokumentenArtResponseType" id="saveDataCaseXSD.bw.test.poc.tibco.comGetGeschaeftsfallPerDokumentenArtResponseType"
         mixed="false">
       <xsd:sequence>
-        <xsd:element ecore:name="geschaeftsfall" form="unqualified" maxOccurs="1"
-            minOccurs="1" name="Geschaeftsfall" type="xsd:string"/>
+        <xsd:element ecore:name="GESCHAEFTSFALL" form="unqualified" maxOccurs="1"
+            minOccurs="1" name="GESCHAEFTSFALL" type="xsd:string"/>
+        <xsd:element ecore:name="DOKUMENTENART" form="unqualified" maxOccurs="1" minOccurs="1"
+            name="DOKUMENTENART" type="xsd:string"/>
+        <xsd:element ecore:name="DOKUMENTENART_MAIN" form="unqualified" maxOccurs="1"
+            minOccurs="1" name="DOKUMENTENART_MAIN" type="xsd:string"/>
+        <xsd:element ecore:name="DOKUMENTENART_SPEC" form="unqualified" maxOccurs="1"
+            minOccurs="1" name="DOKUMENTENART_SPEC" type="xsd:string"/>
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
@@ -110,14 +433,14 @@
           <xsd:complexType ecore:name="SearchDataResponseType" id="saveDataCaseXSD.bw.test.poc.tibco.comSearchDataResponseType"
               mixed="false">
             <xsd:sequence>
-              <xsd:element ecore:name="caseID" form="unqualified" maxOccurs="1" minOccurs="1"
-                  name="CaseID" type="xsd:string"/>
-              <xsd:element ecore:name="AHVNummer" form="unqualified" maxOccurs="1"
-                  minOccurs="1" name="AHV-Nummer" type="xsd:string"/>
+              <xsd:element ecore:name="geschaeftsfallNr" form="unqualified" maxOccurs="1"
+                  minOccurs="1" name="GeschaeftsfallNr" type="xsd:string"/>
+              <xsd:element ecore:name="versichNr" form="unqualified" maxOccurs="1"
+                  minOccurs="1" name="Versich.-Nr" type="xsd:string"/>
               <xsd:element ecore:name="dokumentenArt" form="unqualified" maxOccurs="1"
                   minOccurs="1" name="Dokumenten-Art" type="xsd:string"/>
-              <xsd:element ecore:name="dossierID" form="unqualified" maxOccurs="1"
-                  minOccurs="1" name="DossierID" type="xsd:string"/>
+              <xsd:element ecore:name="partnerID" form="unqualified" maxOccurs="1"
+                  minOccurs="1" name="PartnerID" type="xsd:string"/>
               <xsd:element ecore:name="geschaeftsfall" form="unqualified" maxOccurs="1"
                   minOccurs="1" name="Geschaeftsfall" type="xsd:string"/>
               <xsd:element ecore:name="anzahl_der_Dokumente" form="unqualified" maxOccurs="1"
@@ -132,8 +455,8 @@
     <xsd:complexType ecore:name="SearchDataRequestType" id="saveDataCaseXSD.bw.test.poc.tibco.comSearchDataRequestType"
         mixed="false">
       <xsd:sequence>
-        <xsd:element ecore:name="AHVNummer" form="unqualified" maxOccurs="1" minOccurs="1"
-            name="AHV-Nummer" type="xsd:string"/>
+        <xsd:element ecore:name="versichNr" form="unqualified" maxOccurs="1" minOccurs="1"
+            name="VersichNr" type="xsd:string"/>
         <xsd:element ecore:name="dokumentenArt" form="unqualified" maxOccurs="1" minOccurs="1"
             name="Dokumenten-Art" type="xsd:string"/>
         <xsd:element ecore:name="geschaeftsfall" form="unqualified" maxOccurs="1"
